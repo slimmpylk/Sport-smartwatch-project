@@ -147,23 +147,6 @@ The software side will be developed as part of the same project rather than trea
 
 ---
 
-## Repository structure
-
-```text
-sportwatch_ai/
-├── README.md
-├── datasheets/
-├── docs/
-└── sportwatch_revA/
-```
-
-`datasheets/` contains component documentation used during design.
-
-`docs/` contains project notes and engineering handoff/documentation material.
-
-`sportwatch_revA/` contains the active KiCad hardware project.
-
----
 
 ## Development philosophy
 
