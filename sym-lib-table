@@ -1,0 +1,5 @@
+(sym_lib_table
+  (version 7)
+  (lib (name "sportwatch_bmm350")(type "KiCad")(uri "${KIPRJMOD}/libraries/symbols/sportwatch_bmm350.kicad_sym")(options "")(descr "Sportwatch BMM350 symbol"))
+  (lib (name "sportwatch_lsm6dsv16x")(type "KiCad")(uri "${KIPRJMOD}/libraries/symbols/sportwatch_lsm6dsv16x.kicad_sym")(options "")(descr "Sportwatch LSM6DSV16X symbol"))
+)

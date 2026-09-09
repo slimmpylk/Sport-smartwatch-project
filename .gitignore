@@ -1,0 +1,47 @@
+# ------------------------------------------------------------
+# KiCad local state / temporary files
+# ------------------------------------------------------------
+
+# Lock files
+*.lck
+~*.lck
+
+# Per-user / local project settings
+*.kicad_prl
+
+# Autosave / backup files
+*-save.kicad_sch
+*-save.kicad_pcb
+*.kicad_sch-bak
+*.kicad_pcb-bak
+*.kicad_pro-bak
+*.bak
+*.tmp
+
+# KiCad local history
+**/.history/
+
+# Local backup archives
+**/backups/
+**/*-backups/
+
+# ------------------------------------------------------------
+# OS / editor noise
+# ------------------------------------------------------------
+
+.DS_Store
+Thumbs.db
+*~
+*.swp
+*.swo
+
+# ------------------------------------------------------------
+# IMPORTANT
+# ------------------------------------------------------------
+# Custom KiCad libraries are intentionally NOT ignored.
+# They are source files required to keep the project portable:
+#   *.kicad_sym
+#   *.kicad_mod
+#   *.pretty/
+#
+# Project files, fp-lib-table and sym-lib-table should also be tracked.
