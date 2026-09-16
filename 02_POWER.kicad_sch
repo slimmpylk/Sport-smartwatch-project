@@ -2734,7 +2734,7 @@
 		)
 		(uuid "a20453b2-3850-488a-ba73-9eee2d602b51")
 	)
-	(text "R1/R2 optional 10k pull-ups — DNP until final I2C pull-up allocation"
+	(text "R1/R2 10k FITTED; PMIC shares MAG_I2C at 1.8V. With 07_MOTION 10k pull-ups, effective bus pull-up is ~5k."
 		(exclude_from_sim no)
 		(at 50 135 0)
 		(effects
@@ -2833,7 +2833,7 @@
 		)
 		(uuid "f39aea6a-6452-4dd4-809f-a8fd42dfe009")
 	)
-	(text "Application rails must use VSYS/VOUT1/VOUT2 — do not power application circuitry directly from VBAT"
+	(text "General application rails use VSYS/VOUT1/VOUT2. nRF7002 is the documented protected-VBAT exception pending charge-load validation."
 		(exclude_from_sim no)
 		(at 92 195 0)
 		(effects
@@ -2843,6 +2843,17 @@
 			(justify left bottom)
 		)
 		(uuid "fe6b599f-6aed-4b66-b590-d0d4f9a351cf")
+	)
+	(text "PMIC TWI: shared MAG_I2C bus, nPM1300 7-bit address 0x6B; BMM350 = 0x14; operate shared bus <=400kHz."
+		(exclude_from_sim no)
+		(at 50 144 0)
+		(effects
+			(font
+				(size 0.95 0.95)
+			)
+			(justify left bottom)
+		)
+		(uuid "2ccfe442-a3fe-433e-b7d0-ace2f38840c3")
 	)
 	(no_connect
 		(at 118.11 78.74)
@@ -3496,14 +3507,25 @@
 	)
 	(wire
 		(pts
-			(xy 237.46 52) (xy 242.54 52)
+			(xy 237.46 52) (xy 240 52)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "f60c9f72-23cf-4d99-8d92-20f6b0e2b8d9")
+		(uuid "6dac9d16-654c-4f25-83ff-39f0dc172cb6")
 	)
+	(wire
+		(pts
+			(xy 240 52) (xy 242.54 52)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "9cce62c8-3223-4a92-a97b-43c2fa29e5b3")
+	)
+
 	(wire
 		(pts
 			(xy 40.08 57.54) (xy 50 57.54)
@@ -3514,26 +3536,8 @@
 		)
 		(uuid "f6b53e68-7b1c-4b9a-b78a-6e05f1fb6e91")
 	)
-	(wire
-		(pts
-			(xy 40.08 32.54) (xy 48 32.54)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "f8bc7132-ee0e-4382-a09b-6cf240835cfa")
-	)
-	(wire
-		(pts
-			(xy 48 32.54) (xy 48 38.1)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "fad3108e-430b-4304-8427-e6ffc2d68d48")
-	)
+
+
 	(wire
 		(pts
 			(xy 227.3 30.46) (xy 218 30.46)
@@ -3644,7 +3648,7 @@
 		)
 		(uuid "2f00156f-53d9-4836-8280-c34126a3f935")
 	)
-	(label "PMIC_SCL"
+	(label "MAG_I2C_SCL"
 		(at 108 111.76 180)
 		(effects
 			(font
@@ -3724,7 +3728,7 @@
 		)
 		(uuid "58dc382f-9f58-4187-a1b6-faad5a4aefaa")
 	)
-	(label "PMIC_SCL"
+	(label "MAG_I2C_SCL"
 		(at 75 116.19 0)
 		(effects
 			(font
@@ -3984,7 +3988,7 @@
 		)
 		(uuid "b6a5cb72-653c-4f51-93c6-17baf24590be")
 	)
-	(label "PMIC_SDA"
+	(label "MAG_I2C_SDA"
 		(at 60 116.19 0)
 		(effects
 			(font
@@ -4024,7 +4028,7 @@
 		)
 		(uuid "c8738435-546a-44d6-97fa-766e8ea53c41")
 	)
-	(label "PMIC_SDA"
+	(label "MAG_I2C_SDA"
 		(at 108 109.22 180)
 		(effects
 			(font
@@ -4134,6 +4138,17 @@
 		)
 		(uuid "ff57f36f-320c-46ec-9ea0-2a621b159121")
 	)
+	(wire
+		(pts
+			(xy 40.08 27.46) (xy 48 27.46)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "acc4de8b-0786-4588-8da5-600f277bdb7d")
+	)
+
 	(symbol
 		(lib_id "Device:C")
 		(at 120 175 0)
@@ -4849,7 +4864,7 @@
 	)
 	(symbol
 		(lib_id "power:GND")
-		(at 48 38.1 0)
+		(at 48 27.46 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -4860,7 +4875,7 @@
 		(fields_autoplaced yes)
 		(uuid "3264ec3f-e3ff-49dd-80e1-c445f8635861")
 		(property "Reference" "#PWR001"
-			(at 50.54 35.56 0)
+			(at 50.54 24.92 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4871,7 +4886,7 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 50.54 40.64 0)
+			(at 50.54 30 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -4881,7 +4896,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 48 38.1 0)
+			(at 48 27.46 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4892,7 +4907,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 48 38.1 0)
+			(at 48 27.46 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4903,7 +4918,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name GND"
-			(at 48 38.1 0)
+			(at 48 27.46 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -7294,7 +7309,7 @@
 		(in_bom yes)
 		(on_board yes)
 		(in_pos_files yes)
-		(dnp yes)
+		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "b6ed8e40-eb66-4612-ad52-c8f33ed77a11")
 		(property "Reference" "R1"
@@ -7339,7 +7354,7 @@
 				)
 			)
 		)
-		(property "Description" "Optional PMIC SDA pull-up; DNP"
+		(property "Description" "Fitted 10k pull-up for shared nPM1300/BMM350 1.8V I2C bus"
 			(at 60 120 0)
 			(hide yes)
 			(show_name no)
@@ -7350,7 +7365,7 @@
 				)
 			)
 		)
-		(property "Assembly" "DNP / optional"
+		(property "Assembly" "FIT"
 			(at 60 120 0)
 			(hide yes)
 			(show_name no)
@@ -7850,7 +7865,7 @@
 		(in_bom yes)
 		(on_board yes)
 		(in_pos_files yes)
-		(dnp yes)
+		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "da71542e-1bb6-4231-95e1-12be3d4095eb")
 		(property "Reference" "R2"
@@ -7895,7 +7910,7 @@
 				)
 			)
 		)
-		(property "Description" "Optional PMIC SCL pull-up; DNP"
+		(property "Description" "Fitted 10k pull-up for shared nPM1300/BMM350 1.8V I2C bus"
 			(at 75 120 0)
 			(hide yes)
 			(show_name no)
@@ -7906,7 +7921,7 @@
 				)
 			)
 		)
-		(property "Assembly" "DNP / optional"
+		(property "Assembly" "FIT"
 			(at 75 120 0)
 			(hide yes)
 			(show_name no)

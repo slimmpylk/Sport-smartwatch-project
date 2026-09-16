@@ -4,5 +4,3713 @@
 	(generator_version "10.0")
 	(uuid "310002d6-6664-4d27-b3c8-120083545457")
 	(paper "A4")
-	(lib_symbols)
+	(title_block
+		(title "Rev-A — RF / Antenna Networks")
+		(date "2026-09-16")
+		(rev "A")
+		(comment 1 "Apollo510B BLE + nRF7002 Wi-Fi + MAX-F10S L1/L5 GNSS")
+	)
+	(lib_symbols
+		(symbol "Device:C"
+			(pin_numbers
+				(hide yes)
+			)
+			(pin_names
+				(offset 0.254)
+			)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(in_pos_files yes)
+			(duplicate_pin_numbers_are_jumpers no)
+			(property "Reference" "C"
+				(at 0.635 2.54 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left)
+				)
+			)
+			(property "Value" "C"
+				(at 0.635 -2.54 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left)
+				)
+			)
+			(property "Footprint" ""
+				(at 0.9652 -3.81 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Datasheet" ""
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Description" "Unpolarized capacitor"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "ki_keywords" "cap capacitor"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "ki_fp_filters" "C_*"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(symbol "C_0_1"
+				(polyline
+					(pts
+						(xy -2.032 0.762) (xy 2.032 0.762)
+					)
+					(stroke
+						(width 0.508)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy -2.032 -0.762) (xy 2.032 -0.762)
+					)
+					(stroke
+						(width 0.508)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+			)
+			(symbol "C_1_1"
+				(pin passive line
+					(at 0 3.81 270)
+					(length 2.794)
+					(name ""
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 0 -3.81 90)
+					(length 2.794)
+					(name ""
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
+		(symbol "Device:R"
+			(pin_numbers
+				(hide yes)
+			)
+			(pin_names
+				(offset 0)
+			)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(in_pos_files yes)
+			(duplicate_pin_numbers_are_jumpers no)
+			(property "Reference" "R"
+				(at 2.032 0 90)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Value" "R"
+				(at 0 0 90)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" ""
+				(at -1.778 0 90)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Datasheet" ""
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Description" "Resistor"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "ki_keywords" "R res resistor"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "ki_fp_filters" "R_*"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(symbol "R_0_1"
+				(rectangle
+					(start -1.016 -2.54)
+					(end 1.016 2.54)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+			)
+			(symbol "R_1_1"
+				(pin passive line
+					(at 0 3.81 270)
+					(length 1.27)
+					(name ""
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 0 -3.81 90)
+					(length 1.27)
+					(name ""
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
+		(symbol "power:GND"
+			(power global)
+			(pin_numbers
+				(hide yes)
+			)
+			(pin_names
+				(offset 0)
+				(hide yes)
+			)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(in_pos_files yes)
+			(duplicate_pin_numbers_are_jumpers no)
+			(property "Reference" "#PWR"
+				(at 0 -6.35 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Value" "GND"
+				(at 0 -3.81 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" ""
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Datasheet" ""
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "ki_keywords" "global power"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(symbol "GND_0_1"
+				(polyline
+					(pts
+						(xy 0 0) (xy 0 -1.27) (xy 1.27 -1.27) (xy 0 -2.54) (xy -1.27 -1.27) (xy 0 -1.27)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+			)
+			(symbol "GND_1_1"
+				(pin power_in line
+					(at 0 0 270)
+					(length 0)
+					(name ""
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
+		(symbol "sportwatch_custom:ANTENNA_TBD"
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(in_pos_files yes)
+			(duplicate_pin_numbers_are_jumpers no)
+			(property "Reference" "AE"
+				(at 0 7.62 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Value" "ANTENNA_TBD"
+				(at 0 -7.62 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" ""
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Datasheet" ""
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Description" "Antenna placeholder; exact MPN/footprint frozen after case/PCB/battery geometry is known"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(symbol "ANTENNA_TBD_0_1"
+				(polyline
+					(pts
+						(xy -2.54 -5.08) (xy -5.08 -7.62)
+					)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 0 0) (xy 0 -2.54) (xy -2.54 -5.08)
+					)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 0 -2.54) (xy 2.54 -5.08)
+					)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 2.54 -5.08) (xy 5.08 -7.62)
+					)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(pin passive line
+					(at 0 5.08 270)
+					(length 5.08)
+					(name "RF"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
+		(symbol "sportwatch_custom:RF_INDUCTOR"
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(in_pos_files yes)
+			(duplicate_pin_numbers_are_jumpers no)
+			(property "Reference" "L"
+				(at 0 3.81 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Value" "RF_INDUCTOR"
+				(at 0 -3.81 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" ""
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Datasheet" ""
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Description" "RF matching inductor; exact MPN and footprint verified during RF tuning/footprint audit"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(symbol "RF_INDUCTOR_0_1"
+				(polyline
+					(pts
+						(xy -3.81 0) (xy -2.54 0) (xy -1.905 -1.27) (xy -0.635 -1.27) (xy 0 0) (xy 0.635 -1.27) (xy 1.905 -1.27)
+						(xy 2.54 0) (xy 3.81 0)
+					)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(pin passive line
+					(at -7.62 0 0)
+					(length 3.81)
+					(name "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 7.62 0 180)
+					(length 3.81)
+					(name "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
+		(symbol "sportwatch_custom:RF_TEST_PROVISION"
+			(exclude_from_sim no)
+			(in_bom no)
+			(on_board yes)
+			(in_pos_files no)
+			(duplicate_pin_numbers_are_jumpers no)
+			(property "Reference" "TP"
+				(at 0 3.81 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1 1)
+					)
+				)
+			)
+			(property "Value" "RF_TEST_TBD"
+				(at 0 -3.81 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1 1)
+					)
+				)
+			)
+			(property "Footprint" ""
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Datasheet" ""
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Description" "RF probe/coax test provision; exact low-stub implementation selected during PCB RF layout"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(symbol "RF_TEST_PROVISION_0_1"
+				(circle
+					(center 0 0)
+					(radius 1.27)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(pin passive line
+					(at 0 5.08 270)
+					(length 3.81)
+					(name "RF"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
+	)
+	(text "If the final 50-mm-class mechanics cannot support three independent antennas, BLE/Wi-Fi sharing may be reconsidered, but that requires a deliberate RF switch/diplexer redesign; do not silently merge the feeds."
+		(exclude_from_sim no)
+		(at 150 199.6 0)
+		(effects
+			(font
+				(size 0.64 0.64)
+			)
+			(justify left bottom)
+		)
+		(uuid "00c8e264-4a7d-49db-b041-b0014d76cfc3")
+	)
+	(text "Exact BLE/Wi-Fi/GNSS antennas are selected before routing is frozen, after the board outline, display, battery, case/bezel and available perimeter/ground-clearance regions are known."
+		(exclude_from_sim no)
+		(at 150 189.4 0)
+		(effects
+			(font
+				(size 0.64 0.64)
+			)
+			(justify left bottom)
+		)
+		(uuid "0f02bb76-4215-4224-b94e-f0f1d7fdf38c")
+	)
+	(text "Child-sheet labels APOLLO_BLE_ANT / APOLLO_BLE_AVDD_PA / WIFI_RF / GNSS_RF must be exported through the final hierarchy integration."
+		(exclude_from_sim no)
+		(at 150 203 0)
+		(effects
+			(font
+				(size 0.64 0.64)
+			)
+			(justify left bottom)
+		)
+		(uuid "2c1e8a8a-7682-42cf-9618-295f739bdc7d")
+	)
+	(text "TP1401/TP1410/TP1420 are electrically attached RF test PROVISIONS; implement as tiny low-stub probe/coax-switch structures during PCB RF layout."
+		(exclude_from_sim no)
+		(at 150 186 0)
+		(effects
+			(font
+				(size 0.64 0.64)
+			)
+			(justify left bottom)
+		)
+		(uuid "36f80e62-35cb-4eba-b216-1af182dffd49")
+	)
+	(text "All RF paths must be controlled 50-ohm transmission lines with continuous reference ground, short feeds, via fencing where appropriate, and no unrelated routing through antenna keepouts."
+		(exclude_from_sim no)
+		(at 150 192.8 0)
+		(effects
+			(font
+				(size 0.64 0.64)
+			)
+			(justify left bottom)
+		)
+		(uuid "42002ba3-ed01-4654-9e2b-2bae5ea77cc0")
+	)
+	(text "MAX-F10S RF_IN is internally DC-blocked and requires a 50-ohm feed. No extra DC-block capacitor or active-antenna bias network is fitted for the passive Rev-A baseline."
+		(exclude_from_sim no)
+		(at 15 203 0)
+		(effects
+			(font
+				(size 0.64 0.64)
+			)
+			(justify left bottom)
+		)
+		(uuid "46252bd9-a2c2-40d6-bfb4-61a859cf21a1")
+	)
+	(text "BLE initial values are tuning STARTING POINTS only: LDC 1.5nH, Cdc1 18pF, Lm1 2.4nH, Cm1 2.0pF, Cm2 2.0pF, Cm3 DNP, Cc1 220pF. Final values require VNA/RF tuning on the real watch geometry."
+		(exclude_from_sim no)
+		(at 15 189.4 0)
+		(effects
+			(font
+				(size 0.64 0.64)
+			)
+			(justify left bottom)
+		)
+		(uuid "47ab730b-61d2-4eca-8e89-a42f956f4ace")
+	)
+	(text "nRF7002 Wi-Fi 2.4 / 5 GHz — WIFI_RF is already after the Nordic diplexer on 06_WIFI"
+		(exclude_from_sim no)
+		(at 15 87 0)
+		(effects
+			(font
+				(size 1.05 1.05)
+			)
+			(justify left bottom)
+		)
+		(uuid "4cdfbe3c-d80c-44fd-ac46-396f1852248a")
+	)
+	(text "14_RF — ANTENNA INTERFACES / MATCHING / TUNING — REV A"
+		(exclude_from_sim no)
+		(at 15 12 0)
+		(effects
+			(font
+				(size 1.45 1.45)
+			)
+			(justify left bottom)
+		)
+		(uuid "5c4d6bd6-537b-428f-a869-41f55fc0c0ae")
+	)
+	(text "APOLLO510B BLE 2.4 GHz"
+		(exclude_from_sim no)
+		(at 15 31 0)
+		(effects
+			(font
+				(size 1.05 1.05)
+			)
+			(justify left bottom)
+		)
+		(uuid "7c712194-4cb7-4ba9-ab77-6912fbb7e9d9")
+	)
+	(text "BLE R1401 is the optional Lm2 position populated as 0R for Rev-A baseline; C1402 is on ANT/Lm1 input, C1403 at Lm1/Lm2 junction, C1404 DNP at Lm2 output."
+		(exclude_from_sim no)
+		(at 15 192.8 0)
+		(effects
+			(font
+				(size 0.64 0.64)
+			)
+			(justify left bottom)
+		)
+		(uuid "918ef42a-d323-4f05-a34c-b2280b3b9f33")
+	)
+	(text "Wi-Fi and GNSS use DNP/0R/DNP pi footprints so the antenna feed can be tuned without a PCB respin. Exact capacitor/series element values are selected after antenna and enclosure freeze."
+		(exclude_from_sim no)
+		(at 15 199.6 0)
+		(effects
+			(font
+				(size 0.64 0.64)
+			)
+			(justify left bottom)
+		)
+		(uuid "a74ef637-78ef-4ff5-acfc-022fca780141")
+	)
+	(text "Wi-Fi: 06_WIFI already combines nRF7002 TXRF0/TXRF1 through the Nordic 2.4/5GHz diplexer. 14_RF therefore starts from the single WIFI_RF feed."
+		(exclude_from_sim no)
+		(at 15 196.2 0)
+		(effects
+			(font
+				(size 0.64 0.64)
+			)
+			(justify left bottom)
+		)
+		(uuid "a84920c9-dbb4-4e03-913a-8ce235b8bdf7")
+	)
+	(text "Exact antenna MPNs/footprints are intentionally frozen only after case + PCB outline + battery + display geometry are known."
+		(exclude_from_sim no)
+		(at 15 18 0)
+		(effects
+			(font
+				(size 0.85 0.85)
+			)
+			(justify left bottom)
+		)
+		(uuid "b4626605-69c3-48f9-a23d-7b4a45d44564")
+	)
+	(text "BLE: N1 BLE_ANT is single-ended RF; M1 BLE_AVDD_PA feeds the PA bias network. L1401/C1401 and the matching chain follow Ambiq's published initial BLE topology."
+		(exclude_from_sim no)
+		(at 15 186 0)
+		(effects
+			(font
+				(size 0.64 0.64)
+			)
+			(justify left bottom)
+		)
+		(uuid "b64ab763-9d03-4b79-86c6-f1702347e053")
+	)
+	(text "MAX-F10S GNSS L1/L5 — passive dual-band antenna baseline"
+		(exclude_from_sim no)
+		(at 15 141 0)
+		(effects
+			(font
+				(size 1.05 1.05)
+			)
+			(justify left bottom)
+		)
+		(uuid "cedd39eb-6f07-46c8-ac79-fc947a3d1992")
+	)
+	(text "Keep GNSS especially far from display clocks, Wi-Fi, switching regulators and haptic currents. Final antenna placements/keepouts are mechanical + RF decisions, not schematic-only decisions."
+		(exclude_from_sim no)
+		(at 150 196.2 0)
+		(effects
+			(font
+				(size 0.64 0.64)
+			)
+			(justify left bottom)
+		)
+		(uuid "def5b963-9243-4267-98dd-8304097c4070")
+	)
+	(junction
+		(at 132 157)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "25f6cc65-2e1e-49b6-a46e-8dd294cc071c")
+	)
+	(junction
+		(at 208.28 48.26)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "feb8ac56-4787-479a-a3d0-69883d204291")
+	)
+	(wire
+		(pts
+			(xy 70 103) (xy 96.19 103)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "02af8861-2644-42fe-9c4a-56caa9aa441b")
+	)
+	(wire
+		(pts
+			(xy 208.28 48.26) (xy 208.28 48.08)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "094e2f18-2471-4c66-84e7-e23ca256ceb3")
+	)
+	(wire
+		(pts
+			(xy 70 103) (xy 70 111.19)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "09638307-5d2c-4029-94ee-798eb19f4e3f")
+	)
+	(wire
+		(pts
+			(xy 83.62 48) (xy 92 48)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "0c9f54ee-42d4-462a-9068-b991f42f1604")
+	)
+	(wire
+		(pts
+			(xy 30 103) (xy 70 103)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "18b8e8b3-a5db-4d10-aeb6-9ad118127087")
+	)
+	(wire
+		(pts
+			(xy 40 48) (xy 40 61)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "19955633-39a6-42fe-bb6c-37833ab7798d")
+	)
+
+	(wire
+		(pts
+			(xy 160 163.92) (xy 160 154.94)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "6543f68b-006a-4275-aabf-7bd169fce965")
+	)
+
+	(wire
+		(pts
+			(xy 70 118.81) (xy 70 123)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "38591704-0f71-49e3-8b41-d55cda0f2f9e")
+	)
+	(wire
+		(pts
+			(xy 70 172.81) (xy 70 177)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "386cb539-5ede-4a0c-97ea-3d24e68ee5ea")
+	)
+
+	(wire
+		(pts
+			(xy 160 109.92) (xy 160 104.14)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "1a89a5b6-f2f5-4555-b13b-5502b38daebb")
+	)
+
+	(wire
+		(pts
+			(xy 180 54.92) (xy 180 48.26)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "506eeb3c-b5b1-47e4-b2eb-8946ae068fdb")
+	)
+	(wire
+		(pts
+			(xy 132 154.94) (xy 160 154.94)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "4013bc2a-052b-496d-a509-2dae3691f289")
+	)
+	(wire
+		(pts
+			(xy 160 154.94) (xy 209.55 154.94)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "97b8ab5c-2c0f-4e8a-89c8-74530ecdb43d")
+	)
+
+
+	(wire
+		(pts
+			(xy 132 154.94) (xy 132 157)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "68e4152d-e9be-4852-bacc-d9d79ac63483")
+	)
+	(wire
+		(pts
+			(xy 103.81 103) (xy 132 103)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "70bf4413-c79e-40cd-b598-4343d0296073")
+	)
+	(wire
+		(pts
+			(xy 132 104.14) (xy 132 111.19)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "723df3c2-1f1f-4eed-85ba-e37996f44f06")
+	)
+	(wire
+		(pts
+			(xy 70 157) (xy 96.19 157)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "867f5a8e-8d21-4b64-8484-18cd3e315606")
+	)
+	(wire
+		(pts
+			(xy 132 157) (xy 132 165.19)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "8d16f282-8980-45ea-865f-51d97043c496")
+	)
+	(wire
+		(pts
+			(xy 120 48) (xy 138 48)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "4fec9152-150c-4dc4-b7df-f8e67dd0933a")
+	)
+	(wire
+		(pts
+			(xy 138 48) (xy 151.19 48)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "646c2eba-0b3a-43b9-9d18-bb58074ddfe9")
+	)
+
+	(wire
+		(pts
+			(xy 158.81 48) (xy 180 48)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "95cf636f-a2b6-44f7-b4a5-14436192d247")
+	)
+
+	(wire
+		(pts
+			(xy 111.81 48) (xy 120 48)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "9ffaa406-9bdb-4dcf-8b60-1ac98b92cd51")
+	)
+	(wire
+		(pts
+			(xy 30 157) (xy 70 157)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "a29e577e-37a1-429e-ba92-1692d8714f7b")
+	)
+	(wire
+		(pts
+			(xy 70 157) (xy 70 165.19)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "a84dec2b-2e56-45d7-94e0-786013c7807f")
+	)
+	(wire
+		(pts
+			(xy 132 118.81) (xy 132 123)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "b5485c55-29c1-4006-ad8e-e1b1d731989d")
+	)
+	(wire
+		(pts
+			(xy 103.81 157) (xy 132 157)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "bb04a86a-f112-41d0-ae4d-c580d1e08ce2")
+	)
+	(wire
+		(pts
+			(xy 62 68.19) (xy 62 61)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "c69f153c-4337-402b-9c2f-a3bab6d4a7f3")
+	)
+	(wire
+		(pts
+			(xy 132 172.81) (xy 132 177)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "c7ead943-a80e-4304-ba08-57f18cd7c037")
+	)
+	(wire
+		(pts
+			(xy 55.62 61) (xy 62 61)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "ca9b7966-c4fb-4d12-b439-5edbe21564a8")
+	)
+	(wire
+		(pts
+			(xy 92 48) (xy 104.19 48)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "d990ad97-cbc7-401a-8478-3d62f58329cf")
+	)
+	(wire
+		(pts
+			(xy 30 48) (xy 40 48)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "22dff2fb-d261-441e-834b-d404b6176315")
+	)
+	(wire
+		(pts
+			(xy 40 48) (xy 60 48)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "c4da89ad-a062-4297-b7c6-3cdc6a3c87fd")
+	)
+	(wire
+		(pts
+			(xy 60 48) (xy 68.38 48)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "1d42a60d-791d-4098-8459-5e5121c8c16e")
+	)
+
+	(wire
+		(pts
+			(xy 138 63.81) (xy 138 68)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "e59b0b46-8850-4400-8bb3-1600b660bd2f")
+	)
+	(wire
+		(pts
+			(xy 138 48) (xy 138 56.19)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "edbf0042-353b-4b95-b27a-7e4faa260cd5")
+	)
+	(wire
+		(pts
+			(xy 132 104.14) (xy 160 104.14)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "62e397c3-f76e-4916-b197-e472aec0af53")
+	)
+	(wire
+		(pts
+			(xy 160 104.14) (xy 213.36 104.14)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "2095edbe-cef5-40ed-8c45-f3eabe175ec3")
+	)
+
+	(wire
+		(pts
+			(xy 180 48.26) (xy 208.28 48.26)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "f6dcf698-e273-4f9a-aa4f-2d36fa8bf2a6")
+	)
+	(wire
+		(pts
+			(xy 40 61) (xy 40.38 61)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "fb1599fa-cfce-4111-a5d7-e5afa31044c9")
+	)
+	(wire
+		(pts
+			(xy 62 75.81) (xy 62 80)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "fb48017b-cf62-4b8b-ba10-f884f4b68e27")
+	)
+	(label "WIFI_ANT_50R"
+		(at 145 104.14 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "12635c0c-d859-43a0-bba5-33ce2e047618")
+	)
+	(label "GNSS_ANT_50R"
+		(at 145 154.94 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "1ce76438-0cae-40a9-a31a-65f4525a8bf5")
+	)
+	(label "APOLLO_BLE_ANT"
+		(at 30 48 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "68efcbe0-5419-4322-9def-df68e826233e")
+	)
+	(label "WIFI_RF"
+		(at 30 103 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "91c007af-3010-4f77-983a-1704743d6058")
+	)
+	(label "APOLLO_BLE_AVDD_PA"
+		(at 62 61 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "93e5ede6-3164-42c5-9c6b-6fd79a3b269f")
+	)
+	(label "BLE_RF_50R"
+		(at 170 48 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "a86ba414-87f1-4bde-92c3-9e277cfbf010")
+	)
+	(label "GNSS_RF"
+		(at 30 157 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "de9d377c-f18a-4ad9-ac3d-e2244519ada9")
+	)
+	(wire
+		(pts
+			(xy 60 48) (xy 60 56.19)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "6ba99c3d-26bb-4658-a55e-75654132553a")
+	)
+	(wire
+		(pts
+			(xy 60 63.81) (xy 60 68)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "da725e04-df90-4fd2-877f-b07132c822ac")
+	)
+	(wire
+		(pts
+			(xy 92 48) (xy 92 56.19)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "a9bbed7a-63df-4d8c-aa52-7732dc0355ad")
+	)
+	(wire
+		(pts
+			(xy 92 63.81) (xy 92 68)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "a6b5bf14-e3b7-4140-91a1-c97c39a245b8")
+	)
+
+	(wire
+		(pts
+			(xy 180 48) (xy 180 48.26)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "decca114-23ae-45b5-a763-50aa77343492")
+	)
+
+	(wire
+		(pts
+			(xy 132 103) (xy 132 104.14)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "ec8f51c4-acb7-40aa-939f-8f99f4b8b307")
+	)
+
+	(symbol
+		(lib_id "Device:R")
+		(at 108 48 90)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "070346b3-80df-43ba-8600-b37d6a8412bf")
+		(property "Reference" "R1401"
+			(at 108 41.91 90)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(property "Value" "0R (Lm2 tune)"
+			(at 108 44.45 90)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(property "Footprint" "Resistor_SMD:R_0201_0603Metric"
+			(at 108 48 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 108 48 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Apollo BLE optional second series matching position; baseline short"
+			(at 108 48 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "a68c8d39-588e-496d-8199-bd4162eefdfd")
+		)
+		(pin "2"
+			(uuid "d816754f-59fd-4ba6-a6d5-eee401f30c86")
+		)
+		(instances
+			(project "sportwatch_revA"
+				(path "/063f9d99-6c07-44cf-ba32-e33897e06972/75ae0980-3881-4595-b838-ce5d267f780c"
+					(reference "R1401")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "sportwatch_custom:ANTENNA_TBD")
+		(at 213.36 48.26 90)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files no)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "124469e0-459f-40e5-be28-c563e2cd6074")
+		(property "Reference" "AE1401"
+			(at 222.25 46.99 90)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1 1)
+				)
+				(justify right)
+			)
+		)
+		(property "Value" "ANT_BLE_2G4_TBD"
+			(at 222.25 49.53 90)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1 1)
+				)
+				(justify right)
+			)
+		)
+		(property "Footprint" ""
+			(at 213.36 48.26 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 213.36 48.26 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "2.4 GHz BLE antenna placeholder; exact antenna frozen during mechanical/RF phase"
+			(at 213.36 48.26 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "3b4600a2-0300-4965-a283-2abf0d07e8d2")
+		)
+		(instances
+			(project "sportwatch_revA"
+				(path "/063f9d99-6c07-44cf-ba32-e33897e06972/75ae0980-3881-4595-b838-ce5d267f780c"
+					(reference "AE1401")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "sportwatch_custom:ANTENNA_TBD")
+		(at 218.44 104.14 90)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files no)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "16b34af3-1a88-49d7-9a0b-8af080990e5a")
+		(property "Reference" "AE1410"
+			(at 228.07 102.87 90)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1 1)
+				)
+				(justify right)
+			)
+		)
+		(property "Value" "ANT_WIFI_2G4_5G_TBD"
+			(at 228.07 105.41 90)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1 1)
+				)
+				(justify right)
+			)
+		)
+		(property "Footprint" ""
+			(at 218.44 104.14 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 218.44 104.14 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "2.4/5 GHz Wi-Fi antenna placeholder; exact antenna frozen during mechanical/RF phase"
+			(at 218.44 104.14 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "fcca4a38-a0ff-4ac9-8696-be58dbf30fa6")
+		)
+		(instances
+			(project "sportwatch_revA"
+				(path "/063f9d99-6c07-44cf-ba32-e33897e06972/75ae0980-3881-4595-b838-ce5d267f780c"
+					(reference "AE1410")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:C")
+		(at 132 169 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp yes)
+		(fields_autoplaced yes)
+		(uuid "2907f696-ead2-4f91-ae07-ad53c38a1da2")
+		(property "Reference" "C1421"
+			(at 134.54 166.46 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(property "Value" "DNP"
+			(at 134.54 171.54 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(property "Footprint" "Capacitor_SMD:C_0201_0603Metric"
+			(at 132 169 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 132 169 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "GNSS antenna-side shunt tuning capacitor"
+			(at 132 169 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "6599245e-6a4c-4024-be36-d5184d607dac")
+		)
+		(pin "2"
+			(uuid "c21be28d-a5d6-4231-98f6-2c2175823b70")
+		)
+		(instances
+			(project "sportwatch_revA"
+				(path "/063f9d99-6c07-44cf-ba32-e33897e06972/75ae0980-3881-4595-b838-ce5d267f780c"
+					(reference "C1421")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "sportwatch_custom:RF_TEST_PROVISION")
+		(at 160 115 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom no)
+		(on_board yes)
+		(in_pos_files no)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "31da9c38-38ad-4173-a733-144178a2f6e9")
+		(property "Reference" "TP1410"
+			(at 164 111 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(property "Value" "WIFI_RF_TEST_TBD"
+			(at 164 119 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 160 115 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 160 115 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Low-stub dual-band Wi-Fi RF test provision; exact implementation TBD"
+			(at 160 115 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "eaf08d5f-d285-4c49-8c81-bf9988ead3c5")
+		)
+		(instances
+			(project "sportwatch_revA"
+				(path "/063f9d99-6c07-44cf-ba32-e33897e06972/75ae0980-3881-4595-b838-ce5d267f780c"
+					(reference "TP1410")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:R")
+		(at 100 157 90)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "3adaadd8-7d6e-4305-9800-0489dce9cc5a")
+		(property "Reference" "R1420"
+			(at 100 151.13 90)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(property "Value" "0R"
+			(at 100 153.67 90)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(property "Footprint" "Resistor_SMD:R_0201_0603Metric"
+			(at 100 157 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 100 157 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "GNSS series tuning position; baseline through"
+			(at 100 157 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "02db0840-9384-4c10-aafb-9be5ad582ef8")
+		)
+		(pin "2"
+			(uuid "9ce78180-f802-4f29-ba21-408e87cb2ad7")
+		)
+		(instances
+			(project "sportwatch_revA"
+				(path "/063f9d99-6c07-44cf-ba32-e33897e06972/75ae0980-3881-4595-b838-ce5d267f780c"
+					(reference "R1420")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:GND")
+		(at 60 68 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "3c1ead9c-1eba-4f83-b66f-94039a7724a8")
+		(property "Reference" "#PWR1402"
+			(at 60 68 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "GND"
+			(at 60 70.54 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 60 68 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 60 68 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Global ground"
+			(at 60 68 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "6bab4573-83e1-492d-9d8a-8cf8d6edc79e")
+		)
+		(instances
+			(project "sportwatch_revA"
+				(path "/063f9d99-6c07-44cf-ba32-e33897e06972/75ae0980-3881-4595-b838-ce5d267f780c"
+					(reference "#PWR1402")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "sportwatch_custom:RF_TEST_PROVISION")
+		(at 160 169 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom no)
+		(on_board yes)
+		(in_pos_files no)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "49895ee7-4e9e-4be6-a53b-9681b2f205d3")
+		(property "Reference" "TP1420"
+			(at 164 165 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(property "Value" "GNSS_RF_TEST_TBD"
+			(at 164 173 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 160 169 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 160 169 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Low-stub GNSS L1/L5 RF test provision; exact implementation TBD"
+			(at 160 169 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "95a590b3-e331-47a1-8fcf-397dce70dc56")
+		)
+		(instances
+			(project "sportwatch_revA"
+				(path "/063f9d99-6c07-44cf-ba32-e33897e06972/75ae0980-3881-4595-b838-ce5d267f780c"
+					(reference "TP1420")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "sportwatch_custom:RF_INDUCTOR")
+		(at 76 48 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files no)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "4abd80c6-2f85-448e-87ff-d1c7a9eab020")
+		(property "Reference" "L1402"
+			(at 76 43.18 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(property "Value" "1.8nH"
+			(at 76 45.72 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 76 48 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 76 48 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Apollo BLE M1 series matching inductor; initial value"
+			(at 76 48 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "da730fe8-38d1-4f7a-866e-f81a0196ba6f")
+		)
+		(pin "2"
+			(uuid "0619e58d-447d-4291-b13c-3a11cc9afd57")
+		)
+		(instances
+			(project "sportwatch_revA"
+				(path "/063f9d99-6c07-44cf-ba32-e33897e06972/75ae0980-3881-4595-b838-ce5d267f780c"
+					(reference "L1402")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "sportwatch_custom:RF_INDUCTOR")
+		(at 48 61 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files no)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "5b792054-a7be-4738-8874-9a2490955960")
+		(property "Reference" "L1401"
+			(at 52 57 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(property "Value" "1.5nH"
+			(at 52 65 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 48 61 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 48 61 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Apollo BLE PA bias inductor; Ambiq initial value"
+			(at 48 61 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "0f2d9c26-2c94-4841-a3fb-27533e207dfd")
+		)
+		(pin "2"
+			(uuid "c57355e0-a6e2-4fb9-b6c7-d5f79a52566c")
+		)
+		(instances
+			(project "sportwatch_revA"
+				(path "/063f9d99-6c07-44cf-ba32-e33897e06972/75ae0980-3881-4595-b838-ce5d267f780c"
+					(reference "L1401")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:GND")
+		(at 132 177 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "7e5c6ffa-29a9-460a-b498-bef96913b0dc")
+		(property "Reference" "#PWR1421"
+			(at 132 177 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "GND"
+			(at 132 179.54 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 132 177 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 132 177 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Global ground"
+			(at 132 177 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "e3b78a40-50ad-48f6-8db3-d6042eb58733")
+		)
+		(instances
+			(project "sportwatch_revA"
+				(path "/063f9d99-6c07-44cf-ba32-e33897e06972/75ae0980-3881-4595-b838-ce5d267f780c"
+					(reference "#PWR1421")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "sportwatch_custom:RF_TEST_PROVISION")
+		(at 180 60 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom no)
+		(on_board yes)
+		(in_pos_files no)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "924d4c47-702c-48fa-a7cb-d8c827e8b9be")
+		(property "Reference" "TP1401"
+			(at 184 56 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(property "Value" "BLE_RF_TEST_TBD"
+			(at 184 64 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 180 60 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 180 60 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Low-stub RF test provision; exact probe/coax style TBD"
+			(at 180 60 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "b4a47bcf-5512-47c9-8190-40ed86a7f266")
+		)
+		(instances
+			(project "sportwatch_revA"
+				(path "/063f9d99-6c07-44cf-ba32-e33897e06972/75ae0980-3881-4595-b838-ce5d267f780c"
+					(reference "TP1401")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:GND")
+		(at 70 123 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "99b6d2a7-a4bd-4ce8-a163-d7fcf5b4a152")
+		(property "Reference" "#PWR1410"
+			(at 70 123 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "GND"
+			(at 70 125.54 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 70 123 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 70 123 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Global ground"
+			(at 70 123 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "71cf9792-ed1b-4738-a9ca-f6b265be8056")
+		)
+		(instances
+			(project "sportwatch_revA"
+				(path "/063f9d99-6c07-44cf-ba32-e33897e06972/75ae0980-3881-4595-b838-ce5d267f780c"
+					(reference "#PWR1410")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:C")
+		(at 62 72 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "ae8cf4ac-5619-4d4e-a13c-4d1f48d42d86")
+		(property "Reference" "C1401"
+			(at 64.54 69.46 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(property "Value" "18pF"
+			(at 64.54 74.54 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(property "Footprint" "Capacitor_SMD:C_0201_0603Metric"
+			(at 62 72 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 62 72 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Apollo BLE AVDD_PA RF bypass; Ambiq initial value"
+			(at 62 72 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "fc38aa6d-2108-43c8-bf74-eac51a9b5895")
+		)
+		(pin "2"
+			(uuid "ec27809b-f5ae-4413-9db2-7b0aea598994")
+		)
+		(instances
+			(project "sportwatch_revA"
+				(path "/063f9d99-6c07-44cf-ba32-e33897e06972/75ae0980-3881-4595-b838-ce5d267f780c"
+					(reference "C1401")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:C")
+		(at 70 115 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp yes)
+		(fields_autoplaced yes)
+		(uuid "b6f207ed-c720-42e8-8fe1-fc828fa8988e")
+		(property "Reference" "C1410"
+			(at 72.54 112.46 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(property "Value" "DNP"
+			(at 72.54 117.54 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(property "Footprint" "Capacitor_SMD:C_0201_0603Metric"
+			(at 70 115 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 70 115 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Wi-Fi antenna input shunt tuning capacitor"
+			(at 70 115 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "1242fdf1-ba5d-453e-a9ae-d595686060a5")
+		)
+		(pin "2"
+			(uuid "3d87d878-fc50-4fb9-8fb5-fb0bb00807ce")
+		)
+		(instances
+			(project "sportwatch_revA"
+				(path "/063f9d99-6c07-44cf-ba32-e33897e06972/75ae0980-3881-4595-b838-ce5d267f780c"
+					(reference "C1410")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:C")
+		(at 138 60 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp yes)
+		(fields_autoplaced yes)
+		(uuid "c0ce3883-d40b-48b8-81eb-311ecaf23dd5")
+		(property "Reference" "C1404"
+			(at 140.54 57.46 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(property "Value" "1.0pF DNP"
+			(at 140.54 62.54 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(property "Footprint" "Capacitor_SMD:C_0201_0603Metric"
+			(at 138 60 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 138 60 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Apollo BLE M3 optional shunt tuning capacitor"
+			(at 138 60 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "52f5339a-bc04-42de-a218-f6d735539649")
+		)
+		(pin "2"
+			(uuid "6958a929-8a24-4640-adfa-dec0f35d7383")
+		)
+		(instances
+			(project "sportwatch_revA"
+				(path "/063f9d99-6c07-44cf-ba32-e33897e06972/75ae0980-3881-4595-b838-ce5d267f780c"
+					(reference "C1404")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:C")
+		(at 70 169 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp yes)
+		(fields_autoplaced yes)
+		(uuid "c506df5c-a497-4bb3-a53e-2b8b3c7e490f")
+		(property "Reference" "C1420"
+			(at 72.54 166.46 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(property "Value" "DNP"
+			(at 72.54 171.54 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(property "Footprint" "Capacitor_SMD:C_0201_0603Metric"
+			(at 70 169 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 70 169 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "GNSS input-side shunt tuning capacitor"
+			(at 70 169 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "62d4966e-3036-47c9-93ff-f7b8c28e4335")
+		)
+		(pin "2"
+			(uuid "f1cb5b55-d1a7-4049-b367-ecadb87568d4")
+		)
+		(instances
+			(project "sportwatch_revA"
+				(path "/063f9d99-6c07-44cf-ba32-e33897e06972/75ae0980-3881-4595-b838-ce5d267f780c"
+					(reference "C1420")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "sportwatch_custom:ANTENNA_TBD")
+		(at 214.63 154.94 90)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files no)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "c7a71a53-41a4-488f-8da8-30181a6e9598")
+		(property "Reference" "AE1420"
+			(at 224.26 153.67 90)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1 1)
+				)
+				(justify right)
+			)
+		)
+		(property "Value" "ANT_GNSS_L1_L5_TBD"
+			(at 224.26 156.21 90)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1 1)
+				)
+				(justify right)
+			)
+		)
+		(property "Footprint" ""
+			(at 214.63 154.94 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 214.63 154.94 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Dual-band GNSS L1/L5 antenna placeholder; passive baseline"
+			(at 214.63 154.94 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "98415f24-4e88-49d0-9a12-84f3ca85c15e")
+		)
+		(instances
+			(project "sportwatch_revA"
+				(path "/063f9d99-6c07-44cf-ba32-e33897e06972/75ae0980-3881-4595-b838-ce5d267f780c"
+					(reference "AE1420")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:C")
+		(at 92 60 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "c7d2ec2a-06d0-458d-8a67-f3c48c91cc4c")
+		(property "Reference" "C1403"
+			(at 95.19 58.73 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1 1)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "3.2pF"
+			(at 95.19 61.27 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1 1)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Capacitor_SMD:C_0201_0603Metric"
+			(at 92 60 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 92 60 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Apollo BLE M2 shunt tuning capacitor; initial value"
+			(at 92 60 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "ab5ef2ee-477d-452f-ab5b-0b4e1488d548")
+		)
+		(pin "2"
+			(uuid "9390483e-5d7b-48d0-881f-d06763c39ef7")
+		)
+		(instances
+			(project "sportwatch_revA"
+				(path "/063f9d99-6c07-44cf-ba32-e33897e06972/75ae0980-3881-4595-b838-ce5d267f780c"
+					(reference "C1403")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:C")
+		(at 132 115 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp yes)
+		(fields_autoplaced yes)
+		(uuid "cbc6faf6-443c-4e43-bff2-2e5736bf8c25")
+		(property "Reference" "C1411"
+			(at 134.54 112.46 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(property "Value" "DNP"
+			(at 134.54 117.54 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(property "Footprint" "Capacitor_SMD:C_0201_0603Metric"
+			(at 132 115 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 132 115 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Wi-Fi antenna output shunt tuning capacitor"
+			(at 132 115 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "4561cba1-722d-45b4-8998-a8c20826e30b")
+		)
+		(pin "2"
+			(uuid "56857c35-ff39-4d87-8297-e5e6814d11e4")
+		)
+		(instances
+			(project "sportwatch_revA"
+				(path "/063f9d99-6c07-44cf-ba32-e33897e06972/75ae0980-3881-4595-b838-ce5d267f780c"
+					(reference "C1411")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:GND")
+		(at 70 177 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "d2e8af16-7e22-4947-a3d4-f0a21abc256c")
+		(property "Reference" "#PWR1420"
+			(at 70 177 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "GND"
+			(at 70 179.54 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 70 177 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 70 177 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Global ground"
+			(at 70 177 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "e982763b-b1e8-451b-8fdd-593555668fb6")
+		)
+		(instances
+			(project "sportwatch_revA"
+				(path "/063f9d99-6c07-44cf-ba32-e33897e06972/75ae0980-3881-4595-b838-ce5d267f780c"
+					(reference "#PWR1420")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:GND")
+		(at 138 68 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "d67bd252-7214-498c-86ba-fc726d93e795")
+		(property "Reference" "#PWR1404"
+			(at 138 68 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "GND"
+			(at 138 70.54 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 138 68 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 138 68 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Global ground"
+			(at 138 68 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "1284ecb4-45de-420a-8954-7ee03d134239")
+		)
+		(instances
+			(project "sportwatch_revA"
+				(path "/063f9d99-6c07-44cf-ba32-e33897e06972/75ae0980-3881-4595-b838-ce5d267f780c"
+					(reference "#PWR1404")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:GND")
+		(at 62 80 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "dd6a2316-0d1a-41a5-82b6-0ca7fe7c1491")
+		(property "Reference" "#PWR1401"
+			(at 62 80 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "GND"
+			(at 62 82.54 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 62 80 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 62 80 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Global ground"
+			(at 62 80 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "7a646481-f52d-4d75-bc10-e23f958d5bce")
+		)
+		(instances
+			(project "sportwatch_revA"
+				(path "/063f9d99-6c07-44cf-ba32-e33897e06972/75ae0980-3881-4595-b838-ce5d267f780c"
+					(reference "#PWR1401")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:C")
+		(at 155 48 90)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "e243606f-fa0c-4deb-a06c-7d3fa207abbb")
+		(property "Reference" "C1405"
+			(at 155 40.64 90)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(property "Value" "220pF"
+			(at 155 43.18 90)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(property "Footprint" "Capacitor_SMD:C_0201_0603Metric"
+			(at 155 48 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 155 48 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Apollo BLE antenna series coupling capacitor; baseline assumes ground-referenced antenna"
+			(at 155 48 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "0d260de6-12cc-42da-b597-ccb6907838f5")
+		)
+		(pin "2"
+			(uuid "ceeab6e4-9170-4780-b0dd-f12666a5f56f")
+		)
+		(instances
+			(project "sportwatch_revA"
+				(path "/063f9d99-6c07-44cf-ba32-e33897e06972/75ae0980-3881-4595-b838-ce5d267f780c"
+					(reference "C1405")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:GND")
+		(at 92 68 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "e8435a64-d870-43b1-a5b9-6a98f00dedb9")
+		(property "Reference" "#PWR1403"
+			(at 92 68 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "GND"
+			(at 92 70.54 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 92 68 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 92 68 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Global ground"
+			(at 92 68 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "08c6d7fa-c6b9-47df-be49-e115c0033f9c")
+		)
+		(instances
+			(project "sportwatch_revA"
+				(path "/063f9d99-6c07-44cf-ba32-e33897e06972/75ae0980-3881-4595-b838-ce5d267f780c"
+					(reference "#PWR1403")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:GND")
+		(at 132 123 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "ec45f475-4346-453b-bff9-44b96ec9cc11")
+		(property "Reference" "#PWR1411"
+			(at 132 123 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "GND"
+			(at 132 125.54 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 132 123 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 132 123 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Global ground"
+			(at 132 123 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "0e6eba23-7ee7-47cb-a830-acf600804c34")
+		)
+		(instances
+			(project "sportwatch_revA"
+				(path "/063f9d99-6c07-44cf-ba32-e33897e06972/75ae0980-3881-4595-b838-ce5d267f780c"
+					(reference "#PWR1411")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:R")
+		(at 100 103 90)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "eda87243-cf62-453f-a91f-66482ef870d2")
+		(property "Reference" "R1410"
+			(at 100 96.52 90)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(property "Value" "0R"
+			(at 100 99.06 90)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(property "Footprint" "Resistor_SMD:R_0201_0603Metric"
+			(at 100 103 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 100 103 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Wi-Fi series antenna tuning position; baseline through"
+			(at 100 103 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "c261e869-f460-41eb-b6da-b3e3b9a26f0d")
+		)
+		(pin "2"
+			(uuid "1655a719-852a-4395-ae4a-191a92b454d9")
+		)
+		(instances
+			(project "sportwatch_revA"
+				(path "/063f9d99-6c07-44cf-ba32-e33897e06972/75ae0980-3881-4595-b838-ce5d267f780c"
+					(reference "R1410")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:C")
+		(at 60 60 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "fc145f6c-d8dc-4347-9da4-df8359755707")
+		(property "Reference" "C1402"
+			(at 63.25 58.73 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1 1)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "2.8pF"
+			(at 63.25 61.27 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1 1)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Capacitor_SMD:C_0201_0603Metric"
+			(at 60 60 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 60 60 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Apollo BLE M1 shunt tuning capacitor; initial value"
+			(at 60 60 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "9146eba8-35a4-4127-950b-4469957227e1")
+		)
+		(pin "2"
+			(uuid "9cd2364c-5c08-448a-8da0-acb7ec86accd")
+		)
+		(instances
+			(project "sportwatch_revA"
+				(path "/063f9d99-6c07-44cf-ba32-e33897e06972/75ae0980-3881-4595-b838-ce5d267f780c"
+					(reference "C1402")
+					(unit 1)
+				)
+			)
+		)
+	)
 )
