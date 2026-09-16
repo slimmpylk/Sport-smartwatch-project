@@ -1,0 +1,14 @@
+{
+  "schema_version": "2.0",
+  "metadata": {
+    "passive_pin_ratio": 0.3,
+    "no_erc_suppressed": 2,
+    "unnamed_net_count": 2,
+    "frac_present": false,
+    "config_waived": "0 (0 demoted)",
+    "component_count": 11,
+    "pin_count": 40,
+    "undesignated_count": 0
+  },
+  "findings": []
+}

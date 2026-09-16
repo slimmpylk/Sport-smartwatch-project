@@ -1,0 +1,202 @@
+{
+    "$schema": "https://schemas.kicad.org/erc.v1.json",
+    "coordinate_units": "mm",
+    "date": "2026-09-16T08:41:08",
+    "ignored_checks": [
+        {
+            "description": "Global label only appears once in the schematic",
+            "key": "single_global_label"
+        },
+        {
+            "description": "Four connection points are joined together",
+            "key": "four_way_junction"
+        },
+        {
+            "description": "SPICE model issue",
+            "key": "simulation_model_issue"
+        },
+        {
+            "description": "Assigned footprint doesn't match footprint filters",
+            "key": "footprint_filter"
+        }
+    ],
+    "included_severities": [
+        "error",
+        "warning"
+    ],
+    "kicad_version": "10.0.5",
+    "sheets": [
+        {
+            "path": "/",
+            "uuid_path": "/36b06d08-fb09-42ef-a3a1-ee76b03b1225",
+            "violations": [
+                {
+                    "description": "Input pin not driven by any Output pins",
+                    "items": [
+                        {
+                            "description": "Symbol J1 Pin 5 [SPI_CLK, Input, Line]",
+                            "pos": {
+                                "x": 1.143,
+                                "y": 0.7112
+                            },
+                            "uuid": "2ebc7976-b39c-588a-a1a6-a93c09903bb8"
+                        }
+                    ],
+                    "severity": "error",
+                    "type": "pin_not_driven"
+                },
+                {
+                    "description": "Input Power pin not driven by any Output Power pins",
+                    "items": [
+                        {
+                            "description": "Symbol J1 Pin 11 [VBAT, Power input, Line]",
+                            "pos": {
+                                "x": 1.3208,
+                                "y": 0.635
+                            },
+                            "uuid": "739aab28-0be5-5fda-bd09-aa12201ee394"
+                        }
+                    ],
+                    "severity": "error",
+                    "type": "power_pin_not_driven"
+                },
+                {
+                    "description": "Input Power pin not driven by any Output Power pins",
+                    "items": [
+                        {
+                            "description": "Symbol J1 Pin 15 [VDD, Power input, Line]",
+                            "pos": {
+                                "x": 1.3716,
+                                "y": 0.635
+                            },
+                            "uuid": "5c75ad11-fdba-5355-8c1c-fd067bcc8c8e"
+                        }
+                    ],
+                    "severity": "error",
+                    "type": "power_pin_not_driven"
+                },
+                {
+                    "description": "Input Power pin not driven by any Output Power pins",
+                    "items": [
+                        {
+                            "description": "Symbol #PWR0301 Pin 1 [Power input, Line]",
+                            "pos": {
+                                "x": 1.3716,
+                                "y": 1.0287
+                            },
+                            "uuid": "ef45ac15-5905-574d-bdb7-22811d31bace"
+                        }
+                    ],
+                    "severity": "error",
+                    "type": "power_pin_not_driven"
+                },
+                {
+                    "description": "Label connected to only one pin",
+                    "items": [
+                        {
+                            "description": "Global Label 'DISP_QSPI_CLK'",
+                            "pos": {
+                                "x": 1.0795,
+                                "y": 0.7112
+                            },
+                            "uuid": "8c9a620a-96bb-5517-a261-aa1948a050ad"
+                        }
+                    ],
+                    "severity": "warning",
+                    "type": "isolated_pin_label"
+                },
+                {
+                    "description": "Label connected to only one pin",
+                    "items": [
+                        {
+                            "description": "Global Label 'DISP_QSPI_IO0'",
+                            "pos": {
+                                "x": 1.0795,
+                                "y": 0.7366
+                            },
+                            "uuid": "40076335-fd6b-58da-a2f9-c28e28a55f60"
+                        }
+                    ],
+                    "severity": "warning",
+                    "type": "isolated_pin_label"
+                },
+                {
+                    "description": "Label connected to only one pin",
+                    "items": [
+                        {
+                            "description": "Global Label 'DISP_QSPI_IO1'",
+                            "pos": {
+                                "x": 1.0795,
+                                "y": 0.762
+                            },
+                            "uuid": "1edc6282-98b1-56f0-a3f0-6746af42eba6"
+                        }
+                    ],
+                    "severity": "warning",
+                    "type": "isolated_pin_label"
+                },
+                {
+                    "description": "Label connected to only one pin",
+                    "items": [
+                        {
+                            "description": "Global Label 'DISP_QSPI_IO2'",
+                            "pos": {
+                                "x": 1.0795,
+                                "y": 0.7874
+                            },
+                            "uuid": "436f9949-5532-50f7-b6be-64bd5be2d9fe"
+                        }
+                    ],
+                    "severity": "warning",
+                    "type": "isolated_pin_label"
+                },
+                {
+                    "description": "Label connected to only one pin",
+                    "items": [
+                        {
+                            "description": "Global Label 'DISP_QSPI_IO3'",
+                            "pos": {
+                                "x": 1.0795,
+                                "y": 0.8128
+                            },
+                            "uuid": "8b9033c7-a026-590b-8cd2-d6597a2e31cc"
+                        }
+                    ],
+                    "severity": "warning",
+                    "type": "isolated_pin_label"
+                },
+                {
+                    "description": "Label connected to only one pin",
+                    "items": [
+                        {
+                            "description": "Global Label 'DISP_TE'",
+                            "pos": {
+                                "x": 1.0795,
+                                "y": 0.889
+                            },
+                            "uuid": "dfec90f3-67ad-54ce-993e-8bf33845e1bc"
+                        }
+                    ],
+                    "severity": "warning",
+                    "type": "isolated_pin_label"
+                },
+                {
+                    "description": "Label connected to only one pin",
+                    "items": [
+                        {
+                            "description": "Global Label 'TOUCH_INT'",
+                            "pos": {
+                                "x": 1.6764,
+                                "y": 0.762
+                            },
+                            "uuid": "8842b660-4584-56f9-a176-1dc4d0294b81"
+                        }
+                    ],
+                    "severity": "warning",
+                    "type": "isolated_pin_label"
+                }
+            ]
+        }
+    ],
+    "source": "03_DISPLAY.kicad_sch"
+}

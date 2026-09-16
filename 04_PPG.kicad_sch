@@ -4,5 +4,6553 @@
 	(generator_version "10.0")
 	(uuid "06cdc11f-e323-49ba-89bf-4b06e8905035")
 	(paper "A4")
-	(lib_symbols)
+	(title_block
+		(title "Rev-A — Optical PPG / HR / SpO2")
+		(date "2026-09-16")
+		(rev "A")
+		(comment 1 "2x MAX86141 + 2x SFH7018A + 4x SFH2703H")
+	)
+	(lib_symbols
+		(symbol "2026-09-16_07-42-39:MAX86141ENP+T"
+			(pin_names
+				(offset 0.254)
+			)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(in_pos_files yes)
+			(duplicate_pin_numbers_are_jumpers no)
+			(property "Reference" "U"
+				(at 27.94 10.16 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1.524 1.524)
+					)
+				)
+			)
+			(property "Value" "MAX86141ENP+T"
+				(at 27.94 7.62 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1.524 1.524)
+					)
+				)
+			)
+			(property "Footprint" "21-100134_N201A2-1_MXM"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+						(italic yes)
+					)
+				)
+			)
+			(property "Datasheet" "MAX86141ENP+T"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+						(italic yes)
+					)
+				)
+			)
+			(property "Description" ""
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "ki_locked" ""
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "ki_keywords" "MAX86141ENP+T"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "ki_fp_filters" "21-100134_N201A2-1_MXM"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(symbol "MAX86141ENP+T_0_1"
+				(polyline
+					(pts
+						(xy 7.62 5.08) (xy 7.62 -27.94)
+					)
+					(stroke
+						(width 0.127)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 7.62 -27.94) (xy 48.26 -27.94)
+					)
+					(stroke
+						(width 0.127)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 48.26 5.08) (xy 7.62 5.08)
+					)
+					(stroke
+						(width 0.127)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 48.26 -27.94) (xy 48.26 5.08)
+					)
+					(stroke
+						(width 0.127)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(pin power_in line
+					(at 0 0 0)
+					(length 7.62)
+					(name "VLED"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "A1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin input line
+					(at 0 -2.54 0)
+					(length 7.62)
+					(name "SCLK"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "A2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin output line
+					(at 0 -5.08 0)
+					(length 7.62)
+					(name "SDO"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "A3"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin input line
+					(at 0 -7.62 0)
+					(length 7.62)
+					(name "SDI"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "A4"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin input line
+					(at 0 -10.16 0)
+					(length 7.62)
+					(name "CSB"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "A5"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin output line
+					(at 0 -12.7 0)
+					(length 7.62)
+					(name "LED3_DRV"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "B1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin open_collector line
+					(at 0 -15.24 0)
+					(length 7.62)
+					(name "*INT"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "B2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin bidirectional line
+					(at 0 -17.78 0)
+					(length 7.62)
+					(name "GPIO1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "B3"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin bidirectional line
+					(at 0 -20.32 0)
+					(length 7.62)
+					(name "GPIO2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "B4"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin power_out line
+					(at 0 -22.86 0)
+					(length 7.62)
+					(name "VREF"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "B5"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin output line
+					(at 55.88 -22.86 180)
+					(length 7.62)
+					(name "LED2_DRV"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "C1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin power_in line
+					(at 55.88 -20.32 180)
+					(length 7.62)
+					(name "VDD_DIG"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "C2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin power_in line
+					(at 55.88 -17.78 180)
+					(length 7.62)
+					(name "GND_DIG"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "C3"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin power_in line
+					(at 55.88 -15.24 180)
+					(length 7.62)
+					(name "GND_ANA"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "C4"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin power_in line
+					(at 55.88 -12.7 180)
+					(length 7.62)
+					(name "PD_GND"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "C5"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin output line
+					(at 55.88 -10.16 180)
+					(length 7.62)
+					(name "LED1_DRV"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "D1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin power_in line
+					(at 55.88 -7.62 180)
+					(length 7.62)
+					(name "VDD_ANA"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "D2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin power_in line
+					(at 55.88 -5.08 180)
+					(length 7.62)
+					(name "PGND"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "D3"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin input line
+					(at 55.88 -2.54 180)
+					(length 7.62)
+					(name "PD2_IN"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "D4"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin input line
+					(at 55.88 0 180)
+					(length 7.62)
+					(name "PD1_IN"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "D5"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
+		(symbol "Device:C"
+			(pin_numbers
+				(hide yes)
+			)
+			(pin_names
+				(offset 0.254)
+			)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(in_pos_files yes)
+			(duplicate_pin_numbers_are_jumpers no)
+			(property "Reference" "C"
+				(at 0.635 2.54 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left)
+				)
+			)
+			(property "Value" "C"
+				(at 0.635 -2.54 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left)
+				)
+			)
+			(property "Footprint" ""
+				(at 0.9652 -3.81 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Datasheet" ""
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Description" "Unpolarized capacitor"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "ki_keywords" "cap capacitor"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "ki_fp_filters" "C_*"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(symbol "C_0_1"
+				(polyline
+					(pts
+						(xy -2.032 0.762) (xy 2.032 0.762)
+					)
+					(stroke
+						(width 0.508)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy -2.032 -0.762) (xy 2.032 -0.762)
+					)
+					(stroke
+						(width 0.508)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+			)
+			(symbol "C_1_1"
+				(pin passive line
+					(at 0 3.81 270)
+					(length 2.794)
+					(name ""
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 0 -3.81 90)
+					(length 2.794)
+					(name ""
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
+		(symbol "Device:R"
+			(pin_numbers
+				(hide yes)
+			)
+			(pin_names
+				(offset 0)
+			)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(in_pos_files yes)
+			(duplicate_pin_numbers_are_jumpers no)
+			(property "Reference" "R"
+				(at 2.032 0 90)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Value" "R"
+				(at 0 0 90)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" ""
+				(at -1.778 0 90)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Datasheet" ""
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Description" "Resistor"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "ki_keywords" "R res resistor"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "ki_fp_filters" "R_*"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(symbol "R_0_1"
+				(rectangle
+					(start -1.016 -2.54)
+					(end 1.016 2.54)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+			)
+			(symbol "R_1_1"
+				(pin passive line
+					(at 0 3.81 270)
+					(length 1.27)
+					(name ""
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 0 -3.81 90)
+					(length 1.27)
+					(name ""
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
+		(symbol "power:GND"
+			(power global)
+			(pin_numbers
+				(hide yes)
+			)
+			(pin_names
+				(offset 0)
+				(hide yes)
+			)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(in_pos_files yes)
+			(duplicate_pin_numbers_are_jumpers no)
+			(property "Reference" "#PWR"
+				(at 0 -6.35 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Value" "GND"
+				(at 0 -3.81 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" ""
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Datasheet" ""
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "ki_keywords" "global power"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(symbol "GND_0_1"
+				(polyline
+					(pts
+						(xy 0 0) (xy 0 -1.27) (xy 1.27 -1.27) (xy 0 -2.54) (xy -1.27 -1.27) (xy 0 -1.27)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+			)
+			(symbol "GND_1_1"
+				(pin power_in line
+					(at 0 0 270)
+					(length 0)
+					(name ""
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
+		(symbol "sportwatch_custom:NetTie_2"
+			(exclude_from_sim no)
+			(in_bom no)
+			(on_board yes)
+			(in_pos_files no)
+			(duplicate_pin_numbers_are_jumpers no)
+			(property "Reference" "NT"
+				(at 0 3.81 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Value" "NetTie_2"
+				(at 0 -3.81 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" ""
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Datasheet" ""
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Description" "Single-point net tie; assign proper net-tie footprint during footprint audit"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(symbol "NetTie_2_0_1"
+				(polyline
+					(pts
+						(xy -2.54 0) (xy 2.54 0)
+					)
+					(stroke
+						(width 0.508)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(pin passive line
+					(at -5.08 0 0)
+					(length 2.54)
+					(name "A"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 5.08 0 180)
+					(length 2.54)
+					(name "B"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
+		(symbol "sportwatch_custom:SFH2703H"
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(in_pos_files yes)
+			(duplicate_pin_numbers_are_jumpers no)
+			(property "Reference" "D"
+				(at 0 5.08 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Value" "SFH2703H"
+				(at 0 -5.08 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" ""
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Datasheet" "SFH 2703_EN.pdf"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Description" "OSRAM SFH 2703H broadband silicon PIN photodiode, Q65115A2199"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(symbol "SFH2703H_0_1"
+				(rectangle
+					(start -5.08 3.81)
+					(end 5.08 -3.81)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(text "PD"
+					(at 0 0 0)
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(pin passive line
+					(at -7.62 0 0)
+					(length 2.54)
+					(name "CATHODE"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 7.62 0 180)
+					(length 2.54)
+					(name "ANODE"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
+		(symbol "sportwatch_custom:SFH7018A"
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(in_pos_files yes)
+			(duplicate_pin_numbers_are_jumpers no)
+			(property "Reference" "D"
+				(at 0 12.7 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Value" "SFH7018A"
+				(at 0 -12.7 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" ""
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Datasheet" "SFH 7018A_EN.pdf"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Description" "OSRAM SFH 7018A green/red/940nm biometric emitter, Q65113A6157"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(symbol "SFH7018A_0_1"
+				(rectangle
+					(start -12.7 10.16)
+					(end 12.7 -10.16)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(text "GREEN / RED / IR"
+					(at 0 0 0)
+					(effects
+						(font
+							(size 1 1)
+						)
+					)
+				)
+				(pin passive line
+					(at -15.24 7.62 0)
+					(length 2.54)
+					(name "K_GREEN_1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 15.24 7.62 180)
+					(length 2.54)
+					(name "A_RED_IR_1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at -15.24 2.54 0)
+					(length 2.54)
+					(name "K_IR"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "3"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 15.24 2.54 180)
+					(length 2.54)
+					(name "A_RED_IR_2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "4"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at -15.24 -2.54 0)
+					(length 2.54)
+					(name "K_RED"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "5"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 15.24 -2.54 180)
+					(length 2.54)
+					(name "A_GREEN"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "6"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at -15.24 -7.62 0)
+					(length 2.54)
+					(name "K_GREEN_2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "7"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at -15.24 -10.16 0)
+					(length 2.54)
+					(name "K_GREEN_3"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "8"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
+	)
+	(text "04_PPG — DUAL MAX86141 OPTICAL HR / SpO2 FRONT END — REV A"
+		(exclude_from_sim no)
+		(at 15 12 0)
+		(effects
+			(font
+				(size 1.45 1.45)
+			)
+			(justify left bottom)
+		)
+		(uuid "04686165-3557-49f6-acb4-b517df67b806")
+	)
+	(text "AFE architecture: both MAX86141 devices share SPI SCLK/MOSI/MISO; each has its own CS and active-low open-drain INT."
+		(exclude_from_sim no)
+		(at 18.542 211.176 0)
+		(effects
+			(font
+				(size 0.65 0.65)
+			)
+			(justify left bottom)
+		)
+		(uuid "0842a02e-c398-4a68-a7c2-53f7a4f62eb8")
+	)
+	(text "VDD_ANA and VDD_DIG use the same VOUT1_1V8 rail and must be shorted locally at each WLP. ADI layout guidance calls for 22uF + 0.1uF combined decoupling and 1uF on VREF."
+		(exclude_from_sim no)
+		(at 18.542 223.976 0)
+		(effects
+			(font
+				(size 0.65 0.65)
+			)
+			(justify left bottom)
+		)
+		(uuid "3c6a3c67-a62f-4d68-9807-e02b6754b13c")
+	)
+	(text "LED mapping per AFE: LED1_DRV=GREEN, LED2_DRV=RED, LED3_DRV=IR. Each AFE drives one SFH7018A package and receives two SFH2703H photodiodes."
+		(exclude_from_sim no)
+		(at 18.542 217.576 0)
+		(effects
+			(font
+				(size 0.65 0.65)
+			)
+			(justify left bottom)
+		)
+		(uuid "5a9779e5-ed77-4de2-b336-b71ab236d74b")
+	)
+	(text "PD_GND1/2 are separate shield/reference nets and join PCB GND only through NT401/NT402. Use real net-tie copper/footprints, not resistors, during PCB footprint/layout audit."
+		(exclude_from_sim no)
+		(at 18.542 227.176 0)
+		(effects
+			(font
+				(size 0.65 0.65)
+			)
+			(justify left bottom)
+		)
+		(uuid "5cfa9a5a-e71e-4624-88c4-fe91b1d8b66d")
+	)
+	(text "Custom SFH7018A and SFH2703H symbols are embedded in this schematic; exact optical footprints are intentionally left for the footprint audit."
+		(exclude_from_sim no)
+		(at 15 18 0)
+		(effects
+			(font
+				(size 0.85 0.85)
+			)
+			(justify left bottom)
+		)
+		(uuid "8c59c736-4b75-42f8-9a29-fe593a00b346")
+	)
+	(text "MAX86141 imported WLP footprint is retained for now. ALL three custom optical footprints plus WLP ball orientation are verified during the dedicated pre-PCB footprint audit."
+		(exclude_from_sim no)
+		(at 18.542 239.976 0)
+		(effects
+			(font
+				(size 0.65 0.65)
+			)
+			(justify left bottom)
+		)
+		(uuid "b802c43a-dd4e-4c07-a3d8-903bc833bfb4")
+	)
+	(text "GPIO1 of both AFEs is tied to PPG_SAMPLE_SYNC. Firmware can use GPIO_CTRL=1010; one falling edge starts one programmed sample on both AFEs. GPIO2 is NC because no external LED mux is used."
+		(exclude_from_sim no)
+		(at 18.542 214.376 0)
+		(effects
+			(font
+				(size 0.65 0.65)
+			)
+			(justify left bottom)
+		)
+		(uuid "c0ff339f-7861-440d-b4f1-bbe5339d34b1")
+	)
+	(text "CRITICAL PCB: fully shield each PD_IN with its corresponding PD_GND; no unrelated traces/vias through or over the PD_GND shield. Keep PD paths extremely short."
+		(exclude_from_sim no)
+		(at 18.542 230.376 0)
+		(effects
+			(font
+				(size 0.65 0.65)
+			)
+			(justify left bottom)
+		)
+		(uuid "c53e52a6-4bd6-4978-8a98-024666fb5f57")
+	)
+	(text "SFH7018A exact pad map embedded from OSRAM: 1/7/8 green cathode, 2/4 red+IR anode, 3 IR cathode, 5 red cathode, 6 green anode. SFH2703H symbol uses pin1 cathode, pin2 anode."
+		(exclude_from_sim no)
+		(at 18.542 236.776 0)
+		(effects
+			(font
+				(size 0.65 0.65)
+			)
+			(justify left bottom)
+		)
+		(uuid "ddf7f812-942d-4d1c-8176-d6cf5a177b3b")
+	)
+	(text "Keep the complete PPG analog/optical region away from Wi-Fi/GNSS RF, display/high-speed buses, switchers, inductors and the haptic actuator. Optical barriers and source-detector spacing are mechanical-design items."
+		(exclude_from_sim no)
+		(at 18.542 233.576 0)
+		(effects
+			(font
+				(size 0.65 0.65)
+			)
+			(justify left bottom)
+		)
+		(uuid "e1eaff15-9a3a-46da-85dd-716660853188")
+	)
+	(text "PPG_VLED is intentionally an external 3.1-5.5 V rail. Exact low-noise boost/regulator is not frozen yet; do not connect this net directly to an unsuitable system rail."
+		(exclude_from_sim no)
+		(at 18.542 220.776 0)
+		(effects
+			(font
+				(size 0.65 0.65)
+			)
+			(justify left bottom)
+		)
+		(uuid "e856457f-4128-40d5-a0a3-9e032a1bee2a")
+	)
+	(junction
+		(at 202 152)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "58fa26db-1688-4ecd-9329-2f4272c93082")
+	)
+	(junction
+		(at 202 96)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "9cfc09f5-1894-4623-84c3-8fc517831ab0")
+	)
+	(no_connect
+		(at 50.8 140.97)
+		(uuid "81f9ff58-73bb-4d9c-b601-e168069704c0")
+	)
+	(no_connect
+		(at 54.61 85.09)
+		(uuid "8ee8609e-3104-4f5f-8322-2648d744b6e9")
+	)
+	(wire
+		(pts
+			(xy 106.68 135.89) (xy 121.23 135.89)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "040ace53-f00b-4b7f-8410-83cdb9d12733")
+	)
+	(wire
+		(pts
+			(xy 50.8 143.51) (xy 30.23 143.51)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "07c1000d-f061-431f-b0d4-61a4dccf3a4f")
+	)
+	(wire
+		(pts
+			(xy 247 62.19) (xy 247 58)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "08bec8db-26e8-4c59-a7da-14168b119d7b")
+	)
+	(wire
+		(pts
+			(xy 54.61 80.01) (xy 34.04 80.01)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "0bc5591d-1c53-4725-8c13-7eb30df61e05")
+	)
+	(wire
+		(pts
+			(xy 110.49 80.01) (xy 125.04 80.01)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "0cf5275d-80d3-42f1-811f-90bf9c6b0dd9")
+	)
+	(wire
+		(pts
+			(xy 106.68 130.81) (xy 121.23 130.81)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "0ed625bb-a1b3-4ff0-88eb-1bb1f78de8bd")
+	)
+	(wire
+		(pts
+			(xy 233 69.81) (xy 233 74)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "10997541-be45-4140-be2d-a293612e4de3")
+	)
+	(wire
+		(pts
+			(xy 233 118.19) (xy 233 114)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "13fb29c0-f0f8-48b3-a6eb-c442741f4e76")
+	)
+	(wire
+		(pts
+			(xy 247 69.81) (xy 247 74)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "17028951-2370-478c-b0b7-66804d08a5f2")
+	)
+	(wire
+		(pts
+			(xy 110.49 69.85) (xy 125.04 69.85)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "1c1c3f9c-9759-4205-b55e-85e4d4edc931")
+	)
+	(wire
+		(pts
+			(xy 202 88.38) (xy 202 96)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "21900565-22d9-4bef-9403-46b19afa9259")
+	)
+	(wire
+		(pts
+			(xy 240.24 88.38) (xy 248 88.38)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "23441876-5e24-44e3-a26d-a1f170092f24")
+	)
+	(wire
+		(pts
+			(xy 106.68 125.73) (xy 121.23 125.73)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "2902f189-119d-4b68-a5aa-8b727f07040b")
+	)
+	(wire
+		(pts
+			(xy 250.08 102) (xy 260 102)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "2a1d57fe-8231-4952-aa7e-e50f6243a96a")
+	)
+	(wire
+		(pts
+			(xy 233 62.19) (xy 233 58)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "2a5e1875-ed29-45a3-9c31-8ec96ff096cb")
+	)
+	(wire
+		(pts
+			(xy 106.68 138.43) (xy 121.23 138.43)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "2c430473-6473-4a83-91ec-7e15d78221f3")
+	)
+	(wire
+		(pts
+			(xy 201.93 96) (xy 202 96)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "2c4bec75-1c4b-4b9e-b7e8-5d1b7c0c1769")
+	)
+	(wire
+		(pts
+			(xy 247 125.81) (xy 247 130)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "2ea1bbf6-23a6-4c6c-8098-3184ca2e3e12")
+	)
+	(wire
+		(pts
+			(xy 50.8 133.35) (xy 30.23 133.35)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "305eb2cd-1f92-437e-af8c-434fc9818aac")
+	)
+	(wire
+		(pts
+			(xy 50.8 138.43) (xy 30.23 138.43)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "3121a287-165f-44aa-815b-889ecab32dec")
+	)
+	(wire
+		(pts
+			(xy 190.11 158.75) (xy 190.11 149.46)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "35ec21f7-4822-4111-acff-698047bd01a4")
+	)
+	(wire
+		(pts
+			(xy 50.8 120.65) (xy 30.23 120.65)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "36de357a-96a7-4131-9ebe-b3d60abebe79")
+	)
+	(wire
+		(pts
+			(xy 59 35.81) (xy 59 40)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "37b55ba3-3aed-4ff2-89cd-4874461a8bbe")
+	)
+	(wire
+		(pts
+			(xy 54.61 67.31) (xy 34.04 67.31)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "3a523b4f-bd89-4ede-8e5f-4cdf9b0e6dc9")
+	)
+	(wire
+		(pts
+			(xy 76 35.81) (xy 76 40)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "404f0785-55d3-44f9-aac1-57423cf76b79")
+	)
+	(wire
+		(pts
+			(xy 106.68 143.51) (xy 121.23 143.51)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "41f75839-d262-40f0-8f42-38ad8af96a6b")
+	)
+	(wire
+		(pts
+			(xy 205 62.19) (xy 205 58)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "42da7e39-abb9-4eae-89d5-89f73f87ca05")
+	)
+	(wire
+		(pts
+			(xy 183.76 92.71) (xy 183.76 93.46)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "474f08d0-f0fd-4d7d-85a4-fd1a5b38d529")
+	)
+	(wire
+		(pts
+			(xy 59 28.19) (xy 59 24)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "49cea335-6dd2-4559-904f-3d96f6491082")
+	)
+	(wire
+		(pts
+			(xy 54.61 69.85) (xy 34.04 69.85)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "4aefc3df-0d50-42b4-b5b9-676aa5627d66")
+	)
+	(wire
+		(pts
+			(xy 54.61 64.77) (xy 34.04 64.77)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "4f1d290b-9cfd-4000-8c03-fad5a20bc40e")
+	)
+	(wire
+		(pts
+			(xy 239.92 102) (xy 226 102)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "51e686a3-e23d-4682-8bca-f3566a346ded")
+	)
+	(wire
+		(pts
+			(xy 106.68 133.35) (xy 121.23 133.35)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "5557bc61-f2c1-44a2-b150-b477d4181383")
+	)
+	(wire
+		(pts
+			(xy 54.61 87.63) (xy 34.04 87.63)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "55947f7d-10ab-4ad3-9be1-638875d779e7")
+	)
+	(wire
+		(pts
+			(xy 240.24 154.54) (xy 248 154.54)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "587a5adc-3b44-43f7-a265-34f6f21840e9")
+	)
+	(wire
+		(pts
+			(xy 240.24 149.46) (xy 248 149.46)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "5a94ee51-d345-4691-a36d-e5b91531e873")
+	)
+	(wire
+		(pts
+			(xy 110.49 64.77) (xy 125.04 64.77)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "5a9f86b5-8572-490d-bcba-133a32dd9708")
+	)
+	(wire
+		(pts
+			(xy 50.8 125.73) (xy 30.23 125.73)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "5b051a79-9207-4903-ba13-c14f2313b3d0")
+	)
+	(wire
+		(pts
+			(xy 110.49 74.93) (xy 125.04 74.93)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "5c337756-c038-41c1-a57c-3bf715bbf6b8")
+	)
+	(wire
+		(pts
+			(xy 106.68 128.27) (xy 121.23 128.27)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "5dcd9ba9-20c3-44f7-892e-a78d183d24fd")
+	)
+	(wire
+		(pts
+			(xy 267.38 79) (xy 257 79)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "5dd81ffc-6a3c-48d7-ab99-93f56da536e0")
+	)
+	(wire
+		(pts
+			(xy 54.61 74.93) (xy 34.04 74.93)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "5edc6d97-bb7a-42fe-914c-ad22e3c127c9")
+	)
+	(wire
+		(pts
+			(xy 205 69.81) (xy 205 74)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "5fc47dbe-4ac5-4305-9e65-8fdd29ffc481")
+	)
+	(wire
+		(pts
+			(xy 282.62 113) (xy 290 113)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "60a058f1-2672-4efd-bb2b-8402fb3239d6")
+	)
+	(wire
+		(pts
+			(xy 93 35.81) (xy 93 40)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "60d1147e-1c16-4285-b093-b4c729ab1126")
+	)
+	(wire
+		(pts
+			(xy 205 118.19) (xy 205 114)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "6274f3b9-028d-45f1-9ddf-b622d677ac36")
+	)
+	(wire
+		(pts
+			(xy 25 28.19) (xy 25 24)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "67cc60d0-5017-40d0-b6ea-2db763f77336")
+	)
+	(wire
+		(pts
+			(xy 240.24 93.46) (xy 248 93.46)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "6d9452d6-3a2b-4209-b27c-bc8f49013b6f")
+	)
+	(wire
+		(pts
+			(xy 240.24 98.54) (xy 248 98.54)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "7049a863-c3a2-401d-91f3-c2321ee2b613")
+	)
+	(wire
+		(pts
+			(xy 248 144.38) (xy 248 154.54)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "70b3377a-f560-4a34-9b07-4483b8475bc5")
+	)
+	(wire
+		(pts
+			(xy 209.76 88.38) (xy 202 88.38)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "71348877-e633-4e23-966f-cda812cd2215")
+	)
+	(wire
+		(pts
+			(xy 188.84 154.94) (xy 135.89 154.94)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "728b8240-92ca-4945-ba7d-3d0fe17686f1")
+	)
+	(wire
+		(pts
+			(xy 110.49 82.55) (xy 125.04 82.55)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "74405665-393d-4bf0-9be3-6c405de3ced9")
+	)
+	(wire
+		(pts
+			(xy 42 35.81) (xy 42 40)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "75eea22b-2435-4ac3-8d85-abb4bdcbc159")
+	)
+	(wire
+		(pts
+			(xy 106.68 120.65) (xy 121.23 120.65)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "7e031981-ad91-462c-bb64-89b35aad6a1f")
+	)
+	(wire
+		(pts
+			(xy 205 125.81) (xy 205 130)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "7e5a17ab-40b3-4229-86f1-dda620161c73")
+	)
+	(wire
+		(pts
+			(xy 182.49 98.54) (xy 209.76 98.54)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "81bb645b-4218-48be-aafd-27b8a4ad5b4d")
+	)
+	(wire
+		(pts
+			(xy 93 28.19) (xy 93 24)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "83be58e7-7894-40ea-aea3-f23dacbbe10d")
+	)
+	(wire
+		(pts
+			(xy 50.8 128.27) (xy 30.23 128.27)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "8b369a72-7e6c-407d-8be6-66f2d9bf9079")
+	)
+	(wire
+		(pts
+			(xy 110.49 67.31) (xy 125.04 67.31)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "8b893f88-9086-4a9f-a5ce-fded59f3c5e6")
+	)
+	(wire
+		(pts
+			(xy 188.84 154.94) (xy 188.84 154.54)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "8ca8537f-5801-467d-9628-08ece9520236")
+	)
+	(wire
+		(pts
+			(xy 106.68 140.97) (xy 121.23 140.97)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "8cc58a3a-fe26-4393-ab9d-0c4dc152514b")
+	)
+	(wire
+		(pts
+			(xy 209.76 162.16) (xy 202 162.16)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "8d5e0dfd-d794-4d48-9e3c-98fe44ae56d0")
+	)
+	(wire
+		(pts
+			(xy 190.11 149.46) (xy 209.76 149.46)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "938409ae-bb33-4c45-9fa4-36110d697361")
+	)
+	(wire
+		(pts
+			(xy 54.61 72.39) (xy 34.04 72.39)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "940391c2-6da2-4266-9eda-b828d37e3a25")
+	)
+	(wire
+		(pts
+			(xy 219 69.81) (xy 219 74)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "95f7432f-69f2-4ef0-9807-561c8e1aa2cf")
+	)
+	(wire
+		(pts
+			(xy 188.84 154.54) (xy 209.76 154.54)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "9a917357-af99-4988-a163-12b6d0ccecea")
+	)
+	(wire
+		(pts
+			(xy 25 35.81) (xy 25 40)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "9acc1ae1-06c6-4076-9d54-7bca3a8fa9cf")
+	)
+	(wire
+		(pts
+			(xy 282.62 135) (xy 290 135)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "9dbe68e7-0835-45c0-a81f-d097bc11ae92")
+	)
+	(wire
+		(pts
+			(xy 42 28.19) (xy 42 24)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "9e381e21-b138-4e51-bb14-5de554d068e2")
+	)
+	(wire
+		(pts
+			(xy 250.08 158) (xy 260 158)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "a37f4792-cb05-4654-8854-feef1046f665")
+	)
+	(wire
+		(pts
+			(xy 110.49 72.39) (xy 125.04 72.39)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "a408e528-cfe0-4697-b2cc-702977a03f93")
+	)
+	(wire
+		(pts
+			(xy 219 118.19) (xy 219 114)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "a68cae8f-b463-474d-97ac-b0a4e8c924fd")
+	)
+	(wire
+		(pts
+			(xy 219 62.19) (xy 219 58)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "ab42b0ce-b1b0-4c44-98c5-ec7b202a0dc7")
+	)
+	(wire
+		(pts
+			(xy 110.49 85.09) (xy 125.04 85.09)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "ad5be0ce-7a9a-4474-9e7f-f54521436008")
+	)
+	(wire
+		(pts
+			(xy 240.24 144.38) (xy 248 144.38)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "adfe4b19-f774-41a3-9fb6-a51000145622")
+	)
+	(wire
+		(pts
+			(xy 202 152) (xy 202 162.16)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "b0a957ef-0cba-40d3-9b7b-006603c42da1")
+	)
+	(wire
+		(pts
+			(xy 247 118.19) (xy 247 114)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "b17d37ba-62d3-475b-a1cb-588869f65c77")
+	)
+	(wire
+		(pts
+			(xy 183.76 93.46) (xy 209.76 93.46)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "b4d191f6-1840-46e6-b3f3-7ea2e40c8a5e")
+	)
+	(wire
+		(pts
+			(xy 76 28.19) (xy 76 24)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "b5a73646-f65e-40e9-a353-ba8d770f7c7c")
+	)
+	(wire
+		(pts
+			(xy 248 88.38) (xy 248 98.54)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "ba9335a2-8050-4997-ab1d-bfc1c6f9f530")
+	)
+	(wire
+		(pts
+			(xy 202 144.38) (xy 202 152)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "bc27346a-5448-412f-bb14-583b5a20e82c")
+	)
+	(wire
+		(pts
+			(xy 110.49 87.63) (xy 125.04 87.63)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "be8bdf98-f39f-4094-8d7c-d8c935f96906")
+	)
+	(wire
+		(pts
+			(xy 209.76 106.16) (xy 202 106.16)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "bebcfc52-b54e-4536-a43f-d45d0201bf25")
+	)
+	(wire
+		(pts
+			(xy 282.62 79) (xy 290 79)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "c0ae26a5-d0b6-40c6-aba7-612b02ae13cd")
+	)
+	(wire
+		(pts
+			(xy 182.49 99.06) (xy 139.7 99.06)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "c0f97e56-1b26-46db-94a0-b8905c2990f3")
+	)
+	(wire
+		(pts
+			(xy 209.76 144.38) (xy 202 144.38)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "c1118e92-450d-4c2c-af55-bae931d53cb6")
+	)
+	(wire
+		(pts
+			(xy 201.93 152) (xy 202 152)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "c7321ffa-adce-4929-a04c-5d21523fd4b0")
+	)
+	(wire
+		(pts
+			(xy 50.8 135.89) (xy 30.23 135.89)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "c78f7357-342a-460c-923d-f450cb2849cb")
+	)
+	(wire
+		(pts
+			(xy 209.76 159.62) (xy 202 159.62)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "c9510785-036f-4548-8943-7b22361ffcd2")
+	)
+	(wire
+		(pts
+			(xy 140.97 96.52) (xy 201.93 96)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "c97a32e2-9da6-4efa-ab09-c1f44cb7f1a4")
+	)
+	(wire
+		(pts
+			(xy 282.62 169) (xy 290 169)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "cbc6b8e3-d167-4e55-9878-25a7389b7080")
+	)
+	(wire
+		(pts
+			(xy 106.68 123.19) (xy 121.23 123.19)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "ccead7f4-295c-4f26-8765-6ef2ae80187e")
+	)
+	(wire
+		(pts
+			(xy 182.49 99.06) (xy 182.49 98.54)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "da65a16f-1131-45e7-b9ba-9a32d3fd4751")
+	)
+	(wire
+		(pts
+			(xy 183.76 92.71) (xy 137.16 92.71)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "db75fe28-bfb9-416d-9bd1-eaafc034b740")
+	)
+	(wire
+		(pts
+			(xy 239.92 158) (xy 226 158)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "dd13a0cf-763f-4aa2-a97a-47b304cf5db7")
+	)
+	(wire
+		(pts
+			(xy 110.49 77.47) (xy 125.04 77.47)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "dfc4e40d-782a-419d-946c-21e18a776dba")
+	)
+	(wire
+		(pts
+			(xy 190.11 158.75) (xy 132.08 158.75)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "e129131e-b065-49cf-ad27-ff5811c2f359")
+	)
+	(wire
+		(pts
+			(xy 54.61 77.47) (xy 34.04 77.47)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "e2ff773f-8643-4188-bd1a-01d929222230")
+	)
+	(wire
+		(pts
+			(xy 209.76 103.62) (xy 202 103.62)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "e4335c76-bcf9-4043-84a3-e14e6cbe0eeb")
+	)
+	(wire
+		(pts
+			(xy 267.38 169) (xy 257 169)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "e6aaed66-210f-4ba0-bd33-c9bde06067ee")
+	)
+	(wire
+		(pts
+			(xy 50.8 130.81) (xy 30.23 130.81)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "e78b195c-a54d-4ee6-ac1f-69da460ca610")
+	)
+	(wire
+		(pts
+			(xy 267.38 113) (xy 257 113)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "e85695ff-2c73-4c4e-bbef-8eb9b3591a33")
+	)
+	(wire
+		(pts
+			(xy 50.8 123.19) (xy 30.23 123.19)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "e8ff54a1-7a49-4f4f-b1ea-aa79f4c01669")
+	)
+	(wire
+		(pts
+			(xy 219 125.81) (xy 219 130)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "edea43a2-70a7-47ee-9916-01f216a722eb")
+	)
+	(wire
+		(pts
+			(xy 233 125.81) (xy 233 130)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "fb5124de-e4f7-4416-9133-c9f03ae5748d")
+	)
+	(wire
+		(pts
+			(xy 137.16 151.13) (xy 201.93 152)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "fde3606e-fadd-4f6b-ad70-3ada39c1b1ef")
+	)
+	(wire
+		(pts
+			(xy 202 96) (xy 202 106.16)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "fdebfcfa-3970-4c53-a2ba-701f02c4c65a")
+	)
+	(wire
+		(pts
+			(xy 54.61 82.55) (xy 34.04 82.55)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "ffbcce40-efae-40dc-a6ae-93ab6d366476")
+	)
+	(wire
+		(pts
+			(xy 267.38 135) (xy 257 135)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "ffeb6045-134f-449d-8fa0-c58c233e92a6")
+	)
+	(label "PPG2_LED_IR_DRV"
+		(at 132.08 158.75 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "036cfe44-144f-481b-86cb-ef222f7d025b")
+	)
+	(label "PPG_VLED"
+		(at 248 93.46 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "07c3fc3f-c94f-4a13-82ed-975ccba41194")
+	)
+	(label "PPG1_INT_N"
+		(at 59 40 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "094ce328-8d2a-4817-8f3d-26386efa9d49")
+	)
+	(label "VOUT1_1V8"
+		(at 125.04 72.39 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "0f2ae274-1ce0-4a3e-8f3f-888acabc155b")
+	)
+	(label "PPG_SAMPLE_SYNC"
+		(at 93 40 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "0f3bd938-9f7f-49e2-96c6-6b31bdf10036")
+	)
+	(label "PPG2_CS_N"
+		(at 42 40 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "14ee028c-91fa-49b3-9d01-03eab42b9003")
+	)
+	(label "PPG1_CS_N"
+		(at 25 40 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "1923e58b-89df-4fe1-8705-be26abadeea0")
+	)
+	(label "PPG_VLED"
+		(at 30.23 120.65 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "240eeb4e-3348-4062-b231-336aef106391")
+	)
+	(label "PPG1_LED_IR_DRV"
+		(at 34.04 77.47 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "2467b679-9ec9-4a42-9cbc-94e5331f2a4d")
+	)
+	(label "PPG1_PD_GND"
+		(at 290 79 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "2b0460cf-a36b-4fe5-988b-4d350c054b81")
+	)
+	(label "PPG2_PD_GND"
+		(at 290 169 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "35784de6-f6b8-4efa-9a81-634a81ab1803")
+	)
+	(label "VOUT1_1V8"
+		(at 25 24 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "36563c48-d370-43b9-a3ec-ec9a30514092")
+	)
+	(label "PPG_SAMPLE_SYNC"
+		(at 34.04 82.55 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "3aa55946-b087-411e-881c-89a5bd25ad51")
+	)
+	(label "PPG_SPI_MOSI"
+		(at 30.23 128.27 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "3b0e11ed-880a-424f-acb9-e7d23e851216")
+	)
+	(label "PPG2_PD1_IN"
+		(at 121.23 120.65 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "3cfb0a38-67e7-4753-bd44-40597af48919")
+	)
+	(label "VOUT1_1V8"
+		(at 205 114 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "3e74d116-dfb8-49ce-bf49-ca0f6e3d06fa")
+	)
+	(label "VOUT1_1V8"
+		(at 205 58 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "3e8d9acc-e6c5-45ea-b787-bc9e05d8f0b6")
+	)
+	(label "PPG2_PD2_IN"
+		(at 121.23 123.19 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "3f921648-9f51-465e-a640-38790604e8be")
+	)
+	(label "PPG_SAMPLE_SYNC"
+		(at 30.23 138.43 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "415fba68-584d-4678-9735-19bfc3643a82")
+	)
+	(label "PPG1_VREF"
+		(at 233 58 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "4b9088bf-88d8-4014-ba41-4ca837663f35")
+	)
+	(label "PPG_SPI_MOSI"
+		(at 34.04 72.39 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "4e2fad6a-4e3a-49b7-96cf-23c3051e7145")
+	)
+	(label "VOUT1_1V8"
+		(at 125.04 85.09 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "52b134ae-c45e-4300-9e66-e07e6a80ca3f")
+	)
+	(label "PPG_SPI_MISO"
+		(at 34.04 69.85 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "5722bfcc-ffde-4aff-97e0-7fd66f85a13a")
+	)
+	(label "PPG2_LED_GREEN_DRV"
+		(at 121.23 130.81 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "5a036fdb-6a50-4861-825e-00b09da87dac")
+	)
+	(label "PPG1_VREF"
+		(at 34.04 87.63 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "609ef8a8-97f0-4ebb-be02-a93e65591366")
+	)
+	(label "PPG2_LED_RED_DRV"
+		(at 135.89 154.94 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "60bd2a1a-af68-4cbc-a18c-a5ca73e0f0f9")
+	)
+	(label "PPG1_LED_IR_DRV"
+		(at 137.16 92.71 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "6129c96f-6563-48b1-b376-a736697adb00")
+	)
+	(label "PPG2_PD2_IN"
+		(at 257 169 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "61c3c280-0750-45d5-936d-3171847100d5")
+	)
+	(label "VOUT1_1V8"
+		(at 93 24 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "61eadc5c-415a-4b3a-8185-a5bc3a34c5d4")
+	)
+	(label "PPG1_PD_GND"
+		(at 290 113 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "61f34512-c63b-4baf-a4fc-a5fc2fd24ea0")
+	)
+	(label "VOUT1_1V8"
+		(at 76 24 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "62aaa10e-b8fa-48b4-a50b-57598cd55fde")
+	)
+	(label "VOUT1_1V8"
+		(at 121.23 140.97 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "64b1938b-81ea-4299-8128-71bca8beae5f")
+	)
+	(label "PPG_VLED"
+		(at 248 149.46 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "66a7099d-bf17-4e9c-bf50-a5d9aa555747")
+	)
+	(label "PPG2_LED_GREEN_DRV"
+		(at 137.16 151.13 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "6c84c7b9-d0e0-4dae-9ad7-a1f73995be71")
+	)
+	(label "PPG1_LED_RED_DRV"
+		(at 139.7 99.06 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "7206124d-e683-4003-bc53-882b6f09a270")
+	)
+	(label "PPG1_PD2_IN"
+		(at 125.04 67.31 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "779a4e59-854f-4002-a19b-5e75d45a7f29")
+	)
+	(label "VOUT1_1V8"
+		(at 219 58 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "7e82ed3a-5aaa-4ede-9896-3df446da6db0")
+	)
+	(label "VOUT1_1V8"
+		(at 219 114 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "85993bdd-1c96-423f-b081-a0283caddb91")
+	)
+	(label "PPG_VLED"
+		(at 247 58 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "89d68a95-65be-4f92-a260-a2d9d563eeae")
+	)
+	(label "PPG_SPI_SCLK"
+		(at 30.23 123.19 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "942bf56c-9230-48f9-86d0-728fa478fd4d")
+	)
+	(label "PPG1_LED_RED_DRV"
+		(at 125.04 87.63 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "97229c8a-9cb7-436a-abe0-bb865b53c29e")
+	)
+	(label "PPG1_INT_N"
+		(at 34.04 80.01 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "9a817d8a-fb59-4d3a-9143-788fa4c94d94")
+	)
+	(label "PPG_VLED"
+		(at 247 114 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "9b2fb5e5-4e1e-49d4-ae36-9b59f9856a7c")
+	)
+	(label "PPG2_PD_GND"
+		(at 226 158 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "a4c3ebb2-9396-45b6-ae61-47a6443a210e")
+	)
+	(label "PPG2_VREF"
+		(at 233 114 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "a636b67d-e787-4295-b1f6-1584d4359613")
+	)
+	(label "VOUT1_1V8"
+		(at 42 24 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "a7f9c5a0-b507-4bbe-9851-52545d1774ef")
+	)
+	(label "PPG1_CS_N"
+		(at 34.04 74.93 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "b1e68241-94b8-482d-addb-42fa25b49e79")
+	)
+	(label "PPG2_CS_N"
+		(at 30.23 130.81 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "b6ccd4fe-5bb5-4cb6-ae46-738b463737e4")
+	)
+	(label "PPG1_PD2_IN"
+		(at 257 113 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "b70175b3-6970-4b76-aade-45efa41ffd50")
+	)
+	(label "PPG1_PD1_IN"
+		(at 257 79 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "bbeb4b84-b625-48d8-9e21-f29bd4dc807f")
+	)
+	(label "PPG2_LED_RED_DRV"
+		(at 121.23 143.51 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "c4ddf541-e67b-41ba-8cf3-997bea805223")
+	)
+	(label "PPG2_PD_GND"
+		(at 121.23 133.35 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "cc0775d3-8ffe-41f2-9f68-d6185604f561")
+	)
+	(label "PPG2_LED_IR_DRV"
+		(at 30.23 133.35 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "cea9a4e6-b2ac-40ed-8c26-07ecedb13cc1")
+	)
+	(label "PPG_VLED"
+		(at 34.04 64.77 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "d1816995-808a-4770-bf65-d690e6348401")
+	)
+	(label "VOUT1_1V8"
+		(at 59 24 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "d29d3f7b-3d51-43fc-92da-dfcfa0f4c903")
+	)
+	(label "PPG2_INT_N"
+		(at 30.23 135.89 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "d8547d72-882e-4dae-9a77-bbb272a5496b")
+	)
+	(label "PPG1_PD1_IN"
+		(at 125.04 64.77 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "d94681b9-e094-40d0-825d-cb6de19cb942")
+	)
+	(label "PPG_SPI_MISO"
+		(at 30.23 125.73 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "dfd4c774-769f-4ffd-a8fa-1c31c91f5398")
+	)
+	(label "PPG2_PD_GND"
+		(at 290 135 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "e220a047-bb46-46b8-8358-4a35cc2338f3")
+	)
+	(label "PPG_SPI_SCLK"
+		(at 34.04 67.31 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "e269c543-9f4f-4d92-8ca0-9d6188fec64a")
+	)
+	(label "PPG2_VREF"
+		(at 30.23 143.51 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "e38922c8-9a3f-4aa9-81eb-c0807d1ab7d8")
+	)
+	(label "PPG1_PD_GND"
+		(at 125.04 77.47 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "ea9c39ba-b837-4c05-bda4-f7ad86de2a86")
+	)
+	(label "PPG1_PD_GND"
+		(at 226 102 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "f0f47c67-99d7-42da-b572-bb6b750c2741")
+	)
+	(label "PPG2_INT_N"
+		(at 76 40 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "f18eb5a4-7437-48c0-9d86-0fc70d8b0f4e")
+	)
+	(label "PPG1_LED_GREEN_DRV"
+		(at 125.04 74.93 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "f1dad255-5612-4971-8e29-0b79c9e87b0c")
+	)
+	(label "VOUT1_1V8"
+		(at 121.23 128.27 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "f1e2c9e3-9fb9-4e01-a173-0fef5bd584dc")
+	)
+	(label "PPG2_PD1_IN"
+		(at 257 135 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "f3754dc2-1725-440d-bdb7-93be17e962b0")
+	)
+	(label "PPG1_LED_GREEN_DRV"
+		(at 140.97 96.52 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "fd7cdacb-e080-4818-a3fc-bcca25d4df51")
+	)
+	(symbol
+		(lib_id "power:GND")
+		(at 247 74 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "0415b8c5-729e-43e5-b085-ea23da5f157b")
+		(property "Reference" "#PWRC4104"
+			(at 247 74 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "GND"
+			(at 247 76.54 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 247 74 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 247 74 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Global ground"
+			(at 247 74 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "6828bcb0-9084-470e-8eb1-832382610ca4")
+		)
+		(instances
+			(project "sportwatch_revA"
+				(path "/063f9d99-6c07-44cf-ba32-e33897e06972/24ba7fae-0267-4a43-a776-43c6f8c3d7fc"
+					(reference "#PWRC4104")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:C")
+		(at 233 66 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "064559f6-625a-407a-a04e-9d836e0b2e7a")
+		(property "Reference" "C4103"
+			(at 235.54 63.46 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "1.0uF"
+			(at 235.54 68.54 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Capacitor_SMD:C_0402_1005Metric"
+			(at 233 66 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 233 66 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "VREF decoupling"
+			(at 233 66 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "73fdf7e8-0972-44cc-8ca4-aa6681b83d04")
+		)
+		(pin "2"
+			(uuid "032fbdb7-ee6f-4c53-8acb-7103a8f1fe20")
+		)
+		(instances
+			(project "sportwatch_revA"
+				(path "/063f9d99-6c07-44cf-ba32-e33897e06972/24ba7fae-0267-4a43-a776-43c6f8c3d7fc"
+					(reference "C4103")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:GND")
+		(at 205 130 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "09eb5c2c-fb10-4b5e-a338-ff593475e24e")
+		(property "Reference" "#PWRC4201"
+			(at 205 130 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "GND"
+			(at 205 132.54 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 205 130 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 205 130 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Global ground"
+			(at 205 130 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "e799dda4-ddcf-4f44-9f52-05f07395c642")
+		)
+		(instances
+			(project "sportwatch_revA"
+				(path "/063f9d99-6c07-44cf-ba32-e33897e06972/24ba7fae-0267-4a43-a776-43c6f8c3d7fc"
+					(reference "#PWRC4201")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:GND")
+		(at 125.04 69.85 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "0df9433c-5d1b-4491-90d0-47ea335c6846")
+		(property "Reference" "#PWR0412"
+			(at 125.04 69.85 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "GND"
+			(at 125.04 72.39 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 125.04 69.85 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 125.04 69.85 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Global ground"
+			(at 125.04 69.85 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "5d21feb5-8336-4f99-be39-306bd689c5d1")
+		)
+		(instances
+			(project "sportwatch_revA"
+				(path "/063f9d99-6c07-44cf-ba32-e33897e06972/24ba7fae-0267-4a43-a776-43c6f8c3d7fc"
+					(reference "#PWR0412")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:C")
+		(at 247 66 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "1a765b6a-1277-45a0-8250-39a14410cd20")
+		(property "Reference" "C4104"
+			(at 249.54 63.46 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "10uF"
+			(at 249.54 68.54 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Capacitor_SMD:C_0402_1005Metric"
+			(at 247 66 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 247 66 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "VLED local decoupling"
+			(at 247 66 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "17926b48-5d17-4512-9a41-2ebec3cf0a7a")
+		)
+		(pin "2"
+			(uuid "fd379846-7751-4dc4-a581-99612ed53a9e")
+		)
+		(instances
+			(project "sportwatch_revA"
+				(path "/063f9d99-6c07-44cf-ba32-e33897e06972/24ba7fae-0267-4a43-a776-43c6f8c3d7fc"
+					(reference "C4104")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:GND")
+		(at 125.04 80.01 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "2145fbf4-b92e-4c70-b5b0-71c0ce72ca11")
+		(property "Reference" "#PWR0411"
+			(at 125.04 80.01 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "GND"
+			(at 125.04 82.55 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 125.04 80.01 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 125.04 80.01 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Global ground"
+			(at 125.04 80.01 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "ea2dfb00-0730-47da-9122-bc493fcb91bc")
+		)
+		(instances
+			(project "sportwatch_revA"
+				(path "/063f9d99-6c07-44cf-ba32-e33897e06972/24ba7fae-0267-4a43-a776-43c6f8c3d7fc"
+					(reference "#PWR0411")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:GND")
+		(at 233 74 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "21477e70-8eb3-45c6-819f-fbf694e88306")
+		(property "Reference" "#PWRC4103"
+			(at 233 74 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "GND"
+			(at 233 76.54 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 233 74 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 233 74 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Global ground"
+			(at 233 74 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "9b326596-7279-4b48-a839-4af22397f28d")
+		)
+		(instances
+			(project "sportwatch_revA"
+				(path "/063f9d99-6c07-44cf-ba32-e33897e06972/24ba7fae-0267-4a43-a776-43c6f8c3d7fc"
+					(reference "#PWRC4103")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:GND")
+		(at 247 130 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "2325ce63-f477-43aa-b550-b4d401948de2")
+		(property "Reference" "#PWRC4204"
+			(at 247 130 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "GND"
+			(at 247 132.54 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 247 130 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 247 130 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Global ground"
+			(at 247 130 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "6a58dbd3-21e6-4ba9-8d24-44a673d5ceb4")
+		)
+		(instances
+			(project "sportwatch_revA"
+				(path "/063f9d99-6c07-44cf-ba32-e33897e06972/24ba7fae-0267-4a43-a776-43c6f8c3d7fc"
+					(reference "#PWRC4204")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:C")
+		(at 233 122 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "2ca274ce-ced7-4142-b7b8-d9fe5a3a24ce")
+		(property "Reference" "C4203"
+			(at 235.54 119.46 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "1.0uF"
+			(at 235.54 124.54 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Capacitor_SMD:C_0402_1005Metric"
+			(at 233 122 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 233 122 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "VREF decoupling"
+			(at 233 122 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "21a68cf8-4444-451a-88ef-a8b56e2a4ccf")
+		)
+		(pin "2"
+			(uuid "a7680815-daa5-4a40-8858-bfd6415d03fd")
+		)
+		(instances
+			(project "sportwatch_revA"
+				(path "/063f9d99-6c07-44cf-ba32-e33897e06972/24ba7fae-0267-4a43-a776-43c6f8c3d7fc"
+					(reference "C4203")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:R")
+		(at 25 32 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "37032851-83d4-45b5-ae54-a6733490e01f")
+		(property "Reference" "R401"
+			(at 27.54 29.46 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "100k"
+			(at 27.54 34.54 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Resistor_SMD:R_0402_1005Metric"
+			(at 25 32 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 25 32 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "PPG1_CS_N pull-up"
+			(at 25 32 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "280ce41c-1dc4-482b-bbca-bb4372e6f46a")
+		)
+		(pin "2"
+			(uuid "07506bd0-c308-445c-9c52-6ddd2f25b5ff")
+		)
+		(instances
+			(project "sportwatch_revA"
+				(path "/063f9d99-6c07-44cf-ba32-e33897e06972/24ba7fae-0267-4a43-a776-43c6f8c3d7fc"
+					(reference "R401")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:GND")
+		(at 260 102 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "488a9f3c-7bd1-41df-9d94-779c39651d30")
+		(property "Reference" "#PWR04NT1"
+			(at 260 102 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "GND"
+			(at 260 104.54 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 260 102 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 260 102 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Global ground"
+			(at 260 102 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "0ceaa007-8b96-4143-a1c4-3c942797385f")
+		)
+		(instances
+			(project "sportwatch_revA"
+				(path "/063f9d99-6c07-44cf-ba32-e33897e06972/24ba7fae-0267-4a43-a776-43c6f8c3d7fc"
+					(reference "#PWR04NT1")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:R")
+		(at 93 32 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "55c721d5-6fcd-4bbc-b3f8-e7049a651bf9")
+		(property "Reference" "R405"
+			(at 95.54 29.46 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "100k"
+			(at 95.54 34.54 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Resistor_SMD:R_0402_1005Metric"
+			(at 93 32 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 93 32 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "PPG_SAMPLE_SYNC pull-up"
+			(at 93 32 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "0a80be80-a180-4158-9519-f882868b4040")
+		)
+		(pin "2"
+			(uuid "ea02a908-6cb3-4cac-b3e4-a460535f1aea")
+		)
+		(instances
+			(project "sportwatch_revA"
+				(path "/063f9d99-6c07-44cf-ba32-e33897e06972/24ba7fae-0267-4a43-a776-43c6f8c3d7fc"
+					(reference "R405")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:GND")
+		(at 233 130 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "588ea300-674c-4215-b50c-5422f58d3791")
+		(property "Reference" "#PWRC4203"
+			(at 233 130 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "GND"
+			(at 233 132.54 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 233 130 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 233 130 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Global ground"
+			(at 233 130 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "bc81a8d4-2e96-4ea7-b8cf-d38e54301cf2")
+		)
+		(instances
+			(project "sportwatch_revA"
+				(path "/063f9d99-6c07-44cf-ba32-e33897e06972/24ba7fae-0267-4a43-a776-43c6f8c3d7fc"
+					(reference "#PWRC4203")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:GND")
+		(at 260 158 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "597310cc-2de3-4b4f-bd76-c3c7f2ac7ba0")
+		(property "Reference" "#PWR04NT2"
+			(at 260 158 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "GND"
+			(at 260 160.54 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 260 158 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 260 158 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Global ground"
+			(at 260 158 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "74da929b-7fb4-4d73-97f0-a6d2e7f7327e")
+		)
+		(instances
+			(project "sportwatch_revA"
+				(path "/063f9d99-6c07-44cf-ba32-e33897e06972/24ba7fae-0267-4a43-a776-43c6f8c3d7fc"
+					(reference "#PWR04NT2")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "2026-09-16_07-42-39:MAX86141ENP+T")
+		(at 50.8 120.65 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "68ac7160-72bc-47c2-9380-221f9282d721")
+		(property "Reference" "U13"
+			(at 78.74 110.49 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.524 1.524)
+				)
+			)
+		)
+		(property "Value" "MAX86141ENP+T"
+			(at 78.74 113.03 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.524 1.524)
+				)
+			)
+		)
+		(property "Footprint" "21-100134_N201A2-1_MXM"
+			(at 50.8 120.65 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+					(italic yes)
+				)
+			)
+		)
+		(property "Datasheet" "MAX86141ENP+T"
+			(at 50.8 120.65 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+					(italic yes)
+				)
+			)
+		)
+		(property "Description" ""
+			(at 50.8 120.65 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "B2"
+			(uuid "0dd400eb-335f-4879-8aa3-07fe704c695c")
+		)
+		(pin "A3"
+			(uuid "78bda87d-9f8f-4f13-a08f-aa74033154ec")
+		)
+		(pin "A2"
+			(uuid "15d47f48-d421-48ba-98f3-b96d2bfa384d")
+		)
+		(pin "A1"
+			(uuid "399ab56d-7cde-44f5-9533-33e78401208a")
+		)
+		(pin "C1"
+			(uuid "90597548-6a5f-4c1a-be70-c04bd024806a")
+		)
+		(pin "C3"
+			(uuid "4af57fff-adc0-4b8d-899e-0c21a5465d56")
+		)
+		(pin "A4"
+			(uuid "641fd419-7ec4-433c-809b-dd91a03de047")
+		)
+		(pin "A5"
+			(uuid "62f97c4e-7d59-4fbf-85fd-c5599211ca4f")
+		)
+		(pin "C2"
+			(uuid "23bc61a1-c9a3-4a0b-ab9e-531802cc2567")
+		)
+		(pin "B4"
+			(uuid "c0e0b84f-699d-4b47-9817-52736fd98b54")
+		)
+		(pin "C5"
+			(uuid "64e5300b-f7b0-4ef8-98c3-1cdef2512692")
+		)
+		(pin "D1"
+			(uuid "5e683614-aa37-4c7e-a074-7aa5613fcc2c")
+		)
+		(pin "D2"
+			(uuid "673462fc-2793-4b1b-b64e-2bbb1009f27f")
+		)
+		(pin "D3"
+			(uuid "30632a36-e410-4db5-b7a8-0fb1f8849463")
+		)
+		(pin "B1"
+			(uuid "b51ef5f2-4f1e-4576-924b-8549541c426d")
+		)
+		(pin "D4"
+			(uuid "d4cdf3eb-99c2-489d-b247-652c1d2e0b27")
+		)
+		(pin "B3"
+			(uuid "d6f06293-6c5d-468e-a806-f00fbd7203e6")
+		)
+		(pin "D5"
+			(uuid "1b10c59e-869d-4b62-a87f-823f42197c6e")
+		)
+		(pin "C4"
+			(uuid "968115ea-bc4b-453c-a90c-e1b83fe5e6fd")
+		)
+		(pin "B5"
+			(uuid "9c686e1b-c491-46e4-be5a-ba0517fbf155")
+		)
+		(instances
+			(project "sportwatch_revA"
+				(path "/063f9d99-6c07-44cf-ba32-e33897e06972/24ba7fae-0267-4a43-a776-43c6f8c3d7fc"
+					(reference "U13")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:R")
+		(at 42 32 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "70c8d7cf-4122-4165-a60a-347e3a8a8f4c")
+		(property "Reference" "R402"
+			(at 44.54 29.46 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "100k"
+			(at 44.54 34.54 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Resistor_SMD:R_0402_1005Metric"
+			(at 42 32 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 42 32 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "PPG2_CS_N pull-up"
+			(at 42 32 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "7675f6db-8c16-4754-88ea-755172cd3463")
+		)
+		(pin "2"
+			(uuid "92f0b7be-e5d0-4c39-869c-0ce0e15c483d")
+		)
+		(instances
+			(project "sportwatch_revA"
+				(path "/063f9d99-6c07-44cf-ba32-e33897e06972/24ba7fae-0267-4a43-a776-43c6f8c3d7fc"
+					(reference "R402")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:C")
+		(at 205 122 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "74dec967-4819-4e7b-a3df-59f909f391c1")
+		(property "Reference" "C4201"
+			(at 207.54 119.46 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "22uF"
+			(at 207.54 124.54 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Capacitor_SMD:C_0402_1005Metric"
+			(at 205 122 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 205 122 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "combined VDD_ANA/VDD_DIG bulk decoupling"
+			(at 205 122 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "c2d64d2c-6c9d-43a2-94c9-afbb4fb267dc")
+		)
+		(pin "2"
+			(uuid "26385a5b-19a0-4ea9-bfa6-18b9950147e3")
+		)
+		(instances
+			(project "sportwatch_revA"
+				(path "/063f9d99-6c07-44cf-ba32-e33897e06972/24ba7fae-0267-4a43-a776-43c6f8c3d7fc"
+					(reference "C4201")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "2026-09-16_07-42-39:MAX86141ENP+T")
+		(at 54.61 64.77 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "77e40d42-feb0-4c8f-bde2-35586b40c2c1")
+		(property "Reference" "U12"
+			(at 82.55 54.61 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.524 1.524)
+				)
+			)
+		)
+		(property "Value" "MAX86141ENP+T"
+			(at 82.55 57.15 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.524 1.524)
+				)
+			)
+		)
+		(property "Footprint" "21-100134_N201A2-1_MXM"
+			(at 54.61 64.77 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+					(italic yes)
+				)
+			)
+		)
+		(property "Datasheet" "MAX86141ENP+T"
+			(at 54.61 64.77 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+					(italic yes)
+				)
+			)
+		)
+		(property "Description" ""
+			(at 54.61 64.77 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "B2"
+			(uuid "e12140a6-b916-455e-a448-c2c7b3e76676")
+		)
+		(pin "A3"
+			(uuid "10671bd0-84e1-4cc1-bbd3-27a4b35658c7")
+		)
+		(pin "A2"
+			(uuid "ee205b7f-146e-4d93-8a09-327f0a3507b2")
+		)
+		(pin "A1"
+			(uuid "b941f0a6-52ae-4c9b-87fa-25989f092321")
+		)
+		(pin "C1"
+			(uuid "9fcc6b79-ee69-4634-a5ee-c59de213b133")
+		)
+		(pin "C3"
+			(uuid "6c921732-0386-4c7e-a698-35fcacbe0543")
+		)
+		(pin "A4"
+			(uuid "9084b843-7f98-49de-8fdb-d90406b346a4")
+		)
+		(pin "A5"
+			(uuid "1cf6b795-2b88-46eb-97e4-96f923698c59")
+		)
+		(pin "C2"
+			(uuid "ac8f8dff-6c71-404c-b8b9-28953c9a9015")
+		)
+		(pin "B4"
+			(uuid "6e0ed1f6-5589-4d03-be88-3b2dca869fdc")
+		)
+		(pin "C5"
+			(uuid "d2fb9def-d014-4c6d-843a-ff715d994bee")
+		)
+		(pin "D1"
+			(uuid "9ff80e8a-fc65-4718-9b71-6347156c3f03")
+		)
+		(pin "D2"
+			(uuid "2f9ecd95-3ae3-4182-abb3-77de2da69107")
+		)
+		(pin "D3"
+			(uuid "5129e1cd-eca7-4ee6-bfeb-c880dbd941e9")
+		)
+		(pin "B1"
+			(uuid "8defdca1-a0d3-44dc-84ce-e988016e784a")
+		)
+		(pin "D4"
+			(uuid "a232f1f5-5a93-49ab-becc-6d90e094d5c1")
+		)
+		(pin "B3"
+			(uuid "10e32e80-068d-4ca3-8191-8aa291e44d05")
+		)
+		(pin "D5"
+			(uuid "3e4d1ae7-1829-4e04-9818-86f55f96a032")
+		)
+		(pin "C4"
+			(uuid "5945da6a-5019-44bb-a4fa-1f6eadcc4f9c")
+		)
+		(pin "B5"
+			(uuid "f0ff89e5-393b-4d0b-8fbd-3d6765a02b9c")
+		)
+		(instances
+			(project "sportwatch_revA"
+				(path "/063f9d99-6c07-44cf-ba32-e33897e06972/24ba7fae-0267-4a43-a776-43c6f8c3d7fc"
+					(reference "U12")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:GND")
+		(at 121.23 138.43 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "8018a215-76f5-461c-b46b-e4060799c084")
+		(property "Reference" "#PWR0420"
+			(at 121.23 138.43 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "GND"
+			(at 121.23 140.97 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 121.23 138.43 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 121.23 138.43 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Global ground"
+			(at 121.23 138.43 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "94ec5ead-fe5d-4fdf-95f9-0cd69ea4bf59")
+		)
+		(instances
+			(project "sportwatch_revA"
+				(path "/063f9d99-6c07-44cf-ba32-e33897e06972/24ba7fae-0267-4a43-a776-43c6f8c3d7fc"
+					(reference "#PWR0420")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "sportwatch_custom:SFH7018A")
+		(at 225 96 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "8211c225-6d40-467c-9a46-08b7705df3de")
+		(property "Reference" "D401"
+			(at 225 83.3 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "SFH7018A Q65113A6157"
+			(at 225 108.7 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 225 96 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 225 96 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Green/red/IR biometric LED package; footprint TBD"
+			(at 225 96 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "567887bb-eebb-4aef-a61f-80c23d0276db")
+		)
+		(pin "2"
+			(uuid "53757a20-e209-4f3b-9709-aa01cee7b3c6")
+		)
+		(pin "3"
+			(uuid "6082ec60-ba8c-41ba-842c-b57b3214de9f")
+		)
+		(pin "4"
+			(uuid "3591b926-1898-47dc-a646-896ebdbea824")
+		)
+		(pin "5"
+			(uuid "fca98a00-a6c1-4329-9cc9-53e29d3d3638")
+		)
+		(pin "6"
+			(uuid "e33e326a-b4bc-4047-8883-af96f79e6aff")
+		)
+		(pin "7"
+			(uuid "8e8b7676-411a-4eb7-a58a-eb087a1c2155")
+		)
+		(pin "8"
+			(uuid "2a97d78d-e1e8-4cd3-891b-19457b0afd81")
+		)
+		(instances
+			(project "sportwatch_revA"
+				(path "/063f9d99-6c07-44cf-ba32-e33897e06972/24ba7fae-0267-4a43-a776-43c6f8c3d7fc"
+					(reference "D401")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:GND")
+		(at 125.04 82.55 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "821c22cf-00ba-42de-a5ac-e56fd4cda665")
+		(property "Reference" "#PWR0410"
+			(at 125.04 82.55 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "GND"
+			(at 125.04 85.09 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 125.04 82.55 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 125.04 82.55 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Global ground"
+			(at 125.04 82.55 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "b1d9d80a-aea4-40c3-8568-05e298c8ed24")
+		)
+		(instances
+			(project "sportwatch_revA"
+				(path "/063f9d99-6c07-44cf-ba32-e33897e06972/24ba7fae-0267-4a43-a776-43c6f8c3d7fc"
+					(reference "#PWR0410")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "sportwatch_custom:SFH2703H")
+		(at 275 113 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "915de66e-85e3-4d26-8489-ad97dc4359b6")
+		(property "Reference" "D414"
+			(at 275 106.65 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "SFH2703H Q65115A2199"
+			(at 275 119.35 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 275 113 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 275 113 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Broadband PIN photodiode; footprint TBD"
+			(at 275 113 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "1bbb7b96-80c9-4481-b21b-c3054c007889")
+		)
+		(pin "2"
+			(uuid "292f5dc4-a0a2-4bc9-ae1c-5f04f21ed86c")
+		)
+		(instances
+			(project "sportwatch_revA"
+				(path "/063f9d99-6c07-44cf-ba32-e33897e06972/24ba7fae-0267-4a43-a776-43c6f8c3d7fc"
+					(reference "D414")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:C")
+		(at 219 66 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "94842c08-9a3c-4daa-8caa-0efc59e1777d")
+		(property "Reference" "C4102"
+			(at 221.54 63.46 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "100nF"
+			(at 221.54 68.54 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Capacitor_SMD:C_0402_1005Metric"
+			(at 219 66 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 219 66 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "combined VDD_ANA/VDD_DIG high-frequency decoupling"
+			(at 219 66 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "9e41862b-b40a-49d2-9374-b5e6f57caf0a")
+		)
+		(pin "2"
+			(uuid "76a127af-2055-4b08-a037-c2a14b14aec5")
+		)
+		(instances
+			(project "sportwatch_revA"
+				(path "/063f9d99-6c07-44cf-ba32-e33897e06972/24ba7fae-0267-4a43-a776-43c6f8c3d7fc"
+					(reference "C4102")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "sportwatch_custom:SFH7018A")
+		(at 225 152 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "9560cf42-acee-4fa3-b7ac-ebc73a1215c7")
+		(property "Reference" "D402"
+			(at 225 139.3 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "SFH7018A Q65113A6157"
+			(at 225 164.7 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 225 152 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 225 152 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Green/red/IR biometric LED package; footprint TBD"
+			(at 225 152 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "58a24bf1-500e-44b7-aed9-c826ec0e2b3d")
+		)
+		(pin "2"
+			(uuid "9c6eced8-3602-4a4b-af7a-e52036225cc1")
+		)
+		(pin "3"
+			(uuid "aac96619-cd3a-4666-b532-ef2d2a10b38f")
+		)
+		(pin "4"
+			(uuid "277349f7-c19a-4712-9ffc-3be7b013cde9")
+		)
+		(pin "5"
+			(uuid "917b4701-6153-445a-9946-421e3e35c2b9")
+		)
+		(pin "6"
+			(uuid "de384c61-eaac-4f0d-91aa-30f50d5e5cfa")
+		)
+		(pin "7"
+			(uuid "f524c96b-8d34-4bf4-ba22-20222aaf9295")
+		)
+		(pin "8"
+			(uuid "7c89f5fc-8651-410d-b15f-0dce3ab919ad")
+		)
+		(instances
+			(project "sportwatch_revA"
+				(path "/063f9d99-6c07-44cf-ba32-e33897e06972/24ba7fae-0267-4a43-a776-43c6f8c3d7fc"
+					(reference "D402")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "sportwatch_custom:NetTie_2")
+		(at 245 102 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "aa169eac-bd22-426c-8ab3-97f6271f3258")
+		(property "Reference" "NT401"
+			(at 245 95.65 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "PPG1_PD_GND_TIE"
+			(at 245 108.35 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 245 102 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 245 102 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Single-point PD_GND to PCB GND net tie"
+			(at 245 102 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "ee2ef9fd-8531-45bf-bef3-56b1395e6f42")
+		)
+		(pin "2"
+			(uuid "091aab38-79d1-4f9b-921b-d0848e0bc8a4")
+		)
+		(instances
+			(project "sportwatch_revA"
+				(path "/063f9d99-6c07-44cf-ba32-e33897e06972/24ba7fae-0267-4a43-a776-43c6f8c3d7fc"
+					(reference "NT401")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:C")
+		(at 247 122 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "b7df98da-fb85-4a7f-81bd-005b4356870b")
+		(property "Reference" "C4204"
+			(at 249.54 119.46 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "10uF"
+			(at 249.54 124.54 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Capacitor_SMD:C_0402_1005Metric"
+			(at 247 122 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 247 122 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "VLED local decoupling"
+			(at 247 122 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "89844806-b313-4fd4-9891-19aaea7533fb")
+		)
+		(pin "2"
+			(uuid "8e686b22-a466-4dae-a661-58a638eb3d37")
+		)
+		(instances
+			(project "sportwatch_revA"
+				(path "/063f9d99-6c07-44cf-ba32-e33897e06972/24ba7fae-0267-4a43-a776-43c6f8c3d7fc"
+					(reference "C4204")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:GND")
+		(at 121.23 135.89 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "bb585092-f4b8-4460-99ce-7e6df5d49f52")
+		(property "Reference" "#PWR0421"
+			(at 121.23 135.89 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "GND"
+			(at 121.23 138.43 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 121.23 135.89 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 121.23 135.89 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Global ground"
+			(at 121.23 135.89 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "1c39c4c9-892f-44d2-aaef-d6d2e9f59a37")
+		)
+		(instances
+			(project "sportwatch_revA"
+				(path "/063f9d99-6c07-44cf-ba32-e33897e06972/24ba7fae-0267-4a43-a776-43c6f8c3d7fc"
+					(reference "#PWR0421")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:R")
+		(at 59 32 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "be09c78a-3afb-48f4-aaef-3de746d6d673")
+		(property "Reference" "R403"
+			(at 61.54 29.46 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "47k"
+			(at 61.54 34.54 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Resistor_SMD:R_0402_1005Metric"
+			(at 59 32 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 59 32 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "PPG1_INT_N pull-up"
+			(at 59 32 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "8e612aaf-112d-4a24-aacd-1d5bc59627cd")
+		)
+		(pin "2"
+			(uuid "45342762-5bf8-485e-bf05-3e257fb06a3f")
+		)
+		(instances
+			(project "sportwatch_revA"
+				(path "/063f9d99-6c07-44cf-ba32-e33897e06972/24ba7fae-0267-4a43-a776-43c6f8c3d7fc"
+					(reference "R403")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "sportwatch_custom:SFH2703H")
+		(at 275 169 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "c6029f55-63fc-46ec-ad60-bf49da46042f")
+		(property "Reference" "D424"
+			(at 275 162.65 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "SFH2703H Q65115A2199"
+			(at 275 175.35 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 275 169 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 275 169 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Broadband PIN photodiode; footprint TBD"
+			(at 275 169 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "62ca57fd-d7b7-49a6-a42b-9db69f92b6ae")
+		)
+		(pin "2"
+			(uuid "b7c5f55d-1669-4384-a56b-59dfdac4e373")
+		)
+		(instances
+			(project "sportwatch_revA"
+				(path "/063f9d99-6c07-44cf-ba32-e33897e06972/24ba7fae-0267-4a43-a776-43c6f8c3d7fc"
+					(reference "D424")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:GND")
+		(at 219 74 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "cb13126e-d266-4294-882f-d3883a11feb3")
+		(property "Reference" "#PWRC4102"
+			(at 219 74 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "GND"
+			(at 219 76.54 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 219 74 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 219 74 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Global ground"
+			(at 219 74 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "a54061ae-76d3-4c09-bfb9-8a2076f552da")
+		)
+		(instances
+			(project "sportwatch_revA"
+				(path "/063f9d99-6c07-44cf-ba32-e33897e06972/24ba7fae-0267-4a43-a776-43c6f8c3d7fc"
+					(reference "#PWRC4102")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "sportwatch_custom:SFH2703H")
+		(at 275 79 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "cb8791d2-f001-4f91-92c2-8b09beba1e7c")
+		(property "Reference" "D413"
+			(at 275 72.65 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "SFH2703H Q65115A2199"
+			(at 275 85.35 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 275 79 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 275 79 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Broadband PIN photodiode; footprint TBD"
+			(at 275 79 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "0e34f8c5-ee24-4dfe-8942-eb7dc7c64eb5")
+		)
+		(pin "2"
+			(uuid "a702da24-72f1-4028-956c-362dfd48dbbb")
+		)
+		(instances
+			(project "sportwatch_revA"
+				(path "/063f9d99-6c07-44cf-ba32-e33897e06972/24ba7fae-0267-4a43-a776-43c6f8c3d7fc"
+					(reference "D413")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:C")
+		(at 205 66 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "d85e8b5c-b060-42a2-98b1-8f42bf4b98df")
+		(property "Reference" "C4101"
+			(at 207.54 63.46 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "22uF"
+			(at 207.54 68.54 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Capacitor_SMD:C_0402_1005Metric"
+			(at 205 66 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 205 66 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "combined VDD_ANA/VDD_DIG bulk decoupling"
+			(at 205 66 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "30c1b5ca-a1d1-467a-95e3-ca1d3b73bf4c")
+		)
+		(pin "2"
+			(uuid "73d13446-9597-4cca-ba9a-52b23e7e5255")
+		)
+		(instances
+			(project "sportwatch_revA"
+				(path "/063f9d99-6c07-44cf-ba32-e33897e06972/24ba7fae-0267-4a43-a776-43c6f8c3d7fc"
+					(reference "C4101")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:R")
+		(at 76 32 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "d995307e-5a54-45bd-88bc-fda402068b7a")
+		(property "Reference" "R404"
+			(at 78.54 29.46 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "47k"
+			(at 78.54 34.54 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Resistor_SMD:R_0402_1005Metric"
+			(at 76 32 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 76 32 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "PPG2_INT_N pull-up"
+			(at 76 32 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "9e0ef431-d83e-4400-b57c-2581639e91a1")
+		)
+		(pin "2"
+			(uuid "e4301b1a-9ece-4ae5-9c5c-14b979c07e80")
+		)
+		(instances
+			(project "sportwatch_revA"
+				(path "/063f9d99-6c07-44cf-ba32-e33897e06972/24ba7fae-0267-4a43-a776-43c6f8c3d7fc"
+					(reference "R404")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:C")
+		(at 219 122 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "de232d86-e34e-4ce9-97b9-74c032fa56cf")
+		(property "Reference" "C4202"
+			(at 221.54 119.46 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "100nF"
+			(at 221.54 124.54 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Capacitor_SMD:C_0402_1005Metric"
+			(at 219 122 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 219 122 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "combined VDD_ANA/VDD_DIG high-frequency decoupling"
+			(at 219 122 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "b3deb2b6-f28c-4bb0-8e79-67cd1e75c4d1")
+		)
+		(pin "2"
+			(uuid "8d984912-afc8-47f7-ad98-a6a0c3cf764c")
+		)
+		(instances
+			(project "sportwatch_revA"
+				(path "/063f9d99-6c07-44cf-ba32-e33897e06972/24ba7fae-0267-4a43-a776-43c6f8c3d7fc"
+					(reference "C4202")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:GND")
+		(at 219 130 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "e282fa88-0428-4ed7-ad9e-bac5aa18b1fa")
+		(property "Reference" "#PWRC4202"
+			(at 219 130 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "GND"
+			(at 219 132.54 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 219 130 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 219 130 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Global ground"
+			(at 219 130 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "5fc741dc-d054-486d-936a-f61ddae5cda0")
+		)
+		(instances
+			(project "sportwatch_revA"
+				(path "/063f9d99-6c07-44cf-ba32-e33897e06972/24ba7fae-0267-4a43-a776-43c6f8c3d7fc"
+					(reference "#PWRC4202")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:GND")
+		(at 121.23 125.73 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "eff7fc62-4235-4c0c-813b-16a0d5be1518")
+		(property "Reference" "#PWR0422"
+			(at 121.23 125.73 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "GND"
+			(at 121.23 128.27 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 121.23 125.73 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 121.23 125.73 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Global ground"
+			(at 121.23 125.73 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "ed8f0ed5-4c4a-4de0-8085-8afddfdc9011")
+		)
+		(instances
+			(project "sportwatch_revA"
+				(path "/063f9d99-6c07-44cf-ba32-e33897e06972/24ba7fae-0267-4a43-a776-43c6f8c3d7fc"
+					(reference "#PWR0422")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:GND")
+		(at 205 74 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "fcfc68c2-f3cb-4703-909d-443166f01e00")
+		(property "Reference" "#PWRC4101"
+			(at 205 74 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "GND"
+			(at 205 76.54 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 205 74 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 205 74 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Global ground"
+			(at 205 74 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "483bcdd5-93b2-4867-bc01-18bcddce0dd0")
+		)
+		(instances
+			(project "sportwatch_revA"
+				(path "/063f9d99-6c07-44cf-ba32-e33897e06972/24ba7fae-0267-4a43-a776-43c6f8c3d7fc"
+					(reference "#PWRC4101")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "sportwatch_custom:SFH2703H")
+		(at 275 135 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "fdde68e9-c9a6-4b45-a37e-48cecba9843b")
+		(property "Reference" "D423"
+			(at 275 128.65 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "SFH2703H Q65115A2199"
+			(at 275 141.35 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 275 135 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 275 135 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Broadband PIN photodiode; footprint TBD"
+			(at 275 135 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "50c8c571-0f61-4da5-99ca-2fe50efd3f63")
+		)
+		(pin "2"
+			(uuid "b6150b59-fe83-4653-a8db-7a38995a54d6")
+		)
+		(instances
+			(project "sportwatch_revA"
+				(path "/063f9d99-6c07-44cf-ba32-e33897e06972/24ba7fae-0267-4a43-a776-43c6f8c3d7fc"
+					(reference "D423")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "sportwatch_custom:NetTie_2")
+		(at 245 158 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "fe7f43e0-1c3c-419f-9269-bf85c5a98139")
+		(property "Reference" "NT402"
+			(at 245 151.65 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "PPG2_PD_GND_TIE"
+			(at 245 164.35 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 245 158 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 245 158 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Single-point PD_GND to PCB GND net tie"
+			(at 245 158 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "579f1478-ad73-4bf4-955a-04d6ecd185c9")
+		)
+		(pin "2"
+			(uuid "ae20aa35-cb6d-4fe5-8b4b-022e07215f24")
+		)
+		(instances
+			(project "sportwatch_revA"
+				(path "/063f9d99-6c07-44cf-ba32-e33897e06972/24ba7fae-0267-4a43-a776-43c6f8c3d7fc"
+					(reference "NT402")
+					(unit 1)
+				)
+			)
+		)
+	)
 )

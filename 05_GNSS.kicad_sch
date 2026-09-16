@@ -4,5 +4,1414 @@
 	(generator_version "10.0")
 	(uuid "ab8234bc-01f4-47ea-9abd-348205c4038b")
 	(paper "A4")
-	(lib_symbols)
+	(title_block
+		(title "Rev-A — GNSS")
+		(date "2026-09-16")
+		(rev "A")
+		(comment 1 "u-blox MAX-F10S dual-band GNSS / UART / passive antenna baseline")
+	)
+	(lib_symbols
+		(symbol "2026-09-16_06-45-24:MAX-F10S-00B"
+			(pin_names
+				(offset 0.254)
+			)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(in_pos_files yes)
+			(duplicate_pin_numbers_are_jumpers no)
+			(property "Reference" "U"
+				(at 33.02 10.16 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1.524 1.524)
+					)
+				)
+			)
+			(property "Value" "MAX-F10S-00B"
+				(at 33.02 7.62 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1.524 1.524)
+					)
+				)
+			)
+			(property "Footprint" "MAX-F10S_UBL"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+						(italic yes)
+					)
+				)
+			)
+			(property "Datasheet" "MAX-F10S-00B"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+						(italic yes)
+					)
+				)
+			)
+			(property "Description" ""
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "ki_locked" ""
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "ki_keywords" "MAX-F10S-00B"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "ki_fp_filters" "MAX-F10S_UBL MAX-F10S_UBL-M MAX-F10S_UBL-L"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(symbol "MAX-F10S-00B_0_1"
+				(polyline
+					(pts
+						(xy 7.62 5.08) (xy 7.62 -25.4)
+					)
+					(stroke
+						(width 0.127)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 7.62 -25.4) (xy 58.42 -25.4)
+					)
+					(stroke
+						(width 0.127)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 58.42 5.08) (xy 7.62 5.08)
+					)
+					(stroke
+						(width 0.127)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 58.42 -25.4) (xy 58.42 5.08)
+					)
+					(stroke
+						(width 0.127)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(pin power_in line
+					(at 0 0 0)
+					(length 7.62)
+					(name "GND"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin output line
+					(at 0 -2.54 0)
+					(length 7.62)
+					(name "TXD"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin input line
+					(at 0 -5.08 0)
+					(length 7.62)
+					(name "RXD"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "3"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin output line
+					(at 0 -7.62 0)
+					(length 7.62)
+					(name "TIMEPULSE"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "4"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin input line
+					(at 0 -10.16 0)
+					(length 7.62)
+					(name "EXTINT"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "5"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin power_in line
+					(at 0 -12.7 0)
+					(length 7.62)
+					(name "V_BCKP"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "6"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin power_in line
+					(at 0 -15.24 0)
+					(length 7.62)
+					(name "V_IO"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "7"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin power_in line
+					(at 0 -17.78 0)
+					(length 7.62)
+					(name "VCC"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "8"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin input line
+					(at 0 -20.32 0)
+					(length 7.62)
+					(name "RESET_N"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "9"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin power_in line
+					(at 66.04 -20.32 180)
+					(length 7.62)
+					(name "GND"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "10"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin input line
+					(at 66.04 -17.78 180)
+					(length 7.62)
+					(name "RF_IN"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "11"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin power_in line
+					(at 66.04 -15.24 180)
+					(length 7.62)
+					(name "GND"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "12"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin output line
+					(at 66.04 -12.7 180)
+					(length 7.62)
+					(name "LNA_EN"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "13"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin power_out line
+					(at 66.04 -10.16 180)
+					(length 7.62)
+					(name "VCC_RF"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "14"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin power_in line
+					(at 66.04 -7.62 180)
+					(length 7.62)
+					(name "VIO_SEL"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "15"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin bidirectional line
+					(at 66.04 -5.08 180)
+					(length 7.62)
+					(name "SDA"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "16"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin input line
+					(at 66.04 -2.54 180)
+					(length 7.62)
+					(name "SCL"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "17"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin input line
+					(at 66.04 0 180)
+					(length 7.62)
+					(name "SAFEBOOT_N"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "18"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
+		(symbol "power:GND"
+			(power global)
+			(pin_numbers
+				(hide yes)
+			)
+			(pin_names
+				(offset 0)
+				(hide yes)
+			)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(in_pos_files yes)
+			(duplicate_pin_numbers_are_jumpers no)
+			(property "Reference" "#PWR"
+				(at 0 -6.35 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Value" "GND"
+				(at 0 -3.81 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" ""
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Datasheet" ""
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "ki_keywords" "global power"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(symbol "GND_0_1"
+				(polyline
+					(pts
+						(xy 0 0) (xy 0 -1.27) (xy 1.27 -1.27) (xy 0 -2.54) (xy -1.27 -1.27) (xy 0 -1.27)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+			)
+			(symbol "GND_1_1"
+				(pin power_in line
+					(at 0 0 270)
+					(length 0)
+					(name ""
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
+	)
+	(text "EXTINT is routed as an optional host signal for wake/time assistance. Final Apollo pin allocation may omit it if UART-RX wake is sufficient."
+		(exclude_from_sim no)
+		(at 24 171 0)
+		(effects
+			(font
+				(size 0.92 0.92)
+			)
+			(justify left bottom)
+		)
+		(uuid "0c5b8df7-e3a7-4515-b30b-6d14e5b2fcf1")
+	)
+	(text "VOUT1_1V8 / VOUT2_3V0_PROVISIONAL and host/RF labels are local to this child sheet until the final hierarchy integration pass."
+		(exclude_from_sim no)
+		(at 24 196 0)
+		(effects
+			(font
+				(size 0.92 0.92)
+			)
+			(justify left bottom)
+		)
+		(uuid "0f35b217-3162-4267-a67a-72f429e62d31")
+	)
+	(text "SDA/SCL and SAFEBOOT_N are NC because UART is the primary host interface. LNA_EN and VCC_RF are NC for the passive-antenna baseline."
+		(exclude_from_sim no)
+		(at 24 176 0)
+		(effects
+			(font
+				(size 0.92 0.92)
+			)
+			(justify left bottom)
+		)
+		(uuid "485c5e67-574a-4145-b3a2-60dd06e01dfd")
+	)
+	(text "Primary host link = UART at 1.8 V logic. Passive L1/L5 antenna is the Rev-A baseline; RF network is finished on 14_RF."
+		(exclude_from_sim no)
+		(at 24 23 0)
+		(effects
+			(font
+				(size 1 1)
+			)
+			(justify left bottom)
+		)
+		(uuid "4a54f233-c9e3-4193-9bb5-75fda4b7d80e")
+	)
+	(text "If VCC/V_IO are ever hard-switched off, Apollo pins connected to MAX-F10S must be Hi-Z first; do not drive GNSS I/O while its supplies are absent."
+		(exclude_from_sim no)
+		(at 24 151 0)
+		(effects
+			(font
+				(size 0.92 0.92)
+			)
+			(justify left bottom)
+		)
+		(uuid "5f85f796-26da-4ba0-99b0-2106da7f24b9")
+	)
+	(text "The 1.8 V V_IO rail must meet u-blox ±2% accuracy. VCC supply path must support up to 100 mA startup inrush and must not add >0.2 ohm series resistance."
+		(exclude_from_sim no)
+		(at 24 141 0)
+		(effects
+			(font
+				(size 0.92 0.92)
+			)
+			(justify left bottom)
+		)
+		(uuid "6ab202a7-c723-4a7d-9ea7-38a050c98fc7")
+	)
+	(text "MAX-F10S integrates L1/L5 SAW filtering + LNA + diplexer SAW, so do not duplicate an external SAW/LNA stage without a measured RF reason."
+		(exclude_from_sim no)
+		(at 24 186 0)
+		(effects
+			(font
+				(size 0.92 0.92)
+			)
+			(justify left bottom)
+		)
+		(uuid "7318f7ef-6161-4354-b9b4-7e484a8813a6")
+	)
+	(text "RESET_N is intentionally NC. u-blox recommends leaving it open for normal operation; do not add a capacitor to RESET_N. Reset also clears BBR/RTC/orbit data."
+		(exclude_from_sim no)
+		(at 24 161 0)
+		(effects
+			(font
+				(size 0.92 0.92)
+			)
+			(justify left bottom)
+		)
+		(uuid "75e58b48-fd0a-4ec7-bc87-df8788822588")
+	)
+	(text "RF_IN -> GNSS_RF. Route as controlled 50 ohm; RF_IN already contains a DC block. Keep this trace extremely short and away from display/Wi-Fi/high-speed clocks."
+		(exclude_from_sim no)
+		(at 24 181 0)
+		(effects
+			(font
+				(size 0.92 0.92)
+			)
+			(justify left bottom)
+		)
+		(uuid "7f6a4d58-3b6a-4004-9e1f-79eeb1f00a95")
+	)
+	(text "POWER: VCC = VOUT2_3V0_PROVISIONAL (~3.0 V); V_IO = VOUT1_1V8; VIO_SEL = GND selects the 1.8 V I/O range."
+		(exclude_from_sim no)
+		(at 24 136 0)
+		(effects
+			(font
+				(size 0.92 0.92)
+			)
+			(justify left bottom)
+		)
+		(uuid "9ed343a4-4861-42e6-b1c0-2b14636f9214")
+	)
+	(text "TIMEPULSE is routed to GNSS_TIMEPULSE. Never load/pull it low during receiver startup because it is internally linked to SAFEBOOT_N."
+		(exclude_from_sim no)
+		(at 24 166 0)
+		(effects
+			(font
+				(size 0.92 0.92)
+			)
+			(justify left bottom)
+		)
+		(uuid "a644dc77-0708-422b-a12b-2fa3004e9e55")
+	)
+	(text "05_GNSS — u-blox MAX-F10S-00B DUAL-BAND GNSS — REV A"
+		(exclude_from_sim no)
+		(at 24 17 0)
+		(effects
+			(font
+				(size 1.6 1.6)
+			)
+			(justify left bottom)
+		)
+		(uuid "ae3e84c3-be9a-4ab6-b168-6665bb960be0")
+	)
+	(text "POWER MANAGEMENT: prefer MAX-F10S software-standby when GNSS is idle. VCC and V_IO remain supplied, so host PIO isolation buffers are not required."
+		(exclude_from_sim no)
+		(at 24 146 0)
+		(effects
+			(font
+				(size 0.92 0.92)
+			)
+			(justify left bottom)
+		)
+		(uuid "bd3ab2e7-aec2-4e05-a0e0-5c78ebdcd9cb")
+	)
+	(text "Footprint field MAX-F10S_UBL is retained from the imported symbol; verify module pad geometry, pin-1 orientation and courtyard during the footprint audit."
+		(exclude_from_sim no)
+		(at 24 191 0)
+		(effects
+			(font
+				(size 0.92 0.92)
+			)
+			(justify left bottom)
+		)
+		(uuid "da9f4f03-4e2c-4ee3-ba87-3e690379f01d")
+	)
+	(text "V_BCKP is intentionally NC in Rev A. Host time/orbit assistance can be used instead; add a backup rail later only if TTFF measurements justify it."
+		(exclude_from_sim no)
+		(at 24 156 0)
+		(effects
+			(font
+				(size 0.92 0.92)
+			)
+			(justify left bottom)
+		)
+		(uuid "e444601f-3dd3-432d-8951-31919e55ee7f")
+	)
+	(no_connect
+		(at 177.8 91.44)
+		(uuid "4dc8f1c4-2e09-4dc6-8f8d-1fe3809a8c25")
+	)
+	(no_connect
+		(at 177.8 96.52)
+		(uuid "54923518-7c5d-4a25-a072-59dbe7ecc85c")
+	)
+	(no_connect
+		(at 177.8 104.14)
+		(uuid "59a48d2c-725b-4d83-82c2-91803d37aafe")
+	)
+	(no_connect
+		(at 177.8 101.6)
+		(uuid "736dc1d4-34b5-4819-981e-d90d03d0a28a")
+	)
+	(no_connect
+		(at 111.76 111.76)
+		(uuid "7d14a8e9-8ee1-47c5-984b-89aa8bc5fb69")
+	)
+	(no_connect
+		(at 111.76 104.14)
+		(uuid "9482c543-dc02-47b2-8433-b3e6326dcbb5")
+	)
+	(no_connect
+		(at 177.8 93.98)
+		(uuid "f33132f2-4cf9-4205-898f-d91405270c29")
+	)
+	(wire
+		(pts
+			(xy 177.8 111.76) (xy 191 111.76)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "1f989b3d-6348-4eee-96ea-aa590d3a1edb")
+	)
+	(wire
+		(pts
+			(xy 111.76 106.68) (xy 96 106.68)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "402daf63-1c35-4690-93e3-7e8df983e5d3")
+	)
+	(wire
+		(pts
+			(xy 177.8 106.68) (xy 191 106.68)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "55915160-ae98-4a27-8b91-ee3d0e33859c")
+	)
+	(wire
+		(pts
+			(xy 177.8 109.22) (xy 194 109.22)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "5cf4f411-894f-4b48-ac06-8ed05ee46370")
+	)
+	(wire
+		(pts
+			(xy 177.8 99.06) (xy 191 99.06)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "74cd5e88-d07b-40cd-878f-b0a5791b2b97")
+	)
+	(wire
+		(pts
+			(xy 111.76 91.44) (xy 98 91.44)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "790b690d-3f95-40c6-82f7-fcdd5a99fe4d")
+	)
+	(wire
+		(pts
+			(xy 111.76 93.98) (xy 96 93.98)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "8a8dc85e-c66a-484a-a6ba-a7030576d6ef")
+	)
+	(wire
+		(pts
+			(xy 111.76 96.52) (xy 96 96.52)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "a548ba81-e811-46ea-91d9-accc64f7d621")
+	)
+	(wire
+		(pts
+			(xy 111.76 109.22) (xy 96 109.22)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "d7607e45-3913-4df6-b818-cc0a0f6bfaa7")
+	)
+	(wire
+		(pts
+			(xy 111.76 99.06) (xy 96 99.06)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "f0190d20-b593-414b-b633-8f8d2d29b6de")
+	)
+	(wire
+		(pts
+			(xy 111.76 101.6) (xy 96 101.6)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "fee7a4c9-7d29-433e-b0d4-5403b1a4c254")
+	)
+	(label "GNSS_TIMEPULSE"
+		(at 96 99.06 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "0b8db344-d8de-485f-96e4-3f171e355607")
+	)
+	(label "VOUT1_1V8"
+		(at 96 106.68 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "3f154112-fab9-4f6a-987e-e43935078227")
+	)
+	(label "VOUT2_3V0_PROVISIONAL"
+		(at 96 109.22 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "5b6074e5-3430-4bab-9a99-54cafbc52c53")
+	)
+	(label "GNSS_UART_RX"
+		(at 96 96.52 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "75cb95f1-f00c-41c1-8e73-7b3cbf033c18")
+	)
+	(label "GNSS_UART_TX"
+		(at 96 93.98 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "8042ea4f-1280-439a-b057-05747b698de1")
+	)
+	(label "GNSS_RF"
+		(at 194 109.22 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "8e0a3292-29e5-4b84-862f-ca2a8eafc558")
+	)
+	(label "GNSS_EXTINT"
+		(at 96 101.6 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "9e24f3a7-57ed-4097-8a23-9831b8fd2de7")
+	)
+	(symbol
+		(lib_id "power:GND")
+		(at 191 111.76 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "0ae5dabb-82c2-458e-9c85-090f0e574f8b")
+		(property "Reference" "#PWR0502"
+			(at 191 111.76 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "GND"
+			(at 191 114.3 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 191 111.76 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 191 111.76 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Global ground"
+			(at 191 111.76 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "2df2badc-1cc7-433e-9464-a3628bac8c37")
+		)
+		(instances
+			(project "sportwatch_revA"
+				(path "/063f9d99-6c07-44cf-ba32-e33897e06972/28a73f7f-a116-4cfb-9655-47abde0e1324"
+					(reference "#PWR0502")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:GND")
+		(at 98 91.44 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "aa263256-b3e5-4db4-aff1-8aa0209c03d2")
+		(property "Reference" "#PWR0501"
+			(at 98 91.44 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "GND"
+			(at 98 93.98 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 98 91.44 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 98 91.44 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Global ground"
+			(at 98 91.44 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "a9db1bff-704f-4818-b27f-b3672d09f97c")
+		)
+		(instances
+			(project "sportwatch_revA"
+				(path "/063f9d99-6c07-44cf-ba32-e33897e06972/28a73f7f-a116-4cfb-9655-47abde0e1324"
+					(reference "#PWR0501")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:GND")
+		(at 191 99.06 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "b7b79166-254e-44d7-b049-c86d30e26dc7")
+		(property "Reference" "#PWR0504"
+			(at 191 99.06 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "GND"
+			(at 191 101.6 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 191 99.06 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 191 99.06 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Global ground"
+			(at 191 99.06 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "7d2b504c-f49b-4c06-8e89-6daae9b449f1")
+		)
+		(instances
+			(project "sportwatch_revA"
+				(path "/063f9d99-6c07-44cf-ba32-e33897e06972/28a73f7f-a116-4cfb-9655-47abde0e1324"
+					(reference "#PWR0504")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:GND")
+		(at 191 106.68 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "b7f0e93d-87bb-4f8f-b684-dd3c0d3574be")
+		(property "Reference" "#PWR0503"
+			(at 191 106.68 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "GND"
+			(at 191 109.22 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 191 106.68 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 191 106.68 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Global ground"
+			(at 191 106.68 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "bb4ff2f7-2339-4548-a12c-476b0ade5003")
+		)
+		(instances
+			(project "sportwatch_revA"
+				(path "/063f9d99-6c07-44cf-ba32-e33897e06972/28a73f7f-a116-4cfb-9655-47abde0e1324"
+					(reference "#PWR0503")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "2026-09-16_06-45-24:MAX-F10S-00B")
+		(at 111.76 91.44 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "f1102718-5460-4086-982d-9f3a5b4b6ed5")
+		(property "Reference" "U8"
+			(at 144.78 81.28 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.524 1.524)
+				)
+			)
+		)
+		(property "Value" "MAX-F10S-00B"
+			(at 144.78 83.82 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.524 1.524)
+				)
+			)
+		)
+		(property "Footprint" "MAX-F10S_UBL"
+			(at 111.76 91.44 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+					(italic yes)
+				)
+			)
+		)
+		(property "Datasheet" "MAX-F10S-00B"
+			(at 111.76 91.44 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+					(italic yes)
+				)
+			)
+		)
+		(property "Description" ""
+			(at 111.76 91.44 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "5"
+			(uuid "ec82bb9a-1cab-446b-bb2b-26ff4e379f09")
+		)
+		(pin "3"
+			(uuid "370f3211-bde8-4b6f-9571-3652cb82beaf")
+		)
+		(pin "7"
+			(uuid "276d77e3-6458-464c-8d0c-ddbaa9bdc129")
+		)
+		(pin "14"
+			(uuid "03b34691-df47-4122-9f62-a00f47fc810b")
+		)
+		(pin "12"
+			(uuid "878fe9de-775f-422c-a940-9d95429f82e2")
+		)
+		(pin "16"
+			(uuid "86bdc022-1f4b-433d-9e91-b8ddc8aaef97")
+		)
+		(pin "2"
+			(uuid "bd69db17-18e7-4c6b-b478-e13465932b87")
+		)
+		(pin "11"
+			(uuid "bfdabbd4-30da-4540-8604-c8f4be145ad4")
+		)
+		(pin "4"
+			(uuid "ed08424c-791c-40b0-8e99-367e8812f8a7")
+		)
+		(pin "1"
+			(uuid "29ca7ead-ac73-4215-b6fb-5d6c9bdc29a9")
+		)
+		(pin "6"
+			(uuid "1717cf29-68f1-4749-a4a8-8b93c024e138")
+		)
+		(pin "13"
+			(uuid "fa7b807b-6d18-4962-97af-0a07a1a694f9")
+		)
+		(pin "17"
+			(uuid "4723ff60-7a72-48d6-b2fa-8d73526bf35e")
+		)
+		(pin "8"
+			(uuid "57d8018d-0e4a-4f22-8737-fc9857d095ec")
+		)
+		(pin "18"
+			(uuid "24f122ab-f3a1-451a-b8d7-b58dd138ecf9")
+		)
+		(pin "9"
+			(uuid "de9d43c5-188b-412e-9548-38c02ac4d5ef")
+		)
+		(pin "10"
+			(uuid "c5b3f960-e11c-4d83-a3bc-1cec97083148")
+		)
+		(pin "15"
+			(uuid "d405c581-d692-49e7-a1af-aadc76fca8b1")
+		)
+		(instances
+			(project "sportwatch_revA"
+				(path "/063f9d99-6c07-44cf-ba32-e33897e06972/28a73f7f-a116-4cfb-9655-47abde0e1324"
+					(reference "U8")
+					(unit 1)
+				)
+			)
+		)
+	)
 )

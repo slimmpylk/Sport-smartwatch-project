@@ -1,0 +1,992 @@
+{
+  "protocol_version": 2,
+  "target_format": "kicad",
+  "groups": {
+    "MODULE": {
+      "origin": [
+        0,
+        0
+      ],
+      "title": "DISPLAY MODULE"
+    },
+    "TOUCH_PULLUPS": {
+      "origin": [
+        0,
+        0
+      ],
+      "title": "TOUCH I2C"
+    },
+    "DEFAULT_STATES": {
+      "origin": [
+        0,
+        0
+      ],
+      "title": "DEFAULT STATES"
+    }
+  },
+  "ops": [
+    {
+      "op": "delete_component",
+      "designator": "J1",
+      "cascade": true
+    },
+    {
+      "op": "set_title_block",
+      "title": "Rev-A — ZC-A1D43W-046 AMOLED / touch",
+      "rev": "A",
+      "date": "2026-09-16",
+      "comment1": "QSPI + I2C / 3.3 V I/O / Apollo allocation pending"
+    },
+    {
+      "op": "place_component",
+      "lib_id": "sportwatch_display:ZC-A1D43W-046",
+      "designator": "J1",
+      "x_mil": 5400,
+      "y_mil": 3100,
+      "footprint": "sportwatch_custom:OK-23GF024-04",
+      "group": "MODULE",
+      "value": "ZC-A1D43W-046"
+    },
+    {
+      "op": "set_component_parameters",
+      "designator": "J1",
+      "parameters": {
+        "Manufacturer": "OCN",
+        "MPN": "OK-23GF024-04",
+        "Description": "Motherboard socket for ZC-A1D43W-046 module; CO5300AF-08 / CHSC6417 / BV6802W internal",
+        "Datasheet": "${KIPRJMOD}/../datasheets/display/ZC-A1D43W-046_spec V1.0-25.01.10.pdf"
+      }
+    },
+    {
+      "op": "add_wire",
+      "vertices": [
+        "J1.4",
+        [
+          4250,
+          2700
+        ]
+      ]
+    },
+    {
+      "op": "add_net_label",
+      "name": "DISP_QSPI_CS",
+      "at": [
+        4250,
+        2700
+      ],
+      "scope": "global",
+      "rotation": 180
+    },
+    {
+      "op": "add_wire",
+      "vertices": [
+        "J1.5",
+        [
+          4250,
+          2800
+        ]
+      ]
+    },
+    {
+      "op": "add_net_label",
+      "name": "DISP_QSPI_CLK",
+      "at": [
+        4250,
+        2800
+      ],
+      "scope": "global",
+      "rotation": 180
+    },
+    {
+      "op": "add_wire",
+      "vertices": [
+        "J1.7",
+        [
+          4250,
+          2900
+        ]
+      ]
+    },
+    {
+      "op": "add_net_label",
+      "name": "DISP_QSPI_IO0",
+      "at": [
+        4250,
+        2900
+      ],
+      "scope": "global",
+      "rotation": 180
+    },
+    {
+      "op": "add_wire",
+      "vertices": [
+        "J1.6",
+        [
+          4250,
+          3000
+        ]
+      ]
+    },
+    {
+      "op": "add_net_label",
+      "name": "DISP_QSPI_IO1",
+      "at": [
+        4250,
+        3000
+      ],
+      "scope": "global",
+      "rotation": 180
+    },
+    {
+      "op": "add_wire",
+      "vertices": [
+        "J1.23",
+        [
+          4250,
+          3100
+        ]
+      ]
+    },
+    {
+      "op": "add_net_label",
+      "name": "DISP_QSPI_IO2",
+      "at": [
+        4250,
+        3100
+      ],
+      "scope": "global",
+      "rotation": 180
+    },
+    {
+      "op": "add_wire",
+      "vertices": [
+        "J1.22",
+        [
+          4250,
+          3200
+        ]
+      ]
+    },
+    {
+      "op": "add_net_label",
+      "name": "DISP_QSPI_IO3",
+      "at": [
+        4250,
+        3200
+      ],
+      "scope": "global",
+      "rotation": 180
+    },
+    {
+      "op": "add_wire",
+      "vertices": [
+        "J1.1",
+        [
+          4250,
+          3300
+        ]
+      ]
+    },
+    {
+      "op": "add_net_label",
+      "name": "DISP_RST",
+      "at": [
+        4250,
+        3300
+      ],
+      "scope": "global",
+      "rotation": 180
+    },
+    {
+      "op": "add_wire",
+      "vertices": [
+        "J1.24",
+        [
+          4250,
+          3400
+        ]
+      ]
+    },
+    {
+      "op": "add_net_label",
+      "name": "DISP_VCI_EN",
+      "at": [
+        4250,
+        3400
+      ],
+      "scope": "global",
+      "rotation": 180
+    },
+    {
+      "op": "add_wire",
+      "vertices": [
+        "J1.3",
+        [
+          4250,
+          3500
+        ]
+      ]
+    },
+    {
+      "op": "add_net_label",
+      "name": "DISP_TE",
+      "at": [
+        4250,
+        3500
+      ],
+      "scope": "global",
+      "rotation": 180
+    },
+    {
+      "op": "add_wire",
+      "vertices": [
+        "J1.19",
+        [
+          6600,
+          2700
+        ]
+      ]
+    },
+    {
+      "op": "add_net_label",
+      "name": "TOUCH_SDA",
+      "at": [
+        6600,
+        2700
+      ],
+      "scope": "global",
+      "rotation": 0
+    },
+    {
+      "op": "add_wire",
+      "vertices": [
+        "J1.20",
+        [
+          6600,
+          2800
+        ]
+      ]
+    },
+    {
+      "op": "add_net_label",
+      "name": "TOUCH_SCL",
+      "at": [
+        6600,
+        2800
+      ],
+      "scope": "global",
+      "rotation": 0
+    },
+    {
+      "op": "add_wire",
+      "vertices": [
+        "J1.18",
+        [
+          6600,
+          2900
+        ]
+      ]
+    },
+    {
+      "op": "add_net_label",
+      "name": "TOUCH_RST",
+      "at": [
+        6600,
+        2900
+      ],
+      "scope": "global",
+      "rotation": 0
+    },
+    {
+      "op": "add_wire",
+      "vertices": [
+        "J1.17",
+        [
+          6600,
+          3000
+        ]
+      ]
+    },
+    {
+      "op": "add_net_label",
+      "name": "TOUCH_INT",
+      "at": [
+        6600,
+        3000
+      ],
+      "scope": "global",
+      "rotation": 0
+    },
+    {
+      "op": "add_no_connect",
+      "pin": "J1.9"
+    },
+    {
+      "op": "add_no_connect",
+      "pin": "J1.10"
+    },
+    {
+      "op": "add_wire",
+      "vertices": [
+        "J1.11",
+        [
+          5200,
+          2100
+        ]
+      ]
+    },
+    {
+      "op": "add_wire",
+      "vertices": [
+        "J1.12",
+        [
+          5300,
+          2100
+        ]
+      ]
+    },
+    {
+      "op": "add_wire",
+      "vertices": [
+        [
+          5200,
+          2100
+        ],
+        [
+          5300,
+          2100
+        ]
+      ]
+    },
+    {
+      "op": "add_net_label",
+      "name": "VSYS",
+      "at": [
+        5200,
+        2100
+      ],
+      "scope": "global",
+      "rotation": 90
+    },
+    {
+      "op": "add_wire",
+      "vertices": [
+        "J1.15",
+        [
+          5400,
+          2300
+        ]
+      ]
+    },
+    {
+      "op": "add_wire",
+      "vertices": [
+        "J1.16",
+        [
+          5500,
+          2300
+        ]
+      ]
+    },
+    {
+      "op": "add_wire",
+      "vertices": [
+        [
+          5400,
+          2300
+        ],
+        [
+          5500,
+          2300
+        ]
+      ]
+    },
+    {
+      "op": "add_wire",
+      "vertices": [
+        [
+          5500,
+          2300
+        ],
+        [
+          5700,
+          2300
+        ]
+      ]
+    },
+    {
+      "op": "add_net_label",
+      "name": "SYS_3V3",
+      "at": [
+        5700,
+        2300
+      ],
+      "scope": "global",
+      "rotation": 0
+    },
+    {
+      "op": "add_wire",
+      "vertices": [
+        "J1.2",
+        [
+          5200,
+          3900
+        ]
+      ]
+    },
+    {
+      "op": "add_wire",
+      "vertices": [
+        "J1.8",
+        [
+          5300,
+          3900
+        ]
+      ]
+    },
+    {
+      "op": "add_wire",
+      "vertices": [
+        "J1.13",
+        [
+          5400,
+          3900
+        ]
+      ]
+    },
+    {
+      "op": "add_wire",
+      "vertices": [
+        "J1.14",
+        [
+          5500,
+          3900
+        ]
+      ]
+    },
+    {
+      "op": "add_wire",
+      "vertices": [
+        "J1.21",
+        [
+          5600,
+          3900
+        ]
+      ]
+    },
+    {
+      "op": "add_wire",
+      "vertices": [
+        [
+          5200,
+          3900
+        ],
+        [
+          5300,
+          3900
+        ]
+      ]
+    },
+    {
+      "op": "add_wire",
+      "vertices": [
+        [
+          5300,
+          3900
+        ],
+        [
+          5400,
+          3900
+        ]
+      ]
+    },
+    {
+      "op": "add_wire",
+      "vertices": [
+        [
+          5400,
+          3900
+        ],
+        [
+          5500,
+          3900
+        ]
+      ]
+    },
+    {
+      "op": "add_wire",
+      "vertices": [
+        [
+          5500,
+          3900
+        ],
+        [
+          5600,
+          3900
+        ]
+      ]
+    },
+    {
+      "op": "add_wire",
+      "vertices": [
+        [
+          5400,
+          3900
+        ],
+        [
+          5400,
+          4050
+        ]
+      ]
+    },
+    {
+      "op": "place_gnd",
+      "at": [
+        5400,
+        4050
+      ]
+    },
+    {
+      "op": "place_component",
+      "lib_id": "Device:R",
+      "designator": "R301",
+      "x_mil": 7900,
+      "y_mil": 2500,
+      "value": "3.6k",
+      "footprint": "Resistor_SMD:R_0402_1005Metric",
+      "group": "TOUCH_PULLUPS"
+    },
+    {
+      "op": "set_component_parameters",
+      "designator": "R301",
+      "parameters": {
+        "Description": "DNP; populate only if bus has no pull-ups; provisional 100kHz / <=100pF",
+        "Tolerance": "1%",
+        "Assembly": "DNP / optional",
+        "Rating": "0.063W, >=25V"
+      }
+    },
+    {
+      "op": "add_wire",
+      "vertices": [
+        "R301.1",
+        [
+          7900,
+          2200
+        ]
+      ]
+    },
+    {
+      "op": "add_net_label",
+      "name": "SYS_3V3",
+      "at": [
+        7900,
+        2200
+      ],
+      "scope": "global",
+      "rotation": 90
+    },
+    {
+      "op": "add_wire",
+      "vertices": [
+        "R301.2",
+        [
+          7900,
+          2800
+        ]
+      ]
+    },
+    {
+      "op": "add_net_label",
+      "name": "TOUCH_SDA",
+      "at": [
+        7900,
+        2800
+      ],
+      "scope": "global",
+      "rotation": 0
+    },
+    {
+      "op": "place_component",
+      "lib_id": "Device:R",
+      "designator": "R302",
+      "x_mil": 9300,
+      "y_mil": 2500,
+      "value": "3.6k",
+      "footprint": "Resistor_SMD:R_0402_1005Metric",
+      "group": "TOUCH_PULLUPS"
+    },
+    {
+      "op": "set_component_parameters",
+      "designator": "R302",
+      "parameters": {
+        "Description": "DNP; same condition as R301",
+        "Tolerance": "1%",
+        "Assembly": "DNP / optional",
+        "Rating": "0.063W, >=25V"
+      }
+    },
+    {
+      "op": "add_wire",
+      "vertices": [
+        "R302.1",
+        [
+          9300,
+          2200
+        ]
+      ]
+    },
+    {
+      "op": "add_net_label",
+      "name": "SYS_3V3",
+      "at": [
+        9300,
+        2200
+      ],
+      "scope": "global",
+      "rotation": 90
+    },
+    {
+      "op": "add_wire",
+      "vertices": [
+        "R302.2",
+        [
+          9300,
+          2800
+        ]
+      ]
+    },
+    {
+      "op": "add_net_label",
+      "name": "TOUCH_SCL",
+      "at": [
+        9300,
+        2800
+      ],
+      "scope": "global",
+      "rotation": 0
+    },
+    {
+      "op": "place_component",
+      "lib_id": "Device:R",
+      "designator": "R303",
+      "x_mil": 1400,
+      "y_mil": 2800,
+      "value": "10k",
+      "footprint": "Resistor_SMD:R_0402_1005Metric",
+      "group": "DEFAULT_STATES"
+    },
+    {
+      "op": "set_component_parameters",
+      "designator": "R303",
+      "parameters": {
+        "Description": "Display reset default low; CO5300 pp14/100/116",
+        "Tolerance": "1%",
+        "Assembly": "Fitted",
+        "Rating": "0.063W, >=25V"
+      }
+    },
+    {
+      "op": "add_wire",
+      "vertices": [
+        "R303.1",
+        [
+          1400,
+          2500
+        ]
+      ]
+    },
+    {
+      "op": "add_net_label",
+      "name": "DISP_RST",
+      "at": [
+        1400,
+        2500
+      ],
+      "scope": "global",
+      "rotation": 90
+    },
+    {
+      "op": "add_wire",
+      "vertices": [
+        "R303.2",
+        [
+          1400,
+          3100
+        ]
+      ]
+    },
+    {
+      "op": "place_gnd",
+      "at": [
+        1400,
+        3100
+      ]
+    },
+    {
+      "op": "place_component",
+      "lib_id": "Device:R",
+      "designator": "R304",
+      "x_mil": 2700,
+      "y_mil": 2800,
+      "value": "10k",
+      "footprint": "Resistor_SMD:R_0402_1005Metric",
+      "group": "DEFAULT_STATES"
+    },
+    {
+      "op": "set_component_parameters",
+      "designator": "R304",
+      "parameters": {
+        "Description": "Touch reset default low; CHSC6417 section 8",
+        "Tolerance": "1%",
+        "Assembly": "Fitted",
+        "Rating": "0.063W, >=25V"
+      }
+    },
+    {
+      "op": "add_wire",
+      "vertices": [
+        "R304.1",
+        [
+          2700,
+          2500
+        ]
+      ]
+    },
+    {
+      "op": "add_net_label",
+      "name": "TOUCH_RST",
+      "at": [
+        2700,
+        2500
+      ],
+      "scope": "global",
+      "rotation": 90
+    },
+    {
+      "op": "add_wire",
+      "vertices": [
+        "R304.2",
+        [
+          2700,
+          3100
+        ]
+      ]
+    },
+    {
+      "op": "place_gnd",
+      "at": [
+        2700,
+        3100
+      ]
+    },
+    {
+      "op": "place_component",
+      "lib_id": "Device:R",
+      "designator": "R305",
+      "x_mil": 1400,
+      "y_mil": 3900,
+      "value": "10k",
+      "footprint": "Resistor_SMD:R_0402_1005Metric",
+      "group": "DEFAULT_STATES"
+    },
+    {
+      "op": "set_component_parameters",
+      "designator": "R305",
+      "parameters": {
+        "Description": "CS default inactive high; module p9",
+        "Tolerance": "1%",
+        "Assembly": "Fitted",
+        "Rating": "0.063W, >=25V"
+      }
+    },
+    {
+      "op": "add_wire",
+      "vertices": [
+        "R305.1",
+        [
+          1400,
+          3600
+        ]
+      ]
+    },
+    {
+      "op": "add_net_label",
+      "name": "SYS_3V3",
+      "at": [
+        1400,
+        3600
+      ],
+      "scope": "global",
+      "rotation": 0
+    },
+    {
+      "op": "add_wire",
+      "vertices": [
+        "R305.2",
+        [
+          1400,
+          4200
+        ]
+      ]
+    },
+    {
+      "op": "add_net_label",
+      "name": "DISP_QSPI_CS",
+      "at": [
+        1400,
+        4200
+      ],
+      "scope": "global",
+      "rotation": 0
+    },
+    {
+      "op": "place_component",
+      "lib_id": "Device:R",
+      "designator": "R306",
+      "x_mil": 2700,
+      "y_mil": 3900,
+      "value": "10k",
+      "footprint": "Resistor_SMD:R_0402_1005Metric",
+      "group": "DEFAULT_STATES"
+    },
+    {
+      "op": "set_component_parameters",
+      "designator": "R306",
+      "parameters": {
+        "Description": "DNP; optional enable bias only after supplier confirms polarity/internal bias",
+        "Tolerance": "1%",
+        "Assembly": "DNP / optional",
+        "Rating": "0.063W, >=25V"
+      }
+    },
+    {
+      "op": "add_wire",
+      "vertices": [
+        "R306.1",
+        [
+          2700,
+          3600
+        ]
+      ]
+    },
+    {
+      "op": "add_net_label",
+      "name": "DISP_VCI_EN",
+      "at": [
+        2700,
+        3600
+      ],
+      "scope": "global",
+      "rotation": 0
+    },
+    {
+      "op": "add_wire",
+      "vertices": [
+        "R306.2",
+        [
+          2700,
+          4200
+        ]
+      ]
+    },
+    {
+      "op": "place_gnd",
+      "at": [
+        2700,
+        4200
+      ]
+    },
+    {
+      "op": "add_text_box",
+      "key": "heading",
+      "text": "ZC-A1D43W-046  |  466 x 466 AMOLED + touch\nJ1 = motherboard socket. Display/touch/power ICs are inside the module.\nPhysical buttons remain the primary sports controls; touch is an additional UI input.",
+      "at": [
+        700,
+        500
+      ],
+      "size": [
+        10000,
+        450
+      ]
+    },
+    {
+      "op": "add_text_box",
+      "key": "pins16",
+      "text": "Pin 16 documentation discrepancy: mechanical drawing P5 labels VDD; interface table P9 labels TP_VDD. Both require 3.3 V in this design. P9 naming used pending supplier clarification.",
+      "at": [
+        3800,
+        1250
+      ],
+      "size": [
+        6400,
+        400
+      ]
+    },
+    {
+      "op": "add_text_box",
+      "key": "bias",
+      "text": "HOST DEFAULT STATES\nR303/R304 hold active-low resets asserted.\nR305 deselects QSPI during host startup.\n10k: 0.33mA at 3.3V; verify internal module\nbias/leakage and GPIO drive during bring-up.\nR306 DNP: VCI_EN polarity/internal bias\nnot specified in supplied module PDF.",
+      "at": [
+        700,
+        4700
+      ],
+      "size": [
+        3100,
+        950
+      ]
+    },
+    {
+      "op": "add_text_box",
+      "key": "pullups",
+      "text": "TOUCH I2C — R301 / R302 DNP\n3.6k provisions to SYS_3V3; fit only if needed.\nProvisional target: 100kHz, total Cbus <=100pF.\nNXP UM10204 calculation: 0.967k < Rp < 11.8k.\nCHSC datasheets specify no resistor value.\nConfirm module pull-ups, sink capability and\nfinal bus capacitance before population.\nDo not use 1.8V PMIC bus pull-ups.",
+      "at": [
+        7500,
+        3200
+      ],
+      "size": [
+        3100,
+        1050
+      ]
+    },
+    {
+      "op": "add_text_box",
+      "key": "power",
+      "text": "POWER / PCB\nJ1.11/12 -> VSYS (module VBAT: 2.9-5.5V).\nJ1.15/16 -> SYS_3V3 (3.15-3.45V).\nJ1.2/8/13/14/21 -> GND; 9/10 explicitly NC.\nInternal IC passives are not duplicated.\nRoute both VBAT pins and every GND pin.\n02_POWER rails are local labels: export them\nin the later integration pass to power this sheet.\nNo PWR_FLAG hides the missing source.",
+      "at": [
+        4000,
+        4450
+      ],
+      "size": [
+        3300,
+        1200
+      ]
+    },
+    {
+      "op": "add_text_box",
+      "key": "seq",
+      "text": "FIRMWARE / INTEGRATION — Apollo balls unallocated; all interfaces are 3.3V\nCO5300 pp100/101/116: hold DISP_RST low at startup; VDDI must precede internal VCI.\nWait >=10ms after rails valid before releasing reset; >=10ms before first command;\nwait >=120ms after reset before Sleep Out, then >=60ms before Display On.\nShutdown: Display Off -> Sleep In -> wait >=83ms -> reset low -> internal VCI off before VDDI.\nVCI_EN controls internal power: obtain module enable polarity/delays and initialization code.\nCHSC6417 section 8: TOUCH_RST low >=100us before power; hold >=1ms after power valid;\nreset pulse >=500us; allow up to 200ms for ready INT. Power cycle: <0.3V for >=2ms.\nTP_VDD rise (10-90%) <=5ms; assert TOUCH_RST before power-down.\nKeep shared I2C idle during touch reset; never drive it while TP_VDD is off.\nModule timing and internal bias must be confirmed on hardware before production release.",
+      "at": [
+        700,
+        5900
+      ],
+      "size": [
+        6100,
+        1400
+      ]
+    },
+    {
+      "op": "add_text_box",
+      "key": "connector",
+      "text": "CONNECTOR / ASSEMBLY\nOK-23GF024-04 socket mates with module's OK-23GM024-04 male (module P5, OCN P1/P3).\nFootprint F.Cu view: lower row 1..12 left-to-right; upper row 24..13 left-to-right.\nPin 1 is marked at lower left. Mating-face views reflect across the connector long axis.\nMatch to P5 FPC pin-1 corner; check folded FPC orientation before board placement.",
+      "at": [
+        7500,
+        4550
+      ],
+      "size": [
+        3100,
+        1100
+      ]
+    }
+  ]
+}

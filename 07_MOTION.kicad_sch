@@ -5,6 +5,726 @@
 	(uuid "13ac46ba-eb4c-4322-8872-e5d376a14a2f")
 	(paper "A4")
 	(lib_symbols
+		(symbol "Device:C"
+			(pin_numbers
+				(hide yes)
+			)
+			(pin_names
+				(offset 0.254)
+			)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(in_pos_files yes)
+			(duplicate_pin_numbers_are_jumpers no)
+			(property "Reference" "C"
+				(at 0.635 2.54 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left)
+				)
+			)
+			(property "Value" "C"
+				(at 0.635 -2.54 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left)
+				)
+			)
+			(property "Footprint" ""
+				(at 0.9652 -3.81 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Datasheet" ""
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Description" "Unpolarized capacitor"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "ki_keywords" "cap capacitor"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "ki_fp_filters" "C_*"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(symbol "C_0_1"
+				(polyline
+					(pts
+						(xy -2.032 0.762) (xy 2.032 0.762)
+					)
+					(stroke
+						(width 0.508)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy -2.032 -0.762) (xy 2.032 -0.762)
+					)
+					(stroke
+						(width 0.508)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+			)
+			(symbol "C_1_1"
+				(pin passive line
+					(at 0 3.81 270)
+					(length 2.794)
+					(name ""
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 0 -3.81 90)
+					(length 2.794)
+					(name ""
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
+		(symbol "Device:R"
+			(pin_numbers
+				(hide yes)
+			)
+			(pin_names
+				(offset 0)
+			)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(in_pos_files yes)
+			(duplicate_pin_numbers_are_jumpers no)
+			(property "Reference" "R"
+				(at 2.032 0 90)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Value" "R"
+				(at 0 0 90)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" ""
+				(at -1.778 0 90)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Datasheet" ""
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Description" "Resistor"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "ki_keywords" "R res resistor"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "ki_fp_filters" "R_*"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(symbol "R_0_1"
+				(rectangle
+					(start -1.016 -2.54)
+					(end 1.016 2.54)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+			)
+			(symbol "R_1_1"
+				(pin passive line
+					(at 0 3.81 270)
+					(length 1.27)
+					(name ""
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 0 -3.81 90)
+					(length 1.27)
+					(name ""
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
+		(symbol "power:GND"
+			(power global)
+			(pin_numbers
+				(hide yes)
+			)
+			(pin_names
+				(offset 0)
+				(hide yes)
+			)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(in_pos_files yes)
+			(duplicate_pin_numbers_are_jumpers no)
+			(property "Reference" "#PWR"
+				(at 0 -6.35 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Value" "GND"
+				(at 0 -3.81 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" ""
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Datasheet" ""
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "ki_keywords" "global power"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(symbol "GND_0_1"
+				(polyline
+					(pts
+						(xy 0 0) (xy 0 -1.27) (xy 1.27 -1.27) (xy 0 -2.54) (xy -1.27 -1.27) (xy 0 -1.27)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+			)
+			(symbol "GND_1_1"
+				(pin power_in line
+					(at 0 0 270)
+					(length 0)
+					(name ""
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
+		(symbol "sportwatch_bmm350:BMM350"
+			(pin_names
+				(offset 0.254)
+			)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(in_pos_files yes)
+			(duplicate_pin_numbers_are_jumpers no)
+			(property "Reference" "U"
+				(at 20.32 10.16 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1.524 1.524)
+					)
+				)
+			)
+			(property "Value" "BMM350"
+				(at 20.32 7.62 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1.524 1.524)
+					)
+				)
+			)
+			(property "Footprint" "sportwatch_custom:BGA9_BMM350_BOS"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+						(italic yes)
+					)
+				)
+			)
+			(property "Datasheet" "BMM350"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+						(italic yes)
+					)
+				)
+			)
+			(property "Description" ""
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "ki_locked" ""
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "ki_keywords" "BMM350"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "ki_fp_filters" "BGA9_BMM350_BOS BGA9_BMM350_BOS-M BGA9_BMM350_BOS-L"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(symbol "BMM350_0_1"
+				(polyline
+					(pts
+						(xy 7.62 5.08) (xy 7.62 -15.24)
+					)
+					(stroke
+						(width 0.127)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 7.62 -15.24) (xy 33.02 -15.24)
+					)
+					(stroke
+						(width 0.127)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 33.02 5.08) (xy 7.62 5.08)
+					)
+					(stroke
+						(width 0.127)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 33.02 -15.24) (xy 33.02 5.08)
+					)
+					(stroke
+						(width 0.127)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(pin output line
+					(at 0 0 0)
+					(length 7.62)
+					(name "INT"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "A1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin bidirectional line
+					(at 0 -2.54 0)
+					(length 7.62)
+					(name "SDA"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "A2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin input line
+					(at 0 -5.08 0)
+					(length 7.62)
+					(name "SCK"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "A3"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin power_in line
+					(at 0 -7.62 0)
+					(length 7.62)
+					(name "GND"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "B1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin input line
+					(at 40.64 -10.16 180)
+					(length 7.62)
+					(name "ADSEL"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "B2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin power_in line
+					(at 40.64 -7.62 180)
+					(length 7.62)
+					(name "VDDIO"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "B3"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin power_in line
+					(at 40.64 -5.08 180)
+					(length 7.62)
+					(name "VDD"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "C1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 40.64 -2.54 180)
+					(length 7.62)
+					(name "CRST"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "C2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 40.64 0 180)
+					(length 7.62)
+					(name "BYPASS"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "C3"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
 		(symbol "sportwatch_lsm6dsv16x:LSM6DSV16XTR"
 			(pin_names
 				(offset 0.254)
@@ -204,7 +924,7 @@
 						)
 					)
 				)
-				(pin input line
+				(pin output line
 					(at 0 -7.62 0)
 					(length 7.62)
 					(name "INT1"
@@ -240,7 +960,7 @@
 						)
 					)
 				)
-				(pin power_out line
+				(pin power_in line
 					(at 0 -12.7 0)
 					(length 7.62)
 					(name "GND"
@@ -258,7 +978,7 @@
 						)
 					)
 				)
-				(pin power_out line
+				(pin power_in line
 					(at 0 -15.24 0)
 					(length 7.62)
 					(name "GND"
@@ -294,7 +1014,7 @@
 						)
 					)
 				)
-				(pin input line
+				(pin output line
 					(at 66.04 -12.7 180)
 					(length 7.62)
 					(name "INT2"
@@ -405,320 +1125,1078 @@
 			)
 			(embedded_fonts no)
 		)
-		(symbol "sportwatch_bmm350:BMM350"
-			(pin_names
-				(offset 0.254)
+	)
+	(text "LSM6DSV16X — 6-AXIS IMU"
+		(exclude_from_sim no)
+		(at 82 68 0)
+		(effects
+			(font
+				(size 1.5 1.5)
 			)
-			(exclude_from_sim no)
-			(in_bom yes)
-			(on_board yes)
-			(in_pos_files yes)
-			(duplicate_pin_numbers_are_jumpers no)
-			(property "Reference" "U"
-				(at 20.32 10.16 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(effects
-					(font
-						(size 1.524 1.524)
-					)
+			(justify left bottom)
+		)
+		(uuid "184f5302-1bed-4402-a8be-03dc9e4d5356")
+	)
+	(text "BMM350 C5 (CRST) = 2.2uF low-resistance / low-inductance / non-magnetic; place extremely close."
+		(exclude_from_sim no)
+		(at 25 158 0)
+		(effects
+			(font
+				(size 1.05 1.05)
+			)
+			(justify left bottom)
+		)
+		(uuid "1fcc7bdb-806a-460c-a4c6-cd58dd320b2e")
+	)
+	(text "BMM350 — 3-AXIS MAGNETOMETER"
+		(exclude_from_sim no)
+		(at 176 102 0)
+		(effects
+			(font
+				(size 1.5 1.5)
+			)
+			(justify left bottom)
+		)
+		(uuid "22019174-e3e9-415d-908d-50384cac78c9")
+	)
+	(text "U2 primary interface: 4-wire SPI to Apollo510B; SPI mode 0 or 3"
+		(exclude_from_sim no)
+		(at 25 138 0)
+		(effects
+			(font
+				(size 1.05 1.05)
+			)
+			(justify left bottom)
+		)
+		(uuid "29f60054-8bdd-4169-bb35-b8344e82c6e6")
+	)
+	(text "U2 mode 1: Qvar / analog hub disabled; pins 2 and 3 tied to VDDIO; OCS_AUX/SDO_AUX NC"
+		(exclude_from_sim no)
+		(at 25 143 0)
+		(effects
+			(font
+				(size 1.05 1.05)
+			)
+			(justify left bottom)
+		)
+		(uuid "50c48da5-5ee1-4baf-8fa1-8cb7c702a05a")
+	)
+	(text "07_MOTION — LSM6DSV16X IMU + BMM350 MAGNETOMETER — REV A"
+		(exclude_from_sim no)
+		(at 18 15 0)
+		(effects
+			(font
+				(size 2 2)
+			)
+			(justify left bottom)
+		)
+		(uuid "7e96d75f-0472-47de-9415-deb41c4f0463")
+	)
+	(text "U3 direct I2C to Apollo510B; ADSEL=GND => 7-bit address 0x14; R1/R2=10k pull-ups"
+		(exclude_from_sim no)
+		(at 25 148 0)
+		(effects
+			(font
+				(size 1.05 1.05)
+			)
+			(justify left bottom)
+		)
+		(uuid "8011bd99-f9cc-4ca1-ba3c-543f33865c7a")
+	)
+	(text "POWER / DECOUPLING"
+		(exclude_from_sim no)
+		(at 45 29 0)
+		(effects
+			(font
+				(size 1.5 1.5)
+			)
+			(justify left bottom)
+		)
+		(uuid "8afb7084-8c92-4d59-8d4e-052f5ccc23e3")
+	)
+	(text "PCB: keep BMM350 away from LRA, inductors, high-current loops and ferromagnetic parts."
+		(exclude_from_sim no)
+		(at 25 163 0)
+		(effects
+			(font
+				(size 1.05 1.05)
+			)
+			(justify left bottom)
+		)
+		(uuid "a163286d-ca2b-4485-b09e-665342ac6db9")
+	)
+	(text "Apollo GPIO/ball allocation intentionally deferred until system bus/pin-allocation pass."
+		(exclude_from_sim no)
+		(at 25 168 0)
+		(effects
+			(font
+				(size 1.05 1.05)
+			)
+			(justify left bottom)
+		)
+		(uuid "ac20000a-b1b7-4ee3-8575-3c0904bf2a16")
+	)
+	(text "Both sensors powered from VOUT1_1V8. Place each 100nF capacitor at its supply pin."
+		(exclude_from_sim no)
+		(at 25 153 0)
+		(effects
+			(font
+				(size 1.05 1.05)
+			)
+			(justify left bottom)
+		)
+		(uuid "afe19655-b348-4919-bee7-efc9bff8c6fb")
+	)
+	(no_connect
+		(at 147.32 104.14)
+		(uuid "c912cb70-b9ae-4c40-94a1-8c77066af66e")
+	)
+	(no_connect
+		(at 147.32 101.6)
+		(uuid "eeeb0cee-e369-4293-a7c1-3acdd95aeefc")
+	)
+	(wire
+		(pts
+			(xy 75 46.81) (xy 75 49.35)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "057c5def-d2a5-430a-957f-d502dcce9111")
+	)
+	(wire
+		(pts
+			(xy 55 46.81) (xy 55 49.35)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "10d0013d-7e01-4e3c-9c07-a9852e990aa0")
+	)
+	(wire
+		(pts
+			(xy 81.28 104.14) (xy 68 104.14)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "19eb91f5-e614-4a46-9d39-5a8c618e84f5")
+	)
+	(wire
+		(pts
+			(xy 145 39.19) (xy 145 36.65)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "1d4b9804-9b02-43f9-b41f-47120f370244")
+	)
+	(wire
+		(pts
+			(xy 55 39.19) (xy 55 36.65)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "221c9ca3-d819-4797-a8d9-ddd1a7515c75")
+	)
+	(wire
+		(pts
+			(xy 165 46.81) (xy 165 49.35)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "28c08725-3b99-4452-845a-10fad17efae4")
+	)
+	(wire
+		(pts
+			(xy 175.26 116) (xy 162 116)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "404f23d6-2eea-48e4-82f2-f50f9dcd4a9c")
+	)
+	(wire
+		(pts
+			(xy 81.28 93.98) (xy 68 93.98)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "48af5603-e8d8-493b-923f-9dfca44a8861")
+	)
+	(wire
+		(pts
+			(xy 81.28 101.6) (xy 68 101.6)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "50ba57d5-57e0-4236-956a-2e386a5142e0")
+	)
+	(wire
+		(pts
+			(xy 215.9 118.54) (xy 230 118.54)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "56d47fa0-8958-4a3c-a0ec-7ad464a19454")
+	)
+	(wire
+		(pts
+			(xy 215.9 116) (xy 224 116)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "5d5304b4-a298-461d-bab8-6ee5094b63fa")
+	)
+	(wire
+		(pts
+			(xy 147.32 96.52) (xy 160 96.52)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "5ec61d2e-4a4d-421c-92fe-c8f745b859c9")
+	)
+	(wire
+		(pts
+			(xy 147.32 106.68) (xy 158 106.68)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "6b7aa0e7-32dc-4e8a-a33d-3306ed435381")
+	)
+	(wire
+		(pts
+			(xy 147.32 109.22) (xy 158 109.22)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "6c61fa5e-110c-451a-9b52-0ab159d4daf7")
+	)
+	(wire
+		(pts
+			(xy 75 39.19) (xy 75 36.65)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "6d35651c-847d-4182-9b5b-f4a7773baf73")
+	)
+	(wire
+		(pts
+			(xy 81.28 106.68) (xy 72 106.68)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "7ca455f8-75c2-4850-86d6-c0fed5118a87")
+	)
+	(wire
+		(pts
+			(xy 175.26 123.62) (xy 166 123.62)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "7d68f60b-197c-4cb7-8796-8fe3fd3babee")
+	)
+	(wire
+		(pts
+			(xy 165 39.19) (xy 165 36.65)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "7f103ad0-733c-4d50-a953-23bd6891d305")
+	)
+	(wire
+		(pts
+			(xy 225 39.19) (xy 225 36.65)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "850b81d4-60d2-4439-8be1-7730aaa6d27f")
+	)
+	(wire
+		(pts
+			(xy 175.26 121.08) (xy 162 121.08)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "86398511-ffc2-41c4-86ed-9540334f8809")
+	)
+	(wire
+		(pts
+			(xy 81.28 109.22) (xy 72 109.22)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "886d3444-f7d7-4c81-8f9d-68b962a21c57")
+	)
+	(wire
+		(pts
+			(xy 81.28 99.06) (xy 68 99.06)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "8ef67ea2-99b1-4632-a9b5-6248f6412bbd")
+	)
+	(wire
+		(pts
+			(xy 215.9 123.62) (xy 230 123.62)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "8f510a92-be3f-4a2d-8796-8e2703902c85")
+	)
+	(wire
+		(pts
+			(xy 81.28 96.52) (xy 68 96.52)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "9075b494-5bff-43e6-ab0a-e38b098841e4")
+	)
+	(wire
+		(pts
+			(xy 245 39.19) (xy 245 36.65)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "974c8a31-635b-46f8-86d4-a7e55ed12ddd")
+	)
+	(wire
+		(pts
+			(xy 215.9 126.16) (xy 224 126.16)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "99d1bb29-6d15-4d67-bef1-84effb311492")
+	)
+	(wire
+		(pts
+			(xy 147.32 93.98) (xy 160 93.98)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "9bd2d941-127b-4969-8207-f88289bff72f")
+	)
+	(wire
+		(pts
+			(xy 145 46.81) (xy 145 49.35)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "9e0d0964-872a-4e1e-af13-cf2d563b017e")
+	)
+	(wire
+		(pts
+			(xy 175.26 118.54) (xy 162 118.54)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "b42ecd97-ab6e-47b4-b0a2-39050ddf76c4")
+	)
+	(wire
+		(pts
+			(xy 205 39.19) (xy 205 36.65)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "b4671f90-ee57-45c1-8809-2c302189d3d6")
+	)
+	(wire
+		(pts
+			(xy 245 46.81) (xy 245 49.35)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "b986586e-0d98-43a9-9e49-4b34bde2d9ed")
+	)
+	(wire
+		(pts
+			(xy 225 46.81) (xy 225 49.35)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "c4ed2403-fe3e-4c8c-b907-3bbf92578467")
+	)
+	(wire
+		(pts
+			(xy 205 46.81) (xy 205 49.35)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "d2225307-e7d7-4765-955c-1cd011d052da")
+	)
+	(wire
+		(pts
+			(xy 215.9 121.08) (xy 230 121.08)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "ddbf0947-875e-46ec-a183-4a5086e10ac5")
+	)
+	(wire
+		(pts
+			(xy 147.32 99.06) (xy 160 99.06)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "f9d75198-80cc-4e15-9365-41fa106c1540")
+	)
+	(label "VOUT1_1V8"
+		(at 230 123.62 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "00b76580-9ea2-4947-89f7-576263447a61")
+	)
+	(label "VOUT1_1V8"
+		(at 75 36.65 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "014e114d-7419-410f-9c55-236346dd722f")
+	)
+	(label "IMU_SPI_CS"
+		(at 160 99.06 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "098b7831-805d-47fc-8c0a-e37913885f37")
+	)
+	(label "BMM_CRST"
+		(at 245 36.65 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "0d2001c2-0339-401c-8962-142e477aa7d4")
+	)
+	(label "IMU_SPI_MISO"
+		(at 68 93.98 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "1ddf9612-b100-4c49-b9d3-a3a0f497f3df")
+	)
+	(label "IMU_INT2"
+		(at 158 106.68 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "256d4f45-32ea-4b78-87c6-aae2f459d4e1")
+	)
+	(label "VOUT1_1V8"
+		(at 158 109.22 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "2716a28f-b2fa-419d-ba92-5c8ee0039b66")
+	)
+	(label "MAG_I2C_SCL"
+		(at 162 121.08 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "282d8018-b5b8-419f-b94d-2a23cda707ef")
+	)
+	(label "IMU_INT1"
+		(at 68 101.6 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "2dc5f169-b786-4693-905e-0567292c2e72")
+	)
+	(label "MAG_I2C_SCL"
+		(at 165 49.35 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "3b586efd-6c31-4f50-971a-7840e6744027")
+	)
+	(label "VOUT1_1V8"
+		(at 68 104.14 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "48f8124e-fd33-4e17-8908-bee69d8ad9b2")
+	)
+	(label "VOUT1_1V8"
+		(at 230 121.08 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "546fd3e3-6919-45e4-87f9-ce3a13b0a79e")
+	)
+	(label "VOUT1_1V8"
+		(at 68 96.52 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "55a0bb67-f71b-4d33-819a-e5038c8cddb5")
+	)
+	(label "BMM_CRST"
+		(at 230 118.54 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "5d99d40b-0c15-4aea-971f-a44884418aac")
+	)
+	(label "MAG_I2C_SDA"
+		(at 145 49.35 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "65f51d58-efd4-45c3-a99c-657577fa53ac")
+	)
+	(label "IMU_SPI_MOSI"
+		(at 160 93.98 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "7f0dca42-ab5f-4d30-9a11-a6db1bdf6d79")
+	)
+	(label "VOUT1_1V8"
+		(at 205 36.65 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "833dea3a-a809-449a-aac1-869c6e109a55")
+	)
+	(label "VOUT1_1V8"
+		(at 225 36.65 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "84868495-e608-47c9-87fe-419aa6d89e9c")
+	)
+	(label "IMU_SPI_SCK"
+		(at 160 96.52 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "af657ac5-3d1b-4a89-bf8f-2895fbaf3885")
+	)
+	(label "VOUT1_1V8"
+		(at 68 99.06 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "b073b8e2-2d86-44ca-bb51-ad7f3be4dd64")
+	)
+	(label "MAG_I2C_SDA"
+		(at 162 118.54 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "bd24a499-2312-493c-9d1e-e97d6a99c657")
+	)
+	(label "MAG_INT"
+		(at 162 116 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "c0de3b9d-bc3b-465c-bc9f-45d94a4a79ef")
+	)
+	(label "VOUT1_1V8"
+		(at 145 36.65 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "d0248948-5320-467e-92c9-c05823d65055")
+	)
+	(label "VOUT1_1V8"
+		(at 55 36.65 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "eacfea2d-a940-4bdf-a4fc-255fefca2adf")
+	)
+	(label "VOUT1_1V8"
+		(at 165 36.65 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "f1f4d8f5-6052-4c1d-9ac4-36f173c29863")
+	)
+	(symbol
+		(lib_id "Device:R")
+		(at 165 43 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "09cbd42d-25a9-483e-8eee-89085c2d0257")
+		(property "Reference" "R2"
+			(at 167.54 40.46 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
 				)
 			)
-			(property "Value" "BMM350"
-				(at 20.32 7.62 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(effects
-					(font
-						(size 1.524 1.524)
-					)
+		)
+		(property "Value" "10k"
+			(at 167.54 45.54 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
 				)
 			)
-			(property "Footprint" "sportwatch_custom:BGA9_BMM350_BOS"
-				(at 0 0 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-						(italic yes)
-					)
+		)
+		(property "Footprint" ""
+			(at 165 43 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
 				)
 			)
-			(property "Datasheet" "BMM350"
-				(at 0 0 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-						(italic yes)
-					)
+		)
+		(property "Datasheet" "~"
+			(at 165 43 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
 				)
 			)
-			(property "Description" ""
-				(at 0 0 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
+		)
+		(property "Description" "BMM350 I2C SCL pull-up to 1.8V"
+			(at 165 43 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
 				)
 			)
-			(property "ki_locked" ""
-				(at 0 0 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
+		)
+		(property "Tolerance" "1%"
+			(at 165 43 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
 				)
 			)
-			(property "ki_keywords" "BMM350"
-				(at 0 0 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
+		)
+		(pin "1"
+			(uuid "2ba24e99-f022-4256-b397-a363a703d134")
+		)
+		(pin "2"
+			(uuid "4f09fea4-d7db-46dc-a5e9-d0d263d5bce9")
+		)
+		(instances
+			(project "sportwatch_revA"
+				(path "/063f9d99-6c07-44cf-ba32-e33897e06972/0fde0b30-f543-4029-8455-03e39821fc60"
+					(reference "R2")
+					(unit 1)
 				)
 			)
-			(property "ki_fp_filters" "BGA9_BMM350_BOS BGA9_BMM350_BOS-M BGA9_BMM350_BOS-L"
-				(at 0 0 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
+		)
+	)
+	(symbol
+		(lib_id "Device:C")
+		(at 205 43 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "0ce8471a-7698-4c07-82e0-180bdaea4850")
+		(property "Reference" "C3"
+			(at 207.54 40.46 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
 				)
 			)
-			(symbol "BMM350_0_1"
-				(polyline
-					(pts
-						(xy 7.62 5.08) (xy 7.62 -15.24)
-					)
-					(stroke
-						(width 0.127)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 7.62 -15.24) (xy 33.02 -15.24)
-					)
-					(stroke
-						(width 0.127)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 33.02 5.08) (xy 7.62 5.08)
-					)
-					(stroke
-						(width 0.127)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 33.02 -15.24) (xy 33.02 5.08)
-					)
-					(stroke
-						(width 0.127)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(pin input line
-					(at 0 0 0)
-					(length 7.62)
-					(name "INT"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "A1"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin unspecified line
-					(at 0 -2.54 0)
-					(length 7.62)
-					(name "SDA"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "A2"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin unspecified line
-					(at 0 -5.08 0)
-					(length 7.62)
-					(name "SCK"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "A3"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin power_out line
-					(at 0 -7.62 0)
-					(length 7.62)
-					(name "GND"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "B1"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin unspecified line
-					(at 40.64 -10.16 180)
-					(length 7.62)
-					(name "ADSEL"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "B2"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin power_in line
-					(at 40.64 -7.62 180)
-					(length 7.62)
-					(name "VDDIO"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "B3"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin power_in line
-					(at 40.64 -5.08 180)
-					(length 7.62)
-					(name "VDD"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "C1"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin unspecified line
-					(at 40.64 -2.54 180)
-					(length 7.62)
-					(name "CRST"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "C2"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin power_out line
-					(at 40.64 0 180)
-					(length 7.62)
-					(name "BYPASS"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "C3"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
+		)
+		(property "Value" "100nF"
+			(at 207.54 45.54 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
 				)
 			)
-			(embedded_fonts no)
+		)
+		(property "Footprint" ""
+			(at 205 43 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 205 43 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "BMM350 VDD decoupling; place at C1/VDD ball"
+			(at 205 43 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Dielectric" "X5R"
+			(at 205 43 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "4279159b-aff7-498e-a71e-ffafe8243a00")
+		)
+		(pin "2"
+			(uuid "cc04b341-379f-4f4a-96b9-e6b542b64417")
+		)
+		(instances
+			(project "sportwatch_revA"
+				(path "/063f9d99-6c07-44cf-ba32-e33897e06972/0fde0b30-f543-4029-8455-03e39821fc60"
+					(reference "C3")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:GND")
+		(at 205 49.35 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "1c983f7d-28df-4ddb-b8fa-5017b256dde4")
+		(property "Reference" "#PWR0708"
+			(at 207.54 46.81 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "GND"
+			(at 207.54 51.89 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 205 49.35 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 205 49.35 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Global ground"
+			(at 205 49.35 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "762434be-4364-438d-906f-4f7a45a654c7")
+		)
+		(instances
+			(project "sportwatch_revA"
+				(path "/063f9d99-6c07-44cf-ba32-e33897e06972/0fde0b30-f543-4029-8455-03e39821fc60"
+					(reference "#PWR0708")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:GND")
+		(at 224 116 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "2948f440-74dd-4f34-8ff7-3f0c1b874f4d")
+		(property "Reference" "#PWR0705"
+			(at 226.54 113.46 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "GND"
+			(at 226.54 118.54 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 224 116 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 224 116 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Global ground"
+			(at 224 116 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "7223f61d-e256-464a-a6e9-764436bcd891")
+		)
+		(instances
+			(project "sportwatch_revA"
+				(path "/063f9d99-6c07-44cf-ba32-e33897e06972/0fde0b30-f543-4029-8455-03e39821fc60"
+					(reference "#PWR0705")
+					(unit 1)
+				)
+			)
 		)
 	)
 	(symbol
 		(lib_id "sportwatch_bmm350:BMM350")
-		(at 175.26 99.06 0)
+		(at 175.26 116 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -729,7 +2207,7 @@
 		(fields_autoplaced yes)
 		(uuid "32658d97-9fc6-4a2f-9ebb-bdf5c541cfe8")
 		(property "Reference" "U3"
-			(at 195.58 88.9 0)
+			(at 195.58 105.84 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -739,7 +2217,7 @@
 			)
 		)
 		(property "Value" "BMM350"
-			(at 195.58 91.44 0)
+			(at 195.58 108.38 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -749,7 +2227,7 @@
 			)
 		)
 		(property "Footprint" "sportwatch_custom:BGA9_BMM350_BOS"
-			(at 175.26 99.06 0)
+			(at 175.26 116 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -761,7 +2239,7 @@
 			)
 		)
 		(property "Datasheet" "BMM350"
-			(at 175.26 99.06 0)
+			(at 175.26 116 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -773,7 +2251,7 @@
 			)
 		)
 		(property "Description" ""
-			(at 175.26 99.06 0)
+			(at 175.26 116 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -814,6 +2292,854 @@
 			(project "sportwatch_revA"
 				(path "/063f9d99-6c07-44cf-ba32-e33897e06972/0fde0b30-f543-4029-8455-03e39821fc60"
 					(reference "U3")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:C")
+		(at 225 43 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "36a4fbe6-55c9-486c-bad3-7622f1599973")
+		(property "Reference" "C4"
+			(at 227.54 40.46 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "100nF"
+			(at 227.54 45.54 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 225 43 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 225 43 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "BMM350 VDDIO decoupling; place at B3/VDDIO ball"
+			(at 225 43 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Dielectric" "X5R"
+			(at 225 43 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "a42aaea7-1c24-48be-8d6d-ac6894a0d26d")
+		)
+		(pin "2"
+			(uuid "8efadc57-8b28-4a8d-b903-ba81bdcc77fd")
+		)
+		(instances
+			(project "sportwatch_revA"
+				(path "/063f9d99-6c07-44cf-ba32-e33897e06972/0fde0b30-f543-4029-8455-03e39821fc60"
+					(reference "C4")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:GND")
+		(at 75 49.35 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "38b78061-b6c4-4012-8d93-e4a4ca45fc5d")
+		(property "Reference" "#PWR0707"
+			(at 77.54 46.81 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "GND"
+			(at 77.54 51.89 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 75 49.35 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 75 49.35 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Global ground"
+			(at 75 49.35 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "dcab7489-01a1-418d-907c-832c83206a93")
+		)
+		(instances
+			(project "sportwatch_revA"
+				(path "/063f9d99-6c07-44cf-ba32-e33897e06972/0fde0b30-f543-4029-8455-03e39821fc60"
+					(reference "#PWR0707")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:GND")
+		(at 72 109.22 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "482dcde7-b2ee-42fb-8cea-64f0dfc9e7e7")
+		(property "Reference" "#PWR0702"
+			(at 74.54 76.2 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "GND"
+			(at 74.54 81.28 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 72 78.74 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 72 78.74 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Global ground"
+			(at 72 78.74 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "3cab277f-00b1-4aff-a3e7-1a3fe72b405f")
+		)
+		(instances
+			(project "sportwatch_revA"
+				(path "/063f9d99-6c07-44cf-ba32-e33897e06972/0fde0b30-f543-4029-8455-03e39821fc60"
+					(reference "#PWR0702")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:R")
+		(at 145 43 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "5397c2db-c10b-47a7-8522-95b7afad6f29")
+		(property "Reference" "R1"
+			(at 147.54 40.46 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "10k"
+			(at 147.54 45.54 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 145 43 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 145 43 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "BMM350 I2C SDA pull-up to 1.8V"
+			(at 145 43 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Tolerance" "1%"
+			(at 145 43 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "aa4293b1-50d8-40f4-ae79-643a1944b002")
+		)
+		(pin "2"
+			(uuid "a970e460-c3be-4e42-b885-bf3797ab3918")
+		)
+		(instances
+			(project "sportwatch_revA"
+				(path "/063f9d99-6c07-44cf-ba32-e33897e06972/0fde0b30-f543-4029-8455-03e39821fc60"
+					(reference "R1")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:C")
+		(at 75 43 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "6c04c41a-ee2b-45ed-8045-0fafb16e1a4d")
+		(property "Reference" "C2"
+			(at 77.54 40.46 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "100nF"
+			(at 77.54 45.54 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 75 43 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 75 43 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "LSM6DSV16X VDDIO decoupling; place at pin 5"
+			(at 75 43 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Dielectric" "X5R"
+			(at 75 43 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "006969dc-6b5b-4133-8fbe-de2d609c4710")
+		)
+		(pin "2"
+			(uuid "36455e71-0f1e-45bf-8c58-e7ff8b6ebdbc")
+		)
+		(instances
+			(project "sportwatch_revA"
+				(path "/063f9d99-6c07-44cf-ba32-e33897e06972/0fde0b30-f543-4029-8455-03e39821fc60"
+					(reference "C2")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:C")
+		(at 55 43 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "7341cfeb-57e0-4c3e-ac6b-3c4d8b2298a8")
+		(property "Reference" "C1"
+			(at 57.54 40.46 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "100nF"
+			(at 57.54 45.54 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 55 43 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 55 43 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "LSM6DSV16X VDD decoupling; place at pin 8"
+			(at 55 43 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Dielectric" "X5R"
+			(at 55 43 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "0ac80bc2-b077-4f84-9350-4e98c776c931")
+		)
+		(pin "2"
+			(uuid "e1a86404-0517-4002-9e9f-96d43052f950")
+		)
+		(instances
+			(project "sportwatch_revA"
+				(path "/063f9d99-6c07-44cf-ba32-e33897e06972/0fde0b30-f543-4029-8455-03e39821fc60"
+					(reference "C1")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:GND")
+		(at 55 49.35 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "77feb721-d732-4933-a87b-e8a8a7fce773")
+		(property "Reference" "#PWR0706"
+			(at 57.54 46.81 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "GND"
+			(at 57.54 51.89 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 55 49.35 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 55 49.35 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Global ground"
+			(at 55 49.35 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "55f0302c-7cc0-4570-bfe0-8e581af6d1b4")
+		)
+		(instances
+			(project "sportwatch_revA"
+				(path "/063f9d99-6c07-44cf-ba32-e33897e06972/0fde0b30-f543-4029-8455-03e39821fc60"
+					(reference "#PWR0706")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:GND")
+		(at 224 126.16 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "7aa2fabe-4ab7-4c8d-bb3d-d20075262381")
+		(property "Reference" "#PWR0704"
+			(at 226.54 103.3 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "GND"
+			(at 226.54 108.38 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 224 105.84 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 224 105.84 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Global ground"
+			(at 224 105.84 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "fdacbf46-d141-4548-9012-03169f7d8156")
+		)
+		(instances
+			(project "sportwatch_revA"
+				(path "/063f9d99-6c07-44cf-ba32-e33897e06972/0fde0b30-f543-4029-8455-03e39821fc60"
+					(reference "#PWR0704")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:GND")
+		(at 72 106.68 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "80641b3c-0d98-4820-88b8-54e65041b7db")
+		(property "Reference" "#PWR0701"
+			(at 74.54 78.74 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "GND"
+			(at 74.54 83.82 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 72 81.28 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 72 81.28 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Global ground"
+			(at 72 81.28 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "fade8015-0fc7-4f99-b87f-c9313788e92d")
+		)
+		(instances
+			(project "sportwatch_revA"
+				(path "/063f9d99-6c07-44cf-ba32-e33897e06972/0fde0b30-f543-4029-8455-03e39821fc60"
+					(reference "#PWR0701")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:C")
+		(at 245 43 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "b915568a-8460-42cd-9034-8e975ec43f2c")
+		(property "Reference" "C5"
+			(at 247.54 40.46 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "2.2uF"
+			(at 247.54 45.54 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 245 43 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 245 43 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "BMM350 CRST capacitor; low-R low-L non-magnetic; place very close"
+			(at 245 43 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Dielectric" "X5R"
+			(at 245 43 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "e8782a72-bf88-4d65-b2f5-166aa826b37b")
+		)
+		(pin "2"
+			(uuid "f336bc9c-74c9-4de6-b956-e0fbf50577a9")
+		)
+		(instances
+			(project "sportwatch_revA"
+				(path "/063f9d99-6c07-44cf-ba32-e33897e06972/0fde0b30-f543-4029-8455-03e39821fc60"
+					(reference "C5")
 					(unit 1)
 				)
 			)
@@ -932,6 +3258,241 @@
 			(project "sportwatch_revA"
 				(path "/063f9d99-6c07-44cf-ba32-e33897e06972/0fde0b30-f543-4029-8455-03e39821fc60"
 					(reference "U2")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:GND")
+		(at 245 49.35 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "cba98adc-4142-425a-9b7c-1f2bbe39210a")
+		(property "Reference" "#PWR0710"
+			(at 247.54 46.81 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "GND"
+			(at 247.54 51.89 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 245 49.35 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 245 49.35 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Global ground"
+			(at 245 49.35 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "a4693ae3-2cb7-46ed-9dfa-7829da976e54")
+		)
+		(instances
+			(project "sportwatch_revA"
+				(path "/063f9d99-6c07-44cf-ba32-e33897e06972/0fde0b30-f543-4029-8455-03e39821fc60"
+					(reference "#PWR0710")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:GND")
+		(at 225 49.35 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "de68aa9c-6dab-4c6b-a077-03589c161006")
+		(property "Reference" "#PWR0709"
+			(at 227.54 46.81 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "GND"
+			(at 227.54 51.89 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 225 49.35 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 225 49.35 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Global ground"
+			(at 225 49.35 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "5c161c1d-9fa6-4b2b-bbe7-e52da10fd3ce")
+		)
+		(instances
+			(project "sportwatch_revA"
+				(path "/063f9d99-6c07-44cf-ba32-e33897e06972/0fde0b30-f543-4029-8455-03e39821fc60"
+					(reference "#PWR0709")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:GND")
+		(at 166 123.62 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "e69e442c-79f6-41f6-a99e-08be9e59aa9f")
+		(property "Reference" "#PWR0703"
+			(at 168.54 105.84 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "GND"
+			(at 168.54 110.92 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 166 108.38 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 166 108.38 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Global ground"
+			(at 166 108.38 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "86e7c2c6-e2d9-406a-b57b-b3e7b2960e53")
+		)
+		(instances
+			(project "sportwatch_revA"
+				(path "/063f9d99-6c07-44cf-ba32-e33897e06972/0fde0b30-f543-4029-8455-03e39821fc60"
+					(reference "#PWR0703")
 					(unit 1)
 				)
 			)

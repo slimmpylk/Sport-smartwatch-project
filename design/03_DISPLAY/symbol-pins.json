@@ -1,0 +1,178 @@
+{
+  "protocol_version": 1,
+  "name": "ZC-A1D43W-046",
+  "reference_prefix": "J",
+  "body": {
+    "width_mil": 1600
+  },
+  "pins": [
+    {
+      "number": "4",
+      "name": "SPI_CS",
+      "type": "input",
+      "side": "left",
+      "group": "QSPI"
+    },
+    {
+      "number": "5",
+      "name": "SPI_CLK",
+      "type": "input",
+      "side": "left",
+      "group": "QSPI"
+    },
+    {
+      "number": "7",
+      "name": "SPI_SI00",
+      "type": "bidirectional",
+      "side": "left",
+      "group": "QSPI"
+    },
+    {
+      "number": "6",
+      "name": "SPI_I01",
+      "type": "bidirectional",
+      "side": "left",
+      "group": "QSPI"
+    },
+    {
+      "number": "23",
+      "name": "SPI_SI02",
+      "type": "bidirectional",
+      "side": "left",
+      "group": "QSPI"
+    },
+    {
+      "number": "22",
+      "name": "SPI_SI03",
+      "type": "bidirectional",
+      "side": "left",
+      "group": "QSPI"
+    },
+    {
+      "number": "1",
+      "name": "LCD_RST",
+      "type": "input",
+      "side": "left",
+      "group": "CONTROL"
+    },
+    {
+      "number": "24",
+      "name": "VCI_EN",
+      "type": "input",
+      "side": "left",
+      "group": "CONTROL"
+    },
+    {
+      "number": "3",
+      "name": "TE",
+      "type": "output",
+      "side": "left",
+      "group": "CONTROL"
+    },
+    {
+      "number": "19",
+      "name": "TP_SDA",
+      "type": "bidirectional",
+      "side": "right",
+      "group": "TOUCH"
+    },
+    {
+      "number": "20",
+      "name": "TP_SCL",
+      "type": "input",
+      "side": "right",
+      "group": "TOUCH"
+    },
+    {
+      "number": "18",
+      "name": "TP_RST",
+      "type": "input",
+      "side": "right",
+      "group": "TOUCH"
+    },
+    {
+      "number": "17",
+      "name": "TP_INT",
+      "type": "output",
+      "side": "right",
+      "group": "TOUCH"
+    },
+    {
+      "number": "9",
+      "name": "IM1/NC",
+      "type": "no_connect",
+      "side": "right",
+      "group": "UNUSED"
+    },
+    {
+      "number": "10",
+      "name": "MTP/NC",
+      "type": "no_connect",
+      "side": "right",
+      "group": "UNUSED"
+    },
+    {
+      "number": "11",
+      "name": "VBAT",
+      "type": "power_in",
+      "side": "top",
+      "group": "POWER"
+    },
+    {
+      "number": "12",
+      "name": "VBAT",
+      "type": "power_in",
+      "side": "top",
+      "group": "POWER"
+    },
+    {
+      "number": "15",
+      "name": "VDD",
+      "type": "power_in",
+      "side": "top",
+      "group": "POWER"
+    },
+    {
+      "number": "16",
+      "name": "TP_VDD",
+      "type": "power_in",
+      "side": "top",
+      "group": "POWER"
+    },
+    {
+      "number": "2",
+      "name": "GND",
+      "type": "power_in",
+      "side": "bottom",
+      "group": "GROUND"
+    },
+    {
+      "number": "8",
+      "name": "GND",
+      "type": "power_in",
+      "side": "bottom",
+      "group": "GROUND"
+    },
+    {
+      "number": "13",
+      "name": "GND",
+      "type": "power_in",
+      "side": "bottom",
+      "group": "GROUND"
+    },
+    {
+      "number": "14",
+      "name": "GND",
+      "type": "power_in",
+      "side": "bottom",
+      "group": "GROUND"
+    },
+    {
+      "number": "21",
+      "name": "GND",
+      "type": "power_in",
+      "side": "bottom",
+      "group": "GROUND"
+    }
+  ]
+}
