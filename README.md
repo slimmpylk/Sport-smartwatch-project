@@ -54,6 +54,14 @@ The project is intentionally developed at component and PCB level rather than ar
 
 Component choices and interfaces are verified against manufacturer datasheets as the design progresses.
 
+### Display subsystem
+
+Schematic excerpt for the round AMOLED display module interface (24-pin ZC-A1D43W-046 assembly): QSPI configuration, I²C touch controller, power rails and reset/enable circuitry:
+
+<p align="center">
+  <img src="images/display.jpg" alt="Display subsystem schematic" width="720">
+</p>
+
 ---
 
 ## KiCad design organization
@@ -81,6 +89,8 @@ sportwatch_revA/
 ├── sportwatch_revA.kicad_pro
 ├── fp-lib-table
 ├── sym-lib-table
+├── images/
+│   └── display.jpg
 └── libraries/
 ```
 
