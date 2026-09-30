@@ -6460,7 +6460,7 @@
 						)
 					)
 				)
-				(pin power_in line
+				(pin passive line
 					(at 12.7 5.08 180)
 					(length 2.54)
 					(name "VREF2"
@@ -7841,7 +7841,7 @@
 						)
 					)
 				)
-				(pin input line
+				(pin passive line
 					(at -15.24 -2.54 0)
 					(length 2.54)
 					(name "nRESET"

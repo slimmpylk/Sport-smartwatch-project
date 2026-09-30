@@ -2546,6 +2546,121 @@
 			)
 			(embedded_fonts no)
 		)
+		(symbol "power:PWR_FLAG"
+			(power global)
+			(pin_numbers
+				(hide yes)
+			)
+			(pin_names
+				(offset 0)
+				(hide yes)
+			)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(in_pos_files yes)
+			(duplicate_pin_numbers_are_jumpers no)
+			(property "Reference" "#FLG"
+				(at 0 1.905 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Value" "PWR_FLAG"
+				(at 0 3.81 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" ""
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Datasheet" ""
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Description" "Special symbol for telling ERC where power comes from"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "ki_keywords" "flag power"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(symbol "PWR_FLAG_0_0"
+				(pin power_out line
+					(at 0 0 90)
+					(length 0)
+					(name ""
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+			(symbol "PWR_FLAG_0_1"
+				(polyline
+					(pts
+						(xy 0 0) (xy 0 1.27) (xy -1.016 1.905) (xy 0 2.54) (xy 1.016 1.905) (xy 0 1.27)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
 	)
 	(text "VBUSOUT reserved for host/VBUS sensing; not a downstream system supply"
 		(exclude_from_sim no)
@@ -2778,7 +2893,7 @@
 		)
 		(uuid "d12f319c-ee66-4031-a34b-8aad9c7c21f0")
 	)
-	(text "Wake/reset implementation on PMIC_SHPHLD TBD"
+	(text "SHPHLD has internal 50k pull-up; left open (unused)"
 		(exclude_from_sim no)
 		(at 50 141 0)
 		(effects
@@ -2874,6 +2989,18 @@
 	(no_connect
 		(at 118.11 83.82)
 		(uuid "d233868d-fa97-4ea1-a9f7-3cef6110ccba")
+	)
+	(no_connect
+		(at 118.11 124.46)
+		(uuid "67c9c043-432d-4530-80e3-eb92b1dc8524")
+	)
+	(no_connect
+		(at 189.23 104.14)
+		(uuid "98bf9f1a-b605-4f47-810a-313d3393976c")
+	)
+	(no_connect
+		(at 189.23 111.76)
+		(uuid "8f6ae3cf-7e3e-436f-997e-128a1a36484e")
 	)
 	(wire
 		(pts
@@ -2974,16 +3101,6 @@
 			(type default)
 		)
 		(uuid "17369b37-5706-48d9-9be2-a889fa1ba060")
-	)
-	(wire
-		(pts
-			(xy 189.23 104.14) (xy 199 104.14)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "19608607-e927-4774-ba31-2f062c3aa654")
 	)
 	(wire
 		(pts
@@ -3327,16 +3444,6 @@
 	)
 	(wire
 		(pts
-			(xy 118.11 124.46) (xy 108 124.46)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "a51df93f-de4f-449b-973e-c6ddd4a4fffe")
-	)
-	(wire
-		(pts
 			(xy 275 33) (xy 275 37)
 		)
 		(stroke
@@ -3424,16 +3531,6 @@
 			(type default)
 		)
 		(uuid "d4da704e-d961-4c3d-8fdd-2c863827d1f3")
-	)
-	(wire
-		(pts
-			(xy 189.23 111.76) (xy 199 111.76)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "dd347fc1-72cd-48cd-b1e0-91e99ba668a7")
 	)
 	(wire
 		(pts
@@ -3803,16 +3900,6 @@
 		)
 		(uuid "7574c2de-5c0d-464c-9336-aa8fc9f91056")
 	)
-	(label "PMIC_SHPHLD"
-		(at 108 124.46 180)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right bottom)
-		)
-		(uuid "75b59e25-a3ab-4e24-ab17-765238b66825")
-	)
 	(label "VBUSIN"
 		(at 65 28.19 0)
 		(effects
@@ -4124,26 +4211,6 @@
 			(justify left bottom)
 		)
 		(uuid "f6f148a4-2195-4a63-9217-b30d4af3cbbc")
-	)
-	(label "PMIC_LSIN1_TBD"
-		(at 199 104.14 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left bottom)
-		)
-		(uuid "fd5245f4-d135-4a39-87c8-fb7579e23fd5")
-	)
-	(label "PMIC_LSIN2_TBD"
-		(at 199 111.76 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left bottom)
-		)
-		(uuid "ff57f36f-320c-46ec-9ea0-2a621b159121")
 	)
 	(wire
 		(pts
@@ -8317,6 +8384,396 @@
 			(project "02_POWER"
 				(path "/bbbd25bf-ebfe-444c-b330-035ab29a723c"
 					(reference "C204")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:PWR_FLAG")
+		(at 55 30 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "f1902011-0001-4000-8000-000000000201")
+		(property "Reference" "#FLG0201"
+			(at 55 30 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "PWR_FLAG"
+			(at 55 30 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 55 30 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 55 30 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" ""
+			(at 55 30 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "f1902012-0001-4000-8000-000000000201")
+		)
+		(instances
+			(project "sportwatch_revA"
+				(path "/063f9d99-6c07-44cf-ba32-e33897e06972/044f2259-6cab-4c65-a4f2-7f6378d66929"
+					(reference "#FLG0201")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:PWR_FLAG")
+		(at 55 52.46 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "f1902021-0001-4000-8000-000000000202")
+		(property "Reference" "#FLG0202"
+			(at 55 52.46 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "PWR_FLAG"
+			(at 55 52.46 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 55 52.46 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 55 52.46 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" ""
+			(at 55 52.46 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "f1902022-0001-4000-8000-000000000202")
+		)
+		(instances
+			(project "sportwatch_revA"
+				(path "/063f9d99-6c07-44cf-ba32-e33897e06972/044f2259-6cab-4c65-a4f2-7f6378d66929"
+					(reference "#FLG0202")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:PWR_FLAG")
+		(at 50 64 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "f1902031-0001-4000-8000-000000000203")
+		(property "Reference" "#FLG0203"
+			(at 50 64 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "PWR_FLAG"
+			(at 50 64 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 50 64 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 50 64 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" ""
+			(at 50 64 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "f1902032-0001-4000-8000-000000000203")
+		)
+		(instances
+			(project "sportwatch_revA"
+				(path "/063f9d99-6c07-44cf-ba32-e33897e06972/044f2259-6cab-4c65-a4f2-7f6378d66929"
+					(reference "#FLG0203")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:PWR_FLAG")
+		(at 262.46 120 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "f1902041-0001-4000-8000-000000000204")
+		(property "Reference" "#FLG0204"
+			(at 262.46 120 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "PWR_FLAG"
+			(at 262.46 120 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 262.46 120 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 262.46 120 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" ""
+			(at 262.46 120 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "f1902042-0001-4000-8000-000000000204")
+		)
+		(instances
+			(project "sportwatch_revA"
+				(path "/063f9d99-6c07-44cf-ba32-e33897e06972/044f2259-6cab-4c65-a4f2-7f6378d66929"
+					(reference "#FLG0204")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:PWR_FLAG")
+		(at 262.46 70 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "f1902051-0001-4000-8000-000000000205")
+		(property "Reference" "#FLG0205"
+			(at 262.46 70 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "PWR_FLAG"
+			(at 262.46 70 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 262.46 70 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 262.46 70 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" ""
+			(at 262.46 70 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "f1902052-0001-4000-8000-000000000205")
+		)
+		(instances
+			(project "sportwatch_revA"
+				(path "/063f9d99-6c07-44cf-ba32-e33897e06972/044f2259-6cab-4c65-a4f2-7f6378d66929"
+					(reference "#FLG0205")
 					(unit 1)
 				)
 			)

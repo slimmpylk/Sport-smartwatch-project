@@ -1384,6 +1384,121 @@
 			)
 			(embedded_fonts no)
 		)
+		(symbol "power:PWR_FLAG"
+			(power global)
+			(pin_numbers
+				(hide yes)
+			)
+			(pin_names
+				(offset 0)
+				(hide yes)
+			)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(in_pos_files yes)
+			(duplicate_pin_numbers_are_jumpers no)
+			(property "Reference" "#FLG"
+				(at 0 1.905 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Value" "PWR_FLAG"
+				(at 0 3.81 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" ""
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Datasheet" ""
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Description" "Special symbol for telling ERC where power comes from"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "ki_keywords" "flag power"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(symbol "PWR_FLAG_0_0"
+				(pin power_out line
+					(at 0 0 90)
+					(length 0)
+					(name ""
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+			(symbol "PWR_FLAG_0_1"
+				(polyline
+					(pts
+						(xy 0 0) (xy 0 1.27) (xy -1.016 1.905) (xy 0 2.54) (xy 1.016 1.905) (xy 0 1.27)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
 	)
 	(text "04_PPG — DUAL MAX86141 OPTICAL HR / SpO2 FRONT END — REV A"
 		(exclude_from_sim no)
@@ -2297,15 +2412,31 @@
 		)
 		(uuid "adfe4b19-f774-41a3-9fb6-a51000145622")
 	)
+	(junction
+		(at 202 159.62)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "8a24c295-f1c3-4e3b-a06c-cae32d280402")
+	)
 	(wire
 		(pts
-			(xy 202 152) (xy 202 162.16)
+			(xy 202 152) (xy 202 159.62)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
 		(uuid "b0a957ef-0cba-40d3-9b7b-006603c42da1")
+	)
+	(wire
+		(pts
+			(xy 202 159.62) (xy 202 162.16)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "c4028b2c-05e2-4dc6-9304-380402000002")
 	)
 	(wire
 		(pts
@@ -2607,15 +2738,31 @@
 		)
 		(uuid "fde3606e-fadd-4f6b-ad70-3ada39c1b1ef")
 	)
+	(junction
+		(at 202 103.62)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "7f13b194-e0b2-4d2a-9f5b-b9d21c170401")
+	)
 	(wire
 		(pts
-			(xy 202 96) (xy 202 106.16)
+			(xy 202 96) (xy 202 103.62)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
 		(uuid "fdebfcfa-3970-4c53-a2ba-701f02c4c65a")
+	)
+	(wire
+		(pts
+			(xy 202 103.62) (xy 202 106.16)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "c4017a1b-94d1-4cb5-8293-270401000001")
 	)
 	(wire
 		(pts
@@ -6557,6 +6704,162 @@
 			(project "sportwatch_revA"
 				(path "/063f9d99-6c07-44cf-ba32-e33897e06972/24ba7fae-0267-4a43-a776-43c6f8c3d7fc"
 					(reference "NT402")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:PWR_FLAG")
+		(at 226 102 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "f1904011-0001-4000-8000-000000000401")
+		(property "Reference" "#FLG0401"
+			(at 226 102 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "PWR_FLAG"
+			(at 226 102 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 226 102 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 226 102 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" ""
+			(at 226 102 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "f1904012-0001-4000-8000-000000000401")
+		)
+		(instances
+			(project "sportwatch_revA"
+				(path "/063f9d99-6c07-44cf-ba32-e33897e06972/24ba7fae-0267-4a43-a776-43c6f8c3d7fc"
+					(reference "#FLG0401")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:PWR_FLAG")
+		(at 226 158 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "f1904021-0001-4000-8000-000000000402")
+		(property "Reference" "#FLG0402"
+			(at 226 158 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "PWR_FLAG"
+			(at 226 158 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 226 158 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 226 158 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" ""
+			(at 226 158 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "f1904022-0001-4000-8000-000000000402")
+		)
+		(instances
+			(project "sportwatch_revA"
+				(path "/063f9d99-6c07-44cf-ba32-e33897e06972/24ba7fae-0267-4a43-a776-43c6f8c3d7fc"
+					(reference "#FLG0402")
 					(unit 1)
 				)
 			)

@@ -232,7 +232,7 @@
 						)
 					)
 				)
-				(pin input line
+				(pin passive line
 					(at -15.24 -2.54 0)
 					(length 2.54)
 					(name "nRESET"
