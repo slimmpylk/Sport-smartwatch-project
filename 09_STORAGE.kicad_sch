@@ -4480,7 +4480,8 @@
 		)
 		(uuid "fbf77012-ea6b-4c0a-bc72-36465594bb6d")
 	)
-	(label "VOUT2_3V0_PROVISIONAL"
+	(hierarchical_label "VOUT2_3V0_PROVISIONAL"
+		(shape passive)
 		(at 220 65 0)
 		(effects
 			(font
@@ -4490,7 +4491,8 @@
 		)
 		(uuid "2581306c-1cfd-4994-85b1-9db34f3a4f8a")
 	)
-	(label "EMMC_DAT4"
+	(hierarchical_label "EMMC_DAT4"
+		(shape bidirectional)
 		(at 124 52 0)
 		(effects
 			(font
@@ -4500,7 +4502,8 @@
 		)
 		(uuid "2aaf9f80-597e-49f1-94be-fb0678e90fa6")
 	)
-	(label "EMMC_DAT3"
+	(hierarchical_label "EMMC_DAT3"
+		(shape bidirectional)
 		(at 85 94.92 180)
 		(effects
 			(font
@@ -4510,7 +4513,8 @@
 		)
 		(uuid "3748fb42-51d4-4426-81d6-3cdd0db82137")
 	)
-	(label "EMMC_DAT2"
+	(hierarchical_label "EMMC_DAT2"
+		(shape bidirectional)
 		(at 85 92.38 180)
 		(effects
 			(font
@@ -4530,7 +4534,8 @@
 		)
 		(uuid "440ad4ae-b671-4dea-9e0c-d0ff9e66ff27")
 	)
-	(label "VOUT1_1V8"
+	(hierarchical_label "VOUT1_1V8"
+		(shape passive)
 		(at 132.08 61 0)
 		(effects
 			(font
@@ -4560,7 +4565,8 @@
 		)
 		(uuid "6e23d32d-6f19-44f9-a57c-65e4e8ce319a")
 	)
-	(label "EMMC_DAT6"
+	(hierarchical_label "EMMC_DAT6"
+		(shape bidirectional)
 		(at 160 52 0)
 		(effects
 			(font
@@ -4580,7 +4586,8 @@
 		)
 		(uuid "764f2d6e-070a-420b-b062-ba838e4c1562")
 	)
-	(label "EMMC_CMD"
+	(hierarchical_label "EMMC_CMD"
+		(shape bidirectional)
 		(at 34 52 0)
 		(effects
 			(font
@@ -4590,7 +4597,8 @@
 		)
 		(uuid "77ce558e-5992-486f-9809-78c61549736f")
 	)
-	(label "EMMC_DAT1"
+	(hierarchical_label "EMMC_DAT1"
+		(shape bidirectional)
 		(at 70 52 0)
 		(effects
 			(font
@@ -4600,7 +4608,8 @@
 		)
 		(uuid "88eae2c8-a253-4123-96c6-887b31cc0bc9")
 	)
-	(label "EMMC_CLK"
+	(hierarchical_label "EMMC_CLK"
+		(shape input)
 		(at 85 110.16 180)
 		(effects
 			(font
@@ -4620,7 +4629,8 @@
 		)
 		(uuid "94d93ce7-6ce8-47bc-aca8-d391baf5a810")
 	)
-	(label "EMMC_DAT7"
+	(hierarchical_label "EMMC_DAT7"
+		(shape bidirectional)
 		(at 178 52 0)
 		(effects
 			(font
@@ -4640,7 +4650,8 @@
 		)
 		(uuid "b6a02670-06ba-4488-8144-d204276ee622")
 	)
-	(label "EMMC_DAT5"
+	(hierarchical_label "EMMC_DAT5"
+		(shape bidirectional)
 		(at 85 100 180)
 		(effects
 			(font
@@ -4650,7 +4661,8 @@
 		)
 		(uuid "b719f1c5-49d8-45f5-81f0-6b705d19f6fe")
 	)
-	(label "EMMC_RST_N"
+	(hierarchical_label "EMMC_RST_N"
+		(shape input)
 		(at 85 112.7 180)
 		(effects
 			(font
@@ -4680,7 +4692,8 @@
 		)
 		(uuid "c3c455af-f455-4344-bb01-adedb1b25de9")
 	)
-	(label "EMMC_DAT0"
+	(hierarchical_label "EMMC_DAT0"
+		(shape bidirectional)
 		(at 85 87.3 180)
 		(effects
 			(font
@@ -6310,7 +6323,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "ced17096-6132-4db7-8c9e-8ccc5beae964")
-		(property "Reference" "U1"
+		(property "Reference" "U901"
 			(at 127 74.6 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -6825,13 +6838,13 @@
 		(instances
 			(project "sportwatch_revA"
 				(path "/063f9d99-6c07-44cf-ba32-e33897e06972/a2d513ee-2f0e-4cad-81f9-7e29d5a45fba"
-					(reference "U1")
+					(reference "U901")
 					(unit 1)
 				)
 			)
 			(project "09_STORAGE"
 				(path "/e1def6b6-01b4-4b57-bf23-17fd4247972f"
-					(reference "U1")
+					(reference "U901")
 					(unit 1)
 				)
 			)

@@ -40,7 +40,7 @@
 					)
 				)
 			)
-			(property "Footprint" "MAX-F10S_UBL"
+			(property "Footprint" "sportwatch_custom:MAX-F10S_UBL"
 				(at 0 0 0)
 				(show_name no)
 				(do_not_autoplace no)
@@ -902,7 +902,8 @@
 		)
 		(uuid "fee7a4c9-7d29-433e-b0d4-5403b1a4c254")
 	)
-	(label "GNSS_TIMEPULSE"
+	(hierarchical_label "GNSS_TIMEPULSE"
+		(shape output)
 		(at 96 99.06 180)
 		(effects
 			(font
@@ -912,7 +913,8 @@
 		)
 		(uuid "0b8db344-d8de-485f-96e4-3f171e355607")
 	)
-	(label "VOUT1_1V8"
+	(hierarchical_label "VOUT1_1V8"
+		(shape passive)
 		(at 96 106.68 180)
 		(effects
 			(font
@@ -922,7 +924,8 @@
 		)
 		(uuid "3f154112-fab9-4f6a-987e-e43935078227")
 	)
-	(label "VOUT2_3V0_PROVISIONAL"
+	(hierarchical_label "VOUT2_3V0_PROVISIONAL"
+		(shape passive)
 		(at 96 109.22 180)
 		(effects
 			(font
@@ -932,7 +935,8 @@
 		)
 		(uuid "5b6074e5-3430-4bab-9a99-54cafbc52c53")
 	)
-	(label "GNSS_UART_RX"
+	(hierarchical_label "GNSS_UART_RX"
+		(shape input)
 		(at 96 96.52 180)
 		(effects
 			(font
@@ -942,7 +946,8 @@
 		)
 		(uuid "75cb95f1-f00c-41c1-8e73-7b3cbf033c18")
 	)
-	(label "GNSS_UART_TX"
+	(hierarchical_label "GNSS_UART_TX"
+		(shape output)
 		(at 96 93.98 180)
 		(effects
 			(font
@@ -952,7 +957,8 @@
 		)
 		(uuid "8042ea4f-1280-439a-b057-05747b698de1")
 	)
-	(label "GNSS_RF"
+	(hierarchical_label "GNSS_RF"
+		(shape passive)
 		(at 194 109.22 0)
 		(effects
 			(font
@@ -962,7 +968,8 @@
 		)
 		(uuid "8e0a3292-29e5-4b84-862f-ca2a8eafc558")
 	)
-	(label "GNSS_EXTINT"
+	(hierarchical_label "GNSS_EXTINT"
+		(shape input)
 		(at 96 101.6 180)
 		(effects
 			(font
@@ -1316,7 +1323,7 @@
 				)
 			)
 		)
-		(property "Footprint" "MAX-F10S_UBL"
+		(property "Footprint" "sportwatch_custom:MAX-F10S_UBL"
 			(at 111.76 91.44 0)
 			(hide yes)
 			(show_name no)

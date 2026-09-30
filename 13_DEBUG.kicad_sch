@@ -651,7 +651,8 @@
 		)
 		(uuid "ebf0f6e0-40ee-4d92-8eff-636cfb880f25")
 	)
-	(label "VOUT1_1V8"
+	(hierarchical_label "VOUT1_1V8"
+		(shape passive)
 		(at 104 108 0)
 		(effects
 			(font
@@ -661,7 +662,8 @@
 		)
 		(uuid "02640512-8e0c-48fb-8ac4-d03559536d90")
 	)
-	(label "VBAT"
+	(hierarchical_label "VBAT"
+		(shape passive)
 		(at 48 108 0)
 		(effects
 			(font
@@ -671,7 +673,8 @@
 		)
 		(uuid "14e8597c-825f-48ec-a3c3-d609d69c60f3")
 	)
-	(label "SYS_3V3"
+	(hierarchical_label "SYS_3V3"
+		(shape passive)
 		(at 184 108 0)
 		(effects
 			(font
@@ -681,7 +684,8 @@
 		)
 		(uuid "2b852de3-026b-4ee8-a534-ecbe5c919311")
 	)
-	(label "APOLLO_RST_N"
+	(hierarchical_label "APOLLO_RST_N"
+		(shape output)
 		(at 72 82.54 180)
 		(effects
 			(font
@@ -691,7 +695,8 @@
 		)
 		(uuid "3179c03f-b281-49ec-ae80-5c541f0f58a3")
 	)
-	(label "VSYS"
+	(hierarchical_label "VSYS"
+		(shape passive)
 		(at 76 108 0)
 		(effects
 			(font
@@ -701,7 +706,8 @@
 		)
 		(uuid "526b537a-ec19-439b-b19e-ac3ef04a99e3")
 	)
-	(label "APOLLO_SWDIO"
+	(hierarchical_label "APOLLO_SWDIO"
+		(shape bidirectional)
 		(at 72 77.46 180)
 		(effects
 			(font
@@ -711,7 +717,8 @@
 		)
 		(uuid "73054d2a-1246-4bae-946f-d21a59746b5c")
 	)
-	(label "VOUT2_3V0_PROVISIONAL"
+	(hierarchical_label "VOUT2_3V0_PROVISIONAL"
+		(shape passive)
 		(at 142 108 0)
 		(effects
 			(font
@@ -731,7 +738,8 @@
 		)
 		(uuid "d3428be3-8118-48e0-ae3c-6412d50d5b46")
 	)
-	(label "APOLLO_SWO_GPIO28"
+	(hierarchical_label "APOLLO_SWO_GPIO28"
+		(shape input)
 		(at 138 82.54 0)
 		(effects
 			(font
@@ -741,7 +749,8 @@
 		)
 		(uuid "e29fcbdc-6ba4-49d9-a7c3-f755360018c0")
 	)
-	(label "APOLLO_SWCLK"
+	(hierarchical_label "APOLLO_SWCLK"
+		(shape output)
 		(at 138 72.38 0)
 		(effects
 			(font

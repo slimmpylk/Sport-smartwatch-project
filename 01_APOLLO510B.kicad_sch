@@ -3407,7 +3407,7 @@
 					)
 				)
 			)
-			(property "Footprint" "Package_SO:VSSOP-8_3.0x3.0mm_P0.65mm"
+			(property "Footprint" "Package_SO:VSSOP-8_2.3x2mm_P0.5mm"
 				(at 0 0 0)
 				(show_name no)
 				(do_not_autoplace no)
@@ -7396,7 +7396,8 @@
 		)
 		(uuid "ffec8767-fd8b-4711-a9fb-ef6548eb5f75")
 	)
-	(label "IMU_INT1"
+	(hierarchical_label "IMU_INT1"
+		(shape input)
 		(at 100.92 163.24 180)
 		(effects
 			(font
@@ -7406,7 +7407,8 @@
 		)
 		(uuid "01f4bee1-f9c5-49c8-ba6d-66b39a72a438")
 	)
-	(label "VOUT1_1V8"
+	(hierarchical_label "VOUT1_1V8"
+		(shape passive)
 		(at 314 41 0)
 		(effects
 			(font
@@ -7426,7 +7428,8 @@
 		)
 		(uuid "03c2523a-daf8-4806-9a5a-7b10bcf994c3")
 	)
-	(label "WIFI_QSPI_IO0"
+	(hierarchical_label "WIFI_QSPI_IO0"
+		(shape bidirectional)
 		(at 205.08 78.15 0)
 		(effects
 			(font
@@ -7446,7 +7449,8 @@
 		)
 		(uuid "07069dca-abb5-4742-8998-53ebc6cd9d0c")
 	)
-	(label "EMMC_DAT4"
+	(hierarchical_label "EMMC_DAT4"
+		(shape bidirectional)
 		(at 205.08 67.99 0)
 		(effects
 			(font
@@ -7456,7 +7460,8 @@
 		)
 		(uuid "08360186-6283-4803-ad40-b08171da90a3")
 	)
-	(label "PPG_SPI_SCLK"
+	(hierarchical_label "PPG_SPI_SCLK"
+		(shape output)
 		(at 205.08 128.95 0)
 		(effects
 			(font
@@ -7466,7 +7471,8 @@
 		)
 		(uuid "0842fdf6-f133-46f8-9775-a74b33b50d71")
 	)
-	(label "EMMC_DAT5"
+	(hierarchical_label "EMMC_DAT5"
+		(shape bidirectional)
 		(at 205.08 101.01 0)
 		(effects
 			(font
@@ -7476,7 +7482,8 @@
 		)
 		(uuid "09899347-87ad-4edf-9ada-54dee9e3298a")
 	)
-	(label "SYS_3V3"
+	(hierarchical_label "SYS_3V3"
+		(shape passive)
 		(at 326 177.3 0)
 		(effects
 			(font
@@ -7486,7 +7493,8 @@
 		)
 		(uuid "0beff6b4-131c-467d-bd71-4afa11cda80a")
 	)
-	(label "WIFI_QSPI_CS"
+	(hierarchical_label "WIFI_QSPI_CS"
+		(shape output)
 		(at 100.92 175.94 180)
 		(effects
 			(font
@@ -7496,7 +7504,8 @@
 		)
 		(uuid "0cccc424-843b-4bde-b0f1-b4432ff7ff54")
 	)
-	(label "TOUCH_INT"
+	(hierarchical_label "TOUCH_INT"
+		(shape input)
 		(at 417 222 0)
 		(effects
 			(font
@@ -7576,7 +7585,8 @@
 		)
 		(uuid "2176b2dd-25db-4fdc-a4d9-5cceab6a1ee3")
 	)
-	(label "PPG1_INT_N"
+	(hierarchical_label "PPG1_INT_N"
+		(shape input)
 		(at 100.92 165.78 180)
 		(effects
 			(font
@@ -7596,7 +7606,8 @@
 		)
 		(uuid "226e2a0e-b8fc-41ba-81f9-4f03a59e6b7b")
 	)
-	(label "EMMC_DAT7"
+	(hierarchical_label "EMMC_DAT7"
+		(shape bidirectional)
 		(at 205.08 167.05 0)
 		(effects
 			(font
@@ -7646,7 +7657,8 @@
 		)
 		(uuid "2726db99-20f9-4312-9736-4fefe440cb06")
 	)
-	(label "DISP_QSPI_IO2"
+	(hierarchical_label "DISP_QSPI_IO2"
+		(shape output)
 		(at 325.24 190 0)
 		(effects
 			(font
@@ -7686,7 +7698,8 @@
 		)
 		(uuid "2d0fd1a2-af69-4d1a-b793-895e8770b7a5")
 	)
-	(label "TOUCH_RST"
+	(hierarchical_label "TOUCH_RST"
+		(shape output)
 		(at 325.24 200.16 0)
 		(effects
 			(font
@@ -7706,7 +7719,8 @@
 		)
 		(uuid "2f48fa05-080a-4150-b071-a08afdf90630")
 	)
-	(label "DISP_QSPI_IO3"
+	(hierarchical_label "DISP_QSPI_IO3"
+		(shape output)
 		(at 325.24 192.54 0)
 		(effects
 			(font
@@ -7726,7 +7740,8 @@
 		)
 		(uuid "3114620b-d274-4c19-9cb8-540bbd2006c5")
 	)
-	(label "APOLLO_BLE_AVDD_PA"
+	(hierarchical_label "APOLLO_BLE_AVDD_PA"
+		(shape passive)
 		(at 205.08 182.29 0)
 		(effects
 			(font
@@ -7736,7 +7751,8 @@
 		)
 		(uuid "318ee5bb-c9f3-4504-ba8d-cb25eeca2252")
 	)
-	(label "ENV_I2C_SCL"
+	(hierarchical_label "ENV_I2C_SCL"
+		(shape bidirectional)
 		(at 205.08 123.87 0)
 		(effects
 			(font
@@ -7766,7 +7782,8 @@
 		)
 		(uuid "33f7752d-b696-4aa1-9415-ca64dd4cf424")
 	)
-	(label "MAG_I2C_SCL"
+	(hierarchical_label "MAG_I2C_SCL"
+		(shape bidirectional)
 		(at 205.08 161.97 0)
 		(effects
 			(font
@@ -7786,7 +7803,8 @@
 		)
 		(uuid "3513291d-5a8b-4355-a904-9541c2c14d1b")
 	)
-	(label "EMMC_RST_N"
+	(hierarchical_label "EMMC_RST_N"
+		(shape output)
 		(at 100.92 137.84 180)
 		(effects
 			(font
@@ -7816,7 +7834,8 @@
 		)
 		(uuid "35c04281-936e-4f90-bb71-b023d2f2298f")
 	)
-	(label "ALS_INT"
+	(hierarchical_label "ALS_INT"
+		(shape input)
 		(at 205.08 90.85 0)
 		(effects
 			(font
@@ -7836,7 +7855,8 @@
 		)
 		(uuid "36d8a079-d871-455e-aeee-ea58e46a4f1b")
 	)
-	(label "WIFI_BUCKEN"
+	(hierarchical_label "WIFI_BUCKEN"
+		(shape output)
 		(at 100.92 216.58 180)
 		(effects
 			(font
@@ -7886,7 +7906,8 @@
 		)
 		(uuid "3a868de3-e329-4ac4-807f-8777518184a4")
 	)
-	(label "IMU_SPI_MOSI"
+	(hierarchical_label "IMU_SPI_MOSI"
+		(shape output)
 		(at 100.92 94.66 180)
 		(effects
 			(font
@@ -7896,7 +7917,8 @@
 		)
 		(uuid "3acbf56c-23ed-41cb-96f6-48e7ebaa80a9")
 	)
-	(label "MAG_INT"
+	(hierarchical_label "MAG_INT"
+		(shape input)
 		(at 205.08 98.47 0)
 		(effects
 			(font
@@ -7906,7 +7928,8 @@
 		)
 		(uuid "3b94c96b-ccc4-4781-ac33-7f9758b129d0")
 	)
-	(label "TOUCH_SDA"
+	(hierarchical_label "TOUCH_SDA"
+		(shape bidirectional)
 		(at 358 275.08 0)
 		(effects
 			(font
@@ -7916,7 +7939,8 @@
 		)
 		(uuid "3d37ef3f-e46d-464a-b77a-c9ccfca01f4b")
 	)
-	(label "BTN_LIGHT_N"
+	(hierarchical_label "BTN_LIGHT_N"
+		(shape input)
 		(at 100.92 236.9 180)
 		(effects
 			(font
@@ -7936,7 +7960,8 @@
 		)
 		(uuid "3fab0a6f-17b3-4b78-b703-88fc166f987b")
 	)
-	(label "DISP_QSPI_IO1"
+	(hierarchical_label "DISP_QSPI_IO1"
+		(shape output)
 		(at 325.24 187.46 0)
 		(effects
 			(font
@@ -7946,7 +7971,8 @@
 		)
 		(uuid "409abfb0-4ad4-4797-8fe6-0228108bed68")
 	)
-	(label "BTN_DOWN_N"
+	(hierarchical_label "BTN_DOWN_N"
+		(shape input)
 		(at 100.92 122.6 180)
 		(effects
 			(font
@@ -7966,7 +7992,8 @@
 		)
 		(uuid "40e5dcc7-5d1c-4b65-9e71-0b6b10bd11a5")
 	)
-	(label "EMMC_DAT0"
+	(hierarchical_label "EMMC_DAT0"
+		(shape bidirectional)
 		(at 205.08 75.61 0)
 		(effects
 			(font
@@ -8026,7 +8053,8 @@
 		)
 		(uuid "4b54b59e-f6c8-41db-b533-eaa1915f6f63")
 	)
-	(label "HAPTIC_I2C_SDA"
+	(hierarchical_label "HAPTIC_I2C_SDA"
+		(shape bidirectional)
 		(at 205.08 88.31 0)
 		(effects
 			(font
@@ -8056,7 +8084,8 @@
 		)
 		(uuid "5150435d-ccd1-40c2-916b-769b1ff07086")
 	)
-	(label "WIFI_HOST_IRQ"
+	(hierarchical_label "WIFI_HOST_IRQ"
+		(shape input)
 		(at 205.08 210.23 0)
 		(effects
 			(font
@@ -8076,7 +8105,8 @@
 		)
 		(uuid "53172be8-585b-48da-991f-cc560e601b29")
 	)
-	(label "PPG2_CS_N"
+	(hierarchical_label "PPG2_CS_N"
+		(shape output)
 		(at 205.08 192.45 0)
 		(effects
 			(font
@@ -8096,7 +8126,8 @@
 		)
 		(uuid "55d1fd87-fc54-4983-9c41-b4ae8c0f59c6")
 	)
-	(label "DISP_RST"
+	(hierarchical_label "DISP_RST"
+		(shape output)
 		(at 325.24 195.08 0)
 		(effects
 			(font
@@ -8106,7 +8137,8 @@
 		)
 		(uuid "5686264d-514e-4e11-99d2-775436d69627")
 	)
-	(label "APOLLO_RST_N"
+	(hierarchical_label "APOLLO_RST_N"
+		(shape input)
 		(at 205.08 62.91 0)
 		(effects
 			(font
@@ -8116,7 +8148,8 @@
 		)
 		(uuid "56b32b2f-9337-487e-b885-82f9d11c8d21")
 	)
-	(label "GNSS_TIMEPULSE"
+	(hierarchical_label "GNSS_TIMEPULSE"
+		(shape input)
 		(at 100.92 196.26 180)
 		(effects
 			(font
@@ -8146,7 +8179,8 @@
 		)
 		(uuid "5d304d27-1ce2-4979-89db-d7618df64950")
 	)
-	(label "IMU_SPI_CS"
+	(hierarchical_label "IMU_SPI_CS"
+		(shape output)
 		(at 100.92 160.7 180)
 		(effects
 			(font
@@ -8156,7 +8190,8 @@
 		)
 		(uuid "5fa9ddae-72aa-45f0-873c-6097339b196b")
 	)
-	(label "WIFI_IOVDD_EN"
+	(hierarchical_label "WIFI_IOVDD_EN"
+		(shape output)
 		(at 205.08 111.17 0)
 		(effects
 			(font
@@ -8166,7 +8201,8 @@
 		)
 		(uuid "5fb9a309-072e-44c8-b1da-53f655de9c05")
 	)
-	(label "MAG_I2C_SDA"
+	(hierarchical_label "MAG_I2C_SDA"
+		(shape bidirectional)
 		(at 205.08 131.49 0)
 		(effects
 			(font
@@ -8246,7 +8282,8 @@
 		)
 		(uuid "6b0476f7-c924-4640-a035-017566512e8e")
 	)
-	(label "DISP_VCI_EN"
+	(hierarchical_label "DISP_VCI_EN"
+		(shape output)
 		(at 325.24 197.62 0)
 		(effects
 			(font
@@ -8256,7 +8293,8 @@
 		)
 		(uuid "6b517952-29ee-433c-bf2c-f83f728d213b")
 	)
-	(label "PPG_SAMPLE_SYNC"
+	(hierarchical_label "PPG_SAMPLE_SYNC"
+		(shape bidirectional)
 		(at 205.08 83.23 0)
 		(effects
 			(font
@@ -8286,7 +8324,8 @@
 		)
 		(uuid "72db28b5-afa5-4333-a61d-a59617cf1255")
 	)
-	(label "TOUCH_SCL"
+	(hierarchical_label "TOUCH_SCL"
+		(shape bidirectional)
 		(at 378 279 0)
 		(effects
 			(font
@@ -8296,7 +8335,8 @@
 		)
 		(uuid "72f120b6-c1cc-44bb-9c22-ba6583ee52f9")
 	)
-	(label "WIFI_COEX_REQ"
+	(hierarchical_label "WIFI_COEX_REQ"
+		(shape input)
 		(at 100.92 241.98 180)
 		(effects
 			(font
@@ -8346,7 +8386,8 @@
 		)
 		(uuid "771aa6d1-acea-450c-8238-87c9ee39f76e")
 	)
-	(label "EMMC_CMD"
+	(hierarchical_label "EMMC_CMD"
+		(shape bidirectional)
 		(at 205.08 136.57 0)
 		(effects
 			(font
@@ -8376,7 +8417,8 @@
 		)
 		(uuid "7df0893a-8b19-406e-9828-ac54fa931f7c")
 	)
-	(label "APOLLO_SWCLK"
+	(hierarchical_label "APOLLO_SWCLK"
+		(shape input)
 		(at 205.08 187.37 0)
 		(effects
 			(font
@@ -8386,7 +8428,8 @@
 		)
 		(uuid "80099ea6-2809-457c-b345-0430f09fc4aa")
 	)
-	(label "GNSS_UART_RX"
+	(hierarchical_label "GNSS_UART_RX"
+		(shape output)
 		(at 100.92 140.38 180)
 		(effects
 			(font
@@ -8416,7 +8459,8 @@
 		)
 		(uuid "818bc957-ff90-4736-8bd7-d1f9ff0ed8ce")
 	)
-	(label "BTN_START_N"
+	(hierarchical_label "BTN_START_N"
+		(shape input)
 		(at 205.08 52.75 0)
 		(effects
 			(font
@@ -8436,7 +8480,8 @@
 		)
 		(uuid "88d75cdd-bdd2-40b7-bc16-b473712436ca")
 	)
-	(label "HAPTIC_NRST"
+	(hierarchical_label "HAPTIC_NRST"
+		(shape output)
 		(at 205.08 85.77 0)
 		(effects
 			(font
@@ -8446,7 +8491,8 @@
 		)
 		(uuid "89c99c8a-8806-44c4-b2ab-cdedb4ba18a2")
 	)
-	(label "APOLLO_SWO_GPIO28"
+	(hierarchical_label "APOLLO_SWO_GPIO28"
+		(shape output)
 		(at 205.08 151.81 0)
 		(effects
 			(font
@@ -8496,7 +8542,8 @@
 		)
 		(uuid "90eb0779-f614-4729-9f6b-7159575f42c5")
 	)
-	(label "EMMC_CLK"
+	(hierarchical_label "EMMC_CLK"
+		(shape output)
 		(at 258 144 0)
 		(effects
 			(font
@@ -8536,7 +8583,8 @@
 		)
 		(uuid "9347cf3f-cfb9-49ed-9c98-fc7e1b9c12cb")
 	)
-	(label "EMMC_DAT6"
+	(hierarchical_label "EMMC_DAT6"
+		(shape bidirectional)
 		(at 205.08 134.03 0)
 		(effects
 			(font
@@ -8596,7 +8644,8 @@
 		)
 		(uuid "9896579c-451f-4c0b-a607-3e23a58771d3")
 	)
-	(label "EMMC_DAT2"
+	(hierarchical_label "EMMC_DAT2"
+		(shape bidirectional)
 		(at 205.08 141.65 0)
 		(effects
 			(font
@@ -8606,7 +8655,8 @@
 		)
 		(uuid "98ddac17-05cd-4920-adbe-4d8ee4591a03")
 	)
-	(label "IMU_INT2"
+	(hierarchical_label "IMU_INT2"
+		(shape input)
 		(at 205.08 65.45 0)
 		(effects
 			(font
@@ -8646,7 +8696,8 @@
 		)
 		(uuid "9cf5d17b-ccb8-4098-a9e7-7b06ef2726b4")
 	)
-	(label "DISP_QSPI_CLK"
+	(hierarchical_label "DISP_QSPI_CLK"
+		(shape output)
 		(at 325.24 182.38 0)
 		(effects
 			(font
@@ -8676,7 +8727,8 @@
 		)
 		(uuid "9fc2436c-0095-4c81-9bd4-a678128d0e04")
 	)
-	(label "WIFI_COEX_GRANT"
+	(hierarchical_label "WIFI_COEX_GRANT"
+		(shape output)
 		(at 100.92 178.48 180)
 		(effects
 			(font
@@ -8686,7 +8738,8 @@
 		)
 		(uuid "9fe6f569-5a7e-4502-bc24-29f28120eeaf")
 	)
-	(label "PPG_SPI_MOSI"
+	(hierarchical_label "PPG_SPI_MOSI"
+		(shape output)
 		(at 205.08 159.43 0)
 		(effects
 			(font
@@ -8716,7 +8769,8 @@
 		)
 		(uuid "a270f936-442a-4642-aa24-9b7c7620d187")
 	)
-	(label "PPG1_CS_N"
+	(hierarchical_label "PPG1_CS_N"
+		(shape output)
 		(at 100.92 168.32 180)
 		(effects
 			(font
@@ -8736,7 +8790,8 @@
 		)
 		(uuid "a3c3ceb9-ebe9-4ce5-82e3-aea58d4573eb")
 	)
-	(label "WIFI_QSPI_IO2"
+	(hierarchical_label "WIFI_QSPI_IO2"
+		(shape bidirectional)
 		(at 205.08 177.21 0)
 		(effects
 			(font
@@ -8756,7 +8811,8 @@
 		)
 		(uuid "a47018e2-4cb3-454c-90e1-a3621ee0fff5")
 	)
-	(label "IMU_SPI_MISO"
+	(hierarchical_label "IMU_SPI_MISO"
+		(shape input)
 		(at 100.92 127.68 180)
 		(effects
 			(font
@@ -8776,7 +8832,8 @@
 		)
 		(uuid "a84365a2-0f3a-4c1b-a336-55769a147430")
 	)
-	(label "BTN_UP_N"
+	(hierarchical_label "BTN_UP_N"
+		(shape input)
 		(at 100.92 214.04 180)
 		(effects
 			(font
@@ -8816,7 +8873,8 @@
 		)
 		(uuid "aed54811-f295-484f-b455-799757471316")
 	)
-	(label "IMU_SPI_SCK"
+	(hierarchical_label "IMU_SPI_SCK"
+		(shape output)
 		(at 100.92 158.16 180)
 		(effects
 			(font
@@ -8836,7 +8894,8 @@
 		)
 		(uuid "b52484c7-74fb-41f4-b4a8-10a0f310b6d1")
 	)
-	(label "PPG2_INT_N"
+	(hierarchical_label "PPG2_INT_N"
+		(shape input)
 		(at 100.92 132.76 180)
 		(effects
 			(font
@@ -8846,7 +8905,8 @@
 		)
 		(uuid "b7519dda-1487-4476-adc0-11dcad0c41eb")
 	)
-	(label "EMMC_DAT1"
+	(hierarchical_label "EMMC_DAT1"
+		(shape bidirectional)
 		(at 205.08 108.63 0)
 		(effects
 			(font
@@ -8866,7 +8926,8 @@
 		)
 		(uuid "b93a07dd-a9b3-4f24-b3e5-3787198a53a7")
 	)
-	(label "WIFI_QSPI_CLK"
+	(hierarchical_label "WIFI_QSPI_CLK"
+		(shape output)
 		(at 205.08 207.69 0)
 		(effects
 			(font
@@ -8916,7 +8977,8 @@
 		)
 		(uuid "c132f6c7-c985-4cd2-a197-c6655e793415")
 	)
-	(label "GNSS_EXTINT"
+	(hierarchical_label "GNSS_EXTINT"
+		(shape output)
 		(at 100.92 244.52 180)
 		(effects
 			(font
@@ -8926,7 +8988,8 @@
 		)
 		(uuid "c2db5e2e-bf7e-4daf-8525-3455a6d4d750")
 	)
-	(label "DISP_QSPI_IO0"
+	(hierarchical_label "DISP_QSPI_IO0"
+		(shape bidirectional)
 		(at 317 222 0)
 		(effects
 			(font
@@ -8956,7 +9019,8 @@
 		)
 		(uuid "c6a3ec99-98c2-4df6-80f0-b42ee1caa983")
 	)
-	(label "ENV_I2C_SDA"
+	(hierarchical_label "ENV_I2C_SDA"
+		(shape bidirectional)
 		(at 205.08 93.39 0)
 		(effects
 			(font
@@ -8966,7 +9030,8 @@
 		)
 		(uuid "ca42895c-2486-4001-bebf-e3cc99f6d3de")
 	)
-	(label "WIFI_QSPI_IO1"
+	(hierarchical_label "WIFI_QSPI_IO1"
+		(shape bidirectional)
 		(at 205.08 116.25 0)
 		(effects
 			(font
@@ -9006,7 +9071,8 @@
 		)
 		(uuid "cf7a4459-ee03-4bec-abaf-50ff6b0a06d1")
 	)
-	(label "DISP_QSPI_CS"
+	(hierarchical_label "DISP_QSPI_CS"
+		(shape output)
 		(at 325.24 184.92 0)
 		(effects
 			(font
@@ -9046,7 +9112,8 @@
 		)
 		(uuid "d4632d8c-f364-4899-af3b-a517c7b5d617")
 	)
-	(label "WIFI_QSPI_IO3"
+	(hierarchical_label "WIFI_QSPI_IO3"
+		(shape bidirectional)
 		(at 205.08 113.71 0)
 		(effects
 			(font
@@ -9076,7 +9143,8 @@
 		)
 		(uuid "d77460a8-3284-4b0b-87e4-c4e71a9d9a3a")
 	)
-	(label "EMMC_DAT3"
+	(hierarchical_label "EMMC_DAT3"
+		(shape bidirectional)
 		(at 205.08 169.59 0)
 		(effects
 			(font
@@ -9096,7 +9164,8 @@
 		)
 		(uuid "d8404476-ee2a-4bee-854a-024d76ee6821")
 	)
-	(label "GNSS_UART_TX"
+	(hierarchical_label "GNSS_UART_TX"
+		(shape input)
 		(at 100.92 221.66 180)
 		(effects
 			(font
@@ -9106,7 +9175,8 @@
 		)
 		(uuid "d8a440da-9e60-45ed-b8a4-fd2bd1a2b66c")
 	)
-	(label "PPG_SPI_MISO"
+	(hierarchical_label "PPG_SPI_MISO"
+		(shape input)
 		(at 205.08 164.51 0)
 		(effects
 			(font
@@ -9116,7 +9186,8 @@
 		)
 		(uuid "d9244c9f-6d6f-43cf-9ead-4467bfad0f6e")
 	)
-	(label "HAPTIC_I2C_SCL"
+	(hierarchical_label "HAPTIC_I2C_SCL"
+		(shape bidirectional)
 		(at 205.08 118.79 0)
 		(effects
 			(font
@@ -9136,7 +9207,8 @@
 		)
 		(uuid "dcedb4ae-0ae1-4ebc-a3b2-6d7a773e7f88")
 	)
-	(label "HAPTIC_TRIG_INTZ"
+	(hierarchical_label "HAPTIC_TRIG_INTZ"
+		(shape bidirectional)
 		(at 100.92 170.86 180)
 		(effects
 			(font
@@ -9156,7 +9228,8 @@
 		)
 		(uuid "de94e5e6-540b-4e65-838e-beb7090a7152")
 	)
-	(label "WIFI_COEX_STATUS"
+	(hierarchical_label "WIFI_COEX_STATUS"
+		(shape input)
 		(at 205.08 146.73 0)
 		(effects
 			(font
@@ -9266,7 +9339,8 @@
 		)
 		(uuid "f1ce50c0-1973-42e3-9778-a51310f4aefd")
 	)
-	(label "BTN_BACK_N"
+	(hierarchical_label "BTN_BACK_N"
+		(shape input)
 		(at 100.92 219.12 180)
 		(effects
 			(font
@@ -9296,7 +9370,8 @@
 		)
 		(uuid "f5ae2454-a1b8-4806-8436-0cba24bb1529")
 	)
-	(label "APOLLO_SWDIO"
+	(hierarchical_label "APOLLO_SWDIO"
+		(shape bidirectional)
 		(at 205.08 220.39 0)
 		(effects
 			(font
@@ -9346,7 +9421,8 @@
 		)
 		(uuid "fb4bf9a6-9c5e-4c33-874b-47b17b348798")
 	)
-	(label "BARO_INT"
+	(hierarchical_label "BARO_INT"
+		(shape input)
 		(at 100.92 224.2 180)
 		(effects
 			(font
@@ -9356,7 +9432,8 @@
 		)
 		(uuid "fc2cc982-3628-48a9-83f7-9099b76f46c9")
 	)
-	(label "DISP_TE"
+	(hierarchical_label "DISP_TE"
+		(shape input)
 		(at 367 222 0)
 		(effects
 			(font
@@ -9366,7 +9443,8 @@
 		)
 		(uuid "fd2e3fe5-b6fd-4de3-89e7-0a0170473cd9")
 	)
-	(label "APOLLO_BLE_ANT"
+	(hierarchical_label "APOLLO_BLE_ANT"
+		(shape passive)
 		(at 205.08 215.31 0)
 		(effects
 			(font
@@ -12379,7 +12457,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Package_SO:VSSOP-8_3.0x3.0mm_P0.65mm"
+		(property "Footprint" "Package_SO:VSSOP-8_2.3x2mm_P0.5mm"
 			(at 335 270 0)
 			(hide yes)
 			(show_name no)

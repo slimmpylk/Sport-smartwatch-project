@@ -3588,7 +3588,8 @@
 		)
 		(uuid "0a87c14b-80b1-485f-951d-3ed8fceddc70")
 	)
-	(label "VSYS"
+	(hierarchical_label "VSYS"
+		(shape passive)
 		(at 210 25.38 0)
 		(effects
 			(font
@@ -3608,7 +3609,8 @@
 		)
 		(uuid "114425c4-051b-4cb9-bfa1-23908932c3b9")
 	)
-	(label "VOUT2_3V0_PROVISIONAL"
+	(hierarchical_label "VOUT2_3V0_PROVISIONAL"
+		(shape passive)
 		(at 232 96.52 0)
 		(effects
 			(font
@@ -3638,7 +3640,8 @@
 		)
 		(uuid "201caac6-a688-488c-ae1e-4a3af3e445ca")
 	)
-	(label "VBAT"
+	(hierarchical_label "VBAT"
+		(shape passive)
 		(at 199 127 0)
 		(effects
 			(font
@@ -3648,7 +3651,8 @@
 		)
 		(uuid "2f00156f-53d9-4836-8280-c34126a3f935")
 	)
-	(label "MAG_I2C_SCL"
+	(hierarchical_label "MAG_I2C_SCL"
+		(shape bidirectional)
 		(at 108 111.76 180)
 		(effects
 			(font
@@ -3718,7 +3722,8 @@
 		)
 		(uuid "52e60354-d7a6-4567-bfab-00fe31fac562")
 	)
-	(label "VOUT1_1V8"
+	(hierarchical_label "VOUT1_1V8"
+		(shape passive)
 		(at 199 78.74 0)
 		(effects
 			(font
@@ -3918,7 +3923,8 @@
 		)
 		(uuid "a8d5b7ea-f160-481f-8520-957439fb6960")
 	)
-	(label "SYS_3V3"
+	(hierarchical_label "SYS_3V3"
+		(shape passive)
 		(at 275 25.38 0)
 		(effects
 			(font
@@ -3988,7 +3994,8 @@
 		)
 		(uuid "b6a5cb72-653c-4f51-93c6-17baf24590be")
 	)
-	(label "MAG_I2C_SDA"
+	(hierarchical_label "MAG_I2C_SDA"
+		(shape bidirectional)
 		(at 60 116.19 0)
 		(effects
 			(font
@@ -4161,7 +4168,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "01a824e7-e962-4feb-b2f3-44ab3f68bf8e")
-		(property "Reference" "C3"
+		(property "Reference" "C203"
 			(at 122.54 172.46 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4234,13 +4241,13 @@
 		(instances
 			(project "sportwatch_revA"
 				(path "/063f9d99-6c07-44cf-ba32-e33897e06972/044f2259-6cab-4c65-a4f2-7f6378d66929"
-					(reference "C3")
+					(reference "C203")
 					(unit 1)
 				)
 			)
 			(project "02_POWER"
 				(path "/bbbd25bf-ebfe-444c-b330-035ab29a723c"
-					(reference "C3")
+					(reference "C203")
 					(unit 1)
 				)
 			)
@@ -4258,7 +4265,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "036402f6-3177-4e10-b08f-dd9fc9385af3")
-		(property "Reference" "NT1"
+		(property "Reference" "NT201"
 			(at 267.54 117.46 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4320,13 +4327,13 @@
 		(instances
 			(project "sportwatch_revA"
 				(path "/063f9d99-6c07-44cf-ba32-e33897e06972/044f2259-6cab-4c65-a4f2-7f6378d66929"
-					(reference "NT1")
+					(reference "NT201")
 					(unit 1)
 				)
 			)
 			(project "02_POWER"
 				(path "/bbbd25bf-ebfe-444c-b330-035ab29a723c"
-					(reference "NT1")
+					(reference "NT201")
 					(unit 1)
 				)
 			)
@@ -4344,7 +4351,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "0415d39f-fbcf-41a3-9f4b-34ff4c96c919")
-		(property "Reference" "#PWR014"
+		(property "Reference" "#PWR0214"
 			(at 277.54 34.46 0)
 			(hide yes)
 			(show_name no)
@@ -4404,13 +4411,13 @@
 		(instances
 			(project "sportwatch_revA"
 				(path "/063f9d99-6c07-44cf-ba32-e33897e06972/044f2259-6cab-4c65-a4f2-7f6378d66929"
-					(reference "#PWR014")
+					(reference "#PWR0214")
 					(unit 1)
 				)
 			)
 			(project "02_POWER"
 				(path "/bbbd25bf-ebfe-444c-b330-035ab29a723c"
-					(reference "#PWR014")
+					(reference "#PWR0214")
 					(unit 1)
 				)
 			)
@@ -4428,7 +4435,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "0df66758-f132-4f14-be15-28b2c3988086")
-		(property "Reference" "R6"
+		(property "Reference" "R206"
 			(at 217.54 39.46 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4501,13 +4508,13 @@
 		(instances
 			(project "sportwatch_revA"
 				(path "/063f9d99-6c07-44cf-ba32-e33897e06972/044f2259-6cab-4c65-a4f2-7f6378d66929"
-					(reference "R6")
+					(reference "R206")
 					(unit 1)
 				)
 			)
 			(project "02_POWER"
 				(path "/bbbd25bf-ebfe-444c-b330-035ab29a723c"
-					(reference "R6")
+					(reference "R206")
 					(unit 1)
 				)
 			)
@@ -4525,7 +4532,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "10ccb4cc-ee54-4c70-bcf6-d7baaad969c4")
-		(property "Reference" "#PWR012"
+		(property "Reference" "#PWR0212"
 			(at 107.54 127.46 0)
 			(hide yes)
 			(show_name no)
@@ -4585,13 +4592,13 @@
 		(instances
 			(project "sportwatch_revA"
 				(path "/063f9d99-6c07-44cf-ba32-e33897e06972/044f2259-6cab-4c65-a4f2-7f6378d66929"
-					(reference "#PWR012")
+					(reference "#PWR0212")
 					(unit 1)
 				)
 			)
 			(project "02_POWER"
 				(path "/bbbd25bf-ebfe-444c-b330-035ab29a723c"
-					(reference "#PWR012")
+					(reference "#PWR0212")
 					(unit 1)
 				)
 			)
@@ -4609,7 +4616,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "1af08de7-9760-4cf2-a1c0-da485e2d3fc2")
-		(property "Reference" "#PWR008"
+		(property "Reference" "#PWR0208"
 			(at 222.54 155.46 0)
 			(hide yes)
 			(show_name no)
@@ -4669,13 +4676,13 @@
 		(instances
 			(project "sportwatch_revA"
 				(path "/063f9d99-6c07-44cf-ba32-e33897e06972/044f2259-6cab-4c65-a4f2-7f6378d66929"
-					(reference "#PWR008")
+					(reference "#PWR0208")
 					(unit 1)
 				)
 			)
 			(project "02_POWER"
 				(path "/bbbd25bf-ebfe-444c-b330-035ab29a723c"
-					(reference "#PWR008")
+					(reference "#PWR0208")
 					(unit 1)
 				)
 			)
@@ -4693,7 +4700,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "23eb99b4-2d43-4117-afdc-47821868f339")
-		(property "Reference" "#PWR017"
+		(property "Reference" "#PWR0217"
 			(at 227.54 47.46 0)
 			(hide yes)
 			(show_name no)
@@ -4753,13 +4760,13 @@
 		(instances
 			(project "sportwatch_revA"
 				(path "/063f9d99-6c07-44cf-ba32-e33897e06972/044f2259-6cab-4c65-a4f2-7f6378d66929"
-					(reference "#PWR017")
+					(reference "#PWR0217")
 					(unit 1)
 				)
 			)
 			(project "02_POWER"
 				(path "/bbbd25bf-ebfe-444c-b330-035ab29a723c"
-					(reference "#PWR017")
+					(reference "#PWR0217")
 					(unit 1)
 				)
 			)
@@ -4777,7 +4784,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "25500105-bd7a-4e79-84cb-95b6fe66936f")
-		(property "Reference" "C8"
+		(property "Reference" "C208"
 			(at 247.54 67.46 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4850,13 +4857,13 @@
 		(instances
 			(project "sportwatch_revA"
 				(path "/063f9d99-6c07-44cf-ba32-e33897e06972/044f2259-6cab-4c65-a4f2-7f6378d66929"
-					(reference "C8")
+					(reference "C208")
 					(unit 1)
 				)
 			)
 			(project "02_POWER"
 				(path "/bbbd25bf-ebfe-444c-b330-035ab29a723c"
-					(reference "C8")
+					(reference "C208")
 					(unit 1)
 				)
 			)
@@ -4874,7 +4881,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "3264ec3f-e3ff-49dd-80e1-c445f8635861")
-		(property "Reference" "#PWR001"
+		(property "Reference" "#PWR0201"
 			(at 50.54 24.92 0)
 			(hide yes)
 			(show_name no)
@@ -4934,13 +4941,13 @@
 		(instances
 			(project "sportwatch_revA"
 				(path "/063f9d99-6c07-44cf-ba32-e33897e06972/044f2259-6cab-4c65-a4f2-7f6378d66929"
-					(reference "#PWR001")
+					(reference "#PWR0201")
 					(unit 1)
 				)
 			)
 			(project "02_POWER"
 				(path "/bbbd25bf-ebfe-444c-b330-035ab29a723c"
-					(reference "#PWR001")
+					(reference "#PWR0201")
 					(unit 1)
 				)
 			)
@@ -4958,7 +4965,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "3affa4a2-2f5e-4505-b9ee-3a15bb204b77")
-		(property "Reference" "C15"
+		(property "Reference" "C215"
 			(at 277.54 26.65 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -5031,13 +5038,13 @@
 		(instances
 			(project "sportwatch_revA"
 				(path "/063f9d99-6c07-44cf-ba32-e33897e06972/044f2259-6cab-4c65-a4f2-7f6378d66929"
-					(reference "C15")
+					(reference "C215")
 					(unit 1)
 				)
 			)
 			(project "02_POWER"
 				(path "/bbbd25bf-ebfe-444c-b330-035ab29a723c"
-					(reference "C15")
+					(reference "C215")
 					(unit 1)
 				)
 			)
@@ -5055,7 +5062,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "3bacfe38-2ed8-4282-bf8a-a307b0abe9a2")
-		(property "Reference" "L3"
+		(property "Reference" "L203"
 			(at 242.54 15.22 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -5117,13 +5124,13 @@
 		(instances
 			(project "sportwatch_revA"
 				(path "/063f9d99-6c07-44cf-ba32-e33897e06972/044f2259-6cab-4c65-a4f2-7f6378d66929"
-					(reference "L3")
+					(reference "L203")
 					(unit 1)
 				)
 			)
 			(project "02_POWER"
 				(path "/bbbd25bf-ebfe-444c-b330-035ab29a723c"
-					(reference "L3")
+					(reference "L203")
 					(unit 1)
 				)
 			)
@@ -5141,7 +5148,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "4d9312a9-85eb-482e-9b61-2daaedc945c1")
-		(property "Reference" "JCHG1"
+		(property "Reference" "J202"
 			(at 37.54 27.46 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -5203,13 +5210,13 @@
 		(instances
 			(project "sportwatch_revA"
 				(path "/063f9d99-6c07-44cf-ba32-e33897e06972/044f2259-6cab-4c65-a4f2-7f6378d66929"
-					(reference "JCHG1")
+					(reference "J202")
 					(unit 1)
 				)
 			)
 			(project "02_POWER"
 				(path "/bbbd25bf-ebfe-444c-b330-035ab29a723c"
-					(reference "JCHG1")
+					(reference "J202")
 					(unit 1)
 				)
 			)
@@ -5227,7 +5234,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "4ef53e9c-a74e-4aae-b3e5-c172793a5516")
-		(property "Reference" "C5"
+		(property "Reference" "C205"
 			(at 222.54 147.46 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -5300,13 +5307,13 @@
 		(instances
 			(project "sportwatch_revA"
 				(path "/063f9d99-6c07-44cf-ba32-e33897e06972/044f2259-6cab-4c65-a4f2-7f6378d66929"
-					(reference "C5")
+					(reference "C205")
 					(unit 1)
 				)
 			)
 			(project "02_POWER"
 				(path "/bbbd25bf-ebfe-444c-b330-035ab29a723c"
-					(reference "C5")
+					(reference "C205")
 					(unit 1)
 				)
 			)
@@ -5324,7 +5331,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "58a38bf3-d2ac-4bba-812a-31a47c9f969b")
-		(property "Reference" "U1"
+		(property "Reference" "U201"
 			(at 153.67 96.52 0)
 			(show_name no)
 			(do_not_autoplace yes)
@@ -5479,13 +5486,13 @@
 		(instances
 			(project "sportwatch_revA"
 				(path "/063f9d99-6c07-44cf-ba32-e33897e06972/044f2259-6cab-4c65-a4f2-7f6378d66929"
-					(reference "U1")
+					(reference "U201")
 					(unit 1)
 				)
 			)
 			(project "02_POWER"
 				(path "/bbbd25bf-ebfe-444c-b330-035ab29a723c"
-					(reference "U1")
+					(reference "U201")
 					(unit 1)
 				)
 			)
@@ -5503,7 +5510,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "5ce12faf-994d-411b-8696-9268dad9d779")
-		(property "Reference" "#PWR009"
+		(property "Reference" "#PWR0209"
 			(at 142.54 181.46 0)
 			(hide yes)
 			(show_name no)
@@ -5563,13 +5570,13 @@
 		(instances
 			(project "sportwatch_revA"
 				(path "/063f9d99-6c07-44cf-ba32-e33897e06972/044f2259-6cab-4c65-a4f2-7f6378d66929"
-					(reference "#PWR009")
+					(reference "#PWR0209")
 					(unit 1)
 				)
 			)
 			(project "02_POWER"
 				(path "/bbbd25bf-ebfe-444c-b330-035ab29a723c"
-					(reference "#PWR009")
+					(reference "#PWR0209")
 					(unit 1)
 				)
 			)
@@ -5587,7 +5594,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "5d545d95-70c8-4c53-8859-2041f1616f97")
-		(property "Reference" "C2"
+		(property "Reference" "C202"
 			(at 102.54 172.46 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -5660,13 +5667,13 @@
 		(instances
 			(project "sportwatch_revA"
 				(path "/063f9d99-6c07-44cf-ba32-e33897e06972/044f2259-6cab-4c65-a4f2-7f6378d66929"
-					(reference "C2")
+					(reference "C202")
 					(unit 1)
 				)
 			)
 			(project "02_POWER"
 				(path "/bbbd25bf-ebfe-444c-b330-035ab29a723c"
-					(reference "C2")
+					(reference "C202")
 					(unit 1)
 				)
 			)
@@ -5684,7 +5691,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "5f041f13-5611-46b9-bd27-9029a3dc33b3")
-		(property "Reference" "#PWR011"
+		(property "Reference" "#PWR0211"
 			(at 92.54 127.46 0)
 			(hide yes)
 			(show_name no)
@@ -5744,13 +5751,13 @@
 		(instances
 			(project "sportwatch_revA"
 				(path "/063f9d99-6c07-44cf-ba32-e33897e06972/044f2259-6cab-4c65-a4f2-7f6378d66929"
-					(reference "#PWR011")
+					(reference "#PWR0211")
 					(unit 1)
 				)
 			)
 			(project "02_POWER"
 				(path "/bbbd25bf-ebfe-444c-b330-035ab29a723c"
-					(reference "#PWR011")
+					(reference "#PWR0211")
 					(unit 1)
 				)
 			)
@@ -5768,7 +5775,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "5f27cb8d-4140-403a-94b5-e053940e32d9")
-		(property "Reference" "NT2"
+		(property "Reference" "NT202"
 			(at 267.54 67.46 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -5830,13 +5837,13 @@
 		(instances
 			(project "sportwatch_revA"
 				(path "/063f9d99-6c07-44cf-ba32-e33897e06972/044f2259-6cab-4c65-a4f2-7f6378d66929"
-					(reference "NT2")
+					(reference "NT202")
 					(unit 1)
 				)
 			)
 			(project "02_POWER"
 				(path "/bbbd25bf-ebfe-444c-b330-035ab29a723c"
-					(reference "NT2")
+					(reference "NT202")
 					(unit 1)
 				)
 			)
@@ -5854,7 +5861,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "5f83356d-39e9-43ce-a614-073afbf6ceeb")
-		(property "Reference" "#PWR013"
+		(property "Reference" "#PWR0213"
 			(at 212.54 34.46 0)
 			(hide yes)
 			(show_name no)
@@ -5914,13 +5921,13 @@
 		(instances
 			(project "sportwatch_revA"
 				(path "/063f9d99-6c07-44cf-ba32-e33897e06972/044f2259-6cab-4c65-a4f2-7f6378d66929"
-					(reference "#PWR013")
+					(reference "#PWR0213")
 					(unit 1)
 				)
 			)
 			(project "02_POWER"
 				(path "/bbbd25bf-ebfe-444c-b330-035ab29a723c"
-					(reference "#PWR013")
+					(reference "#PWR0213")
 					(unit 1)
 				)
 			)
@@ -5938,7 +5945,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "62fea967-491a-4968-929c-692cacad1694")
-		(property "Reference" "#PWR016"
+		(property "Reference" "#PWR0216"
 			(at 217.54 47.46 0)
 			(hide yes)
 			(show_name no)
@@ -5998,13 +6005,13 @@
 		(instances
 			(project "sportwatch_revA"
 				(path "/063f9d99-6c07-44cf-ba32-e33897e06972/044f2259-6cab-4c65-a4f2-7f6378d66929"
-					(reference "#PWR016")
+					(reference "#PWR0216")
 					(unit 1)
 				)
 			)
 			(project "02_POWER"
 				(path "/bbbd25bf-ebfe-444c-b330-035ab29a723c"
-					(reference "#PWR016")
+					(reference "#PWR0216")
 					(unit 1)
 				)
 			)
@@ -6022,7 +6029,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "69a32e3a-5ad6-411b-9777-9c7eff1f8d35")
-		(property "Reference" "#PWR002"
+		(property "Reference" "#PWR0202"
 			(at 67.54 38.1 0)
 			(hide yes)
 			(show_name no)
@@ -6082,13 +6089,13 @@
 		(instances
 			(project "sportwatch_revA"
 				(path "/063f9d99-6c07-44cf-ba32-e33897e06972/044f2259-6cab-4c65-a4f2-7f6378d66929"
-					(reference "#PWR002")
+					(reference "#PWR0202")
 					(unit 1)
 				)
 			)
 			(project "02_POWER"
 				(path "/bbbd25bf-ebfe-444c-b330-035ab29a723c"
-					(reference "#PWR002")
+					(reference "#PWR0202")
 					(unit 1)
 				)
 			)
@@ -6106,7 +6113,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "6eb85f57-a7e2-4ff9-ada4-b7d19fb8c31a")
-		(property "Reference" "#PWR010"
+		(property "Reference" "#PWR0210"
 			(at 167.54 181.46 0)
 			(hide yes)
 			(show_name no)
@@ -6166,13 +6173,13 @@
 		(instances
 			(project "sportwatch_revA"
 				(path "/063f9d99-6c07-44cf-ba32-e33897e06972/044f2259-6cab-4c65-a4f2-7f6378d66929"
-					(reference "#PWR010")
+					(reference "#PWR0210")
 					(unit 1)
 				)
 			)
 			(project "02_POWER"
 				(path "/bbbd25bf-ebfe-444c-b330-035ab29a723c"
-					(reference "#PWR010")
+					(reference "#PWR0210")
 					(unit 1)
 				)
 			)
@@ -6190,7 +6197,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "70d6a070-29bc-48ce-bc75-00ec1ca25734")
-		(property "Reference" "C13"
+		(property "Reference" "C213"
 			(at 167.54 172.46 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -6263,13 +6270,13 @@
 		(instances
 			(project "sportwatch_revA"
 				(path "/063f9d99-6c07-44cf-ba32-e33897e06972/044f2259-6cab-4c65-a4f2-7f6378d66929"
-					(reference "C13")
+					(reference "C213")
 					(unit 1)
 				)
 			)
 			(project "02_POWER"
 				(path "/bbbd25bf-ebfe-444c-b330-035ab29a723c"
-					(reference "C13")
+					(reference "C213")
 					(unit 1)
 				)
 			)
@@ -6287,7 +6294,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "7479e9c3-1549-45e8-9bd7-b372c5b1ceb7")
-		(property "Reference" "R5"
+		(property "Reference" "R205"
 			(at 207.54 39.46 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -6360,13 +6367,13 @@
 		(instances
 			(project "sportwatch_revA"
 				(path "/063f9d99-6c07-44cf-ba32-e33897e06972/044f2259-6cab-4c65-a4f2-7f6378d66929"
-					(reference "R5")
+					(reference "R205")
 					(unit 1)
 				)
 			)
 			(project "02_POWER"
 				(path "/bbbd25bf-ebfe-444c-b330-035ab29a723c"
-					(reference "R5")
+					(reference "R205")
 					(unit 1)
 				)
 			)
@@ -6384,7 +6391,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "79303074-a6a9-4c15-957e-e364e62db581")
-		(property "Reference" "#PWR005"
+		(property "Reference" "#PWR0205"
 			(at 156.21 142.46 0)
 			(hide yes)
 			(show_name no)
@@ -6444,13 +6451,13 @@
 		(instances
 			(project "sportwatch_revA"
 				(path "/063f9d99-6c07-44cf-ba32-e33897e06972/044f2259-6cab-4c65-a4f2-7f6378d66929"
-					(reference "#PWR005")
+					(reference "#PWR0205")
 					(unit 1)
 				)
 			)
 			(project "02_POWER"
 				(path "/bbbd25bf-ebfe-444c-b330-035ab29a723c"
-					(reference "#PWR005")
+					(reference "#PWR0205")
 					(unit 1)
 				)
 			)
@@ -6468,7 +6475,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "7f843d8e-82ab-461b-84ec-2430ba974643")
-		(property "Reference" "U2"
+		(property "Reference" "U202"
 			(at 240 20.3 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -6568,13 +6575,13 @@
 		(instances
 			(project "sportwatch_revA"
 				(path "/063f9d99-6c07-44cf-ba32-e33897e06972/044f2259-6cab-4c65-a4f2-7f6378d66929"
-					(reference "U2")
+					(reference "U202")
 					(unit 1)
 				)
 			)
 			(project "02_POWER"
 				(path "/bbbd25bf-ebfe-444c-b330-035ab29a723c"
-					(reference "U2")
+					(reference "U202")
 					(unit 1)
 				)
 			)
@@ -6592,7 +6599,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "82a0f4ec-7ab8-4b82-a046-3a7d9fc1185a")
-		(property "Reference" "#PWR003"
+		(property "Reference" "#PWR0203"
 			(at 52.54 61.46 0)
 			(hide yes)
 			(show_name no)
@@ -6652,13 +6659,13 @@
 		(instances
 			(project "sportwatch_revA"
 				(path "/063f9d99-6c07-44cf-ba32-e33897e06972/044f2259-6cab-4c65-a4f2-7f6378d66929"
-					(reference "#PWR003")
+					(reference "#PWR0203")
 					(unit 1)
 				)
 			)
 			(project "02_POWER"
 				(path "/bbbd25bf-ebfe-444c-b330-035ab29a723c"
-					(reference "#PWR003")
+					(reference "#PWR0203")
 					(unit 1)
 				)
 			)
@@ -6676,7 +6683,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "84561a6e-26c5-4257-8684-c19b63f515cb")
-		(property "Reference" "R3"
+		(property "Reference" "R203"
 			(at 92.54 117.46 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -6749,13 +6756,13 @@
 		(instances
 			(project "sportwatch_revA"
 				(path "/063f9d99-6c07-44cf-ba32-e33897e06972/044f2259-6cab-4c65-a4f2-7f6378d66929"
-					(reference "R3")
+					(reference "R203")
 					(unit 1)
 				)
 			)
 			(project "02_POWER"
 				(path "/bbbd25bf-ebfe-444c-b330-035ab29a723c"
-					(reference "R3")
+					(reference "R203")
 					(unit 1)
 				)
 			)
@@ -6773,7 +6780,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "8aea92fd-8c1b-4878-9615-2b5a9520a88b")
-		(property "Reference" "#PWR015"
+		(property "Reference" "#PWR0215"
 			(at 207.54 47.46 0)
 			(hide yes)
 			(show_name no)
@@ -6833,13 +6840,13 @@
 		(instances
 			(project "sportwatch_revA"
 				(path "/063f9d99-6c07-44cf-ba32-e33897e06972/044f2259-6cab-4c65-a4f2-7f6378d66929"
-					(reference "#PWR015")
+					(reference "#PWR0215")
 					(unit 1)
 				)
 			)
 			(project "02_POWER"
 				(path "/bbbd25bf-ebfe-444c-b330-035ab29a723c"
-					(reference "#PWR015")
+					(reference "#PWR0215")
 					(unit 1)
 				)
 			)
@@ -6857,7 +6864,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "952528a8-635b-413b-b892-97f10efe2d24")
-		(property "Reference" "JBAT1"
+		(property "Reference" "J201"
 			(at 37.54 52.46 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -6922,13 +6929,13 @@
 		(instances
 			(project "sportwatch_revA"
 				(path "/063f9d99-6c07-44cf-ba32-e33897e06972/044f2259-6cab-4c65-a4f2-7f6378d66929"
-					(reference "JBAT1")
+					(reference "J201")
 					(unit 1)
 				)
 			)
 			(project "02_POWER"
 				(path "/bbbd25bf-ebfe-444c-b330-035ab29a723c"
-					(reference "JBAT1")
+					(reference "J201")
 					(unit 1)
 				)
 			)
@@ -6946,7 +6953,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "a0ae697a-0b0d-45a8-935c-2512877d8430")
-		(property "Reference" "L1"
+		(property "Reference" "L201"
 			(at 222.54 81.28 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -7008,13 +7015,13 @@
 		(instances
 			(project "sportwatch_revA"
 				(path "/063f9d99-6c07-44cf-ba32-e33897e06972/044f2259-6cab-4c65-a4f2-7f6378d66929"
-					(reference "L1")
+					(reference "L201")
 					(unit 1)
 				)
 			)
 			(project "02_POWER"
 				(path "/bbbd25bf-ebfe-444c-b330-035ab29a723c"
-					(reference "L1")
+					(reference "L201")
 					(unit 1)
 				)
 			)
@@ -7032,7 +7039,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "a6269bf7-aa56-4dce-9622-003133013f07")
-		(property "Reference" "L2"
+		(property "Reference" "L202"
 			(at 222.54 93.98 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -7094,13 +7101,13 @@
 		(instances
 			(project "sportwatch_revA"
 				(path "/063f9d99-6c07-44cf-ba32-e33897e06972/044f2259-6cab-4c65-a4f2-7f6378d66929"
-					(reference "L2")
+					(reference "L202")
 					(unit 1)
 				)
 			)
 			(project "02_POWER"
 				(path "/bbbd25bf-ebfe-444c-b330-035ab29a723c"
-					(reference "L2")
+					(reference "L202")
 					(unit 1)
 				)
 			)
@@ -7118,7 +7125,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "a7ebe416-6213-4cf2-b9b4-50aff1868613")
-		(property "Reference" "R4"
+		(property "Reference" "R204"
 			(at 107.54 117.46 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -7191,13 +7198,13 @@
 		(instances
 			(project "sportwatch_revA"
 				(path "/063f9d99-6c07-44cf-ba32-e33897e06972/044f2259-6cab-4c65-a4f2-7f6378d66929"
-					(reference "R4")
+					(reference "R204")
 					(unit 1)
 				)
 			)
 			(project "02_POWER"
 				(path "/bbbd25bf-ebfe-444c-b330-035ab29a723c"
-					(reference "R4")
+					(reference "R204")
 					(unit 1)
 				)
 			)
@@ -7215,7 +7222,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "ababc2bc-cd88-4d20-8e4b-8a15610c4c82")
-		(property "Reference" "C1"
+		(property "Reference" "C201"
 			(at 67.54 29.46 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -7288,13 +7295,13 @@
 		(instances
 			(project "sportwatch_revA"
 				(path "/063f9d99-6c07-44cf-ba32-e33897e06972/044f2259-6cab-4c65-a4f2-7f6378d66929"
-					(reference "C1")
+					(reference "C201")
 					(unit 1)
 				)
 			)
 			(project "02_POWER"
 				(path "/bbbd25bf-ebfe-444c-b330-035ab29a723c"
-					(reference "C1")
+					(reference "C201")
 					(unit 1)
 				)
 			)
@@ -7312,7 +7319,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "b6ed8e40-eb66-4612-ad52-c8f33ed77a11")
-		(property "Reference" "R1"
+		(property "Reference" "R201"
 			(at 62.54 117.46 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -7385,13 +7392,13 @@
 		(instances
 			(project "sportwatch_revA"
 				(path "/063f9d99-6c07-44cf-ba32-e33897e06972/044f2259-6cab-4c65-a4f2-7f6378d66929"
-					(reference "R1")
+					(reference "R201")
 					(unit 1)
 				)
 			)
 			(project "02_POWER"
 				(path "/bbbd25bf-ebfe-444c-b330-035ab29a723c"
-					(reference "R1")
+					(reference "R201")
 					(unit 1)
 				)
 			)
@@ -7409,7 +7416,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "c95235ea-b104-436f-98f4-b6cdeecd9183")
-		(property "Reference" "C6"
+		(property "Reference" "C206"
 			(at 67.54 54.96 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -7482,13 +7489,13 @@
 		(instances
 			(project "sportwatch_revA"
 				(path "/063f9d99-6c07-44cf-ba32-e33897e06972/044f2259-6cab-4c65-a4f2-7f6378d66929"
-					(reference "C6")
+					(reference "C206")
 					(unit 1)
 				)
 			)
 			(project "02_POWER"
 				(path "/bbbd25bf-ebfe-444c-b330-035ab29a723c"
-					(reference "C6")
+					(reference "C206")
 					(unit 1)
 				)
 			)
@@ -7506,7 +7513,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "ca0372ea-b3b2-4858-8c5e-92acbbf291bb")
-		(property "Reference" "#PWR007"
+		(property "Reference" "#PWR0207"
 			(at 274.54 67.46 0)
 			(hide yes)
 			(show_name no)
@@ -7566,13 +7573,13 @@
 		(instances
 			(project "sportwatch_revA"
 				(path "/063f9d99-6c07-44cf-ba32-e33897e06972/044f2259-6cab-4c65-a4f2-7f6378d66929"
-					(reference "#PWR007")
+					(reference "#PWR0207")
 					(unit 1)
 				)
 			)
 			(project "02_POWER"
 				(path "/bbbd25bf-ebfe-444c-b330-035ab29a723c"
-					(reference "#PWR007")
+					(reference "#PWR0207")
 					(unit 1)
 				)
 			)
@@ -7590,7 +7597,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "cdda02d4-7382-4cb8-8fb0-e4c1b82d8a36")
-		(property "Reference" "#PWR004"
+		(property "Reference" "#PWR0204"
 			(at 67.54 63.5 0)
 			(hide yes)
 			(show_name no)
@@ -7650,13 +7657,13 @@
 		(instances
 			(project "sportwatch_revA"
 				(path "/063f9d99-6c07-44cf-ba32-e33897e06972/044f2259-6cab-4c65-a4f2-7f6378d66929"
-					(reference "#PWR004")
+					(reference "#PWR0204")
 					(unit 1)
 				)
 			)
 			(project "02_POWER"
 				(path "/bbbd25bf-ebfe-444c-b330-035ab29a723c"
-					(reference "#PWR004")
+					(reference "#PWR0204")
 					(unit 1)
 				)
 			)
@@ -7674,7 +7681,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "ced666e9-500e-4573-b0e7-e59cc1221717")
-		(property "Reference" "C7"
+		(property "Reference" "C207"
 			(at 247.54 117.46 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -7747,13 +7754,13 @@
 		(instances
 			(project "sportwatch_revA"
 				(path "/063f9d99-6c07-44cf-ba32-e33897e06972/044f2259-6cab-4c65-a4f2-7f6378d66929"
-					(reference "C7")
+					(reference "C207")
 					(unit 1)
 				)
 			)
 			(project "02_POWER"
 				(path "/bbbd25bf-ebfe-444c-b330-035ab29a723c"
-					(reference "C7")
+					(reference "C207")
 					(unit 1)
 				)
 			)
@@ -7771,7 +7778,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "cf13dd3c-6777-4ac5-a423-ff07b92848b8")
-		(property "Reference" "R7"
+		(property "Reference" "R207"
 			(at 227.54 39.46 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -7844,13 +7851,13 @@
 		(instances
 			(project "sportwatch_revA"
 				(path "/063f9d99-6c07-44cf-ba32-e33897e06972/044f2259-6cab-4c65-a4f2-7f6378d66929"
-					(reference "R7")
+					(reference "R207")
 					(unit 1)
 				)
 			)
 			(project "02_POWER"
 				(path "/bbbd25bf-ebfe-444c-b330-035ab29a723c"
-					(reference "R7")
+					(reference "R207")
 					(unit 1)
 				)
 			)
@@ -7868,7 +7875,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "da71542e-1bb6-4231-95e1-12be3d4095eb")
-		(property "Reference" "R2"
+		(property "Reference" "R202"
 			(at 77.54 117.46 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -7941,13 +7948,13 @@
 		(instances
 			(project "sportwatch_revA"
 				(path "/063f9d99-6c07-44cf-ba32-e33897e06972/044f2259-6cab-4c65-a4f2-7f6378d66929"
-					(reference "R2")
+					(reference "R202")
 					(unit 1)
 				)
 			)
 			(project "02_POWER"
 				(path "/bbbd25bf-ebfe-444c-b330-035ab29a723c"
-					(reference "R2")
+					(reference "R202")
 					(unit 1)
 				)
 			)
@@ -7965,7 +7972,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "dbc92b9f-e0e7-40c3-ad71-88bc37107781")
-		(property "Reference" "C14"
+		(property "Reference" "C214"
 			(at 212.54 26.65 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -8038,13 +8045,13 @@
 		(instances
 			(project "sportwatch_revA"
 				(path "/063f9d99-6c07-44cf-ba32-e33897e06972/044f2259-6cab-4c65-a4f2-7f6378d66929"
-					(reference "C14")
+					(reference "C214")
 					(unit 1)
 				)
 			)
 			(project "02_POWER"
 				(path "/bbbd25bf-ebfe-444c-b330-035ab29a723c"
-					(reference "C14")
+					(reference "C214")
 					(unit 1)
 				)
 			)
@@ -8062,7 +8069,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "ed603291-2702-4ebf-bfda-5daa6596a065")
-		(property "Reference" "#PWR018"
+		(property "Reference" "#PWR0218"
 			(at 242.54 52.46 0)
 			(hide yes)
 			(show_name no)
@@ -8122,13 +8129,13 @@
 		(instances
 			(project "sportwatch_revA"
 				(path "/063f9d99-6c07-44cf-ba32-e33897e06972/044f2259-6cab-4c65-a4f2-7f6378d66929"
-					(reference "#PWR018")
+					(reference "#PWR0218")
 					(unit 1)
 				)
 			)
 			(project "02_POWER"
 				(path "/bbbd25bf-ebfe-444c-b330-035ab29a723c"
-					(reference "#PWR018")
+					(reference "#PWR0218")
 					(unit 1)
 				)
 			)
@@ -8146,7 +8153,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "fc14fed4-e90b-460c-8402-e6035a905f8c")
-		(property "Reference" "#PWR006"
+		(property "Reference" "#PWR0206"
 			(at 274.54 117.46 0)
 			(hide yes)
 			(show_name no)
@@ -8206,13 +8213,13 @@
 		(instances
 			(project "sportwatch_revA"
 				(path "/063f9d99-6c07-44cf-ba32-e33897e06972/044f2259-6cab-4c65-a4f2-7f6378d66929"
-					(reference "#PWR006")
+					(reference "#PWR0206")
 					(unit 1)
 				)
 			)
 			(project "02_POWER"
 				(path "/bbbd25bf-ebfe-444c-b330-035ab29a723c"
-					(reference "#PWR006")
+					(reference "#PWR0206")
 					(unit 1)
 				)
 			)
@@ -8230,7 +8237,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "fdf54d22-1e0f-4041-971a-f911bfc38fb9")
-		(property "Reference" "C4"
+		(property "Reference" "C204"
 			(at 142.54 172.46 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -8303,13 +8310,13 @@
 		(instances
 			(project "sportwatch_revA"
 				(path "/063f9d99-6c07-44cf-ba32-e33897e06972/044f2259-6cab-4c65-a4f2-7f6378d66929"
-					(reference "C4")
+					(reference "C204")
 					(unit 1)
 				)
 			)
 			(project "02_POWER"
 				(path "/bbbd25bf-ebfe-444c-b330-035ab29a723c"
-					(reference "C4")
+					(reference "C204")
 					(unit 1)
 				)
 			)

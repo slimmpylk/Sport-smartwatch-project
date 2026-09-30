@@ -40,7 +40,7 @@
 					)
 				)
 			)
-			(property "Footprint" "YFF0009AHAN"
+			(property "Footprint" "sportwatch_custom:YFF0009AHAN"
 				(at 0 0 0)
 				(show_name no)
 				(do_not_autoplace no)
@@ -96,7 +96,7 @@
 					)
 				)
 			)
-			(property "ki_fp_filters" "YFF0009AHAN"
+			(property "ki_fp_filters" "sportwatch_custom:YFF0009AHAN"
 				(at 0 0 0)
 				(show_name no)
 				(do_not_autoplace no)
@@ -1191,7 +1191,8 @@
 		)
 		(uuid "026f5200-05b9-427e-9e5e-c49c5f745cfa")
 	)
-	(label "VOUT1_1V8"
+	(hierarchical_label "VOUT1_1V8"
+		(shape passive)
 		(at 78.74 43.18 0)
 		(effects
 			(font
@@ -1201,7 +1202,8 @@
 		)
 		(uuid "116b2990-f981-4deb-9a1d-f347e2c24022")
 	)
-	(label "VSYS"
+	(hierarchical_label "VSYS"
+		(shape passive)
 		(at 92.71 70.5 0)
 		(effects
 			(font
@@ -1231,7 +1233,8 @@
 		)
 		(uuid "1ec83ecd-7692-421f-b967-3dfe4e5cc943")
 	)
-	(label "HAPTIC_I2C_SCL"
+	(hierarchical_label "HAPTIC_I2C_SCL"
+		(shape bidirectional)
 		(at 92.71 95.25 180)
 		(effects
 			(font
@@ -1261,7 +1264,8 @@
 		)
 		(uuid "4e10f91e-4e1f-46ad-9374-1ad0031500b3")
 	)
-	(label "HAPTIC_NRST"
+	(hierarchical_label "HAPTIC_NRST"
+		(shape input)
 		(at 78.74 102.87 0)
 		(effects
 			(font
@@ -1271,7 +1275,8 @@
 		)
 		(uuid "5258852e-e59d-4e62-bd44-386c069c43be")
 	)
-	(label "HAPTIC_TRIG_INTZ"
+	(hierarchical_label "HAPTIC_TRIG_INTZ"
+		(shape bidirectional)
 		(at 170.18 97.79 0)
 		(effects
 			(font
@@ -1291,7 +1296,8 @@
 		)
 		(uuid "8d04f822-2809-4779-9380-a2184100df4e")
 	)
-	(label "HAPTIC_I2C_SDA"
+	(hierarchical_label "HAPTIC_I2C_SDA"
+		(shape bidirectional)
 		(at 68.58 59.69 0)
 		(effects
 			(font
@@ -1759,7 +1765,7 @@
 				)
 			)
 		)
-		(property "Footprint" "YFF0009AHAN"
+		(property "Footprint" "sportwatch_custom:YFF0009AHAN"
 			(at 130.81 97.79 0)
 			(hide yes)
 			(show_name no)

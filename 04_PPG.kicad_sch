@@ -40,7 +40,7 @@
 					)
 				)
 			)
-			(property "Footprint" "21-100134_N201A2-1_MXM"
+			(property "Footprint" "sportwatch_custom:21-100134_N201A2-1_MXM"
 				(at 0 0 0)
 				(show_name no)
 				(do_not_autoplace no)
@@ -96,7 +96,7 @@
 					)
 				)
 			)
-			(property "ki_fp_filters" "21-100134_N201A2-1_MXM"
+			(property "ki_fp_filters" "sportwatch_custom:21-100134_N201A2-1_MXM"
 				(at 0 0 0)
 				(show_name no)
 				(do_not_autoplace no)
@@ -2657,7 +2657,8 @@
 		)
 		(uuid "07c3fc3f-c94f-4a13-82ed-975ccba41194")
 	)
-	(label "PPG1_INT_N"
+	(hierarchical_label "PPG1_INT_N"
+		(shape output)
 		(at 59 40 0)
 		(effects
 			(font
@@ -2667,7 +2668,8 @@
 		)
 		(uuid "094ce328-8d2a-4817-8f3d-26386efa9d49")
 	)
-	(label "VOUT1_1V8"
+	(hierarchical_label "VOUT1_1V8"
+		(shape passive)
 		(at 125.04 72.39 0)
 		(effects
 			(font
@@ -2677,7 +2679,8 @@
 		)
 		(uuid "0f2ae274-1ce0-4a3e-8f3f-888acabc155b")
 	)
-	(label "PPG_SAMPLE_SYNC"
+	(hierarchical_label "PPG_SAMPLE_SYNC"
+		(shape bidirectional)
 		(at 93 40 0)
 		(effects
 			(font
@@ -2687,7 +2690,8 @@
 		)
 		(uuid "0f3bd938-9f7f-49e2-96c6-6b31bdf10036")
 	)
-	(label "PPG2_CS_N"
+	(hierarchical_label "PPG2_CS_N"
+		(shape input)
 		(at 42 40 0)
 		(effects
 			(font
@@ -2697,7 +2701,8 @@
 		)
 		(uuid "14ee028c-91fa-49b3-9d01-03eab42b9003")
 	)
-	(label "PPG1_CS_N"
+	(hierarchical_label "PPG1_CS_N"
+		(shape input)
 		(at 25 40 0)
 		(effects
 			(font
@@ -2767,7 +2772,8 @@
 		)
 		(uuid "3aa55946-b087-411e-881c-89a5bd25ad51")
 	)
-	(label "PPG_SPI_MOSI"
+	(hierarchical_label "PPG_SPI_MOSI"
+		(shape input)
 		(at 30.23 128.27 180)
 		(effects
 			(font
@@ -2857,7 +2863,8 @@
 		)
 		(uuid "52b134ae-c45e-4300-9e66-e07e6a80ca3f")
 	)
-	(label "PPG_SPI_MISO"
+	(hierarchical_label "PPG_SPI_MISO"
+		(shape output)
 		(at 34.04 69.85 180)
 		(effects
 			(font
@@ -3027,7 +3034,8 @@
 		)
 		(uuid "89d68a95-65be-4f92-a260-a2d9d563eeae")
 	)
-	(label "PPG_SPI_SCLK"
+	(hierarchical_label "PPG_SPI_SCLK"
+		(shape input)
 		(at 30.23 123.19 180)
 		(effects
 			(font
@@ -3187,7 +3195,8 @@
 		)
 		(uuid "d29d3f7b-3d51-43fc-92da-dfcfa0f4c903")
 	)
-	(label "PPG2_INT_N"
+	(hierarchical_label "PPG2_INT_N"
+		(shape output)
 		(at 30.23 135.89 180)
 		(effects
 			(font
@@ -4451,7 +4460,7 @@
 				)
 			)
 		)
-		(property "Footprint" "21-100134_N201A2-1_MXM"
+		(property "Footprint" "sportwatch_custom:21-100134_N201A2-1_MXM"
 			(at 50.8 120.65 0)
 			(hide yes)
 			(show_name no)
@@ -4747,7 +4756,7 @@
 				)
 			)
 		)
-		(property "Footprint" "21-100134_N201A2-1_MXM"
+		(property "Footprint" "sportwatch_custom:21-100134_N201A2-1_MXM"
 			(at 54.61 64.77 0)
 			(hide yes)
 			(show_name no)

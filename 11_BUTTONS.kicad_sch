@@ -935,7 +935,8 @@
 		)
 		(uuid "f851c4d2-d6a5-461e-a97c-0c13a828d31f")
 	)
-	(label "VOUT1_1V8"
+	(hierarchical_label "VOUT1_1V8"
+		(shape passive)
 		(at 95.25 151.13 0)
 		(effects
 			(font
@@ -945,7 +946,8 @@
 		)
 		(uuid "01ec6ae1-8036-47fa-b07e-b4fc50b7b081")
 	)
-	(label "BTN_BACK_N"
+	(hierarchical_label "BTN_BACK_N"
+		(shape output)
 		(at 90.17 162.56 180)
 		(effects
 			(font
@@ -975,7 +977,8 @@
 		)
 		(uuid "8960c5a9-a1e4-4957-8899-56b35b80ab56")
 	)
-	(label "BTN_UP_N"
+	(hierarchical_label "BTN_UP_N"
+		(shape output)
 		(at 90.17 97.79 180)
 		(effects
 			(font
@@ -1005,7 +1008,8 @@
 		)
 		(uuid "be08b52a-d599-4922-927c-b5474adcc6c0")
 	)
-	(label "BTN_START_N"
+	(hierarchical_label "BTN_START_N"
+		(shape output)
 		(at 90.17 139.7 180)
 		(effects
 			(font
@@ -1015,7 +1019,8 @@
 		)
 		(uuid "c0444601-5187-40ac-a2d5-6efbae73b817")
 	)
-	(label "BTN_DOWN_N"
+	(hierarchical_label "BTN_DOWN_N"
+		(shape output)
 		(at 90.17 118.11 180)
 		(effects
 			(font
@@ -1025,7 +1030,8 @@
 		)
 		(uuid "d6c9688e-308a-48eb-b964-a408c8d12e70")
 	)
-	(label "BTN_LIGHT_N"
+	(hierarchical_label "BTN_LIGHT_N"
+		(shape output)
 		(at 90.17 78.74 180)
 		(effects
 			(font

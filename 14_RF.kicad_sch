@@ -1384,7 +1384,8 @@
 		)
 		(uuid "1ce76438-0cae-40a9-a31a-65f4525a8bf5")
 	)
-	(label "APOLLO_BLE_ANT"
+	(hierarchical_label "APOLLO_BLE_ANT"
+		(shape passive)
 		(at 30 48 180)
 		(effects
 			(font
@@ -1394,7 +1395,8 @@
 		)
 		(uuid "68efcbe0-5419-4322-9def-df68e826233e")
 	)
-	(label "WIFI_RF"
+	(hierarchical_label "WIFI_RF"
+		(shape passive)
 		(at 30 103 180)
 		(effects
 			(font
@@ -1404,7 +1406,8 @@
 		)
 		(uuid "91c007af-3010-4f77-983a-1704743d6058")
 	)
-	(label "APOLLO_BLE_AVDD_PA"
+	(hierarchical_label "APOLLO_BLE_AVDD_PA"
+		(shape passive)
 		(at 62 61 0)
 		(effects
 			(font
@@ -1424,7 +1427,8 @@
 		)
 		(uuid "a86ba414-87f1-4bde-92c3-9e277cfbf010")
 	)
-	(label "GNSS_RF"
+	(hierarchical_label "GNSS_RF"
+		(shape passive)
 		(at 30 157 180)
 		(effects
 			(font

@@ -40,7 +40,7 @@
 					)
 				)
 			)
-			(property "Footprint" "QFN48_6X6_NOR"
+			(property "Footprint" "sportwatch_custom:QFN48_6X6_NOR"
 				(at 0 0 0)
 				(show_name no)
 				(do_not_autoplace no)
@@ -1943,7 +1943,7 @@
 					)
 				)
 			)
-			(property "Value" "40MHz"
+			(property "Value" "XTAL"
 				(at 0 -5.08 0)
 				(show_name no)
 				(do_not_autoplace no)
@@ -1975,7 +1975,7 @@
 					)
 				)
 			)
-			(property "Description" "40 MHz crystal, SMD1612, CL=8 pF, ESR max 100 ohm"
+			(property "Description" "Crystal; exact MPN and footprint TBD"
 				(at 0 0 0)
 				(show_name no)
 				(do_not_autoplace no)
@@ -2777,14 +2777,25 @@
 	)
 	(wire
 		(pts
-			(xy 208.28 121.92) (xy 225.28 121.92)
+			(xy 208.28 121.92) (xy 220.28 121.92)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "927194ee-8a8f-4d0f-9e15-f99082afc126")
+		(uuid "39b5844b-8fc7-46bf-9a53-e7580c8e1476")
 	)
+	(wire
+		(pts
+			(xy 220.28 121.92) (xy 225.28 121.92)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "101c6239-f1ca-4770-8f65-6ff5c136642d")
+	)
+
 	(wire
 		(pts
 			(xy 270 127.57) (xy 270 131.76)
@@ -3007,14 +3018,25 @@
 	)
 	(wire
 		(pts
-			(xy 208.28 106.68) (xy 238.28 106.68)
+			(xy 208.28 106.68) (xy 232.28 106.68)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "b8ca5bed-870b-4e53-b924-c373c148736f")
+		(uuid "54152aa0-1523-494c-b44e-1aff34f377ca")
 	)
+	(wire
+		(pts
+			(xy 232.28 106.68) (xy 238.28 106.68)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "aa5de6e8-a3c0-4fa6-933f-1e84c1a022e6")
+	)
+
 	(wire
 		(pts
 			(xy 208.28 91.44) (xy 224.28 91.44)
@@ -3215,7 +3237,8 @@
 		)
 		(uuid "fd5c23ea-fc28-44d2-8894-7d1c14d6cf08")
 	)
-	(label "WIFI_COEX_STATUS"
+	(hierarchical_label "WIFI_COEX_STATUS"
+		(shape output)
 		(at 224.28 81.28 0)
 		(effects
 			(font
@@ -3235,7 +3258,8 @@
 		)
 		(uuid "20385644-7599-4f91-9121-10984dbcfe43")
 	)
-	(label "WIFI_IOVDD_EN"
+	(hierarchical_label "WIFI_IOVDD_EN"
+		(shape input)
 		(at 232 72 180)
 		(effects
 			(font
@@ -3245,7 +3269,8 @@
 		)
 		(uuid "27974e9b-3be9-404c-8d6a-c15a03351ecb")
 	)
-	(label "WIFI_HOST_IRQ"
+	(hierarchical_label "WIFI_HOST_IRQ"
+		(shape output)
 		(at 224.28 68.58 0)
 		(effects
 			(font
@@ -3265,7 +3290,8 @@
 		)
 		(uuid "3f7dab46-4eab-4eb7-8a69-209e51335674")
 	)
-	(label "WIFI_BUCKEN"
+	(hierarchical_label "WIFI_BUCKEN"
+		(shape input)
 		(at 267 141 0)
 		(effects
 			(font
@@ -3285,7 +3311,8 @@
 		)
 		(uuid "46ba8d83-7fc7-4816-8a15-3f63b988d9fd")
 	)
-	(label "VBAT"
+	(hierarchical_label "VBAT"
+		(shape passive)
 		(at 238.28 106.68 0)
 		(effects
 			(font
@@ -3295,7 +3322,8 @@
 		)
 		(uuid "5f2aa26c-d6a5-4d55-b5f3-be7bce2dfaca")
 	)
-	(label "WIFI_QSPI_CLK"
+	(hierarchical_label "WIFI_QSPI_CLK"
+		(shape input)
 		(at 224.28 96.52 0)
 		(effects
 			(font
@@ -3315,7 +3343,8 @@
 		)
 		(uuid "6f3b3a1b-30ce-49ad-b31c-84784ced7e21")
 	)
-	(label "WIFI_QSPI_CS"
+	(hierarchical_label "WIFI_QSPI_CS"
+		(shape input)
 		(at 224.28 93.98 0)
 		(effects
 			(font
@@ -3335,7 +3364,8 @@
 		)
 		(uuid "8b4f0f1a-153d-42dd-a5b6-bd686e94d8da")
 	)
-	(label "WIFI_COEX_GRANT"
+	(hierarchical_label "WIFI_COEX_GRANT"
+		(shape input)
 		(at 224.28 76.2 0)
 		(effects
 			(font
@@ -3355,7 +3385,8 @@
 		)
 		(uuid "9b9edb36-c007-4868-b469-0ce1ffb97556")
 	)
-	(label "WIFI_QSPI_IO3"
+	(hierarchical_label "WIFI_QSPI_IO3"
+		(shape bidirectional)
 		(at 224.28 83.82 0)
 		(effects
 			(font
@@ -3385,7 +3416,8 @@
 		)
 		(uuid "ab4ad226-3d83-434c-a89f-08e4e2e934d6")
 	)
-	(label "VOUT1_1V8"
+	(hierarchical_label "VOUT1_1V8"
+		(shape passive)
 		(at 229 66.92 0)
 		(effects
 			(font
@@ -3395,7 +3427,8 @@
 		)
 		(uuid "bba1285e-a775-47b9-90fe-2e9e9c1a63a4")
 	)
-	(label "WIFI_QSPI_IO2"
+	(hierarchical_label "WIFI_QSPI_IO2"
+		(shape bidirectional)
 		(at 224.28 86.36 0)
 		(effects
 			(font
@@ -3405,7 +3438,8 @@
 		)
 		(uuid "c634b24c-6150-42d1-8c19-f91d0cb12dda")
 	)
-	(label "WIFI_RF"
+	(hierarchical_label "WIFI_RF"
+		(shape passive)
 		(at 67 102 180)
 		(effects
 			(font
@@ -3415,7 +3449,8 @@
 		)
 		(uuid "c77ed8b9-cf5c-47c4-9167-630d4251e3b5")
 	)
-	(label "WIFI_QSPI_IO0"
+	(hierarchical_label "WIFI_QSPI_IO0"
+		(shape bidirectional)
 		(at 224.28 91.44 0)
 		(effects
 			(font
@@ -3455,7 +3490,8 @@
 		)
 		(uuid "def2bb44-321f-46d4-9c99-d024c497112d")
 	)
-	(label "WIFI_QSPI_IO1"
+	(hierarchical_label "WIFI_QSPI_IO1"
+		(shape bidirectional)
 		(at 224.28 88.9 0)
 		(effects
 			(font
@@ -3465,7 +3501,8 @@
 		)
 		(uuid "e3de0260-9e22-4137-aa91-a1733be7734d")
 	)
-	(label "WIFI_COEX_REQ"
+	(hierarchical_label "WIFI_COEX_REQ"
+		(shape output)
 		(at 224.28 78.74 0)
 		(effects
 			(font
@@ -3505,6 +3542,27 @@
 		)
 		(uuid "f9494528-3468-45db-8daf-e3111883e291")
 	)
+	(wire
+		(pts
+			(xy 89.92 91.84) (xy 90 91.84)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "c98d8ddd-507d-4b9c-b932-c4c75874eba4")
+	)
+	(wire
+		(pts
+			(xy 100.08 91.84) (xy 100 91.84)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "960c048a-4140-4e62-a985-3a561ebc9eb0")
+	)
+
 	(symbol
 		(lib_id "Device:C")
 		(at 150 111.52 0)
@@ -6645,7 +6703,7 @@
 				)
 			)
 		)
-		(property "Footprint" "QFN48_6X6_NOR"
+		(property "Footprint" "sportwatch_custom:QFN48_6X6_NOR"
 			(at 142.24 60.96 0)
 			(hide yes)
 			(show_name no)
@@ -6847,7 +6905,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "c6c6780e-5110-4b60-a6fc-bcc1ccaa8295")
-		(property "Reference" "#PWR0610"
+		(property "Reference" "#PWR0622"
 			(at 216.28 114.3 0)
 			(hide yes)
 			(show_name no)
@@ -6908,7 +6966,7 @@
 		(instances
 			(project "sportwatch_revA"
 				(path "/063f9d99-6c07-44cf-ba32-e33897e06972/969e89ce-e77c-4ba6-bffa-a45602245cc9"
-					(reference "#PWR0610")
+					(reference "#PWR0622")
 					(unit 1)
 				)
 			)
@@ -7319,7 +7377,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "d7db8dc4-a2a8-4e45-9ff5-fb7e97a701eb")
-		(property "Reference" "#PWR0603"
+		(property "Reference" "#PWR0623"
 			(at 150 119.52 0)
 			(hide yes)
 			(show_name no)
@@ -7380,7 +7438,7 @@
 		(instances
 			(project "sportwatch_revA"
 				(path "/063f9d99-6c07-44cf-ba32-e33897e06972/969e89ce-e77c-4ba6-bffa-a45602245cc9"
-					(reference "#PWR0603")
+					(reference "#PWR0623")
 					(unit 1)
 				)
 			)
@@ -7397,7 +7455,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "db8bd5a9-32b9-4f7c-bd49-9564ed7e243a")
-		(property "Reference" "#PWR0611"
+		(property "Reference" "#PWR0624"
 			(at 134 106.9 0)
 			(hide yes)
 			(show_name no)
@@ -7458,7 +7516,7 @@
 		(instances
 			(project "sportwatch_revA"
 				(path "/063f9d99-6c07-44cf-ba32-e33897e06972/969e89ce-e77c-4ba6-bffa-a45602245cc9"
-					(reference "#PWR0611")
+					(reference "#PWR0624")
 					(unit 1)
 				)
 			)
@@ -7947,7 +8005,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "f42f5af2-f80e-4000-aa90-6d3f96b1367c")
-		(property "Reference" "#PWR0614"
+		(property "Reference" "#PWR0625"
 			(at 244.28 84.14 0)
 			(hide yes)
 			(show_name no)
@@ -8008,10 +8066,20 @@
 		(instances
 			(project "sportwatch_revA"
 				(path "/063f9d99-6c07-44cf-ba32-e33897e06972/969e89ce-e77c-4ba6-bffa-a45602245cc9"
-					(reference "#PWR0614")
+					(reference "#PWR0625")
 					(unit 1)
 				)
 			)
 		)
+	)
+	(text "U10 is still a placeholder: current symbol pins 2/5/7 are grounded. Confirm COM, 2.4G, 5G and all GND pad numbers against the selected diplexer datasheet before PCB freeze."
+		(at 18 201 0)
+		(effects
+			(font
+				(size 0.8 0.8)
+			)
+			(justify left bottom)
+		)
+		(uuid "e67a854d-1bda-4cd0-a337-efc6b8001231")
 	)
 )
