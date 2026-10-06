@@ -11924,7 +11924,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "sportwatch_custom:BGA-153_5.6x5.6mm_Layout13x13_P0.4mm_Ball0.25mm_Pad0.22mm_NSMD"
 			(at 153 148 0)
 			(hide yes)
 			(show_name no)
@@ -13025,7 +13025,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Package_TO_SOT_SMD:SOT-563"
 			(at 400 222 0)
 			(hide yes)
 			(show_name no)
@@ -14617,7 +14617,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Package_TO_SOT_SMD:SOT-563"
 			(at 350 222 0)
 			(hide yes)
 			(show_name no)
@@ -15421,7 +15421,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Package_TO_SOT_SMD:SOT-563"
 			(at 300 222 0)
 			(hide yes)
 			(show_name no)
@@ -16065,7 +16065,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Inductor_SMD:L_0603_1608Metric"
 			(at 285 30 0)
 			(hide yes)
 			(show_name no)
@@ -16937,7 +16937,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "sportwatch_custom:Crystal_1612-2Pin_1.6x1.2mm"
 			(at 390 104 0)
 			(hide yes)
 			(show_name no)
@@ -17409,7 +17409,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Crystal:Crystal_SMD_2012-2Pin_2.0x1.2mm"
 			(at 340 104 0)
 			(hide yes)
 			(show_name no)
@@ -17569,7 +17569,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "sportwatch_custom:Texas_RHL0024A"
 			(at 300 190 0)
 			(hide yes)
 			(show_name no)

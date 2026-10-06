@@ -4644,7 +4644,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "sportwatch_custom:L_2016_2016Metric"
 			(at 239 119.38 0)
 			(hide yes)
 			(show_name no)
@@ -6564,7 +6564,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "sportwatch_custom:Crystal_1612-2Pin_1.6x1.2mm"
 			(at 176 150 0)
 			(hide yes)
 			(show_name no)

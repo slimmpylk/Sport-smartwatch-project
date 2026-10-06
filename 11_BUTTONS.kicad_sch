@@ -1231,7 +1231,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Button_Switch_SMD:SW_SPST_EVQP7A"
 			(at 110.49 92.71 0)
 			(hide yes)
 			(show_name no)
@@ -1627,7 +1627,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Button_Switch_SMD:SW_SPST_EVQP7A"
 			(at 110.49 113.03 0)
 			(hide yes)
 			(show_name no)
@@ -2337,7 +2337,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Button_Switch_SMD:SW_SPST_EVQP7A"
 			(at 110.49 157.48 0)
 			(hide yes)
 			(show_name no)
@@ -2575,7 +2575,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Button_Switch_SMD:SW_SPST_EVQP7A"
 			(at 110.49 134.62 0)
 			(hide yes)
 			(show_name no)
@@ -2735,7 +2735,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Button_Switch_SMD:SW_SPST_EVQP7A"
 			(at 110.49 73.66 0)
 			(hide yes)
 			(show_name no)
