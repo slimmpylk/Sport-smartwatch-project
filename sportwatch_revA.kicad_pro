@@ -594,8 +594,127 @@
       "version": 5
     },
     "net_colors": null,
-    "netclass_assignments": null,
-    "netclass_patterns": []
+    "netclass_assignments": {
+      "/04_PPG/PPG1_PD1_IN": "Optical_PD_Guard",
+      "/04_PPG/PPG1_PD2_IN": "Optical_PD_Guard",
+      "/04_PPG/PPG2_PD1_IN": "Optical_PD_Guard",
+      "/04_PPG/PPG2_PD2_IN": "Optical_PD_Guard",
+      "/04_PPG/PPG1_PD_GND": "Optical_PD_Guard",
+      "/04_PPG/PPG2_PD_GND": "Optical_PD_Guard",
+      "/04_PPG/PPG1_VREF": "Optical_PD_Guard",
+      "/04_PPG/PPG2_VREF": "Optical_PD_Guard",
+      "/GNSS_RF": "HighSpeed_50R",
+      "Net-(U10-5G)": "HighSpeed_50R",
+      "Net-(U10-2.4G)": "HighSpeed_50R",
+      "Net-(AE1401-Pad1)": "HighSpeed_50R",
+      "Net-(AE1410-Pad1)": "HighSpeed_50R",
+      "Net-(AE1420-Pad1)": "HighSpeed_50R",
+      "/01_APOLLO510B/APOLLO_BLE_RF": "HighSpeed_50R",
+      "/EMMC_CLK": "HighSpeed_50R",
+      "/EMMC_CMD": "HighSpeed_50R",
+      "/EMMC_DS": "HighSpeed_50R",
+      "/EMMC_DAT0": "HighSpeed_50R",
+      "/EMMC_DAT1": "HighSpeed_50R",
+      "/EMMC_DAT2": "HighSpeed_50R",
+      "/EMMC_DAT3": "HighSpeed_50R",
+      "/EMMC_DAT4": "HighSpeed_50R",
+      "/EMMC_DAT5": "HighSpeed_50R",
+      "/EMMC_DAT6": "HighSpeed_50R",
+      "/EMMC_DAT7": "HighSpeed_50R",
+      "/DISP_MIPI_CLK_P": "HighSpeed_50R",
+      "/DISP_MIPI_CLK_N": "HighSpeed_50R",
+      "/DISP_MIPI_D0_P": "HighSpeed_50R",
+      "/DISP_MIPI_D0_N": "HighSpeed_50R",
+      "GND": "Power",
+      "VBAT": "Power",
+      "VSYS": "Power",
+      "/SYS_3V3": "Power",
+      "/VOUT1_1V8": "Power",
+      "/VOUT2_3V0": "Power",
+      "/04_PPG/PPG_VLED": "Power",
+      "/04_PPG/PPG1_LED_GREEN_DRV": "Power",
+      "/04_PPG/PPG1_LED_RED_DRV": "Power",
+      "/04_PPG/PPG1_LED_IR_DRV": "Power",
+      "/04_PPG/PPG2_LED_GREEN_DRV": "Power",
+      "/04_PPG/PPG2_LED_RED_DRV": "Power",
+      "/04_PPG/PPG2_LED_IR_DRV": "Power",
+      "Net-(U401-LX1)": "Power",
+      "Net-(U401-LX2)": "Power",
+      "Net-(U201-SW1)": "Power",
+      "Net-(U201-SW2)": "Power",
+      "Net-(U202-LX1)": "Power",
+      "Net-(U202-LX2)": "Power"
+    },
+    "netclass_patterns": [
+      {
+        "netclass": "Optical_PD_Guard",
+        "pattern": "*PD*IN*"
+      },
+      {
+        "netclass": "Optical_PD_Guard",
+        "pattern": "*PD_GND*"
+      },
+      {
+        "netclass": "Optical_PD_Guard",
+        "pattern": "*PPG*VREF*"
+      },
+      {
+        "netclass": "HighSpeed_50R",
+        "pattern": "*RF*"
+      },
+      {
+        "netclass": "HighSpeed_50R",
+        "pattern": "*EMMC*"
+      },
+      {
+        "netclass": "HighSpeed_50R",
+        "pattern": "*MIPI*"
+      },
+      {
+        "netclass": "HighSpeed_50R",
+        "pattern": "*QSPI*"
+      },
+      {
+        "netclass": "Power",
+        "pattern": "GND"
+      },
+      {
+        "netclass": "Power",
+        "pattern": "*VBAT*"
+      },
+      {
+        "netclass": "Power",
+        "pattern": "*VSYS*"
+      },
+      {
+        "netclass": "Power",
+        "pattern": "*VOUT*"
+      },
+      {
+        "netclass": "Power",
+        "pattern": "*3V3*"
+      },
+      {
+        "netclass": "Power",
+        "pattern": "*1V8*"
+      },
+      {
+        "netclass": "Power",
+        "pattern": "*3V0*"
+      },
+      {
+        "netclass": "Power",
+        "pattern": "*VLED*"
+      },
+      {
+        "netclass": "Power",
+        "pattern": "*LX*"
+      },
+      {
+        "netclass": "Power",
+        "pattern": "*SW*"
+      }
+    ]
   },
   "pcbnew": {
     "last_paths": {
