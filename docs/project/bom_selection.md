@@ -63,18 +63,18 @@ Native KiCad Engine: KiCad CLI 10.0.5
 |---|---|---|---|---|---|
 | **U8** | Multi-Band GNSS Receiver | `MAX-F10S-00B` | u-blox | 18-LGA (9.7x10.1x2.5mm, 1.1mm) | Dual-band L1/L5 concurrent GNSS (GPS, GLONASS, Galileo, BeiDou, NavIC) |
 | **U9** | Wi-Fi 6 Companion IC | `NRF7002-QFAA-R7` | Nordic Semi | QFN-48-1EP (6.0x6.0mm, 0.4mm pitch) | 2.4/5GHz dual-band Wi-Fi 6 companion, Station/AP, OFDMA, TWT |
-| **Y1** | 40.000 MHz Wi-Fi Crystal | `FA1612AN 40.0000MF10Z-W3` | Epson | 1612 (1.6x1.2x0.65mm) | 40 MHz, CL=8 pF, ESR <= 100 Ω, ±10 ppm stability (Nordic Table 14.3) |
-| **Y101** | 32.768 kHz RTC Crystal | `ABS07-32.768KHZ-T` / `FC-12M` | Abracon / Epson | 2012 (2.0x1.2x0.6mm) | 32.768 kHz, CL=6 pF, ESR <= 90 kΩ (Ambiq Table 49) |
-| **Y102** | 48.000 MHz MCU Crystal | `FA1612AN 48.0000MF10Z-W3` | Epson | 1612 (1.6x1.2x0.65mm) | 48 MHz, CL=10 pF, ESR <= 60 Ω, on-chip trim (Ambiq Table 50) |
+| **Y1** | 40.000 MHz Wi-Fi Crystal | `NX1612SA-40M-EXS00A-CS14264` | NDK | 1612-4Pin (1.6x1.2mm, lid grounded) | 40 MHz, CL=8 pF, ESR <= 100 Ω, ±10 ppm stability (Nordic Table 14.3) |
+| **Y101** | 32.768 kHz RTC Crystal | `ABS07-32.768KHZ-T` / `FC-12M` | Abracon / Epson | 2012-2Pin (2.0x1.2x0.6mm) | 32.768 kHz, CL=6 pF, ESR <= 90 kΩ (Ambiq Table 49) |
+| **Y102** | 48.000 MHz MCU Crystal | `NX1612SA-48M-EXS00A-CS14265` | NDK | 1612-4Pin (1.6x1.2mm, lid grounded) | 48 MHz, CL=10 pF, ESR <= 60 Ω, on-chip trim (Ambiq Table 50) |
 
 ### 1.7 User Interface, Haptics & Connectors
 | Designator | Value / Function | Exact MPN | Manufacturer | Package / Footprint | Ratings & Key Specifications |
 |---|---|---|---|---|---|
 | **J1** | 24-Pin AMOLED FPC Header | `OK-23GF024-04` | Jinlong / Oupiin | 24-Pin SMD Header (0.35mm pitch) | Jiangxi Huaersheng ZC-A1D43W-046 1.43" AMOLED display interface |
 | **J1301** | SWD Debug Programming | `TC2030-CTX-NL` | Tag-Connect | 6-Pin No-Legs Target (P1.27mm) | 6-pin zero-component-cost SWD footprint with alignment pins |
-| **J201** | Battery Power Interface | `BatteryPad_3Pin_SMD` | Wearable SMT Pad | 3-Pad SMD Array (1.0x1.5mm, P1.8mm) | Pin 1: GND, Pin 2: BAT_NTC, Pin 3: VBAT (rated 2.5A continuous) |
-| **J202** | Magnetic Pogo Charge Interface | `PogoPad_2Pin_SMD` | Wearable SMT Pad | 2-Pad Circular SMD (D1.5mm, P2.5mm) | Pin 1: VBUSIN (5V / 1.5A), Pin 2: GND (Gold-plated target pads) |
-| **SW1..SW5** | 5x Tactile Push Buttons | `EVQP7A04M` | Panasonic | Side-Push SMD (3.5x2.9x1.35mm) | Light, Up, Down, Start, Back buttons; 2.2N operating force, 100k cycles |
+| **J201** | Battery Power Interface | `BATTERY_3PIN` (Class C candidate) | Wearable SMT Pad / FPC | (Blank / TBD) | Candidate: `sportwatch_custom:BatteryPad_3Pin_SMD`; deferred to pouch cell procurement |
+| **J202** | Magnetic Pogo Charge Interface | `POGO_2PIN` (Class C candidate) | Wearable SMT Pad | (Blank / TBD) | Candidate: `sportwatch_custom:PogoPad_2Pin_SMD`; deferred to dock puck tooling |
+| **SW1..SW5** | 5x Tactile Push Buttons | `EVQP7A04M` (Class C candidate) | Panasonic | (Blank / TBD) | Candidate: `Button_Switch_SMD:SW_SPST_EVQP7A`; deferred to 3D enclosure CAD & plunger specs |
 | **U7** | LRA Haptic Driver | `DRV2625YFFR` | Texas Instruments | 9-DSBGA (1.5x1.5mm, 0.5mm pitch) | Ultra-low latency closed-loop LRA/ERM driver with smart-loop waveform |
 | **LRA1** | Linear Resonant Actuator | `LRA_TBD` (Class C) | TBD | Chassis Bracket Mount | Deferred to chassis mechanical envelope (docs/project/footprint_tbd.md) |
 | **NT201..NT402** | Ground / Shield Net Ties | `NetTie-2_SMD_Pad0.5mm` | PCB Copper Tie | 2-Pad SMD 0.5mm | Galvanic isolation / controlled single-point tie between GND & PD_GND |

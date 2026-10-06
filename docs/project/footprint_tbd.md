@@ -12,7 +12,7 @@ Native KiCad Engine: KiCad CLI 10.0.5
 In strict compliance with the project footprint selection policy:
 > **"SMALLEST RELIABLE PACKAGE THAT STILL MEETS ELECTRICAL, THERMAL, MECHANICAL, RF, AND MANUFACTURER REQUIREMENTS. Missing/TBD is strictly preferred over guessing unverified footprints."**
 
-Exactly eight (8) components out of 243 have been classified as **Class C (Intentionally TBD)** and retain blank footprint fields in the frozen electrical schematic. None of these blanks represents an overlooked part; every one is an intentional physical boundary item whose exact land pattern depends directly on watch casing mechanics, antenna physical form factors, or RF test chamber tooling.
+Exactly fifteen (15) components out of 243 have been classified as **Class C (Intentionally TBD / Valid Electrical Candidate, Mechanically TBD)** and retain blank footprint fields in the frozen electrical schematic. None of these blanks represents an overlooked part; every one is an intentional physical boundary item whose exact land pattern depends directly on watch casing mechanics, antenna physical form factors, battery cell termination, or RF test chamber tooling.
 
 | Ref | Value | Sheet | Subsystem | Reason for Deferred Footprint Selection |
 |---|---|---|---|---|
@@ -24,6 +24,13 @@ Exactly eight (8) components out of 243 have been classified as **Class C (Inten
 | **TP1420** | `GNSS_RF_TEST_TBD`| `14_RF` | GNSS RF | Test connector vs test pad dependent on lab fixture & production line |
 | **U10** | `2.4/5GHz_DIPLEXER_TBD`| `06_WIFI` | Wi-Fi RF Frontend | Exact diplexer package (0605 vs 0805) dependent on RF layout density |
 | **LRA1** | `LRA_TBD` | `10_HAPTICS` | Haptic Driver | Actuator motor dimensions dependent on case mechanical cavity & bracket |
+| **SW1** | `BTN_LIGHT` | `11_BUTTONS` | User Interface | Side switch vs flex button dependent on watch case pusher & O-ring mechanics |
+| **SW2** | `BTN_UP` | `11_BUTTONS` | User Interface | Side switch vs flex button dependent on watch case pusher & O-ring mechanics |
+| **SW3** | `BTN_DOWN` | `11_BUTTONS` | User Interface | Side switch vs flex button dependent on watch case pusher & O-ring mechanics |
+| **SW4** | `BTN_START` | `11_BUTTONS` | User Interface | Side switch vs flex button dependent on watch case pusher & O-ring mechanics |
+| **SW5** | `BTN_BACK` | `11_BUTTONS` | User Interface | Side switch vs flex button dependent on watch case pusher & O-ring mechanics |
+| **J201** | `BATTERY_3PIN` | `02_POWER` | Battery Interface | Pouch cell termination (soldered leads vs micro-FPC vs spring) dependent on cell procurement |
+| **J202** | `POGO_2PIN` | `02_POWER` | Charging Interface | Dock magnet spacing, puck pin pitch, and corrosion plating dependent on dock tooling |
 
 ---
 
@@ -89,8 +96,61 @@ Exactly eight (8) components out of 243 have been classified as **Class C (Inten
 
 ---
 
+### 2.5 Tactile Push Buttons (SW1..SW5)
+- **Circuit Context:**
+  Five physical tactile push buttons (SW1: Light, SW2: Up, SW3: Down, SW4: Start/Stop, SW5: Back) connected to Apollo510B MCU GPIOs with ESD protection and debouncing.
+- **Why Footprint is Deferred (Class C Reclassification):**
+  - High-end outdoor endurance smartwatches (5 ATM / 50m water resistance) require external mechanical button plungers sealed with double silicone O-rings in the watch bezel/case.
+  - The mechanical actuation architecture has not been frozen:
+    1. **Option A (Rigid PCB Side Push):** Panasonic `EVQP7A04M` side-actuated SMD switches (3.5 x 2.9 x 1.35 mm, 2.2 N force, 0.2 mm travel). Requires precise PCB edge setback, case pusher alignment within +/-0.1 mm, and rigid board edge support under 2.2 N side-load.
+    2. **Option B (Perimeter Button Flex FPC):** Push buttons mounted on a circular flexible circuit adhering to the inside wall of the watch case, connected to the main board via a micro-FPC connector or hot-bar solder pads. This is common in circular sports watches to prevent side-load bending of the main multi-layer PCB.
+    3. **Option C (Top-Actuated with Angled Rockers):** Standard top-push tactile switches actuated via angled lever pushers.
+  - Freezing Panasonic EVQP7A without 3D enclosure CAD and mechanical pusher engineering is unsafe.
+- **Candidate Solutions:**
+  - `Button_Switch_SMD:SW_SPST_EVQP7A` (side push)
+  - `sportwatch_custom:FPC_Button_Connector_6Pin_P0.35mm` (flex button assembly)
+- **Resolution Gate:**
+  Freeze upon release of final 3D enclosure CAD, pusher plunger stroke/alignment specs, and sealing gasket stack-up.
+
+---
+
+### 2.6 Battery Interface (J201)
+- **Circuit Context:**
+  Single-cell LiPo / Li-Ion wearable pouch cell interface (VBAT, NTC thermistor, GND) connected to Nordic nPM1300 PMIC charging subsystem.
+- **Why Footprint is Deferred (Class C Reclassification):**
+  - Wearable battery termination architecture is dependent on the procured pouch cell assembly:
+    1. **Option A (Pre-soldered Flying Lead Wires):** Battery cell with integrated protection circuit (PCM) providing three silicone-insulated wire leads (Red=VBAT, White=NTC, Black=GND) hand-soldered or hot-bar soldered to surface pads.
+    2. **Option B (Micro Board-to-FPC Connector):** Ultra-low-profile connector (e.g. Hirose BM28, Molex 503772, or Panasonic AXT5) mounted on the PCB mating with an FPC tail on the pouch cell.
+    3. **Option C (Spring-loaded / Pressure Contacts):** Gold-plated spring finger array contacting rigid battery carrier pads.
+  - The previous 1.8 mm pitch 3-pad SMD footprint (`BatteryPad_3Pin_SMD`) was a generic placeholder not based on an approved battery cell drawing.
+- **Candidate Solutions:**
+  - `sportwatch_custom:BatteryPad_3Pin_SMD` (1.8 mm pitch solder pads)
+  - `Connector_Hirose:Hirose_BM28B0.6-6DP-0.35V_2x03_P0.35mm_Vertical`
+- **Resolution Gate:**
+  Freeze upon vendor selection and mechanical drawing approval of the wearable pouch cell and safety PCM assembly.
+
+---
+
+### 2.7 Charging / Pogo Interface (J202)
+- **Circuit Context:**
+  External magnetic charging interface providing VBUS / VSYS charging current and return path to the nPM1300 PMIC.
+- **Why Footprint is Deferred (Class C Reclassification):**
+  - Smartwatch charging hardware depends on dock/cable tooling and chassis industrial design:
+    1. **Option A (Through-Case Pogo Targets):** Gold-plated PCB surface pads contacted by through-case spring pins from the rear case backplate. Center pitch (2.5 mm vs 2.84 mm vs custom ring) depends on external magnetic puck tooling.
+    2. **Option B (Hard-Gold Skin-Contact Surface Pads):** PCB pads penetrating through rear case aperture, directly exposed to human skin and sweat. Requires hard gold (ENEPIG or Au 30 µinch min over Ni) to resist galvanic corrosion and sweat electrolysis.
+    3. **Option C (Magnetic Alignment Cavity):** Magnets integrated inside the watch case determining exact contact spacing and polarity keepout.
+  - The previous 2.5 mm pitch 2-pad footprint (`PogoPad_2Pin_SMD`) was created without dock hardware tooling evidence.
+- **Candidate Solutions:**
+  - `sportwatch_custom:PogoPad_2Pin_SMD` (2.5 mm pitch, D1.5 mm pads)
+  - `sportwatch_custom:Magnetic_ChargePort_2Pin_P2.84mm`
+- **Resolution Gate:**
+  Freeze upon tooling of the external magnetic charging puck, case rear backplate CAD, and metallurgy selection for sweat corrosion resistance.
+
+---
+
 ## 3. Summary of Design Readiness
 
-With exactly 235 components assigned and verified, and only these 8 Class C components intentionally deferred, the PCBA is in an optimal state for physical floorplanning:
-- All critical ICs, optics, sensors, power converters, crystals, connectors, and switching inductors have 100% verified footprint geometry.
-- The 8 Class C components are documented with clear boundary conditions and candidate footprints, ready to be resolved seamlessly without requiring any schematic topology or netlist changes.
+With exactly 228 components assigned and verified, and exactly 15 Class C components intentionally deferred, the PCBA is in an optimal state for physical floorplanning:
+- All critical ICs, optics, sensors, power converters, crystals (including verified 4-pad grounded Y1 and Y102), connectors, and switching inductors have 100% verified footprint geometry.
+- The 15 Class C components are documented with clear boundary conditions and candidate footprints, ready to be resolved seamlessly without requiring any schematic topology or netlist changes once mechanical enclosure CAD and RF chamber testing are released.
+

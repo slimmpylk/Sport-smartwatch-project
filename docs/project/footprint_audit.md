@@ -19,8 +19,8 @@ The final footprint selection, assignment, and comprehensive geometry audit for 
 | **Hierarchical Interfaces** | checked=83 mismatches=0 | **checked=83 mismatches=0** | **PASS** |
 | **Netlist Equivalence** | 0 net changes | **0 net membership changes** (389 nets identical) | **PASS** |
 | **Physical Component Count** | Exactly 243 | **243 components** | **PASS** |
-| **Blank Footprints** | Only Class C TBD | **Exactly 8 Class C TBD** (AE1401, AE1410, AE1420, LRA1, TP1401, TP1410, TP1420, U10) | **PASS** |
-| **Assigned Footprints** | 235 components | **235 components assigned** (100% verified) | **PASS** |
+| **Blank Footprints** | Only Class C TBD | **Exactly 15 Class C TBD** (AE1401..1420, TP1401..1420, U10, LRA1, SW1..5, J201, J202) | **PASS** |
+| **Assigned Footprints** | 228 components | **228 components assigned** (100% verified) | **PASS** |
 | **PCB Layout Status** | Unmodified | `sportwatch_revA.kicad_pcb` **untouched** | **PASS** |
 
 ---
@@ -28,17 +28,17 @@ The final footprint selection, assignment, and comprehensive geometry audit for 
 ## 2. Classification Summary
 
 Every component in the physical design is assigned to one of five formal audit categories:
-- **Class A (Exact MPN & Manufacturer Footprint Verified):** 52 components. All ICs, sensors, optoelectronics, critical switching inductors, crystals, connectors, and buttons verified against primary manufacturer mechanical drawings.
+- **Class A (Exact MPN & Manufacturer Footprint Verified):** 45 components. All ICs, sensors, optoelectronics, critical switching inductors, 4-pad grounded crystals, and connectors verified against primary manufacturer mechanical drawings.
 - **Class B (Generic Passive Assigned per Project Policy):** 183 components. General-purpose 0402/0603/0201 resistors, decoupling capacitors, net ties, and standard test points following the project passive policy and derating guidelines.
-- **Class C (Intentionally Deferred TBD / Mechanical Decision):** 8 components. Antennas (AE1401, AE1410, AE1420), RF test points (TP1401, TP1410, TP1420), Wi-Fi diplexer (U10), and haptic actuator (LRA1) requiring watch chassis / RF chamber tuning.
+- **Class C (Intentionally Deferred TBD / Mechanical Decision):** 15 components. Antennas (AE1401, AE1410, AE1420), RF test points (TP1401, TP1410, TP1420), Wi-Fi diplexer (U10), haptic actuator (LRA1), tactile push buttons (SW1..SW5), battery interface (J201), and charging pogo interface (J202) requiring watch chassis, battery pouch cell procurement, or RF chamber tuning.
 - **Class D (Unexpectedly Missing Footprint):** **0 components**.
 - **Class E (Incorrect or Unsafe Footprint):** **0 components**.
 
 | Classification | Count | Percentage | Description |
 |---|---:|---:|---|
-| **Class A** | 52 | 21.4% | Exact MPN + manufacturer drawing verified |
+| **Class A** | 45 | 18.5% | Exact MPN + manufacturer drawing verified |
 | **Class B** | 183 | 75.3% | Standard passive safely assigned per design policy |
-| **Class C** | 8 | 3.3% | Intentionally TBD pending mechanical/RF tuning |
+| **Class C** | 15 | 6.2% | Intentionally TBD pending mechanical/RF tuning |
 | **Class D** | 0 | 0.0% | Unexpectedly missing footprints |
 | **Class E** | 0 | 0.0% | Incorrect or unsafe footprints |
 | **Total** | **243** | **100.0%** | **Complete Physical PCBA BOM** |
@@ -94,9 +94,9 @@ Every component in the physical design is assigned to one of five formal audit c
 ### 3.7 Wireless & Timing
 - **U8 (u-blox MAX-F10S):** 18-LGA (9.7 x 10.1 mm, 1.1 mm pitch). Footprint `sportwatch_custom:MAX-F10S_UBL` verified.
 - **U9 (Nordic nRF7002):** QFN-48 with EP (6.0 x 6.0 mm, 0.4 mm pitch). Footprint `sportwatch_custom:QFN48_6X6_NOR` verified.
-- **Y1 (40 MHz Wi-Fi Crystal):** 1612 package (1.6 x 1.2 mm). Footprint `sportwatch_custom:Crystal_1612-2Pin_1.6x1.2mm` maps schematic pins 1/2 to active crystal pads 1/3 while anchoring on pads 2/4.
+- **Y1 (40 MHz Wi-Fi Crystal):** 1612 package (1.6 x 1.2 mm). Footprint `sportwatch_custom:Crystal_1612-4Pin_1.6x1.2mm` maps active terminals to pads 1/3 and case-ground shield to pads 2/4 tied to GND. Verified against NDK NX1612SA-40M.
 - **Y101 (32.768 kHz RTC Crystal):** 2012 package (2.0 x 1.2 mm). Footprint `Crystal:Crystal_SMD_2012-2Pin_2.0x1.2mm` verified for standard 2-pad tuning-fork crystal.
-- **Y102 (48 MHz MCU Crystal):** 1612 package (1.6 x 1.2 mm). Footprint `sportwatch_custom:Crystal_1612-2Pin_1.6x1.2mm` maps schematic pins 1/2 to active crystal pads 1/3.
+- **Y102 (48 MHz MCU Crystal):** 1612 package (1.6 x 1.2 mm). Footprint `sportwatch_custom:Crystal_1612-4Pin_1.6x1.2mm` maps active terminals to pads 1/3 and case-ground shield to pads 2/4 tied to GND. Verified against NDK NX1612SA-48M.
 
 ### 3.8 Power Inductors
 - **L101 (Apollo510B SIMO Buck):** 2.2 µH, Isat >= 1A, DCR < 550 mΩ. Footprint `Inductor_SMD:L_0603_1608Metric` (Taiyo Yuden LSCND1608HKT2R2MF, DCR 250 mΩ, Isat 1.3 A).
@@ -109,9 +109,9 @@ Every component in the physical design is assigned to one of five formal audit c
 ### 3.9 Connectors, Switches, and Interfaces
 - **J1 (AMOLED Display):** 24-pin OK-23GF024-04 board-to-FPC connector. Footprint `sportwatch_custom:OK-23GF024-04` verified.
 - **J1301 (SWD Debug):** Tag-Connect TC2030-CTX-NL 6-pin target. Footprint `Connector:Tag-Connect_TC2030-IDC-NL_2x03_P1.27mm_Vertical` verified.
-- **J201 (Battery):** 3-pad SMD solder interface. Footprint `sportwatch_custom:BatteryPad_3Pin_SMD` (1.0 x 1.5 mm pads, 1.8 mm pitch).
-- **J202 (Pogo Charging):** 2-pad circular contact targets. Footprint `sportwatch_custom:PogoPad_2Pin_SMD` (D1.5 mm pads, 2.5 mm pitch).
-- **SW1..SW5 (Tactile Push Buttons):** Side-actuated SMD switches. Footprint `Button_Switch_SMD:SW_SPST_EVQP7A` (Panasonic EVQP7A series, 3.5 x 2.9 mm, 2.2N force).
+- **J201 (Battery):** LiPo pouch cell interface. Reclassified to **Class C TBD** pending battery cell procurement (flying leads vs micro-FPC vs spring contacts). Candidate: `sportwatch_custom:BatteryPad_3Pin_SMD`.
+- **J202 (Pogo Charging):** Charging interface. Reclassified to **Class C TBD** pending dock cable tooling and rear backplate CAD. Candidate: `sportwatch_custom:PogoPad_2Pin_SMD`.
+- **SW1..SW5 (Tactile Push Buttons):** Reclassified to **Class C TBD** pending 3D enclosure CAD and case plunger O-ring stack-up (side push vs perimeter flex FPC). Candidate: `Button_Switch_SMD:SW_SPST_EVQP7A`.
 - **NT201, NT202, NT401, NT402 (Net Ties):** Footprint `NetTie:NetTie-2_SMD_Pad0.5mm`.
 
 ---
@@ -240,8 +240,8 @@ Every component in the physical design is assigned to one of five formal audit c
 | D423 | SFH2703H Q65115A2199 | 04_PPG | `sportwatch_custom:OSRAM_SFH2703_3.2x2.0mm` | **A** | OSRAM_SFH2703_3.2x2.0mm | Project custom library (verified against primary manufacturer datasheet) |
 | D424 | SFH2703H Q65115A2199 | 04_PPG | `sportwatch_custom:OSRAM_SFH2703_3.2x2.0mm` | **A** | OSRAM_SFH2703_3.2x2.0mm | Project custom library (verified against primary manufacturer datasheet) |
 | J1 | ZC-A1D43W-046 | 03_DISPLAY | `sportwatch_custom:OK-23GF024-04` | **A** | OK-23GF024-04 | Project custom library (verified against primary manufacturer datasheet) |
-| J201 | BATTERY_3PIN | 02_POWER | `sportwatch_custom:BatteryPad_3Pin_SMD` | **A** | BatteryPad_3Pin_SMD | Project custom library (verified against primary manufacturer datasheet) |
-| J202 | POGO_CHARGE_2PIN | 02_POWER | `sportwatch_custom:PogoPad_2Pin_SMD` | **A** | PogoPad_2Pin_SMD | Project custom library (verified against primary manufacturer datasheet) |
+| J201 | BATTERY_3PIN | 02_POWER | `(TBD / Blank)` | **C** | TBD (Cell procurement / PCM termination) | Deferred to battery pouch cell procurement (docs/project/footprint_tbd.md) |
+| J202 | POGO_CHARGE_2PIN | 02_POWER | `(TBD / Blank)` | **C** | TBD (Chassis / Dock tooling) | Deferred to charging dock & puck tooling (docs/project/footprint_tbd.md) |
 | J1301 | TC2030-CTX-NL_TARGET | 13_DEBUG | `Connector:Tag-Connect_TC2030-IDC-NL_2x03_P1.27mm_Vertical` | **A** | Tag-Connect 6-pin NL | Tag-Connect TC2030-IDC-NL official footprint |
 | L101 | 2.2uH / Isat>=1A / DCR<550mR | 01_APOLLO510B | `Inductor_SMD:L_0603_1608Metric` | **A** | 0603 (1.6 x 0.8 mm) | Taiyo Yuden LSCND1608 / Ambiq DS-A510B-1p1p0 Table 34 |
 | L201 | 2.2uH | 02_POWER | `Inductor_SMD:L_0603_1608Metric` | **A** | 0603 (1.6 x 0.8 mm) | Taiyo Yuden LSCND1608 / Ambiq DS-A510B-1p1p0 Table 34 |
@@ -318,11 +318,11 @@ Every component in the physical design is assigned to one of five formal audit c
 | R1401 | 0R (Lm2 tune) | 14_RF | `Resistor_SMD:R_0201_0603Metric` | **B** | 0201 (0.6 x 0.3 mm) | IPC-7351B / KiCad official SMD resistor library (RF matching) |
 | R1410 | 0R | 14_RF | `Resistor_SMD:R_0201_0603Metric` | **B** | 0201 (0.6 x 0.3 mm) | IPC-7351B / KiCad official SMD resistor library (RF matching) |
 | R1420 | 0R | 14_RF | `Resistor_SMD:R_0201_0603Metric` | **B** | 0201 (0.6 x 0.3 mm) | IPC-7351B / KiCad official SMD resistor library (RF matching) |
-| SW1 | BTN_LIGHT | 11_BUTTONS | `Button_Switch_SMD:SW_SPST_EVQP7A` | **A** | Side SMD (3.5 x 2.9 mm) | Panasonic EVQP7A catalog sw_lt_eng_3529s_side.pdf |
-| SW2 | BTN_UP | 11_BUTTONS | `Button_Switch_SMD:SW_SPST_EVQP7A` | **A** | Side SMD (3.5 x 2.9 mm) | Panasonic EVQP7A catalog sw_lt_eng_3529s_side.pdf |
-| SW3 | BTN_DOWN | 11_BUTTONS | `Button_Switch_SMD:SW_SPST_EVQP7A` | **A** | Side SMD (3.5 x 2.9 mm) | Panasonic EVQP7A catalog sw_lt_eng_3529s_side.pdf |
-| SW4 | BTN_START | 11_BUTTONS | `Button_Switch_SMD:SW_SPST_EVQP7A` | **A** | Side SMD (3.5 x 2.9 mm) | Panasonic EVQP7A catalog sw_lt_eng_3529s_side.pdf |
-| SW5 | BTN_BACK | 11_BUTTONS | `Button_Switch_SMD:SW_SPST_EVQP7A` | **A** | Side SMD (3.5 x 2.9 mm) | Panasonic EVQP7A catalog sw_lt_eng_3529s_side.pdf |
+| SW1 | BTN_LIGHT | 11_BUTTONS | `(TBD / Blank)` | **C** | TBD (Chassis pusher / O-ring gasket) | Deferred to 3D enclosure CAD & case plunger specs (docs/project/footprint_tbd.md) |
+| SW2 | BTN_UP | 11_BUTTONS | `(TBD / Blank)` | **C** | TBD (Chassis pusher / O-ring gasket) | Deferred to 3D enclosure CAD & case plunger specs (docs/project/footprint_tbd.md) |
+| SW3 | BTN_DOWN | 11_BUTTONS | `(TBD / Blank)` | **C** | TBD (Chassis pusher / O-ring gasket) | Deferred to 3D enclosure CAD & case plunger specs (docs/project/footprint_tbd.md) |
+| SW4 | BTN_START | 11_BUTTONS | `(TBD / Blank)` | **C** | TBD (Chassis pusher / O-ring gasket) | Deferred to 3D enclosure CAD & case plunger specs (docs/project/footprint_tbd.md) |
+| SW5 | BTN_BACK | 11_BUTTONS | `(TBD / Blank)` | **C** | TBD (Chassis pusher / O-ring gasket) | Deferred to 3D enclosure CAD & case plunger specs (docs/project/footprint_tbd.md) |
 | TP1301 | VBAT | 13_DEBUG | `TestPoint:TestPoint_Pad_D1.0mm` | **B** | SMD Test Pad D1.0mm | KiCad official TestPoint library |
 | TP1302 | VSYS | 13_DEBUG | `TestPoint:TestPoint_Pad_D1.0mm` | **B** | SMD Test Pad D1.0mm | KiCad official TestPoint library |
 | TP1303 | VOUT1_1V8 | 13_DEBUG | `TestPoint:TestPoint_Pad_D1.0mm` | **B** | SMD Test Pad D1.0mm | KiCad official TestPoint library |
@@ -360,6 +360,6 @@ Every component in the physical design is assigned to one of five formal audit c
 | U702 | LSM6DSV16XTR | 07_MOTION | `sportwatch_custom:LGA-14L_STM` | **A** | LGA-14L_STM | Project custom library (verified against primary manufacturer datasheet) |
 | U703 | BMM350 | 07_MOTION | `sportwatch_custom:BGA9_BMM350_BOS` | **A** | BGA9_BMM350_BOS | Project custom library (verified against primary manufacturer datasheet) |
 | U901 | EMMC64G-TB9F-06011 | 09_STORAGE | `sportwatch_custom:FBGA-153_8.0x8.5mm_Layout14x14_P0.5mm` | **A** | FBGA-153_8.0x8.5mm_Layout14x14_P0.5mm | Project custom library (verified against primary manufacturer datasheet) |
-| Y1 | 40MHz_CL8pF_ESR100R_1612 | 06_WIFI | `sportwatch_custom:Crystal_1612-2Pin_1.6x1.2mm` | **A** | Crystal_1612-2Pin_1.6x1.2mm | Project custom library (verified against primary manufacturer datasheet) |
+| Y1 | 40MHz_CL8pF_ESR100R_1612 | 06_WIFI | `sportwatch_custom:Crystal_1612-4Pin_1.6x1.2mm` | **A** | Crystal_1612-4Pin_1.6x1.2mm | NDK NX1612SA-40M (4-pad SMD, lid grounded) |
 | Y101 | 32.768kHz / low-CL TBD | 01_APOLLO510B | `Crystal:Crystal_SMD_2012-2Pin_2.0x1.2mm` | **A** | Crystal:Crystal_SMD_2012-2Pin_2.0x1.2mm | Verified standard library footprint |
-| Y102 | 48MHz / CL=8-11pF / ESR<=60R | 01_APOLLO510B | `sportwatch_custom:Crystal_1612-2Pin_1.6x1.2mm` | **A** | Crystal_1612-2Pin_1.6x1.2mm | Project custom library (verified against primary manufacturer datasheet) |
+| Y102 | 48MHz / CL=8-11pF / ESR<=60R | 01_APOLLO510B | `sportwatch_custom:Crystal_1612-4Pin_1.6x1.2mm` | **A** | Crystal_1612-4Pin_1.6x1.2mm | NDK NX1612SA-48M (4-pad SMD, lid grounded) |
