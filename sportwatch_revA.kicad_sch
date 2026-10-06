@@ -547,6 +547,15 @@
 			)
 			(uuid "22699bf4-8486-5d19-87cb-60f2bf8fded0")
 		)
+		(pin "VBAT" passive
+			(at 345.44 86.36 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+			(uuid "5b9228e4-5619-5398-98e9-9dd5ff074291")
+		)
 		(instances
 			(project "sportwatch_revA"
 				(path "/063f9d99-6c07-44cf-ba32-e33897e06972"
@@ -3052,6 +3061,27 @@
 			(justify left bottom)
 		)
 		(uuid "c12cd97d-d3ad-5b71-97a0-541ff1d28005")
+	)
+
+	(wire
+		(pts
+			(xy 345.44 86.36) (xy 350.52 86.36)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "0fa92a0d-9128-5262-a95a-7d6bfb6d9f53")
+	)
+	(label "VBAT"
+		(at 350.52 86.36 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "a3f1af58-4a05-5d77-89ce-037680032246")
 	)
 
 	(wire
