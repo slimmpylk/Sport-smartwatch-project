@@ -342,4 +342,5 @@
   (pad "C1" smd circle (at -0.399999 0.399999) (size 0.23 0.23) (layers "F.Cu" "F.Mask"))
   (pad "C2" smd circle (at 3E-06 0.399999) (size 0.23 0.23) (layers "F.Cu" "F.Mask"))
   (pad "C3" smd circle (at 0.400002 0.399999) (size 0.23 0.23) (layers "F.Cu" "F.Mask"))
+  (fp_rect (start -1 -0.95) (end 1 0.95) (stroke (width 0.05) (type solid)) (fill none) (layer "F.CrtYd"))
 )

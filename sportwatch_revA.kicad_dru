@@ -1,0 +1,29 @@
+(version 1)
+
+(rule "Laser Microvia Rules"
+   (constraint min_microvia_diameter (min 0.20mm))
+   (constraint min_microvia_drill (min 0.10mm)))
+
+(rule "Through-hole Via Rules"
+   (constraint min_via_diameter (min 0.40mm))
+   (constraint min_via_drill (min 0.20mm)))
+
+(rule "HDI Micro Netclass Clearance"
+   (condition "A.NetClass == 'HDI_Micro'")
+   (constraint clearance (min 0.075mm))
+   (constraint track_width (min 0.075mm)))
+
+(rule "High-Speed 50R Netclass Clearance"
+   (condition "A.NetClass == 'HighSpeed_50R'")
+   (constraint clearance (min 0.10mm))
+   (constraint track_width (min 0.12mm)))
+
+(rule "Power Netclass Rules"
+   (condition "A.NetClass == 'Power'")
+   (constraint clearance (min 0.12mm))
+   (constraint track_width (min 0.25mm)))
+
+(rule "Optical PD Guard Netclass Rules"
+   (condition "A.NetClass == 'Optical_PD_Guard'")
+   (constraint clearance (min 0.10mm))
+   (constraint track_width (min 0.10mm)))

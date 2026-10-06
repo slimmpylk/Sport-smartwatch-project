@@ -29,4 +29,5 @@
   (pad "6" smd rect (at 0.860001 0.25) (size 0.720001 0.299999) (layers "F.Cu" "F.Paste" "F.Mask"))
   (pad "7" smd rect (at 0.860001 -0.25) (size 0.720001 0.299999) (layers "F.Cu" "F.Paste" "F.Mask"))
   (pad "8" smd rect (at 0.860001 -0.750001) (size 0.720001 0.299999) (layers "F.Cu" "F.Paste" "F.Mask"))
+  (fp_rect (start -1.45 -1.35) (end 1.45 1.35) (stroke (width 0.05) (type solid)) (fill none) (layer "F.CrtYd"))
 )
