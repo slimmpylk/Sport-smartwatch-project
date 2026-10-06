@@ -1927,7 +1927,11 @@
 			)
 			(embedded_fonts no)
 		)
-		(symbol "sportwatch_custom:XTAL_2PIN"
+		(symbol "sportwatch_custom:Crystal_1612-4Pin_GND"
+			(pin_names
+				(offset 1.016)
+				(hide yes)
+			)
 			(exclude_from_sim no)
 			(in_bom yes)
 			(on_board yes)
@@ -1943,7 +1947,7 @@
 					)
 				)
 			)
-			(property "Value" "XTAL"
+			(property "Value" "Crystal_1612-4Pin_GND"
 				(at 0 -5.08 0)
 				(show_name no)
 				(do_not_autoplace no)
@@ -1953,7 +1957,7 @@
 					)
 				)
 			)
-			(property "Footprint" ""
+			(property "Footprint" "sportwatch_custom:Crystal_1612-4Pin_1.6x1.2mm"
 				(at 0 0 0)
 				(show_name no)
 				(do_not_autoplace no)
@@ -1975,7 +1979,7 @@
 					)
 				)
 			)
-			(property "Description" "Crystal; exact MPN and footprint TBD"
+			(property "Description" "Four-pin miniature crystal, pins 1 and 3 active, pins 2 and 4 case ground"
 				(at 0 0 0)
 				(show_name no)
 				(do_not_autoplace no)
@@ -1986,7 +1990,7 @@
 					)
 				)
 			)
-			(symbol "XTAL_2PIN_0_1"
+			(symbol "Crystal_1612-4Pin_GND_0_1"
 				(polyline
 					(pts
 						(xy -2.54 3.81) (xy -2.54 -3.81)
@@ -2022,10 +2026,22 @@
 						(type none)
 					)
 				)
+				(polyline
+					(pts
+						(xy -2.54 2.54) (xy -2.54 3.81) (xy 2.54 3.81) (xy 2.54 2.54)
+					)
+					(stroke
+						(width 0.15)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
 				(pin passive line
 					(at -7.62 0 0)
 					(length 5.08)
-					(name "X1"
+					(name "1"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -2043,7 +2059,25 @@
 				(pin passive line
 					(at 7.62 0 180)
 					(length 5.08)
-					(name "X2"
+					(name "3"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "3"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 0 5.08 270)
+					(length 1.27)
+					(name "GND"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -2051,6 +2085,25 @@
 						)
 					)
 					(number "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 0 5.08 270)
+					(length 1.27)
+					(hide yes)
+					(name "GND"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "4"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -4644,7 +4697,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "sportwatch_custom:L_2016_2016Metric"
 			(at 239 119.38 0)
 			(hide yes)
 			(show_name no)
@@ -6533,7 +6586,7 @@
 		)
 	)
 	(symbol
-		(lib_id "sportwatch_custom:XTAL_2PIN")
+		(lib_id "sportwatch_custom:Crystal_1612-4Pin_GND")
 		(at 176 150 0)
 		(unit 1)
 		(body_style 1)
@@ -6564,7 +6617,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "sportwatch_custom:Crystal_1612-4Pin_1.6x1.2mm"
 			(at 176 150 0)
 			(hide yes)
 			(show_name no)
@@ -6600,13 +6653,97 @@
 		(pin "1"
 			(uuid "be320b32-c754-4b37-a443-a8e4f4d32508")
 		)
-		(pin "2"
+		(pin "3"
 			(uuid "7a23c9cf-29b1-451e-9901-7fcc5159d25d")
+		)
+		(pin "2"
+			(uuid "d3840b32-c754-4b37-a443-a8e4f4d32501")
+		)
+		(pin "4"
+			(uuid "d3840b32-c754-4b37-a443-a8e4f4d32502")
 		)
 		(instances
 			(project "sportwatch_revA"
 				(path "/063f9d99-6c07-44cf-ba32-e33897e06972/969e89ce-e77c-4ba6-bffa-a45602245cc9"
 					(reference "Y1")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:GND")
+		(at 176 144.92 180)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "a6120b32-c754-4b37-a443-a8e4f4d32503")
+		(property "Reference" "#PWR0691"
+			(at 176 144.92 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "GND"
+			(at 176 148.73 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 176 144.92 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 176 144.92 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" ""
+			(at 176 144.92 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "e7120b32-c754-4b37-a443-a8e4f4d32504")
+		)
+		(instances
+			(project "sportwatch_revA"
+				(path "/063f9d99-6c07-44cf-ba32-e33897e06972/969e89ce-e77c-4ba6-bffa-a45602245cc9"
+					(reference "#PWR0691")
 					(unit 1)
 				)
 			)

@@ -6343,7 +6343,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "sportwatch_custom:FBGA-153_8.0x8.5mm_Layout14x14_P0.5mm"
 			(at 127 100 0)
 			(hide yes)
 			(show_name no)
