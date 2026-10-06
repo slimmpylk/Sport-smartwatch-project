@@ -45,3 +45,4 @@ Thumbs.db
 #   *.pretty/
 #
 # Project files, fp-lib-table and sym-lib-table should also be tracked.
+output/
