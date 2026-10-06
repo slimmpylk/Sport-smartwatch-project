@@ -141,10 +141,24 @@ Proceed to **Phase: Full PCBA Component Placement (228 Components)**:
 
 ---
 
-## FINAL PHASE VERDICT
+## CURRENT AUTHORITATIVE STATUS
+
+> [!CAUTION]
+> The previous foundation status (`PCB FOUNDATION: PASS — READY FOR FULL PLACEMENT`) is **SUPERSEDED** by the independent 2026-10-06 Codex foundation engineering review (`docs/project/pcb_foundation_codex_review.md`). Full PCBA placement is strictly on hold until all corrective items are implemented and re-reviewed.
 
 ```text
 ============================================================
-PCB FOUNDATION: PASS — READY FOR FULL PLACEMENT
+CODEX REVIEW: BLOCKED — CORRECTIONS REQUIRED BEFORE FULL PLACEMENT
 ============================================================
 ```
+
+---
+
+## Codex Independent PCB Foundation Review — 2026-10-06
+
+- **Review commit/HEAD:** `53187b4edfda19b2c8af0910f6cc9ea952243202` on `pcb/revA-floorplan`.
+- **Review verdict:** **BLOCKED — corrections required before full placement.** Detailed evidence: `docs/project/pcb_foundation_codex_review.md`.
+- **CRITICAL/HIGH findings:** 8 live cross-side shorts (`U201`↔`U405`, `U202`↔`U401`); zero copper zones/reference planes; PD_IN lower bounds 6.890–14.011 mm with no guards; Apollo/nRF crystal loops too long; GNSS RF pad-to-match distance 10.666 mm; Apollo “G7 GND” trial is a dangling via at a depopulated/NC site; Apollo/eMMC full fanout confidence LOW; critical power clusters lack required output/decoupling capacitors; custom net classes are assigned to no nets; native netlist export fails with `Unable to allocate instance id`.
+- **Verified important board facts:** 228 footprints; MCP PCB count 390 nets versus 389 normalized schematic nets; 5 tracks; 7 board vias; 0 zones; one valid 46.0 mm circular Edge.Cuts centered at (100,100); 8 copper layers; 15 expected blank Class-C footprints; all mandatory PPG emitters/photodiodes are on `B.Cu` and optically face the wrist; native DRC 229 violations (44 errors/185 warnings) plus 499 unconnected items; native ERC 0 errors/1172 warnings; only 61/228 footprint origins are inside the outline.
+- **Remaining blockers:** cross-side placement/thermal-via keepouts; PPG AFE/switcher redesign; oscillator and RF reorientation; complete Apollo/eMMC escape studies; named-fabricator stackup/VIPPO approval; actual GND planes and net-class assignments; U4 malformed courtyard; successful native netlist/hierarchy parity rerun; placement/keepouts for the 167 staged footprints and 15 unresolved mechanical/RF items.
+- **Exact next recommended action:** return to the foundation implementation agent to remove the shorts and redesign the PPG/oscillator/RF/power critical clusters, then obtain fabricator DFM approval and rerun the complete foundation gate before any general component placement.
