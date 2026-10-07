@@ -831,7 +831,7 @@
 		)
 		(instances
 			(project "sportwatch_revA"
-				(path "/063f9d99-6c07-44cf-ba32-e33897e06972/00e2f352-6476-43dc-896f-ca593a7684c2"
+				(path "/00e2f352-6476-43dc-896f-ca593a7684c2/0a913c18-9d02-4439-a45c-d252e5882eb4"
 					(reference "#PWR1302")
 					(unit 1)
 				)
@@ -907,7 +907,7 @@
 		)
 		(instances
 			(project "sportwatch_revA"
-				(path "/063f9d99-6c07-44cf-ba32-e33897e06972/00e2f352-6476-43dc-896f-ca593a7684c2"
+				(path "/00e2f352-6476-43dc-896f-ca593a7684c2/5afec159-ab1c-4de0-a210-aad21737b91a"
 					(reference "TP1302")
 					(unit 1)
 				)
@@ -983,7 +983,7 @@
 		)
 		(instances
 			(project "sportwatch_revA"
-				(path "/063f9d99-6c07-44cf-ba32-e33897e06972/00e2f352-6476-43dc-896f-ca593a7684c2"
+				(path "/00e2f352-6476-43dc-896f-ca593a7684c2/6d6b4002-e287-4a3e-ad10-9fc2db06887e"
 					(reference "TP1306")
 					(unit 1)
 				)
@@ -1061,7 +1061,7 @@
 		)
 		(instances
 			(project "sportwatch_revA"
-				(path "/063f9d99-6c07-44cf-ba32-e33897e06972/00e2f352-6476-43dc-896f-ca593a7684c2"
+				(path "/00e2f352-6476-43dc-896f-ca593a7684c2/7828258e-ef50-496c-9e43-8ba1d9d02a27"
 					(reference "#PWR1301")
 					(unit 1)
 				)
@@ -1152,7 +1152,7 @@
 		)
 		(instances
 			(project "sportwatch_revA"
-				(path "/063f9d99-6c07-44cf-ba32-e33897e06972/00e2f352-6476-43dc-896f-ca593a7684c2"
+				(path "/00e2f352-6476-43dc-896f-ca593a7684c2/aec0e7e4-5a99-432f-82c0-dcd1d286e21c"
 					(reference "J1301")
 					(unit 1)
 				)
@@ -1228,7 +1228,7 @@
 		)
 		(instances
 			(project "sportwatch_revA"
-				(path "/063f9d99-6c07-44cf-ba32-e33897e06972/00e2f352-6476-43dc-896f-ca593a7684c2"
+				(path "/00e2f352-6476-43dc-896f-ca593a7684c2/b4cd558a-5050-41df-91b6-80a9c0515c6c"
 					(reference "TP1303")
 					(unit 1)
 				)
@@ -1304,7 +1304,7 @@
 		)
 		(instances
 			(project "sportwatch_revA"
-				(path "/063f9d99-6c07-44cf-ba32-e33897e06972/00e2f352-6476-43dc-896f-ca593a7684c2"
+				(path "/00e2f352-6476-43dc-896f-ca593a7684c2/bb5c81f0-35a0-4158-bc64-ae210c9b19a4"
 					(reference "TP1304")
 					(unit 1)
 				)
@@ -1380,7 +1380,7 @@
 		)
 		(instances
 			(project "sportwatch_revA"
-				(path "/063f9d99-6c07-44cf-ba32-e33897e06972/00e2f352-6476-43dc-896f-ca593a7684c2"
+				(path "/00e2f352-6476-43dc-896f-ca593a7684c2/f2077fce-5b03-4702-b69b-cddc771e6dc5"
 					(reference "TP1301")
 					(unit 1)
 				)
@@ -1456,7 +1456,7 @@
 		)
 		(instances
 			(project "sportwatch_revA"
-				(path "/063f9d99-6c07-44cf-ba32-e33897e06972/00e2f352-6476-43dc-896f-ca593a7684c2"
+				(path "/00e2f352-6476-43dc-896f-ca593a7684c2/f8f8ef06-a4a1-478c-80bd-cac59882f232"
 					(reference "TP1305")
 					(unit 1)
 				)

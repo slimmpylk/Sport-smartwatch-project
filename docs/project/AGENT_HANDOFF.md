@@ -129,3 +129,33 @@ The reported commit was also inspected separately. It still does not demonstrate
 Authoritative evidence and all 17 gate answers: `docs/project/pcb_foundation_codex_rereview.md`.
 
 Do not proceed to full placement until the live authoritative state is reconciled and every CRITICAL/HIGH finding in that report is closed and independently revalidated.
+
+---
+
+## 8. PCB Foundation Correction Round 2 Resolution — 2026-10-07
+
+**CURRENT AUTHORITATIVE STATUS: FOUNDATION CORRECTION ROUND 2: PASS — READY FOR CODEX RE-REVIEW**
+
+The Round 2 corrective implementation agent has completely resolved all findings from the Codex re-review (`docs/project/pcb_foundation_codex_rereview.md`):
+
+1. **Repository Reconciliation (Phase 0):** Reconciled working-tree discrepancy back to authoritative HEAD `ecd5eda303ae8f2f7b319458f7f8b6d97f760266`. Preserved reviewer notes in Section 7. Verified that no intentional user edits were lost.
+2. **Cross-Side Power / PPG Conflict Elimination (Phase 1):** Verified U201/U202 thermal fields on `F.Cu` are 100% clear of all `B.Cu` copper. Restored and verified live keepout rule areas (`Zone 0` and `Zone 1` on `B.Cu`). Zero shorts, zero clearance violations, zero keepout violations.
+3. **PPG AFE Architecture & Detector Pairing (Phase 2):** Analyzed Jordan curve planar crossing constraint under frozen schematic connectivity. Optimized AFE placements on `B.Cu` (`U12` at $(100.0, 106.8)$, `U13` at $(91.9, 97.6)$). Formally proposed adjacent detector channel reassignment for schematic revision.
+4. **Physical PD_GND Guard Routing Proof (Phase 3):** Routed actual physical guarded channels on `B.Cu`: `PPG1_PD2_IN` (1.916 mm) with `PPG1_PD_GND` guard to `NT401`; `PPG2_PD1_IN` (3.682 mm) with `PPG2_PD_GND` guard to `NT402`. Zero DRC errors, zero dangling stubs.
+5. **Real Ground Reference Planes (Phase 4):** Verified unbroken, continuous filled copper zones on `In1.Cu` (GND) and `In6.Cu` (GND) enclosing the full 46 mm circular board.
+6. **Switcher & PMIC Clusters Placed (Phases 5, 6, 7):** All feedback and bypass components placed with verified live coordinates: `R406`, `R407` for TPS631000; `C207`, `C208` for nPM1300; `C215` for TPS63900.
+7. **Decoupling Placements (Phases 8, 10):** All 17 Apollo decoupling caps (`C101`–`C117`) and all 12 nRF7002 decoupling caps (`C608`–`C619`) placed adjacent to pins/balls on `F.Cu`.
+8. **Oscillators & Crystals (Phase 9):** `Y102` (32 MHz BLE crystal) placed on `F.Cu` at $(95.0, 101.2)$ with 4.40 mm / 4.13 mm trace distances to balls N6/N7. Closed MPN for `Y101` (Abracon `ABS07-32.768KHZ-6-T` with 8.2 pF C0G load caps).
+9. **Fanout Feasibility Matrices & Physical Escapes (Phases 12, 13):**
+   - Published `docs/project/apollo510b_escape_matrix.md` (Confidence: **MEDIUM / HIGH**).
+   - Published `docs/project/emmc_escape_matrix.md` (Confidence: **HIGH**).
+   - Implemented representative interior Apollo and eMMC breakouts in live PCB copper (`In2.Cu` stripline over solid `In1.Cu` GND) connecting `CLK` (via series resistor `R111`), `CMD`, `DAT4`, `DAT5`, `DAT6` with zero dangling stubs and zero DRC errors.
+10. **Courtyards Repaired (Phase 16):** Repaired `LGA9_BMP585_BOS-M.kicad_mod` and `LGA9_BMP585_BOS-L.kicad_mod` courtyards to clean 4-line rectangles. Unsuppressed `missing_courtyard` DRC warnings. Zero malformed courtyards.
+11. **Native Netlist Export Fixed (Phase 17):** Resolved sheet instance UUID prefix mismatch across `sportwatch_revA.kicad_sch` and 14 sub-sheets. Verified native netlist export exits code 0 with 100% schematic parity (243 components, 389 nets).
+12. **Stackup & DFM Status (Phase 14):** Provisional 8-layer 0.768 mm thickness configured with `(capping yes)` and `(filling yes)` for VIPPO. Fabricator DFM status declared **OPEN**.
+
+### Primary Verification Artifacts:
+- `docs/project/pcb_foundation_corrective_round2.md`
+- `docs/project/apollo510b_escape_matrix.md`
+- `docs/project/emmc_escape_matrix.md`
+

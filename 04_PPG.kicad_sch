@@ -3704,7 +3704,7 @@
 	 (property "Datasheet" "https://www.ti.com/lit/ds/symlink/tps631000.pdf" (at 190 150 0) (hide yes) (show_name no) (do_not_autoplace no) (effects (font (size 1.27 1.27))))
 	 (property "Description" "PPG VLED 3.8V buck-boost from protected VBAT" (at 190 150 0) (hide yes) (show_name no) (do_not_autoplace no) (effects (font (size 1.27 1.27))))
 	 (pin "1" (uuid "f6d93f43-6620-42f2-afe6-9068416cda86")) (pin "2" (uuid "78d554e4-d3df-4417-bff8-a7f15ab2b727")) (pin "3" (uuid "d8bed10b-1d22-4d13-8af3-910ee0da17e1")) (pin "4" (uuid "3c327bbb-3dc5-41de-ab04-9bebd61c95e7")) (pin "5" (uuid "065d720f-6485-4f85-a828-4ae5ae9300d1")) (pin "6" (uuid "cad914a2-2310-4436-bc10-1af186d0910c")) (pin "7" (uuid "1ed00b28-9209-440b-981d-cf2abe247d26")) (pin "8" (uuid "4e1bee3c-4246-418c-994b-87fa4b88ee58"))
-	 (instances (project "sportwatch_revA" (path "/063f9d99-6c07-44cf-ba32-e33897e06972/24ba7fae-0267-4a43-a776-43c6f8c3d7fc" (reference "U401") (unit 1))))
+	 (instances (project "sportwatch_revA" (path "/24ba7fae-0267-4a43-a776-43c6f8c3d7fc/56b05e12-1cd2-4c25-9260-46e5bda58ffd" (reference "U401") (unit 1))))
 	)
 	(symbol
 	 (lib_id "Device:L") (at 190 137.3 90) (unit 1) (body_style 1)
@@ -3716,7 +3716,7 @@
 	 (property "Datasheet" "~" (at 190 137.3 0) (hide yes) (show_name no) (do_not_autoplace no) (effects (font (size 1.27 1.27))))
 	 (property "Description" "Murata DFE252012P-1R0M=P2; TI recommended 4.3A sat, 42mOhm" (at 190 137.3 0) (hide yes) (show_name no) (do_not_autoplace no) (effects (font (size 1.27 1.27))))
 	 (pin "1" (uuid "93a90426-986b-453b-92f6-1c6d35bcc507")) (pin "2" (uuid "5bdf610b-744b-4953-b7b6-f7620a99e47d"))
-	 (instances (project "sportwatch_revA" (path "/063f9d99-6c07-44cf-ba32-e33897e06972/24ba7fae-0267-4a43-a776-43c6f8c3d7fc" (reference "L401") (unit 1))))
+	 (instances (project "sportwatch_revA" (path "/24ba7fae-0267-4a43-a776-43c6f8c3d7fc/6a514584-6d15-4524-9cb9-815c8d76d546" (reference "L401") (unit 1))))
 	)
 	(symbol
 	 (lib_id "Device:C") (at 165 150 0) (unit 1) (body_style 1)
@@ -3728,7 +3728,7 @@
 	 (property "Datasheet" "~" (at 165 150 0) (hide yes) (show_name no) (do_not_autoplace no) (effects (font (size 1.27 1.27))))
 	 (property "Description" "TPS631000 VIN ceramic, X5R/X7R >=6.3V" (at 165 150 0) (hide yes) (show_name no) (do_not_autoplace no) (effects (font (size 1.27 1.27))))
 	 (pin "1" (uuid "edc4005c-fd5b-4b70-9202-507e401e514b")) (pin "2" (uuid "4e0a8c8a-64bd-40bc-bdfd-68f5e01ff5e2"))
-	 (instances (project "sportwatch_revA" (path "/063f9d99-6c07-44cf-ba32-e33897e06972/24ba7fae-0267-4a43-a776-43c6f8c3d7fc" (reference "C401") (unit 1))))
+	 (instances (project "sportwatch_revA" (path "/24ba7fae-0267-4a43-a776-43c6f8c3d7fc/9d77bfd8-38b6-4d76-a202-e91be1c44e04" (reference "C401") (unit 1))))
 	)
 	(symbol
 	 (lib_id "Device:C") (at 220 150 0) (unit 1) (body_style 1)
@@ -3740,7 +3740,7 @@
 	 (property "Datasheet" "~" (at 220 150 0) (hide yes) (show_name no) (do_not_autoplace no) (effects (font (size 1.27 1.27))))
 	 (property "Description" "TPS631000 VOUT ceramic, >=6.3V; account for DC bias" (at 220 150 0) (hide yes) (show_name no) (do_not_autoplace no) (effects (font (size 1.27 1.27))))
 	 (pin "1" (uuid "621528e0-f191-46c8-80c0-ca427373a2cc")) (pin "2" (uuid "da3b03b8-0178-4541-af8a-09f47a5f9a02"))
-	 (instances (project "sportwatch_revA" (path "/063f9d99-6c07-44cf-ba32-e33897e06972/24ba7fae-0267-4a43-a776-43c6f8c3d7fc" (reference "C402") (unit 1))))
+	 (instances (project "sportwatch_revA" (path "/24ba7fae-0267-4a43-a776-43c6f8c3d7fc/8ab9eae0-c706-4d2c-babc-2a23ea1cd180" (reference "C402") (unit 1))))
 	)
 	(symbol
 	 (lib_id "Device:R") (at 220 165 0) (unit 1) (body_style 1)
@@ -3752,7 +3752,7 @@
 	 (property "Datasheet" "~" (at 220 165 0) (hide yes) (show_name no) (do_not_autoplace no) (effects (font (size 1.27 1.27))))
 	 (property "Description" "TPS631000 FB upper; nominal VOUT about 3.82V" (at 220 165 0) (hide yes) (show_name no) (do_not_autoplace no) (effects (font (size 1.27 1.27))))
 	 (pin "1" (uuid "b8736352-7d3f-4950-afb5-34937dc0e4cb")) (pin "2" (uuid "b5c50b7f-8387-4c0e-916f-f5a80e492ee4"))
-	 (instances (project "sportwatch_revA" (path "/063f9d99-6c07-44cf-ba32-e33897e06972/24ba7fae-0267-4a43-a776-43c6f8c3d7fc" (reference "R406") (unit 1))))
+	 (instances (project "sportwatch_revA" (path "/24ba7fae-0267-4a43-a776-43c6f8c3d7fc/5fc0834a-e4d7-46ed-8370-b9dec0a821ce" (reference "R406") (unit 1))))
 	)
 	(symbol
 	 (lib_id "Device:R") (at 220 178 0) (unit 1) (body_style 1)
@@ -3764,7 +3764,7 @@
 	 (property "Datasheet" "~" (at 220 178 0) (hide yes) (show_name no) (do_not_autoplace no) (effects (font (size 1.27 1.27))))
 	 (property "Description" "TPS631000 FB lower" (at 220 178 0) (hide yes) (show_name no) (do_not_autoplace no) (effects (font (size 1.27 1.27))))
 	 (pin "1" (uuid "4a5d9f98-5c64-4564-8faa-20e4b0eb1ffc")) (pin "2" (uuid "882e4d9b-1e3e-44dd-8d7f-401d6f7195f4"))
-	 (instances (project "sportwatch_revA" (path "/063f9d99-6c07-44cf-ba32-e33897e06972/24ba7fae-0267-4a43-a776-43c6f8c3d7fc" (reference "R407") (unit 1))))
+	 (instances (project "sportwatch_revA" (path "/24ba7fae-0267-4a43-a776-43c6f8c3d7fc/df4fd0e4-c997-4657-a59d-752074a521e3" (reference "R407") (unit 1))))
 	)
 	(symbol
 	 (lib_id "power:GND") (at 195.08 165.24 0) (unit 1) (body_style 1)
@@ -3776,7 +3776,7 @@
 	 (property "Datasheet" "" (at 195.08 165.24 0) (hide yes) (show_name no) (do_not_autoplace no) (effects (font (size 1.27 1.27))))
 	 (property "Description" "" (at 195.08 165.24 0) (hide yes) (show_name no) (do_not_autoplace no) (effects (font (size 1.27 1.27))))
 	 (pin "1" (uuid "db0646cc-457e-47da-a6d1-84546c9ebbb2"))
-	 (instances (project "sportwatch_revA" (path "/063f9d99-6c07-44cf-ba32-e33897e06972/24ba7fae-0267-4a43-a776-43c6f8c3d7fc" (reference "#PWR0430") (unit 1))))
+	 (instances (project "sportwatch_revA" (path "/24ba7fae-0267-4a43-a776-43c6f8c3d7fc/24766e97-8604-46e3-9f3a-df8a849c5704" (reference "#PWR0430") (unit 1))))
 	)
 	(symbol
 	 (lib_id "power:GND") (at 184.92 165.24 0) (unit 1) (body_style 1)
@@ -3788,7 +3788,7 @@
 	 (property "Datasheet" "" (at 184.92 165.24 0) (hide yes) (show_name no) (do_not_autoplace no) (effects (font (size 1.27 1.27))))
 	 (property "Description" "" (at 184.92 165.24 0) (hide yes) (show_name no) (do_not_autoplace no) (effects (font (size 1.27 1.27))))
 	 (pin "1" (uuid "ed138667-c591-421c-9abf-bf5e2640788f"))
-	 (instances (project "sportwatch_revA" (path "/063f9d99-6c07-44cf-ba32-e33897e06972/24ba7fae-0267-4a43-a776-43c6f8c3d7fc" (reference "#PWR0431") (unit 1))))
+	 (instances (project "sportwatch_revA" (path "/24ba7fae-0267-4a43-a776-43c6f8c3d7fc/c1a99ea3-5054-40be-b66f-58f5edea26a7" (reference "#PWR0431") (unit 1))))
 	)
 	(symbol
 	 (lib_id "power:GND") (at 165 156.35 0) (unit 1) (body_style 1)
@@ -3800,7 +3800,7 @@
 	 (property "Datasheet" "" (at 165 156.35 0) (hide yes) (show_name no) (do_not_autoplace no) (effects (font (size 1.27 1.27))))
 	 (property "Description" "" (at 165 156.35 0) (hide yes) (show_name no) (do_not_autoplace no) (effects (font (size 1.27 1.27))))
 	 (pin "1" (uuid "2e1ab5d6-2fe9-40cd-84ff-dd2172c6a5b4"))
-	 (instances (project "sportwatch_revA" (path "/063f9d99-6c07-44cf-ba32-e33897e06972/24ba7fae-0267-4a43-a776-43c6f8c3d7fc" (reference "#PWR0432") (unit 1))))
+	 (instances (project "sportwatch_revA" (path "/24ba7fae-0267-4a43-a776-43c6f8c3d7fc/4bee423e-a4ad-48a6-bea6-add569f525f9" (reference "#PWR0432") (unit 1))))
 	)
 	(symbol
 	 (lib_id "power:GND") (at 220 153.81 0) (unit 1) (body_style 1)
@@ -3812,7 +3812,7 @@
 	 (property "Datasheet" "" (at 220 153.81 0) (hide yes) (show_name no) (do_not_autoplace no) (effects (font (size 1.27 1.27))))
 	 (property "Description" "" (at 220 153.81 0) (hide yes) (show_name no) (do_not_autoplace no) (effects (font (size 1.27 1.27))))
 	 (pin "1" (uuid "8cdecf10-7faa-4d46-9179-def34ee3a363"))
-	 (instances (project "sportwatch_revA" (path "/063f9d99-6c07-44cf-ba32-e33897e06972/24ba7fae-0267-4a43-a776-43c6f8c3d7fc" (reference "#PWR0433") (unit 1))))
+	 (instances (project "sportwatch_revA" (path "/24ba7fae-0267-4a43-a776-43c6f8c3d7fc/ea997086-7e6e-4746-b779-4bf77971ec42" (reference "#PWR0433") (unit 1))))
 	)
 	(symbol
 	 (lib_id "power:GND") (at 220 181.81 0) (unit 1) (body_style 1)
@@ -3824,7 +3824,7 @@
 	 (property "Datasheet" "" (at 220 181.81 0) (hide yes) (show_name no) (do_not_autoplace no) (effects (font (size 1.27 1.27))))
 	 (property "Description" "" (at 220 181.81 0) (hide yes) (show_name no) (do_not_autoplace no) (effects (font (size 1.27 1.27))))
 	 (pin "1" (uuid "1142102c-d7ab-4c1b-bae8-e8c13e2b83c2"))
-	 (instances (project "sportwatch_revA" (path "/063f9d99-6c07-44cf-ba32-e33897e06972/24ba7fae-0267-4a43-a776-43c6f8c3d7fc" (reference "#PWR0434") (unit 1))))
+	 (instances (project "sportwatch_revA" (path "/24ba7fae-0267-4a43-a776-43c6f8c3d7fc/7735b926-3176-4c72-9c17-1aba17a4ba41" (reference "#PWR0434") (unit 1))))
 	)
 	(text "PPG VLED POWER — TPS631000 buck-boost from protected VBAT, nominal 3.82V; EN=VOUT1_1V8, MODE=GND (PFM)." (at 150 128 0) (effects (font (size 1 1)) (justify left bottom)) (uuid "20d15ea9-034c-463d-a4c7-4744a7813542"))
 	(text "C401 22uF input, C402 47uF output + existing 10uF per AFE; R406 604k/R407 91k; L401 1uH DFE252012P-1R0M=P2 baseline." (at 150 131 0) (effects (font (size 0.9 0.9)) (justify left bottom)) (uuid "1c86a68d-10fc-439d-84aa-367fb55ae00f"))
@@ -3900,7 +3900,7 @@
 		)
 		(instances
 			(project "sportwatch_revA"
-				(path "/063f9d99-6c07-44cf-ba32-e33897e06972/24ba7fae-0267-4a43-a776-43c6f8c3d7fc"
+				(path "/24ba7fae-0267-4a43-a776-43c6f8c3d7fc/0415b8c5-729e-43e5-b085-ea23da5f157b"
 					(reference "#PWRC4104")
 					(unit 1)
 				)
@@ -3980,7 +3980,7 @@
 		)
 		(instances
 			(project "sportwatch_revA"
-				(path "/063f9d99-6c07-44cf-ba32-e33897e06972/24ba7fae-0267-4a43-a776-43c6f8c3d7fc"
+				(path "/24ba7fae-0267-4a43-a776-43c6f8c3d7fc/064559f6-625a-407a-a04e-9d836e0b2e7a"
 					(reference "C4103")
 					(unit 1)
 				)
@@ -4058,7 +4058,7 @@
 		)
 		(instances
 			(project "sportwatch_revA"
-				(path "/063f9d99-6c07-44cf-ba32-e33897e06972/24ba7fae-0267-4a43-a776-43c6f8c3d7fc"
+				(path "/24ba7fae-0267-4a43-a776-43c6f8c3d7fc/09eb5c2c-fb10-4b5e-a338-ff593475e24e"
 					(reference "#PWRC4201")
 					(unit 1)
 				)
@@ -4136,7 +4136,7 @@
 		)
 		(instances
 			(project "sportwatch_revA"
-				(path "/063f9d99-6c07-44cf-ba32-e33897e06972/24ba7fae-0267-4a43-a776-43c6f8c3d7fc"
+				(path "/24ba7fae-0267-4a43-a776-43c6f8c3d7fc/0df9433c-5d1b-4491-90d0-47ea335c6846"
 					(reference "#PWR0412")
 					(unit 1)
 				)
@@ -4216,7 +4216,7 @@
 		)
 		(instances
 			(project "sportwatch_revA"
-				(path "/063f9d99-6c07-44cf-ba32-e33897e06972/24ba7fae-0267-4a43-a776-43c6f8c3d7fc"
+				(path "/24ba7fae-0267-4a43-a776-43c6f8c3d7fc/1a765b6a-1277-45a0-8250-39a14410cd20"
 					(reference "C4104")
 					(unit 1)
 				)
@@ -4294,7 +4294,7 @@
 		)
 		(instances
 			(project "sportwatch_revA"
-				(path "/063f9d99-6c07-44cf-ba32-e33897e06972/24ba7fae-0267-4a43-a776-43c6f8c3d7fc"
+				(path "/24ba7fae-0267-4a43-a776-43c6f8c3d7fc/2145fbf4-b92e-4c70-b5b0-71c0ce72ca11"
 					(reference "#PWR0411")
 					(unit 1)
 				)
@@ -4372,7 +4372,7 @@
 		)
 		(instances
 			(project "sportwatch_revA"
-				(path "/063f9d99-6c07-44cf-ba32-e33897e06972/24ba7fae-0267-4a43-a776-43c6f8c3d7fc"
+				(path "/24ba7fae-0267-4a43-a776-43c6f8c3d7fc/21477e70-8eb3-45c6-819f-fbf694e88306"
 					(reference "#PWRC4103")
 					(unit 1)
 				)
@@ -4450,7 +4450,7 @@
 		)
 		(instances
 			(project "sportwatch_revA"
-				(path "/063f9d99-6c07-44cf-ba32-e33897e06972/24ba7fae-0267-4a43-a776-43c6f8c3d7fc"
+				(path "/24ba7fae-0267-4a43-a776-43c6f8c3d7fc/2325ce63-f477-43aa-b550-b4d401948de2"
 					(reference "#PWRC4204")
 					(unit 1)
 				)
@@ -4530,7 +4530,7 @@
 		)
 		(instances
 			(project "sportwatch_revA"
-				(path "/063f9d99-6c07-44cf-ba32-e33897e06972/24ba7fae-0267-4a43-a776-43c6f8c3d7fc"
+				(path "/24ba7fae-0267-4a43-a776-43c6f8c3d7fc/2ca274ce-ced7-4142-b7b8-d9fe5a3a24ce"
 					(reference "C4203")
 					(unit 1)
 				)
@@ -4610,7 +4610,7 @@
 		)
 		(instances
 			(project "sportwatch_revA"
-				(path "/063f9d99-6c07-44cf-ba32-e33897e06972/24ba7fae-0267-4a43-a776-43c6f8c3d7fc"
+				(path "/24ba7fae-0267-4a43-a776-43c6f8c3d7fc/37032851-83d4-45b5-ae54-a6733490e01f"
 					(reference "R401")
 					(unit 1)
 				)
@@ -4688,7 +4688,7 @@
 		)
 		(instances
 			(project "sportwatch_revA"
-				(path "/063f9d99-6c07-44cf-ba32-e33897e06972/24ba7fae-0267-4a43-a776-43c6f8c3d7fc"
+				(path "/24ba7fae-0267-4a43-a776-43c6f8c3d7fc/488a9f3c-7bd1-41df-9d94-779c39651d30"
 					(reference "#PWR04NT1")
 					(unit 1)
 				)
@@ -4768,7 +4768,7 @@
 		)
 		(instances
 			(project "sportwatch_revA"
-				(path "/063f9d99-6c07-44cf-ba32-e33897e06972/24ba7fae-0267-4a43-a776-43c6f8c3d7fc"
+				(path "/24ba7fae-0267-4a43-a776-43c6f8c3d7fc/55c721d5-6fcd-4bbc-b3f8-e7049a651bf9"
 					(reference "R405")
 					(unit 1)
 				)
@@ -4846,7 +4846,7 @@
 		)
 		(instances
 			(project "sportwatch_revA"
-				(path "/063f9d99-6c07-44cf-ba32-e33897e06972/24ba7fae-0267-4a43-a776-43c6f8c3d7fc"
+				(path "/24ba7fae-0267-4a43-a776-43c6f8c3d7fc/588ea300-674c-4215-b50c-5422f58d3791"
 					(reference "#PWRC4203")
 					(unit 1)
 				)
@@ -4924,7 +4924,7 @@
 		)
 		(instances
 			(project "sportwatch_revA"
-				(path "/063f9d99-6c07-44cf-ba32-e33897e06972/24ba7fae-0267-4a43-a776-43c6f8c3d7fc"
+				(path "/24ba7fae-0267-4a43-a776-43c6f8c3d7fc/597310cc-2de3-4b4f-bd76-c3c7f2ac7ba0"
 					(reference "#PWR04NT2")
 					(unit 1)
 				)
@@ -5060,7 +5060,7 @@
 		)
 		(instances
 			(project "sportwatch_revA"
-				(path "/063f9d99-6c07-44cf-ba32-e33897e06972/24ba7fae-0267-4a43-a776-43c6f8c3d7fc"
+				(path "/24ba7fae-0267-4a43-a776-43c6f8c3d7fc/68ac7160-72bc-47c2-9380-221f9282d721"
 					(reference "U13")
 					(unit 1)
 				)
@@ -5140,7 +5140,7 @@
 		)
 		(instances
 			(project "sportwatch_revA"
-				(path "/063f9d99-6c07-44cf-ba32-e33897e06972/24ba7fae-0267-4a43-a776-43c6f8c3d7fc"
+				(path "/24ba7fae-0267-4a43-a776-43c6f8c3d7fc/70c8d7cf-4122-4165-a60a-347e3a8a8f4c"
 					(reference "R402")
 					(unit 1)
 				)
@@ -5220,7 +5220,7 @@
 		)
 		(instances
 			(project "sportwatch_revA"
-				(path "/063f9d99-6c07-44cf-ba32-e33897e06972/24ba7fae-0267-4a43-a776-43c6f8c3d7fc"
+				(path "/24ba7fae-0267-4a43-a776-43c6f8c3d7fc/74dec967-4819-4e7b-a3df-59f909f391c1"
 					(reference "C4201")
 					(unit 1)
 				)
@@ -5356,7 +5356,7 @@
 		)
 		(instances
 			(project "sportwatch_revA"
-				(path "/063f9d99-6c07-44cf-ba32-e33897e06972/24ba7fae-0267-4a43-a776-43c6f8c3d7fc"
+				(path "/24ba7fae-0267-4a43-a776-43c6f8c3d7fc/77e40d42-feb0-4c8f-bde2-35586b40c2c1"
 					(reference "U12")
 					(unit 1)
 				)
@@ -5434,7 +5434,7 @@
 		)
 		(instances
 			(project "sportwatch_revA"
-				(path "/063f9d99-6c07-44cf-ba32-e33897e06972/24ba7fae-0267-4a43-a776-43c6f8c3d7fc"
+				(path "/24ba7fae-0267-4a43-a776-43c6f8c3d7fc/8018a215-76f5-461c-b46b-e4060799c084"
 					(reference "#PWR0420")
 					(unit 1)
 				)
@@ -5532,7 +5532,7 @@
 		)
 		(instances
 			(project "sportwatch_revA"
-				(path "/063f9d99-6c07-44cf-ba32-e33897e06972/24ba7fae-0267-4a43-a776-43c6f8c3d7fc"
+				(path "/24ba7fae-0267-4a43-a776-43c6f8c3d7fc/8211c225-6d40-467c-9a46-08b7705df3de"
 					(reference "D401")
 					(unit 1)
 				)
@@ -5610,7 +5610,7 @@
 		)
 		(instances
 			(project "sportwatch_revA"
-				(path "/063f9d99-6c07-44cf-ba32-e33897e06972/24ba7fae-0267-4a43-a776-43c6f8c3d7fc"
+				(path "/24ba7fae-0267-4a43-a776-43c6f8c3d7fc/821c22cf-00ba-42de-a5ac-e56fd4cda665"
 					(reference "#PWR0410")
 					(unit 1)
 				)
@@ -5690,7 +5690,7 @@
 		)
 		(instances
 			(project "sportwatch_revA"
-				(path "/063f9d99-6c07-44cf-ba32-e33897e06972/24ba7fae-0267-4a43-a776-43c6f8c3d7fc"
+				(path "/24ba7fae-0267-4a43-a776-43c6f8c3d7fc/915de66e-85e3-4d26-8489-ad97dc4359b6"
 					(reference "D414")
 					(unit 1)
 				)
@@ -5770,7 +5770,7 @@
 		)
 		(instances
 			(project "sportwatch_revA"
-				(path "/063f9d99-6c07-44cf-ba32-e33897e06972/24ba7fae-0267-4a43-a776-43c6f8c3d7fc"
+				(path "/24ba7fae-0267-4a43-a776-43c6f8c3d7fc/94842c08-9a3c-4daa-8caa-0efc59e1777d"
 					(reference "C4102")
 					(unit 1)
 				)
@@ -5868,7 +5868,7 @@
 		)
 		(instances
 			(project "sportwatch_revA"
-				(path "/063f9d99-6c07-44cf-ba32-e33897e06972/24ba7fae-0267-4a43-a776-43c6f8c3d7fc"
+				(path "/24ba7fae-0267-4a43-a776-43c6f8c3d7fc/9560cf42-acee-4fa3-b7ac-ebc73a1215c7"
 					(reference "D402")
 					(unit 1)
 				)
@@ -5948,7 +5948,7 @@
 		)
 		(instances
 			(project "sportwatch_revA"
-				(path "/063f9d99-6c07-44cf-ba32-e33897e06972/24ba7fae-0267-4a43-a776-43c6f8c3d7fc"
+				(path "/24ba7fae-0267-4a43-a776-43c6f8c3d7fc/aa169eac-bd22-426c-8ab3-97f6271f3258"
 					(reference "NT401")
 					(unit 1)
 				)
@@ -6028,7 +6028,7 @@
 		)
 		(instances
 			(project "sportwatch_revA"
-				(path "/063f9d99-6c07-44cf-ba32-e33897e06972/24ba7fae-0267-4a43-a776-43c6f8c3d7fc"
+				(path "/24ba7fae-0267-4a43-a776-43c6f8c3d7fc/b7df98da-fb85-4a7f-81bd-005b4356870b"
 					(reference "C4204")
 					(unit 1)
 				)
@@ -6106,7 +6106,7 @@
 		)
 		(instances
 			(project "sportwatch_revA"
-				(path "/063f9d99-6c07-44cf-ba32-e33897e06972/24ba7fae-0267-4a43-a776-43c6f8c3d7fc"
+				(path "/24ba7fae-0267-4a43-a776-43c6f8c3d7fc/bb585092-f4b8-4460-99ce-7e6df5d49f52"
 					(reference "#PWR0421")
 					(unit 1)
 				)
@@ -6186,7 +6186,7 @@
 		)
 		(instances
 			(project "sportwatch_revA"
-				(path "/063f9d99-6c07-44cf-ba32-e33897e06972/24ba7fae-0267-4a43-a776-43c6f8c3d7fc"
+				(path "/24ba7fae-0267-4a43-a776-43c6f8c3d7fc/be09c78a-3afb-48f4-aaef-3de746d6d673"
 					(reference "R403")
 					(unit 1)
 				)
@@ -6266,7 +6266,7 @@
 		)
 		(instances
 			(project "sportwatch_revA"
-				(path "/063f9d99-6c07-44cf-ba32-e33897e06972/24ba7fae-0267-4a43-a776-43c6f8c3d7fc"
+				(path "/24ba7fae-0267-4a43-a776-43c6f8c3d7fc/c6029f55-63fc-46ec-ad60-bf49da46042f"
 					(reference "D424")
 					(unit 1)
 				)
@@ -6344,7 +6344,7 @@
 		)
 		(instances
 			(project "sportwatch_revA"
-				(path "/063f9d99-6c07-44cf-ba32-e33897e06972/24ba7fae-0267-4a43-a776-43c6f8c3d7fc"
+				(path "/24ba7fae-0267-4a43-a776-43c6f8c3d7fc/cb13126e-d266-4294-882f-d3883a11feb3"
 					(reference "#PWRC4102")
 					(unit 1)
 				)
@@ -6424,7 +6424,7 @@
 		)
 		(instances
 			(project "sportwatch_revA"
-				(path "/063f9d99-6c07-44cf-ba32-e33897e06972/24ba7fae-0267-4a43-a776-43c6f8c3d7fc"
+				(path "/24ba7fae-0267-4a43-a776-43c6f8c3d7fc/cb8791d2-f001-4f91-92c2-8b09beba1e7c"
 					(reference "D413")
 					(unit 1)
 				)
@@ -6504,7 +6504,7 @@
 		)
 		(instances
 			(project "sportwatch_revA"
-				(path "/063f9d99-6c07-44cf-ba32-e33897e06972/24ba7fae-0267-4a43-a776-43c6f8c3d7fc"
+				(path "/24ba7fae-0267-4a43-a776-43c6f8c3d7fc/d85e8b5c-b060-42a2-98b1-8f42bf4b98df"
 					(reference "C4101")
 					(unit 1)
 				)
@@ -6584,7 +6584,7 @@
 		)
 		(instances
 			(project "sportwatch_revA"
-				(path "/063f9d99-6c07-44cf-ba32-e33897e06972/24ba7fae-0267-4a43-a776-43c6f8c3d7fc"
+				(path "/24ba7fae-0267-4a43-a776-43c6f8c3d7fc/d995307e-5a54-45bd-88bc-fda402068b7a"
 					(reference "R404")
 					(unit 1)
 				)
@@ -6664,7 +6664,7 @@
 		)
 		(instances
 			(project "sportwatch_revA"
-				(path "/063f9d99-6c07-44cf-ba32-e33897e06972/24ba7fae-0267-4a43-a776-43c6f8c3d7fc"
+				(path "/24ba7fae-0267-4a43-a776-43c6f8c3d7fc/de232d86-e34e-4ce9-97b9-74c032fa56cf"
 					(reference "C4202")
 					(unit 1)
 				)
@@ -6742,7 +6742,7 @@
 		)
 		(instances
 			(project "sportwatch_revA"
-				(path "/063f9d99-6c07-44cf-ba32-e33897e06972/24ba7fae-0267-4a43-a776-43c6f8c3d7fc"
+				(path "/24ba7fae-0267-4a43-a776-43c6f8c3d7fc/e282fa88-0428-4ed7-ad9e-bac5aa18b1fa"
 					(reference "#PWRC4202")
 					(unit 1)
 				)
@@ -6820,7 +6820,7 @@
 		)
 		(instances
 			(project "sportwatch_revA"
-				(path "/063f9d99-6c07-44cf-ba32-e33897e06972/24ba7fae-0267-4a43-a776-43c6f8c3d7fc"
+				(path "/24ba7fae-0267-4a43-a776-43c6f8c3d7fc/eff7fc62-4235-4c0c-813b-16a0d5be1518"
 					(reference "#PWR0422")
 					(unit 1)
 				)
@@ -6898,7 +6898,7 @@
 		)
 		(instances
 			(project "sportwatch_revA"
-				(path "/063f9d99-6c07-44cf-ba32-e33897e06972/24ba7fae-0267-4a43-a776-43c6f8c3d7fc"
+				(path "/24ba7fae-0267-4a43-a776-43c6f8c3d7fc/fcfc68c2-f3cb-4703-909d-443166f01e00"
 					(reference "#PWRC4101")
 					(unit 1)
 				)
@@ -6978,7 +6978,7 @@
 		)
 		(instances
 			(project "sportwatch_revA"
-				(path "/063f9d99-6c07-44cf-ba32-e33897e06972/24ba7fae-0267-4a43-a776-43c6f8c3d7fc"
+				(path "/24ba7fae-0267-4a43-a776-43c6f8c3d7fc/fdde68e9-c9a6-4b45-a37e-48cecba9843b"
 					(reference "D423")
 					(unit 1)
 				)
@@ -7058,7 +7058,7 @@
 		)
 		(instances
 			(project "sportwatch_revA"
-				(path "/063f9d99-6c07-44cf-ba32-e33897e06972/24ba7fae-0267-4a43-a776-43c6f8c3d7fc"
+				(path "/24ba7fae-0267-4a43-a776-43c6f8c3d7fc/fe7f43e0-1c3c-419f-9269-bf85c5a98139"
 					(reference "NT402")
 					(unit 1)
 				)
@@ -7136,7 +7136,7 @@
 		)
 		(instances
 			(project "sportwatch_revA"
-				(path "/063f9d99-6c07-44cf-ba32-e33897e06972/24ba7fae-0267-4a43-a776-43c6f8c3d7fc"
+				(path "/24ba7fae-0267-4a43-a776-43c6f8c3d7fc/f1904011-0001-4000-8000-000000000401"
 					(reference "#FLG0401")
 					(unit 1)
 				)
@@ -7214,7 +7214,7 @@
 		)
 		(instances
 			(project "sportwatch_revA"
-				(path "/063f9d99-6c07-44cf-ba32-e33897e06972/24ba7fae-0267-4a43-a776-43c6f8c3d7fc"
+				(path "/24ba7fae-0267-4a43-a776-43c6f8c3d7fc/f1904021-0001-4000-8000-000000000402"
 					(reference "#FLG0402")
 					(unit 1)
 				)
@@ -7265,7 +7265,7 @@
 		(pin "C1" (uuid "994ac7df-09d1-40f4-9c35-129839d7152d"))
 		(pin "A1" (uuid "6e91d33f-aab5-4cd3-8fa8-a677b5746adf"))
 		(pin "C2" (uuid "049f7499-180b-494d-a270-c8166f7ed9ec"))
-		(instances (project "sportwatch_revA" (path "/063f9d99-6c07-44cf-ba32-e33897e06972/24ba7fae-0267-4a43-a776-43c6f8c3d7fc" (reference "U402") (unit 1))))
+		(instances (project "sportwatch_revA" (path "/24ba7fae-0267-4a43-a776-43c6f8c3d7fc/1c36e351-4967-4c67-b613-b90650e7ba66" (reference "U402") (unit 1))))
 	)
 	(label "PPG1_LED_GREEN_DRV"
 		(at 309.84 55 180)
@@ -7324,7 +7324,7 @@
 		(property "Datasheet" "~" (at 320 65.16 0) (hide yes) (show_name no) (do_not_autoplace no) (effects (font (size 1.27 1.27))))
 		(property "Description" "Global ground" (at 320 65.16 0) (hide yes) (show_name no) (do_not_autoplace no) (effects (font (size 1.27 1.27))))
 		(pin "1" (uuid "15dd4a82-bc1c-486a-a9e6-875b9c7c6a64"))
-		(instances (project "sportwatch_revA" (path "/063f9d99-6c07-44cf-ba32-e33897e06972/24ba7fae-0267-4a43-a776-43c6f8c3d7fc" (reference "#PWR0440") (unit 1))))
+		(instances (project "sportwatch_revA" (path "/24ba7fae-0267-4a43-a776-43c6f8c3d7fc/33dfacd3-8958-4b5a-8af2-720ced3b6783" (reference "#PWR0440") (unit 1))))
 	)
 	(symbol
 		(lib_id "sportwatch_custom:TS5A12301E")
@@ -7349,7 +7349,7 @@
 		(pin "C1" (uuid "6bb212df-b609-438b-8204-54281f0ee696"))
 		(pin "A1" (uuid "8e993116-b4e3-4f45-a539-69092b438df0"))
 		(pin "C2" (uuid "8a8ea288-ddb5-4f51-8f57-aefee455b44c"))
-		(instances (project "sportwatch_revA" (path "/063f9d99-6c07-44cf-ba32-e33897e06972/24ba7fae-0267-4a43-a776-43c6f8c3d7fc" (reference "U403") (unit 1))))
+		(instances (project "sportwatch_revA" (path "/24ba7fae-0267-4a43-a776-43c6f8c3d7fc/caa9e1b9-3529-4a6f-bf5a-4e9f4f027845" (reference "U403") (unit 1))))
 	)
 	(label "PPG1_LED_RED_DRV"
 		(at 309.84 80 180)
@@ -7408,7 +7408,7 @@
 		(property "Datasheet" "~" (at 320 90.16 0) (hide yes) (show_name no) (do_not_autoplace no) (effects (font (size 1.27 1.27))))
 		(property "Description" "Global ground" (at 320 90.16 0) (hide yes) (show_name no) (do_not_autoplace no) (effects (font (size 1.27 1.27))))
 		(pin "1" (uuid "b0255e35-0f84-497e-a340-d70552afdd15"))
-		(instances (project "sportwatch_revA" (path "/063f9d99-6c07-44cf-ba32-e33897e06972/24ba7fae-0267-4a43-a776-43c6f8c3d7fc" (reference "#PWR0441") (unit 1))))
+		(instances (project "sportwatch_revA" (path "/24ba7fae-0267-4a43-a776-43c6f8c3d7fc/f7aec91e-ac75-4a3e-8760-024236f7dc6b" (reference "#PWR0441") (unit 1))))
 	)
 	(symbol
 		(lib_id "sportwatch_custom:TS5A12301E")
@@ -7433,7 +7433,7 @@
 		(pin "C1" (uuid "4abdcc1b-1655-46f4-bdac-2721be6415f7"))
 		(pin "A1" (uuid "2187af84-7646-4ff8-842a-dee6334a05ac"))
 		(pin "C2" (uuid "d7402d49-cdfc-4eb3-843b-274635a9a43d"))
-		(instances (project "sportwatch_revA" (path "/063f9d99-6c07-44cf-ba32-e33897e06972/24ba7fae-0267-4a43-a776-43c6f8c3d7fc" (reference "U404") (unit 1))))
+		(instances (project "sportwatch_revA" (path "/24ba7fae-0267-4a43-a776-43c6f8c3d7fc/5785c9cf-7659-498c-a1e0-cb3c3911e258" (reference "U404") (unit 1))))
 	)
 	(label "PPG1_LED_IR_DRV"
 		(at 309.84 105 180)
@@ -7492,7 +7492,7 @@
 		(property "Datasheet" "~" (at 320 115.16 0) (hide yes) (show_name no) (do_not_autoplace no) (effects (font (size 1.27 1.27))))
 		(property "Description" "Global ground" (at 320 115.16 0) (hide yes) (show_name no) (do_not_autoplace no) (effects (font (size 1.27 1.27))))
 		(pin "1" (uuid "e91f3f07-2843-44b4-b0e8-5ff404bf7943"))
-		(instances (project "sportwatch_revA" (path "/063f9d99-6c07-44cf-ba32-e33897e06972/24ba7fae-0267-4a43-a776-43c6f8c3d7fc" (reference "#PWR0442") (unit 1))))
+		(instances (project "sportwatch_revA" (path "/24ba7fae-0267-4a43-a776-43c6f8c3d7fc/ec5894e8-16bd-45b2-8da0-18fb2a71a1bf" (reference "#PWR0442") (unit 1))))
 	)
 	(symbol
 		(lib_id "sportwatch_custom:TS5A12301E")
@@ -7517,7 +7517,7 @@
 		(pin "C1" (uuid "10c84d64-d72b-42b7-97ed-bb04703b3039"))
 		(pin "A1" (uuid "63272e27-7c22-415e-8149-5ab117cf084c"))
 		(pin "C2" (uuid "72e91f3d-7731-4bc7-88b6-a8ac23b4316d"))
-		(instances (project "sportwatch_revA" (path "/063f9d99-6c07-44cf-ba32-e33897e06972/24ba7fae-0267-4a43-a776-43c6f8c3d7fc" (reference "U405") (unit 1))))
+		(instances (project "sportwatch_revA" (path "/24ba7fae-0267-4a43-a776-43c6f8c3d7fc/b3761432-6749-4159-933c-c29aa4da4095" (reference "U405") (unit 1))))
 	)
 	(label "PPG2_LED_GREEN_DRV"
 		(at 309.84 145 180)
@@ -7576,7 +7576,7 @@
 		(property "Datasheet" "~" (at 320 155.16 0) (hide yes) (show_name no) (do_not_autoplace no) (effects (font (size 1.27 1.27))))
 		(property "Description" "Global ground" (at 320 155.16 0) (hide yes) (show_name no) (do_not_autoplace no) (effects (font (size 1.27 1.27))))
 		(pin "1" (uuid "67a28939-525d-44e6-86d6-56dd2ca66119"))
-		(instances (project "sportwatch_revA" (path "/063f9d99-6c07-44cf-ba32-e33897e06972/24ba7fae-0267-4a43-a776-43c6f8c3d7fc" (reference "#PWR0443") (unit 1))))
+		(instances (project "sportwatch_revA" (path "/24ba7fae-0267-4a43-a776-43c6f8c3d7fc/76f0fc0a-8767-4897-8bef-0cfe3ae8847e" (reference "#PWR0443") (unit 1))))
 	)
 	(symbol
 		(lib_id "sportwatch_custom:TS5A12301E")
@@ -7601,7 +7601,7 @@
 		(pin "C1" (uuid "d1cdc369-1ff9-41c0-9afe-43ddc22a5af1"))
 		(pin "A1" (uuid "2091d563-2b29-4e11-a5f9-959290a0621a"))
 		(pin "C2" (uuid "7ecd1f14-1495-40bd-937f-b2c1734519a8"))
-		(instances (project "sportwatch_revA" (path "/063f9d99-6c07-44cf-ba32-e33897e06972/24ba7fae-0267-4a43-a776-43c6f8c3d7fc" (reference "U406") (unit 1))))
+		(instances (project "sportwatch_revA" (path "/24ba7fae-0267-4a43-a776-43c6f8c3d7fc/b7e656b7-7969-4ea6-961a-a3c34408a3a3" (reference "U406") (unit 1))))
 	)
 	(label "PPG2_LED_RED_DRV"
 		(at 309.84 170 180)
@@ -7660,7 +7660,7 @@
 		(property "Datasheet" "~" (at 320 180.16 0) (hide yes) (show_name no) (do_not_autoplace no) (effects (font (size 1.27 1.27))))
 		(property "Description" "Global ground" (at 320 180.16 0) (hide yes) (show_name no) (do_not_autoplace no) (effects (font (size 1.27 1.27))))
 		(pin "1" (uuid "5e4149f6-6db0-4967-b2c8-503c273bbca4"))
-		(instances (project "sportwatch_revA" (path "/063f9d99-6c07-44cf-ba32-e33897e06972/24ba7fae-0267-4a43-a776-43c6f8c3d7fc" (reference "#PWR0444") (unit 1))))
+		(instances (project "sportwatch_revA" (path "/24ba7fae-0267-4a43-a776-43c6f8c3d7fc/41a66f1c-5f19-4923-b036-c66a029bb530" (reference "#PWR0444") (unit 1))))
 	)
 	(symbol
 		(lib_id "sportwatch_custom:TS5A12301E")
@@ -7685,7 +7685,7 @@
 		(pin "C1" (uuid "8657be6f-722c-49c2-950e-f2c6ff4b1251"))
 		(pin "A1" (uuid "244a20c2-ef94-4114-b651-b4b9b75ee811"))
 		(pin "C2" (uuid "84afca74-1227-4401-90c7-8d27dae88f6b"))
-		(instances (project "sportwatch_revA" (path "/063f9d99-6c07-44cf-ba32-e33897e06972/24ba7fae-0267-4a43-a776-43c6f8c3d7fc" (reference "U407") (unit 1))))
+		(instances (project "sportwatch_revA" (path "/24ba7fae-0267-4a43-a776-43c6f8c3d7fc/80cfe80c-28f9-4dad-a484-0fd6731291c9" (reference "U407") (unit 1))))
 	)
 	(label "PPG2_LED_IR_DRV"
 		(at 309.84 195 180)
@@ -7744,7 +7744,7 @@
 		(property "Datasheet" "~" (at 320 205.16 0) (hide yes) (show_name no) (do_not_autoplace no) (effects (font (size 1.27 1.27))))
 		(property "Description" "Global ground" (at 320 205.16 0) (hide yes) (show_name no) (do_not_autoplace no) (effects (font (size 1.27 1.27))))
 		(pin "1" (uuid "632e32a3-b4cb-4b43-9b88-d8f77b0cfb03"))
-		(instances (project "sportwatch_revA" (path "/063f9d99-6c07-44cf-ba32-e33897e06972/24ba7fae-0267-4a43-a776-43c6f8c3d7fc" (reference "#PWR0445") (unit 1))))
+		(instances (project "sportwatch_revA" (path "/24ba7fae-0267-4a43-a776-43c6f8c3d7fc/78935c3f-398f-4689-9121-fe45b4313394" (reference "#PWR0445") (unit 1))))
 	)
 	(symbol
 		(lib_id "sportwatch_custom:SFH7018A")
@@ -7771,7 +7771,7 @@
 		(pin "6" (uuid "66e1921e-355a-4be1-bb9b-cf815b840ea5"))
 		(pin "7" (uuid "099138ed-fac5-4749-8c62-cf7b38ad8627"))
 		(pin "8" (uuid "f5c16b64-8a2b-4607-b864-087040dbaa47"))
-		(instances (project "sportwatch_revA" (path "/063f9d99-6c07-44cf-ba32-e33897e06972/24ba7fae-0267-4a43-a776-43c6f8c3d7fc" (reference "D403") (unit 1))))
+		(instances (project "sportwatch_revA" (path "/24ba7fae-0267-4a43-a776-43c6f8c3d7fc/29561b3d-cc6d-4f8f-a023-cbe93bb5aa0d" (reference "D403") (unit 1))))
 	)
 	(label "PPG1_LED4_GREEN_K"
 		(at 364.76 59.38 180)
@@ -7858,7 +7858,7 @@
 		(pin "6" (uuid "fdc83a65-5eb4-4de1-ab00-b8fbe0f12fe2"))
 		(pin "7" (uuid "a168b76b-72a0-4100-956e-d3a5492f22ee"))
 		(pin "8" (uuid "6684809c-2ba2-4aaf-8886-0af333f67622"))
-		(instances (project "sportwatch_revA" (path "/063f9d99-6c07-44cf-ba32-e33897e06972/24ba7fae-0267-4a43-a776-43c6f8c3d7fc" (reference "D404") (unit 1))))
+		(instances (project "sportwatch_revA" (path "/24ba7fae-0267-4a43-a776-43c6f8c3d7fc/034490c5-27bf-407f-9512-92bbe8719530" (reference "D404") (unit 1))))
 	)
 	(label "PPG2_LED4_GREEN_K"
 		(at 364.76 149.38 180)
@@ -7939,7 +7939,7 @@
 		(property "Description" "850nm-class IR emitter; 70mA DC rating; footprint TBD" (at 380 105 0) (hide yes) (show_name no) (do_not_autoplace no) (effects (font (size 1.27 1.27))))
 		(pin "1" (uuid "9202d41d-b3c3-4274-9d3a-1439b6f667d6"))
 		(pin "2" (uuid "8fe6169b-9000-48e0-8b48-e40bb533919d"))
-		(instances (project "sportwatch_revA" (path "/063f9d99-6c07-44cf-ba32-e33897e06972/24ba7fae-0267-4a43-a776-43c6f8c3d7fc" (reference "D405") (unit 1))))
+		(instances (project "sportwatch_revA" (path "/24ba7fae-0267-4a43-a776-43c6f8c3d7fc/8cc5760d-1d95-44ae-b12f-d419538c95b7" (reference "D405") (unit 1))))
 	)
 	(label "PPG1_LED3_IR850_K"
 		(at 372.38 105 180)
@@ -7976,7 +7976,7 @@
 		(property "Description" "850nm-class IR emitter; 70mA DC rating; footprint TBD" (at 380 122 0) (hide yes) (show_name no) (do_not_autoplace no) (effects (font (size 1.27 1.27))))
 		(pin "1" (uuid "79fb2f95-e124-49a4-a634-50e843a57b8a"))
 		(pin "2" (uuid "91a750f0-f637-4684-9998-6cec0f1125ce"))
-		(instances (project "sportwatch_revA" (path "/063f9d99-6c07-44cf-ba32-e33897e06972/24ba7fae-0267-4a43-a776-43c6f8c3d7fc" (reference "D406") (unit 1))))
+		(instances (project "sportwatch_revA" (path "/24ba7fae-0267-4a43-a776-43c6f8c3d7fc/b6d5f9da-38ba-45e9-b9ff-bdd9f7f43e39" (reference "D406") (unit 1))))
 	)
 	(label "PPG1_LED6_IR850_K"
 		(at 372.38 122 180)
@@ -8013,7 +8013,7 @@
 		(property "Description" "850nm-class IR emitter; 70mA DC rating; footprint TBD" (at 380 195 0) (hide yes) (show_name no) (do_not_autoplace no) (effects (font (size 1.27 1.27))))
 		(pin "1" (uuid "15a004bc-8c03-4ff1-abaf-d79730e21b45"))
 		(pin "2" (uuid "c482adb4-2abc-4540-80f4-435839ddbc41"))
-		(instances (project "sportwatch_revA" (path "/063f9d99-6c07-44cf-ba32-e33897e06972/24ba7fae-0267-4a43-a776-43c6f8c3d7fc" (reference "D407") (unit 1))))
+		(instances (project "sportwatch_revA" (path "/24ba7fae-0267-4a43-a776-43c6f8c3d7fc/4ddf10a9-4514-47ec-b80d-c961aeaa0fff" (reference "D407") (unit 1))))
 	)
 	(label "PPG2_LED3_IR850_K"
 		(at 372.38 195 180)
@@ -8050,7 +8050,7 @@
 		(property "Description" "Local mux supply decoupling" (at 350 48 0) (hide yes) (show_name no) (do_not_autoplace no) (effects (font (size 1.27 1.27))))
 		(pin "1" (uuid "b24cb7ab-eab3-49b6-9ea3-7bb71c19b673"))
 		(pin "2" (uuid "6a2d4888-7861-459c-bc93-132d59c500de"))
-		(instances (project "sportwatch_revA" (path "/063f9d99-6c07-44cf-ba32-e33897e06972/24ba7fae-0267-4a43-a776-43c6f8c3d7fc" (reference "C403") (unit 1))))
+		(instances (project "sportwatch_revA" (path "/24ba7fae-0267-4a43-a776-43c6f8c3d7fc/bfc5a5cd-2b41-4476-9ec2-30ce12af98a0" (reference "C403") (unit 1))))
 	)
 	(label "PPG_VLED"
 		(at 350 44.19 0)
@@ -8077,7 +8077,7 @@
 		(property "Datasheet" "~" (at 350 51.81 0) (hide yes) (show_name no) (do_not_autoplace no) (effects (font (size 1.27 1.27))))
 		(property "Description" "Global ground" (at 350 51.81 0) (hide yes) (show_name no) (do_not_autoplace no) (effects (font (size 1.27 1.27))))
 		(pin "1" (uuid "b4b8bb0f-7003-4698-ba4f-c05b9b85ee69"))
-		(instances (project "sportwatch_revA" (path "/063f9d99-6c07-44cf-ba32-e33897e06972/24ba7fae-0267-4a43-a776-43c6f8c3d7fc" (reference "#PWR0446") (unit 1))))
+		(instances (project "sportwatch_revA" (path "/24ba7fae-0267-4a43-a776-43c6f8c3d7fc/2d066509-9396-46a4-8cc8-87a65cbc6499" (reference "#PWR0446") (unit 1))))
 	)
 	(symbol
 		(lib_id "Device:C")
@@ -8098,7 +8098,7 @@
 		(property "Description" "Local mux supply decoupling" (at 350 73 0) (hide yes) (show_name no) (do_not_autoplace no) (effects (font (size 1.27 1.27))))
 		(pin "1" (uuid "1624fea7-1732-421d-bbb4-5b2ffa67e80e"))
 		(pin "2" (uuid "6b7e2bb6-8eda-4e35-82ed-164fd1fd6a5b"))
-		(instances (project "sportwatch_revA" (path "/063f9d99-6c07-44cf-ba32-e33897e06972/24ba7fae-0267-4a43-a776-43c6f8c3d7fc" (reference "C404") (unit 1))))
+		(instances (project "sportwatch_revA" (path "/24ba7fae-0267-4a43-a776-43c6f8c3d7fc/3d601fc4-e008-4576-b08a-103fce5f71ce" (reference "C404") (unit 1))))
 	)
 	(label "PPG_VLED"
 		(at 350 69.19 0)
@@ -8125,7 +8125,7 @@
 		(property "Datasheet" "~" (at 350 76.81 0) (hide yes) (show_name no) (do_not_autoplace no) (effects (font (size 1.27 1.27))))
 		(property "Description" "Global ground" (at 350 76.81 0) (hide yes) (show_name no) (do_not_autoplace no) (effects (font (size 1.27 1.27))))
 		(pin "1" (uuid "30a735dd-75e1-4db7-8c14-5f865537a40b"))
-		(instances (project "sportwatch_revA" (path "/063f9d99-6c07-44cf-ba32-e33897e06972/24ba7fae-0267-4a43-a776-43c6f8c3d7fc" (reference "#PWR0447") (unit 1))))
+		(instances (project "sportwatch_revA" (path "/24ba7fae-0267-4a43-a776-43c6f8c3d7fc/bdee0c01-8536-442c-8a83-8a58979f09e1" (reference "#PWR0447") (unit 1))))
 	)
 	(symbol
 		(lib_id "Device:C")
@@ -8146,7 +8146,7 @@
 		(property "Description" "Local mux supply decoupling" (at 350 98 0) (hide yes) (show_name no) (do_not_autoplace no) (effects (font (size 1.27 1.27))))
 		(pin "1" (uuid "c06b03e2-0ac3-413f-82b4-855935cb36f3"))
 		(pin "2" (uuid "9874dffd-d20b-47aa-8dec-34ee17970b83"))
-		(instances (project "sportwatch_revA" (path "/063f9d99-6c07-44cf-ba32-e33897e06972/24ba7fae-0267-4a43-a776-43c6f8c3d7fc" (reference "C405") (unit 1))))
+		(instances (project "sportwatch_revA" (path "/24ba7fae-0267-4a43-a776-43c6f8c3d7fc/8fbe3230-bfe9-4995-a27c-3e745609693b" (reference "C405") (unit 1))))
 	)
 	(label "PPG_VLED"
 		(at 350 94.19 0)
@@ -8173,7 +8173,7 @@
 		(property "Datasheet" "~" (at 350 101.81 0) (hide yes) (show_name no) (do_not_autoplace no) (effects (font (size 1.27 1.27))))
 		(property "Description" "Global ground" (at 350 101.81 0) (hide yes) (show_name no) (do_not_autoplace no) (effects (font (size 1.27 1.27))))
 		(pin "1" (uuid "80bf7e59-a4e4-4698-8150-bc970a459456"))
-		(instances (project "sportwatch_revA" (path "/063f9d99-6c07-44cf-ba32-e33897e06972/24ba7fae-0267-4a43-a776-43c6f8c3d7fc" (reference "#PWR0448") (unit 1))))
+		(instances (project "sportwatch_revA" (path "/24ba7fae-0267-4a43-a776-43c6f8c3d7fc/22f91de9-6f1b-473c-bcb1-bea664c005da" (reference "#PWR0448") (unit 1))))
 	)
 	(symbol
 		(lib_id "Device:C")
@@ -8194,7 +8194,7 @@
 		(property "Description" "Local mux supply decoupling" (at 350 138 0) (hide yes) (show_name no) (do_not_autoplace no) (effects (font (size 1.27 1.27))))
 		(pin "1" (uuid "5c96f575-938b-449d-a1aa-c03729791cf6"))
 		(pin "2" (uuid "e7ca9731-85b2-4582-87b2-7af274d6c5ae"))
-		(instances (project "sportwatch_revA" (path "/063f9d99-6c07-44cf-ba32-e33897e06972/24ba7fae-0267-4a43-a776-43c6f8c3d7fc" (reference "C406") (unit 1))))
+		(instances (project "sportwatch_revA" (path "/24ba7fae-0267-4a43-a776-43c6f8c3d7fc/e9924ce7-150f-4184-9c27-2b93b4b817d4" (reference "C406") (unit 1))))
 	)
 	(label "PPG_VLED"
 		(at 350 134.19 0)
@@ -8221,7 +8221,7 @@
 		(property "Datasheet" "~" (at 350 141.81 0) (hide yes) (show_name no) (do_not_autoplace no) (effects (font (size 1.27 1.27))))
 		(property "Description" "Global ground" (at 350 141.81 0) (hide yes) (show_name no) (do_not_autoplace no) (effects (font (size 1.27 1.27))))
 		(pin "1" (uuid "c66a9c5d-ad13-46ba-8595-cbc6da504ee2"))
-		(instances (project "sportwatch_revA" (path "/063f9d99-6c07-44cf-ba32-e33897e06972/24ba7fae-0267-4a43-a776-43c6f8c3d7fc" (reference "#PWR0449") (unit 1))))
+		(instances (project "sportwatch_revA" (path "/24ba7fae-0267-4a43-a776-43c6f8c3d7fc/336856e4-1945-451d-8a1d-c438e684fc8a" (reference "#PWR0449") (unit 1))))
 	)
 	(symbol
 		(lib_id "Device:C")
@@ -8242,7 +8242,7 @@
 		(property "Description" "Local mux supply decoupling" (at 350 163 0) (hide yes) (show_name no) (do_not_autoplace no) (effects (font (size 1.27 1.27))))
 		(pin "1" (uuid "e5ac7627-c9cd-4648-9563-75227d5670d9"))
 		(pin "2" (uuid "5b0855e3-0fef-4ec0-bd4c-bfdd918f6733"))
-		(instances (project "sportwatch_revA" (path "/063f9d99-6c07-44cf-ba32-e33897e06972/24ba7fae-0267-4a43-a776-43c6f8c3d7fc" (reference "C407") (unit 1))))
+		(instances (project "sportwatch_revA" (path "/24ba7fae-0267-4a43-a776-43c6f8c3d7fc/60f1dc50-ca3f-454d-9e1e-810e37ffc891" (reference "C407") (unit 1))))
 	)
 	(label "PPG_VLED"
 		(at 350 159.19 0)
@@ -8269,7 +8269,7 @@
 		(property "Datasheet" "~" (at 350 166.81 0) (hide yes) (show_name no) (do_not_autoplace no) (effects (font (size 1.27 1.27))))
 		(property "Description" "Global ground" (at 350 166.81 0) (hide yes) (show_name no) (do_not_autoplace no) (effects (font (size 1.27 1.27))))
 		(pin "1" (uuid "36fba2c3-3ea3-4920-a365-c426712e28d7"))
-		(instances (project "sportwatch_revA" (path "/063f9d99-6c07-44cf-ba32-e33897e06972/24ba7fae-0267-4a43-a776-43c6f8c3d7fc" (reference "#PWR0450") (unit 1))))
+		(instances (project "sportwatch_revA" (path "/24ba7fae-0267-4a43-a776-43c6f8c3d7fc/45e96a02-a6ac-49b0-bfcd-cae38ea51e78" (reference "#PWR0450") (unit 1))))
 	)
 	(symbol
 		(lib_id "Device:C")
@@ -8290,7 +8290,7 @@
 		(property "Description" "Local mux supply decoupling" (at 350 188 0) (hide yes) (show_name no) (do_not_autoplace no) (effects (font (size 1.27 1.27))))
 		(pin "1" (uuid "5a5afa62-be1b-45cf-aefa-ba0661d96dfe"))
 		(pin "2" (uuid "2849957b-9b96-4287-af43-c1088bf358da"))
-		(instances (project "sportwatch_revA" (path "/063f9d99-6c07-44cf-ba32-e33897e06972/24ba7fae-0267-4a43-a776-43c6f8c3d7fc" (reference "C408") (unit 1))))
+		(instances (project "sportwatch_revA" (path "/24ba7fae-0267-4a43-a776-43c6f8c3d7fc/a40405e3-d063-491c-bcb3-8e6bfb1fcf17" (reference "C408") (unit 1))))
 	)
 	(label "PPG_VLED"
 		(at 350 184.19 0)
@@ -8317,7 +8317,7 @@
 		(property "Datasheet" "~" (at 350 191.81 0) (hide yes) (show_name no) (do_not_autoplace no) (effects (font (size 1.27 1.27))))
 		(property "Description" "Global ground" (at 350 191.81 0) (hide yes) (show_name no) (do_not_autoplace no) (effects (font (size 1.27 1.27))))
 		(pin "1" (uuid "d0f6aade-c565-4ce6-bd44-6330102a8b1a"))
-		(instances (project "sportwatch_revA" (path "/063f9d99-6c07-44cf-ba32-e33897e06972/24ba7fae-0267-4a43-a776-43c6f8c3d7fc" (reference "#PWR0451") (unit 1))))
+		(instances (project "sportwatch_revA" (path "/24ba7fae-0267-4a43-a776-43c6f8c3d7fc/efea4356-0aba-44c2-b313-57d96100bd49" (reference "#PWR0451") (unit 1))))
 	)
 	(text "APPLE-INSPIRED 12-EMITTER PPG: 4x green, 4x red, 3x IR850, 1x IR940. Current Apple Ultra 4 exact emitter count is not publicly enumerated; this follows the documented Ultra/Ultra 2 wavelength mix within dual-MAX86141 12-LED capability."
 		(exclude_from_sim no)
@@ -8337,12 +8337,12 @@
 		(effects (font (size 0.65 0.65)) (justify left bottom))
 		(uuid "48f44e5b-cedc-4889-ba39-2472f79be1c1")
 	)
-	(symbol (lib_id "Device:R") (at 111.76 31.75 0) (unit 1) (uuid "f4336c15-8a77-5175-ba96-e6c76edeb545") (pin "1" (uuid "da6162ad-a913-5de7-95c3-4db6c3faef75")) (pin "2" (uuid "402699a6-9a87-5ff4-8376-40ac88ab8664")) (property "Reference" "R408" (at 114.046 30.48 0) (effects (font (size 1.27 1.27)) (justify left))) (instances (project "sportwatch_revA" (path "/063f9d99-6c07-44cf-ba32-e33897e06972/24ba7fae-0267-4a43-a776-43c6f8c3d7fc" (reference "R408") (unit 1))))
+	(symbol (lib_id "Device:R") (at 111.76 31.75 0) (unit 1) (uuid "f4336c15-8a77-5175-ba96-e6c76edeb545") (pin "1" (uuid "da6162ad-a913-5de7-95c3-4db6c3faef75")) (pin "2" (uuid "402699a6-9a87-5ff4-8376-40ac88ab8664")) (property "Reference" "R408" (at 114.046 30.48 0) (effects (font (size 1.27 1.27)) (justify left))) (instances (project "sportwatch_revA" (path "/24ba7fae-0267-4a43-a776-43c6f8c3d7fc/f4336c15-8a77-5175-ba96-e6c76edeb545" (reference "R408") (unit 1))))
 	(property "Value" "10k" (at 114.046 33.02 0) (effects (font (size 1.27 1.27)) (justify left)))
 	(property "Footprint" "Resistor_SMD:R_0402_1005Metric" (at 111.76 31.75 0) (effects (font (size 1.27 1.27)) (hide yes))))
 	(label "VOUT1_1V8" (at 111.76 27.94 90) (effects (font (size 1.27 1.27)) (justify left bottom)) (uuid "621ea4e5-9db2-5058-b127-428fc259295b"))
 	(label "PPG1_LED_MUX_SEL" (at 111.76 35.56 270) (effects (font (size 1.27 1.27)) (justify right bottom)) (uuid "58c54443-4fd4-5815-b9f7-adeba90142eb"))
-	(symbol (lib_id "Device:R") (at 129.54 31.75 0) (unit 1) (uuid "0af21589-f9e3-56c4-aaeb-f6859c8fd0bc") (pin "1" (uuid "f0f7619c-482e-5508-bfa7-426db7a4f6c9")) (pin "2" (uuid "d2d5736b-a710-5860-ba55-223068a40da3")) (property "Reference" "R409" (at 131.826 30.48 0) (effects (font (size 1.27 1.27)) (justify left))) (instances (project "sportwatch_revA" (path "/063f9d99-6c07-44cf-ba32-e33897e06972/24ba7fae-0267-4a43-a776-43c6f8c3d7fc" (reference "R409") (unit 1))))
+	(symbol (lib_id "Device:R") (at 129.54 31.75 0) (unit 1) (uuid "0af21589-f9e3-56c4-aaeb-f6859c8fd0bc") (pin "1" (uuid "f0f7619c-482e-5508-bfa7-426db7a4f6c9")) (pin "2" (uuid "d2d5736b-a710-5860-ba55-223068a40da3")) (property "Reference" "R409" (at 131.826 30.48 0) (effects (font (size 1.27 1.27)) (justify left))) (instances (project "sportwatch_revA" (path "/24ba7fae-0267-4a43-a776-43c6f8c3d7fc/0af21589-f9e3-56c4-aaeb-f6859c8fd0bc" (reference "R409") (unit 1))))
 	(property "Value" "10k" (at 131.826 33.02 0) (effects (font (size 1.27 1.27)) (justify left)))
 	(property "Footprint" "Resistor_SMD:R_0402_1005Metric" (at 129.54 31.75 0) (effects (font (size 1.27 1.27)) (hide yes))))
 	(label "VOUT1_1V8" (at 129.54 27.94 90) (effects (font (size 1.27 1.27)) (justify left bottom)) (uuid "c161ec48-6493-5441-9e28-f2e2927156ea"))
