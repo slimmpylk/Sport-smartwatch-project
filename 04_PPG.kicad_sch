@@ -3087,7 +3087,7 @@
 		)
 		(uuid "2467b679-9ec9-4a42-9cbc-94e5331f2a4d")
 	)
-	(label "PPG1_PD_GND"
+	(label "PPG2_PD_GND"
 		(at 290 79 0)
 		(effects
 			(font
@@ -3097,7 +3097,7 @@
 		)
 		(uuid "2b0460cf-a36b-4fe5-988b-4d350c054b81")
 	)
-	(label "PPG2_PD_GND"
+	(label "PPG1_PD_GND"
 		(at 290 169 0)
 		(effects
 			(font
@@ -3259,7 +3259,7 @@
 		)
 		(uuid "60bd2a1a-af68-4cbc-a18c-a5ca73e0f0f9")
 	)
-	(label "PPG2_PD2_IN"
+	(label "PPG1_PD1_IN"
 		(at 257 169 180)
 		(effects
 			(font
@@ -3480,7 +3480,7 @@
 		)
 		(uuid "b70175b3-6970-4b76-aade-45efa41ffd50")
 	)
-	(label "PPG1_PD1_IN"
+	(label "PPG2_PD2_IN"
 		(at 257 79 180)
 		(effects
 			(font

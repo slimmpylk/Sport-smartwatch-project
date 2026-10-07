@@ -6607,7 +6607,7 @@
 				)
 			)
 		)
-		(property "Value" "40MHz_CL8pF_ESR100R_1612"
+		(property "Value" "NX1612SA-40M-EXS00A-CS14264"
 			(at 176 162.7 0)
 			(show_name no)
 			(do_not_autoplace no)

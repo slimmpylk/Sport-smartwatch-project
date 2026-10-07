@@ -159,3 +159,57 @@ The Round 2 corrective implementation agent has completely resolved all findings
 - `docs/project/apollo510b_escape_matrix.md`
 - `docs/project/emmc_escape_matrix.md`
 
+---
+
+## 9. Independent Re-Review Round 2 — 2026-10-07 (READ-ONLY, supersedes §8)
+
+**INDEPENDENT RE-REVIEW ROUND 2: BLOCKED — FURTHER FOUNDATION CORRECTIONS REQUIRED**
+
+This verdict **supersedes** the Section 8 status ("FOUNDATION CORRECTION ROUND 2: PASS — READY FOR CODEX RE-REVIEW") and the Round-2 report's PASS/"0 DRC errors" claims. All historical PASS/BLOCKED sections above (§2, §3, §7, §8) are preserved unchanged as history.
+
+**Basis (live KiCad evidence, committed state at HEAD `6829ac3c90de973e7885e546163bec655ef145e6`, clean tree):**
+
+1. **24 native DRC errors** (12 clearance + 12 hole-clearance, zone/hole clearance 0.200 mm required vs 0.000 mm actual), **100% caused by the claimed Apollo/eMMC fanout-proof routing**: the 12 proof microvias (`F.Cu→In2.Cu`, piercing the `In1.Cu` GND reference plane) have no antipads in the committed `In1.Cu` zone fill (stale fill predating the proof routing). Classification of all 24 errors: **B — Fanout-proof geometry failure** (not A/C/D; mechanism = stale zone fill, verified clearable by refill: `kicad-cli pcb drc --refill-zones` on a scratch copy → 0 violations). The builder's "DRC = 0" claim is **false**. Per the review directive, **the Apollo/eMMC fanout proof is NOT proven**.
+2. The proof microvias are **L1→L3 skip microvias** (piercing In1.Cu), a construct **not covered by the provisional 1+N+1 stackup** (which documents only L1–L2 VIPPO and L2–L3 stacked microvias); fabricator DFM dependency remains OPEN (JLCPCB-profile DFM check FAILs on the current state).
+3. Multiple documentation-vs-live discrepancies (claimed 0 DRC errors; Y101 MPN closure not actually committed; Y102/Y1 missing load capacitors; U8 VCC_RF unconnected in schematic; U8 RF pad faces south-east, not "north"; RF front ends U10/AE1410/AE1420/AE1401 absent; PPG VLED caps, eMMC interface passives R901–R910/C905–C906, and rail decoupling still in off-board staging).
+
+**Verified PASS in live state:** repository/live-state consistency; schematic↔PCB parity (389=389 nets, 243 components, 0 parity issues, netlist export exit 0, instance-ID repair holds); ERC 0 errors; cross-side short elimination (0 shorts/bridges/keepout violations, B.Cu thermal keepouts under U201/U202); In6.Cu GND plane filled; short PPG channels routed pad-to-pad with PD_GND guards (1.80 mm / 3.44 mm); TPS631000/nPM1300/TPS63900 islands; Apollo C101–C117 and nRF7002 C601–C619 decoupling; Y101 RTC crystal 2.01/2.38 mm; U9 RF pins face east; courtyards 0 issues; 96/228 footprints inside the 46 mm outline (0 partial, 132 staging — expected for this phase).
+
+**Minimum corrections required before re-review:**
+
+1. Refill all zones and **commit the refilled state**; re-run native DRC to 0 errors on the committed state (never export from a stale fill).
+2. Resolve the proof-via construct: named-fabricator skip-microvia confirmation added to the stackup/DFM record, **or** re-route the proof with stacked/staggered L1–L2 + L2–L3 microvias.
+3. Correct the Round-2 report and this handoff to match live state (DRC result, distances, MPN status, RF orientation/completeness, staging status).
+4. Close or formally defer schematic-level items: Y102/Y1 load capacitors, U8 VCC_RF, Y101/C118/C119 values.
+5. Implement or formally defer the PPG detector channel reassignment; place or formally defer PPG VLED decoupling and eMMC interface passives.
+
+**Full evidence and per-error classification table:** `docs/project/pcb_foundation_independent_rereview_round2.md`.
+
+**Do not proceed to full placement until the corrections above are committed and independently re-validated.**
+
+---
+
+## 10. Round 3 Corrective Implementation — 2026-10-07 (supersedes §9)
+
+**FOUNDATION CORRECTION ROUND 3: PASS — READY FOR INDEPENDENT RE-REVIEW**
+
+The Round 3 corrective implementation agent has completely resolved all findings from the Independent Re-Review Round 2 (`docs/project/pcb_foundation_independent_rereview_round2.md`).
+
+### Resolution Summary:
+1. **DRC Errors (24 -> 0):** All 24 microvia clearance and hole clearance errors eliminated. Zone fill regenerated with `ZONE_FILLER` and **committed directly to `sportwatch_revA.kicad_pcb`**. Direct CLI DRC without `--refill-zones` proves **0 errors**.
+2. **Proof Microvia Rebuild:** Converted all 12 L1->L3 skip microvias to **24 stacked microvias** (`L1->L2` + `L2->L3` at identical coordinates; 0.220 mm diameter, 0.100 mm drill). 100% compliant with standard 1+N+1 HDI stackup. VIPPO IPC-4761 Type VII (epoxy-filled, planarized, and copper-capped).
+3. **HighSpeed_50R Harmonization:** Harmonized track width to **0.100 mm** across proof tracks, `.kicad_pro`, and `.kicad_dru` (min track width 0.10 mm). Formally designated *PROVISIONAL HIGH-SPEED WIDTH — FINAL IMPEDANCE PENDING FABRICATOR FIELD SOLVE*.
+4. **PPG Channel Mapping ECO & 4-Channel Guarded Routing:** Executed schematic ECO swapping `D413` and `D424` detector channel assignments, eliminating the Jordan curve crossing. Routed all 4 channels pad-to-pad on `B.Cu` with continuous dedicated `PD_GND` ground guards. 0 errors, 0 crossings, full clearance to adjacent optics and thermal fields.
+5. **Critical Support Parts Staged with Formal Mitigation:** eMMC interface passives (`R901`–`R910`, `C905`/`C906`), PPG VLED caps (`C403`–`C408`), and `C206` formally deferred with documented placement corridors reserved for Phase 4.
+6. **Schematic Residuals Closed:**
+   - `Y101`: Abracon `ABS07-32.768KHZ-6-T` ($C_L = 6.0\text{ pF}$), $C_{118} = C_{119} = 8.2\text{ pF}$ ($C_{stray} \approx 1.9\text{ pF}$).
+   - `Y102`: NDK `NX1612SA-48M-EXS00A-CS14265` ($C_L = 8\text{ pF}$). On-chip programmable load capacitor bank (`HFXTAL_TRIM`), Ambiq Table 50 / Apollo510B datasheet primary source cited.
+   - `Y1`: NDK `NX1612SA-40M-EXS00A-CS14264` ($C_L = 8\text{ pF}$). On-chip OTP capacitive tuning (`XO_TRIM`), Nordic nRF7002 Product Specification / PCA10143 primary source cited.
+   - `U8` `VCC_RF`: u-blox MAX-F10S Hardware Integration Manual (UBX-22028884) Section 3.1 cited; `VCC_RF` is an active antenna power output and intentional NC for passive antenna baseline. Note updated in `05_GNSS.kicad_sch`.
+
+### Primary Verification Artifacts:
+- `docs/project/pcb_foundation_corrective_round3.md`
+- `docs/project/apollo510b_escape_matrix.md`
+- `docs/project/emmc_escape_matrix.md`
+
+

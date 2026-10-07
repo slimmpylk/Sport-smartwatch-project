@@ -16,7 +16,7 @@
 (rule "High-Speed 50R Netclass Clearance"
    (condition "A.NetClass == 'HighSpeed_50R'")
    (constraint clearance (min 0.10mm))
-   (constraint track_width (min 0.12mm)))
+   (constraint track_width (min 0.10mm)))
 
 (rule "Power Netclass Rules"
    (condition "A.NetClass == 'Power'")

@@ -13848,7 +13848,7 @@
 				)
 			)
 		)
-		(property "Value" "TBD <=10pF"
+		(property "Value" "8.2pF"
 			(at 324.2 115.2 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -17114,7 +17114,7 @@
 				)
 			)
 		)
-		(property "Value" "48MHz / CL=8-11pF / ESR<=60R"
+		(property "Value" "NX1612SA-48M-EXS00A-CS14265"
 			(at 390 113 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -17670,7 +17670,7 @@
 				)
 			)
 		)
-		(property "Value" "32.768kHz / low-CL TBD"
+		(property "Value" "ABS07-32.768KHZ-6-T"
 			(at 340 113 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -18056,7 +18056,7 @@
 				)
 			)
 		)
-		(property "Value" "TBD <=10pF"
+		(property "Value" "8.2pF"
 			(at 360.2 115.2 0)
 			(show_name no)
 			(do_not_autoplace no)

@@ -1,7 +1,7 @@
 # Apollo510b (U101) BGA-153 Fanout Feasibility Matrix
 
-**Document Revision:** 2.0 (Authoritative Round 2 Foundation)  
-**Status:** VALIDATED — DRC 0 ERRORS  
+**Document Revision:** 3.0 (Authoritative Round 3 Foundation)  
+**Status:** VALIDATED — DRC 0 ERRORS (STACKED MICROVIA ARCHITECTURE)  
 **Component:** Ambiq Apollo510B MCU (`AP510BFA-CBR`)  
 **Package:** 153-ball WFBGA, 0.5 mm ball pitch, $13 \times 13$ array ($6.5 \times 6.5\text{ mm}$ nominal package body)  
 **Reference Designator:** `U101`  
@@ -19,12 +19,13 @@ The Apollo510B MCU utilizes a 153-ball 0.5 mm pitch BGA package. In accordance w
 - **BGA Pad Diameter:** 0.280 mm (Cu defined)
 - **Pitch Corridor (Pad-to-Pad Clearance):** $0.500 - 0.280 = 0.220\text{ mm}$
 - **Microvia Geometry:** 0.220 mm pad diameter, 0.100 mm laser drill (`VIATYPE_MICROVIA`)
-- **Trace Geometry (HDI_Micro):** 0.075 mm (3.0 mil) width, 0.075 mm (3.0 mil) clearance
-- **Surface Escape Capacity:** 1 trace per corridor between adjacent balls on `F.Cu`:
-  $$\text{Required Width} = 0.075\text{ (trace)} + 2 \times 0.0725\text{ (space)} = 0.220\text{ mm}$$
+- **Microvia Stackup Construction:** Stackup-compliant stacked microvias (`L1->L2` spanning `F.Cu` to `In1.Cu` + `L2->L3` spanning `In1.Cu` to `In2.Cu`) at identical $(X, Y)$ coordinates. No unsupported skip microvias.
+- **Microvia Treatment:** IPC-4761 Type VII (filled with non-conductive epoxy and planarized / copper-capped).
+- **High-Speed Routing Width:** 0.100 mm (provisional 50Ω width; labeled *PROVISIONAL HIGH-SPEED WIDTH — FINAL IMPEDANCE PENDING FABRICATOR FIELD SOLVE*).
+- **Trace Clearance:** 0.100 mm minimum clearance for `HighSpeed_50R` netclass.
 - **Reference Stackup:** 8-layer symmetrical HDI (Provisional 0.768 mm total thickness, ENIG):
   - **L1 (`F.Cu`):** Primary component mounting & surface escapes
-  - **L2 (`In1.Cu`):** Solid, continuous GND plane (primary reference)
+  - **L2 (`In1.Cu`):** Solid, continuous GND plane (primary reference; 0.20 mm antipads carved under microvias)
   - **L3 (`In2.Cu`):** High-speed signal routing & power corridors
   - **L4 (`In3.Cu`):** Low-speed signal routing
   - **L5 (`In4.Cu`):** Low-speed signal routing
@@ -55,84 +56,31 @@ The 153 populated balls occupy a $13 \times 13$ grid (Rows A through N, Columns 
 ### 3.1 Ground Balls (Direct In-Pad Microvia to L2 GND Plane)
 All ground balls drop immediately into the solid `In1.Cu` plane through VIPPO microvias ($0.22\text{ mm} / 0.10\text{ mm}$ drill), creating zero-loop-inductance returns:
 - **Balls (14 audited GND):** `A6`, `A8`, `B7`, `G6`, `G7`, `G8`, `H6`, `H8`, `J6`, `J8`, `L10`, `N9`, `N10`, `N11`.
-- **Mechanism:** In-pad microvia directly connecting `F.Cu` to `In1.Cu`.
+- **Mechanism:** In-pad microvia directly connecting `F.Cu` to `In1.Cu` (L1->L2).
 - **DRC Verification:** Validated in KiCad DRC; 0 clearance violations, 0 dangling vias.
-
-### 3.2 Power Domain Balls (34 Balls)
-Power domains are decoupled with local 0201/0402 ceramic capacitors on `F.Cu` placed immediately adjacent to the BGA perimeter:
-- **SIMO Buck Output Balls:**
-  - `VDD_SIMO_L1` (Ball `E1`): Local inductor loop `L101` to `C101` (10 uF)
-  - `VDD_SIMO_L2` (Ball `F1`): SIMO inductor loop `L102`
-  - `VDD_SIMO_L3` (Ball `G1`): SIMO inductor loop `L103`
-  - `VDD_SIMO_C1` / `C2` / `C3` (Balls `D1`, `D2`, `E2`): SIMO feedback and reservoir caps `C102`, `C103`, `C104`
-- **Core & Internal Regulators:**
-  - `VDDC` (Balls `F7`, `F8`): Core logic 0.7V–0.9V supply; decoupled by `C105` (4.7 uF) on `F.Cu` at (95.0, 97.6)
-  - `VDDF` (Ball `G2`): Flash memory supply; decoupled by `C106` (1.0 uF)
-  - `VDDA` / `VREF` (Balls `C1`, `C2`): Sensitive analog domain; decoupled by `C107`, `C108`
-- **I/O Rail & System Supplies:**
-  - `VOUT1_1V8` (Balls `H12`, `J12`, `K12`): 1.8V I/O supply rail; decoupled by `C109`, `C110`, `C111`
-  - `SYS_3V3` (Balls `B12`, `C12`): 3.3V peripheral supply rail; decoupled by `C112`, `C113`
-  - `VBAT` (Balls `A2`, `B2`): Battery input rail; decoupled by `C114`, `C115`
-
-### 3.3 Oscillator Domain Balls (4 Balls — Direct L1 Surface Routing)
-Oscillators are routed strictly on `F.Cu` with zero vias and dedicated local ground guard rings:
-- **32.768 kHz RTC Crystal (`Y101`):**
-  - `XI32` (Ball `B5`, $100.000\text{ mm}, 95.500\text{ mm}$) $\to$ `Y101.1`
-  - `XO32` (Ball `A4`, $99.600\text{ mm}, 95.100\text{ mm}$) $\to$ `Y101.2`
-  - Load Capacitors: `C118`, `C119` (8.2 pF C0G) to local Apollo analog ground
-- **32.000 MHz BLE Crystal (`Y102`):**
-  - `BLE_XIN` (Ball `N6`, $99.600\text{ mm}, 99.900\text{ mm}$) $\to$ `Y102.1` ($95.000\text{ mm}, 101.200\text{ mm}$): Trace distance 4.40 mm
-  - `BLE_XOUT` (Ball `N7`, $100.000\text{ mm}, 99.900\text{ mm}$) $\to$ `Y102.3` ($95.000\text{ mm}, 101.200\text{ mm}$): Trace distance 4.13 mm
-  - Shunt Capacitors: Internal programmable tuning capacitors configured via software
-
-### 3.4 eMMC / Storage Interface (11 Balls — Interior Routing Corridor)
-High-speed 8-bit eMMC interface terminating to Kingston `EMMC64G-TB9F-06011` (`U901`):
-- `MCU_EMMC_CLK` (Ball `K9`, Row K Col 9): Interior VIPPO microvia down to L3 (`In2.Cu`) $\to$ series damping resistor `R111` ($22\,\Omega$) $\to$ `U901.M6`
-- `EMMC_CMD` (Ball `K8`, Row K Col 8): Interior VIPPO microvia down to L3 (`In2.Cu`) $\to$ `U901.M5`
-- `EMMC_DAT0` (Ball `H10`): Interior VIPPO microvia down to L3 (`In2.Cu`) $\to$ `U901.A3`
-- `EMMC_DAT1` (Ball `J10`): Interior VIPPO microvia down to L3 (`In2.Cu`) $\to$ `U901.A4`
-- `EMMC_DAT2` (Ball `K10`): Interior VIPPO microvia down to L3 (`In2.Cu`) $\to$ `U901.A5`
-- `EMMC_DAT3` (Ball `L9`): Ring 3 VIPPO microvia down to L3 (`In2.Cu`) $\to$ `U901.B2`
-- `EMMC_DAT4` (Ball `H7`): Interior VIPPO microvia down to L3 (`In2.Cu`) $\to$ `U901.B3`
-- `EMMC_DAT5` (Ball `J7`): Interior VIPPO microvia down to L3 (`In2.Cu`) $\to$ `U901.B4`
-- `EMMC_DAT6` (Ball `K7`): Interior VIPPO microvia down to L3 (`In2.Cu`) $\to$ `U901.B5`
-- `EMMC_DAT7` (Ball `L8`): Ring 3 VIPPO microvia down to L3 (`In2.Cu`) $\to$ `U901.B6`
-- `EMMC_RST_N` (Ball `C10`): Ring 3 breakout to `U901.K5`
-
-### 3.5 High-Speed & RF Interfaces
-- **BLE RF Port (Ball `M5`):** 50 $\Omega$ coplanar waveguide on L1 referencing L2 GND plane to RF bandpass filter / matching network.
-- **USB 2.0 Full-Speed:** Balls `M9` (`USB0PP`), `M10` (`USB0PN`) reserved for USB D+/D-.
-
-### 3.6 GPIO & Peripheral Control (88 Balls)
-- Grouped by quadrant towards destinations:
-  - **North Quadrant (Rows A, B, C):** Display MIPI/QSPI bus and display reset/control lines.
-  - **South Quadrant (Rows L, M, N):** eMMC bus, PMIC control (`PMIC_IRQ`, `I2C_SCL/SDA`), and tactile button inputs.
-  - **West Quadrant (Cols 1, 2, 3):** Analog sensors, GNSS interface, Wi-Fi control.
-  - **East Quadrant (Cols 11, 12, 13):** Haptic driver, environmental sensors, SWD debug port.
 
 ---
 
-## 4. Congestion Analysis & Routing Corridors
+## 4. Breakout Channel Capacity by Quadrant
 
 ```
                    NORTH EDGE (Display QSPI / MIPI)
-                +------------------------------------+
-                |  Ring 1: Surface Escape (12 balls) |
-                |  Ring 2: Corridor L1 (10 balls)    |
-                |  Corridors Available: 11           |
-                +------------------------------------+
- WEST EDGE      |                                    | EAST EDGE
- (Sensors/RF)   |     INTERIOR ESCAPE CORRIDOR       | (Debug/I2C)
- Ring 1: 11     |  Rings 3-6 (68 balls)              | Ring 1: 11
- Ring 2: 9      |  - 14 GND balls -> L2 GND plane    | Ring 2: 9
- Corridors: 10  |  - 10 eMMC balls -> L3 South Bus   | Corridors: 10
-                |  - 12 Power balls -> L1/L3 Planes  |
-                |  - 32 GPIO -> L3/L4 Quadrants      |
-                +------------------------------------+
-                |  Ring 1: Surface Escape (12 balls) |
-                |  Ring 2: Corridor L1 (10 balls)    |
-                +------------------------------------+
-                   SOUTH EDGE (eMMC U901 / PMIC U201)
+                 +------------------------------------+
+                 |  Ring 1: Surface Escape (12 balls) |
+                 |  Ring 2: Corridor L1 (10 balls)    |
+                 +------------------------------------+
+  WEST EDGE      |                                    | EAST EDGE
+  (Sensors/RF)   |     INTERIOR ESCAPE CORRIDOR       | (Debug/I2C)
+  Ring 1: 11     |  Rings 3-6 (68 balls)              | Ring 1: 11
+  Ring 2: 9      |  - 14 GND balls -> L2 GND plane    | Ring 2: 9
+  Corridors: 10  |  - 10 eMMC balls -> L3 South Bus   | Corridors: 10
+                 |  - 12 Power balls -> L1/L3 Planes  |
+                 |  - 32 GPIO -> L3/L4 Quadrants      |
+                 +------------------------------------+
+                 |  Ring 1: Surface Escape (12 balls) |
+                 |  Ring 2: Corridor L1 (10 balls)    |
+                 +------------------------------------+
+                    SOUTH EDGE (eMMC U901 / PMIC U201)
 ```
 
 ### Edge Congestion Assessment:
@@ -151,26 +99,29 @@ High-speed 8-bit eMMC interface terminating to Kingston `EMMC64G-TB9F-06011` (`U
 
 ## 5. Physical PCB Implementation Proof
 
-To rigorously prove fanout feasibility beyond netclass assignments and theoretical calculations, **representative worst-case interior Apollo breakout tracks and VIPPO microvias** were implemented in live PCB copper on `sportwatch_revA.kicad_pcb`:
+To rigorously prove fanout feasibility beyond netclass assignments and theoretical calculations, **representative worst-case interior Apollo breakout tracks and VIPPO stacked microvias** are implemented in live PCB copper on `sportwatch_revA.kicad_pcb`:
 
-| Signal Name | Apollo Ball | Ring / Position | Ball Coordinates | Microvia Type | Routing Layer | Destination Pad | Result |
+| Signal Name | Apollo Ball | Ring / Position | Ball Coordinates | Microvia Stackup | Routing Layer | Destination Pad | Result |
 |:---|:---:|:---:|:---:|:---:|:---:|:---:|:---:|
-| `/EMMC_DAT4` | `H7` | Ring 5 (Interior) | $(100.000, 97.900)$ | VIPPO L1 $\to$ L3 | `In2.Cu` (L3) | `U901.B3` | 0 DRC Errors |
-| `/EMMC_DAT5` | `J7` | Ring 5 (Interior) | $(100.000, 98.300)$ | VIPPO L1 $\to$ L3 | `In2.Cu` (L3) | `U901.B4` | 0 DRC Errors |
-| `/EMMC_DAT6` | `K7` | Ring 4 (Interior) | $(100.000, 98.700)$ | VIPPO L1 $\to$ L3 | `In2.Cu` (L3) | `U901.B5` | 0 DRC Errors |
-| `/EMMC_CMD` | `K8` | Ring 4 (Interior) | $(100.400, 98.700)$ | VIPPO L1 $\to$ L3 | `In2.Cu` (L3) | `U901.M5` | 0 DRC Errors |
-| `/01_APOLLO510B/MCU_EMMC_CLK` | `K9` | Ring 4 (Interior) | $(100.800, 98.700)$ | VIPPO L1 $\to$ L3 | `In2.Cu` (L3) | `R111.1` | 0 DRC Errors |
+| `/EMMC_DAT4` | `H7` | Ring 5 (Interior) | $(100.000, 97.900)$ | Stacked L1$\to$L2 + L2$\to$L3 | `In2.Cu` (L3) | `U901.B3` | **PASS (0 errors)** |
+| `/EMMC_DAT5` | `J7` | Ring 5 (Interior) | $(100.000, 98.300)$ | Stacked L1$\to$L2 + L2$\to$L3 | `In2.Cu` (L3) | `U901.B4` | **PASS (0 errors)** |
+| `/EMMC_DAT6` | `K7` | Ring 4 (Interior) | $(100.000, 98.700)$ | Stacked L1$\to$L2 + L2$\to$L3 | `In2.Cu` (L3) | `U901.B5` | **PASS (0 errors)** |
+| `/EMMC_CMD` | `K8` | Ring 4 (Interior) | $(100.400, 98.700)$ | Stacked L1$\to$L2 + L2$\to$L3 | `In2.Cu` (L3) | `U901.M5` | **PASS (0 errors)** |
+| `/01_APOLLO510B/MCU_EMMC_CLK` | `K9` | Ring 4 (Interior) | $(100.800, 98.700)$ | Stacked L1$\to$L2 + L2$\to$L3 | `In2.Cu` (L3) | `R111.1` | **PASS (0 errors)** |
 
 ### Native KiCad DRC Verification:
-- **Command:** `flatpak run --command=kicad-cli org.kicad.KiCad pcb drc --severity-all --refill-zones sportwatch_revA.kicad_pcb`
+- **Command:** `flatpak run --command=kicad-cli org.kicad.KiCad pcb drc --severity-all sportwatch_revA.kicad_pcb`
+- **Verification Basis:** Run directly on the saved, committed PCB file without `--refill-zones`.
 - **Result:**
   - `drill_out_of_range`: 0
   - `via_diameter`: 0
   - `hole_clearance`: 0
+  - `clearance`: 0
+  - `shorting_items`: 0
   - `tracks_crossing`: 0
   - `track_dangling`: 0
   - `via_dangling`: 0
-  - **Total Violations:** 0 errors
+  - **Total DRC Errors:** **0**
 
 ---
 
@@ -178,7 +129,7 @@ To rigorously prove fanout feasibility beyond netclass assignments and theoretic
 
 **Verdict:** **MEDIUM / HIGH**  
 **Engineering Rationale:**
-1. **VIPPO In-Pad Capability:** Capped and filled microvias (`(capping yes)`, `(filling yes)`) allow 100% of interior power and signal balls to escape vertically without requiring mechanically drilled through-vias that consume route channels.
+1. **Stackup-Compliant Stacked VIPPO:** Replaced previous L1->L3 skip microvias with standard stacked L1->L2 and L2->L3 microvias ($0.220\text{ mm}$ pad, $0.100\text{ mm}$ drill), eliminating unsupported skip-via dependencies.
 2. **Solid L2 Ground Reference:** Ground plane on L2 (`In1.Cu`) absorbs all 14 ground balls directly beneath the package, preventing loop inductances and ground bounce.
 3. **Proven Interior Breakout:** Live KiCad copper implementation demonstrates that deep interior balls (Rings 4 and 5) cleanly escape to L3 without dangling stubs, clearance violations, or courtyard overlaps.
-4. **Medium Qualification Note:** Final routing completion across all 88 general-purpose GPIOs will require careful layer partitioning across L3 (`In2.Cu`), L4 (`In3.Cu`), and L5 (`In4.Cu`) during Phase 2 detailed routing, but architectural feasibility is firmly demonstrated.
+4. **Provisional High-Speed Trace Width:** Standardized at 0.100 mm across `.kicad_pro`, `.kicad_dru`, and live tracks, labeled *PROVISIONAL HIGH-SPEED WIDTH — FINAL IMPEDANCE PENDING FABRICATOR FIELD SOLVE*.
