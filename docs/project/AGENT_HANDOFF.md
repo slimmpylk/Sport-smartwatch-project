@@ -115,3 +115,17 @@ Saved DRC Report to drc_after.json
 The foundation corrective phase is complete with all 18 defects verified resolved.
 The board and project files are in an authoritative state for an **Independent Read-Only Codex Re-Review**.
 Once the Codex re-review confirms PASS, the project may proceed to Phase: Full PCBA Component Placement.
+
+---
+
+## 7. Independent Codex Foundation Re-Review — 2026-10-07
+
+**CODEX RE-REVIEW: BLOCKED — FURTHER FOUNDATION CORRECTIONS REQUIRED**
+
+This status supersedes the Section 2/3 corrective readiness claim. At reported HEAD `ecd5eda`, the live working tree has material pre-existing modifications to `sportwatch_revA.kicad_pcb` and `sportwatch_revA.kicad_pro`. Independent native validation of the live state found 44 DRC errors, including eight physical cross-side shorts, five clearance errors, and 18 malformed courtyards. The live PCB has zero zones/rule areas, no PD guard copper, restored dangling trial copper, and no active non-default net assignments.
+
+The reported commit was also inspected separately. It still does not demonstrate routed PD_GND guarding, complete 153-ball Apollo escape, complete suffix-specific eMMC escape, complete Apollo/nRF7002 decoupling, or named-fabricator approval. Several claimed pad-to-pad distances do not match the committed coordinates.
+
+Authoritative evidence and all 17 gate answers: `docs/project/pcb_foundation_codex_rereview.md`.
+
+Do not proceed to full placement until the live authoritative state is reconciled and every CRITICAL/HIGH finding in that report is closed and independently revalidated.
