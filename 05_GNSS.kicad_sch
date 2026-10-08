@@ -621,7 +621,7 @@
 		)
 		(uuid "0f35b217-3162-4267-a67a-72f429e62d31")
 	)
-	(text "SDA/SCL and SAFEBOOT_N are NC because UART is primary host. Per u-blox MAX-F10S Hardware Integration Manual (UBX-22028884) Section 3.1: VCC_RF is a filtered VCC power output for active antenna/external LNA bias. For passive antennas (AE1420 baseline), VCC_RF and LNA_EN are intentionally unconnected (NC)."
+	(text "SDA/SCL and SAFEBOOT_N are NC because UART is primary host. Per u-blox MAX-F10S Integration Manual (UBXDOC-963802114-12892 R01) Section 3.2.3.4 p. 26 and pin table p. 7: VCC_RF is an output for optional active antenna/external LNA bias. For passive antennas (AE1420 baseline), VCC_RF and LNA_EN are intentionally unconnected (NC). Note: RF_IN pad 11 is on the south-east side facing south toward matching network."
 		(exclude_from_sim no)
 		(at 24 176 0)
 		(effects

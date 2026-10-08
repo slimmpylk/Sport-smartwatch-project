@@ -5024,10 +5024,10 @@
 	(footprint "Crystal:Crystal_SMD_2012-2Pin_2.0x1.2mm"
 		(layer "F.Cu")
 		(uuid "11efdbda-410c-4e05-8308-ae51563e0481")
-		(at 99 93.3)
+		(at 99 93.3 180)
 		(descr "2012/2, Crystal, 2.0x1.2mm package, SMD, http://txccrystal.com/images/pdf/9ht11.pdf")
 		(property "Reference" "Y101"
-			(at 0 -1.8 0)
+			(at 0 -1.8 180)
 			(layer "F.SilkS")
 			(uuid "b51613c9-d275-48ea-87f3-4eee5b840fb0")
 			(effects
@@ -5037,8 +5037,8 @@
 				)
 			)
 		)
-		(property "Value" "32.768kHz / low-CL TBD"
-			(at 0 1.8 0)
+		(property "Value" "ABS06-32.768KHZ-6-1-T"
+			(at 0 1.8 180)
 			(layer "F.Fab")
 			(uuid "f4b142fc-59ea-4d63-9315-b7b21772e80f")
 			(effects
@@ -5059,7 +5059,7 @@
 				)
 			)
 		)
-		(property "Description" "32.768kHz RTC crystal; choose CL compatible with <=10pF external cap per pin"
+		(property "Description" "32.768kHz RTC crystal; 6pF CL, 90k ESR, 2012 package compatible with Apollo510B"
 			(at 0 0 0)
 			(layer "F.Fab")
 			(hide yes)
@@ -10780,7 +10780,7 @@
 				)
 			)
 		)
-		(property "Value" "40MHz_CL8pF_ESR100R_1612"
+		(property "Value" "NX1612SA-40M-EXS00A-CS14264"
 			(at 0 1.6 0)
 			(layer "F.Fab")
 			(uuid "9c0ac311-4865-4895-8e6d-39cafdb902fa")
@@ -20332,7 +20332,7 @@
 				)
 			)
 		)
-		(property "Value" "48MHz / CL=8-11pF / ESR<=60R"
+		(property "Value" "NX1612SA-48M-EXS00A-CS14265"
 			(at 0 1.6 270)
 			(layer "F.Fab")
 			(uuid "34d61a64-442f-4813-bbc7-3c812cab1e09")
@@ -44288,11 +44288,11 @@
 	(footprint "Capacitor_SMD:C_0201_0603Metric"
 		(layer "F.Cu")
 		(uuid "f279fdea-480b-4ef4-b22f-7e4cf93280d8")
-		(at 101.6 93.3)
+		(at 96.4 93.3 180)
 		(descr "Capacitor SMD 0201 (0603 Metric), square (rectangular) end terminal, IPC-7351 nominal, (Body size source: https://www.vishay.com/docs/20052/crcw0201e3.pdf)")
 		(tags "capacitor")
 		(property "Reference" "C119"
-			(at 0 -1.05 0)
+			(at 0 -1.05 180)
 			(layer "F.SilkS")
 			(uuid "9abbb971-09b7-4479-9c5f-b341ca25a89c")
 			(effects
@@ -44302,8 +44302,8 @@
 				)
 			)
 		)
-		(property "Value" "TBD <=10pF"
-			(at 0 1.05 0)
+		(property "Value" "8.2pF"
+			(at 0 1.05 180)
 			(layer "F.Fab")
 			(uuid "988ee68b-dfac-477c-b0fd-28b921ff168f")
 			(effects
@@ -44592,7 +44592,7 @@
 	(footprint "Capacitor_SMD:C_0201_0603Metric"
 		(layer "F.Cu")
 		(uuid "f714905b-33f7-4c18-b1b9-d2345d6d8d83")
-		(at 96.4 93.3)
+		(at 101.6 93.3)
 		(descr "Capacitor SMD 0201 (0603 Metric), square (rectangular) end terminal, IPC-7351 nominal, (Body size source: https://www.vishay.com/docs/20052/crcw0201e3.pdf)")
 		(tags "capacitor")
 		(property "Reference" "C118"
@@ -44606,7 +44606,7 @@
 				)
 			)
 		)
-		(property "Value" "TBD <=10pF"
+		(property "Value" "8.2pF"
 			(at 0 1.05 0)
 			(layer "F.Fab")
 			(uuid "1616cef7-2757-4c96-9f17-730cccba349b")
@@ -51085,6 +51085,38 @@
 		(layer "B.Cu")
 		(net "/04_PPG/PPG2_PD1_IN")
 		(uuid "dbe0b634-d832-4e57-afaf-38723c116177")
+	)
+	(segment
+		(start 102.3 108.5)
+		(end 102.7 108.5)
+		(width 0.1)
+		(layer "B.Cu")
+		(net "GND")
+		(uuid "a417df85-48b2-4d1a-8219-5d6480b1e421")
+	)
+	(via micro
+		(at 102.7 108.5)
+		(size 0.22)
+		(drill 0.1)
+		(layers "In6.Cu" "B.Cu")
+		(net "GND")
+		(uuid "d718a24c-b715-46f9-8d19-32863ef50124")
+	)
+	(segment
+		(start 92.4 94.5)
+		(end 92.7 94.5)
+		(width 0.1)
+		(layer "B.Cu")
+		(net "GND")
+		(uuid "e629b357-19a4-4a25-9c88-21948da64c39")
+	)
+	(via micro
+		(at 92.7 94.5)
+		(size 0.22)
+		(drill 0.1)
+		(layers "In6.Cu" "B.Cu")
+		(net "GND")
+		(uuid "f81734bc-01c8-472e-8216-79c8d52ba481")
 	)
 	(zone
 		(layer "B.Cu")

@@ -17670,7 +17670,7 @@
 				)
 			)
 		)
-		(property "Value" "ABS07-32.768KHZ-6-T"
+		(property "Value" "ABS06-32.768KHZ-6-1-T"
 			(at 340 113 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -17702,7 +17702,7 @@
 				)
 			)
 		)
-		(property "Description" "32.768kHz RTC crystal; choose CL compatible with <=10pF external cap per pin"
+		(property "Description" "32.768kHz RTC crystal; 6pF CL, 90k ESR, 2012 package compatible with Apollo510B"
 			(at 340 104 0)
 			(hide yes)
 			(show_name no)
