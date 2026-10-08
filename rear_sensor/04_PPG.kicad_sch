@@ -1,0 +1,4703 @@
+(kicad_sch
+	(version 20260306)
+	(generator "eeschema")
+	(generator_version "10.0")
+	(uuid "a111e41a-e4d6-40f7-95d1-6573ad8a1536")
+	(paper "A1")
+	(title_block (title "REAR - dual MAX86141 / optical / mux / local guards") (date "2026-10-08") (rev "A-P1"))
+	(lib_symbols
+(symbol "2026-09-16_07-42-39:MAX86141ENP+T"
+			(pin_names
+				(offset 0.254)
+			)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(in_pos_files yes)
+			(duplicate_pin_numbers_are_jumpers no)
+			(property "Reference" "U"
+				(at 27.94 10.16 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1.524 1.524)
+					)
+				)
+			)
+			(property "Value" "MAX86141ENP+T"
+				(at 27.94 7.62 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1.524 1.524)
+					)
+				)
+			)
+			(property "Footprint" "sportwatch_custom:21-100134_N201A2-1_MXM"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+						(italic yes)
+					)
+				)
+			)
+			(property "Datasheet" "MAX86141ENP+T"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+						(italic yes)
+					)
+				)
+			)
+			(property "Description" ""
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "ki_locked" ""
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "ki_keywords" "MAX86141ENP+T"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "ki_fp_filters" "sportwatch_custom:21-100134_N201A2-1_MXM"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(symbol "MAX86141ENP+T_0_1"
+				(polyline
+					(pts
+						(xy 7.62 5.08) (xy 7.62 -27.94)
+					)
+					(stroke
+						(width 0.127)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 7.62 -27.94) (xy 48.26 -27.94)
+					)
+					(stroke
+						(width 0.127)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 48.26 5.08) (xy 7.62 5.08)
+					)
+					(stroke
+						(width 0.127)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 48.26 -27.94) (xy 48.26 5.08)
+					)
+					(stroke
+						(width 0.127)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(pin power_in line
+					(at 0 0 0)
+					(length 7.62)
+					(name "VLED"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "A1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin input line
+					(at 0 -2.54 0)
+					(length 7.62)
+					(name "SCLK"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "A2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin tri_state line
+					(at 0 -5.08 0)
+					(length 7.62)
+					(name "SDO"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "A3"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin input line
+					(at 0 -7.62 0)
+					(length 7.62)
+					(name "SDI"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "A4"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin input line
+					(at 0 -10.16 0)
+					(length 7.62)
+					(name "CSB"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "A5"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin output line
+					(at 0 -12.7 0)
+					(length 7.62)
+					(name "LED3_DRV"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "B1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin open_collector line
+					(at 0 -15.24 0)
+					(length 7.62)
+					(name "*INT"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "B2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin bidirectional line
+					(at 0 -17.78 0)
+					(length 7.62)
+					(name "GPIO1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "B3"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin bidirectional line
+					(at 0 -20.32 0)
+					(length 7.62)
+					(name "GPIO2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "B4"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin power_out line
+					(at 0 -22.86 0)
+					(length 7.62)
+					(name "VREF"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "B5"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin output line
+					(at 55.88 -22.86 180)
+					(length 7.62)
+					(name "LED2_DRV"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "C1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin power_in line
+					(at 55.88 -20.32 180)
+					(length 7.62)
+					(name "VDD_DIG"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "C2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin power_in line
+					(at 55.88 -17.78 180)
+					(length 7.62)
+					(name "GND_DIG"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "C3"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin power_in line
+					(at 55.88 -15.24 180)
+					(length 7.62)
+					(name "GND_ANA"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "C4"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin power_in line
+					(at 55.88 -12.7 180)
+					(length 7.62)
+					(name "PD_GND"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "C5"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin output line
+					(at 55.88 -10.16 180)
+					(length 7.62)
+					(name "LED1_DRV"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "D1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin power_in line
+					(at 55.88 -7.62 180)
+					(length 7.62)
+					(name "VDD_ANA"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "D2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin power_in line
+					(at 55.88 -5.08 180)
+					(length 7.62)
+					(name "PGND"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "D3"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin input line
+					(at 55.88 -2.54 180)
+					(length 7.62)
+					(name "PD2_IN"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "D4"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin input line
+					(at 55.88 0 180)
+					(length 7.62)
+					(name "PD1_IN"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "D5"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
+(symbol "Device:C"
+			(pin_numbers
+				(hide yes)
+			)
+			(pin_names
+				(offset 0.254)
+			)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(in_pos_files yes)
+			(duplicate_pin_numbers_are_jumpers no)
+			(property "Reference" "C"
+				(at 0.635 2.54 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left)
+				)
+			)
+			(property "Value" "C"
+				(at 0.635 -2.54 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left)
+				)
+			)
+			(property "Footprint" ""
+				(at 0.9652 -3.81 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Datasheet" ""
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Description" "Unpolarized capacitor"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "ki_keywords" "cap capacitor"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "ki_fp_filters" "C_*"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(symbol "C_0_1"
+				(polyline
+					(pts
+						(xy -2.032 0.762) (xy 2.032 0.762)
+					)
+					(stroke
+						(width 0.508)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy -2.032 -0.762) (xy 2.032 -0.762)
+					)
+					(stroke
+						(width 0.508)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+			)
+			(symbol "C_1_1"
+				(pin passive line
+					(at 0 3.81 270)
+					(length 2.794)
+					(name ""
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 0 -3.81 90)
+					(length 2.794)
+					(name ""
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
+(symbol "Device:R"
+			(pin_numbers
+				(hide yes)
+			)
+			(pin_names
+				(offset 0)
+			)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(in_pos_files yes)
+			(duplicate_pin_numbers_are_jumpers no)
+			(property "Reference" "R"
+				(at 2.032 0 90)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Value" "R"
+				(at 0 0 90)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" ""
+				(at -1.778 0 90)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Datasheet" ""
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Description" "Resistor"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "ki_keywords" "R res resistor"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "ki_fp_filters" "R_*"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(symbol "R_0_1"
+				(rectangle
+					(start -1.016 -2.54)
+					(end 1.016 2.54)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+			)
+			(symbol "R_1_1"
+				(pin passive line
+					(at 0 3.81 270)
+					(length 1.27)
+					(name ""
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 0 -3.81 90)
+					(length 1.27)
+					(name ""
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
+(symbol "power:GND"
+			(power global)
+			(pin_numbers
+				(hide yes)
+			)
+			(pin_names
+				(offset 0)
+				(hide yes)
+			)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(in_pos_files yes)
+			(duplicate_pin_numbers_are_jumpers no)
+			(property "Reference" "#PWR"
+				(at 0 -6.35 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Value" "GND"
+				(at 0 -3.81 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" ""
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Datasheet" ""
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "ki_keywords" "global power"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(symbol "GND_0_1"
+				(polyline
+					(pts
+						(xy 0 0) (xy 0 -1.27) (xy 1.27 -1.27) (xy 0 -2.54) (xy -1.27 -1.27) (xy 0 -1.27)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+			)
+			(symbol "GND_1_1"
+				(pin power_in line
+					(at 0 0 270)
+					(length 0)
+					(name ""
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
+(symbol "sportwatch_custom:NetTie_2"
+			(exclude_from_sim no)
+			(in_bom no)
+			(on_board yes)
+			(in_pos_files no)
+			(duplicate_pin_numbers_are_jumpers no)
+			(property "Reference" "NT"
+				(at 0 3.81 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Value" "NetTie_2"
+				(at 0 -3.81 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" ""
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Datasheet" ""
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Description" "Single-point net tie; assign proper net-tie footprint during footprint audit"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(symbol "NetTie_2_0_1"
+				(polyline
+					(pts
+						(xy -2.54 0) (xy 2.54 0)
+					)
+					(stroke
+						(width 0.508)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(pin passive line
+					(at -5.08 0 0)
+					(length 2.54)
+					(name "A"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 5.08 0 180)
+					(length 2.54)
+					(name "B"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
+(symbol "sportwatch_custom:SFH2703H"
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(in_pos_files yes)
+			(duplicate_pin_numbers_are_jumpers no)
+			(property "Reference" "D"
+				(at 0 5.08 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Value" "SFH2703H"
+				(at 0 -5.08 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" ""
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Datasheet" "SFH 2703_EN.pdf"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Description" "OSRAM SFH 2703H broadband silicon PIN photodiode, Q65115A2199"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(symbol "SFH2703H_0_1"
+				(rectangle
+					(start -5.08 3.81)
+					(end 5.08 -3.81)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(text "PD"
+					(at 0 0 0)
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(pin passive line
+					(at -7.62 0 0)
+					(length 2.54)
+					(name "CATHODE"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 7.62 0 180)
+					(length 2.54)
+					(name "ANODE"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
+(symbol "sportwatch_custom:SFH7018A"
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(in_pos_files yes)
+			(duplicate_pin_numbers_are_jumpers no)
+			(property "Reference" "D"
+				(at 0 12.7 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Value" "SFH7018A"
+				(at 0 -12.7 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" ""
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Datasheet" "SFH 7018A_EN.pdf"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Description" "OSRAM SFH 7018A green/red/940nm biometric emitter, Q65113A6157"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(symbol "SFH7018A_0_1"
+				(rectangle
+					(start -12.7 10.16)
+					(end 12.7 -10.16)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(text "GREEN / RED / IR"
+					(at 0 0 0)
+					(effects
+						(font
+							(size 1 1)
+						)
+					)
+				)
+				(pin passive line
+					(at -15.24 7.62 0)
+					(length 2.54)
+					(name "K_GREEN_1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 15.24 7.62 180)
+					(length 2.54)
+					(name "A_RED_IR_1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at -15.24 2.54 0)
+					(length 2.54)
+					(name "K_IR"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "3"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 15.24 2.54 180)
+					(length 2.54)
+					(name "A_RED_IR_2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "4"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at -15.24 -2.54 0)
+					(length 2.54)
+					(name "K_RED"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "5"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 15.24 -2.54 180)
+					(length 2.54)
+					(name "A_GREEN"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "6"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at -15.24 -7.62 0)
+					(length 2.54)
+					(name "K_GREEN_2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "7"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at -15.24 -10.16 0)
+					(length 2.54)
+					(name "K_GREEN_3"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "8"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
+(symbol "power:PWR_FLAG"
+			(power global)
+			(pin_numbers
+				(hide yes)
+			)
+			(pin_names
+				(offset 0)
+				(hide yes)
+			)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(in_pos_files yes)
+			(duplicate_pin_numbers_are_jumpers no)
+			(property "Reference" "#FLG"
+				(at 0 1.905 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Value" "PWR_FLAG"
+				(at 0 3.81 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" ""
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Datasheet" ""
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Description" "Special symbol for telling ERC where power comes from"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "ki_keywords" "flag power"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(symbol "PWR_FLAG_0_0"
+				(pin power_out line
+					(at 0 0 90)
+					(length 0)
+					(name ""
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+			(symbol "PWR_FLAG_0_1"
+				(polyline
+					(pts
+						(xy 0 0) (xy 0 1.27) (xy -1.016 1.905) (xy 0 2.54) (xy 1.016 1.905) (xy 0 1.27)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
+(symbol "sportwatch_custom:TPS631000DRLR"
+		  (exclude_from_sim no)
+		  (in_bom yes)
+		  (on_board yes)
+		  (in_pos_files yes)
+		  (duplicate_pin_numbers_are_jumpers no)
+		  (property "Reference" "U" (at 0 10.16 0) (show_name no) (do_not_autoplace no) (effects (font (size 1 1))))
+		  (property "Value" "TPS631000DRLR" (at 0 -10.16 0) (show_name no) (do_not_autoplace no) (effects (font (size 1 1))))
+		  (property "Footprint" "" (at 0 0 0) (show_name no) (do_not_autoplace no) (hide yes) (effects (font (size 1.27 1.27))))
+		  (property "Datasheet" "https://www.ti.com/lit/ds/symlink/tps631000.pdf" (at 0 0 0) (show_name no) (do_not_autoplace no) (hide yes) (effects (font (size 1.27 1.27))))
+		  (property "Description" "1.5A low-IQ buck-boost converter, 1.6-5.5V input, adjustable output" (at 0 0 0) (show_name no) (do_not_autoplace no) (hide yes) (effects (font (size 1.27 1.27))))
+		  (symbol "TPS631000DRLR_0_1"
+		    (rectangle (start -10.16 7.62) (end 10.16 -7.62) (stroke (width 0.254) (type default)) (fill (type none)))
+		    (pin power_out line (at 12.7 5.08 180) (length 2.54) (name "VOUT" (effects (font (size 1.27 1.27)))) (number "1" (effects (font (size 1.27 1.27)))))
+		    (pin passive line (at 5.08 12.7 270) (length 2.54) (name "LX2" (effects (font (size 1.27 1.27)))) (number "2" (effects (font (size 1.27 1.27)))))
+		    (pin passive line (at -5.08 12.7 270) (length 2.54) (name "LX1" (effects (font (size 1.27 1.27)))) (number "3" (effects (font (size 1.27 1.27)))))
+		    (pin power_in line (at -12.7 5.08 0) (length 2.54) (name "VIN" (effects (font (size 1.27 1.27)))) (number "4" (effects (font (size 1.27 1.27)))))
+		    (pin input line (at -12.7 -5.08 0) (length 2.54) (name "EN" (effects (font (size 1.27 1.27)))) (number "5" (effects (font (size 1.27 1.27)))))
+		    (pin input line (at -5.08 -12.7 90) (length 2.54) (name "MODE" (effects (font (size 1.27 1.27)))) (number "6" (effects (font (size 1.27 1.27)))))
+		    (pin power_in line (at 5.08 -12.7 90) (length 2.54) (name "GND" (effects (font (size 1.27 1.27)))) (number "7" (effects (font (size 1.27 1.27)))))
+		    (pin input line (at 12.7 -5.08 180) (length 2.54) (name "FB" (effects (font (size 1.27 1.27)))) (number "8" (effects (font (size 1.27 1.27)))))
+		  )
+		  (embedded_fonts no)
+		)
+(symbol "Device:L"
+					(pin_numbers
+						(hide yes)
+					)
+					(pin_names
+						(offset 1.016)
+						(hide yes)
+					)
+					(exclude_from_sim no)
+					(in_bom yes)
+					(on_board yes)
+					(in_pos_files yes)
+					(duplicate_pin_numbers_are_jumpers no)
+					(property "Reference" "L"
+						(at -1.27 0 90)
+						(show_name no)
+						(do_not_autoplace no)
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(property "Value" "L"
+						(at 1.905 0 90)
+						(show_name no)
+						(do_not_autoplace no)
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(property "Footprint" ""
+						(at 0 0 0)
+						(show_name no)
+						(do_not_autoplace no)
+						(hide yes)
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(property "Datasheet" ""
+						(at 0 0 0)
+						(show_name no)
+						(do_not_autoplace no)
+						(hide yes)
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(property "Description" "Inductor"
+						(at 0 0 0)
+						(show_name no)
+						(do_not_autoplace no)
+						(hide yes)
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(property "ki_keywords" "inductor choke coil reactor magnetic"
+						(at 0 0 0)
+						(show_name no)
+						(do_not_autoplace no)
+						(hide yes)
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(property "ki_fp_filters" "Choke_* *Coil* Inductor_* L_*"
+						(at 0 0 0)
+						(show_name no)
+						(do_not_autoplace no)
+						(hide yes)
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(symbol "L_0_1"
+						(arc
+							(start 0 2.54)
+							(mid 0.6323 1.905)
+							(end 0 1.27)
+							(stroke
+								(width 0)
+								(type default)
+							)
+							(fill
+								(type none)
+							)
+						)
+						(arc
+							(start 0 1.27)
+							(mid 0.6323 0.635)
+							(end 0 0)
+							(stroke
+								(width 0)
+								(type default)
+							)
+							(fill
+								(type none)
+							)
+						)
+						(arc
+							(start 0 0)
+							(mid 0.6323 -0.635)
+							(end 0 -1.27)
+							(stroke
+								(width 0)
+								(type default)
+							)
+							(fill
+								(type none)
+							)
+						)
+						(arc
+							(start 0 -1.27)
+							(mid 0.6323 -1.905)
+							(end 0 -2.54)
+							(stroke
+								(width 0)
+								(type default)
+							)
+							(fill
+								(type none)
+							)
+						)
+					)
+					(symbol "L_1_1"
+						(pin passive line
+							(at 0 3.81 270)
+							(length 1.27)
+							(name "1"
+								(effects
+									(font
+										(size 1.27 1.27)
+									)
+								)
+							)
+							(number "1"
+								(effects
+									(font
+										(size 1.27 1.27)
+									)
+								)
+							)
+						)
+						(pin passive line
+							(at 0 -3.81 90)
+							(length 1.27)
+							(name "2"
+								(effects
+									(font
+										(size 1.27 1.27)
+									)
+								)
+							)
+							(number "2"
+								(effects
+									(font
+										(size 1.27 1.27)
+									)
+								)
+							)
+						)
+					)
+					(embedded_fonts no)
+				)
+(symbol "sportwatch_custom:SFH4053B"
+		  (exclude_from_sim no)
+		  (in_bom yes)
+		  (on_board yes)
+		  (in_pos_files yes)
+		  (duplicate_pin_numbers_are_jumpers no)
+		  (property "Reference" "D" (at 0 5.08 0) (show_name no) (do_not_autoplace no) (effects (font (size 1.27 1.27))))
+		  (property "Value" "SFH4053B" (at 0 -5.08 0) (show_name no) (do_not_autoplace no) (effects (font (size 1.27 1.27))))
+		  (property "Footprint" "" (at 0 0 0) (show_name no) (do_not_autoplace no) (hide yes) (effects (font (size 1.27 1.27))))
+		  (property "Datasheet" "https://ams-osram.com/products/leds/ir-leds/osram-chip-led-sfh-4053b" (at 0 0 0) (show_name no) (do_not_autoplace no) (hide yes) (effects (font (size 1.27 1.27))))
+		  (property "Description" "ams OSRAM SFH 4053B 850nm-class IR emitter, Q65115A1586; footprint TBD" (at 0 0 0) (show_name no) (do_not_autoplace no) (hide yes) (effects (font (size 1.27 1.27))))
+		  (symbol "SFH4053B_0_1"
+		    (rectangle (start -5.08 3.81) (end 5.08 -3.81) (stroke (width 0.254) (type default)) (fill (type none)))
+		    (text "IR 850" (at 0 0 0) (effects (font (size 1.0 1.0))))
+		    (pin passive line (at 7.62 0 180) (length 2.54) (name "ANODE" (effects (font (size 1.27 1.27)))) (number "1" (effects (font (size 1.27 1.27)))))
+		    (pin passive line (at -7.62 0 0) (length 2.54) (name "CATHODE" (effects (font (size 1.27 1.27)))) (number "2" (effects (font (size 1.27 1.27)))))
+		  )
+		  (embedded_fonts no)
+		)
+(symbol "sportwatch_custom:TS5A12301E"
+		  (exclude_from_sim no)
+		  (in_bom yes)
+		  (on_board yes)
+		  (in_pos_files yes)
+		  (duplicate_pin_numbers_are_jumpers no)
+		  (property "Reference" "U" (at 0 10.16 0) (show_name no) (do_not_autoplace no) (effects (font (size 1.0 1.0))))
+		  (property "Value" "TS5A12301E" (at 0 -10.16 0) (show_name no) (do_not_autoplace no) (effects (font (size 1.0 1.0))))
+		  (property "Footprint" "" (at 0 0 0) (show_name no) (do_not_autoplace no) (hide yes) (effects (font (size 1.27 1.27))))
+		  (property "Datasheet" "https://www.ti.com/lit/ds/symlink/ts5a12301e.pdf" (at 0 0 0) (show_name no) (do_not_autoplace no) (hide yes) (effects (font (size 1.27 1.27))))
+		  (property "Description" "TI TS5A12301E 0.75-ohm SPDT analog switch, 1.8V-compatible control; YFP DSBGA6 footprint TBD/audit" (at 0 0 0) (show_name no) (do_not_autoplace no) (hide yes) (effects (font (size 1.27 1.27))))
+		  (symbol "TS5A12301E_0_1"
+		    (rectangle (start -7.62 7.62) (end 7.62 -7.62) (stroke (width 0.254) (type default)) (fill (type none)))
+		    (text "2:1 LED MUX" (at 0 0 0) (effects (font (size 0.9 0.9))))
+		    (pin bidirectional line (at -10.16 0 0) (length 2.54) (name "COM" (effects (font (size 1.0 1.0)))) (number "B2" (effects (font (size 1.0 1.0)))))
+		    (pin bidirectional line (at 10.16 2.54 180) (length 2.54) (name "NC" (effects (font (size 1.0 1.0)))) (number "C1" (effects (font (size 1.0 1.0)))))
+		    (pin bidirectional line (at 10.16 -2.54 180) (length 2.54) (name "NO" (effects (font (size 1.0 1.0)))) (number "A1" (effects (font (size 1.0 1.0)))))
+		    (pin input line (at -10.16 -5.08 0) (length 2.54) (name "IN" (effects (font (size 1.0 1.0)))) (number "A2" (effects (font (size 1.0 1.0)))))
+		    (pin power_in line (at 0 10.16 270) (length 2.54) (name "VCC" (effects (font (size 1.0 1.0)))) (number "C2" (effects (font (size 1.0 1.0)))))
+		    (pin power_in line (at 0 -10.16 90) (length 2.54) (name "GND" (effects (font (size 1.0 1.0)))) (number "B1" (effects (font (size 1.0 1.0)))))
+		  )
+		  (embedded_fonts no)
+		)
+)
+	(symbol
+		(lib_id "2026-09-16_07-42-39:MAX86141ENP+T")
+		(at 65.000000 55.000000 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "77e40d42-feb0-4c8f-bde2-35586b40c2c1")
+		(property "Reference" "U12"
+			(at 92.940000 44.840000 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.524 1.524)
+				)
+			)
+		)
+		(property "Value" "MAX86141ENP+T"
+			(at 92.940000 47.380000 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.524 1.524)
+				)
+			)
+		)
+		(property "Footprint" "sportwatch_custom:21-100134_N201A2-1_MXM"
+			(at 65.000000 55.000000 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+					(italic yes)
+				)
+			)
+		)
+		(property "Datasheet" "MAX86141ENP+T"
+			(at 65.000000 55.000000 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+					(italic yes)
+				)
+			)
+		)
+		(property "Description" ""
+			(at 65.000000 55.000000 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "B2"
+			(uuid "e12140a6-b916-455e-a448-c2c7b3e76676")
+		)
+		(pin "A3"
+			(uuid "10671bd0-84e1-4cc1-bbd3-27a4b35658c7")
+		)
+		(pin "A2"
+			(uuid "ee205b7f-146e-4d93-8a09-327f0a3507b2")
+		)
+		(pin "A1"
+			(uuid "b941f0a6-52ae-4c9b-87fa-25989f092321")
+		)
+		(pin "C1"
+			(uuid "9fcc6b79-ee69-4634-a5ee-c59de213b133")
+		)
+		(pin "C3"
+			(uuid "6c921732-0386-4c7e-a698-35fcacbe0543")
+		)
+		(pin "A4"
+			(uuid "9084b843-7f98-49de-8fdb-d90406b346a4")
+		)
+		(pin "A5"
+			(uuid "1cf6b795-2b88-46eb-97e4-96f923698c59")
+		)
+		(pin "C2"
+			(uuid "ac8f8dff-6c71-404c-b8b9-28953c9a9015")
+		)
+		(pin "B4"
+			(uuid "6e0ed1f6-5589-4d03-be88-3b2dca869fdc")
+		)
+		(pin "C5"
+			(uuid "d2fb9def-d014-4c6d-843a-ff715d994bee")
+		)
+		(pin "D1"
+			(uuid "9ff80e8a-fc65-4718-9b71-6347156c3f03")
+		)
+		(pin "D2"
+			(uuid "2f9ecd95-3ae3-4182-abb3-77de2da69107")
+		)
+		(pin "D3"
+			(uuid "5129e1cd-eca7-4ee6-bfeb-c880dbd941e9")
+		)
+		(pin "B1"
+			(uuid "8defdca1-a0d3-44dc-84ce-e988016e784a")
+		)
+		(pin "D4"
+			(uuid "a232f1f5-5a93-49ab-becc-6d90e094d5c1")
+		)
+		(pin "B3"
+			(uuid "10e32e80-068d-4ca3-8191-8aa291e44d05")
+		)
+		(pin "D5"
+			(uuid "3e4d1ae7-1829-4e04-9818-86f55f96a032")
+		)
+		(pin "C4"
+			(uuid "5945da6a-5019-44bb-a4fa-1f6eadcc4f9c")
+		)
+		(pin "B5"
+			(uuid "f0ff89e5-393b-4d0b-8fbd-3d6765a02b9c")
+		)
+		(instances (project "rear_sensor_revA" (path "/e9412e56-0f4f-4ec5-ad89-3d7d6481d433/56b54535-d023-45c5-9cb1-b85ec96641c9" (reference "U12") (unit 1))))
+
+(property "Board" "REAR" (at 0 0 0) (effects (font (size 1 1)) (hide yes)))
+)
+	(global_label "PPG_VLED" (shape bidirectional) (at 61.190000 55.000000 0) (effects (font (size 0.8 0.8)) (justify left bottom)) (uuid "a18e2899-eecb-4fe1-9e9d-bba14000be3c"))
+	(global_label "PPG_SPI_SCLK" (shape bidirectional) (at 61.190000 57.540000 0) (effects (font (size 0.8 0.8)) (justify left bottom)) (uuid "c20b8498-ca16-427e-bdb3-e589d74e97a8"))
+	(global_label "PPG_SPI_MISO" (shape bidirectional) (at 61.190000 60.080000 0) (effects (font (size 0.8 0.8)) (justify left bottom)) (uuid "8820a66b-33c5-44f4-b771-6133531bd75c"))
+	(global_label "PPG_SPI_MOSI" (shape bidirectional) (at 61.190000 62.620000 0) (effects (font (size 0.8 0.8)) (justify left bottom)) (uuid "53647bad-1b28-4958-9829-7a587c2b4f4c"))
+	(global_label "PPG1_CS_N" (shape bidirectional) (at 61.190000 65.160000 0) (effects (font (size 0.8 0.8)) (justify left bottom)) (uuid "378c0c9c-fef0-400e-9d69-faf1a9a2bf42"))
+	(label "PPG1_LED_IR_DRV" (at 61.190000 67.700000 180) (effects (font (size 0.8 0.8)) (justify left bottom)) (uuid "d9e9a187-3c9b-4d5c-aa18-567c2937a33e"))
+	(global_label "PPG1_INT_N" (shape bidirectional) (at 61.190000 70.240000 0) (effects (font (size 0.8 0.8)) (justify left bottom)) (uuid "fa2c8af7-4e3c-4099-9a3b-aab3803484cc"))
+	(global_label "PPG_SAMPLE_SYNC" (shape bidirectional) (at 61.190000 72.780000 0) (effects (font (size 0.8 0.8)) (justify left bottom)) (uuid "577ac43f-53ed-427e-ad1b-386734f59ff3"))
+	(label "PPG1_LED_MUX_SEL" (at 61.190000 75.320000 180) (effects (font (size 0.8 0.8)) (justify left bottom)) (uuid "4b9be763-e3c2-49d1-b834-62613cfb06b3"))
+	(label "PPG1_VREF" (at 61.190000 77.860000 180) (effects (font (size 0.8 0.8)) (justify left bottom)) (uuid "58eba68a-bc3c-45b2-9f23-d696eb984999"))
+	(label "PPG1_LED_RED_DRV" (at 124.690000 77.860000 0) (effects (font (size 0.8 0.8)) (justify left bottom)) (uuid "1693d3b4-067a-48eb-a920-9343e21407da"))
+	(global_label "VOUT1_1V8" (shape bidirectional) (at 124.690000 75.320000 180) (effects (font (size 0.8 0.8)) (justify left bottom)) (uuid "1f5a1c47-ae0b-4042-911e-2de23d85ec64"))
+	(global_label "GND" (shape bidirectional) (at 124.690000 72.780000 180) (effects (font (size 0.8 0.8)) (justify left bottom)) (uuid "249276f9-b02c-4c2c-ad40-4c380273d6fb"))
+	(global_label "GND" (shape bidirectional) (at 124.690000 70.240000 180) (effects (font (size 0.8 0.8)) (justify left bottom)) (uuid "566d051d-433b-4d44-8bae-351546f55041"))
+	(label "PPG1_PD_GND" (at 124.690000 67.700000 0) (effects (font (size 0.8 0.8)) (justify left bottom)) (uuid "f189ad8e-2d3e-42d1-aa6a-63a4d417e689"))
+	(label "PPG1_LED_GREEN_DRV" (at 124.690000 65.160000 0) (effects (font (size 0.8 0.8)) (justify left bottom)) (uuid "4f75c714-fc59-4d63-9adc-5633c1abce30"))
+	(global_label "VOUT1_1V8" (shape bidirectional) (at 124.690000 62.620000 180) (effects (font (size 0.8 0.8)) (justify left bottom)) (uuid "12425e60-b6ed-4870-8558-884b6355b96b"))
+	(global_label "GND" (shape bidirectional) (at 124.690000 60.080000 180) (effects (font (size 0.8 0.8)) (justify left bottom)) (uuid "8d160644-0d0a-4f67-8d8b-93df816e1784"))
+	(label "PPG1_PD2_IN" (at 124.690000 57.540000 0) (effects (font (size 0.8 0.8)) (justify left bottom)) (uuid "a63e4c19-ee4a-4959-8757-4cd059028a60"))
+	(label "PPG1_PD1_IN" (at 124.690000 55.000000 0) (effects (font (size 0.8 0.8)) (justify left bottom)) (uuid "427bd894-ef23-4e80-8484-e537acc5eee0"))
+	(symbol
+		(lib_id "2026-09-16_07-42-39:MAX86141ENP+T")
+		(at 190.000000 55.000000 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "68ac7160-72bc-47c2-9380-221f9282d721")
+		(property "Reference" "U13"
+			(at 217.940000 44.840000 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.524 1.524)
+				)
+			)
+		)
+		(property "Value" "MAX86141ENP+T"
+			(at 217.940000 47.380000 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.524 1.524)
+				)
+			)
+		)
+		(property "Footprint" "sportwatch_custom:21-100134_N201A2-1_MXM"
+			(at 190.000000 55.000000 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+					(italic yes)
+				)
+			)
+		)
+		(property "Datasheet" "MAX86141ENP+T"
+			(at 190.000000 55.000000 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+					(italic yes)
+				)
+			)
+		)
+		(property "Description" ""
+			(at 190.000000 55.000000 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "B2"
+			(uuid "0dd400eb-335f-4879-8aa3-07fe704c695c")
+		)
+		(pin "A3"
+			(uuid "78bda87d-9f8f-4f13-a08f-aa74033154ec")
+		)
+		(pin "A2"
+			(uuid "15d47f48-d421-48ba-98f3-b96d2bfa384d")
+		)
+		(pin "A1"
+			(uuid "399ab56d-7cde-44f5-9533-33e78401208a")
+		)
+		(pin "C1"
+			(uuid "90597548-6a5f-4c1a-be70-c04bd024806a")
+		)
+		(pin "C3"
+			(uuid "4af57fff-adc0-4b8d-899e-0c21a5465d56")
+		)
+		(pin "A4"
+			(uuid "641fd419-7ec4-433c-809b-dd91a03de047")
+		)
+		(pin "A5"
+			(uuid "62f97c4e-7d59-4fbf-85fd-c5599211ca4f")
+		)
+		(pin "C2"
+			(uuid "23bc61a1-c9a3-4a0b-ab9e-531802cc2567")
+		)
+		(pin "B4"
+			(uuid "c0e0b84f-699d-4b47-9817-52736fd98b54")
+		)
+		(pin "C5"
+			(uuid "64e5300b-f7b0-4ef8-98c3-1cdef2512692")
+		)
+		(pin "D1"
+			(uuid "5e683614-aa37-4c7e-a074-7aa5613fcc2c")
+		)
+		(pin "D2"
+			(uuid "673462fc-2793-4b1b-b64e-2bbb1009f27f")
+		)
+		(pin "D3"
+			(uuid "30632a36-e410-4db5-b7a8-0fb1f8849463")
+		)
+		(pin "B1"
+			(uuid "b51ef5f2-4f1e-4576-924b-8549541c426d")
+		)
+		(pin "D4"
+			(uuid "d4cdf3eb-99c2-489d-b247-652c1d2e0b27")
+		)
+		(pin "B3"
+			(uuid "d6f06293-6c5d-468e-a806-f00fbd7203e6")
+		)
+		(pin "D5"
+			(uuid "1b10c59e-869d-4b62-a87f-823f42197c6e")
+		)
+		(pin "C4"
+			(uuid "968115ea-bc4b-453c-a90c-e1b83fe5e6fd")
+		)
+		(pin "B5"
+			(uuid "9c686e1b-c491-46e4-be5a-ba0517fbf155")
+		)
+		(instances (project "rear_sensor_revA" (path "/e9412e56-0f4f-4ec5-ad89-3d7d6481d433/56b54535-d023-45c5-9cb1-b85ec96641c9" (reference "U13") (unit 1))))
+
+(property "Board" "REAR" (at 0 0 0) (effects (font (size 1 1)) (hide yes)))
+)
+	(global_label "PPG_VLED" (shape bidirectional) (at 186.190000 55.000000 0) (effects (font (size 0.8 0.8)) (justify left bottom)) (uuid "94ca4e6f-82d5-4404-aacd-94c5b02e06af"))
+	(global_label "PPG_SPI_SCLK" (shape bidirectional) (at 186.190000 57.540000 0) (effects (font (size 0.8 0.8)) (justify left bottom)) (uuid "bc107d8a-01eb-4471-9328-ecea6e012b52"))
+	(global_label "PPG_SPI_MISO" (shape bidirectional) (at 186.190000 60.080000 0) (effects (font (size 0.8 0.8)) (justify left bottom)) (uuid "f8114ed3-3fd8-4882-87c8-60ecf3177fb7"))
+	(global_label "PPG_SPI_MOSI" (shape bidirectional) (at 186.190000 62.620000 0) (effects (font (size 0.8 0.8)) (justify left bottom)) (uuid "7822a0cd-be91-46ea-90f9-e046e959843f"))
+	(global_label "PPG2_CS_N" (shape bidirectional) (at 186.190000 65.160000 0) (effects (font (size 0.8 0.8)) (justify left bottom)) (uuid "aeaf29b3-a405-4e68-a67a-de8439c22dd7"))
+	(label "PPG2_LED_IR_DRV" (at 186.190000 67.700000 180) (effects (font (size 0.8 0.8)) (justify left bottom)) (uuid "f26d2225-48ae-4036-b984-52dbb59b1a76"))
+	(global_label "PPG2_INT_N" (shape bidirectional) (at 186.190000 70.240000 0) (effects (font (size 0.8 0.8)) (justify left bottom)) (uuid "1d651162-e31e-4c46-8aae-f3ff27b4a115"))
+	(global_label "PPG_SAMPLE_SYNC" (shape bidirectional) (at 186.190000 72.780000 0) (effects (font (size 0.8 0.8)) (justify left bottom)) (uuid "b789b68e-ca4c-4231-80c2-acf11755f5b2"))
+	(label "PPG2_LED_MUX_SEL" (at 186.190000 75.320000 180) (effects (font (size 0.8 0.8)) (justify left bottom)) (uuid "c8c6710d-1c26-4dbc-8287-c0fc131b4839"))
+	(label "PPG2_VREF" (at 186.190000 77.860000 180) (effects (font (size 0.8 0.8)) (justify left bottom)) (uuid "4e47fa25-82f3-49b1-b9f4-4dc9bb3222a2"))
+	(label "PPG2_LED_RED_DRV" (at 249.690000 77.860000 0) (effects (font (size 0.8 0.8)) (justify left bottom)) (uuid "cdbd22bd-6cb7-4bb3-90ae-a8d331e8385c"))
+	(global_label "VOUT1_1V8" (shape bidirectional) (at 249.690000 75.320000 180) (effects (font (size 0.8 0.8)) (justify left bottom)) (uuid "ea771561-dfc9-4ba7-b865-9f5e4b545205"))
+	(global_label "GND" (shape bidirectional) (at 249.690000 72.780000 180) (effects (font (size 0.8 0.8)) (justify left bottom)) (uuid "803c1aaf-d13e-4a80-8898-a457acafbea3"))
+	(global_label "GND" (shape bidirectional) (at 249.690000 70.240000 180) (effects (font (size 0.8 0.8)) (justify left bottom)) (uuid "4241f8e1-feb8-4f9d-8788-c013cd777129"))
+	(label "PPG2_PD_GND" (at 249.690000 67.700000 0) (effects (font (size 0.8 0.8)) (justify left bottom)) (uuid "23dac8a6-9697-4e55-b675-29766d2e2425"))
+	(label "PPG2_LED_GREEN_DRV" (at 249.690000 65.160000 0) (effects (font (size 0.8 0.8)) (justify left bottom)) (uuid "5cf24101-7ec5-4bf0-bf30-ffc9855b37e1"))
+	(global_label "VOUT1_1V8" (shape bidirectional) (at 249.690000 62.620000 180) (effects (font (size 0.8 0.8)) (justify left bottom)) (uuid "40859a03-fe17-4728-864a-9e7e20397e7a"))
+	(global_label "GND" (shape bidirectional) (at 249.690000 60.080000 180) (effects (font (size 0.8 0.8)) (justify left bottom)) (uuid "5724032f-2ff1-4bc5-95dc-cfa0e548e19c"))
+	(label "PPG2_PD2_IN" (at 249.690000 57.540000 0) (effects (font (size 0.8 0.8)) (justify left bottom)) (uuid "5357b670-08bf-4944-a96d-b10fbe50b651"))
+	(label "PPG2_PD1_IN" (at 249.690000 55.000000 0) (effects (font (size 0.8 0.8)) (justify left bottom)) (uuid "b3127865-112d-4465-8b17-9bcaeb1a1d1d"))
+	(symbol
+		(lib_id "sportwatch_custom:TS5A12301E")
+		(at 315.000000 55.000000 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "1c36e351-4967-4c67-b613-b90650e7ba66")
+		(property "Reference" "U402" (at 315.000000 42.300000 0) (show_name no) (do_not_autoplace no) (effects (font (size 1.27 1.27))))
+		(property "Value" "TS5A12301E" (at 315.000000 67.700000 0) (show_name no) (do_not_autoplace no) (effects (font (size 1.27 1.27))))
+		(property "Footprint" "Package_BGA:Texas_DSBGA-6_0.76x1.16mm_Layout2x3_P0.4mm" (at 315.000000 55.000000 0) (hide yes) (show_name no) (do_not_autoplace no) (effects (font (size 1.27 1.27))))
+		(property "Datasheet" "https://www.ti.com/lit/ds/symlink/ts5a12301e.pdf" (at 315.000000 55.000000 0) (hide yes) (show_name no) (do_not_autoplace no) (effects (font (size 1.27 1.27))))
+		(property "Description" "LED bank 2:1 SPDT mux; 1.8V-compatible control" (at 315.000000 55.000000 0) (hide yes) (show_name no) (do_not_autoplace no) (effects (font (size 1.27 1.27))))
+		(pin "B2" (uuid "ac881c2c-5cba-4a4c-b899-191eba34db2a"))
+		(pin "B1" (uuid "299807e1-4f33-4cf6-adfb-43fb4630072d"))
+		(pin "A2" (uuid "18a9e17b-3c01-498c-a089-4a93667853ee"))
+		(pin "C1" (uuid "994ac7df-09d1-40f4-9c35-129839d7152d"))
+		(pin "A1" (uuid "6e91d33f-aab5-4cd3-8fa8-a677b5746adf"))
+		(pin "C2" (uuid "049f7499-180b-494d-a270-c8166f7ed9ec"))
+		(instances (project "rear_sensor_revA" (path "/e9412e56-0f4f-4ec5-ad89-3d7d6481d433/56b54535-d023-45c5-9cb1-b85ec96641c9" (reference "U402") (unit 1))))
+
+(property "Board" "REAR" (at 0 0 0) (effects (font (size 1 1)) (hide yes)))
+)
+	(label "PPG1_LED_GREEN_DRV" (at 301.030000 55.000000 180) (effects (font (size 0.8 0.8)) (justify right bottom)) (uuid "a7314a65-4841-4111-a9d4-50a6b9390901"))
+	(label "PPG1_LED4_GREEN_K" (at 328.970000 52.460000 0) (effects (font (size 0.8 0.8)) (justify left bottom)) (uuid "39b47ea7-d0e8-4e5a-8f33-67913eb3fd51"))
+	(label "PPG1_LED1_GREEN_K" (at 328.970000 57.540000 0) (effects (font (size 0.8 0.8)) (justify left bottom)) (uuid "7187eff0-6840-47d3-bcf4-cef44a86c40e"))
+	(label "PPG1_LED_MUX_SEL" (at 301.030000 60.080000 180) (effects (font (size 0.8 0.8)) (justify right bottom)) (uuid "7fc396bc-fc7c-416a-89b7-03f1d4a9653d"))
+	(global_label "PPG_VLED" (shape bidirectional) (at 315.000000 41.030000 270) (effects (font (size 0.8 0.8)) (justify left bottom)) (uuid "d5c77412-5f81-410e-9d53-9cbf12c6a416"))
+	(global_label "GND" (shape bidirectional) (at 315.000000 68.970000 90) (effects (font (size 0.8 0.8)) (justify left bottom)) (uuid "e792727e-ea22-4cbd-80f7-c7cddc9adaa5"))
+	(symbol
+		(lib_id "sportwatch_custom:TS5A12301E")
+		(at 440.000000 55.000000 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "caa9e1b9-3529-4a6f-bf5a-4e9f4f027845")
+		(property "Reference" "U403" (at 440.000000 42.300000 0) (show_name no) (do_not_autoplace no) (effects (font (size 1.27 1.27))))
+		(property "Value" "TS5A12301E" (at 440.000000 67.700000 0) (show_name no) (do_not_autoplace no) (effects (font (size 1.27 1.27))))
+		(property "Footprint" "Package_BGA:Texas_DSBGA-6_0.76x1.16mm_Layout2x3_P0.4mm" (at 440.000000 55.000000 0) (hide yes) (show_name no) (do_not_autoplace no) (effects (font (size 1.27 1.27))))
+		(property "Datasheet" "https://www.ti.com/lit/ds/symlink/ts5a12301e.pdf" (at 440.000000 55.000000 0) (hide yes) (show_name no) (do_not_autoplace no) (effects (font (size 1.27 1.27))))
+		(property "Description" "LED bank 2:1 SPDT mux; 1.8V-compatible control" (at 440.000000 55.000000 0) (hide yes) (show_name no) (do_not_autoplace no) (effects (font (size 1.27 1.27))))
+		(pin "B2" (uuid "2297e5cf-ad29-49eb-8dae-de1966b616ec"))
+		(pin "B1" (uuid "8b44d1fe-1a57-4f73-a68f-30e24ef31e44"))
+		(pin "A2" (uuid "590558a6-1f7b-4429-84fd-aa95917bb85d"))
+		(pin "C1" (uuid "6bb212df-b609-438b-8204-54281f0ee696"))
+		(pin "A1" (uuid "8e993116-b4e3-4f45-a539-69092b438df0"))
+		(pin "C2" (uuid "8a8ea288-ddb5-4f51-8f57-aefee455b44c"))
+		(instances (project "rear_sensor_revA" (path "/e9412e56-0f4f-4ec5-ad89-3d7d6481d433/56b54535-d023-45c5-9cb1-b85ec96641c9" (reference "U403") (unit 1))))
+
+(property "Board" "REAR" (at 0 0 0) (effects (font (size 1 1)) (hide yes)))
+)
+	(label "PPG1_LED_RED_DRV" (at 426.030000 55.000000 180) (effects (font (size 0.8 0.8)) (justify right bottom)) (uuid "9e0ea864-e318-4b82-8560-356367afec88"))
+	(label "PPG1_LED5_RED_K" (at 453.970000 52.460000 0) (effects (font (size 0.8 0.8)) (justify left bottom)) (uuid "b261e953-cb3a-4ede-a8f0-905aee1f2fbc"))
+	(label "PPG1_LED2_RED_K" (at 453.970000 57.540000 0) (effects (font (size 0.8 0.8)) (justify left bottom)) (uuid "271e66a2-cb1b-4d6b-b5c3-bb9ef2ed48a0"))
+	(label "PPG1_LED_MUX_SEL" (at 426.030000 60.080000 180) (effects (font (size 0.8 0.8)) (justify right bottom)) (uuid "6f50a1c9-b6fd-4ed5-b72d-f064f8ad0c52"))
+	(global_label "PPG_VLED" (shape bidirectional) (at 440.000000 41.030000 270) (effects (font (size 0.8 0.8)) (justify left bottom)) (uuid "9cfb1c24-7d4d-4adc-bfa0-56d78fd18071"))
+	(global_label "GND" (shape bidirectional) (at 440.000000 68.970000 90) (effects (font (size 0.8 0.8)) (justify left bottom)) (uuid "31e19b41-48ea-41a2-a126-9d6e1bcda196"))
+	(symbol
+		(lib_id "sportwatch_custom:TS5A12301E")
+		(at 565.000000 55.000000 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "5785c9cf-7659-498c-a1e0-cb3c3911e258")
+		(property "Reference" "U404" (at 565.000000 42.300000 0) (show_name no) (do_not_autoplace no) (effects (font (size 1.27 1.27))))
+		(property "Value" "TS5A12301E" (at 565.000000 67.700000 0) (show_name no) (do_not_autoplace no) (effects (font (size 1.27 1.27))))
+		(property "Footprint" "Package_BGA:Texas_DSBGA-6_0.76x1.16mm_Layout2x3_P0.4mm" (at 565.000000 55.000000 0) (hide yes) (show_name no) (do_not_autoplace no) (effects (font (size 1.27 1.27))))
+		(property "Datasheet" "https://www.ti.com/lit/ds/symlink/ts5a12301e.pdf" (at 565.000000 55.000000 0) (hide yes) (show_name no) (do_not_autoplace no) (effects (font (size 1.27 1.27))))
+		(property "Description" "LED bank 2:1 SPDT mux; 1.8V-compatible control" (at 565.000000 55.000000 0) (hide yes) (show_name no) (do_not_autoplace no) (effects (font (size 1.27 1.27))))
+		(pin "B2" (uuid "3f535e68-6a4e-48b6-b464-0720295fcbef"))
+		(pin "B1" (uuid "73079967-52fa-48a1-9ae0-bf9444b5b57e"))
+		(pin "A2" (uuid "ce21fa83-bb90-4be0-b485-5c3819169ab6"))
+		(pin "C1" (uuid "4abdcc1b-1655-46f4-bdac-2721be6415f7"))
+		(pin "A1" (uuid "2187af84-7646-4ff8-842a-dee6334a05ac"))
+		(pin "C2" (uuid "d7402d49-cdfc-4eb3-843b-274635a9a43d"))
+		(instances (project "rear_sensor_revA" (path "/e9412e56-0f4f-4ec5-ad89-3d7d6481d433/56b54535-d023-45c5-9cb1-b85ec96641c9" (reference "U404") (unit 1))))
+
+(property "Board" "REAR" (at 0 0 0) (effects (font (size 1 1)) (hide yes)))
+)
+	(label "PPG1_LED_IR_DRV" (at 551.030000 55.000000 180) (effects (font (size 0.8 0.8)) (justify right bottom)) (uuid "f11ef76e-395a-4da4-9a67-4eb488d18806"))
+	(label "PPG1_LED6_IR850_K" (at 578.970000 52.460000 0) (effects (font (size 0.8 0.8)) (justify left bottom)) (uuid "8c25efa8-7d59-4f70-8966-61a5f76be330"))
+	(label "PPG1_LED3_IR850_K" (at 578.970000 57.540000 0) (effects (font (size 0.8 0.8)) (justify left bottom)) (uuid "19119e71-ad0a-44f9-b6da-b2ab13adfb89"))
+	(label "PPG1_LED_MUX_SEL" (at 551.030000 60.080000 180) (effects (font (size 0.8 0.8)) (justify right bottom)) (uuid "deb44d7f-530d-404e-a637-f85bb6797b8a"))
+	(global_label "PPG_VLED" (shape bidirectional) (at 565.000000 41.030000 270) (effects (font (size 0.8 0.8)) (justify left bottom)) (uuid "64cf2a81-202d-42fb-b2d3-a07400ec00ba"))
+	(global_label "GND" (shape bidirectional) (at 565.000000 68.970000 90) (effects (font (size 0.8 0.8)) (justify left bottom)) (uuid "a7be3bf6-f6c1-4051-a9b5-1522e72273a2"))
+	(symbol
+		(lib_id "sportwatch_custom:TS5A12301E")
+		(at 690.000000 55.000000 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "b3761432-6749-4159-933c-c29aa4da4095")
+		(property "Reference" "U405" (at 690.000000 42.300000 0) (show_name no) (do_not_autoplace no) (effects (font (size 1.27 1.27))))
+		(property "Value" "TS5A12301E" (at 690.000000 67.700000 0) (show_name no) (do_not_autoplace no) (effects (font (size 1.27 1.27))))
+		(property "Footprint" "Package_BGA:Texas_DSBGA-6_0.76x1.16mm_Layout2x3_P0.4mm" (at 690.000000 55.000000 0) (hide yes) (show_name no) (do_not_autoplace no) (effects (font (size 1.27 1.27))))
+		(property "Datasheet" "https://www.ti.com/lit/ds/symlink/ts5a12301e.pdf" (at 690.000000 55.000000 0) (hide yes) (show_name no) (do_not_autoplace no) (effects (font (size 1.27 1.27))))
+		(property "Description" "LED bank 2:1 SPDT mux; 1.8V-compatible control" (at 690.000000 55.000000 0) (hide yes) (show_name no) (do_not_autoplace no) (effects (font (size 1.27 1.27))))
+		(pin "B2" (uuid "0b6e6857-75ef-4554-91a7-34e2467bec52"))
+		(pin "B1" (uuid "f8a4b49e-c843-4fdd-9b4a-51771c751f3b"))
+		(pin "A2" (uuid "ede492ce-c574-440c-ad66-095087c9aa94"))
+		(pin "C1" (uuid "10c84d64-d72b-42b7-97ed-bb04703b3039"))
+		(pin "A1" (uuid "63272e27-7c22-415e-8149-5ab117cf084c"))
+		(pin "C2" (uuid "72e91f3d-7731-4bc7-88b6-a8ac23b4316d"))
+		(instances (project "rear_sensor_revA" (path "/e9412e56-0f4f-4ec5-ad89-3d7d6481d433/56b54535-d023-45c5-9cb1-b85ec96641c9" (reference "U405") (unit 1))))
+
+(property "Board" "REAR" (at 0 0 0) (effects (font (size 1 1)) (hide yes)))
+)
+	(label "PPG2_LED_GREEN_DRV" (at 676.030000 55.000000 180) (effects (font (size 0.8 0.8)) (justify right bottom)) (uuid "7de84c39-8e65-4d98-a4b7-97529cee1ca7"))
+	(label "PPG2_LED4_GREEN_K" (at 703.970000 52.460000 0) (effects (font (size 0.8 0.8)) (justify left bottom)) (uuid "5c5752ee-c335-4bee-bea8-58cc0764252b"))
+	(label "PPG2_LED1_GREEN_K" (at 703.970000 57.540000 0) (effects (font (size 0.8 0.8)) (justify left bottom)) (uuid "8496c8b8-b9a4-479d-abc6-8a6ae8aca951"))
+	(label "PPG2_LED_MUX_SEL" (at 676.030000 60.080000 180) (effects (font (size 0.8 0.8)) (justify right bottom)) (uuid "b77697f0-290f-4208-8de0-f152b894404a"))
+	(global_label "PPG_VLED" (shape bidirectional) (at 690.000000 41.030000 270) (effects (font (size 0.8 0.8)) (justify left bottom)) (uuid "a1162c6a-8308-49bd-b851-a8c6b994be74"))
+	(global_label "GND" (shape bidirectional) (at 690.000000 68.970000 90) (effects (font (size 0.8 0.8)) (justify left bottom)) (uuid "89ec539e-ac72-4c7f-9ae7-13b9a6913cfb"))
+	(symbol
+		(lib_id "sportwatch_custom:TS5A12301E")
+		(at 65.000000 125.000000 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "b7e656b7-7969-4ea6-961a-a3c34408a3a3")
+		(property "Reference" "U406" (at 65.000000 112.300000 0) (show_name no) (do_not_autoplace no) (effects (font (size 1.27 1.27))))
+		(property "Value" "TS5A12301E" (at 65.000000 137.700000 0) (show_name no) (do_not_autoplace no) (effects (font (size 1.27 1.27))))
+		(property "Footprint" "Package_BGA:Texas_DSBGA-6_0.76x1.16mm_Layout2x3_P0.4mm" (at 65.000000 125.000000 0) (hide yes) (show_name no) (do_not_autoplace no) (effects (font (size 1.27 1.27))))
+		(property "Datasheet" "https://www.ti.com/lit/ds/symlink/ts5a12301e.pdf" (at 65.000000 125.000000 0) (hide yes) (show_name no) (do_not_autoplace no) (effects (font (size 1.27 1.27))))
+		(property "Description" "LED bank 2:1 SPDT mux; 1.8V-compatible control" (at 65.000000 125.000000 0) (hide yes) (show_name no) (do_not_autoplace no) (effects (font (size 1.27 1.27))))
+		(pin "B2" (uuid "d64e659b-be73-4017-a30b-6906615c39ff"))
+		(pin "B1" (uuid "93032cf5-80ae-4440-954d-02e20b34bce8"))
+		(pin "A2" (uuid "3efc157b-4b56-43bc-b2c5-c388eb337513"))
+		(pin "C1" (uuid "d1cdc369-1ff9-41c0-9afe-43ddc22a5af1"))
+		(pin "A1" (uuid "2091d563-2b29-4e11-a5f9-959290a0621a"))
+		(pin "C2" (uuid "7ecd1f14-1495-40bd-937f-b2c1734519a8"))
+		(instances (project "rear_sensor_revA" (path "/e9412e56-0f4f-4ec5-ad89-3d7d6481d433/56b54535-d023-45c5-9cb1-b85ec96641c9" (reference "U406") (unit 1))))
+
+(property "Board" "REAR" (at 0 0 0) (effects (font (size 1 1)) (hide yes)))
+)
+	(label "PPG2_LED_RED_DRV" (at 51.030000 125.000000 180) (effects (font (size 0.8 0.8)) (justify right bottom)) (uuid "39bafc6c-d078-4df3-96ad-aa5367215c9c"))
+	(label "PPG2_LED5_RED_K" (at 78.970000 122.460000 0) (effects (font (size 0.8 0.8)) (justify left bottom)) (uuid "1ac2a848-8c97-4794-b5c1-521a0d6b9ea6"))
+	(label "PPG2_LED2_RED_K" (at 78.970000 127.540000 0) (effects (font (size 0.8 0.8)) (justify left bottom)) (uuid "8bb6808a-fa5b-4d58-bfbc-50bb6ec26806"))
+	(label "PPG2_LED_MUX_SEL" (at 51.030000 130.080000 180) (effects (font (size 0.8 0.8)) (justify right bottom)) (uuid "2b62f146-a27e-4e60-a8aa-811f54d7c811"))
+	(global_label "PPG_VLED" (shape bidirectional) (at 65.000000 111.030000 270) (effects (font (size 0.8 0.8)) (justify left bottom)) (uuid "af60e034-fe96-4819-852b-9c39e5de380f"))
+	(global_label "GND" (shape bidirectional) (at 65.000000 138.970000 90) (effects (font (size 0.8 0.8)) (justify left bottom)) (uuid "44345e7f-71dc-485b-acac-cb21800e7064"))
+	(symbol
+		(lib_id "sportwatch_custom:TS5A12301E")
+		(at 190.000000 125.000000 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "80cfe80c-28f9-4dad-a484-0fd6731291c9")
+		(property "Reference" "U407" (at 190.000000 112.300000 0) (show_name no) (do_not_autoplace no) (effects (font (size 1.27 1.27))))
+		(property "Value" "TS5A12301E" (at 190.000000 137.700000 0) (show_name no) (do_not_autoplace no) (effects (font (size 1.27 1.27))))
+		(property "Footprint" "Package_BGA:Texas_DSBGA-6_0.76x1.16mm_Layout2x3_P0.4mm" (at 190.000000 125.000000 0) (hide yes) (show_name no) (do_not_autoplace no) (effects (font (size 1.27 1.27))))
+		(property "Datasheet" "https://www.ti.com/lit/ds/symlink/ts5a12301e.pdf" (at 190.000000 125.000000 0) (hide yes) (show_name no) (do_not_autoplace no) (effects (font (size 1.27 1.27))))
+		(property "Description" "LED bank 2:1 SPDT mux; 1.8V-compatible control" (at 190.000000 125.000000 0) (hide yes) (show_name no) (do_not_autoplace no) (effects (font (size 1.27 1.27))))
+		(pin "B2" (uuid "8571b636-008b-41c6-bb0f-31f2b62b3c3b"))
+		(pin "B1" (uuid "f507f33c-ef46-4dc0-ba4b-989d7bb6d04f"))
+		(pin "A2" (uuid "4fa0c09d-897e-4774-9163-821d3ddc99d5"))
+		(pin "C1" (uuid "8657be6f-722c-49c2-950e-f2c6ff4b1251"))
+		(pin "A1" (uuid "244a20c2-ef94-4114-b651-b4b9b75ee811"))
+		(pin "C2" (uuid "84afca74-1227-4401-90c7-8d27dae88f6b"))
+		(instances (project "rear_sensor_revA" (path "/e9412e56-0f4f-4ec5-ad89-3d7d6481d433/56b54535-d023-45c5-9cb1-b85ec96641c9" (reference "U407") (unit 1))))
+
+(property "Board" "REAR" (at 0 0 0) (effects (font (size 1 1)) (hide yes)))
+)
+	(label "PPG2_LED_IR_DRV" (at 176.030000 125.000000 180) (effects (font (size 0.8 0.8)) (justify right bottom)) (uuid "82bb9397-ae72-48e0-993e-36c0fae60318"))
+	(label "PPG2_LED6_IR940_K" (at 203.970000 122.460000 0) (effects (font (size 0.8 0.8)) (justify left bottom)) (uuid "6648baf1-5dc2-4d85-919f-15289d43ed76"))
+	(label "PPG2_LED3_IR850_K" (at 203.970000 127.540000 0) (effects (font (size 0.8 0.8)) (justify left bottom)) (uuid "35e85da6-7223-4ad5-bf65-e28f3b1398bc"))
+	(label "PPG2_LED_MUX_SEL" (at 176.030000 130.080000 180) (effects (font (size 0.8 0.8)) (justify right bottom)) (uuid "3408cd08-1873-4d36-a81d-a16e78473425"))
+	(global_label "PPG_VLED" (shape bidirectional) (at 190.000000 111.030000 270) (effects (font (size 0.8 0.8)) (justify left bottom)) (uuid "ee44144c-c626-481a-b658-f4faa9f8a446"))
+	(global_label "GND" (shape bidirectional) (at 190.000000 138.970000 90) (effects (font (size 0.8 0.8)) (justify left bottom)) (uuid "b3422775-33f4-4911-9061-b0ef64896f3c"))
+	(symbol
+		(lib_id "Device:C")
+		(at 315.000000 125.000000 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "bfc5a5cd-2b41-4476-9ec2-30ce12af98a0")
+		(property "Reference" "C403" (at 315.000000 112.300000 0) (show_name no) (do_not_autoplace no) (effects (font (size 1.27 1.27))))
+		(property "Value" "100nF" (at 315.000000 137.700000 0) (show_name no) (do_not_autoplace no) (effects (font (size 1.27 1.27))))
+		(property "Footprint" "Capacitor_SMD:C_0402_1005Metric" (at 315.000000 125.000000 0) (hide yes) (show_name no) (do_not_autoplace no) (effects (font (size 1.27 1.27))))
+		(property "Datasheet" "~" (at 315.000000 125.000000 0) (hide yes) (show_name no) (do_not_autoplace no) (effects (font (size 1.27 1.27))))
+		(property "Description" "Local mux supply decoupling" (at 315.000000 125.000000 0) (hide yes) (show_name no) (do_not_autoplace no) (effects (font (size 1.27 1.27))))
+		(pin "1" (uuid "b24cb7ab-eab3-49b6-9ea3-7bb71c19b673"))
+		(pin "2" (uuid "6a2d4888-7861-459c-bc93-132d59c500de"))
+		(instances (project "rear_sensor_revA" (path "/e9412e56-0f4f-4ec5-ad89-3d7d6481d433/56b54535-d023-45c5-9cb1-b85ec96641c9" (reference "C403") (unit 1))))
+
+(property "Board" "REAR" (at 0 0 0) (effects (font (size 1 1)) (hide yes)))
+)
+	(global_label "PPG_VLED" (shape bidirectional) (at 315.000000 117.380000 270) (effects (font (size 0.8 0.8)) (justify left bottom)) (uuid "ac892789-5296-4729-b631-8f62ee17bde9"))
+	(global_label "GND" (shape bidirectional) (at 315.000000 132.620000 90) (effects (font (size 0.8 0.8)) (justify left bottom)) (uuid "15ff222a-147b-48f8-b80b-75427e9052ed"))
+	(symbol
+		(lib_id "Device:C")
+		(at 440.000000 125.000000 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "3d601fc4-e008-4576-b08a-103fce5f71ce")
+		(property "Reference" "C404" (at 440.000000 112.300000 0) (show_name no) (do_not_autoplace no) (effects (font (size 1.27 1.27))))
+		(property "Value" "100nF" (at 440.000000 137.700000 0) (show_name no) (do_not_autoplace no) (effects (font (size 1.27 1.27))))
+		(property "Footprint" "Capacitor_SMD:C_0402_1005Metric" (at 440.000000 125.000000 0) (hide yes) (show_name no) (do_not_autoplace no) (effects (font (size 1.27 1.27))))
+		(property "Datasheet" "~" (at 440.000000 125.000000 0) (hide yes) (show_name no) (do_not_autoplace no) (effects (font (size 1.27 1.27))))
+		(property "Description" "Local mux supply decoupling" (at 440.000000 125.000000 0) (hide yes) (show_name no) (do_not_autoplace no) (effects (font (size 1.27 1.27))))
+		(pin "1" (uuid "1624fea7-1732-421d-bbb4-5b2ffa67e80e"))
+		(pin "2" (uuid "6b7e2bb6-8eda-4e35-82ed-164fd1fd6a5b"))
+		(instances (project "rear_sensor_revA" (path "/e9412e56-0f4f-4ec5-ad89-3d7d6481d433/56b54535-d023-45c5-9cb1-b85ec96641c9" (reference "C404") (unit 1))))
+
+(property "Board" "REAR" (at 0 0 0) (effects (font (size 1 1)) (hide yes)))
+)
+	(global_label "PPG_VLED" (shape bidirectional) (at 440.000000 117.380000 270) (effects (font (size 0.8 0.8)) (justify left bottom)) (uuid "60dcd5c4-951d-41d2-b55d-4d08f940c657"))
+	(global_label "GND" (shape bidirectional) (at 440.000000 132.620000 90) (effects (font (size 0.8 0.8)) (justify left bottom)) (uuid "14dfa673-6425-4d45-b32b-29653794dd4d"))
+	(symbol
+		(lib_id "Device:C")
+		(at 565.000000 125.000000 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "8fbe3230-bfe9-4995-a27c-3e745609693b")
+		(property "Reference" "C405" (at 565.000000 112.300000 0) (show_name no) (do_not_autoplace no) (effects (font (size 1.27 1.27))))
+		(property "Value" "100nF" (at 565.000000 137.700000 0) (show_name no) (do_not_autoplace no) (effects (font (size 1.27 1.27))))
+		(property "Footprint" "Capacitor_SMD:C_0402_1005Metric" (at 565.000000 125.000000 0) (hide yes) (show_name no) (do_not_autoplace no) (effects (font (size 1.27 1.27))))
+		(property "Datasheet" "~" (at 565.000000 125.000000 0) (hide yes) (show_name no) (do_not_autoplace no) (effects (font (size 1.27 1.27))))
+		(property "Description" "Local mux supply decoupling" (at 565.000000 125.000000 0) (hide yes) (show_name no) (do_not_autoplace no) (effects (font (size 1.27 1.27))))
+		(pin "1" (uuid "c06b03e2-0ac3-413f-82b4-855935cb36f3"))
+		(pin "2" (uuid "9874dffd-d20b-47aa-8dec-34ee17970b83"))
+		(instances (project "rear_sensor_revA" (path "/e9412e56-0f4f-4ec5-ad89-3d7d6481d433/56b54535-d023-45c5-9cb1-b85ec96641c9" (reference "C405") (unit 1))))
+
+(property "Board" "REAR" (at 0 0 0) (effects (font (size 1 1)) (hide yes)))
+)
+	(global_label "PPG_VLED" (shape bidirectional) (at 565.000000 117.380000 270) (effects (font (size 0.8 0.8)) (justify left bottom)) (uuid "2e34ae00-4b96-4c87-977d-969e00c2a825"))
+	(global_label "GND" (shape bidirectional) (at 565.000000 132.620000 90) (effects (font (size 0.8 0.8)) (justify left bottom)) (uuid "f723277f-35a3-4f84-9f83-5c32754607dd"))
+	(symbol
+		(lib_id "Device:C")
+		(at 690.000000 125.000000 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "e9924ce7-150f-4184-9c27-2b93b4b817d4")
+		(property "Reference" "C406" (at 690.000000 112.300000 0) (show_name no) (do_not_autoplace no) (effects (font (size 1.27 1.27))))
+		(property "Value" "100nF" (at 690.000000 137.700000 0) (show_name no) (do_not_autoplace no) (effects (font (size 1.27 1.27))))
+		(property "Footprint" "Capacitor_SMD:C_0402_1005Metric" (at 690.000000 125.000000 0) (hide yes) (show_name no) (do_not_autoplace no) (effects (font (size 1.27 1.27))))
+		(property "Datasheet" "~" (at 690.000000 125.000000 0) (hide yes) (show_name no) (do_not_autoplace no) (effects (font (size 1.27 1.27))))
+		(property "Description" "Local mux supply decoupling" (at 690.000000 125.000000 0) (hide yes) (show_name no) (do_not_autoplace no) (effects (font (size 1.27 1.27))))
+		(pin "1" (uuid "5c96f575-938b-449d-a1aa-c03729791cf6"))
+		(pin "2" (uuid "e7ca9731-85b2-4582-87b2-7af274d6c5ae"))
+		(instances (project "rear_sensor_revA" (path "/e9412e56-0f4f-4ec5-ad89-3d7d6481d433/56b54535-d023-45c5-9cb1-b85ec96641c9" (reference "C406") (unit 1))))
+
+(property "Board" "REAR" (at 0 0 0) (effects (font (size 1 1)) (hide yes)))
+)
+	(global_label "PPG_VLED" (shape bidirectional) (at 690.000000 117.380000 270) (effects (font (size 0.8 0.8)) (justify left bottom)) (uuid "43ef04aa-83a3-45c3-9801-f015aec6e6cd"))
+	(global_label "GND" (shape bidirectional) (at 690.000000 132.620000 90) (effects (font (size 0.8 0.8)) (justify left bottom)) (uuid "96a231ff-0270-4584-92ec-ff02d20a45c2"))
+	(symbol
+		(lib_id "Device:C")
+		(at 65.000000 195.000000 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "60f1dc50-ca3f-454d-9e1e-810e37ffc891")
+		(property "Reference" "C407" (at 65.000000 182.300000 0) (show_name no) (do_not_autoplace no) (effects (font (size 1.27 1.27))))
+		(property "Value" "100nF" (at 65.000000 207.700000 0) (show_name no) (do_not_autoplace no) (effects (font (size 1.27 1.27))))
+		(property "Footprint" "Capacitor_SMD:C_0402_1005Metric" (at 65.000000 195.000000 0) (hide yes) (show_name no) (do_not_autoplace no) (effects (font (size 1.27 1.27))))
+		(property "Datasheet" "~" (at 65.000000 195.000000 0) (hide yes) (show_name no) (do_not_autoplace no) (effects (font (size 1.27 1.27))))
+		(property "Description" "Local mux supply decoupling" (at 65.000000 195.000000 0) (hide yes) (show_name no) (do_not_autoplace no) (effects (font (size 1.27 1.27))))
+		(pin "1" (uuid "e5ac7627-c9cd-4648-9563-75227d5670d9"))
+		(pin "2" (uuid "5b0855e3-0fef-4ec0-bd4c-bfdd918f6733"))
+		(instances (project "rear_sensor_revA" (path "/e9412e56-0f4f-4ec5-ad89-3d7d6481d433/56b54535-d023-45c5-9cb1-b85ec96641c9" (reference "C407") (unit 1))))
+
+(property "Board" "REAR" (at 0 0 0) (effects (font (size 1 1)) (hide yes)))
+)
+	(global_label "PPG_VLED" (shape bidirectional) (at 65.000000 187.380000 270) (effects (font (size 0.8 0.8)) (justify left bottom)) (uuid "8080c691-d679-4ee6-b2d6-70bfe9991149"))
+	(global_label "GND" (shape bidirectional) (at 65.000000 202.620000 90) (effects (font (size 0.8 0.8)) (justify left bottom)) (uuid "f7308260-8783-4ed4-b04d-653bc4e8e2d3"))
+	(symbol
+		(lib_id "Device:C")
+		(at 190.000000 195.000000 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "a40405e3-d063-491c-bcb3-8e6bfb1fcf17")
+		(property "Reference" "C408" (at 190.000000 182.300000 0) (show_name no) (do_not_autoplace no) (effects (font (size 1.27 1.27))))
+		(property "Value" "100nF" (at 190.000000 207.700000 0) (show_name no) (do_not_autoplace no) (effects (font (size 1.27 1.27))))
+		(property "Footprint" "Capacitor_SMD:C_0402_1005Metric" (at 190.000000 195.000000 0) (hide yes) (show_name no) (do_not_autoplace no) (effects (font (size 1.27 1.27))))
+		(property "Datasheet" "~" (at 190.000000 195.000000 0) (hide yes) (show_name no) (do_not_autoplace no) (effects (font (size 1.27 1.27))))
+		(property "Description" "Local mux supply decoupling" (at 190.000000 195.000000 0) (hide yes) (show_name no) (do_not_autoplace no) (effects (font (size 1.27 1.27))))
+		(pin "1" (uuid "5a5afa62-be1b-45cf-aefa-ba0661d96dfe"))
+		(pin "2" (uuid "2849957b-9b96-4287-af43-c1088bf358da"))
+		(instances (project "rear_sensor_revA" (path "/e9412e56-0f4f-4ec5-ad89-3d7d6481d433/56b54535-d023-45c5-9cb1-b85ec96641c9" (reference "C408") (unit 1))))
+
+(property "Board" "REAR" (at 0 0 0) (effects (font (size 1 1)) (hide yes)))
+)
+	(global_label "PPG_VLED" (shape bidirectional) (at 190.000000 187.380000 270) (effects (font (size 0.8 0.8)) (justify left bottom)) (uuid "a2037a46-a8b6-47fd-9575-3007c2147348"))
+	(global_label "GND" (shape bidirectional) (at 190.000000 202.620000 90) (effects (font (size 0.8 0.8)) (justify left bottom)) (uuid "a2ea7ccd-bf48-4678-9f88-4c9092a9adfe"))
+	(symbol
+		(lib_id "Device:C")
+		(at 315.000000 195.000000 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "d85e8b5c-b060-42a2-98b1-8f42bf4b98df")
+		(property "Reference" "C4101"
+			(at 317.540000 192.460000 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "22uF"
+			(at 317.540000 197.540000 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Capacitor_SMD:C_0402_1005Metric"
+			(at 315.000000 195.000000 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 315.000000 195.000000 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "combined VDD_ANA/VDD_DIG bulk decoupling"
+			(at 315.000000 195.000000 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "30c1b5ca-a1d1-467a-95e3-ca1d3b73bf4c")
+		)
+		(pin "2"
+			(uuid "73d13446-9597-4cca-ba9a-52b23e7e5255")
+		)
+		(instances (project "rear_sensor_revA" (path "/e9412e56-0f4f-4ec5-ad89-3d7d6481d433/56b54535-d023-45c5-9cb1-b85ec96641c9" (reference "C4101") (unit 1))))
+
+(property "Board" "REAR" (at 0 0 0) (effects (font (size 1 1)) (hide yes)))
+)
+	(global_label "VOUT1_1V8" (shape bidirectional) (at 315.000000 187.380000 270) (effects (font (size 0.8 0.8)) (justify left bottom)) (uuid "afce6a93-57f7-4636-a03e-d6f3161b3e81"))
+	(global_label "GND" (shape bidirectional) (at 315.000000 202.620000 90) (effects (font (size 0.8 0.8)) (justify left bottom)) (uuid "168a348d-3dd4-4703-a502-806564c5a4e2"))
+	(symbol
+		(lib_id "Device:C")
+		(at 440.000000 195.000000 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "94842c08-9a3c-4daa-8caa-0efc59e1777d")
+		(property "Reference" "C4102"
+			(at 442.540000 192.460000 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "100nF"
+			(at 442.540000 197.540000 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Capacitor_SMD:C_0402_1005Metric"
+			(at 440.000000 195.000000 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 440.000000 195.000000 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "combined VDD_ANA/VDD_DIG high-frequency decoupling"
+			(at 440.000000 195.000000 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "9e41862b-b40a-49d2-9374-b5e6f57caf0a")
+		)
+		(pin "2"
+			(uuid "76a127af-2055-4b08-a037-c2a14b14aec5")
+		)
+		(instances (project "rear_sensor_revA" (path "/e9412e56-0f4f-4ec5-ad89-3d7d6481d433/56b54535-d023-45c5-9cb1-b85ec96641c9" (reference "C4102") (unit 1))))
+
+(property "Board" "REAR" (at 0 0 0) (effects (font (size 1 1)) (hide yes)))
+)
+	(global_label "VOUT1_1V8" (shape bidirectional) (at 440.000000 187.380000 270) (effects (font (size 0.8 0.8)) (justify left bottom)) (uuid "43fc4956-0db5-4a7d-82fc-a6576b1199ab"))
+	(global_label "GND" (shape bidirectional) (at 440.000000 202.620000 90) (effects (font (size 0.8 0.8)) (justify left bottom)) (uuid "69abf12a-68e7-466a-85bc-9e6fda512261"))
+	(symbol
+		(lib_id "Device:C")
+		(at 565.000000 195.000000 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "064559f6-625a-407a-a04e-9d836e0b2e7a")
+		(property "Reference" "C4103"
+			(at 567.540000 192.460000 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "1.0uF"
+			(at 567.540000 197.540000 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Capacitor_SMD:C_0402_1005Metric"
+			(at 565.000000 195.000000 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 565.000000 195.000000 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "VREF decoupling"
+			(at 565.000000 195.000000 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "73fdf7e8-0972-44cc-8ca4-aa6681b83d04")
+		)
+		(pin "2"
+			(uuid "032fbdb7-ee6f-4c53-8acb-7103a8f1fe20")
+		)
+		(instances (project "rear_sensor_revA" (path "/e9412e56-0f4f-4ec5-ad89-3d7d6481d433/56b54535-d023-45c5-9cb1-b85ec96641c9" (reference "C4103") (unit 1))))
+
+(property "Board" "REAR" (at 0 0 0) (effects (font (size 1 1)) (hide yes)))
+)
+	(label "PPG1_VREF" (at 565.000000 187.380000 90) (effects (font (size 0.8 0.8)) (justify left bottom)) (uuid "6d87dc8e-8cea-41ff-a77c-ccfbedfbfe11"))
+	(global_label "GND" (shape bidirectional) (at 565.000000 202.620000 90) (effects (font (size 0.8 0.8)) (justify left bottom)) (uuid "b95c9490-506a-4b57-bf36-e24906e26850"))
+	(symbol
+		(lib_id "Device:C")
+		(at 690.000000 195.000000 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "1a765b6a-1277-45a0-8250-39a14410cd20")
+		(property "Reference" "C4104"
+			(at 692.540000 192.460000 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "10uF"
+			(at 692.540000 197.540000 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Capacitor_SMD:C_0402_1005Metric"
+			(at 690.000000 195.000000 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 690.000000 195.000000 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "VLED local decoupling"
+			(at 690.000000 195.000000 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "17926b48-5d17-4512-9a41-2ebec3cf0a7a")
+		)
+		(pin "2"
+			(uuid "fd379846-7751-4dc4-a581-99612ed53a9e")
+		)
+		(instances (project "rear_sensor_revA" (path "/e9412e56-0f4f-4ec5-ad89-3d7d6481d433/56b54535-d023-45c5-9cb1-b85ec96641c9" (reference "C4104") (unit 1))))
+
+(property "Board" "REAR" (at 0 0 0) (effects (font (size 1 1)) (hide yes)))
+)
+	(global_label "PPG_VLED" (shape bidirectional) (at 690.000000 187.380000 270) (effects (font (size 0.8 0.8)) (justify left bottom)) (uuid "9e83e03d-5be5-40bd-a724-84664b268793"))
+	(global_label "GND" (shape bidirectional) (at 690.000000 202.620000 90) (effects (font (size 0.8 0.8)) (justify left bottom)) (uuid "a63d38a1-ede3-41aa-8ab8-9f8f7448d2af"))
+	(symbol
+		(lib_id "Device:C")
+		(at 65.000000 265.000000 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "74dec967-4819-4e7b-a3df-59f909f391c1")
+		(property "Reference" "C4201"
+			(at 67.540000 262.460000 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "22uF"
+			(at 67.540000 267.540000 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Capacitor_SMD:C_0402_1005Metric"
+			(at 65.000000 265.000000 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 65.000000 265.000000 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "combined VDD_ANA/VDD_DIG bulk decoupling"
+			(at 65.000000 265.000000 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "c2d64d2c-6c9d-43a2-94c9-afbb4fb267dc")
+		)
+		(pin "2"
+			(uuid "26385a5b-19a0-4ea9-bfa6-18b9950147e3")
+		)
+		(instances (project "rear_sensor_revA" (path "/e9412e56-0f4f-4ec5-ad89-3d7d6481d433/56b54535-d023-45c5-9cb1-b85ec96641c9" (reference "C4201") (unit 1))))
+
+(property "Board" "REAR" (at 0 0 0) (effects (font (size 1 1)) (hide yes)))
+)
+	(global_label "VOUT1_1V8" (shape bidirectional) (at 65.000000 257.380000 270) (effects (font (size 0.8 0.8)) (justify left bottom)) (uuid "5328ea6a-223c-4883-8e7a-8b15dbe83ff8"))
+	(global_label "GND" (shape bidirectional) (at 65.000000 272.620000 90) (effects (font (size 0.8 0.8)) (justify left bottom)) (uuid "e2a7709f-85dc-4d4e-91ff-309a0dcc38c1"))
+	(symbol
+		(lib_id "Device:C")
+		(at 190.000000 265.000000 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "de232d86-e34e-4ce9-97b9-74c032fa56cf")
+		(property "Reference" "C4202"
+			(at 192.540000 262.460000 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "100nF"
+			(at 192.540000 267.540000 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Capacitor_SMD:C_0402_1005Metric"
+			(at 190.000000 265.000000 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 190.000000 265.000000 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "combined VDD_ANA/VDD_DIG high-frequency decoupling"
+			(at 190.000000 265.000000 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "b3deb2b6-f28c-4bb0-8e79-67cd1e75c4d1")
+		)
+		(pin "2"
+			(uuid "8d984912-afc8-47f7-ad98-a6a0c3cf764c")
+		)
+		(instances (project "rear_sensor_revA" (path "/e9412e56-0f4f-4ec5-ad89-3d7d6481d433/56b54535-d023-45c5-9cb1-b85ec96641c9" (reference "C4202") (unit 1))))
+
+(property "Board" "REAR" (at 0 0 0) (effects (font (size 1 1)) (hide yes)))
+)
+	(global_label "VOUT1_1V8" (shape bidirectional) (at 190.000000 257.380000 270) (effects (font (size 0.8 0.8)) (justify left bottom)) (uuid "2a056337-be71-4f97-91dc-c5f16db071a7"))
+	(global_label "GND" (shape bidirectional) (at 190.000000 272.620000 90) (effects (font (size 0.8 0.8)) (justify left bottom)) (uuid "f9c75e0c-059c-4ddd-bb77-fd7c6c96190e"))
+	(symbol
+		(lib_id "Device:C")
+		(at 315.000000 265.000000 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "2ca274ce-ced7-4142-b7b8-d9fe5a3a24ce")
+		(property "Reference" "C4203"
+			(at 317.540000 262.460000 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "1.0uF"
+			(at 317.540000 267.540000 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Capacitor_SMD:C_0402_1005Metric"
+			(at 315.000000 265.000000 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 315.000000 265.000000 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "VREF decoupling"
+			(at 315.000000 265.000000 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "21a68cf8-4444-451a-88ef-a8b56e2a4ccf")
+		)
+		(pin "2"
+			(uuid "a7680815-daa5-4a40-8858-bfd6415d03fd")
+		)
+		(instances (project "rear_sensor_revA" (path "/e9412e56-0f4f-4ec5-ad89-3d7d6481d433/56b54535-d023-45c5-9cb1-b85ec96641c9" (reference "C4203") (unit 1))))
+
+(property "Board" "REAR" (at 0 0 0) (effects (font (size 1 1)) (hide yes)))
+)
+	(label "PPG2_VREF" (at 315.000000 257.380000 90) (effects (font (size 0.8 0.8)) (justify left bottom)) (uuid "39a1af9b-2712-4188-bbf0-3ddf2696c03e"))
+	(global_label "GND" (shape bidirectional) (at 315.000000 272.620000 90) (effects (font (size 0.8 0.8)) (justify left bottom)) (uuid "2fef5118-60a5-4fa9-a418-5c99b563f09b"))
+	(symbol
+		(lib_id "Device:C")
+		(at 440.000000 265.000000 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "b7df98da-fb85-4a7f-81bd-005b4356870b")
+		(property "Reference" "C4204"
+			(at 442.540000 262.460000 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "10uF"
+			(at 442.540000 267.540000 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Capacitor_SMD:C_0402_1005Metric"
+			(at 440.000000 265.000000 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 440.000000 265.000000 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "VLED local decoupling"
+			(at 440.000000 265.000000 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "89844806-b313-4fd4-9891-19aaea7533fb")
+		)
+		(pin "2"
+			(uuid "8e686b22-a466-4dae-a661-58a638eb3d37")
+		)
+		(instances (project "rear_sensor_revA" (path "/e9412e56-0f4f-4ec5-ad89-3d7d6481d433/56b54535-d023-45c5-9cb1-b85ec96641c9" (reference "C4204") (unit 1))))
+
+(property "Board" "REAR" (at 0 0 0) (effects (font (size 1 1)) (hide yes)))
+)
+	(global_label "PPG_VLED" (shape bidirectional) (at 440.000000 257.380000 270) (effects (font (size 0.8 0.8)) (justify left bottom)) (uuid "f48b5df1-2f6c-49d0-9f8f-8ef34e5639c2"))
+	(global_label "GND" (shape bidirectional) (at 440.000000 272.620000 90) (effects (font (size 0.8 0.8)) (justify left bottom)) (uuid "7441ead1-fce7-4350-b512-8e6afa557391"))
+	(symbol
+		(lib_id "sportwatch_custom:SFH7018A")
+		(at 565.000000 265.000000 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "8211c225-6d40-467c-9a46-08b7705df3de")
+		(property "Reference" "D401"
+			(at 565.000000 252.300000 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "SFH7018A Q65113A6157"
+			(at 565.000000 277.700000 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "sportwatch_custom:OSRAM_SFH7018A_2.4x2.4mm"
+			(at 565.000000 265.000000 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 565.000000 265.000000 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Green/red/IR biometric LED package; footprint TBD"
+			(at 565.000000 265.000000 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "567887bb-eebb-4aef-a61f-80c23d0276db")
+		)
+		(pin "2"
+			(uuid "53757a20-e209-4f3b-9709-aa01cee7b3c6")
+		)
+		(pin "3"
+			(uuid "6082ec60-ba8c-41ba-842c-b57b3214de9f")
+		)
+		(pin "4"
+			(uuid "3591b926-1898-47dc-a646-896ebdbea824")
+		)
+		(pin "5"
+			(uuid "fca98a00-a6c1-4329-9cc9-53e29d3d3638")
+		)
+		(pin "6"
+			(uuid "e33e326a-b4bc-4047-8883-af96f79e6aff")
+		)
+		(pin "7"
+			(uuid "8e8b7676-411a-4eb7-a58a-eb087a1c2155")
+		)
+		(pin "8"
+			(uuid "2a97d78d-e1e8-4cd3-891b-19457b0afd81")
+		)
+		(instances (project "rear_sensor_revA" (path "/e9412e56-0f4f-4ec5-ad89-3d7d6481d433/56b54535-d023-45c5-9cb1-b85ec96641c9" (reference "D401") (unit 1))))
+
+(property "Board" "REAR" (at 0 0 0) (effects (font (size 1 1)) (hide yes)))
+)
+	(label "PPG1_LED1_GREEN_K" (at 545.950000 257.380000 180) (effects (font (size 0.8 0.8)) (justify right bottom)) (uuid "0236c7a9-1009-44a9-83b0-9cfe9adceb67"))
+	(global_label "PPG_VLED" (shape bidirectional) (at 584.050000 257.380000 180) (effects (font (size 0.8 0.8)) (justify left bottom)) (uuid "740d67d3-372c-49ce-b367-0f34d97d0c87"))
+	(no_connect (at 549.760000 262.460000) (uuid "0f293110-7cf4-4946-8104-bec51dc3a8c0"))
+	(global_label "PPG_VLED" (shape bidirectional) (at 584.050000 262.460000 180) (effects (font (size 0.8 0.8)) (justify left bottom)) (uuid "239025cc-3e7a-4f08-b407-1ed2d529b71b"))
+	(label "PPG1_LED2_RED_K" (at 545.950000 267.540000 180) (effects (font (size 0.8 0.8)) (justify right bottom)) (uuid "a6cbbaf1-d2b8-458b-b2e5-6b2fdd3e965f"))
+	(global_label "PPG_VLED" (shape bidirectional) (at 584.050000 267.540000 180) (effects (font (size 0.8 0.8)) (justify left bottom)) (uuid "21f91668-fee8-433a-b3f2-b4c46e5095d1"))
+	(label "PPG1_LED1_GREEN_K" (at 545.950000 272.620000 180) (effects (font (size 0.8 0.8)) (justify right bottom)) (uuid "f3dc014c-2cbe-4887-ae9c-5d25ed5cd93d"))
+	(label "PPG1_LED1_GREEN_K" (at 545.950000 275.160000 180) (effects (font (size 0.8 0.8)) (justify right bottom)) (uuid "da042d00-812f-4f71-9df5-c2e88fc5278a"))
+	(symbol
+		(lib_id "sportwatch_custom:SFH7018A")
+		(at 690.000000 265.000000 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "9560cf42-acee-4fa3-b7ac-ebc73a1215c7")
+		(property "Reference" "D402"
+			(at 690.000000 252.300000 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "SFH7018A Q65113A6157"
+			(at 690.000000 277.700000 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "sportwatch_custom:OSRAM_SFH7018A_2.4x2.4mm"
+			(at 690.000000 265.000000 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 690.000000 265.000000 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Green/red/IR biometric LED package; footprint TBD"
+			(at 690.000000 265.000000 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "58a24bf1-500e-44b7-aed9-c826ec0e2b3d")
+		)
+		(pin "2"
+			(uuid "9c6eced8-3602-4a4b-af7a-e52036225cc1")
+		)
+		(pin "3"
+			(uuid "aac96619-cd3a-4666-b532-ef2d2a10b38f")
+		)
+		(pin "4"
+			(uuid "277349f7-c19a-4712-9ffc-3be7b013cde9")
+		)
+		(pin "5"
+			(uuid "917b4701-6153-445a-9946-421e3e35c2b9")
+		)
+		(pin "6"
+			(uuid "de384c61-eaac-4f0d-91aa-30f50d5e5cfa")
+		)
+		(pin "7"
+			(uuid "f524c96b-8d34-4bf4-ba22-20222aaf9295")
+		)
+		(pin "8"
+			(uuid "7c89f5fc-8651-410d-b15f-0dce3ab919ad")
+		)
+		(instances (project "rear_sensor_revA" (path "/e9412e56-0f4f-4ec5-ad89-3d7d6481d433/56b54535-d023-45c5-9cb1-b85ec96641c9" (reference "D402") (unit 1))))
+
+(property "Board" "REAR" (at 0 0 0) (effects (font (size 1 1)) (hide yes)))
+)
+	(label "PPG2_LED1_GREEN_K" (at 670.950000 257.380000 180) (effects (font (size 0.8 0.8)) (justify right bottom)) (uuid "7c86a020-e345-4cc8-8dbd-2d7c8af41275"))
+	(global_label "PPG_VLED" (shape bidirectional) (at 709.050000 257.380000 180) (effects (font (size 0.8 0.8)) (justify left bottom)) (uuid "c7913dda-e8d3-41bc-ad14-4517ccc7672d"))
+	(label "PPG2_LED6_IR940_K" (at 670.950000 262.460000 180) (effects (font (size 0.8 0.8)) (justify right bottom)) (uuid "54d1709c-c09a-439f-afd0-4272eefb16ab"))
+	(global_label "PPG_VLED" (shape bidirectional) (at 709.050000 262.460000 180) (effects (font (size 0.8 0.8)) (justify left bottom)) (uuid "477f696c-9862-43ed-a12c-aeed7b8d9f23"))
+	(label "PPG2_LED2_RED_K" (at 670.950000 267.540000 180) (effects (font (size 0.8 0.8)) (justify right bottom)) (uuid "d0fcfc2a-fc5b-453a-86cd-7129ddb948f6"))
+	(global_label "PPG_VLED" (shape bidirectional) (at 709.050000 267.540000 180) (effects (font (size 0.8 0.8)) (justify left bottom)) (uuid "497921ff-7a3a-4f99-a77f-599342a0985b"))
+	(label "PPG2_LED1_GREEN_K" (at 670.950000 272.620000 180) (effects (font (size 0.8 0.8)) (justify right bottom)) (uuid "0a16dd2d-8aa8-4abc-bab1-d0336b17ba44"))
+	(label "PPG2_LED1_GREEN_K" (at 670.950000 275.160000 180) (effects (font (size 0.8 0.8)) (justify right bottom)) (uuid "ea34734a-1f7a-4133-80fd-2b080d4ba080"))
+	(symbol
+		(lib_id "sportwatch_custom:SFH7018A")
+		(at 65.000000 335.000000 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "29561b3d-cc6d-4f8f-a023-cbe93bb5aa0d")
+		(property "Reference" "D403" (at 65.000000 322.300000 0) (show_name no) (do_not_autoplace no) (effects (font (size 1.27 1.27))))
+		(property "Value" "SFH7018A Q65113A6157" (at 65.000000 347.700000 0) (show_name no) (do_not_autoplace no) (effects (font (size 1.27 1.27))))
+		(property "Footprint" "sportwatch_custom:OSRAM_SFH7018A_2.4x2.4mm" (at 65.000000 335.000000 0) (hide yes) (show_name no) (do_not_autoplace no) (effects (font (size 1.27 1.27))))
+		(property "Datasheet" "SFH 7018A_EN.pdf" (at 65.000000 335.000000 0) (hide yes) (show_name no) (do_not_autoplace no) (effects (font (size 1.27 1.27))))
+		(property "Description" "Green/red/940nm biometric LED package; only green/red active in this bank; footprint TBD" (at 65.000000 335.000000 0) (hide yes) (show_name no) (do_not_autoplace no) (effects (font (size 1.27 1.27))))
+		(pin "1" (uuid "dddb945e-0058-4be8-9025-40c4a9c271bc"))
+		(pin "2" (uuid "f2ba41f0-d987-4705-97dc-632f4c6b15f7"))
+		(pin "3" (uuid "e97ec303-49c2-41e1-99fa-ec52006d5724"))
+		(pin "4" (uuid "e3c05119-e4e0-4806-82e0-ae60662ffc2c"))
+		(pin "5" (uuid "590a344e-ccf4-4ac6-b54a-44d8d90f7559"))
+		(pin "6" (uuid "66e1921e-355a-4be1-bb9b-cf815b840ea5"))
+		(pin "7" (uuid "099138ed-fac5-4749-8c62-cf7b38ad8627"))
+		(pin "8" (uuid "f5c16b64-8a2b-4607-b864-087040dbaa47"))
+		(instances (project "rear_sensor_revA" (path "/e9412e56-0f4f-4ec5-ad89-3d7d6481d433/56b54535-d023-45c5-9cb1-b85ec96641c9" (reference "D403") (unit 1))))
+
+(property "Board" "REAR" (at 0 0 0) (effects (font (size 1 1)) (hide yes)))
+)
+	(label "PPG1_LED4_GREEN_K" (at 45.950000 327.380000 180) (effects (font (size 0.8 0.8)) (justify right bottom)) (uuid "92903173-a7f2-4336-a50e-b35404a74286"))
+	(global_label "PPG_VLED" (shape bidirectional) (at 84.050000 327.380000 180) (effects (font (size 0.8 0.8)) (justify left bottom)) (uuid "8d108483-514c-41fb-9926-33feb33712e4"))
+	(no_connect (at 49.760000 332.460000) (uuid "f2705cc0-97de-4202-962a-0f5b73e11b48"))
+	(global_label "PPG_VLED" (shape bidirectional) (at 84.050000 332.460000 180) (effects (font (size 0.8 0.8)) (justify left bottom)) (uuid "ea801d4c-a67e-43ab-9cdf-d35a1cea0388"))
+	(label "PPG1_LED5_RED_K" (at 45.950000 337.540000 180) (effects (font (size 0.8 0.8)) (justify right bottom)) (uuid "d2b7ecfe-9e32-4b92-9d63-f27cd24fd66a"))
+	(global_label "PPG_VLED" (shape bidirectional) (at 84.050000 337.540000 180) (effects (font (size 0.8 0.8)) (justify left bottom)) (uuid "08d36671-fadc-4844-8b55-15b874aa2fbd"))
+	(label "PPG1_LED4_GREEN_K" (at 45.950000 342.620000 180) (effects (font (size 0.8 0.8)) (justify right bottom)) (uuid "52babea5-74f5-4ba4-a677-60b2626807de"))
+	(label "PPG1_LED4_GREEN_K" (at 45.950000 345.160000 180) (effects (font (size 0.8 0.8)) (justify right bottom)) (uuid "feb9fac5-98fd-43af-81dc-26fb96952a64"))
+	(symbol
+		(lib_id "sportwatch_custom:SFH7018A")
+		(at 190.000000 335.000000 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "034490c5-27bf-407f-9512-92bbe8719530")
+		(property "Reference" "D404" (at 190.000000 322.300000 0) (show_name no) (do_not_autoplace no) (effects (font (size 1.27 1.27))))
+		(property "Value" "SFH7018A Q65113A6157" (at 190.000000 347.700000 0) (show_name no) (do_not_autoplace no) (effects (font (size 1.27 1.27))))
+		(property "Footprint" "sportwatch_custom:OSRAM_SFH7018A_2.4x2.4mm" (at 190.000000 335.000000 0) (hide yes) (show_name no) (do_not_autoplace no) (effects (font (size 1.27 1.27))))
+		(property "Datasheet" "SFH 7018A_EN.pdf" (at 190.000000 335.000000 0) (hide yes) (show_name no) (do_not_autoplace no) (effects (font (size 1.27 1.27))))
+		(property "Description" "Green/red/940nm biometric LED package; only green/red active in this bank; footprint TBD" (at 190.000000 335.000000 0) (hide yes) (show_name no) (do_not_autoplace no) (effects (font (size 1.27 1.27))))
+		(pin "1" (uuid "600f8673-2722-4ebf-bf27-db884c59b7f4"))
+		(pin "2" (uuid "d65c8f63-e2b2-4b76-b43f-e3e02fec9b06"))
+		(pin "3" (uuid "64c9d09b-3915-4855-b80e-4500d421bb5a"))
+		(pin "4" (uuid "b2766c47-39bd-4198-88e8-5fa6902ddae2"))
+		(pin "5" (uuid "4515edc1-060d-4449-9472-968529129dfe"))
+		(pin "6" (uuid "fdc83a65-5eb4-4de1-ab00-b8fbe0f12fe2"))
+		(pin "7" (uuid "a168b76b-72a0-4100-956e-d3a5492f22ee"))
+		(pin "8" (uuid "6684809c-2ba2-4aaf-8886-0af333f67622"))
+		(instances (project "rear_sensor_revA" (path "/e9412e56-0f4f-4ec5-ad89-3d7d6481d433/56b54535-d023-45c5-9cb1-b85ec96641c9" (reference "D404") (unit 1))))
+
+(property "Board" "REAR" (at 0 0 0) (effects (font (size 1 1)) (hide yes)))
+)
+	(label "PPG2_LED4_GREEN_K" (at 170.950000 327.380000 180) (effects (font (size 0.8 0.8)) (justify right bottom)) (uuid "42d3abd2-a875-42ac-a5b1-449c21937e9d"))
+	(global_label "PPG_VLED" (shape bidirectional) (at 209.050000 327.380000 180) (effects (font (size 0.8 0.8)) (justify left bottom)) (uuid "4d77f7eb-8a4e-44c0-aafc-db6b3b8d7d27"))
+	(no_connect (at 174.760000 332.460000) (uuid "601ff63b-67ec-43a4-b042-51f04ef75fb7"))
+	(global_label "PPG_VLED" (shape bidirectional) (at 209.050000 332.460000 180) (effects (font (size 0.8 0.8)) (justify left bottom)) (uuid "0c6a1ce5-08af-40fe-9f07-8e5c710e4a39"))
+	(label "PPG2_LED5_RED_K" (at 170.950000 337.540000 180) (effects (font (size 0.8 0.8)) (justify right bottom)) (uuid "4df77fba-7496-4977-b9d5-0cfec85a95a2"))
+	(global_label "PPG_VLED" (shape bidirectional) (at 209.050000 337.540000 180) (effects (font (size 0.8 0.8)) (justify left bottom)) (uuid "bd2615c1-14b3-454d-90bf-82d523bbf436"))
+	(label "PPG2_LED4_GREEN_K" (at 170.950000 342.620000 180) (effects (font (size 0.8 0.8)) (justify right bottom)) (uuid "60e7f318-13ee-4dc7-a415-6acb0f4eb49c"))
+	(label "PPG2_LED4_GREEN_K" (at 170.950000 345.160000 180) (effects (font (size 0.8 0.8)) (justify right bottom)) (uuid "964c79d8-4571-46e2-bfad-c50d76c46ee5"))
+	(symbol
+		(lib_id "sportwatch_custom:SFH4053B")
+		(at 315.000000 335.000000 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "8cc5760d-1d95-44ae-b12f-d419538c95b7")
+		(property "Reference" "D405" (at 315.000000 322.300000 0) (show_name no) (do_not_autoplace no) (effects (font (size 1.27 1.27))))
+		(property "Value" "SFH4053B Q65115A1586" (at 315.000000 347.700000 0) (show_name no) (do_not_autoplace no) (effects (font (size 1.27 1.27))))
+		(property "Footprint" "sportwatch_custom:OSRAM_SFH4053B_1.0x0.5mm" (at 315.000000 335.000000 0) (hide yes) (show_name no) (do_not_autoplace no) (effects (font (size 1.27 1.27))))
+		(property "Datasheet" "https://ams-osram.com/products/leds/ir-leds/osram-chip-led-sfh-4053b" (at 315.000000 335.000000 0) (hide yes) (show_name no) (do_not_autoplace no) (effects (font (size 1.27 1.27))))
+		(property "Description" "850nm-class IR emitter; 70mA DC rating; footprint TBD" (at 315.000000 335.000000 0) (hide yes) (show_name no) (do_not_autoplace no) (effects (font (size 1.27 1.27))))
+		(pin "1" (uuid "9202d41d-b3c3-4274-9d3a-1439b6f667d6"))
+		(pin "2" (uuid "8fe6169b-9000-48e0-8b48-e40bb533919d"))
+		(instances (project "rear_sensor_revA" (path "/e9412e56-0f4f-4ec5-ad89-3d7d6481d433/56b54535-d023-45c5-9cb1-b85ec96641c9" (reference "D405") (unit 1))))
+
+(property "Board" "REAR" (at 0 0 0) (effects (font (size 1 1)) (hide yes)))
+)
+	(global_label "PPG_VLED" (shape bidirectional) (at 326.430000 335.000000 180) (effects (font (size 0.8 0.8)) (justify left bottom)) (uuid "017bb8ce-41e0-4b6e-a43b-7c9244572257"))
+	(label "PPG1_LED3_IR850_K" (at 303.570000 335.000000 180) (effects (font (size 0.8 0.8)) (justify right bottom)) (uuid "e234c74d-4fc3-44d0-b4a6-4422e10d473d"))
+	(symbol
+		(lib_id "sportwatch_custom:SFH4053B")
+		(at 440.000000 335.000000 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "b6d5f9da-38ba-45e9-b9ff-bdd9f7f43e39")
+		(property "Reference" "D406" (at 440.000000 322.300000 0) (show_name no) (do_not_autoplace no) (effects (font (size 1.27 1.27))))
+		(property "Value" "SFH4053B Q65115A1586" (at 440.000000 347.700000 0) (show_name no) (do_not_autoplace no) (effects (font (size 1.27 1.27))))
+		(property "Footprint" "sportwatch_custom:OSRAM_SFH4053B_1.0x0.5mm" (at 440.000000 335.000000 0) (hide yes) (show_name no) (do_not_autoplace no) (effects (font (size 1.27 1.27))))
+		(property "Datasheet" "https://ams-osram.com/products/leds/ir-leds/osram-chip-led-sfh-4053b" (at 440.000000 335.000000 0) (hide yes) (show_name no) (do_not_autoplace no) (effects (font (size 1.27 1.27))))
+		(property "Description" "850nm-class IR emitter; 70mA DC rating; footprint TBD" (at 440.000000 335.000000 0) (hide yes) (show_name no) (do_not_autoplace no) (effects (font (size 1.27 1.27))))
+		(pin "1" (uuid "79fb2f95-e124-49a4-a634-50e843a57b8a"))
+		(pin "2" (uuid "91a750f0-f637-4684-9998-6cec0f1125ce"))
+		(instances (project "rear_sensor_revA" (path "/e9412e56-0f4f-4ec5-ad89-3d7d6481d433/56b54535-d023-45c5-9cb1-b85ec96641c9" (reference "D406") (unit 1))))
+
+(property "Board" "REAR" (at 0 0 0) (effects (font (size 1 1)) (hide yes)))
+)
+	(global_label "PPG_VLED" (shape bidirectional) (at 451.430000 335.000000 180) (effects (font (size 0.8 0.8)) (justify left bottom)) (uuid "38f8f3b8-a288-49a5-b944-86486069db8b"))
+	(label "PPG1_LED6_IR850_K" (at 428.570000 335.000000 180) (effects (font (size 0.8 0.8)) (justify right bottom)) (uuid "3e4909a3-a3ea-44b2-af4c-916854a784f6"))
+	(symbol
+		(lib_id "sportwatch_custom:SFH4053B")
+		(at 565.000000 335.000000 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "4ddf10a9-4514-47ec-b80d-c961aeaa0fff")
+		(property "Reference" "D407" (at 565.000000 322.300000 0) (show_name no) (do_not_autoplace no) (effects (font (size 1.27 1.27))))
+		(property "Value" "SFH4053B Q65115A1586" (at 565.000000 347.700000 0) (show_name no) (do_not_autoplace no) (effects (font (size 1.27 1.27))))
+		(property "Footprint" "sportwatch_custom:OSRAM_SFH4053B_1.0x0.5mm" (at 565.000000 335.000000 0) (hide yes) (show_name no) (do_not_autoplace no) (effects (font (size 1.27 1.27))))
+		(property "Datasheet" "https://ams-osram.com/products/leds/ir-leds/osram-chip-led-sfh-4053b" (at 565.000000 335.000000 0) (hide yes) (show_name no) (do_not_autoplace no) (effects (font (size 1.27 1.27))))
+		(property "Description" "850nm-class IR emitter; 70mA DC rating; footprint TBD" (at 565.000000 335.000000 0) (hide yes) (show_name no) (do_not_autoplace no) (effects (font (size 1.27 1.27))))
+		(pin "1" (uuid "15a004bc-8c03-4ff1-abaf-d79730e21b45"))
+		(pin "2" (uuid "c482adb4-2abc-4540-80f4-435839ddbc41"))
+		(instances (project "rear_sensor_revA" (path "/e9412e56-0f4f-4ec5-ad89-3d7d6481d433/56b54535-d023-45c5-9cb1-b85ec96641c9" (reference "D407") (unit 1))))
+
+(property "Board" "REAR" (at 0 0 0) (effects (font (size 1 1)) (hide yes)))
+)
+	(global_label "PPG_VLED" (shape bidirectional) (at 576.430000 335.000000 180) (effects (font (size 0.8 0.8)) (justify left bottom)) (uuid "d683e4e2-bb37-414a-8c4c-d8a432bd7dfd"))
+	(label "PPG2_LED3_IR850_K" (at 553.570000 335.000000 180) (effects (font (size 0.8 0.8)) (justify right bottom)) (uuid "0d2cf3ae-a51a-48dc-92f7-f5d1d932aba1"))
+	(symbol
+		(lib_id "sportwatch_custom:SFH2703H")
+		(at 690.000000 335.000000 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "cb8791d2-f001-4f91-92c2-8b09beba1e7c")
+		(property "Reference" "D413"
+			(at 690.000000 328.650000 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "SFH2703H Q65115A2199"
+			(at 690.000000 341.350000 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "sportwatch_custom:OSRAM_SFH2703_3.2x2.0mm"
+			(at 690.000000 335.000000 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 690.000000 335.000000 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Broadband PIN photodiode; footprint TBD"
+			(at 690.000000 335.000000 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "0e34f8c5-ee24-4dfe-8942-eb7dc7c64eb5")
+		)
+		(pin "2"
+			(uuid "a702da24-72f1-4028-956c-362dfd48dbbb")
+		)
+		(instances (project "rear_sensor_revA" (path "/e9412e56-0f4f-4ec5-ad89-3d7d6481d433/56b54535-d023-45c5-9cb1-b85ec96641c9" (reference "D413") (unit 1))))
+
+(property "Board" "REAR" (at 0 0 0) (effects (font (size 1 1)) (hide yes)))
+)
+	(label "PPG2_PD2_IN" (at 678.570000 335.000000 180) (effects (font (size 0.8 0.8)) (justify right bottom)) (uuid "40886173-2f76-448e-ae52-b505063c13cd"))
+	(label "PPG2_PD_GND" (at 701.430000 335.000000 0) (effects (font (size 0.8 0.8)) (justify left bottom)) (uuid "284eef24-99f3-4957-84e9-5f72997958c9"))
+	(symbol
+		(lib_id "sportwatch_custom:SFH2703H")
+		(at 65.000000 405.000000 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "915de66e-85e3-4d26-8489-ad97dc4359b6")
+		(property "Reference" "D414"
+			(at 65.000000 398.650000 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "SFH2703H Q65115A2199"
+			(at 65.000000 411.350000 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "sportwatch_custom:OSRAM_SFH2703_3.2x2.0mm"
+			(at 65.000000 405.000000 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 65.000000 405.000000 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Broadband PIN photodiode; footprint TBD"
+			(at 65.000000 405.000000 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "1bbb7b96-80c9-4481-b21b-c3054c007889")
+		)
+		(pin "2"
+			(uuid "292f5dc4-a0a2-4bc9-ae1c-5f04f21ed86c")
+		)
+		(instances (project "rear_sensor_revA" (path "/e9412e56-0f4f-4ec5-ad89-3d7d6481d433/56b54535-d023-45c5-9cb1-b85ec96641c9" (reference "D414") (unit 1))))
+
+(property "Board" "REAR" (at 0 0 0) (effects (font (size 1 1)) (hide yes)))
+)
+	(label "PPG1_PD2_IN" (at 53.570000 405.000000 180) (effects (font (size 0.8 0.8)) (justify right bottom)) (uuid "ff5903ba-df30-4783-85b5-222a5dc367f0"))
+	(label "PPG1_PD_GND" (at 76.430000 405.000000 0) (effects (font (size 0.8 0.8)) (justify left bottom)) (uuid "abbbcff8-eee5-4a88-a769-e170150e39c2"))
+	(symbol
+		(lib_id "sportwatch_custom:SFH2703H")
+		(at 190.000000 405.000000 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "fdde68e9-c9a6-4b45-a37e-48cecba9843b")
+		(property "Reference" "D423"
+			(at 190.000000 398.650000 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "SFH2703H Q65115A2199"
+			(at 190.000000 411.350000 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "sportwatch_custom:OSRAM_SFH2703_3.2x2.0mm"
+			(at 190.000000 405.000000 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 190.000000 405.000000 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Broadband PIN photodiode; footprint TBD"
+			(at 190.000000 405.000000 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "50c8c571-0f61-4da5-99ca-2fe50efd3f63")
+		)
+		(pin "2"
+			(uuid "b6150b59-fe83-4653-a8db-7a38995a54d6")
+		)
+		(instances (project "rear_sensor_revA" (path "/e9412e56-0f4f-4ec5-ad89-3d7d6481d433/56b54535-d023-45c5-9cb1-b85ec96641c9" (reference "D423") (unit 1))))
+
+(property "Board" "REAR" (at 0 0 0) (effects (font (size 1 1)) (hide yes)))
+)
+	(label "PPG2_PD1_IN" (at 178.570000 405.000000 180) (effects (font (size 0.8 0.8)) (justify right bottom)) (uuid "8f66ccdb-4034-456e-bada-16eda3d8ea2f"))
+	(label "PPG2_PD_GND" (at 201.430000 405.000000 0) (effects (font (size 0.8 0.8)) (justify left bottom)) (uuid "deb5e9f7-4500-4edb-aa03-b8602cb4499e"))
+	(symbol
+		(lib_id "sportwatch_custom:SFH2703H")
+		(at 315.000000 405.000000 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "c6029f55-63fc-46ec-ad60-bf49da46042f")
+		(property "Reference" "D424"
+			(at 315.000000 398.650000 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "SFH2703H Q65115A2199"
+			(at 315.000000 411.350000 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "sportwatch_custom:OSRAM_SFH2703_3.2x2.0mm"
+			(at 315.000000 405.000000 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 315.000000 405.000000 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Broadband PIN photodiode; footprint TBD"
+			(at 315.000000 405.000000 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "62ca57fd-d7b7-49a6-a42b-9db69f92b6ae")
+		)
+		(pin "2"
+			(uuid "b7c5f55d-1669-4384-a56b-59dfdac4e373")
+		)
+		(instances (project "rear_sensor_revA" (path "/e9412e56-0f4f-4ec5-ad89-3d7d6481d433/56b54535-d023-45c5-9cb1-b85ec96641c9" (reference "D424") (unit 1))))
+
+(property "Board" "REAR" (at 0 0 0) (effects (font (size 1 1)) (hide yes)))
+)
+	(label "PPG1_PD1_IN" (at 303.570000 405.000000 180) (effects (font (size 0.8 0.8)) (justify right bottom)) (uuid "6c041bf3-5bf7-4222-a8b7-b04504001d56"))
+	(label "PPG1_PD_GND" (at 326.430000 405.000000 0) (effects (font (size 0.8 0.8)) (justify left bottom)) (uuid "47422acb-2e72-4014-a53c-b7fe67af7d8d"))
+	(symbol
+		(lib_id "sportwatch_custom:NetTie_2")
+		(at 440.000000 405.000000 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "aa169eac-bd22-426c-8ab3-97f6271f3258")
+		(property "Reference" "NT401"
+			(at 440.000000 398.650000 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "PPG1_PD_GND_TIE"
+			(at 440.000000 411.350000 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "NetTie:NetTie-2_SMD_Pad0.5mm"
+			(at 440.000000 405.000000 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 440.000000 405.000000 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Single-point PD_GND to PCB GND net tie"
+			(at 440.000000 405.000000 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "ee2ef9fd-8531-45bf-bef3-56b1395e6f42")
+		)
+		(pin "2"
+			(uuid "091aab38-79d1-4f9b-921b-d0848e0bc8a4")
+		)
+		(instances (project "rear_sensor_revA" (path "/e9412e56-0f4f-4ec5-ad89-3d7d6481d433/56b54535-d023-45c5-9cb1-b85ec96641c9" (reference "NT401") (unit 1))))
+
+(property "Board" "REAR" (at 0 0 0) (effects (font (size 1 1)) (hide yes)))
+)
+	(label "PPG1_PD_GND" (at 431.110000 405.000000 180) (effects (font (size 0.8 0.8)) (justify right bottom)) (uuid "351aa001-b6af-4cff-a58a-5d686c559a55"))
+	(global_label "GND" (shape bidirectional) (at 448.890000 405.000000 180) (effects (font (size 0.8 0.8)) (justify left bottom)) (uuid "14139f75-1d2a-43fa-986e-423fd031e55f"))
+	(symbol
+		(lib_id "sportwatch_custom:NetTie_2")
+		(at 565.000000 405.000000 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "fe7f43e0-1c3c-419f-9269-bf85c5a98139")
+		(property "Reference" "NT402"
+			(at 565.000000 398.650000 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "PPG2_PD_GND_TIE"
+			(at 565.000000 411.350000 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "NetTie:NetTie-2_SMD_Pad0.5mm"
+			(at 565.000000 405.000000 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 565.000000 405.000000 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Single-point PD_GND to PCB GND net tie"
+			(at 565.000000 405.000000 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "579f1478-ad73-4bf4-955a-04d6ecd185c9")
+		)
+		(pin "2"
+			(uuid "ae20aa35-cb6d-4fe5-8b4b-022e07215f24")
+		)
+		(instances (project "rear_sensor_revA" (path "/e9412e56-0f4f-4ec5-ad89-3d7d6481d433/56b54535-d023-45c5-9cb1-b85ec96641c9" (reference "NT402") (unit 1))))
+
+(property "Board" "REAR" (at 0 0 0) (effects (font (size 1 1)) (hide yes)))
+)
+	(label "PPG2_PD_GND" (at 556.110000 405.000000 180) (effects (font (size 0.8 0.8)) (justify right bottom)) (uuid "d866a71c-314b-48a5-93d0-7f99af5ddf00"))
+	(global_label "GND" (shape bidirectional) (at 573.890000 405.000000 180) (effects (font (size 0.8 0.8)) (justify left bottom)) (uuid "8fb3501b-5afb-4110-9d7b-ba2626e373a0"))
+	(symbol
+		(lib_id "Device:R")
+		(at 690.000000 405.000000 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "37032851-83d4-45b5-ae54-a6733490e01f")
+		(property "Reference" "R401"
+			(at 692.540000 402.460000 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "100k"
+			(at 692.540000 407.540000 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Resistor_SMD:R_0402_1005Metric"
+			(at 690.000000 405.000000 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 690.000000 405.000000 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "PPG1_CS_N pull-up"
+			(at 690.000000 405.000000 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "280ce41c-1dc4-482b-bbca-bb4372e6f46a")
+		)
+		(pin "2"
+			(uuid "07506bd0-c308-445c-9c52-6ddd2f25b5ff")
+		)
+		(instances (project "rear_sensor_revA" (path "/e9412e56-0f4f-4ec5-ad89-3d7d6481d433/56b54535-d023-45c5-9cb1-b85ec96641c9" (reference "R401") (unit 1))))
+
+(property "Board" "REAR" (at 0 0 0) (effects (font (size 1 1)) (hide yes)))
+)
+	(global_label "VOUT1_1V8" (shape bidirectional) (at 690.000000 397.380000 270) (effects (font (size 0.8 0.8)) (justify left bottom)) (uuid "0924ba62-93e3-4d7a-95d1-1884e5db9ad8"))
+	(global_label "PPG1_CS_N" (shape bidirectional) (at 690.000000 412.620000 90) (effects (font (size 0.8 0.8)) (justify left bottom)) (uuid "f64be65f-4a58-40fa-9903-1fdf6b8397a6"))
+	(symbol
+		(lib_id "Device:R")
+		(at 65.000000 475.000000 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "70c8d7cf-4122-4165-a60a-347e3a8a8f4c")
+		(property "Reference" "R402"
+			(at 67.540000 472.460000 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "100k"
+			(at 67.540000 477.540000 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Resistor_SMD:R_0402_1005Metric"
+			(at 65.000000 475.000000 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 65.000000 475.000000 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "PPG2_CS_N pull-up"
+			(at 65.000000 475.000000 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "7675f6db-8c16-4754-88ea-755172cd3463")
+		)
+		(pin "2"
+			(uuid "92f0b7be-e5d0-4c39-869c-0ce0e15c483d")
+		)
+		(instances (project "rear_sensor_revA" (path "/e9412e56-0f4f-4ec5-ad89-3d7d6481d433/56b54535-d023-45c5-9cb1-b85ec96641c9" (reference "R402") (unit 1))))
+
+(property "Board" "REAR" (at 0 0 0) (effects (font (size 1 1)) (hide yes)))
+)
+	(global_label "VOUT1_1V8" (shape bidirectional) (at 65.000000 467.380000 270) (effects (font (size 0.8 0.8)) (justify left bottom)) (uuid "c04d947d-c381-4e1f-a2ec-b29c3c726300"))
+	(global_label "PPG2_CS_N" (shape bidirectional) (at 65.000000 482.620000 90) (effects (font (size 0.8 0.8)) (justify left bottom)) (uuid "404cee91-b760-40e8-a4a8-c2855c00085f"))
+	(symbol
+		(lib_id "Device:R")
+		(at 190.000000 475.000000 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "be09c78a-3afb-48f4-aaef-3de746d6d673")
+		(property "Reference" "R403"
+			(at 192.540000 472.460000 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "47k"
+			(at 192.540000 477.540000 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Resistor_SMD:R_0402_1005Metric"
+			(at 190.000000 475.000000 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 190.000000 475.000000 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "PPG1_INT_N pull-up"
+			(at 190.000000 475.000000 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "8e612aaf-112d-4a24-aacd-1d5bc59627cd")
+		)
+		(pin "2"
+			(uuid "45342762-5bf8-485e-bf05-3e257fb06a3f")
+		)
+		(instances (project "rear_sensor_revA" (path "/e9412e56-0f4f-4ec5-ad89-3d7d6481d433/56b54535-d023-45c5-9cb1-b85ec96641c9" (reference "R403") (unit 1))))
+
+(property "Board" "REAR" (at 0 0 0) (effects (font (size 1 1)) (hide yes)))
+)
+	(global_label "VOUT1_1V8" (shape bidirectional) (at 190.000000 467.380000 270) (effects (font (size 0.8 0.8)) (justify left bottom)) (uuid "f7beab0c-1ac8-42f0-930a-68e1915e7cfb"))
+	(global_label "PPG1_INT_N" (shape bidirectional) (at 190.000000 482.620000 90) (effects (font (size 0.8 0.8)) (justify left bottom)) (uuid "33c145f0-0504-4899-a8c6-7abb69ce1299"))
+	(symbol
+		(lib_id "Device:R")
+		(at 315.000000 475.000000 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "d995307e-5a54-45bd-88bc-fda402068b7a")
+		(property "Reference" "R404"
+			(at 317.540000 472.460000 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "47k"
+			(at 317.540000 477.540000 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Resistor_SMD:R_0402_1005Metric"
+			(at 315.000000 475.000000 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 315.000000 475.000000 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "PPG2_INT_N pull-up"
+			(at 315.000000 475.000000 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "9e0ef431-d83e-4400-b57c-2581639e91a1")
+		)
+		(pin "2"
+			(uuid "e4301b1a-9ece-4ae5-9c5c-14b979c07e80")
+		)
+		(instances (project "rear_sensor_revA" (path "/e9412e56-0f4f-4ec5-ad89-3d7d6481d433/56b54535-d023-45c5-9cb1-b85ec96641c9" (reference "R404") (unit 1))))
+
+(property "Board" "REAR" (at 0 0 0) (effects (font (size 1 1)) (hide yes)))
+)
+	(global_label "VOUT1_1V8" (shape bidirectional) (at 315.000000 467.380000 270) (effects (font (size 0.8 0.8)) (justify left bottom)) (uuid "8e41cc38-3bbd-4fe0-85d3-bf57bb9d73eb"))
+	(global_label "PPG2_INT_N" (shape bidirectional) (at 315.000000 482.620000 90) (effects (font (size 0.8 0.8)) (justify left bottom)) (uuid "66cbe83c-989b-447b-8014-4b80b25e5528"))
+	(symbol
+		(lib_id "Device:R")
+		(at 440.000000 475.000000 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "55c721d5-6fcd-4bbc-b3f8-e7049a651bf9")
+		(property "Reference" "R405"
+			(at 442.540000 472.460000 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "100k"
+			(at 442.540000 477.540000 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Resistor_SMD:R_0402_1005Metric"
+			(at 440.000000 475.000000 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 440.000000 475.000000 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "PPG_SAMPLE_SYNC pull-up"
+			(at 440.000000 475.000000 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "0a80be80-a180-4158-9519-f882868b4040")
+		)
+		(pin "2"
+			(uuid "ea02a908-6cb3-4cac-b3e4-a460535f1aea")
+		)
+		(instances (project "rear_sensor_revA" (path "/e9412e56-0f4f-4ec5-ad89-3d7d6481d433/56b54535-d023-45c5-9cb1-b85ec96641c9" (reference "R405") (unit 1))))
+
+(property "Board" "REAR" (at 0 0 0) (effects (font (size 1 1)) (hide yes)))
+)
+	(global_label "VOUT1_1V8" (shape bidirectional) (at 440.000000 467.380000 270) (effects (font (size 0.8 0.8)) (justify left bottom)) (uuid "3860a4f9-6e68-44a3-bee9-848937bde74d"))
+	(global_label "PPG_SAMPLE_SYNC" (shape bidirectional) (at 440.000000 482.620000 90) (effects (font (size 0.8 0.8)) (justify left bottom)) (uuid "af60ae4b-5f10-4e37-a405-ec461ef76e01"))
+	(symbol (lib_id "Device:R") (at 565.000000 475.000000 0) (unit 1) (uuid "f4336c15-8a77-5175-ba96-e6c76edeb545") (pin "1" (uuid "da6162ad-a913-5de7-95c3-4db6c3faef75")) (pin "2" (uuid "402699a6-9a87-5ff4-8376-40ac88ab8664")) (property "Reference" "R408" (at 567.286000 473.730000 0) (effects (font (size 1.27 1.27)) (justify left))) (instances (project "rear_sensor_revA" (path "/e9412e56-0f4f-4ec5-ad89-3d7d6481d433/56b54535-d023-45c5-9cb1-b85ec96641c9" (reference "R408") (unit 1))))
+
+(property "Board" "REAR" (at 0 0 0) (effects (font (size 1 1)) (hide yes)))
+
+(property "Value" "10k" (at 568.0 477.0 0) (effects (font (size 1 1)) (justify left)))
+(property "Footprint" "Resistor_SMD:R_0402_1005Metric" (at 565.0 475.0 0) (effects (font (size 1 1)) (hide yes)))
+)
+	(global_label "VOUT1_1V8" (shape bidirectional) (at 565.000000 467.380000 270) (effects (font (size 0.8 0.8)) (justify left bottom)) (uuid "53a6795b-d88f-4a40-af68-5c14c8483867"))
+	(label "PPG1_LED_MUX_SEL" (at 565.000000 482.620000 270) (effects (font (size 0.8 0.8)) (justify left bottom)) (uuid "4c3df42d-f39d-4484-b3db-fd4b9309c1ca"))
+	(symbol (lib_id "Device:R") (at 690.000000 475.000000 0) (unit 1) (uuid "0af21589-f9e3-56c4-aaeb-f6859c8fd0bc") (pin "1" (uuid "f0f7619c-482e-5508-bfa7-426db7a4f6c9")) (pin "2" (uuid "d2d5736b-a710-5860-ba55-223068a40da3")) (property "Reference" "R409" (at 692.286000 473.730000 0) (effects (font (size 1.27 1.27)) (justify left))) (instances (project "rear_sensor_revA" (path "/e9412e56-0f4f-4ec5-ad89-3d7d6481d433/56b54535-d023-45c5-9cb1-b85ec96641c9" (reference "R409") (unit 1))))
+
+(property "Board" "REAR" (at 0 0 0) (effects (font (size 1 1)) (hide yes)))
+
+(property "Value" "10k" (at 693.0 477.0 0) (effects (font (size 1 1)) (justify left)))
+(property "Footprint" "Resistor_SMD:R_0402_1005Metric" (at 690.0 475.0 0) (effects (font (size 1 1)) (hide yes)))
+)
+	(global_label "VOUT1_1V8" (shape bidirectional) (at 690.000000 467.380000 270) (effects (font (size 0.8 0.8)) (justify left bottom)) (uuid "a088e319-1192-49f5-a851-25740695a427"))
+	(label "PPG2_LED_MUX_SEL" (at 690.000000 482.620000 270) (effects (font (size 0.8 0.8)) (justify left bottom)) (uuid "7722ebc4-8294-41d9-ba1a-9b08f2007359"))
+	(text "Board ownership and interfaces: design/interfaces/main_rear_interface.md" (at 15 15 0) (effects (font (size 1 1)) (justify left bottom)) (uuid "d6ce862c-607c-44d9-9d1f-0284e88d8408"))
+	(text "One current path per AFE per exposure. Red <=31mA; green/IR <=62mA initial firmware limits." (at 15 570 0) (effects (font (size 1 1)) (justify left bottom)) (uuid "32ed53ad-bbb8-4870-b1c6-89adad1d95dd"))
+	(text "PD_GND -> NT401/NT402 -> local system GND. Rebuild physical guards on future REAR layout." (at 15 578 0) (effects (font (size 1 1)) (justify left bottom)) (uuid "f465afdb-ea25-493b-899e-1186b299e3c4"))
+
+(symbol
+		(lib_id "power:PWR_FLAG")
+		(at 700.000000 55.000000 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "f1904011-0001-4000-8000-000000000401")
+		(property "Reference" "#FLG0401"
+			(at 700.000000 55.000000 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "PWR_FLAG"
+			(at 700.000000 55.000000 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 700.000000 55.000000 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 700.000000 55.000000 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" ""
+			(at 700.000000 55.000000 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "f1904012-0001-4000-8000-000000000401")
+		)
+		(instances (project "rear_sensor_revA" (path "/e9412e56-0f4f-4ec5-ad89-3d7d6481d433/56b54535-d023-45c5-9cb1-b85ec96641c9" (reference "#FLG0401") (unit 1)))) (property "Board" "REAR" (at 0 0 0) (effects (font (size 1 1)) (hide yes))))
+(label "PPG1_PD_GND" (at 700.0 55.0 0) (effects (font (size 0.8 0.8)) (justify left bottom)) (uuid "86d04cf0-dae5-4ea0-be24-a9ede96ecab5"))
+
+(symbol
+		(lib_id "power:PWR_FLAG")
+		(at 700.000000 70.000000 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "f1904021-0001-4000-8000-000000000402")
+		(property "Reference" "#FLG0402"
+			(at 700.000000 70.000000 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "PWR_FLAG"
+			(at 700.000000 70.000000 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 700.000000 70.000000 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 700.000000 70.000000 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" ""
+			(at 700.000000 70.000000 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "f1904022-0001-4000-8000-000000000402")
+		)
+		(instances (project "rear_sensor_revA" (path "/e9412e56-0f4f-4ec5-ad89-3d7d6481d433/56b54535-d023-45c5-9cb1-b85ec96641c9" (reference "#FLG0402") (unit 1)))) (property "Board" "REAR" (at 0 0 0) (effects (font (size 1 1)) (hide yes))))
+(label "PPG2_PD_GND" (at 700.0 70.0 0) (effects (font (size 0.8 0.8)) (justify left bottom)) (uuid "7eeabb71-f65c-49a9-92c6-2c499525bb5b"))
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+(wire (pts (xy 65.0 55.0) (xy 61.19 55.0)) (stroke (width 0) (type default)) (uuid "427ca10e-c7fe-4e99-b116-849c03d13c4e"))
+(wire (pts (xy 65.0 57.54) (xy 61.19 57.54)) (stroke (width 0) (type default)) (uuid "7e7c9021-6f9b-4c0b-b6f9-ccca448cb518"))
+(wire (pts (xy 65.0 60.08) (xy 61.19 60.08)) (stroke (width 0) (type default)) (uuid "31b964e2-1607-4389-9f1b-c6a0a0d299fd"))
+(wire (pts (xy 65.0 62.62) (xy 61.19 62.62)) (stroke (width 0) (type default)) (uuid "9d74451f-5fed-4f99-9dc6-064373332a0e"))
+(wire (pts (xy 65.0 65.16) (xy 61.19 65.16)) (stroke (width 0) (type default)) (uuid "434fc0d0-5598-4a28-904d-b0f94eac5b4c"))
+(wire (pts (xy 65.0 67.7) (xy 61.19 67.7)) (stroke (width 0) (type default)) (uuid "1b406cf2-79bb-418b-a256-ee7c5001d01d"))
+(wire (pts (xy 65.0 70.24) (xy 61.19 70.24)) (stroke (width 0) (type default)) (uuid "c1767ff2-3adc-4e92-a0ff-a9e48638ffa8"))
+(wire (pts (xy 65.0 72.78) (xy 61.19 72.78)) (stroke (width 0) (type default)) (uuid "8775924b-072e-47b6-ae38-cf2f434e54bb"))
+(wire (pts (xy 65.0 75.32) (xy 61.19 75.32)) (stroke (width 0) (type default)) (uuid "2392f24f-a428-496e-b8f8-e8d592902383"))
+(wire (pts (xy 65.0 77.86) (xy 61.19 77.86)) (stroke (width 0) (type default)) (uuid "6af6e6d0-e5cb-467c-a154-0c7553e41f72"))
+(wire (pts (xy 120.88 77.86) (xy 124.69 77.86)) (stroke (width 0) (type default)) (uuid "aaf6ec71-92eb-44bb-996f-2ea5d2a2f4c0"))
+(wire (pts (xy 120.88 75.32) (xy 124.69 75.32)) (stroke (width 0) (type default)) (uuid "01135c1f-8ef2-440a-ad0d-c266bf9cd2e3"))
+(wire (pts (xy 120.88 72.78) (xy 124.69 72.78)) (stroke (width 0) (type default)) (uuid "d36f5012-6799-402b-9fe2-b3ba3be4d691"))
+(wire (pts (xy 120.88 70.24) (xy 124.69 70.24)) (stroke (width 0) (type default)) (uuid "bac713a7-4030-4d9a-af1c-00af7d57b346"))
+(wire (pts (xy 120.88 67.7) (xy 124.69 67.7)) (stroke (width 0) (type default)) (uuid "57a19bee-9dd7-4018-8b7b-20042be16721"))
+(wire (pts (xy 120.88 65.16) (xy 124.69 65.16)) (stroke (width 0) (type default)) (uuid "07cfaee5-6328-40d5-86a5-2293490510cd"))
+(wire (pts (xy 120.88 62.62) (xy 124.69 62.62)) (stroke (width 0) (type default)) (uuid "d817c8da-548d-4e91-ae21-24c7456b6f00"))
+(wire (pts (xy 120.88 60.08) (xy 124.69 60.08)) (stroke (width 0) (type default)) (uuid "c7443fae-f2c3-423d-84e0-88b4f6747f6c"))
+(wire (pts (xy 120.88 57.54) (xy 124.69 57.54)) (stroke (width 0) (type default)) (uuid "9cd4a719-ca74-4256-93d8-36752328be45"))
+(wire (pts (xy 120.88 55.0) (xy 124.69 55.0)) (stroke (width 0) (type default)) (uuid "3465ebf8-500b-42dc-881c-9ffd27257bd4"))
+(wire (pts (xy 190.0 55.0) (xy 186.19 55.0)) (stroke (width 0) (type default)) (uuid "dc952f82-4af0-43b9-9a05-67998cf18d5d"))
+(wire (pts (xy 190.0 57.54) (xy 186.19 57.54)) (stroke (width 0) (type default)) (uuid "215e7120-7e48-41ac-9688-335c83ea3284"))
+(wire (pts (xy 190.0 60.08) (xy 186.19 60.08)) (stroke (width 0) (type default)) (uuid "4986dee7-73c4-4f01-bb2a-c2425b885fb4"))
+(wire (pts (xy 190.0 62.62) (xy 186.19 62.62)) (stroke (width 0) (type default)) (uuid "f36888ac-a7b0-43bd-9ccd-06ddddaa9235"))
+(wire (pts (xy 190.0 65.16) (xy 186.19 65.16)) (stroke (width 0) (type default)) (uuid "a2a9174c-b4f8-41a1-8d4f-274bece3c12a"))
+(wire (pts (xy 190.0 67.7) (xy 186.19 67.7)) (stroke (width 0) (type default)) (uuid "64460a96-b49c-47e6-be94-fc3e35116458"))
+(wire (pts (xy 190.0 70.24) (xy 186.19 70.24)) (stroke (width 0) (type default)) (uuid "9983e249-3c61-49e9-b237-d9c017b40dbf"))
+(wire (pts (xy 190.0 72.78) (xy 186.19 72.78)) (stroke (width 0) (type default)) (uuid "c6486129-6967-4b17-9d93-4e1e32fdc7ee"))
+(wire (pts (xy 190.0 75.32) (xy 186.19 75.32)) (stroke (width 0) (type default)) (uuid "09bfd73f-5536-4315-bd33-10400db6f799"))
+(wire (pts (xy 190.0 77.86) (xy 186.19 77.86)) (stroke (width 0) (type default)) (uuid "e26afdbf-673f-4a35-a01c-f6993f159ec8"))
+(wire (pts (xy 245.88 77.86) (xy 249.69 77.86)) (stroke (width 0) (type default)) (uuid "da9fed10-764d-4079-ad33-ee1bd72a9b03"))
+(wire (pts (xy 245.88 75.32) (xy 249.69 75.32)) (stroke (width 0) (type default)) (uuid "f61beeea-c801-4093-ad44-371b123fd538"))
+(wire (pts (xy 245.88 72.78) (xy 249.69 72.78)) (stroke (width 0) (type default)) (uuid "7fd6a6ae-bbb7-4d29-a56e-23dec6b54136"))
+(wire (pts (xy 245.88 70.24) (xy 249.69 70.24)) (stroke (width 0) (type default)) (uuid "3d025847-ebef-48ab-82b8-d3e9a94a6e92"))
+(wire (pts (xy 245.88 67.7) (xy 249.69 67.7)) (stroke (width 0) (type default)) (uuid "7c568125-7d8e-4dc5-9053-9da5177c1c2d"))
+(wire (pts (xy 245.88 65.16) (xy 249.69 65.16)) (stroke (width 0) (type default)) (uuid "b2ff25f2-380d-40d9-bd8d-c5715b6c57a4"))
+(wire (pts (xy 245.88 62.62) (xy 249.69 62.62)) (stroke (width 0) (type default)) (uuid "f96b2443-4ce8-4bfb-830f-1693ee5372d3"))
+(wire (pts (xy 245.88 60.08) (xy 249.69 60.08)) (stroke (width 0) (type default)) (uuid "61849fa0-1363-49e6-8dc8-a55948687a48"))
+(wire (pts (xy 245.88 57.54) (xy 249.69 57.54)) (stroke (width 0) (type default)) (uuid "c98435d6-de12-4b0b-859a-7df1b142d3cc"))
+(wire (pts (xy 245.88 55.0) (xy 249.69 55.0)) (stroke (width 0) (type default)) (uuid "f1bb0e72-8c28-4f5e-93dd-ba88c14d596a"))
+(wire (pts (xy 304.84 55.0) (xy 301.03 55.0)) (stroke (width 0) (type default)) (uuid "61539713-d2f1-4440-9b4c-59e993e5fa01"))
+(wire (pts (xy 325.16 52.46) (xy 328.97 52.46)) (stroke (width 0) (type default)) (uuid "b9ec92c2-6646-4ad1-a860-1d0bfb7cb3b4"))
+(wire (pts (xy 325.16 57.54) (xy 328.97 57.54)) (stroke (width 0) (type default)) (uuid "85028630-eb9f-447e-bfcb-5aefe34a95b9"))
+(wire (pts (xy 304.84 60.08) (xy 301.03 60.08)) (stroke (width 0) (type default)) (uuid "2c4448b5-0704-417d-bcb3-c701db0430fd"))
+(wire (pts (xy 315.0 44.84) (xy 315.0 41.03)) (stroke (width 0) (type default)) (uuid "b94e7cdd-acf7-4017-a7f2-565ca58bbcff"))
+(wire (pts (xy 315.0 65.16) (xy 315.0 68.97)) (stroke (width 0) (type default)) (uuid "2ebe4ad3-86e3-4f33-aa3a-78d07d507d0b"))
+(wire (pts (xy 429.84 55.0) (xy 426.03 55.0)) (stroke (width 0) (type default)) (uuid "d4faf6db-9303-46c6-bd72-be4c4e418257"))
+(wire (pts (xy 450.16 52.46) (xy 453.97 52.46)) (stroke (width 0) (type default)) (uuid "eb384fec-859b-4336-921b-d71b853536b4"))
+(wire (pts (xy 450.16 57.54) (xy 453.97 57.54)) (stroke (width 0) (type default)) (uuid "46d81b01-8e0d-460b-940b-088470eea013"))
+(wire (pts (xy 429.84 60.08) (xy 426.03 60.08)) (stroke (width 0) (type default)) (uuid "d23c6bba-22ef-4f37-97d9-ef127f1a1671"))
+(wire (pts (xy 440.0 44.84) (xy 440.0 41.03)) (stroke (width 0) (type default)) (uuid "3103e8e9-66db-4a86-9fb4-dea4f29f44e4"))
+(wire (pts (xy 440.0 65.16) (xy 440.0 68.97)) (stroke (width 0) (type default)) (uuid "4bcd77ca-dcf9-48a6-bb83-fc83bf8465ef"))
+(wire (pts (xy 554.84 55.0) (xy 551.0300000000001 55.0)) (stroke (width 0) (type default)) (uuid "7d876cd3-e83d-4e4f-aa6c-ab6f9249bb71"))
+(wire (pts (xy 575.16 52.46) (xy 578.9699999999999 52.46)) (stroke (width 0) (type default)) (uuid "a4a03231-2e44-42d9-b839-e5c77a3899ef"))
+(wire (pts (xy 575.16 57.54) (xy 578.9699999999999 57.54)) (stroke (width 0) (type default)) (uuid "d444847b-3fe1-4df0-81b4-5d7e846e30ea"))
+(wire (pts (xy 554.84 60.08) (xy 551.0300000000001 60.08)) (stroke (width 0) (type default)) (uuid "d8bae24a-d8b1-406e-be56-bbd4d9572222"))
+(wire (pts (xy 565.0 44.84) (xy 565.0 41.03)) (stroke (width 0) (type default)) (uuid "674c2d4d-b7f7-46d7-a5ce-db37f82ca713"))
+(wire (pts (xy 565.0 65.16) (xy 565.0 68.97)) (stroke (width 0) (type default)) (uuid "98d80480-2e30-4134-8ceb-c7c9801b03b6"))
+(wire (pts (xy 679.84 55.0) (xy 676.0300000000001 55.0)) (stroke (width 0) (type default)) (uuid "04158b8f-33af-440f-8807-e69c893b7456"))
+(wire (pts (xy 700.16 52.46) (xy 703.9699999999999 52.46)) (stroke (width 0) (type default)) (uuid "e6cfbfbc-42dd-4ef1-a055-761fdd0bdaa5"))
+(wire (pts (xy 700.16 57.54) (xy 703.9699999999999 57.54)) (stroke (width 0) (type default)) (uuid "9b8bda2f-f6a2-4f29-98cc-da2b0a0ec99d"))
+(wire (pts (xy 679.84 60.08) (xy 676.0300000000001 60.08)) (stroke (width 0) (type default)) (uuid "6a83282d-f180-4eb1-a648-3ff3fc102f84"))
+(wire (pts (xy 690.0 44.84) (xy 690.0 41.03)) (stroke (width 0) (type default)) (uuid "f50e3c55-5305-4dde-86fd-e04710004541"))
+(wire (pts (xy 690.0 65.16) (xy 690.0 68.97)) (stroke (width 0) (type default)) (uuid "c47edc1e-705e-4d92-8ecf-5beb97baafb5"))
+(wire (pts (xy 54.84 125.0) (xy 51.03 125.0)) (stroke (width 0) (type default)) (uuid "f7103205-72b4-475d-b75d-b6f8e8502466"))
+(wire (pts (xy 75.16 122.46) (xy 78.97 122.46)) (stroke (width 0) (type default)) (uuid "9d439b53-4cae-48b8-8f18-a20331d4f90d"))
+(wire (pts (xy 75.16 127.54) (xy 78.97 127.54)) (stroke (width 0) (type default)) (uuid "0acb4fa6-4d39-480d-8314-9c1f14998ed8"))
+(wire (pts (xy 54.84 130.08) (xy 51.03 130.08)) (stroke (width 0) (type default)) (uuid "f3b4cc35-a820-47e5-b347-d5bce9040966"))
+(wire (pts (xy 65.0 114.84) (xy 65.0 111.03)) (stroke (width 0) (type default)) (uuid "1697bf0d-beb7-4805-a2ee-dd56b39929aa"))
+(wire (pts (xy 65.0 135.16) (xy 65.0 138.97)) (stroke (width 0) (type default)) (uuid "fa8c7a2d-5c11-4eb9-90d2-a803799da843"))
+(wire (pts (xy 179.84 125.0) (xy 176.03 125.0)) (stroke (width 0) (type default)) (uuid "e0791e1a-be86-45af-94e7-4f08dd0baf62"))
+(wire (pts (xy 200.16 122.46) (xy 203.97 122.46)) (stroke (width 0) (type default)) (uuid "3968bc01-a07a-4541-8af6-0719640fc97a"))
+(wire (pts (xy 200.16 127.54) (xy 203.97 127.54)) (stroke (width 0) (type default)) (uuid "e0f3f4f0-8bad-415f-bf34-b1ca391d148e"))
+(wire (pts (xy 179.84 130.08) (xy 176.03 130.08)) (stroke (width 0) (type default)) (uuid "7fa1913c-427f-49ec-8db6-c01c16823f1b"))
+(wire (pts (xy 190.0 114.84) (xy 190.0 111.03)) (stroke (width 0) (type default)) (uuid "0239634a-03f7-4211-bfa2-cf99230bfe94"))
+(wire (pts (xy 190.0 135.16) (xy 190.0 138.97)) (stroke (width 0) (type default)) (uuid "c534cca6-ac2f-4f67-baeb-443278c0550f"))
+(wire (pts (xy 315.0 121.19) (xy 315.0 117.38)) (stroke (width 0) (type default)) (uuid "5e03beec-4f86-4dc2-bf53-c6615639f9ea"))
+(wire (pts (xy 315.0 128.81) (xy 315.0 132.62)) (stroke (width 0) (type default)) (uuid "9af83c9e-1392-480e-b6ed-e927b04f8016"))
+(wire (pts (xy 440.0 121.19) (xy 440.0 117.38)) (stroke (width 0) (type default)) (uuid "e75fc98a-dff0-441a-933e-cdcf534bddb7"))
+(wire (pts (xy 440.0 128.81) (xy 440.0 132.62)) (stroke (width 0) (type default)) (uuid "64ba6936-f3df-406d-b751-51c7f245da98"))
+(wire (pts (xy 565.0 121.19) (xy 565.0 117.38)) (stroke (width 0) (type default)) (uuid "044f2b96-b692-4993-9631-110750b367f1"))
+(wire (pts (xy 565.0 128.81) (xy 565.0 132.62)) (stroke (width 0) (type default)) (uuid "cf2c4199-4859-4291-b62c-59bb5f72996a"))
+(wire (pts (xy 690.0 121.19) (xy 690.0 117.38)) (stroke (width 0) (type default)) (uuid "1177c8ad-c701-4715-b11b-2153adcec334"))
+(wire (pts (xy 690.0 128.81) (xy 690.0 132.62)) (stroke (width 0) (type default)) (uuid "9513977c-2081-4a34-9e3e-5459bb437c93"))
+(wire (pts (xy 65.0 191.19) (xy 65.0 187.38)) (stroke (width 0) (type default)) (uuid "a1931ba7-38e4-4c8d-8a9e-da2df35143d5"))
+(wire (pts (xy 65.0 198.81) (xy 65.0 202.62)) (stroke (width 0) (type default)) (uuid "4e1a628f-d23a-406e-951b-12a2866d2b00"))
+(wire (pts (xy 190.0 191.19) (xy 190.0 187.38)) (stroke (width 0) (type default)) (uuid "d6fcb2d1-564a-46a9-84b5-8820ddc2cd32"))
+(wire (pts (xy 190.0 198.81) (xy 190.0 202.62)) (stroke (width 0) (type default)) (uuid "3db504cb-a26e-4117-8855-b4a1966e13bd"))
+(wire (pts (xy 315.0 191.19) (xy 315.0 187.38)) (stroke (width 0) (type default)) (uuid "433bfb3b-8dd1-4c48-bd83-fbf764565deb"))
+(wire (pts (xy 315.0 198.81) (xy 315.0 202.62)) (stroke (width 0) (type default)) (uuid "33e57b81-1ac0-469c-ad1f-b691700458ac"))
+(wire (pts (xy 440.0 191.19) (xy 440.0 187.38)) (stroke (width 0) (type default)) (uuid "cb7b94eb-2c48-4d73-9939-9b0a31569091"))
+(wire (pts (xy 440.0 198.81) (xy 440.0 202.62)) (stroke (width 0) (type default)) (uuid "ad7155d5-335d-4c42-aa69-b25a26e0e1ec"))
+(wire (pts (xy 565.0 191.19) (xy 565.0 187.38)) (stroke (width 0) (type default)) (uuid "b7463684-632b-4179-a8db-eafd92c1b83a"))
+(wire (pts (xy 565.0 198.81) (xy 565.0 202.62)) (stroke (width 0) (type default)) (uuid "735a92f3-690a-4c2c-b2bb-a20e63cca89e"))
+(wire (pts (xy 690.0 191.19) (xy 690.0 187.38)) (stroke (width 0) (type default)) (uuid "49c62158-9044-476e-8609-dd6e070e1f7a"))
+(wire (pts (xy 690.0 198.81) (xy 690.0 202.62)) (stroke (width 0) (type default)) (uuid "b2b4ce60-da8e-4c8f-866a-58edf80e4002"))
+(wire (pts (xy 65.0 261.19) (xy 65.0 257.38)) (stroke (width 0) (type default)) (uuid "19d568b8-b6c6-488e-818c-9d44b4c185b5"))
+(wire (pts (xy 65.0 268.81) (xy 65.0 272.62)) (stroke (width 0) (type default)) (uuid "f0729b09-fc21-4626-8ffd-37df5601d702"))
+(wire (pts (xy 190.0 261.19) (xy 190.0 257.38)) (stroke (width 0) (type default)) (uuid "c0baed7a-c852-47e4-95b2-641e2af86408"))
+(wire (pts (xy 190.0 268.81) (xy 190.0 272.62)) (stroke (width 0) (type default)) (uuid "17387dbd-fa5e-4b5f-8f0b-f7bf4eac91c1"))
+(wire (pts (xy 315.0 261.19) (xy 315.0 257.38)) (stroke (width 0) (type default)) (uuid "cfa145ce-f053-41fd-9948-ec80ab6aa73b"))
+(wire (pts (xy 315.0 268.81) (xy 315.0 272.62)) (stroke (width 0) (type default)) (uuid "e16671b2-73be-411b-b422-e899d58e226a"))
+(wire (pts (xy 440.0 261.19) (xy 440.0 257.38)) (stroke (width 0) (type default)) (uuid "fb19c1f2-52a8-4c90-b31b-8ddd42f17d2f"))
+(wire (pts (xy 440.0 268.81) (xy 440.0 272.62)) (stroke (width 0) (type default)) (uuid "3cf68a0e-c72f-4df5-a05f-d7b71b447a3d"))
+(wire (pts (xy 549.76 257.38) (xy 545.95 257.38)) (stroke (width 0) (type default)) (uuid "920832ad-e3f7-4fb6-bceb-c612bf9aa9f9"))
+(wire (pts (xy 580.24 257.38) (xy 584.05 257.38)) (stroke (width 0) (type default)) (uuid "69fc12fa-49b9-407c-9eeb-c15a2f02701a"))
+(wire (pts (xy 580.24 262.46) (xy 584.05 262.46)) (stroke (width 0) (type default)) (uuid "aeef845a-992f-4ece-9a06-111ddd9c4d85"))
+(wire (pts (xy 549.76 267.54) (xy 545.95 267.54)) (stroke (width 0) (type default)) (uuid "ad3051fc-70ab-4756-9a77-7f284788cf93"))
+(wire (pts (xy 580.24 267.54) (xy 584.05 267.54)) (stroke (width 0) (type default)) (uuid "5e837d58-2e01-4d8f-83b4-58ee74ac5cb3"))
+(wire (pts (xy 549.76 272.62) (xy 545.95 272.62)) (stroke (width 0) (type default)) (uuid "d6fe552d-60fa-4179-9a85-a67d27fe8e40"))
+(wire (pts (xy 549.76 275.16) (xy 545.95 275.16)) (stroke (width 0) (type default)) (uuid "2ca73a7b-a62e-4c74-b1c7-056d419456ca"))
+(wire (pts (xy 674.76 257.38) (xy 670.95 257.38)) (stroke (width 0) (type default)) (uuid "1cfa1666-9a69-4c2f-bd85-adab6a250d81"))
+(wire (pts (xy 705.24 257.38) (xy 709.05 257.38)) (stroke (width 0) (type default)) (uuid "6cdf5249-7a1b-4055-b453-23a5c1da4f9c"))
+(wire (pts (xy 674.76 262.46) (xy 670.95 262.46)) (stroke (width 0) (type default)) (uuid "219640e5-1275-4c43-810e-f5f82797ea0e"))
+(wire (pts (xy 705.24 262.46) (xy 709.05 262.46)) (stroke (width 0) (type default)) (uuid "baaa72c6-6dca-4069-af2a-66695df5dd7f"))
+(wire (pts (xy 674.76 267.54) (xy 670.95 267.54)) (stroke (width 0) (type default)) (uuid "dcfdfbf2-1421-4c86-a47a-523412b59cf8"))
+(wire (pts (xy 705.24 267.54) (xy 709.05 267.54)) (stroke (width 0) (type default)) (uuid "1ecb64f7-6f24-41a6-9b7a-a4663795895c"))
+(wire (pts (xy 674.76 272.62) (xy 670.95 272.62)) (stroke (width 0) (type default)) (uuid "45800e1b-c03e-43e8-a13e-9f51da83039c"))
+(wire (pts (xy 674.76 275.16) (xy 670.95 275.16)) (stroke (width 0) (type default)) (uuid "b8c49d41-9849-440e-9f64-4f396c2e1459"))
+(wire (pts (xy 49.76 327.38) (xy 45.949999999999996 327.38)) (stroke (width 0) (type default)) (uuid "f14d20d2-5b00-4948-a1df-6156925e9c49"))
+(wire (pts (xy 80.24 327.38) (xy 84.05 327.38)) (stroke (width 0) (type default)) (uuid "63988d41-33a4-401e-93c5-fd6df4d1ec7e"))
+(wire (pts (xy 80.24 332.46) (xy 84.05 332.46)) (stroke (width 0) (type default)) (uuid "97521512-16de-45d7-8c1b-18d54c070296"))
+(wire (pts (xy 49.76 337.54) (xy 45.949999999999996 337.54)) (stroke (width 0) (type default)) (uuid "a26998a6-4d81-4594-bc46-b1ed7b4ed5b8"))
+(wire (pts (xy 80.24 337.54) (xy 84.05 337.54)) (stroke (width 0) (type default)) (uuid "14edb6ed-0d9a-4f07-8caf-8ca0d6e20bc8"))
+(wire (pts (xy 49.76 342.62) (xy 45.949999999999996 342.62)) (stroke (width 0) (type default)) (uuid "f3108fcd-916f-4255-a6c3-f0dc271d6418"))
+(wire (pts (xy 49.76 345.16) (xy 45.949999999999996 345.16)) (stroke (width 0) (type default)) (uuid "2852d908-a050-464e-bfc0-d2f1f35e1841"))
+(wire (pts (xy 174.76 327.38) (xy 170.95 327.38)) (stroke (width 0) (type default)) (uuid "9c07f5a8-f36e-49e6-be0b-6fc2805ed2a6"))
+(wire (pts (xy 205.24 327.38) (xy 209.05 327.38)) (stroke (width 0) (type default)) (uuid "1afbd936-b8c7-4b3d-9afa-d0dbce200976"))
+(wire (pts (xy 205.24 332.46) (xy 209.05 332.46)) (stroke (width 0) (type default)) (uuid "31b17f60-68c4-4eee-982a-81eedb6854f7"))
+(wire (pts (xy 174.76 337.54) (xy 170.95 337.54)) (stroke (width 0) (type default)) (uuid "87033748-86c0-4602-8be5-e5bf164f263b"))
+(wire (pts (xy 205.24 337.54) (xy 209.05 337.54)) (stroke (width 0) (type default)) (uuid "a83d2800-c9b8-42ac-9f03-3a272db5ed37"))
+(wire (pts (xy 174.76 342.62) (xy 170.95 342.62)) (stroke (width 0) (type default)) (uuid "86b981c8-caa2-4582-8b49-f2dc25cda7ec"))
+(wire (pts (xy 174.76 345.16) (xy 170.95 345.16)) (stroke (width 0) (type default)) (uuid "9fd55d81-d93d-4363-983e-58832426e23a"))
+(wire (pts (xy 322.62 335.0) (xy 326.43 335.0)) (stroke (width 0) (type default)) (uuid "0f2a6916-1c90-4bc0-a722-bc5438ff1739"))
+(wire (pts (xy 307.38 335.0) (xy 303.57 335.0)) (stroke (width 0) (type default)) (uuid "a56c6727-41f2-424b-960f-ff9687614619"))
+(wire (pts (xy 447.62 335.0) (xy 451.43 335.0)) (stroke (width 0) (type default)) (uuid "81e5bdf5-a7b4-4488-b0ab-b1db93d68ede"))
+(wire (pts (xy 432.38 335.0) (xy 428.57 335.0)) (stroke (width 0) (type default)) (uuid "fbedbd30-337a-4e26-ae3f-18549157c442"))
+(wire (pts (xy 572.62 335.0) (xy 576.43 335.0)) (stroke (width 0) (type default)) (uuid "8dd35730-814f-441c-85d2-71483e6d575a"))
+(wire (pts (xy 557.38 335.0) (xy 553.57 335.0)) (stroke (width 0) (type default)) (uuid "113d1dc9-fdb5-43bb-b552-03ec754398d0"))
+(wire (pts (xy 682.38 335.0) (xy 678.57 335.0)) (stroke (width 0) (type default)) (uuid "791134a8-c780-427c-86f7-a38ae91bf2fc"))
+(wire (pts (xy 697.62 335.0) (xy 701.43 335.0)) (stroke (width 0) (type default)) (uuid "e2a505e1-7572-498a-a6a4-8fc11c136e64"))
+(wire (pts (xy 57.38 405.0) (xy 53.57 405.0)) (stroke (width 0) (type default)) (uuid "de56ec30-94e7-4425-940d-bcf14a78de96"))
+(wire (pts (xy 72.62 405.0) (xy 76.43 405.0)) (stroke (width 0) (type default)) (uuid "921236cf-d913-45b4-bae1-3961dabe76d2"))
+(wire (pts (xy 182.38 405.0) (xy 178.57 405.0)) (stroke (width 0) (type default)) (uuid "987dd0f2-7781-4fd6-9f44-3c2276f6cfc8"))
+(wire (pts (xy 197.62 405.0) (xy 201.43 405.0)) (stroke (width 0) (type default)) (uuid "458e41cb-e76c-43ab-a904-2a1f42d0a34e"))
+(wire (pts (xy 307.38 405.0) (xy 303.57 405.0)) (stroke (width 0) (type default)) (uuid "1f20b847-0013-46b4-9ebc-98f237b7f91e"))
+(wire (pts (xy 322.62 405.0) (xy 326.43 405.0)) (stroke (width 0) (type default)) (uuid "d9e63237-4592-481b-bd55-4e5720775d97"))
+(wire (pts (xy 434.92 405.0) (xy 431.11 405.0)) (stroke (width 0) (type default)) (uuid "a82c80e1-f72f-4569-8f9c-5b208acfe430"))
+(wire (pts (xy 445.08 405.0) (xy 448.89 405.0)) (stroke (width 0) (type default)) (uuid "e173b0d6-8bb0-4f3e-828b-beeee0ca3c69"))
+(wire (pts (xy 559.92 405.0) (xy 556.11 405.0)) (stroke (width 0) (type default)) (uuid "3d88f88a-74b0-4615-b027-20f7f9f7f7de"))
+(wire (pts (xy 570.08 405.0) (xy 573.89 405.0)) (stroke (width 0) (type default)) (uuid "c03468c8-872b-4fa3-83ca-35d30456d17b"))
+(wire (pts (xy 690.0 401.19) (xy 690.0 397.38)) (stroke (width 0) (type default)) (uuid "52b4b7a4-4b85-4ce0-83a1-3386b4df8711"))
+(wire (pts (xy 690.0 408.81) (xy 690.0 412.62)) (stroke (width 0) (type default)) (uuid "280c46ee-5eb1-4aab-99e7-a7c295b62a0b"))
+(wire (pts (xy 65.0 471.19) (xy 65.0 467.38)) (stroke (width 0) (type default)) (uuid "9a190ea8-fcce-44f8-a086-2f266d099cb0"))
+(wire (pts (xy 65.0 478.81) (xy 65.0 482.62)) (stroke (width 0) (type default)) (uuid "d9310800-55fd-4eb7-ad85-efc480cae257"))
+(wire (pts (xy 190.0 471.19) (xy 190.0 467.38)) (stroke (width 0) (type default)) (uuid "ded172fb-e1d7-4760-b3f9-751ea942de35"))
+(wire (pts (xy 190.0 478.81) (xy 190.0 482.62)) (stroke (width 0) (type default)) (uuid "00acaf71-6e75-421e-8ed8-9ee00079e0b7"))
+(wire (pts (xy 315.0 471.19) (xy 315.0 467.38)) (stroke (width 0) (type default)) (uuid "0f3bb3f6-be86-4d06-9670-b2a2ecce9e1d"))
+(wire (pts (xy 315.0 478.81) (xy 315.0 482.62)) (stroke (width 0) (type default)) (uuid "dc5c8acc-ce8f-4818-9ae7-7a3ae6c41d3d"))
+(wire (pts (xy 440.0 471.19) (xy 440.0 467.38)) (stroke (width 0) (type default)) (uuid "f284a3d3-d18c-424c-8c06-6440c8cd09b8"))
+(wire (pts (xy 440.0 478.81) (xy 440.0 482.62)) (stroke (width 0) (type default)) (uuid "18218251-264e-4ff4-b4af-64ec8df57e0f"))
+(wire (pts (xy 565.0 471.19) (xy 565.0 467.38)) (stroke (width 0) (type default)) (uuid "874081e5-91cf-4d4d-b5d3-a1ff94e1f115"))
+(wire (pts (xy 565.0 478.81) (xy 565.0 482.62)) (stroke (width 0) (type default)) (uuid "03c558f2-af16-47ca-bc26-961f181b2692"))
+(wire (pts (xy 690.0 471.19) (xy 690.0 467.38)) (stroke (width 0) (type default)) (uuid "646aaf08-8db8-4054-8385-a693fd5f8f85"))
+(wire (pts (xy 690.0 478.81) (xy 690.0 482.62)) (stroke (width 0) (type default)) (uuid "1274113e-06fb-4d2f-bcd2-051502b59fd0"))
+)

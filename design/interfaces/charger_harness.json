@@ -1,0 +1,58 @@
+{
+  "revision": 1,
+  "owner": "CHARGER/HARNESS",
+  "external_contacts": [
+    {
+      "id": "C1",
+      "net": "GND",
+      "main_ref": "J202",
+      "main_pin": "2"
+    },
+    {
+      "id": "C2",
+      "net": "CHG_RAW_5V",
+      "main_ref": "J202",
+      "main_pin": "1"
+    },
+    {
+      "id": "C3",
+      "net": "CHG_RAW_5V",
+      "main_ref": "J202",
+      "main_pin": "1"
+    },
+    {
+      "id": "C4",
+      "net": "GND",
+      "main_ref": "J202",
+      "main_pin": "2"
+    }
+  ],
+  "population": [
+    {
+      "id": "CONTACT_SET",
+      "qty": 1,
+      "mpn": "TBD",
+      "physical_positions": 4
+    },
+    {
+      "id": "DEDICATED_POWER_RETURN_HARNESS",
+      "qty": 1,
+      "mpn": "TBD"
+    },
+    {
+      "id": "ESD_ENTRY",
+      "qty": 1,
+      "mpn": "TBD",
+      "status": "mandatory provision immediately behind feedthrough; ratings require dock fault envelope"
+    }
+  ],
+  "protection": {
+    "main_series": "U1201",
+    "main_tvs": "D1201",
+    "protected_net": "VBUSIN",
+    "pmic_pin": "U201.21",
+    "local_cap": "C201"
+  },
+  "npm1300_primary_pdf_sha256": "b1cf8bf90d2a03cae27ebe9c8d17ee5c815614cef2bb4a997a65e1def8550924",
+  "physical_mating_map": "TBD; abstract identity only"
+}

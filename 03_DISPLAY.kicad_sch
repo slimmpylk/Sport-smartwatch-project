@@ -2576,7 +2576,9 @@
 				)
 			)
 		)
-	)
+
+(property "Board" "MAIN" (at 0 0 0) (effects (font (size 1 1)) (hide yes)))
+)
 	(symbol
 		(lib_id "sportwatch_display:ZC-A1D43W-046")
 		(at 137.16 78.74 0)
@@ -2754,7 +2756,9 @@
 				)
 			)
 		)
-	)
+
+(property "Board" "MAIN" (at 0 0 0) (effects (font (size 1 1)) (hide yes)))
+)
 	(symbol
 		(lib_id "power:GND")
 		(at 137.16 102.87 0)
@@ -2828,7 +2832,9 @@
 				)
 			)
 		)
-	)
+
+(property "Board" "MAIN" (at 0 0 0) (effects (font (size 1 1)) (hide yes)))
+)
 	(symbol
 		(lib_id "power:GND")
 		(at 68.58 106.68 0)
@@ -2902,7 +2908,9 @@
 				)
 			)
 		)
-	)
+
+(property "Board" "MAIN" (at 0 0 0) (effects (font (size 1 1)) (hide yes)))
+)
 	(symbol
 		(lib_id "power:GND")
 		(at 35.56 78.74 0)
@@ -2976,7 +2984,9 @@
 				)
 			)
 		)
-	)
+
+(property "Board" "MAIN" (at 0 0 0) (effects (font (size 1 1)) (hide yes)))
+)
 	(symbol
 		(lib_id "Device:R")
 		(at 35.56 71.12 0)
@@ -3100,7 +3110,9 @@
 				)
 			)
 		)
-	)
+
+(property "Board" "MAIN" (at 0 0 0) (effects (font (size 1 1)) (hide yes)))
+)
 	(symbol
 		(lib_id "Device:R")
 		(at 236.22 63.5 0)
@@ -3224,7 +3236,9 @@
 				)
 			)
 		)
-	)
+
+(property "Board" "MAIN" (at 0 0 0) (effects (font (size 1 1)) (hide yes)))
+)
 	(symbol
 		(lib_id "Device:R")
 		(at 35.56 99.06 0)
@@ -3348,7 +3362,9 @@
 				)
 			)
 		)
-	)
+
+(property "Board" "MAIN" (at 0 0 0) (effects (font (size 1 1)) (hide yes)))
+)
 	(symbol
 		(lib_id "power:GND")
 		(at 68.58 78.74 0)
@@ -3422,7 +3438,9 @@
 				)
 			)
 		)
-	)
+
+(property "Board" "MAIN" (at 0 0 0) (effects (font (size 1 1)) (hide yes)))
+)
 	(symbol
 		(lib_id "Device:R")
 		(at 200.66 63.5 0)
@@ -3546,7 +3564,9 @@
 				)
 			)
 		)
-	)
+
+(property "Board" "MAIN" (at 0 0 0) (effects (font (size 1 1)) (hide yes)))
+)
 	(symbol
 		(lib_id "Device:R")
 		(at 68.58 99.06 0)
@@ -3670,5 +3690,7 @@
 				)
 			)
 		)
-	)
+
+(property "Board" "MAIN" (at 0 0 0) (effects (font (size 1 1)) (hide yes)))
+)
 )

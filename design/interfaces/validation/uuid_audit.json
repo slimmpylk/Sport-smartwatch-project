@@ -1,0 +1,11 @@
+{
+  "status": "PASS",
+  "unique_object_uuids": 4217,
+  "duplicate_object_uuids": 0,
+  "original_physical_component_pin_uuid_maps_preserved": 242,
+  "exceptions": [
+    "J202 redefined as MAIN charger harness endpoint; connector symbol UUID new",
+    "POWER #FLG0201 external VBUS source removed; U1201 provides protected source",
+    "Other flags/power-symbol markers not physical BOM components"
+  ]
+}

@@ -1,0 +1,13 @@
+{
+  "meta": {
+    "filename": "rear_sensor_revA.kicad_pro",
+    "version": 1
+  },
+  "schematic": {
+    "annotate_start_num": 0
+  },
+  "text_variables": {
+    "BOARD": "REAR",
+    "PHASE": "SCHEMATIC ONLY; placement gates open"
+  }
+}

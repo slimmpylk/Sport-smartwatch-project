@@ -1056,7 +1056,9 @@
 				)
 			)
 		)
-	)
+
+(property "Board" "MAIN" (at 0 0 0) (effects (font (size 1 1)) (hide yes)))
+)
 	(symbol
 		(lib_id "power:GND")
 		(at 98 91.44 0)
@@ -1134,7 +1136,9 @@
 				)
 			)
 		)
-	)
+
+(property "Board" "MAIN" (at 0 0 0) (effects (font (size 1 1)) (hide yes)))
+)
 	(symbol
 		(lib_id "power:GND")
 		(at 191 99.06 0)
@@ -1212,7 +1216,9 @@
 				)
 			)
 		)
-	)
+
+(property "Board" "MAIN" (at 0 0 0) (effects (font (size 1 1)) (hide yes)))
+)
 	(symbol
 		(lib_id "power:GND")
 		(at 191 106.68 0)
@@ -1290,7 +1296,9 @@
 				)
 			)
 		)
-	)
+
+(property "Board" "MAIN" (at 0 0 0) (effects (font (size 1 1)) (hide yes)))
+)
 	(symbol
 		(lib_id "2026-09-16_06-45-24:MAX-F10S-00B")
 		(at 111.76 91.44 0)
@@ -1420,5 +1428,7 @@
 				)
 			)
 		)
-	)
+
+(property "Board" "MAIN" (at 0 0 0) (effects (font (size 1 1)) (hide yes)))
+)
 )

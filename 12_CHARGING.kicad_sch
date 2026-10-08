@@ -4,5 +4,491 @@
 	(generator_version "10.0")
 	(uuid "ae197026-a6bd-44b2-96e3-f21bc4bb9255")
 	(paper "A4")
-	(lib_symbols)
+	(lib_symbols
+		(symbol "Connector_Generic:Conn_01x02"
+		(pin_names
+			(offset 1.016)
+			(hide yes)
+		)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(duplicate_pin_numbers_are_jumpers no)
+		(property "Reference" "J"
+			(at 0 2.54 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "Conn_01x02"
+			(at 0 -5.08 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 0 0 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 0 0 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Generic connector, single row, 01x02, script generated (kicad-library-utils/schlib/autogen/connector/)"
+			(at 0 0 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "ki_keywords" "connector"
+			(at 0 0 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "ki_fp_filters" "Connector*:*_1x??_*"
+			(at 0 0 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(symbol "Conn_01x02_1_1"
+			(rectangle
+				(start -1.27 1.27)
+				(end 1.27 -3.81)
+				(stroke
+					(width 0.254)
+					(type default)
+				)
+				(fill
+					(type background)
+				)
+			)
+			(rectangle
+				(start -1.27 0.127)
+				(end 0 -0.127)
+				(stroke
+					(width 0.1524)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(rectangle
+				(start -1.27 -2.413)
+				(end 0 -2.667)
+				(stroke
+					(width 0.1524)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(pin passive line
+				(at -5.08 0 0)
+				(length 3.81)
+				(name "Pin_1"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "1"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin passive line
+				(at -5.08 -2.54 0)
+				(length 3.81)
+				(name "Pin_2"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "2"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+		)
+		(embedded_fonts no)
+	)
+		(symbol "sportwatch_interfaces:ChargerProtection_Provision" (pin_names (offset 1.016)) (in_bom yes) (on_board yes)
+(property "Reference" "U" (at 0 10 0) (effects (font (size 1.27 1.27))))
+(property "Value" "ChargerProtection_Provision" (at 0 -10 0) (effects (font (size 1.27 1.27))))
+(property "Footprint" "" (at 0 0 0) (effects (font (size 1 1)) (hide yes)))
+(property "Datasheet" "" (at 0 0 0) (effects (font (size 1 1)) (hide yes)))
+(symbol "ChargerProtection_Provision_0_1" (rectangle (start -12.7 7.62) (end 12.7 -7.62) (stroke (width 0.254) (type default)) (fill (type background))))
+(symbol "ChargerProtection_Provision_1_1"
+(pin power_in line (at -17.78 0 0) (length 5.08) (name "RAW_IN" (effects (font (size 1 1)))) (number "1" (effects (font (size 1 1)))))
+(pin power_out line (at 17.78 0 180) (length 5.08) (name "PROTECTED_OUT" (effects (font (size 1 1)))) (number "2" (effects (font (size 1 1)))))
+(pin power_in line (at 0 -12.7 90) (length 5.08) (name "GND" (effects (font (size 1 1)))) (number "3" (effects (font (size 1 1)))))
+))
+		(symbol "Device:D_TVS"
+		(pin_numbers
+			(hide yes)
+		)
+		(pin_names
+			(offset 1.016)
+			(hide yes)
+		)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(duplicate_pin_numbers_are_jumpers no)
+		(property "Reference" "D"
+			(at 0 2.54 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "D_TVS"
+			(at 0 -2.54 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 0 0 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 0 0 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Bidirectional transient-voltage-suppression diode"
+			(at 0 0 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "ki_keywords" "diode TVS thyrector"
+			(at 0 0 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "ki_fp_filters" "TO-???* *_Diode_* *SingleDiode* D_*"
+			(at 0 0 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(symbol "D_TVS_0_1"
+			(polyline
+				(pts
+					(xy -2.54 1.27) (xy -2.54 -1.27) (xy 2.54 1.27) (xy 2.54 -1.27) (xy -2.54 1.27)
+				)
+				(stroke
+					(width 0.254)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(polyline
+				(pts
+					(xy 0.508 1.27) (xy 0 1.27) (xy 0 -1.27) (xy -0.508 -1.27)
+				)
+				(stroke
+					(width 0.254)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(polyline
+				(pts
+					(xy 1.27 0) (xy -1.27 0)
+				)
+				(stroke
+					(width 0)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
+		)
+		(symbol "D_TVS_1_1"
+			(pin passive line
+				(at -3.81 0 0)
+				(length 2.54)
+				(name "A1"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "1"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin passive line
+				(at 3.81 0 180)
+				(length 2.54)
+				(name "A2"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "2"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+		)
+		(embedded_fonts no)
+	)
+		(symbol "power:PWR_FLAG"
+		(power global)
+		(pin_numbers
+			(hide yes)
+		)
+		(pin_names
+			(offset 0)
+			(hide yes)
+		)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(duplicate_pin_numbers_are_jumpers no)
+		(property "Reference" "#FLG"
+			(at 0 1.905 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "PWR_FLAG"
+			(at 0 3.81 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 0 0 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 0 0 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Special symbol for telling ERC where power comes from"
+			(at 0 0 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "ki_keywords" "flag power"
+			(at 0 0 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(symbol "PWR_FLAG_0_0"
+			(pin power_out line
+				(at 0 0 90)
+				(length 0)
+				(name ""
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "1"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+		)
+		(symbol "PWR_FLAG_0_1"
+			(polyline
+				(pts
+					(xy 0 0) (xy 0 1.27) (xy -1.016 1.905) (xy 0 2.54) (xy 1.016 1.905) (xy 0 1.27)
+				)
+				(stroke
+					(width 0)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
+		)
+		(embedded_fonts no)
+	))
+	(symbol (lib_id "Connector_Generic:Conn_01x02") (at 45.72 55.88 0) (unit 1) (uuid "7e3b8c5a-94e6-579c-bc1c-806c7fd645ef") (pin "1" (uuid "904b5f39-1f67-5803-8c0e-c7867c2c63c8")) (pin "2" (uuid "fce46d3d-1d32-5ecb-9d83-e98cf98c147a")) (property "Reference" "J202" (at 45.72 53.34 0) (effects (font (size 1.27 1.27)))) (instances (project "sportwatch_revA" (path "/063f9d99-6c07-44cf-ba32-e33897e06972/13f98b5d-2735-4ce5-b6a9-56134247b933" (reference "J202") (unit 1))))
+	(property "Value" "CHARGER_HARNESS_TBD" (at 45.72 60.96 0) (effects (font (size 1.27 1.27))))
+	(property "Footprint" "" (at 45.72 55.88 0) (effects (font (size 1.27 1.27)) (hide yes)))
+	(property "Board" "MAIN" (at 45.72 55.88 0) (effects (font (size 1.27 1.27)) (hide yes)))
+	(property "SelectionStatus" "PROVISIONAL - MPN and footprint TBD" (at 45.72 55.88 0) (effects (font (size 1.27 1.27)) (hide yes)))
+	(property "Contract" "pin1=CHG_RAW_5V; pin2=GND; external contacts separate" (at 45.72 55.88 0) (effects (font (size 1.27 1.27)) (hide yes))))
+	(global_label "CHG_RAW_5V" (shape input) (at 40.64 55.88 180) (effects (font (size 1.27 1.27)) (justify right)) (uuid "30fc0a3c-a244-5543-b87b-69ff25006ed0"))
+	(global_label "GND" (shape input) (at 40.64 58.42 180) (effects (font (size 1.27 1.27)) (justify right)) (uuid "7077b2b0-b5fd-5937-9301-8b0eeb4c8ffe"))
+	(symbol (lib_id "sportwatch_interfaces:ChargerProtection_Provision") (at 121.92 55.88 0) (unit 1) (uuid "3ed9f111-9b05-53f0-b0a8-9d89f9609fd6") (pin "1" (uuid "b33a2204-7f4c-59da-b92a-0dfb7b7699cf")) (pin "2" (uuid "1f8a8744-0392-5bfb-97d5-bb75f298c2ea")) (pin "3" (uuid "f55ba291-98fe-5959-a215-a78444589854")) (property "Reference" "U1201" (at 121.92 46.99 0) (effects (font (size 1.27 1.27)))) (instances (project "sportwatch_revA" (path "/063f9d99-6c07-44cf-ba32-e33897e06972/13f98b5d-2735-4ce5-b6a9-56134247b933" (reference "U1201") (unit 1))))
+	(property "Value" "MANDATORY_OV_REV_ILIM_MPN_TBD" (at 121.92 69.85 0) (effects (font (size 1.27 1.27))))
+	(property "Footprint" "" (at 121.92 55.88 0) (effects (font (size 1.27 1.27)) (hide yes)))
+	(property "Board" "MAIN" (at 121.92 55.88 0) (effects (font (size 1.27 1.27)) (hide yes)))
+	(property "SelectionStatus" "PROVISIONAL - MPN and footprint TBD" (at 121.92 55.88 0) (effects (font (size 1.27 1.27)) (hide yes)))
+	(property "Implementation" "Functional provision, not a selected IC; must implement OV disconnect, reverse polarity/reverse current block, current/fault limit" (at 121.92 55.88 0) (effects (font (size 1.27 1.27)) (hide yes))))
+	(global_label "CHG_RAW_5V" (shape input) (at 104.14 55.88 180) (effects (font (size 1.27 1.27)) (justify right)) (uuid "0dad1f00-3914-5cea-9f23-15d630e95b0f"))
+	(global_label "VBUSIN" (shape input) (at 139.7 55.88 0) (effects (font (size 1.27 1.27)) (justify left)) (uuid "411965be-86ff-5e01-9e1d-d09c5c24db3f"))
+	(global_label "GND" (shape input) (at 121.92 68.58 270) (effects (font (size 1.27 1.27)) (justify right)) (uuid "00c0de2b-7b46-55a4-870c-aeaec6d468ad"))
+	(symbol (lib_id "Device:D_TVS") (at 198.12 55.88 0) (unit 1) (uuid "74d3774d-1fc0-54cd-9d5f-b217518b6a71") (pin "1" (uuid "c67fb08c-851a-51a8-9008-8dec5f170abc")) (pin "2" (uuid "568930df-6a71-59fd-a8a3-0f0f6d1f99df")) (property "Reference" "D1201" (at 198.12 53.34 0) (effects (font (size 1.27 1.27)))) (instances (project "sportwatch_revA" (path "/063f9d99-6c07-44cf-ba32-e33897e06972/13f98b5d-2735-4ce5-b6a9-56134247b933" (reference "D1201") (unit 1))))
+	(property "Value" "ESD_TVS_RATING_MPN_TBD" (at 198.12 58.42 0) (effects (font (size 1.27 1.27))))
+	(property "Footprint" "" (at 198.12 55.88 0) (effects (font (size 1.27 1.27)) (hide yes)))
+	(property "Board" "MAIN" (at 198.12 55.88 0) (effects (font (size 1.27 1.27)) (hide yes)))
+	(property "SelectionStatus" "PROVISIONAL - MPN and footprint TBD" (at 198.12 55.88 0) (effects (font (size 1.27 1.27)) (hide yes)))
+	(property "Qualification" "Recommended normal VBUS 4.0-5.5V; absolute stress limits -0.3..22V. Positive transient overshoot shall remain below 22V and negative transient/reverse protection shall keep PMIC VBUS at or above -0.3V with design margin. Sustained reverse voltage requires series blocking; final clamps and series protection remain TBD against qualified dock/fault envelope; TVS standoff above dock maximum." (at 198.12 55.88 0) (effects (font (size 1.27 1.27)) (hide yes))))
+	(global_label "VBUSIN" (shape input) (at 194.31 55.88 180) (effects (font (size 1.27 1.27)) (justify right)) (uuid "a521bc9f-2b0f-5075-bf7c-222570c4ae54"))
+	(global_label "GND" (shape input) (at 201.93 55.88 0) (effects (font (size 1.27 1.27)) (justify left)) (uuid "3c31b105-f9f0-5d13-bccb-88b2a03a90c4"))
+	(symbol (lib_id "power:PWR_FLAG") (at 45.72 91.44 0) (unit 1) (uuid "e2c8e62b-8e36-5707-b5f4-009fad035515") (pin "1" (uuid "48904d8f-d9b8-5d11-936f-0cbf59d695b6")) (property "Reference" "#FLG1201" (at 45.72 92.71 0) (effects (font (size 1.27 1.27)) (hide yes))) (instances (project "sportwatch_revA" (path "/063f9d99-6c07-44cf-ba32-e33897e06972/13f98b5d-2735-4ce5-b6a9-56134247b933" (reference "#FLG1201") (unit 1))))
+	(property "Value" "PWR_FLAG" (at 45.72 87.63 0) (effects (font (size 1.27 1.27))))
+	(property "Footprint" "" (at 45.72 91.44 0) (effects (font (size 1.27 1.27)) (hide yes)))
+	(property "Board" "MAIN" (at 45.72 91.44 0) (effects (font (size 1.27 1.27)) (hide yes)))
+	(property "SelectionStatus" "PROVISIONAL - MPN and footprint TBD" (at 45.72 91.44 0) (effects (font (size 1.27 1.27)) (hide yes)))
+	(property "Source" "External current-limited +5V dock via separate harness" (at 45.72 91.44 0) (effects (font (size 1.27 1.27)) (hide yes))))
+	(global_label "CHG_RAW_5V" (shape input) (at 45.72 91.44 270) (effects (font (size 1.27 1.27)) (justify right)) (uuid "e09e263d-deb9-5c10-9eb0-db6c8f915d3c"))
+	(text "U1201 mandatory functional protection provision. No bypass. Final implementation/MPN/ratings require dock fault envelope." (at 12.7 127 0) (effects (justify left bottom) (font (size 0.9 0.9))) (uuid "956ccda5-c4f4-5177-bf5f-89fc59c7245c"))
+	(text "nPM1300 PS v1.3: VBUS operational 4.0-5.5V; absolute -0.3..22V. Built-in OV isolation does not qualify negative input." (at 12.7 139.7 0) (effects (justify left bottom) (font (size 0.9 0.9))) (uuid "a4da5268-2cd9-5884-ac6e-56e50ab98ae6"))
+	(text "TVS alone does not solve sustained OV/reverse polarity. Provide local contact ESD diversion in dedicated CHARGER harness." (at 12.7 152.4 0) (effects (justify left bottom) (font (size 0.9 0.9))) (uuid "3f28cc52-44a4-5cef-92da-1ca44856cdfa"))
+	(text "C201 remains on MAIN at U201 VBUS input. Charger current must not use sensor FPC, PD_GND, NT401/NT402 or optical guard copper." (at 12.7 165.1 0) (effects (justify left bottom) (font (size 0.9 0.9))) (uuid "3a406db4-9ddf-58a7-8972-72abecea788f"))
 )

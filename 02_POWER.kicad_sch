@@ -2728,7 +2728,7 @@
 		)
 		(uuid "3b6540ee-bd0e-43bb-9e27-1a5b21d1e3f3")
 	)
-	(text "JCHG1: 1=VBUSIN (~5V), 2=GND"
+	(text "Charger harness/protection owned by 12_CHARGING; C201 stays local to U201 VBUS"
 		(exclude_from_sim no)
 		(at 20 39 0)
 		(effects
@@ -2871,7 +2871,7 @@
 		)
 		(uuid "bd0d6fad-e288-474b-bd60-09bfc73a1b3e")
 	)
-	(text "JBAT1: 1=BAT+, 2=10k NTC, 3=BAT-"
+	(text "J201 LIVE: 1=GND/BAT-, 2=BAT_NTC, 3=VBAT/BAT+; footprint/MPN TBD"
 		(exclude_from_sim no)
 		(at 20 75 0)
 		(effects
@@ -3122,16 +3122,7 @@
 		)
 		(uuid "1ee278f7-cf01-403b-bd33-5916e8366a4a")
 	)
-	(wire
-		(pts
-			(xy 40.08 30) (xy 55 30)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "1f1625ea-f90e-4623-a005-0bce6abb337a")
-	)
+
 	(wire
 		(pts
 			(xy 210 33) (xy 210 37)
@@ -3622,7 +3613,6 @@
 		)
 		(uuid "9cce62c8-3223-4a92-a97b-43c2fa29e5b3")
 	)
-
 	(wire
 		(pts
 			(xy 40.08 57.54) (xy 50 57.54)
@@ -3633,8 +3623,6 @@
 		)
 		(uuid "f6b53e68-7b1c-4b9a-b78a-6e05f1fb6e91")
 	)
-
-
 	(wire
 		(pts
 			(xy 227.3 30.46) (xy 218 30.46)
@@ -3900,8 +3888,8 @@
 		)
 		(uuid "7574c2de-5c0d-464c-9336-aa8fc9f91056")
 	)
-	(label "VBUSIN"
-		(at 65 28.19 0)
+	(global_label "VBUSIN"
+		(shape bidirectional) (at 65 28.19 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -4092,8 +4080,8 @@
 		)
 		(uuid "bbaf584a-7ae7-4b35-b8f5-93b0e3c0fb15")
 	)
-	(label "VBUSIN"
-		(at 108 63.5 180)
+	(global_label "VBUSIN"
+		(shape bidirectional) (at 108 63.5 180)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -4102,16 +4090,7 @@
 		)
 		(uuid "c2123c59-ff52-4e06-9b28-1749a7a91778")
 	)
-	(label "VBUSIN"
-		(at 55 30 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left bottom)
-		)
-		(uuid "c7cd8a3d-821b-4665-ad1f-1022122e4934")
-	)
+
 	(label "BAT_NTC"
 		(at 55 55 0)
 		(effects
@@ -4212,16 +4191,6 @@
 		)
 		(uuid "f6f148a4-2195-4a63-9217-b30d4af3cbbc")
 	)
-	(wire
-		(pts
-			(xy 40.08 27.46) (xy 48 27.46)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "acc4de8b-0786-4588-8da5-600f277bdb7d")
-	)
 
 	(symbol
 		(lib_id "Device:C")
@@ -4319,7 +4288,9 @@
 				)
 			)
 		)
-	)
+
+(property "Board" "MAIN" (at 0 0 0) (effects (font (size 1 1)) (hide yes)))
+)
 	(symbol
 		(lib_id "Device:NetTie_2")
 		(at 265 120 0)
@@ -4405,7 +4376,9 @@
 				)
 			)
 		)
-	)
+
+(property "Board" "MAIN" (at 0 0 0) (effects (font (size 1 1)) (hide yes)))
+)
 	(symbol
 		(lib_id "power:GND")
 		(at 275 37 0)
@@ -4489,7 +4462,9 @@
 				)
 			)
 		)
-	)
+
+(property "Board" "MAIN" (at 0 0 0) (effects (font (size 1 1)) (hide yes)))
+)
 	(symbol
 		(lib_id "Device:R")
 		(at 215 42 0)
@@ -4586,7 +4561,9 @@
 				)
 			)
 		)
-	)
+
+(property "Board" "MAIN" (at 0 0 0) (effects (font (size 1 1)) (hide yes)))
+)
 	(symbol
 		(lib_id "power:GND")
 		(at 105 130 0)
@@ -4670,7 +4647,9 @@
 				)
 			)
 		)
-	)
+
+(property "Board" "MAIN" (at 0 0 0) (effects (font (size 1 1)) (hide yes)))
+)
 	(symbol
 		(lib_id "power:GND")
 		(at 220 158 0)
@@ -4754,7 +4733,9 @@
 				)
 			)
 		)
-	)
+
+(property "Board" "MAIN" (at 0 0 0) (effects (font (size 1 1)) (hide yes)))
+)
 	(symbol
 		(lib_id "power:GND")
 		(at 225 50 0)
@@ -4838,7 +4819,9 @@
 				)
 			)
 		)
-	)
+
+(property "Board" "MAIN" (at 0 0 0) (effects (font (size 1 1)) (hide yes)))
+)
 	(symbol
 		(lib_id "Device:C")
 		(at 245 70 0)
@@ -4935,91 +4918,10 @@
 				)
 			)
 		)
-	)
-	(symbol
-		(lib_id "power:GND")
-		(at 48 27.46 0)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "3264ec3f-e3ff-49dd-80e1-c445f8635861")
-		(property "Reference" "#PWR0201"
-			(at 50.54 24.92 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "GND"
-			(at 50.54 30 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 48 27.46 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 48 27.46 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "Power symbol creates a global label with name GND"
-			(at 48 27.46 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "1"
-			(uuid "fb651b7c-c7f7-4a95-bd72-724a2f26957d")
-		)
-		(instances
-			(project "sportwatch_revA"
-				(path "/044f2259-6cab-4c65-a4f2-7f6378d66929/3264ec3f-e3ff-49dd-80e1-c445f8635861"
-					(reference "#PWR0201")
-					(unit 1)
-				)
-			)
-			(project "02_POWER"
-				(path "/bbbd25bf-ebfe-444c-b330-035ab29a723c"
-					(reference "#PWR0201")
-					(unit 1)
-				)
-			)
-		)
-	)
+
+(property "Board" "MAIN" (at 0 0 0) (effects (font (size 1 1)) (hide yes)))
+)
+
 	(symbol
 		(lib_id "Device:C")
 		(at 275 29.19 0)
@@ -5116,7 +5018,9 @@
 				)
 			)
 		)
-	)
+
+(property "Board" "MAIN" (at 0 0 0) (effects (font (size 1 1)) (hide yes)))
+)
 	(symbol
 		(lib_id "Device:L")
 		(at 240 17.76 270)
@@ -5202,93 +5106,9 @@
 				)
 			)
 		)
-	)
-	(symbol
-		(lib_id "Connector_Generic:Conn_01x02")
-		(at 35 30 180)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "4d9312a9-85eb-482e-9b61-2daaedc945c1")
-		(property "Reference" "J202"
-			(at 37.54 27.46 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "POGO_CHARGE_2PIN"
-			(at 37.54 32.54 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 35 30 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 35 30 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "Magnetic pogo charging connector"
-			(at 35 30 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "1"
-			(uuid "cacefe02-2731-41aa-9d96-9907f3cb3d9d")
-		)
-		(pin "2"
-			(uuid "57e7dec9-8304-4a18-aa1c-bc5c27ec0894")
-		)
-		(instances
-			(project "sportwatch_revA"
-				(path "/044f2259-6cab-4c65-a4f2-7f6378d66929/4d9312a9-85eb-482e-9b61-2daaedc945c1"
-					(reference "J202")
-					(unit 1)
-				)
-			)
-			(project "02_POWER"
-				(path "/bbbd25bf-ebfe-444c-b330-035ab29a723c"
-					(reference "J202")
-					(unit 1)
-				)
-			)
-		)
-	)
+
+(property "Board" "MAIN" (at 0 0 0) (effects (font (size 1 1)) (hide yes)))
+)
 	(symbol
 		(lib_id "Device:C")
 		(at 220 150 0)
@@ -5385,7 +5205,9 @@
 				)
 			)
 		)
-	)
+
+(property "Board" "MAIN" (at 0 0 0) (effects (font (size 1 1)) (hide yes)))
+)
 	(symbol
 		(lib_id "nordic-lib-kicad-npm:nPM1300-QEXX")
 		(at 153.67 96.52 0)
@@ -5564,7 +5386,9 @@
 				)
 			)
 		)
-	)
+
+(property "Board" "MAIN" (at 0 0 0) (effects (font (size 1 1)) (hide yes)))
+)
 	(symbol
 		(lib_id "power:GND")
 		(at 140 184 0)
@@ -5648,7 +5472,9 @@
 				)
 			)
 		)
-	)
+
+(property "Board" "MAIN" (at 0 0 0) (effects (font (size 1 1)) (hide yes)))
+)
 	(symbol
 		(lib_id "Device:C")
 		(at 100 175 0)
@@ -5745,7 +5571,9 @@
 				)
 			)
 		)
-	)
+
+(property "Board" "MAIN" (at 0 0 0) (effects (font (size 1 1)) (hide yes)))
+)
 	(symbol
 		(lib_id "power:GND")
 		(at 90 130 0)
@@ -5829,7 +5657,9 @@
 				)
 			)
 		)
-	)
+
+(property "Board" "MAIN" (at 0 0 0) (effects (font (size 1 1)) (hide yes)))
+)
 	(symbol
 		(lib_id "Device:NetTie_2")
 		(at 265 70 0)
@@ -5915,7 +5745,9 @@
 				)
 			)
 		)
-	)
+
+(property "Board" "MAIN" (at 0 0 0) (effects (font (size 1 1)) (hide yes)))
+)
 	(symbol
 		(lib_id "power:GND")
 		(at 210 37 0)
@@ -5999,7 +5831,9 @@
 				)
 			)
 		)
-	)
+
+(property "Board" "MAIN" (at 0 0 0) (effects (font (size 1 1)) (hide yes)))
+)
 	(symbol
 		(lib_id "power:GND")
 		(at 215 50 0)
@@ -6083,7 +5917,9 @@
 				)
 			)
 		)
-	)
+
+(property "Board" "MAIN" (at 0 0 0) (effects (font (size 1 1)) (hide yes)))
+)
 	(symbol
 		(lib_id "power:GND")
 		(at 65 40.64 0)
@@ -6167,7 +6003,9 @@
 				)
 			)
 		)
-	)
+
+(property "Board" "MAIN" (at 0 0 0) (effects (font (size 1 1)) (hide yes)))
+)
 	(symbol
 		(lib_id "power:GND")
 		(at 165 184 0)
@@ -6251,7 +6089,9 @@
 				)
 			)
 		)
-	)
+
+(property "Board" "MAIN" (at 0 0 0) (effects (font (size 1 1)) (hide yes)))
+)
 	(symbol
 		(lib_id "Device:C")
 		(at 165 175 0)
@@ -6348,7 +6188,9 @@
 				)
 			)
 		)
-	)
+
+(property "Board" "MAIN" (at 0 0 0) (effects (font (size 1 1)) (hide yes)))
+)
 	(symbol
 		(lib_id "Device:R")
 		(at 205 42 0)
@@ -6445,7 +6287,9 @@
 				)
 			)
 		)
-	)
+
+(property "Board" "MAIN" (at 0 0 0) (effects (font (size 1 1)) (hide yes)))
+)
 	(symbol
 		(lib_id "power:GND")
 		(at 153.67 145 0)
@@ -6529,7 +6373,9 @@
 				)
 			)
 		)
-	)
+
+(property "Board" "MAIN" (at 0 0 0) (effects (font (size 1 1)) (hide yes)))
+)
 	(symbol
 		(lib_id "Regulator_Switching:TPS63900")
 		(at 240 33 0)
@@ -6653,7 +6499,9 @@
 				)
 			)
 		)
-	)
+
+(property "Board" "MAIN" (at 0 0 0) (effects (font (size 1 1)) (hide yes)))
+)
 	(symbol
 		(lib_id "power:GND")
 		(at 50 64 0)
@@ -6737,7 +6585,9 @@
 				)
 			)
 		)
-	)
+
+(property "Board" "MAIN" (at 0 0 0) (effects (font (size 1 1)) (hide yes)))
+)
 	(symbol
 		(lib_id "Device:R")
 		(at 90 120 0)
@@ -6834,7 +6684,9 @@
 				)
 			)
 		)
-	)
+
+(property "Board" "MAIN" (at 0 0 0) (effects (font (size 1 1)) (hide yes)))
+)
 	(symbol
 		(lib_id "power:GND")
 		(at 205 50 0)
@@ -6918,7 +6770,9 @@
 				)
 			)
 		)
-	)
+
+(property "Board" "MAIN" (at 0 0 0) (effects (font (size 1 1)) (hide yes)))
+)
 	(symbol
 		(lib_id "Connector_Generic:Conn_01x03")
 		(at 35 55 180)
@@ -7007,7 +6861,9 @@
 				)
 			)
 		)
-	)
+
+(property "Board" "MAIN" (at 0 0 0) (effects (font (size 1 1)) (hide yes)))
+)
 	(symbol
 		(lib_id "Device:L")
 		(at 220 83.82 270)
@@ -7093,7 +6949,9 @@
 				)
 			)
 		)
-	)
+
+(property "Board" "MAIN" (at 0 0 0) (effects (font (size 1 1)) (hide yes)))
+)
 	(symbol
 		(lib_id "Device:L")
 		(at 220 96.52 270)
@@ -7179,7 +7037,9 @@
 				)
 			)
 		)
-	)
+
+(property "Board" "MAIN" (at 0 0 0) (effects (font (size 1 1)) (hide yes)))
+)
 	(symbol
 		(lib_id "Device:R")
 		(at 105 120 0)
@@ -7276,7 +7136,9 @@
 				)
 			)
 		)
-	)
+
+(property "Board" "MAIN" (at 0 0 0) (effects (font (size 1 1)) (hide yes)))
+)
 	(symbol
 		(lib_id "Device:C")
 		(at 65 32 0)
@@ -7373,7 +7235,9 @@
 				)
 			)
 		)
-	)
+
+(property "Board" "MAIN" (at 0 0 0) (effects (font (size 1 1)) (hide yes)))
+)
 	(symbol
 		(lib_id "Device:R")
 		(at 60 120 0)
@@ -7470,7 +7334,9 @@
 				)
 			)
 		)
-	)
+
+(property "Board" "MAIN" (at 0 0 0) (effects (font (size 1 1)) (hide yes)))
+)
 	(symbol
 		(lib_id "Device:C")
 		(at 65 57.5 0)
@@ -7567,7 +7433,9 @@
 				)
 			)
 		)
-	)
+
+(property "Board" "MAIN" (at 0 0 0) (effects (font (size 1 1)) (hide yes)))
+)
 	(symbol
 		(lib_id "power:GND")
 		(at 272 70 0)
@@ -7651,7 +7519,9 @@
 				)
 			)
 		)
-	)
+
+(property "Board" "MAIN" (at 0 0 0) (effects (font (size 1 1)) (hide yes)))
+)
 	(symbol
 		(lib_id "power:GND")
 		(at 65 66.04 0)
@@ -7735,7 +7605,9 @@
 				)
 			)
 		)
-	)
+
+(property "Board" "MAIN" (at 0 0 0) (effects (font (size 1 1)) (hide yes)))
+)
 	(symbol
 		(lib_id "Device:C")
 		(at 245 120 0)
@@ -7832,7 +7704,9 @@
 				)
 			)
 		)
-	)
+
+(property "Board" "MAIN" (at 0 0 0) (effects (font (size 1 1)) (hide yes)))
+)
 	(symbol
 		(lib_id "Device:R")
 		(at 225 42 0)
@@ -7929,7 +7803,9 @@
 				)
 			)
 		)
-	)
+
+(property "Board" "MAIN" (at 0 0 0) (effects (font (size 1 1)) (hide yes)))
+)
 	(symbol
 		(lib_id "Device:R")
 		(at 75 120 0)
@@ -8026,7 +7902,9 @@
 				)
 			)
 		)
-	)
+
+(property "Board" "MAIN" (at 0 0 0) (effects (font (size 1 1)) (hide yes)))
+)
 	(symbol
 		(lib_id "Device:C")
 		(at 210 29.19 0)
@@ -8123,7 +8001,9 @@
 				)
 			)
 		)
-	)
+
+(property "Board" "MAIN" (at 0 0 0) (effects (font (size 1 1)) (hide yes)))
+)
 	(symbol
 		(lib_id "power:GND")
 		(at 240 55 0)
@@ -8207,7 +8087,9 @@
 				)
 			)
 		)
-	)
+
+(property "Board" "MAIN" (at 0 0 0) (effects (font (size 1 1)) (hide yes)))
+)
 	(symbol
 		(lib_id "power:GND")
 		(at 272 120 0)
@@ -8291,7 +8173,9 @@
 				)
 			)
 		)
-	)
+
+(property "Board" "MAIN" (at 0 0 0) (effects (font (size 1 1)) (hide yes)))
+)
 	(symbol
 		(lib_id "Device:C")
 		(at 140 175 0)
@@ -8388,85 +8272,10 @@
 				)
 			)
 		)
-	)
-	(symbol
-		(lib_id "power:PWR_FLAG")
-		(at 55 30 0)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "f1902011-0001-4000-8000-000000000201")
-		(property "Reference" "#FLG0201"
-			(at 55 30 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "PWR_FLAG"
-			(at 55 30 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 55 30 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 55 30 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" ""
-			(at 55 30 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "1"
-			(uuid "f1902012-0001-4000-8000-000000000201")
-		)
-		(instances
-			(project "sportwatch_revA"
-				(path "/044f2259-6cab-4c65-a4f2-7f6378d66929/f1902011-0001-4000-8000-000000000201"
-					(reference "#FLG0201")
-					(unit 1)
-				)
-			)
-		)
-	)
+
+(property "Board" "MAIN" (at 0 0 0) (effects (font (size 1 1)) (hide yes)))
+)
+
 	(symbol
 		(lib_id "power:PWR_FLAG")
 		(at 55 52.46 0)
@@ -8544,7 +8353,9 @@
 				)
 			)
 		)
-	)
+
+(property "Board" "MAIN" (at 0 0 0) (effects (font (size 1 1)) (hide yes)))
+)
 	(symbol
 		(lib_id "power:PWR_FLAG")
 		(at 50 64 0)
@@ -8622,7 +8433,9 @@
 				)
 			)
 		)
-	)
+
+(property "Board" "MAIN" (at 0 0 0) (effects (font (size 1 1)) (hide yes)))
+)
 	(symbol
 		(lib_id "power:PWR_FLAG")
 		(at 262.46 120 0)
@@ -8700,7 +8513,9 @@
 				)
 			)
 		)
-	)
+
+(property "Board" "MAIN" (at 0 0 0) (effects (font (size 1 1)) (hide yes)))
+)
 	(symbol
 		(lib_id "power:PWR_FLAG")
 		(at 262.46 70 0)
@@ -8778,10 +8593,13 @@
 				)
 			)
 		)
-	)
+
+(property "Board" "MAIN" (at 0 0 0) (effects (font (size 1 1)) (hide yes)))
+)
 	(sheet_instances
 		(path "/"
 			(page "1")
 		)
 	)
+	(text "C206 = 2.2uF from VBAT to GND. Battery functional conductors: BAT+ / NTC / BAT-." (at 15 205 0) (effects (font (size 1 1)) (justify left bottom)) (uuid "1cadf69c-2d38-43f1-abfe-8ffe277efa84"))
 )

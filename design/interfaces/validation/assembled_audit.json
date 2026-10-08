@@ -1,0 +1,312 @@
+{
+  "status": "PASS",
+  "source_commit": "296ba1a13ebc79f6a5c400e4bbd0acb49cc7ed34",
+  "counts": {
+    "MAIN": {
+      "components": 202,
+      "nets": 359
+    },
+    "REAR": {
+      "components": 46,
+      "nets": 44
+    },
+    "HARNESS": {
+      "contacts": 4,
+      "logical_nets": 2,
+      "bom_lines": 3
+    }
+  },
+  "transferred_existing_components": 44,
+  "boundary_logical_nets": 13,
+  "continuity": [
+    {
+      "position": 1,
+      "net": "GND",
+      "main_net": "GND",
+      "rear_net": "GND",
+      "pass": true
+    },
+    {
+      "position": 2,
+      "net": "PPG_SPI_SCLK",
+      "main_net": "PPG_SPI_SCLK",
+      "rear_net": "PPG_SPI_SCLK",
+      "pass": true
+    },
+    {
+      "position": 3,
+      "net": "GND",
+      "main_net": "GND",
+      "rear_net": "GND",
+      "pass": true
+    },
+    {
+      "position": 4,
+      "net": "PPG_SPI_MOSI",
+      "main_net": "PPG_SPI_MOSI",
+      "rear_net": "PPG_SPI_MOSI",
+      "pass": true
+    },
+    {
+      "position": 5,
+      "net": "GND",
+      "main_net": "GND",
+      "rear_net": "GND",
+      "pass": true
+    },
+    {
+      "position": 6,
+      "net": "PPG_SPI_MISO",
+      "main_net": "PPG_SPI_MISO",
+      "rear_net": "PPG_SPI_MISO",
+      "pass": true
+    },
+    {
+      "position": 7,
+      "net": "GND",
+      "main_net": "GND",
+      "rear_net": "GND",
+      "pass": true
+    },
+    {
+      "position": 8,
+      "net": "PPG1_CS_N",
+      "main_net": "PPG1_CS_N",
+      "rear_net": "PPG1_CS_N",
+      "pass": true
+    },
+    {
+      "position": 9,
+      "net": "PPG2_CS_N",
+      "main_net": "PPG2_CS_N",
+      "rear_net": "PPG2_CS_N",
+      "pass": true
+    },
+    {
+      "position": 10,
+      "net": "GND",
+      "main_net": "GND",
+      "rear_net": "GND",
+      "pass": true
+    },
+    {
+      "position": 11,
+      "net": "PPG1_INT_N",
+      "main_net": "PPG1_INT_N",
+      "rear_net": "PPG1_INT_N",
+      "pass": true
+    },
+    {
+      "position": 12,
+      "net": "PPG2_INT_N",
+      "main_net": "PPG2_INT_N",
+      "rear_net": "PPG2_INT_N",
+      "pass": true
+    },
+    {
+      "position": 13,
+      "net": "PPG_SAMPLE_SYNC",
+      "main_net": "PPG_SAMPLE_SYNC",
+      "rear_net": "PPG_SAMPLE_SYNC",
+      "pass": true
+    },
+    {
+      "position": 14,
+      "net": "GND",
+      "main_net": "GND",
+      "rear_net": "GND",
+      "pass": true
+    },
+    {
+      "position": 15,
+      "net": "ENV_I2C_SCL",
+      "main_net": "ENV_I2C_SCL",
+      "rear_net": "ENV_I2C_SCL",
+      "pass": true
+    },
+    {
+      "position": 16,
+      "net": "ENV_I2C_SDA",
+      "main_net": "ENV_I2C_SDA",
+      "rear_net": "ENV_I2C_SDA",
+      "pass": true
+    },
+    {
+      "position": 17,
+      "net": "GND",
+      "main_net": "GND",
+      "rear_net": "GND",
+      "pass": true
+    },
+    {
+      "position": 18,
+      "net": "VOUT1_1V8",
+      "main_net": "VOUT1_1V8",
+      "rear_net": "VOUT1_1V8",
+      "pass": true
+    },
+    {
+      "position": 19,
+      "net": "GND",
+      "main_net": "GND",
+      "rear_net": "GND",
+      "pass": true
+    },
+    {
+      "position": 20,
+      "net": "GND",
+      "main_net": "GND",
+      "rear_net": "GND",
+      "pass": true
+    },
+    {
+      "position": 21,
+      "net": "PPG_VLED",
+      "main_net": "PPG_VLED",
+      "rear_net": "PPG_VLED",
+      "pass": true
+    },
+    {
+      "position": 22,
+      "net": "PPG_VLED",
+      "main_net": "PPG_VLED",
+      "rear_net": "PPG_VLED",
+      "pass": true
+    },
+    {
+      "position": 23,
+      "net": "PPG_VLED",
+      "main_net": "PPG_VLED",
+      "rear_net": "PPG_VLED",
+      "pass": true
+    },
+    {
+      "position": 24,
+      "net": "GND",
+      "main_net": "GND",
+      "rear_net": "GND",
+      "pass": true
+    }
+  ],
+  "detectors": [
+    {
+      "detector": "D424",
+      "afe": "U12",
+      "pin": "D5",
+      "members": [
+        [
+          "D424",
+          "1"
+        ],
+        [
+          "U12",
+          "D5"
+        ]
+      ],
+      "pass": true
+    },
+    {
+      "detector": "D414",
+      "afe": "U12",
+      "pin": "D4",
+      "members": [
+        [
+          "D414",
+          "1"
+        ],
+        [
+          "U12",
+          "D4"
+        ]
+      ],
+      "pass": true
+    },
+    {
+      "detector": "D423",
+      "afe": "U13",
+      "pin": "D5",
+      "members": [
+        [
+          "D423",
+          "1"
+        ],
+        [
+          "U13",
+          "D5"
+        ]
+      ],
+      "pass": true
+    },
+    {
+      "detector": "D413",
+      "afe": "U13",
+      "pin": "D4",
+      "members": [
+        [
+          "D413",
+          "1"
+        ],
+        [
+          "U13",
+          "D4"
+        ]
+      ],
+      "pass": true
+    }
+  ],
+  "all_original_pin_partitions_preserved_except_deliberate_J202_protection_ECO": true,
+  "all_LED_mux_VREF_PD_GND_unused_cathode_memberships_preserved": true,
+  "source_components_checked": 242,
+  "protected_hashes_verified": [
+    "fp-lib-table",
+    "libraries/footprints/sportwatch_custom.pretty/21-100134_N201A2-1_MXM.kicad_mod",
+    "libraries/footprints/sportwatch_custom.pretty/21-100265_MXM.kicad_mod",
+    "libraries/footprints/sportwatch_custom.pretty/BGA-153_5.6x5.6mm_Layout13x13_P0.4mm_Ball0.25mm_Pad0.22mm_NSMD.kicad_mod",
+    "libraries/footprints/sportwatch_custom.pretty/BGA9_BMM350_BOS-L.kicad_mod",
+    "libraries/footprints/sportwatch_custom.pretty/BGA9_BMM350_BOS-M.kicad_mod",
+    "libraries/footprints/sportwatch_custom.pretty/BGA9_BMM350_BOS.kicad_mod",
+    "libraries/footprints/sportwatch_custom.pretty/BatteryPad_3Pin_SMD.kicad_mod",
+    "libraries/footprints/sportwatch_custom.pretty/Crystal_1612-2Pin_1.6x1.2mm.kicad_mod",
+    "libraries/footprints/sportwatch_custom.pretty/Crystal_1612-4Pin_1.6x1.2mm.kicad_mod",
+    "libraries/footprints/sportwatch_custom.pretty/Crystal_SMD_ABS06_2.0x1.2mm.kicad_mod",
+    "libraries/footprints/sportwatch_custom.pretty/DTS0008A-MFG.kicad_mod",
+    "libraries/footprints/sportwatch_custom.pretty/FBGA-153_8.0x8.5mm_Layout14x14_P0.5mm.kicad_mod",
+    "libraries/footprints/sportwatch_custom.pretty/LGA-14L_STM-L.kicad_mod",
+    "libraries/footprints/sportwatch_custom.pretty/LGA-14L_STM-M.kicad_mod",
+    "libraries/footprints/sportwatch_custom.pretty/LGA-14L_STM.kicad_mod",
+    "libraries/footprints/sportwatch_custom.pretty/LGA9_BMP585_BOS-L.kicad_mod",
+    "libraries/footprints/sportwatch_custom.pretty/LGA9_BMP585_BOS-M.kicad_mod",
+    "libraries/footprints/sportwatch_custom.pretty/LGA9_BMP585_BOS.kicad_mod",
+    "libraries/footprints/sportwatch_custom.pretty/L_2016_2016Metric.kicad_mod",
+    "libraries/footprints/sportwatch_custom.pretty/MAX-F10S_UBL-L.kicad_mod",
+    "libraries/footprints/sportwatch_custom.pretty/MAX-F10S_UBL-M.kicad_mod",
+    "libraries/footprints/sportwatch_custom.pretty/MAX-F10S_UBL.kicad_mod",
+    "libraries/footprints/sportwatch_custom.pretty/OK-23GF024-04.kicad_mod",
+    "libraries/footprints/sportwatch_custom.pretty/OSRAM_SFH2703_3.2x2.0mm.kicad_mod",
+    "libraries/footprints/sportwatch_custom.pretty/OSRAM_SFH4053B_1.0x0.5mm.kicad_mod",
+    "libraries/footprints/sportwatch_custom.pretty/OSRAM_SFH7018A_2.4x2.4mm.kicad_mod",
+    "libraries/footprints/sportwatch_custom.pretty/PogoPad_2Pin_SMD.kicad_mod",
+    "libraries/footprints/sportwatch_custom.pretty/QFN48_6X6_NOR-L.kicad_mod",
+    "libraries/footprints/sportwatch_custom.pretty/QFN48_6X6_NOR-M.kicad_mod",
+    "libraries/footprints/sportwatch_custom.pretty/QFN48_6X6_NOR.kicad_mod",
+    "libraries/footprints/sportwatch_custom.pretty/Texas_RHL0024A.kicad_mod",
+    "libraries/footprints/sportwatch_custom.pretty/YFF0009AHAN.kicad_mod",
+    "libraries/symbols/2026-09-16_05-56-22.kicad_sym",
+    "libraries/symbols/2026-09-16_05-57-26.kicad_sym",
+    "libraries/symbols/2026-09-16_05-59-08.kicad_sym",
+    "libraries/symbols/2026-09-16_06-31-04.kicad_sym",
+    "libraries/symbols/2026-09-16_06-45-24.kicad_sym",
+    "libraries/symbols/2026-09-16_06-57-34.kicad_sym",
+    "libraries/symbols/2026-09-16_07-42-39.kicad_sym",
+    "libraries/symbols/APOLLO510B_custom_symbols.kicad_sym",
+    "libraries/symbols/nordic-lib-kicad-npm.kicad_sym",
+    "libraries/symbols/sportwatch_bmm350.kicad_sym",
+    "libraries/symbols/sportwatch_custom.kicad_sym",
+    "libraries/symbols/sportwatch_display.kicad_sym",
+    "libraries/symbols/sportwatch_lsm6dsv16x.kicad_sym",
+    "sportwatch_revA.kicad_dru",
+    "sportwatch_revA.kicad_pcb",
+    "sportwatch_revA.kicad_pro"
+  ],
+  "charger_protection": "provisional mandatory block, no selected IC / hardware immunity claim"
+}

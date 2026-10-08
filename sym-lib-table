@@ -13,4 +13,6 @@
   (lib (name "2026-09-16_06-45-24")(type "KiCad")(uri "${KIPRJMOD}/libraries/symbols/2026-09-16_06-45-24.kicad_sym")(options "")(descr "Imported MAX-F10S symbol"))
   (lib (name "2026-09-16_06-57-34")(type "KiCad")(uri "${KIPRJMOD}/libraries/symbols/2026-09-16_06-57-34.kicad_sym")(options "")(descr "Imported nRF7002 symbol"))
   (lib (name "2026-09-16_07-42-39")(type "KiCad")(uri "${KIPRJMOD}/libraries/symbols/2026-09-16_07-42-39.kicad_sym")(options "")(descr "Imported MAX86141 symbol"))
+
+(lib (name "sportwatch_interfaces") (type "KiCad") (uri "${KIPRJMOD}/libraries/symbols/sportwatch_interfaces.kicad_sym") (options "") (descr "Abstract interface and protection provisions; no physical MPN implied"))
 )

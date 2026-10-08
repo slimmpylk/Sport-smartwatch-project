@@ -9720,7 +9720,9 @@
 				)
 			)
 		)
-	)
+
+(property "Board" "MAIN" (at 0 0 0) (effects (font (size 1 1)) (hide yes)))
+)
 	(symbol
 		(lib_id "power:GND")
 		(at 203.08 233.09 0)
@@ -9798,7 +9800,9 @@
 				)
 			)
 		)
-	)
+
+(property "Board" "MAIN" (at 0 0 0) (effects (font (size 1 1)) (hide yes)))
+)
 	(symbol
 		(lib_id "Device:C")
 		(at 292 248 0)
@@ -9878,7 +9882,9 @@
 				)
 			)
 		)
-	)
+
+(property "Board" "MAIN" (at 0 0 0) (effects (font (size 1 1)) (hide yes)))
+)
 	(symbol
 		(lib_id "Device:C")
 		(at 288 105 0)
@@ -9958,7 +9964,9 @@
 				)
 			)
 		)
-	)
+
+(property "Board" "MAIN" (at 0 0 0) (effects (font (size 1 1)) (hide yes)))
+)
 	(symbol
 		(lib_id "power:GND")
 		(at 102.92 89.58 0)
@@ -10036,7 +10044,9 @@
 				)
 			)
 		)
-	)
+
+(property "Board" "MAIN" (at 0 0 0) (effects (font (size 1 1)) (hide yes)))
+)
 	(symbol
 		(lib_id "Device:R")
 		(at 340 188 0)
@@ -10116,7 +10126,9 @@
 				)
 			)
 		)
-	)
+
+(property "Board" "MAIN" (at 0 0 0) (effects (font (size 1 1)) (hide yes)))
+)
 	(symbol
 		(lib_id "Device:C")
 		(at 406 248 0)
@@ -10196,7 +10208,9 @@
 				)
 			)
 		)
-	)
+
+(property "Board" "MAIN" (at 0 0 0) (effects (font (size 1 1)) (hide yes)))
+)
 	(symbol
 		(lib_id "power:GND")
 		(at 298 55 0)
@@ -10274,7 +10288,9 @@
 				)
 			)
 		)
-	)
+
+(property "Board" "MAIN" (at 0 0 0) (effects (font (size 1 1)) (hide yes)))
+)
 	(symbol
 		(lib_id "power:GND")
 		(at 266 55 0)
@@ -10352,7 +10368,9 @@
 				)
 			)
 		)
-	)
+
+(property "Board" "MAIN" (at 0 0 0) (effects (font (size 1 1)) (hide yes)))
+)
 	(symbol
 		(lib_id "power:GND")
 		(at 270 112 0)
@@ -10430,7 +10448,9 @@
 				)
 			)
 		)
-	)
+
+(property "Board" "MAIN" (at 0 0 0) (effects (font (size 1 1)) (hide yes)))
+)
 	(symbol
 		(lib_id "Device:C")
 		(at 368 188 0)
@@ -10510,7 +10530,9 @@
 				)
 			)
 		)
-	)
+
+(property "Board" "MAIN" (at 0 0 0) (effects (font (size 1 1)) (hide yes)))
+)
 	(symbol
 		(lib_id "power:GND")
 		(at 292 255 0)
@@ -10588,7 +10610,9 @@
 				)
 			)
 		)
-	)
+
+(property "Board" "MAIN" (at 0 0 0) (effects (font (size 1 1)) (hide yes)))
+)
 	(symbol
 		(lib_id "Device:C")
 		(at 406 270 0)
@@ -10668,7 +10692,9 @@
 				)
 			)
 		)
-	)
+
+(property "Board" "MAIN" (at 0 0 0) (effects (font (size 1 1)) (hide yes)))
+)
 	(symbol
 		(lib_id "Device:C")
 		(at 252 105 0)
@@ -10748,7 +10774,9 @@
 				)
 			)
 		)
-	)
+
+(property "Board" "MAIN" (at 0 0 0) (effects (font (size 1 1)) (hide yes)))
+)
 	(symbol
 		(lib_id "power:GND")
 		(at 354 195 0)
@@ -10826,7 +10854,9 @@
 				)
 			)
 		)
-	)
+
+(property "Board" "MAIN" (at 0 0 0) (effects (font (size 1 1)) (hide yes)))
+)
 	(symbol
 		(lib_id "power:GND")
 		(at 102.92 84.5 0)
@@ -10904,7 +10934,9 @@
 				)
 			)
 		)
-	)
+
+(property "Board" "MAIN" (at 0 0 0) (effects (font (size 1 1)) (hide yes)))
+)
 	(symbol
 		(lib_id "power:GND")
 		(at 250 77 0)
@@ -10982,7 +11014,9 @@
 				)
 			)
 		)
-	)
+
+(property "Board" "MAIN" (at 0 0 0) (effects (font (size 1 1)) (hide yes)))
+)
 	(symbol
 		(lib_id "power:GND")
 		(at 322 120 0)
@@ -11060,7 +11094,9 @@
 				)
 			)
 		)
-	)
+
+(property "Board" "MAIN" (at 0 0 0) (effects (font (size 1 1)) (hide yes)))
+)
 	(symbol
 		(lib_id "power:GND")
 		(at 406 255 0)
@@ -11138,7 +11174,9 @@
 				)
 			)
 		)
-	)
+
+(property "Board" "MAIN" (at 0 0 0) (effects (font (size 1 1)) (hide yes)))
+)
 	(symbol
 		(lib_id "power:GND")
 		(at 378 55 0)
@@ -11216,7 +11254,9 @@
 				)
 			)
 		)
-	)
+
+(property "Board" "MAIN" (at 0 0 0) (effects (font (size 1 1)) (hide yes)))
+)
 	(symbol
 		(lib_id "Device:C")
 		(at 392 248 0)
@@ -11296,7 +11336,9 @@
 				)
 			)
 		)
-	)
+
+(property "Board" "MAIN" (at 0 0 0) (effects (font (size 1 1)) (hide yes)))
+)
 	(symbol
 		(lib_id "power:GND")
 		(at 282 77 0)
@@ -11374,7 +11416,9 @@
 				)
 			)
 		)
-	)
+
+(property "Board" "MAIN" (at 0 0 0) (effects (font (size 1 1)) (hide yes)))
+)
 	(symbol
 		(lib_id "power:GND")
 		(at 300 229.62 0)
@@ -11452,7 +11496,9 @@
 				)
 			)
 		)
-	)
+
+(property "Board" "MAIN" (at 0 0 0) (effects (font (size 1 1)) (hide yes)))
+)
 	(symbol
 		(lib_id "power:GND")
 		(at 330 55 0)
@@ -11530,7 +11576,9 @@
 				)
 			)
 		)
-	)
+
+(property "Board" "MAIN" (at 0 0 0) (effects (font (size 1 1)) (hide yes)))
+)
 	(symbol
 		(lib_id "power:GND")
 		(at 305.08 206.51 0)
@@ -11608,7 +11656,9 @@
 				)
 			)
 		)
-	)
+
+(property "Board" "MAIN" (at 0 0 0) (effects (font (size 1 1)) (hide yes)))
+)
 	(symbol
 		(lib_id "power:GND")
 		(at 288 112 0)
@@ -11686,7 +11736,9 @@
 				)
 			)
 		)
-	)
+
+(property "Board" "MAIN" (at 0 0 0) (effects (font (size 1 1)) (hide yes)))
+)
 	(symbol
 		(lib_id "power:GND")
 		(at 298 77 0)
@@ -11764,7 +11816,9 @@
 				)
 			)
 		)
-	)
+
+(property "Board" "MAIN" (at 0 0 0) (effects (font (size 1 1)) (hide yes)))
+)
 	(symbol
 		(lib_id "power:GND")
 		(at 406 277 0)
@@ -11842,7 +11896,9 @@
 				)
 			)
 		)
-	)
+
+(property "Board" "MAIN" (at 0 0 0) (effects (font (size 1 1)) (hide yes)))
+)
 	(symbol
 		(lib_id "power:GND")
 		(at 362 55 0)
@@ -11920,7 +11976,9 @@
 				)
 			)
 		)
-	)
+
+(property "Board" "MAIN" (at 0 0 0) (effects (font (size 1 1)) (hide yes)))
+)
 	(symbol
 		(lib_id "power:GND")
 		(at 250 55 0)
@@ -11998,7 +12056,9 @@
 				)
 			)
 		)
-	)
+
+(property "Board" "MAIN" (at 0 0 0) (effects (font (size 1 1)) (hide yes)))
+)
 	(symbol
 		(lib_id "Device:C")
 		(at 266 48 0)
@@ -12078,7 +12138,9 @@
 				)
 			)
 		)
-	)
+
+(property "Board" "MAIN" (at 0 0 0) (effects (font (size 1 1)) (hide yes)))
+)
 	(symbol
 		(lib_id "sportwatch_custom:AP510BFA-CBR")
 		(at 153 148 0)
@@ -12611,7 +12673,9 @@
 				)
 			)
 		)
-	)
+
+(property "Board" "MAIN" (at 0 0 0) (effects (font (size 1 1)) (hide yes)))
+)
 	(symbol
 		(lib_id "sportwatch_custom:PCA9306DCU")
 		(at 335 270 0)
@@ -12709,7 +12773,9 @@
 				)
 			)
 		)
-	)
+
+(property "Board" "MAIN" (at 0 0 0) (effects (font (size 1 1)) (hide yes)))
+)
 	(symbol
 		(lib_id "power:GND")
 		(at 203.08 144.19 0)
@@ -12787,7 +12853,9 @@
 				)
 			)
 		)
-	)
+
+(property "Board" "MAIN" (at 0 0 0) (effects (font (size 1 1)) (hide yes)))
+)
 	(symbol
 		(lib_id "Device:C")
 		(at 362 48 0)
@@ -12867,7 +12935,9 @@
 				)
 			)
 		)
-	)
+
+(property "Board" "MAIN" (at 0 0 0) (effects (font (size 1 1)) (hide yes)))
+)
 	(symbol
 		(lib_id "power:GND")
 		(at 286 279 0)
@@ -12945,7 +13015,9 @@
 				)
 			)
 		)
-	)
+
+(property "Board" "MAIN" (at 0 0 0) (effects (font (size 1 1)) (hide yes)))
+)
 	(symbol
 		(lib_id "power:GND")
 		(at 300 206.51 0)
@@ -13023,7 +13095,9 @@
 				)
 			)
 		)
-	)
+
+(property "Board" "MAIN" (at 0 0 0) (effects (font (size 1 1)) (hide yes)))
+)
 	(symbol
 		(lib_id "power:GND")
 		(at 306 113 0)
@@ -13101,7 +13175,9 @@
 				)
 			)
 		)
-	)
+
+(property "Board" "MAIN" (at 0 0 0) (effects (font (size 1 1)) (hide yes)))
+)
 	(symbol
 		(lib_id "power:GND")
 		(at 203.08 240.71 0)
@@ -13179,7 +13255,9 @@
 				)
 			)
 		)
-	)
+
+(property "Board" "MAIN" (at 0 0 0) (effects (font (size 1 1)) (hide yes)))
+)
 	(symbol
 		(lib_id "sportwatch_custom:SN74AXC1T45")
 		(at 400 222 0)
@@ -13271,7 +13349,9 @@
 				)
 			)
 		)
-	)
+
+(property "Board" "MAIN" (at 0 0 0) (effects (font (size 1 1)) (hide yes)))
+)
 	(symbol
 		(lib_id "power:GND")
 		(at 400 229.62 0)
@@ -13349,7 +13429,9 @@
 				)
 			)
 		)
-	)
+
+(property "Board" "MAIN" (at 0 0 0) (effects (font (size 1 1)) (hide yes)))
+)
 	(symbol
 		(lib_id "Device:C")
 		(at 298 48 0)
@@ -13429,7 +13511,9 @@
 				)
 			)
 		)
-	)
+
+(property "Board" "MAIN" (at 0 0 0) (effects (font (size 1 1)) (hide yes)))
+)
 	(symbol
 		(lib_id "Device:R")
 		(at 370.84 248.92 0)
@@ -13509,7 +13593,9 @@
 				)
 			)
 		)
-	)
+
+(property "Board" "MAIN" (at 0 0 0) (effects (font (size 1 1)) (hide yes)))
+)
 	(symbol
 		(lib_id "power:GND")
 		(at 356 255 0)
@@ -13587,7 +13673,9 @@
 				)
 			)
 		)
-	)
+
+(property "Board" "MAIN" (at 0 0 0) (effects (font (size 1 1)) (hide yes)))
+)
 	(symbol
 		(lib_id "Device:R")
 		(at 264 270 0)
@@ -13667,7 +13755,9 @@
 				)
 			)
 		)
-	)
+
+(property "Board" "MAIN" (at 0 0 0) (effects (font (size 1 1)) (hide yes)))
+)
 	(symbol
 		(lib_id "power:GND")
 		(at 266 77 0)
@@ -13745,7 +13835,9 @@
 				)
 			)
 		)
-	)
+
+(property "Board" "MAIN" (at 0 0 0) (effects (font (size 1 1)) (hide yes)))
+)
 	(symbol
 		(lib_id "Device:R")
 		(at 286 270 0)
@@ -13825,7 +13917,9 @@
 				)
 			)
 		)
-	)
+
+(property "Board" "MAIN" (at 0 0 0) (effects (font (size 1 1)) (hide yes)))
+)
 	(symbol
 		(lib_id "Device:C")
 		(at 322 113 0)
@@ -13905,7 +13999,9 @@
 				)
 			)
 		)
-	)
+
+(property "Board" "MAIN" (at 0 0 0) (effects (font (size 1 1)) (hide yes)))
+)
 	(symbol
 		(lib_id "Device:C")
 		(at 354 188 0)
@@ -13985,7 +14081,9 @@
 				)
 			)
 		)
-	)
+
+(property "Board" "MAIN" (at 0 0 0) (effects (font (size 1 1)) (hide yes)))
+)
 	(symbol
 		(lib_id "power:GND")
 		(at 203.08 235.63 0)
@@ -14063,7 +14161,9 @@
 				)
 			)
 		)
-	)
+
+(property "Board" "MAIN" (at 0 0 0) (effects (font (size 1 1)) (hide yes)))
+)
 	(symbol
 		(lib_id "Device:C")
 		(at 314 48 0)
@@ -14143,7 +14243,9 @@
 				)
 			)
 		)
-	)
+
+(property "Board" "MAIN" (at 0 0 0) (effects (font (size 1 1)) (hide yes)))
+)
 	(symbol
 		(lib_id "power:GND")
 		(at 203.08 238.17 0)
@@ -14221,7 +14323,9 @@
 				)
 			)
 		)
-	)
+
+(property "Board" "MAIN" (at 0 0 0) (effects (font (size 1 1)) (hide yes)))
+)
 	(symbol
 		(lib_id "Device:R")
 		(at 250 270 0)
@@ -14301,7 +14405,9 @@
 				)
 			)
 		)
-	)
+
+(property "Board" "MAIN" (at 0 0 0) (effects (font (size 1 1)) (hide yes)))
+)
 	(symbol
 		(lib_id "Device:R")
 		(at 258 135 0)
@@ -14381,7 +14487,9 @@
 				)
 			)
 		)
-	)
+
+(property "Board" "MAIN" (at 0 0 0) (effects (font (size 1 1)) (hide yes)))
+)
 	(symbol
 		(lib_id "power:GND")
 		(at 358 120 0)
@@ -14459,7 +14567,9 @@
 				)
 			)
 		)
-	)
+
+(property "Board" "MAIN" (at 0 0 0) (effects (font (size 1 1)) (hide yes)))
+)
 	(symbol
 		(lib_id "power:GND")
 		(at 203.08 217.85 0)
@@ -14537,7 +14647,9 @@
 				)
 			)
 		)
-	)
+
+(property "Board" "MAIN" (at 0 0 0) (effects (font (size 1 1)) (hide yes)))
+)
 	(symbol
 		(lib_id "power:GND")
 		(at 203.08 184.83 0)
@@ -14615,7 +14727,9 @@
 				)
 			)
 		)
-	)
+
+(property "Board" "MAIN" (at 0 0 0) (effects (font (size 1 1)) (hide yes)))
+)
 	(symbol
 		(lib_id "power:GND")
 		(at 314 55 0)
@@ -14693,7 +14807,9 @@
 				)
 			)
 		)
-	)
+
+(property "Board" "MAIN" (at 0 0 0) (effects (font (size 1 1)) (hide yes)))
+)
 	(symbol
 		(lib_id "power:GND")
 		(at 102.92 181.02 0)
@@ -14771,7 +14887,9 @@
 				)
 			)
 		)
-	)
+
+(property "Board" "MAIN" (at 0 0 0) (effects (font (size 1 1)) (hide yes)))
+)
 	(symbol
 		(lib_id "sportwatch_custom:SN74AXC1T45")
 		(at 350 222 0)
@@ -14863,7 +14981,9 @@
 				)
 			)
 		)
-	)
+
+(property "Board" "MAIN" (at 0 0 0) (effects (font (size 1 1)) (hide yes)))
+)
 	(symbol
 		(lib_id "Device:C")
 		(at 306 248 0)
@@ -14943,7 +15063,9 @@
 				)
 			)
 		)
-	)
+
+(property "Board" "MAIN" (at 0 0 0) (effects (font (size 1 1)) (hide yes)))
+)
 	(symbol
 		(lib_id "Device:C")
 		(at 282 48 0)
@@ -15023,7 +15145,9 @@
 				)
 			)
 		)
-	)
+
+(property "Board" "MAIN" (at 0 0 0) (effects (font (size 1 1)) (hide yes)))
+)
 	(symbol
 		(lib_id "power:GND")
 		(at 383 225.81 0)
@@ -15101,7 +15225,9 @@
 				)
 			)
 		)
-	)
+
+(property "Board" "MAIN" (at 0 0 0) (effects (font (size 1 1)) (hide yes)))
+)
 	(symbol
 		(lib_id "power:GND")
 		(at 102.92 142.92 0)
@@ -15179,7 +15305,9 @@
 				)
 			)
 		)
-	)
+
+(property "Board" "MAIN" (at 0 0 0) (effects (font (size 1 1)) (hide yes)))
+)
 	(symbol
 		(lib_id "Device:C")
 		(at 342 248 0)
@@ -15259,7 +15387,9 @@
 				)
 			)
 		)
-	)
+
+(property "Board" "MAIN" (at 0 0 0) (effects (font (size 1 1)) (hide yes)))
+)
 	(symbol
 		(lib_id "Device:C")
 		(at 250 48 0)
@@ -15339,7 +15469,9 @@
 				)
 			)
 		)
-	)
+
+(property "Board" "MAIN" (at 0 0 0) (effects (font (size 1 1)) (hide yes)))
+)
 	(symbol
 		(lib_id "Device:C")
 		(at 298 70 0)
@@ -15419,7 +15551,9 @@
 				)
 			)
 		)
-	)
+
+(property "Board" "MAIN" (at 0 0 0) (effects (font (size 1 1)) (hide yes)))
+)
 	(symbol
 		(lib_id "power:GND")
 		(at 394 55 0)
@@ -15497,7 +15631,9 @@
 				)
 			)
 		)
-	)
+
+(property "Board" "MAIN" (at 0 0 0) (effects (font (size 1 1)) (hide yes)))
+)
 	(symbol
 		(lib_id "power:GND")
 		(at 350 229.62 0)
@@ -15575,7 +15711,9 @@
 				)
 			)
 		)
-	)
+
+(property "Board" "MAIN" (at 0 0 0) (effects (font (size 1 1)) (hide yes)))
+)
 	(symbol
 		(lib_id "sportwatch_custom:TXB0101")
 		(at 300 222 0)
@@ -15667,7 +15805,9 @@
 				)
 			)
 		)
-	)
+
+(property "Board" "MAIN" (at 0 0 0) (effects (font (size 1 1)) (hide yes)))
+)
 	(symbol
 		(lib_id "power:GND")
 		(at 274 244 0)
@@ -15745,7 +15885,9 @@
 				)
 			)
 		)
-	)
+
+(property "Board" "MAIN" (at 0 0 0) (effects (font (size 1 1)) (hide yes)))
+)
 	(symbol
 		(lib_id "Device:R")
 		(at 378 270 0)
@@ -15825,7 +15967,9 @@
 				)
 			)
 		)
-	)
+
+(property "Board" "MAIN" (at 0 0 0) (effects (font (size 1 1)) (hide yes)))
+)
 	(symbol
 		(lib_id "power:GND")
 		(at 346 55 0)
@@ -15903,7 +16047,9 @@
 				)
 			)
 		)
-	)
+
+(property "Board" "MAIN" (at 0 0 0) (effects (font (size 1 1)) (hide yes)))
+)
 	(symbol
 		(lib_id "Device:C")
 		(at 250 70 0)
@@ -15983,7 +16129,9 @@
 				)
 			)
 		)
-	)
+
+(property "Board" "MAIN" (at 0 0 0) (effects (font (size 1 1)) (hide yes)))
+)
 	(symbol
 		(lib_id "power:GND")
 		(at 335 280.16 0)
@@ -16061,7 +16209,9 @@
 				)
 			)
 		)
-	)
+
+(property "Board" "MAIN" (at 0 0 0) (effects (font (size 1 1)) (hide yes)))
+)
 	(symbol
 		(lib_id "power:GND")
 		(at 342 255 0)
@@ -16139,7 +16289,9 @@
 				)
 			)
 		)
-	)
+
+(property "Board" "MAIN" (at 0 0 0) (effects (font (size 1 1)) (hide yes)))
+)
 	(symbol
 		(lib_id "Device:R")
 		(at 306 105 0)
@@ -16219,7 +16371,9 @@
 				)
 			)
 		)
-	)
+
+(property "Board" "MAIN" (at 0 0 0) (effects (font (size 1 1)) (hide yes)))
+)
 	(symbol
 		(lib_id "sportwatch_custom:INDUCTOR_2PIN")
 		(at 285 30 0)
@@ -16299,7 +16453,9 @@
 				)
 			)
 		)
-	)
+
+(property "Board" "MAIN" (at 0 0 0) (effects (font (size 1 1)) (hide yes)))
+)
 	(symbol
 		(lib_id "power:GND")
 		(at 368 195 0)
@@ -16377,7 +16533,9 @@
 				)
 			)
 		)
-	)
+
+(property "Board" "MAIN" (at 0 0 0) (effects (font (size 1 1)) (hide yes)))
+)
 	(symbol
 		(lib_id "Device:C")
 		(at 282 70 0)
@@ -16457,7 +16615,9 @@
 				)
 			)
 		)
-	)
+
+(property "Board" "MAIN" (at 0 0 0) (effects (font (size 1 1)) (hide yes)))
+)
 	(symbol
 		(lib_id "power:GND")
 		(at 306 255 0)
@@ -16535,7 +16695,9 @@
 				)
 			)
 		)
-	)
+
+(property "Board" "MAIN" (at 0 0 0) (effects (font (size 1 1)) (hide yes)))
+)
 	(symbol
 		(lib_id "Device:C")
 		(at 394 48 0)
@@ -16615,7 +16777,9 @@
 				)
 			)
 		)
-	)
+
+(property "Board" "MAIN" (at 0 0 0) (effects (font (size 1 1)) (hide yes)))
+)
 	(symbol
 		(lib_id "Device:R")
 		(at 392 270 0)
@@ -16695,7 +16859,9 @@
 				)
 			)
 		)
-	)
+
+(property "Board" "MAIN" (at 0 0 0) (effects (font (size 1 1)) (hide yes)))
+)
 	(symbol
 		(lib_id "Device:R")
 		(at 405 238 0)
@@ -16775,7 +16941,9 @@
 				)
 			)
 		)
-	)
+
+(property "Board" "MAIN" (at 0 0 0) (effects (font (size 1 1)) (hide yes)))
+)
 	(symbol
 		(lib_id "Device:C")
 		(at 356 248 0)
@@ -16855,7 +17023,9 @@
 				)
 			)
 		)
-	)
+
+(property "Board" "MAIN" (at 0 0 0) (effects (font (size 1 1)) (hide yes)))
+)
 	(symbol
 		(lib_id "Device:C")
 		(at 346 48 0)
@@ -16935,7 +17105,9 @@
 				)
 			)
 		)
-	)
+
+(property "Board" "MAIN" (at 0 0 0) (effects (font (size 1 1)) (hide yes)))
+)
 	(symbol
 		(lib_id "power:GND")
 		(at 282 55 0)
@@ -17013,7 +17185,9 @@
 				)
 			)
 		)
-	)
+
+(property "Board" "MAIN" (at 0 0 0) (effects (font (size 1 1)) (hide yes)))
+)
 	(symbol
 		(lib_id "power:GND")
 		(at 333 225.81 0)
@@ -17091,7 +17265,9 @@
 				)
 			)
 		)
-	)
+
+(property "Board" "MAIN" (at 0 0 0) (effects (font (size 1 1)) (hide yes)))
+)
 	(symbol
 		(lib_id "sportwatch_custom:Crystal_1612-4Pin_GND")
 		(at 390 104 0)
@@ -17177,7 +17353,9 @@
 				)
 			)
 		)
-	)
+
+(property "Board" "MAIN" (at 0 0 0) (effects (font (size 1 1)) (hide yes)))
+)
 	(symbol
 		(lib_id "power:GND")
 		(at 390 98.92 180)
@@ -17255,7 +17433,9 @@
 				)
 			)
 		)
-	)
+
+(property "Board" "MAIN" (at 0 0 0) (effects (font (size 1 1)) (hide yes)))
+)
 	(symbol
 		(lib_id "power:GND")
 		(at 392 255 0)
@@ -17333,7 +17513,9 @@
 				)
 			)
 		)
-	)
+
+(property "Board" "MAIN" (at 0 0 0) (effects (font (size 1 1)) (hide yes)))
+)
 	(symbol
 		(lib_id "power:GND")
 		(at 252 112 0)
@@ -17411,7 +17593,9 @@
 				)
 			)
 		)
-	)
+
+(property "Board" "MAIN" (at 0 0 0) (effects (font (size 1 1)) (hide yes)))
+)
 	(symbol
 		(lib_id "power:GND")
 		(at 102.92 64.18 0)
@@ -17489,7 +17673,9 @@
 				)
 			)
 		)
-	)
+
+(property "Board" "MAIN" (at 0 0 0) (effects (font (size 1 1)) (hide yes)))
+)
 	(symbol
 		(lib_id "power:GND")
 		(at 102.92 61.64 0)
@@ -17567,7 +17753,9 @@
 				)
 			)
 		)
-	)
+
+(property "Board" "MAIN" (at 0 0 0) (effects (font (size 1 1)) (hide yes)))
+)
 	(symbol
 		(lib_id "Device:C")
 		(at 378 48 0)
@@ -17647,7 +17835,9 @@
 				)
 			)
 		)
-	)
+
+(property "Board" "MAIN" (at 0 0 0) (effects (font (size 1 1)) (hide yes)))
+)
 	(symbol
 		(lib_id "sportwatch_custom:XTAL_2PIN")
 		(at 340 104 0)
@@ -17727,7 +17917,9 @@
 				)
 			)
 		)
-	)
+
+(property "Board" "MAIN" (at 0 0 0) (effects (font (size 1 1)) (hide yes)))
+)
 	(symbol
 		(lib_id "Device:R")
 		(at 274 235 0)
@@ -17807,7 +17999,9 @@
 				)
 			)
 		)
-	)
+
+(property "Board" "MAIN" (at 0 0 0) (effects (font (size 1 1)) (hide yes)))
+)
 	(symbol
 		(lib_id "sportwatch_custom:SN74AXC8T245")
 		(at 300 190 0)
@@ -17953,7 +18147,9 @@
 				)
 			)
 		)
-	)
+
+(property "Board" "MAIN" (at 0 0 0) (effects (font (size 1 1)) (hide yes)))
+)
 	(symbol
 		(lib_id "Device:C")
 		(at 270 105 0)
@@ -18033,7 +18229,9 @@
 				)
 			)
 		)
-	)
+
+(property "Board" "MAIN" (at 0 0 0) (effects (font (size 1 1)) (hide yes)))
+)
 	(symbol
 		(lib_id "Device:C")
 		(at 358 113 0)
@@ -18113,7 +18311,9 @@
 				)
 			)
 		)
-	)
+
+(property "Board" "MAIN" (at 0 0 0) (effects (font (size 1 1)) (hide yes)))
+)
 	(symbol
 		(lib_id "Device:C")
 		(at 266 70 0)
@@ -18193,7 +18393,9 @@
 				)
 			)
 		)
-	)
+
+(property "Board" "MAIN" (at 0 0 0) (effects (font (size 1 1)) (hide yes)))
+)
 	(symbol
 		(lib_id "power:GND")
 		(at 203.08 172.13 0)
@@ -18271,5 +18473,7 @@
 				)
 			)
 		)
-	)
+
+(property "Board" "MAIN" (at 0 0 0) (effects (font (size 1 1)) (hide yes)))
+)
 )

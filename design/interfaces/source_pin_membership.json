@@ -1,0 +1,1583 @@
+{
+  "C101": {
+    "1": "/01_APOLLO510B/APOLLO_VDDC",
+    "2": "GND"
+  },
+  "C102": {
+    "1": "/01_APOLLO510B/APOLLO_VDDC_LV",
+    "2": "GND"
+  },
+  "C103": {
+    "1": "/01_APOLLO510B/APOLLO_VDDF",
+    "2": "GND"
+  },
+  "C104": {
+    "1": "/01_APOLLO510B/APOLLO_VDDS",
+    "2": "GND"
+  },
+  "C105": {
+    "1": "/VOUT1_1V8",
+    "2": "GND"
+  },
+  "C106": {
+    "1": "/VOUT1_1V8",
+    "2": "GND"
+  },
+  "C107": {
+    "1": "/VOUT1_1V8",
+    "2": "GND"
+  },
+  "C108": {
+    "1": "/VOUT1_1V8",
+    "2": "GND"
+  },
+  "C109": {
+    "1": "/VOUT1_1V8",
+    "2": "GND"
+  },
+  "C110": {
+    "1": "/VOUT1_1V8",
+    "2": "GND"
+  },
+  "C111": {
+    "1": "/VOUT1_1V8",
+    "2": "GND"
+  },
+  "C112": {
+    "1": "/VOUT1_1V8",
+    "2": "GND"
+  },
+  "C113": {
+    "1": "/01_APOLLO510B/APOLLO_LPADC_VREF",
+    "2": "GND"
+  },
+  "C114": {
+    "1": "/01_APOLLO510B/APOLLO_LPMICBIAS",
+    "2": "GND"
+  },
+  "C115": {
+    "1": "/VOUT1_1V8",
+    "2": "GND"
+  },
+  "C116": {
+    "1": "/VOUT1_1V8",
+    "2": "GND"
+  },
+  "C117": {
+    "1": "/01_APOLLO510B/APOLLO_BLE_VBAT1",
+    "2": "GND"
+  },
+  "C118": {
+    "1": "/01_APOLLO510B/APOLLO_XI32",
+    "2": "GND"
+  },
+  "C119": {
+    "1": "/01_APOLLO510B/APOLLO_XO32",
+    "2": "GND"
+  },
+  "C120": {
+    "1": "/VOUT1_1V8",
+    "2": "GND"
+  },
+  "C121": {
+    "1": "/SYS_3V3",
+    "2": "GND"
+  },
+  "C122": {
+    "1": "/VOUT1_1V8",
+    "2": "GND"
+  },
+  "C123": {
+    "1": "/SYS_3V3",
+    "2": "GND"
+  },
+  "C124": {
+    "1": "/VOUT1_1V8",
+    "2": "GND"
+  },
+  "C125": {
+    "1": "/SYS_3V3",
+    "2": "GND"
+  },
+  "C126": {
+    "1": "/VOUT1_1V8",
+    "2": "GND"
+  },
+  "C127": {
+    "1": "/SYS_3V3",
+    "2": "GND"
+  },
+  "C128": {
+    "1": "/01_APOLLO510B/TOUCH_I2C_VREF2",
+    "2": "GND"
+  },
+  "L101": {
+    "1": "/01_APOLLO510B/APOLLO_SIMOBUCK_SW",
+    "2": "/01_APOLLO510B/APOLLO_SIMOBUCK_SWSEL"
+  },
+  "R101": {
+    "1": "/01_APOLLO510B/APOLLO_BLE_ENABLE",
+    "2": "GND"
+  },
+  "R102": {
+    "2": "/01_APOLLO510B/DISP_LS_OE_N",
+    "1": "/VOUT1_1V8"
+  },
+  "R103": {
+    "1": "/01_APOLLO510B/DISP_QSPI_IO0_OE",
+    "2": "GND"
+  },
+  "R104": {
+    "2": "/01_APOLLO510B/MCU_TOUCH_SCL_1V8",
+    "1": "/VOUT1_1V8"
+  },
+  "R105": {
+    "2": "/01_APOLLO510B/MCU_TOUCH_SDA_1V8",
+    "1": "/VOUT1_1V8"
+  },
+  "R106": {
+    "1": "/SYS_3V3",
+    "2": "/TOUCH_SCL"
+  },
+  "R107": {
+    "1": "/SYS_3V3",
+    "2": "/TOUCH_SDA"
+  },
+  "R108": {
+    "2": "/01_APOLLO510B/TOUCH_I2C_VREF2",
+    "1": "/SYS_3V3"
+  },
+  "R109": {
+    "1": "/VOUT1_1V8",
+    "2": "GND"
+  },
+  "R110": {
+    "1": "/SYS_3V3",
+    "2": "/TOUCH_INT"
+  },
+  "R111": {
+    "1": "/01_APOLLO510B/MCU_EMMC_CLK",
+    "2": "/EMMC_CLK"
+  },
+  "U101": {
+    "E5": "/01_APOLLO510B/APOLLO_BLE_ENABLE",
+    "A8": "/01_APOLLO510B/APOLLO_BLE_VBAT1",
+    "N6": "/01_APOLLO510B/APOLLO_BLE_XIN",
+    "N7": "/01_APOLLO510B/APOLLO_BLE_XOUT",
+    "A13": "/01_APOLLO510B/APOLLO_LPADC_VREF",
+    "B11": "/01_APOLLO510B/APOLLO_LPMICBIAS",
+    "A1": "/01_APOLLO510B/APOLLO_SIMOBUCK_SW",
+    "A2": "/01_APOLLO510B/APOLLO_SIMOBUCK_SWSEL",
+    "A3": "/01_APOLLO510B/APOLLO_VDDC",
+    "B3": "/01_APOLLO510B/APOLLO_VDDC_LV",
+    "C2": "/01_APOLLO510B/APOLLO_VDDF",
+    "C1": "/01_APOLLO510B/APOLLO_VDDS",
+    "B5": "/01_APOLLO510B/APOLLO_XI32",
+    "A4": "/01_APOLLO510B/APOLLO_XO32",
+    "H1": "/01_APOLLO510B/DISP_LS_OE_N",
+    "H2": "/01_APOLLO510B/DISP_QSPI_IO0_OE",
+    "D4": "/01_APOLLO510B/MCU_DISP_QSPI_CLK_1V8",
+    "F4": "/01_APOLLO510B/MCU_DISP_QSPI_CS_1V8",
+    "G3": "/01_APOLLO510B/MCU_DISP_QSPI_IO0_1V8",
+    "E4": "/01_APOLLO510B/MCU_DISP_QSPI_IO1_1V8",
+    "F3": "/01_APOLLO510B/MCU_DISP_QSPI_IO2_1V8",
+    "C3": "/01_APOLLO510B/MCU_DISP_QSPI_IO3_1V8",
+    "L11": "/01_APOLLO510B/MCU_DISP_RST_1V8",
+    "D11": "/01_APOLLO510B/MCU_DISP_TE_1V8",
+    "H3": "/01_APOLLO510B/MCU_DISP_VCI_EN_1V8",
+    "K9": "/01_APOLLO510B/MCU_EMMC_CLK",
+    "K2": "/01_APOLLO510B/MCU_TOUCH_INT_1V8",
+    "E10": "/01_APOLLO510B/MCU_TOUCH_RST_1V8",
+    "K4": "/01_APOLLO510B/MCU_TOUCH_SCL_1V8",
+    "L3": "/01_APOLLO510B/MCU_TOUCH_SDA_1V8",
+    "J3": "/ALS_INT",
+    "N1": "/APOLLO_BLE_ANT",
+    "M1": "/APOLLO_BLE_AVDD_PA",
+    "H4": "/APOLLO_RST_N",
+    "M3": "/APOLLO_SWCLK",
+    "N3": "/APOLLO_SWDIO",
+    "L1": "/APOLLO_SWO_GPIO28",
+    "F13": "/BARO_INT",
+    "F11": "/BTN_BACK_N",
+    "C4": "/BTN_DOWN_N",
+    "G5": "/BTN_LIGHT_N",
+    "G13": "/BTN_START_N",
+    "F5": "/BTN_UP_N",
+    "K8": "/EMMC_CMD",
+    "H10": "/EMMC_DAT0",
+    "J10": "/EMMC_DAT1",
+    "K10": "/EMMC_DAT2",
+    "L9": "/EMMC_DAT3",
+    "H7": "/EMMC_DAT4",
+    "J7": "/EMMC_DAT5",
+    "K7": "/EMMC_DAT6",
+    "L8": "/EMMC_DAT7",
+    "C10": "/EMMC_RST_N",
+    "K3": "/ENV_I2C_SCL",
+    "J4": "/ENV_I2C_SDA",
+    "G12": "/GNSS_EXTINT",
+    "E11": "/GNSS_TIMEPULSE",
+    "C11": "/GNSS_UART_RX",
+    "F12": "/GNSS_UART_TX",
+    "K1": "/HAPTIC_I2C_SCL",
+    "J2": "/HAPTIC_I2C_SDA",
+    "J1": "/HAPTIC_NRST",
+    "D10": "/HAPTIC_TRIG_INTZ",
+    "D7": "/IMU_INT1",
+    "H5": "/IMU_INT2",
+    "D6": "/IMU_SPI_CS",
+    "C6": "/IMU_SPI_MISO",
+    "B6": "/IMU_SPI_MOSI",
+    "D5": "/IMU_SPI_SCK",
+    "L6": "/MAG_I2C_SCL",
+    "K6": "/MAG_I2C_SDA",
+    "J6": "/MAG_INT",
+    "D9": "/PPG1_CS_N",
+    "D8": "/PPG1_INT_N",
+    "M5": "/PPG2_CS_N",
+    "C8": "/PPG2_INT_N",
+    "H13": "/PPG_SAMPLE_SYNC",
+    "L7": "/PPG_SPI_MISO",
+    "L5": "/PPG_SPI_MOSI",
+    "K5": "/PPG_SPI_SCLK",
+    "B1": "/VOUT1_1V8",
+    "B12": "/VOUT1_1V8",
+    "B13": "/VOUT1_1V8",
+    "C13": "/VOUT1_1V8",
+    "C5": "/VOUT1_1V8",
+    "D1": "/VOUT1_1V8",
+    "E13": "/VOUT1_1V8",
+    "F1": "/VOUT1_1V8",
+    "G1": "/VOUT1_1V8",
+    "G10": "/VOUT1_1V8",
+    "H12": "/VOUT1_1V8",
+    "F10": "/WIFI_BUCKEN",
+    "D13": "/WIFI_COEX_GRANT",
+    "G11": "/WIFI_COEX_REQ",
+    "K12": "/WIFI_COEX_STATUS",
+    "M12": "/WIFI_HOST_IRQ",
+    "J11": "/WIFI_IOVDD_EN",
+    "M11": "/WIFI_QSPI_CLK",
+    "D12": "/WIFI_QSPI_CS",
+    "H11": "/WIFI_QSPI_IO0",
+    "J13": "/WIFI_QSPI_IO1",
+    "L12": "/WIFI_QSPI_IO2",
+    "J12": "/WIFI_QSPI_IO3",
+    "A6": "GND",
+    "A7": "GND",
+    "B2": "GND",
+    "B4": "GND",
+    "C12": "GND",
+    "E1": "GND",
+    "K11": "GND",
+    "L10": "GND",
+    "M2": "GND",
+    "N10": "GND",
+    "N11": "GND",
+    "N12": "GND",
+    "N2": "GND",
+    "N9": "GND",
+    "L4": "unconnected-(U101-GPIO0-PadL4)",
+    "N4": "unconnected-(U101-GPIO1-PadN4)",
+    "M4": "unconnected-(U101-GPIO2-PadM4)",
+    "N5": "unconnected-(U101-GPIO3-PadN5)",
+    "M6": "unconnected-(U101-GPIO4-PadM6)",
+    "B7": "unconnected-(U101-GPIO12-PadB7)",
+    "C7": "unconnected-(U101-GPIO13-PadC7)",
+    "J5": "unconnected-(U101-GPIO15-PadJ5)",
+    "G4": "unconnected-(U101-GPIO97-PadG4)",
+    "B10": "unconnected-(U101-GPIO125-PadB10)",
+    "A10": "unconnected-(U101-GPIO126-PadA10)",
+    "C9": "unconnected-(U101-GPIO127-PadC9)",
+    "A9": "unconnected-(U101-GPIO128-PadA9)",
+    "B9": "unconnected-(U101-GPIO129-PadB9)",
+    "B8": "unconnected-(U101-GPIO134-PadB8)",
+    "G2": "unconnected-(U101-GPIO142-PadG2)",
+    "F2": "unconnected-(U101-GPIO143-PadF2)",
+    "E2": "unconnected-(U101-GPIO144-PadE2)",
+    "D2": "unconnected-(U101-GPIO145-PadD2)",
+    "E3": "unconnected-(U101-GPIO146-PadE3)",
+    "D3": "unconnected-(U101-GPIO147-PadD3)",
+    "E12": "unconnected-(U101-GPIO200-PadE12)",
+    "A11": "unconnected-(U101-LPADCD0NSE0-PadA11)",
+    "A12": "unconnected-(U101-LPADCD0PSE1-PadA12)",
+    "L13": "unconnected-(U101-MIPI_CLKN-PadL13)",
+    "K13": "unconnected-(U101-MIPI_CLKP-PadK13)",
+    "M13": "unconnected-(U101-MIPI_D0N-PadM13)",
+    "N13": "unconnected-(U101-MIPI_D0P-PadN13)",
+    "H8": "unconnected-(U101-RESERVED-PadH8)",
+    "H9": "unconnected-(U101-RESERVED-PadH9)",
+    "J8": "unconnected-(U101-RESERVED-PadJ8)",
+    "J9": "unconnected-(U101-RESERVED-PadJ9)",
+    "M7": "unconnected-(U101-RESERVED-PadM7)",
+    "M8": "unconnected-(U101-RESERVED-PadM8)",
+    "M10": "unconnected-(U101-USB0PN-PadM10)",
+    "M9": "unconnected-(U101-USB0PP-PadM9)"
+  },
+  "U102": {
+    "22": "/01_APOLLO510B/DISP_LS_OE_N",
+    "3": "/01_APOLLO510B/MCU_DISP_QSPI_CLK_1V8",
+    "4": "/01_APOLLO510B/MCU_DISP_QSPI_CS_1V8",
+    "5": "/01_APOLLO510B/MCU_DISP_QSPI_IO1_1V8",
+    "6": "/01_APOLLO510B/MCU_DISP_QSPI_IO2_1V8",
+    "7": "/01_APOLLO510B/MCU_DISP_QSPI_IO3_1V8",
+    "8": "/01_APOLLO510B/MCU_DISP_RST_1V8",
+    "9": "/01_APOLLO510B/MCU_DISP_VCI_EN_1V8",
+    "10": "/01_APOLLO510B/MCU_TOUCH_RST_1V8",
+    "21": "/DISP_QSPI_CLK",
+    "20": "/DISP_QSPI_CS",
+    "19": "/DISP_QSPI_IO1",
+    "18": "/DISP_QSPI_IO2",
+    "17": "/DISP_QSPI_IO3",
+    "16": "/DISP_RST",
+    "15": "/DISP_VCI_EN",
+    "23": "/SYS_3V3",
+    "24": "/SYS_3V3",
+    "14": "/TOUCH_RST",
+    "1": "/VOUT1_1V8",
+    "11": "/VOUT1_1V8",
+    "2": "/VOUT1_1V8",
+    "12": "GND",
+    "13": "GND"
+  },
+  "U103": {
+    "5": "/01_APOLLO510B/DISP_QSPI_IO0_OE",
+    "3": "/01_APOLLO510B/MCU_DISP_QSPI_IO0_1V8",
+    "4": "/DISP_QSPI_IO0",
+    "6": "/SYS_3V3",
+    "1": "/VOUT1_1V8",
+    "2": "GND"
+  },
+  "U104": {
+    "3": "/01_APOLLO510B/MCU_DISP_TE_1V8",
+    "4": "/DISP_TE",
+    "6": "/SYS_3V3",
+    "1": "/VOUT1_1V8",
+    "2": "GND",
+    "5": "GND"
+  },
+  "U105": {
+    "3": "/01_APOLLO510B/MCU_TOUCH_INT_1V8",
+    "6": "/SYS_3V3",
+    "4": "/TOUCH_INT",
+    "1": "/VOUT1_1V8",
+    "2": "GND",
+    "5": "GND"
+  },
+  "U106": {
+    "3": "/01_APOLLO510B/MCU_TOUCH_SCL_1V8",
+    "4": "/01_APOLLO510B/MCU_TOUCH_SDA_1V8",
+    "7": "/01_APOLLO510B/TOUCH_I2C_VREF2",
+    "8": "/01_APOLLO510B/TOUCH_I2C_VREF2",
+    "6": "/TOUCH_SCL",
+    "5": "/TOUCH_SDA",
+    "2": "/VOUT1_1V8",
+    "1": "GND"
+  },
+  "Y101": {
+    "1": "/01_APOLLO510B/APOLLO_XI32",
+    "2": "/01_APOLLO510B/APOLLO_XO32"
+  },
+  "Y102": {
+    "1": "/01_APOLLO510B/APOLLO_BLE_XIN",
+    "3": "/01_APOLLO510B/APOLLO_BLE_XOUT",
+    "2": "GND",
+    "4": "GND"
+  },
+  "J1": {
+    "5": "/DISP_QSPI_CLK",
+    "4": "/DISP_QSPI_CS",
+    "7": "/DISP_QSPI_IO0",
+    "6": "/DISP_QSPI_IO1",
+    "23": "/DISP_QSPI_IO2",
+    "22": "/DISP_QSPI_IO3",
+    "1": "/DISP_RST",
+    "3": "/DISP_TE",
+    "24": "/DISP_VCI_EN",
+    "15": "/SYS_3V3",
+    "16": "/SYS_3V3",
+    "17": "/TOUCH_INT",
+    "18": "/TOUCH_RST",
+    "20": "/TOUCH_SCL",
+    "19": "/TOUCH_SDA",
+    "11": "/VSYS",
+    "12": "/VSYS",
+    "13": "GND",
+    "14": "GND",
+    "2": "GND",
+    "21": "GND",
+    "8": "GND",
+    "9": "unconnected-(J1-IM1/NC-Pad9)",
+    "10": "unconnected-(J1-MTP/NC-Pad10)"
+  },
+  "R301": {
+    "1": "/SYS_3V3",
+    "2": "/TOUCH_SDA"
+  },
+  "R302": {
+    "1": "/SYS_3V3",
+    "2": "/TOUCH_SCL"
+  },
+  "R303": {
+    "1": "/DISP_RST",
+    "2": "GND"
+  },
+  "R304": {
+    "1": "/TOUCH_RST",
+    "2": "GND"
+  },
+  "R305": {
+    "2": "/DISP_QSPI_CS",
+    "1": "/SYS_3V3"
+  },
+  "R306": {
+    "1": "/DISP_VCI_EN",
+    "2": "GND"
+  },
+  "C601": {
+    "1": "/VBAT",
+    "2": "GND"
+  },
+  "C602": {
+    "1": "/06_WIFI/WIFI_VDD_BUCK",
+    "2": "GND"
+  },
+  "C603": {
+    "1": "/06_WIFI/WIFI_VDD_BUCK",
+    "2": "GND"
+  },
+  "C604": {
+    "2": "/06_WIFI/WIFI_VDD_BUCK",
+    "1": "GND"
+  },
+  "C605": {
+    "1": "/VBAT",
+    "2": "GND"
+  },
+  "C606": {
+    "1": "/VBAT",
+    "2": "GND"
+  },
+  "C607": {
+    "2": "/VBAT",
+    "1": "GND"
+  },
+  "C608": {
+    "2": "GND",
+    "1": "Net-(U9-BUCKVMID)"
+  },
+  "C609": {
+    "2": "/06_WIFI/WIFI_PWRIOVDD",
+    "1": "GND"
+  },
+  "C610": {
+    "1": "GND",
+    "2": "Net-(U9-DIGVDD)"
+  },
+  "C611": {
+    "2": "GND",
+    "1": "Net-(U9-PALDO)"
+  },
+  "C612": {
+    "2": "GND",
+    "1": "Net-(U9-PAVDD<0>)"
+  },
+  "C613": {
+    "2": "GND",
+    "1": "Net-(U9-RFVDD)"
+  },
+  "C614": {
+    "2": "GND",
+    "1": "Net-(U9-SXLDO)"
+  },
+  "C615": {
+    "2": "GND",
+    "1": "Net-(U9-XOLDO)"
+  },
+  "C616": {
+    "2": "GND",
+    "1": "Net-(U9-AFELDO)"
+  },
+  "C617": {
+    "1": "/06_WIFI/WIFI_PWRIOVDD",
+    "2": "GND"
+  },
+  "C618": {
+    "2": "/06_WIFI/WIFI_IOVDD_1V8",
+    "1": "GND"
+  },
+  "C619": {
+    "1": "/VOUT1_1V8",
+    "2": "GND"
+  },
+  "L601": {
+    "2": "/06_WIFI/WIFI_VDD_BUCK",
+    "1": "Net-(U9-BUCKOUT)"
+  },
+  "R601": {
+    "1": "/WIFI_BUCKEN",
+    "2": "GND"
+  },
+  "R602": {
+    "2": "/WIFI_IOVDD_EN",
+    "1": "GND"
+  },
+  "U9": {
+    "48": "/06_WIFI/WIFI_IOVDD_1V8",
+    "1": "/06_WIFI/WIFI_PWRIOVDD",
+    "34": "/06_WIFI/WIFI_PWRIOVDD",
+    "15": "/06_WIFI/WIFI_VDD_BUCK",
+    "32": "/06_WIFI/WIFI_VDD_BUCK",
+    "13": "/VBAT",
+    "20": "/VBAT",
+    "25": "/VBAT",
+    "31": "/VBAT",
+    "30": "/WIFI_BUCKEN",
+    "43": "/WIFI_COEX_GRANT",
+    "42": "/WIFI_COEX_REQ",
+    "41": "/WIFI_COEX_STATUS",
+    "46": "/WIFI_HOST_IRQ",
+    "35": "/WIFI_QSPI_CLK",
+    "36": "/WIFI_QSPI_CS",
+    "37": "/WIFI_QSPI_IO0",
+    "38": "/WIFI_QSPI_IO1",
+    "39": "/WIFI_QSPI_IO2",
+    "40": "/WIFI_QSPI_IO3",
+    "27": "GND",
+    "28": "GND",
+    "47": "GND",
+    "49": "GND",
+    "19": "Net-(U9-AFELDO)",
+    "26": "Net-(U9-BUCKOUT)",
+    "29": "Net-(U9-BUCKVMID)",
+    "33": "Net-(U9-DIGVDD)",
+    "12": "Net-(U9-PALDO)",
+    "10": "Net-(U9-PAVDD<0>)",
+    "8": "Net-(U9-PAVDD<0>)",
+    "14": "Net-(U9-RFVDD)",
+    "11": "Net-(U9-SXLDO)",
+    "16": "Net-(U9-XOLDO)",
+    "18": "Net-(U9-XON)",
+    "17": "Net-(U9-XOP)",
+    "9": "Net-(U10-2.4G)",
+    "7": "Net-(U10-5G)",
+    "2": "unconnected-(U9-NC-Pad2)",
+    "3": "unconnected-(U9-NC-Pad3)",
+    "4": "unconnected-(U9-NC-Pad4)",
+    "5": "unconnected-(U9-NC-Pad5)",
+    "6": "unconnected-(U9-NC-Pad6)",
+    "21": "unconnected-(U9-NC-Pad21)",
+    "22": "unconnected-(U9-NC-Pad22)",
+    "23": "unconnected-(U9-NC-Pad23)",
+    "24": "unconnected-(U9-NC-Pad24)",
+    "44": "unconnected-(U9-SW_CTRL0-Pad44)",
+    "45": "unconnected-(U9-SW_CTRL1-Pad45)"
+  },
+  "U10": {
+    "6": "/WIFI_RF",
+    "2": "GND",
+    "5": "GND",
+    "7": "GND",
+    "1": "Net-(U10-2.4G)",
+    "3": "Net-(U10-5G)"
+  },
+  "U11": {
+    "6": "/06_WIFI/WIFI_IOVDD_1V8",
+    "1": "/VOUT1_1V8",
+    "3": "/WIFI_IOVDD_EN",
+    "2": "GND",
+    "4": "unconnected-(U11-CT-Pad4)",
+    "5": "unconnected-(U11-QOD-Pad5)"
+  },
+  "Y1": {
+    "2": "GND",
+    "4": "GND",
+    "3": "Net-(U9-XON)",
+    "1": "Net-(U9-XOP)"
+  },
+  "C801": {
+    "1": "/VOUT1_1V8",
+    "2": "GND"
+  },
+  "C802": {
+    "1": "/VOUT1_1V8",
+    "2": "GND"
+  },
+  "C803": {
+    "1": "/VOUT1_1V8",
+    "2": "GND"
+  },
+  "C804": {
+    "1": "/VOUT1_1V8",
+    "2": "GND"
+  },
+  "R801": {
+    "2": "/ENV_I2C_SDA",
+    "1": "/VOUT1_1V8"
+  },
+  "R802": {
+    "2": "/ENV_I2C_SCL",
+    "1": "/VOUT1_1V8"
+  },
+  "R803": {
+    "2": "/ALS_INT",
+    "1": "/VOUT1_1V8"
+  },
+  "U4": {
+    "5": "/BARO_INT",
+    "1": "/ENV_I2C_SCL",
+    "2": "/ENV_I2C_SDA",
+    "4": "/VOUT1_1V8",
+    "7": "/VOUT1_1V8",
+    "8": "/VOUT1_1V8",
+    "3": "GND",
+    "6": "GND",
+    "9": "unconnected-(U4-L/M-Pad9)"
+  },
+  "U5": {
+    "7": "/ALS_INT",
+    "5": "/ENV_I2C_SCL",
+    "8": "/ENV_I2C_SDA",
+    "1": "/VOUT1_1V8",
+    "2": "GND",
+    "4": "GND",
+    "3": "unconnected-(U5-NC-Pad3)",
+    "6": "unconnected-(U5-NC-Pad6)"
+  },
+  "U6": {
+    "9": "/ENV_I2C_SCL",
+    "8": "/ENV_I2C_SDA",
+    "1": "/VOUT1_1V8",
+    "2": "/VOUT1_1V8",
+    "3": "/VOUT1_1V8",
+    "10": "GND",
+    "4": "GND",
+    "5": "GND",
+    "6": "GND",
+    "7": "GND"
+  },
+  "C1001": {
+    "1": "/VSYS",
+    "2": "GND"
+  },
+  "C1002": {
+    "1": "/10_HAPTICS/HAPTIC_REG",
+    "2": "GND"
+  },
+  "LRA1": {
+    "1": "Net-(LRA1-OUT+)",
+    "2": "Net-(LRA1-OUT-)"
+  },
+  "R1001": {
+    "2": "/HAPTIC_I2C_SDA",
+    "1": "/VOUT1_1V8"
+  },
+  "R1002": {
+    "2": "/HAPTIC_I2C_SCL",
+    "1": "/VOUT1_1V8"
+  },
+  "R1003": {
+    "1": "/HAPTIC_NRST",
+    "2": "GND"
+  },
+  "R1004": {
+    "2": "/HAPTIC_TRIG_INTZ",
+    "1": "/VOUT1_1V8"
+  },
+  "U7": {
+    "A2": "/10_HAPTICS/HAPTIC_REG",
+    "C1": "/HAPTIC_I2C_SCL",
+    "B1": "/HAPTIC_I2C_SDA",
+    "B2": "/HAPTIC_NRST",
+    "A1": "/HAPTIC_TRIG_INTZ",
+    "C2": "/VSYS",
+    "B3": "GND",
+    "A3": "Net-(LRA1-OUT+)",
+    "C3": "Net-(LRA1-OUT-)"
+  },
+  "AE1401": {
+    "1": "/14_RF/BLE_RF_50R"
+  },
+  "AE1410": {
+    "1": "/14_RF/WIFI_ANT_50R"
+  },
+  "AE1420": {
+    "1": "/14_RF/GNSS_ANT_50R"
+  },
+  "C1401": {
+    "1": "/APOLLO_BLE_AVDD_PA",
+    "2": "GND"
+  },
+  "C1402": {
+    "1": "/APOLLO_BLE_ANT",
+    "2": "GND"
+  },
+  "C1403": {
+    "2": "GND",
+    "1": "Net-(C1403-Pad1)"
+  },
+  "C1404": {
+    "2": "GND",
+    "1": "Net-(C1404-Pad1)"
+  },
+  "C1405": {
+    "2": "/14_RF/BLE_RF_50R",
+    "1": "Net-(C1404-Pad1)"
+  },
+  "C1410": {
+    "1": "/WIFI_RF",
+    "2": "GND"
+  },
+  "C1411": {
+    "1": "/14_RF/WIFI_ANT_50R",
+    "2": "GND"
+  },
+  "C1420": {
+    "1": "/GNSS_RF",
+    "2": "GND"
+  },
+  "C1421": {
+    "1": "/14_RF/GNSS_ANT_50R",
+    "2": "GND"
+  },
+  "L1401": {
+    "1": "/APOLLO_BLE_ANT",
+    "2": "/APOLLO_BLE_AVDD_PA"
+  },
+  "L1402": {
+    "1": "/APOLLO_BLE_ANT",
+    "2": "Net-(C1403-Pad1)"
+  },
+  "R1401": {
+    "1": "Net-(C1403-Pad1)",
+    "2": "Net-(C1404-Pad1)"
+  },
+  "R1410": {
+    "2": "/14_RF/WIFI_ANT_50R",
+    "1": "/WIFI_RF"
+  },
+  "R1420": {
+    "2": "/14_RF/GNSS_ANT_50R",
+    "1": "/GNSS_RF"
+  },
+  "TP1401": {
+    "1": "/14_RF/BLE_RF_50R"
+  },
+  "TP1410": {
+    "1": "/14_RF/WIFI_ANT_50R"
+  },
+  "TP1420": {
+    "1": "/14_RF/GNSS_ANT_50R"
+  },
+  "C201": {
+    "1": "/02_POWER/VBUSIN",
+    "2": "GND"
+  },
+  "C202": {
+    "2": "/02_POWER/PVSS1",
+    "1": "/VSYS"
+  },
+  "C203": {
+    "2": "/02_POWER/PVSS2",
+    "1": "/VSYS"
+  },
+  "C204": {
+    "1": "/VSYS",
+    "2": "GND"
+  },
+  "C205": {
+    "1": "/02_POWER/VBUSOUT",
+    "2": "GND"
+  },
+  "C206": {
+    "1": "/VBAT",
+    "2": "GND"
+  },
+  "C207": {
+    "2": "/02_POWER/PVSS1",
+    "1": "/VOUT1_1V8"
+  },
+  "C208": {
+    "2": "/02_POWER/PVSS2",
+    "1": "/VOUT2_3V0_PROVISIONAL"
+  },
+  "C213": {
+    "1": "/VOUT1_1V8",
+    "2": "GND"
+  },
+  "C214": {
+    "1": "/VSYS",
+    "2": "GND"
+  },
+  "C215": {
+    "1": "/SYS_3V3",
+    "2": "GND"
+  },
+  "J201": {
+    "2": "/02_POWER/BAT_NTC",
+    "3": "/VBAT",
+    "1": "GND"
+  },
+  "J202": {
+    "1": "/02_POWER/VBUSIN",
+    "2": "GND"
+  },
+  "L201": {
+    "1": "/VOUT1_1V8",
+    "2": "Net-(U201-SW1)"
+  },
+  "L202": {
+    "1": "/VOUT2_3V0_PROVISIONAL",
+    "2": "Net-(U201-SW2)"
+  },
+  "L203": {
+    "2": "Net-(U202-LX1)",
+    "1": "Net-(U202-LX2)"
+  },
+  "NT201": {
+    "1": "/02_POWER/PVSS1",
+    "2": "GND"
+  },
+  "NT202": {
+    "1": "/02_POWER/PVSS2",
+    "2": "GND"
+  },
+  "R201": {
+    "1": "/MAG_I2C_SDA",
+    "2": "/VOUT1_1V8"
+  },
+  "R202": {
+    "1": "/MAG_I2C_SCL",
+    "2": "/VOUT1_1V8"
+  },
+  "R203": {
+    "1": "/02_POWER/VSET1_CFG",
+    "2": "GND"
+  },
+  "R204": {
+    "1": "/02_POWER/VSET2_CFG",
+    "2": "GND"
+  },
+  "R205": {
+    "2": "GND",
+    "1": "Net-(U202-CFG1)"
+  },
+  "R206": {
+    "2": "GND",
+    "1": "Net-(U202-CFG2)"
+  },
+  "R207": {
+    "2": "GND",
+    "1": "Net-(U202-CFG3)"
+  },
+  "U201": {
+    "18": "/02_POWER/BAT_NTC",
+    "7": "/02_POWER/PMIC_GPIO0",
+    "8": "/02_POWER/PMIC_GPIO1",
+    "9": "/02_POWER/PMIC_GPIO2",
+    "10": "/02_POWER/PMIC_GPIO3",
+    "11": "/02_POWER/PMIC_GPIO4",
+    "29": "/02_POWER/PMIC_LSOUT1_TBD",
+    "31": "/02_POWER/PMIC_LSOUT2_TBD",
+    "2": "/02_POWER/PVSS1",
+    "6": "/02_POWER/PVSS2",
+    "21": "/02_POWER/VBUSIN",
+    "22": "/02_POWER/VBUSOUT",
+    "17": "/02_POWER/VSET1_CFG",
+    "16": "/02_POWER/VSET2_CFG",
+    "14": "/MAG_I2C_SCL",
+    "13": "/MAG_I2C_SDA",
+    "19": "/VBAT",
+    "1": "/VOUT1_1V8",
+    "12": "/VOUT1_1V8",
+    "32": "/VOUT2_3V0_PROVISIONAL",
+    "20": "/VSYS",
+    "4": "/VSYS",
+    "33": "GND",
+    "3": "Net-(U201-SW1)",
+    "5": "Net-(U201-SW2)",
+    "23": "unconnected-(U201-CC1-Pad23)",
+    "24": "unconnected-(U201-CC2-Pad24)",
+    "25": "unconnected-(U201-LED0-Pad25)",
+    "26": "unconnected-(U201-LED1-Pad26)",
+    "27": "unconnected-(U201-LED2-Pad27)",
+    "28": "unconnected-(U201-LSIN1/VINLDO1-Pad28)",
+    "30": "unconnected-(U201-LSIN2/VINLDO2-Pad30)",
+    "15": "unconnected-(U201-SHPHLD-Pad15)"
+  },
+  "U202": {
+    "6": "/SYS_3V3",
+    "1": "/VSYS",
+    "10": "/VSYS",
+    "2": "/VSYS",
+    "11": "GND",
+    "8": "GND",
+    "3": "Net-(U202-CFG1)",
+    "4": "Net-(U202-CFG2)",
+    "5": "Net-(U202-CFG3)",
+    "9": "Net-(U202-LX1)",
+    "7": "Net-(U202-LX2)"
+  },
+  "C401": {
+    "1": "/VBAT",
+    "2": "GND"
+  },
+  "C402": {
+    "1": "/04_PPG/PPG_VLED",
+    "2": "GND"
+  },
+  "C403": {
+    "1": "/04_PPG/PPG_VLED",
+    "2": "GND"
+  },
+  "C404": {
+    "1": "/04_PPG/PPG_VLED",
+    "2": "GND"
+  },
+  "C405": {
+    "1": "/04_PPG/PPG_VLED",
+    "2": "GND"
+  },
+  "C406": {
+    "1": "/04_PPG/PPG_VLED",
+    "2": "GND"
+  },
+  "C407": {
+    "1": "/04_PPG/PPG_VLED",
+    "2": "GND"
+  },
+  "C408": {
+    "1": "/04_PPG/PPG_VLED",
+    "2": "GND"
+  },
+  "C4101": {
+    "1": "/VOUT1_1V8",
+    "2": "GND"
+  },
+  "C4102": {
+    "1": "/VOUT1_1V8",
+    "2": "GND"
+  },
+  "C4103": {
+    "1": "/04_PPG/PPG1_VREF",
+    "2": "GND"
+  },
+  "C4104": {
+    "1": "/04_PPG/PPG_VLED",
+    "2": "GND"
+  },
+  "C4201": {
+    "1": "/VOUT1_1V8",
+    "2": "GND"
+  },
+  "C4202": {
+    "1": "/VOUT1_1V8",
+    "2": "GND"
+  },
+  "C4203": {
+    "1": "/04_PPG/PPG2_VREF",
+    "2": "GND"
+  },
+  "C4204": {
+    "1": "/04_PPG/PPG_VLED",
+    "2": "GND"
+  },
+  "D401": {
+    "1": "/04_PPG/PPG1_LED1_GREEN_K",
+    "7": "/04_PPG/PPG1_LED1_GREEN_K",
+    "8": "/04_PPG/PPG1_LED1_GREEN_K",
+    "5": "/04_PPG/PPG1_LED2_RED_K",
+    "2": "/04_PPG/PPG_VLED",
+    "4": "/04_PPG/PPG_VLED",
+    "6": "/04_PPG/PPG_VLED",
+    "3": "unconnected-(D401-K_IR-Pad3)"
+  },
+  "D402": {
+    "1": "/04_PPG/PPG2_LED1_GREEN_K",
+    "7": "/04_PPG/PPG2_LED1_GREEN_K",
+    "8": "/04_PPG/PPG2_LED1_GREEN_K",
+    "5": "/04_PPG/PPG2_LED2_RED_K",
+    "3": "/04_PPG/PPG2_LED6_IR940_K",
+    "2": "/04_PPG/PPG_VLED",
+    "4": "/04_PPG/PPG_VLED",
+    "6": "/04_PPG/PPG_VLED"
+  },
+  "D403": {
+    "1": "/04_PPG/PPG1_LED4_GREEN_K",
+    "7": "/04_PPG/PPG1_LED4_GREEN_K",
+    "8": "/04_PPG/PPG1_LED4_GREEN_K",
+    "5": "/04_PPG/PPG1_LED5_RED_K",
+    "2": "/04_PPG/PPG_VLED",
+    "4": "/04_PPG/PPG_VLED",
+    "6": "/04_PPG/PPG_VLED",
+    "3": "unconnected-(D403-K_IR-Pad3)"
+  },
+  "D404": {
+    "1": "/04_PPG/PPG2_LED4_GREEN_K",
+    "7": "/04_PPG/PPG2_LED4_GREEN_K",
+    "8": "/04_PPG/PPG2_LED4_GREEN_K",
+    "5": "/04_PPG/PPG2_LED5_RED_K",
+    "2": "/04_PPG/PPG_VLED",
+    "4": "/04_PPG/PPG_VLED",
+    "6": "/04_PPG/PPG_VLED",
+    "3": "unconnected-(D404-K_IR-Pad3)"
+  },
+  "D405": {
+    "2": "/04_PPG/PPG1_LED3_IR850_K",
+    "1": "/04_PPG/PPG_VLED"
+  },
+  "D406": {
+    "2": "/04_PPG/PPG1_LED6_IR850_K",
+    "1": "/04_PPG/PPG_VLED"
+  },
+  "D407": {
+    "2": "/04_PPG/PPG2_LED3_IR850_K",
+    "1": "/04_PPG/PPG_VLED"
+  },
+  "D413": {
+    "1": "/04_PPG/PPG2_PD2_IN",
+    "2": "/04_PPG/PPG2_PD_GND"
+  },
+  "D414": {
+    "1": "/04_PPG/PPG1_PD2_IN",
+    "2": "/04_PPG/PPG1_PD_GND"
+  },
+  "D423": {
+    "1": "/04_PPG/PPG2_PD1_IN",
+    "2": "/04_PPG/PPG2_PD_GND"
+  },
+  "D424": {
+    "1": "/04_PPG/PPG1_PD1_IN",
+    "2": "/04_PPG/PPG1_PD_GND"
+  },
+  "L401": {
+    "1": "Net-(U401-LX1)",
+    "2": "Net-(U401-LX2)"
+  },
+  "NT401": {
+    "1": "/04_PPG/PPG1_PD_GND",
+    "2": "GND"
+  },
+  "NT402": {
+    "1": "/04_PPG/PPG2_PD_GND",
+    "2": "GND"
+  },
+  "R401": {
+    "2": "/PPG1_CS_N",
+    "1": "/VOUT1_1V8"
+  },
+  "R402": {
+    "2": "/PPG2_CS_N",
+    "1": "/VOUT1_1V8"
+  },
+  "R403": {
+    "2": "/PPG1_INT_N",
+    "1": "/VOUT1_1V8"
+  },
+  "R404": {
+    "2": "/PPG2_INT_N",
+    "1": "/VOUT1_1V8"
+  },
+  "R405": {
+    "2": "/PPG_SAMPLE_SYNC",
+    "1": "/VOUT1_1V8"
+  },
+  "R406": {
+    "2": "/04_PPG/PPG_FB",
+    "1": "/04_PPG/PPG_VLED"
+  },
+  "R407": {
+    "1": "/04_PPG/PPG_FB",
+    "2": "GND"
+  },
+  "R408": {
+    "2": "/04_PPG/PPG1_LED_MUX_SEL",
+    "1": "/VOUT1_1V8"
+  },
+  "R409": {
+    "2": "/04_PPG/PPG2_LED_MUX_SEL",
+    "1": "/VOUT1_1V8"
+  },
+  "U12": {
+    "D1": "/04_PPG/PPG1_LED_GREEN_DRV",
+    "B1": "/04_PPG/PPG1_LED_IR_DRV",
+    "B4": "/04_PPG/PPG1_LED_MUX_SEL",
+    "C1": "/04_PPG/PPG1_LED_RED_DRV",
+    "D5": "/04_PPG/PPG1_PD1_IN",
+    "D4": "/04_PPG/PPG1_PD2_IN",
+    "C5": "/04_PPG/PPG1_PD_GND",
+    "B5": "/04_PPG/PPG1_VREF",
+    "A1": "/04_PPG/PPG_VLED",
+    "A5": "/PPG1_CS_N",
+    "B2": "/PPG1_INT_N",
+    "B3": "/PPG_SAMPLE_SYNC",
+    "A3": "/PPG_SPI_MISO",
+    "A4": "/PPG_SPI_MOSI",
+    "A2": "/PPG_SPI_SCLK",
+    "C2": "/VOUT1_1V8",
+    "D2": "/VOUT1_1V8",
+    "C3": "GND",
+    "C4": "GND",
+    "D3": "GND"
+  },
+  "U13": {
+    "D1": "/04_PPG/PPG2_LED_GREEN_DRV",
+    "B1": "/04_PPG/PPG2_LED_IR_DRV",
+    "B4": "/04_PPG/PPG2_LED_MUX_SEL",
+    "C1": "/04_PPG/PPG2_LED_RED_DRV",
+    "D5": "/04_PPG/PPG2_PD1_IN",
+    "D4": "/04_PPG/PPG2_PD2_IN",
+    "C5": "/04_PPG/PPG2_PD_GND",
+    "B5": "/04_PPG/PPG2_VREF",
+    "A1": "/04_PPG/PPG_VLED",
+    "A5": "/PPG2_CS_N",
+    "B2": "/PPG2_INT_N",
+    "B3": "/PPG_SAMPLE_SYNC",
+    "A3": "/PPG_SPI_MISO",
+    "A4": "/PPG_SPI_MOSI",
+    "A2": "/PPG_SPI_SCLK",
+    "C2": "/VOUT1_1V8",
+    "D2": "/VOUT1_1V8",
+    "C3": "GND",
+    "C4": "GND",
+    "D3": "GND"
+  },
+  "U401": {
+    "8": "/04_PPG/PPG_FB",
+    "1": "/04_PPG/PPG_VLED",
+    "4": "/VBAT",
+    "5": "/VOUT1_1V8",
+    "6": "GND",
+    "7": "GND",
+    "3": "Net-(U401-LX1)",
+    "2": "Net-(U401-LX2)"
+  },
+  "U402": {
+    "A1": "/04_PPG/PPG1_LED1_GREEN_K",
+    "C1": "/04_PPG/PPG1_LED4_GREEN_K",
+    "B2": "/04_PPG/PPG1_LED_GREEN_DRV",
+    "A2": "/04_PPG/PPG1_LED_MUX_SEL",
+    "C2": "/04_PPG/PPG_VLED",
+    "B1": "GND"
+  },
+  "U403": {
+    "A1": "/04_PPG/PPG1_LED2_RED_K",
+    "C1": "/04_PPG/PPG1_LED5_RED_K",
+    "A2": "/04_PPG/PPG1_LED_MUX_SEL",
+    "B2": "/04_PPG/PPG1_LED_RED_DRV",
+    "C2": "/04_PPG/PPG_VLED",
+    "B1": "GND"
+  },
+  "U404": {
+    "A1": "/04_PPG/PPG1_LED3_IR850_K",
+    "C1": "/04_PPG/PPG1_LED6_IR850_K",
+    "B2": "/04_PPG/PPG1_LED_IR_DRV",
+    "A2": "/04_PPG/PPG1_LED_MUX_SEL",
+    "C2": "/04_PPG/PPG_VLED",
+    "B1": "GND"
+  },
+  "U405": {
+    "A1": "/04_PPG/PPG2_LED1_GREEN_K",
+    "C1": "/04_PPG/PPG2_LED4_GREEN_K",
+    "B2": "/04_PPG/PPG2_LED_GREEN_DRV",
+    "A2": "/04_PPG/PPG2_LED_MUX_SEL",
+    "C2": "/04_PPG/PPG_VLED",
+    "B1": "GND"
+  },
+  "U406": {
+    "A1": "/04_PPG/PPG2_LED2_RED_K",
+    "C1": "/04_PPG/PPG2_LED5_RED_K",
+    "A2": "/04_PPG/PPG2_LED_MUX_SEL",
+    "B2": "/04_PPG/PPG2_LED_RED_DRV",
+    "C2": "/04_PPG/PPG_VLED",
+    "B1": "GND"
+  },
+  "U407": {
+    "A1": "/04_PPG/PPG2_LED3_IR850_K",
+    "C1": "/04_PPG/PPG2_LED6_IR940_K",
+    "B2": "/04_PPG/PPG2_LED_IR_DRV",
+    "A2": "/04_PPG/PPG2_LED_MUX_SEL",
+    "C2": "/04_PPG/PPG_VLED",
+    "B1": "GND"
+  },
+  "U8": {
+    "5": "/GNSS_EXTINT",
+    "11": "/GNSS_RF",
+    "4": "/GNSS_TIMEPULSE",
+    "3": "/GNSS_UART_RX",
+    "2": "/GNSS_UART_TX",
+    "7": "/VOUT1_1V8",
+    "8": "/VOUT2_3V0_PROVISIONAL",
+    "1": "GND",
+    "10": "GND",
+    "12": "GND",
+    "15": "GND",
+    "13": "unconnected-(U8-LNA_EN-Pad13)",
+    "9": "unconnected-(U8-RESET_N-Pad9)",
+    "18": "unconnected-(U8-SAFEBOOT_N-Pad18)",
+    "17": "unconnected-(U8-SCL-Pad17)",
+    "16": "unconnected-(U8-SDA-Pad16)",
+    "14": "unconnected-(U8-VCC_RF-Pad14)",
+    "6": "unconnected-(U8-V_BCKP-Pad6)"
+  },
+  "C701": {
+    "1": "/VOUT1_1V8",
+    "2": "GND"
+  },
+  "C702": {
+    "1": "/VOUT1_1V8",
+    "2": "GND"
+  },
+  "C703": {
+    "1": "/VOUT1_1V8",
+    "2": "GND"
+  },
+  "C704": {
+    "1": "/VOUT1_1V8",
+    "2": "GND"
+  },
+  "C705": {
+    "1": "/07_MOTION/BMM_CRST",
+    "2": "GND"
+  },
+  "R701": {
+    "2": "/MAG_I2C_SDA",
+    "1": "/VOUT1_1V8"
+  },
+  "R702": {
+    "2": "/MAG_I2C_SCL",
+    "1": "/VOUT1_1V8"
+  },
+  "U702": {
+    "4": "/IMU_INT1",
+    "9": "/IMU_INT2",
+    "12": "/IMU_SPI_CS",
+    "1": "/IMU_SPI_MISO",
+    "14": "/IMU_SPI_MOSI",
+    "13": "/IMU_SPI_SCK",
+    "2": "/VOUT1_1V8",
+    "3": "/VOUT1_1V8",
+    "5": "/VOUT1_1V8",
+    "8": "/VOUT1_1V8",
+    "6": "GND",
+    "7": "GND",
+    "10": "unconnected-(U702-OCS_AUX-Pad10)",
+    "11": "unconnected-(U702-SDO_AUX-Pad11)"
+  },
+  "U703": {
+    "C2": "/07_MOTION/BMM_CRST",
+    "A3": "/MAG_I2C_SCL",
+    "A2": "/MAG_I2C_SDA",
+    "A1": "/MAG_INT",
+    "B3": "/VOUT1_1V8",
+    "C1": "/VOUT1_1V8",
+    "B1": "GND",
+    "B2": "GND",
+    "C3": "GND"
+  },
+  "C901": {
+    "1": "/VOUT2_3V0_PROVISIONAL",
+    "2": "GND"
+  },
+  "C902": {
+    "1": "/VOUT2_3V0_PROVISIONAL",
+    "2": "GND"
+  },
+  "C903": {
+    "1": "/VOUT1_1V8",
+    "2": "GND"
+  },
+  "C904": {
+    "1": "/VOUT1_1V8",
+    "2": "GND"
+  },
+  "C905": {
+    "1": "/09_STORAGE/EMMC_VDDI",
+    "2": "GND"
+  },
+  "C906": {
+    "1": "/09_STORAGE/EMMC_VDDI",
+    "2": "GND"
+  },
+  "R901": {
+    "2": "/EMMC_CMD",
+    "1": "/VOUT1_1V8"
+  },
+  "R902": {
+    "2": "/EMMC_DAT0",
+    "1": "/VOUT1_1V8"
+  },
+  "R903": {
+    "2": "/EMMC_DAT1",
+    "1": "/VOUT1_1V8"
+  },
+  "R904": {
+    "2": "/EMMC_DAT2",
+    "1": "/VOUT1_1V8"
+  },
+  "R905": {
+    "2": "/EMMC_DAT3",
+    "1": "/VOUT1_1V8"
+  },
+  "R906": {
+    "2": "/EMMC_DAT4",
+    "1": "/VOUT1_1V8"
+  },
+  "R907": {
+    "2": "/EMMC_DAT5",
+    "1": "/VOUT1_1V8"
+  },
+  "R908": {
+    "2": "/EMMC_DAT6",
+    "1": "/VOUT1_1V8"
+  },
+  "R909": {
+    "2": "/EMMC_DAT7",
+    "1": "/VOUT1_1V8"
+  },
+  "R910": {
+    "2": "/EMMC_RST_N",
+    "1": "/VOUT1_1V8"
+  },
+  "U901": {
+    "C2": "/09_STORAGE/EMMC_VDDI",
+    "M6": "/EMMC_CLK",
+    "M5": "/EMMC_CMD",
+    "A3": "/EMMC_DAT0",
+    "A4": "/EMMC_DAT1",
+    "A5": "/EMMC_DAT2",
+    "B2": "/EMMC_DAT3",
+    "B3": "/EMMC_DAT4",
+    "B4": "/EMMC_DAT5",
+    "B5": "/EMMC_DAT6",
+    "B6": "/EMMC_DAT7",
+    "K5": "/EMMC_RST_N",
+    "C6": "/VOUT1_1V8",
+    "M4": "/VOUT1_1V8",
+    "N4": "/VOUT1_1V8",
+    "P3": "/VOUT1_1V8",
+    "P5": "/VOUT1_1V8",
+    "E6": "/VOUT2_3V0_PROVISIONAL",
+    "F5": "/VOUT2_3V0_PROVISIONAL",
+    "J10": "/VOUT2_3V0_PROVISIONAL",
+    "K9": "/VOUT2_3V0_PROVISIONAL",
+    "A6": "GND",
+    "C4": "GND",
+    "E7": "GND",
+    "G5": "GND",
+    "H10": "GND",
+    "J5": "GND",
+    "K8": "GND",
+    "N2": "GND",
+    "N5": "GND",
+    "P4": "GND",
+    "P6": "GND",
+    "H5": "unconnected-(U901-DS-PadH5)",
+    "A1": "unconnected-(U901-NC-PadA1)",
+    "A2": "unconnected-(U901-NC-PadA2)",
+    "A8": "unconnected-(U901-NC-PadA8)",
+    "A9": "unconnected-(U901-NC-PadA9)",
+    "A10": "unconnected-(U901-NC-PadA10)",
+    "A11": "unconnected-(U901-NC-PadA11)",
+    "A12": "unconnected-(U901-NC-PadA12)",
+    "A13": "unconnected-(U901-NC-PadA13)",
+    "A14": "unconnected-(U901-NC-PadA14)",
+    "B1": "unconnected-(U901-NC-PadB1)",
+    "B7": "unconnected-(U901-NC-PadB7)",
+    "B8": "unconnected-(U901-NC-PadB8)",
+    "B9": "unconnected-(U901-NC-PadB9)",
+    "B10": "unconnected-(U901-NC-PadB10)",
+    "B11": "unconnected-(U901-NC-PadB11)",
+    "B12": "unconnected-(U901-NC-PadB12)",
+    "B13": "unconnected-(U901-NC-PadB13)",
+    "B14": "unconnected-(U901-NC-PadB14)",
+    "C1": "unconnected-(U901-NC-PadC1)",
+    "C3": "unconnected-(U901-NC-PadC3)",
+    "C5": "unconnected-(U901-NC-PadC5)",
+    "C7": "unconnected-(U901-NC-PadC7)",
+    "C8": "unconnected-(U901-NC-PadC8)",
+    "C9": "unconnected-(U901-NC-PadC9)",
+    "C10": "unconnected-(U901-NC-PadC10)",
+    "C11": "unconnected-(U901-NC-PadC11)",
+    "C12": "unconnected-(U901-NC-PadC12)",
+    "C13": "unconnected-(U901-NC-PadC13)",
+    "C14": "unconnected-(U901-NC-PadC14)",
+    "D1": "unconnected-(U901-NC-PadD1)",
+    "D2": "unconnected-(U901-NC-PadD2)",
+    "D3": "unconnected-(U901-NC-PadD3)",
+    "D4": "unconnected-(U901-NC-PadD4)",
+    "D12": "unconnected-(U901-NC-PadD12)",
+    "D13": "unconnected-(U901-NC-PadD13)",
+    "D14": "unconnected-(U901-NC-PadD14)",
+    "E1": "unconnected-(U901-NC-PadE1)",
+    "E2": "unconnected-(U901-NC-PadE2)",
+    "E3": "unconnected-(U901-NC-PadE3)",
+    "E12": "unconnected-(U901-NC-PadE12)",
+    "E13": "unconnected-(U901-NC-PadE13)",
+    "E14": "unconnected-(U901-NC-PadE14)",
+    "F1": "unconnected-(U901-NC-PadF1)",
+    "F2": "unconnected-(U901-NC-PadF2)",
+    "F3": "unconnected-(U901-NC-PadF3)",
+    "F12": "unconnected-(U901-NC-PadF12)",
+    "F13": "unconnected-(U901-NC-PadF13)",
+    "F14": "unconnected-(U901-NC-PadF14)",
+    "G1": "unconnected-(U901-NC-PadG1)",
+    "G2": "unconnected-(U901-NC-PadG2)",
+    "G12": "unconnected-(U901-NC-PadG12)",
+    "G13": "unconnected-(U901-NC-PadG13)",
+    "G14": "unconnected-(U901-NC-PadG14)",
+    "H1": "unconnected-(U901-NC-PadH1)",
+    "H2": "unconnected-(U901-NC-PadH2)",
+    "H3": "unconnected-(U901-NC-PadH3)",
+    "H12": "unconnected-(U901-NC-PadH12)",
+    "H13": "unconnected-(U901-NC-PadH13)",
+    "H14": "unconnected-(U901-NC-PadH14)",
+    "J1": "unconnected-(U901-NC-PadJ1)",
+    "J2": "unconnected-(U901-NC-PadJ2)",
+    "J3": "unconnected-(U901-NC-PadJ3)",
+    "J12": "unconnected-(U901-NC-PadJ12)",
+    "J13": "unconnected-(U901-NC-PadJ13)",
+    "J14": "unconnected-(U901-NC-PadJ14)",
+    "K1": "unconnected-(U901-NC-PadK1)",
+    "K2": "unconnected-(U901-NC-PadK2)",
+    "K3": "unconnected-(U901-NC-PadK3)",
+    "K12": "unconnected-(U901-NC-PadK12)",
+    "K13": "unconnected-(U901-NC-PadK13)",
+    "K14": "unconnected-(U901-NC-PadK14)",
+    "L1": "unconnected-(U901-NC-PadL1)",
+    "L2": "unconnected-(U901-NC-PadL2)",
+    "L3": "unconnected-(U901-NC-PadL3)",
+    "L12": "unconnected-(U901-NC-PadL12)",
+    "L13": "unconnected-(U901-NC-PadL13)",
+    "L14": "unconnected-(U901-NC-PadL14)",
+    "M1": "unconnected-(U901-NC-PadM1)",
+    "M2": "unconnected-(U901-NC-PadM2)",
+    "M3": "unconnected-(U901-NC-PadM3)",
+    "M7": "unconnected-(U901-NC-PadM7)",
+    "M8": "unconnected-(U901-NC-PadM8)",
+    "M9": "unconnected-(U901-NC-PadM9)",
+    "M10": "unconnected-(U901-NC-PadM10)",
+    "M11": "unconnected-(U901-NC-PadM11)",
+    "M12": "unconnected-(U901-NC-PadM12)",
+    "M13": "unconnected-(U901-NC-PadM13)",
+    "M14": "unconnected-(U901-NC-PadM14)",
+    "N1": "unconnected-(U901-NC-PadN1)",
+    "N3": "unconnected-(U901-NC-PadN3)",
+    "N6": "unconnected-(U901-NC-PadN6)",
+    "N7": "unconnected-(U901-NC-PadN7)",
+    "N8": "unconnected-(U901-NC-PadN8)",
+    "N9": "unconnected-(U901-NC-PadN9)",
+    "N10": "unconnected-(U901-NC-PadN10)",
+    "N11": "unconnected-(U901-NC-PadN11)",
+    "N12": "unconnected-(U901-NC-PadN12)",
+    "N13": "unconnected-(U901-NC-PadN13)",
+    "N14": "unconnected-(U901-NC-PadN14)",
+    "P1": "unconnected-(U901-NC-PadP1)",
+    "P2": "unconnected-(U901-NC-PadP2)",
+    "P8": "unconnected-(U901-NC-PadP8)",
+    "P9": "unconnected-(U901-NC-PadP9)",
+    "P11": "unconnected-(U901-NC-PadP11)",
+    "P12": "unconnected-(U901-NC-PadP12)",
+    "P13": "unconnected-(U901-NC-PadP13)",
+    "P14": "unconnected-(U901-NC-PadP14)",
+    "A7": "unconnected-(U901-RFU-PadA7)",
+    "E5": "unconnected-(U901-RFU-PadE5)",
+    "G3": "unconnected-(U901-RFU-PadG3)",
+    "K6": "unconnected-(U901-RFU-PadK6)",
+    "K7": "unconnected-(U901-RFU-PadK7)",
+    "P7": "unconnected-(U901-RFU-PadP7)",
+    "P10": "unconnected-(U901-RFU-PadP10)",
+    "E8": "unconnected-(U901-VSF-PadE8)",
+    "E9": "unconnected-(U901-VSF-PadE9)",
+    "E10": "unconnected-(U901-VSF-PadE10)",
+    "F10": "unconnected-(U901-VSF-PadF10)",
+    "G10": "unconnected-(U901-VSF-PadG10)",
+    "K10": "unconnected-(U901-VSF-PadK10)"
+  },
+  "C1101": {
+    "1": "/BTN_LIGHT_N",
+    "2": "GND"
+  },
+  "C1102": {
+    "1": "/BTN_UP_N",
+    "2": "GND"
+  },
+  "C1103": {
+    "1": "/BTN_DOWN_N",
+    "2": "GND"
+  },
+  "C1104": {
+    "1": "/BTN_START_N",
+    "2": "GND"
+  },
+  "C1105": {
+    "1": "/BTN_BACK_N",
+    "2": "GND"
+  },
+  "R1101": {
+    "2": "/BTN_LIGHT_N",
+    "1": "/VOUT1_1V8"
+  },
+  "R1102": {
+    "2": "/BTN_UP_N",
+    "1": "/VOUT1_1V8"
+  },
+  "R1103": {
+    "2": "/BTN_DOWN_N",
+    "1": "/VOUT1_1V8"
+  },
+  "R1104": {
+    "2": "/BTN_START_N",
+    "1": "/VOUT1_1V8"
+  },
+  "R1105": {
+    "2": "/BTN_BACK_N",
+    "1": "/VOUT1_1V8"
+  },
+  "SW1": {
+    "1": "/BTN_LIGHT_N",
+    "2": "GND"
+  },
+  "SW2": {
+    "1": "/BTN_UP_N",
+    "2": "GND"
+  },
+  "SW3": {
+    "1": "/BTN_DOWN_N",
+    "2": "GND"
+  },
+  "SW4": {
+    "1": "/BTN_START_N",
+    "2": "GND"
+  },
+  "SW5": {
+    "1": "/BTN_BACK_N",
+    "2": "GND"
+  },
+  "J1301": {
+    "3": "/APOLLO_RST_N",
+    "4": "/APOLLO_SWCLK",
+    "2": "/APOLLO_SWDIO",
+    "6": "/APOLLO_SWO_GPIO28",
+    "1": "/VOUT1_1V8",
+    "5": "GND"
+  },
+  "TP1301": {
+    "1": "/VBAT"
+  },
+  "TP1302": {
+    "1": "/VSYS"
+  },
+  "TP1303": {
+    "1": "/VOUT1_1V8"
+  },
+  "TP1304": {
+    "1": "/VOUT2_3V0_PROVISIONAL"
+  },
+  "TP1305": {
+    "1": "/SYS_3V3"
+  },
+  "TP1306": {
+    "1": "GND"
+  }
+}

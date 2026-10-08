@@ -1,0 +1,179 @@
+{
+  "status": "PASS",
+  "parent": "46e98626735295718dac5f2e5b7d73c9283d922a",
+  "scope": "nine saved instances and D1201 Qualification only; all other schematic data unchanged",
+  "saved_instance_proof": [
+    {
+      "reference": "J202",
+      "board": "MAIN",
+      "project": "sportwatch_revA",
+      "path": "/063f9d99-6c07-44cf-ba32-e33897e06972/13f98b5d-2735-4ce5-b6a9-56134247b933",
+      "placed_uuid": "7e3b8c5a-94e6-579c-bc1c-806c7fd645ef",
+      "pin_uuids": {
+        "1": "904b5f39-1f67-5803-8c0e-c7867c2c63c8",
+        "2": "fce46d3d-1d32-5ecb-9d83-e98cf98c147a"
+      },
+      "saved_instances": 1
+    },
+    {
+      "reference": "U1201",
+      "board": "MAIN",
+      "project": "sportwatch_revA",
+      "path": "/063f9d99-6c07-44cf-ba32-e33897e06972/13f98b5d-2735-4ce5-b6a9-56134247b933",
+      "placed_uuid": "3ed9f111-9b05-53f0-b0a8-9d89f9609fd6",
+      "pin_uuids": {
+        "1": "b33a2204-7f4c-59da-b92a-0dfb7b7699cf",
+        "2": "1f8a8744-0392-5bfb-97d5-bb75f298c2ea",
+        "3": "f55ba291-98fe-5959-a215-a78444589854"
+      },
+      "saved_instances": 1
+    },
+    {
+      "reference": "D1201",
+      "board": "MAIN",
+      "project": "sportwatch_revA",
+      "path": "/063f9d99-6c07-44cf-ba32-e33897e06972/13f98b5d-2735-4ce5-b6a9-56134247b933",
+      "placed_uuid": "74d3774d-1fc0-54cd-9d5f-b217518b6a71",
+      "pin_uuids": {
+        "1": "c67fb08c-851a-51a8-9008-8dec5f170abc",
+        "2": "568930df-6a71-59fd-a8a3-0f0f6d1f99df"
+      },
+      "saved_instances": 1
+    },
+    {
+      "reference": "#FLG1201",
+      "board": "MAIN",
+      "project": "sportwatch_revA",
+      "path": "/063f9d99-6c07-44cf-ba32-e33897e06972/13f98b5d-2735-4ce5-b6a9-56134247b933",
+      "placed_uuid": "e2c8e62b-8e36-5707-b5f4-009fad035515",
+      "pin_uuids": {
+        "1": "48904d8f-d9b8-5d11-936f-0cbf59d695b6"
+      },
+      "saved_instances": 1
+    },
+    {
+      "reference": "J1502",
+      "board": "REAR",
+      "project": "rear_sensor_revA",
+      "path": "/e9412e56-0f4f-4ec5-ad89-3d7d6481d433",
+      "placed_uuid": "6b2187e2-02d2-52d0-9134-bd6bae6228b4",
+      "pin_uuids": {
+        "1": "08ce0195-0c88-530f-85a4-6daff42d845b",
+        "2": "830a09ce-a449-5539-a2cd-29074421f7cc",
+        "3": "6af53105-d60f-5f89-a35e-d6c3d2158f47",
+        "4": "ed6ed000-46d9-5e04-be11-fc12b210885d",
+        "5": "63709af8-dbfb-56ef-b466-a77795614e4e",
+        "6": "44cf2d16-2f58-5d78-8fee-08f095efee0f",
+        "7": "9b759707-4dac-5cd1-b402-5b98a69567db",
+        "8": "cc12263d-ba71-50fb-b2f2-1ca811724981",
+        "9": "d95383e6-90bf-54fc-8f70-52000e42b896",
+        "10": "5098924c-ec92-527c-aa9b-f75bd41cae83",
+        "11": "d1eca2e7-77ce-54e9-a972-d2519e0cd7a3",
+        "12": "bc3dca0e-6358-5509-bf60-9d206d30e0c0",
+        "13": "3d7bf2a0-06f4-50ad-898a-29115b7e6a20",
+        "14": "73cc4421-7e9a-5a1c-adbd-d8960920aab9",
+        "15": "4affc302-e10f-5dd4-9408-aeffc02d7d26",
+        "16": "24953586-0b0e-5576-a856-39b361493ed0",
+        "17": "690ac63e-0ef2-5ae1-9689-471d03c63c60",
+        "18": "af23bd39-a1da-5575-8595-9291e16536c9",
+        "19": "bcbb3661-1adc-5aa3-b1d1-caa87cd2de3f",
+        "20": "a2f48d5d-5445-5584-91de-a5be96e6af77",
+        "21": "483a6b20-77ac-5b8f-9ccb-549ab8e2eee5",
+        "22": "605e955b-2f67-534a-9e66-1104b53e122a",
+        "23": "5f5c2471-71eb-5131-8031-9f94490d9193",
+        "24": "0a95e7e7-75ca-5d2e-af03-548e21c406f7"
+      },
+      "saved_instances": 1
+    },
+    {
+      "reference": "C1501",
+      "board": "REAR",
+      "project": "rear_sensor_revA",
+      "path": "/e9412e56-0f4f-4ec5-ad89-3d7d6481d433",
+      "placed_uuid": "5136a85b-9d29-51e0-aadb-79ce4942ddeb",
+      "pin_uuids": {
+        "1": "fcb806f1-992a-59f2-9f87-f7128f48ab5e",
+        "2": "e578db2f-2416-5649-b0a9-cf0b860b1cf8"
+      },
+      "saved_instances": 1
+    },
+    {
+      "reference": "#FLG1501",
+      "board": "REAR",
+      "project": "rear_sensor_revA",
+      "path": "/e9412e56-0f4f-4ec5-ad89-3d7d6481d433",
+      "placed_uuid": "3e0cef5a-a4f6-598e-800b-4cdb64cb3554",
+      "pin_uuids": {
+        "1": "170da692-2b91-5387-9f7d-2ea35094ddb0"
+      },
+      "saved_instances": 1
+    },
+    {
+      "reference": "#FLG1502",
+      "board": "REAR",
+      "project": "rear_sensor_revA",
+      "path": "/e9412e56-0f4f-4ec5-ad89-3d7d6481d433",
+      "placed_uuid": "90553dba-f2d7-541e-827e-3555bd4dca6c",
+      "pin_uuids": {
+        "1": "e785b860-e5b2-5eb1-8a41-72ac5e9a60ff"
+      },
+      "saved_instances": 1
+    },
+    {
+      "reference": "#FLG1503",
+      "board": "REAR",
+      "project": "rear_sensor_revA",
+      "path": "/e9412e56-0f4f-4ec5-ad89-3d7d6481d433",
+      "placed_uuid": "cd7b000c-ef97-57e3-bf6f-84c22e4db51a",
+      "pin_uuids": {
+        "1": "e711d39a-59c2-5a6e-96c9-1be74d6edac0"
+      },
+      "saved_instances": 1
+    }
+  ],
+  "D1201_qualification": "Recommended normal VBUS 4.0-5.5V; absolute stress limits -0.3..22V. Positive transient overshoot shall remain below 22V and negative transient/reverse protection shall keep PMIC VBUS at or above -0.3V with design margin. Sustained reverse voltage requires series blocking; final clamps and series protection remain TBD against qualified dock/fault envelope; TVS standoff above dock maximum.",
+  "replay_instance_maps_verified": true,
+  "obsolete_requirement_hits": [],
+  "all_current_per_root_native_pin_memberships_unchanged": true,
+  "all_current_native_component_records_preserved_except_Qualification": true,
+  "counts": {
+    "main": {
+      "components": 202,
+      "nets": 359
+    },
+    "rear": {
+      "components": 46,
+      "nets": 44
+    }
+  },
+  "erc": {
+    "main": {
+      "errors": 0,
+      "warnings": 991,
+      "types": {
+        "endpoint_off_grid": 962,
+        "label_multiple_wires": 2,
+        "unconnected_wire_endpoint": 1,
+        "lib_symbol_mismatch": 2,
+        "isolated_pin_label": 7,
+        "same_local_global_label": 14,
+        "pin_to_pin": 3
+      }
+    },
+    "rear": {
+      "errors": 0,
+      "warnings": 225,
+      "types": {
+        "endpoint_off_grid": 223,
+        "pin_to_pin": 2
+      }
+    }
+  },
+  "UUIDs": {
+    "actual_objects": 4217,
+    "duplicates": 0
+  },
+  "reference_duplicates": 0,
+  "all_inherited_instance_metadata_unchanged": true,
+  "PCB_SHA256": "05512932ae4aa7fb418c74bb61d83861c8c0412dbb4919127894d737a653dec5"
+}

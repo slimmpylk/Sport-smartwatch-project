@@ -1,0 +1,185 @@
+{
+  "protocol_version": 2,
+  "target_format": "kicad",
+  "target_file": "12_CHARGING.kicad_sch",
+  "ops": [
+    {
+      "op": "place_component",
+      "designator": "J202",
+      "lib_id": "Connector_Generic:Conn_01x02",
+      "x_mil": 1800,
+      "y_mil": 2200,
+      "value": "CHARGER_HARNESS_TBD",
+      "footprint": "",
+      "instance_designators": {
+        "/063f9d99-6c07-44cf-ba32-e33897e06972/13f98b5d-2735-4ce5-b6a9-56134247b933": "J202"
+      }
+    },
+    {
+      "op": "set_component_parameters",
+      "designator": "J202",
+      "parameters": {
+        "Board": "MAIN",
+        "SelectionStatus": "PROVISIONAL - MPN and footprint TBD",
+        "Contract": "pin1=CHG_RAW_5V; pin2=GND; external contacts separate"
+      },
+      "instance_designators": {
+        "/063f9d99-6c07-44cf-ba32-e33897e06972/13f98b5d-2735-4ce5-b6a9-56134247b933": "J202"
+      }
+    },
+    {
+      "op": "add_net_label",
+      "at": "J202.1",
+      "name": "CHG_RAW_5V",
+      "scope": "global"
+    },
+    {
+      "op": "add_net_label",
+      "at": "J202.2",
+      "name": "GND",
+      "scope": "global"
+    },
+    {
+      "op": "place_component",
+      "designator": "U1201",
+      "lib_id": "sportwatch_interfaces:ChargerProtection_Provision",
+      "x_mil": 4800,
+      "y_mil": 2200,
+      "value": "MANDATORY_OV_REV_ILIM_MPN_TBD",
+      "footprint": "",
+      "instance_designators": {
+        "/063f9d99-6c07-44cf-ba32-e33897e06972/13f98b5d-2735-4ce5-b6a9-56134247b933": "U1201"
+      }
+    },
+    {
+      "op": "set_component_parameters",
+      "designator": "U1201",
+      "parameters": {
+        "Board": "MAIN",
+        "SelectionStatus": "PROVISIONAL - MPN and footprint TBD",
+        "Implementation": "Functional provision, not a selected IC; must implement OV disconnect, reverse polarity/reverse current block, current/fault limit"
+      },
+      "instance_designators": {
+        "/063f9d99-6c07-44cf-ba32-e33897e06972/13f98b5d-2735-4ce5-b6a9-56134247b933": "U1201"
+      }
+    },
+    {
+      "op": "add_net_label",
+      "at": "U1201.1",
+      "name": "CHG_RAW_5V",
+      "scope": "global"
+    },
+    {
+      "op": "add_net_label",
+      "at": "U1201.2",
+      "name": "VBUSIN",
+      "scope": "global"
+    },
+    {
+      "op": "add_net_label",
+      "at": "U1201.3",
+      "name": "GND",
+      "scope": "global"
+    },
+    {
+      "op": "place_component",
+      "designator": "D1201",
+      "lib_id": "Device:D_TVS",
+      "x_mil": 7800,
+      "y_mil": 2200,
+      "value": "ESD_TVS_RATING_MPN_TBD",
+      "footprint": "",
+      "instance_designators": {
+        "/063f9d99-6c07-44cf-ba32-e33897e06972/13f98b5d-2735-4ce5-b6a9-56134247b933": "D1201"
+      }
+    },
+    {
+      "op": "set_component_parameters",
+      "designator": "D1201",
+      "parameters": {
+        "Board": "MAIN",
+        "SelectionStatus": "PROVISIONAL - MPN and footprint TBD",
+        "Qualification": "Recommended normal VBUS 4.0-5.5V; absolute stress limits -0.3..22V. Positive transient overshoot shall remain below 22V and negative transient/reverse protection shall keep PMIC VBUS at or above -0.3V with design margin. Sustained reverse voltage requires series blocking; final clamps and series protection remain TBD against qualified dock/fault envelope; TVS standoff above dock maximum."
+      },
+      "instance_designators": {
+        "/063f9d99-6c07-44cf-ba32-e33897e06972/13f98b5d-2735-4ce5-b6a9-56134247b933": "D1201"
+      }
+    },
+    {
+      "op": "add_net_label",
+      "at": "D1201.1",
+      "name": "VBUSIN",
+      "scope": "global"
+    },
+    {
+      "op": "add_net_label",
+      "at": "D1201.2",
+      "name": "GND",
+      "scope": "global"
+    },
+    {
+      "op": "place_component",
+      "designator": "#FLG1201",
+      "lib_id": "power:PWR_FLAG",
+      "x_mil": 1800,
+      "y_mil": 3600,
+      "value": "PWR_FLAG",
+      "footprint": "",
+      "instance_designators": {
+        "/063f9d99-6c07-44cf-ba32-e33897e06972/13f98b5d-2735-4ce5-b6a9-56134247b933": "#FLG1201"
+      }
+    },
+    {
+      "op": "set_component_parameters",
+      "designator": "#FLG1201",
+      "parameters": {
+        "Board": "MAIN",
+        "SelectionStatus": "PROVISIONAL - MPN and footprint TBD",
+        "Source": "External current-limited +5V dock via separate harness"
+      },
+      "instance_designators": {
+        "/063f9d99-6c07-44cf-ba32-e33897e06972/13f98b5d-2735-4ce5-b6a9-56134247b933": "#FLG1201"
+      }
+    },
+    {
+      "op": "add_net_label",
+      "at": "#FLG1201.1",
+      "name": "CHG_RAW_5V",
+      "scope": "global"
+    },
+    {
+      "op": "add_text",
+      "text": "U1201 mandatory functional protection provision. No bypass. Final implementation/MPN/ratings require dock fault envelope.",
+      "at": [
+        500,
+        5000
+      ]
+    },
+    {
+      "op": "add_text",
+      "text": "nPM1300 PS v1.3: VBUS operational 4.0-5.5V; absolute -0.3..22V. Built-in OV isolation does not qualify negative input.",
+      "at": [
+        500,
+        5500
+      ]
+    },
+    {
+      "op": "add_text",
+      "text": "TVS alone does not solve sustained OV/reverse polarity. Provide local contact ESD diversion in dedicated CHARGER harness.",
+      "at": [
+        500,
+        6000
+      ]
+    },
+    {
+      "op": "add_text",
+      "text": "C201 remains on MAIN at U201 VBUS input. Charger current must not use sensor FPC, PD_GND, NT401/NT402 or optical guard copper.",
+      "at": [
+        500,
+        6500
+      ]
+    }
+  ],
+  "_required_post_apply": "python3 design/interfaces/correct_round1_metadata.py --apply; then run it without --apply to verify saved project/path and qualification",
+  "_saved_instance_project": "sportwatch_revA"
+}

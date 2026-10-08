@@ -1,0 +1,166 @@
+{
+  "revision": 1,
+  "status": "abstract positions; MPN/footprints/mating permutation TBD",
+  "main": {
+    "root": "sportwatch_revA.kicad_sch",
+    "connector": "J1501"
+  },
+  "rear": {
+    "root": "rear_sensor/rear_sensor_revA.kicad_sch",
+    "connector": "J1502"
+  },
+  "positions": [
+    {
+      "position": 1,
+      "net": "GND",
+      "main_pin": "1",
+      "rear_pin": "1"
+    },
+    {
+      "position": 2,
+      "net": "PPG_SPI_SCLK",
+      "main_pin": "2",
+      "rear_pin": "2"
+    },
+    {
+      "position": 3,
+      "net": "GND",
+      "main_pin": "3",
+      "rear_pin": "3"
+    },
+    {
+      "position": 4,
+      "net": "PPG_SPI_MOSI",
+      "main_pin": "4",
+      "rear_pin": "4"
+    },
+    {
+      "position": 5,
+      "net": "GND",
+      "main_pin": "5",
+      "rear_pin": "5"
+    },
+    {
+      "position": 6,
+      "net": "PPG_SPI_MISO",
+      "main_pin": "6",
+      "rear_pin": "6"
+    },
+    {
+      "position": 7,
+      "net": "GND",
+      "main_pin": "7",
+      "rear_pin": "7"
+    },
+    {
+      "position": 8,
+      "net": "PPG1_CS_N",
+      "main_pin": "8",
+      "rear_pin": "8"
+    },
+    {
+      "position": 9,
+      "net": "PPG2_CS_N",
+      "main_pin": "9",
+      "rear_pin": "9"
+    },
+    {
+      "position": 10,
+      "net": "GND",
+      "main_pin": "10",
+      "rear_pin": "10"
+    },
+    {
+      "position": 11,
+      "net": "PPG1_INT_N",
+      "main_pin": "11",
+      "rear_pin": "11"
+    },
+    {
+      "position": 12,
+      "net": "PPG2_INT_N",
+      "main_pin": "12",
+      "rear_pin": "12"
+    },
+    {
+      "position": 13,
+      "net": "PPG_SAMPLE_SYNC",
+      "main_pin": "13",
+      "rear_pin": "13"
+    },
+    {
+      "position": 14,
+      "net": "GND",
+      "main_pin": "14",
+      "rear_pin": "14"
+    },
+    {
+      "position": 15,
+      "net": "ENV_I2C_SCL",
+      "main_pin": "15",
+      "rear_pin": "15"
+    },
+    {
+      "position": 16,
+      "net": "ENV_I2C_SDA",
+      "main_pin": "16",
+      "rear_pin": "16"
+    },
+    {
+      "position": 17,
+      "net": "GND",
+      "main_pin": "17",
+      "rear_pin": "17"
+    },
+    {
+      "position": 18,
+      "net": "VOUT1_1V8",
+      "main_pin": "18",
+      "rear_pin": "18"
+    },
+    {
+      "position": 19,
+      "net": "GND",
+      "main_pin": "19",
+      "rear_pin": "19"
+    },
+    {
+      "position": 20,
+      "net": "GND",
+      "main_pin": "20",
+      "rear_pin": "20"
+    },
+    {
+      "position": 21,
+      "net": "PPG_VLED",
+      "main_pin": "21",
+      "rear_pin": "21"
+    },
+    {
+      "position": 22,
+      "net": "PPG_VLED",
+      "main_pin": "22",
+      "rear_pin": "22"
+    },
+    {
+      "position": 23,
+      "net": "PPG_VLED",
+      "main_pin": "23",
+      "rear_pin": "23"
+    },
+    {
+      "position": 24,
+      "net": "GND",
+      "main_pin": "24",
+      "rear_pin": "24"
+    }
+  ],
+  "local_only": [
+    "PD_IN",
+    "PD_GND",
+    "VREF",
+    "LED_CATHODES",
+    "PPG1_LED_MUX_SEL",
+    "PPG2_LED_MUX_SEL"
+  ]
+}

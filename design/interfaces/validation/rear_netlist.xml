@@ -1,0 +1,1948 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<export version="E">
+  <design>
+    <source>/tmp/sportwatch-multiboard-correction-r1/repository/rear_sensor/rear_sensor_revA.kicad_sch</source>
+    <date>2026-10-08T13:59:32</date>
+    <tool>Eeschema 10.0.5</tool>
+    <textvar name="BOARD">REAR</textvar>
+    <textvar name="PHASE">SCHEMATIC ONLY; placement gates open</textvar>
+    <sheet number="1" name="/" tstamps="/">
+      <title_block>
+        <title>REAR SENSOR - external MAIN supplies / 24-position interface</title>
+        <company/>
+        <rev>A-P1</rev>
+        <date>2026-10-08</date>
+        <source>rear_sensor_revA.kicad_sch</source>
+        <comment number="1" value=""/>
+        <comment number="2" value=""/>
+        <comment number="3" value=""/>
+        <comment number="4" value=""/>
+        <comment number="5" value=""/>
+        <comment number="6" value=""/>
+        <comment number="7" value=""/>
+        <comment number="8" value=""/>
+        <comment number="9" value=""/>
+      </title_block>
+    </sheet>
+    <sheet number="2" name="/Optical/" tstamps="/56b54535-d023-45c5-9cb1-b85ec96641c9/">
+      <title_block>
+        <title>REAR - dual MAX86141 / optical / mux / local guards</title>
+        <company/>
+        <rev>A-P1</rev>
+        <date>2026-10-08</date>
+        <source>04_PPG.kicad_sch</source>
+        <comment number="1" value=""/>
+        <comment number="2" value=""/>
+        <comment number="3" value=""/>
+        <comment number="4" value=""/>
+        <comment number="5" value=""/>
+        <comment number="6" value=""/>
+        <comment number="7" value=""/>
+        <comment number="8" value=""/>
+        <comment number="9" value=""/>
+      </title_block>
+    </sheet>
+    <sheet number="3" name="/Temperature/" tstamps="/a4b790ff-ae97-4241-9d88-606540620ce7/">
+      <title_block>
+        <title>REAR - MAX30208 ten-pin Thin LGA / polled temperature</title>
+        <company/>
+        <rev>A-P1</rev>
+        <date>2026-10-08</date>
+        <source>08_TEMPERATURE.kicad_sch</source>
+        <comment number="1" value=""/>
+        <comment number="2" value=""/>
+        <comment number="3" value=""/>
+        <comment number="4" value=""/>
+        <comment number="5" value=""/>
+        <comment number="6" value=""/>
+        <comment number="7" value=""/>
+        <comment number="8" value=""/>
+        <comment number="9" value=""/>
+      </title_block>
+    </sheet>
+  </design>
+  <components>
+    <comp ref="C1501">
+      <value>TBD_REAR_ENTRY_RESERVOIR</value>
+      <fields>
+        <field name="Board">REAR</field>
+        <field name="SelectionStatus">PROVISIONAL - MPN and footprint TBD</field>
+        <field name="Population">DNP - sizing gate open</field>
+        <field name="Footprint"/>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="Device" part="C" description="Unpolarized capacitor"/>
+      <property name="Board" value="REAR"/>
+      <property name="SelectionStatus" value="PROVISIONAL - MPN and footprint TBD"/>
+      <property name="Population" value="DNP - sizing gate open"/>
+      <property name="Sheetname" value="rear_sensor_revA"/>
+      <property name="Sheetfile" value="rear_sensor_revA.kicad_sch"/>
+      <property name="dnp"/>
+      <property name="ki_keywords" value="cap capacitor"/>
+      <property name="ki_fp_filters" value="C_*"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>5136a85b-9d29-51e0-aadb-79ce4942ddeb</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="J1502">
+      <value>SENSOR_24_ABSTRACT</value>
+      <fields>
+        <field name="Board">REAR</field>
+        <field name="SelectionStatus">PROVISIONAL - MPN and footprint TBD</field>
+        <field name="Footprint"/>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="Connector_Generic" part="Conn_01x24" description="Generic connector, single row, 01x24, script generated (kicad-library-utils/schlib/autogen/connector/)"/>
+      <property name="Board" value="REAR"/>
+      <property name="SelectionStatus" value="PROVISIONAL - MPN and footprint TBD"/>
+      <property name="Sheetname" value="rear_sensor_revA"/>
+      <property name="Sheetfile" value="rear_sensor_revA.kicad_sch"/>
+      <property name="ki_keywords" value="connector"/>
+      <property name="ki_fp_filters" value="Connector*:*_1x??_*"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>6b2187e2-02d2-52d0-9134-bd6bae6228b4</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+            <pin num="3"/>
+            <pin num="4"/>
+            <pin num="5"/>
+            <pin num="6"/>
+            <pin num="7"/>
+            <pin num="8"/>
+            <pin num="9"/>
+            <pin num="10"/>
+            <pin num="11"/>
+            <pin num="12"/>
+            <pin num="13"/>
+            <pin num="14"/>
+            <pin num="15"/>
+            <pin num="16"/>
+            <pin num="17"/>
+            <pin num="18"/>
+            <pin num="19"/>
+            <pin num="20"/>
+            <pin num="21"/>
+            <pin num="22"/>
+            <pin num="23"/>
+            <pin num="24"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="C403">
+      <value>100nF</value>
+      <footprint>Capacitor_SMD:C_0402_1005Metric</footprint>
+      <datasheet>~</datasheet>
+      <description>Local mux supply decoupling</description>
+      <fields>
+        <field name="Board">REAR</field>
+        <field name="Footprint">Capacitor_SMD:C_0402_1005Metric</field>
+        <field name="Datasheet">~</field>
+        <field name="Description">Local mux supply decoupling</field>
+      </fields>
+      <libsource lib="Device" part="C" description="Unpolarized capacitor"/>
+      <property name="Board" value="REAR"/>
+      <property name="Sheetname" value="Optical"/>
+      <property name="Sheetfile" value="04_PPG.kicad_sch"/>
+      <property name="ki_keywords" value="cap capacitor"/>
+      <property name="ki_fp_filters" value="C_*"/>
+      <sheetpath names="/Optical/" tstamps="/56b54535-d023-45c5-9cb1-b85ec96641c9/"/>
+      <tstamps>bfc5a5cd-2b41-4476-9ec2-30ce12af98a0</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="C404">
+      <value>100nF</value>
+      <footprint>Capacitor_SMD:C_0402_1005Metric</footprint>
+      <datasheet>~</datasheet>
+      <description>Local mux supply decoupling</description>
+      <fields>
+        <field name="Board">REAR</field>
+        <field name="Footprint">Capacitor_SMD:C_0402_1005Metric</field>
+        <field name="Datasheet">~</field>
+        <field name="Description">Local mux supply decoupling</field>
+      </fields>
+      <libsource lib="Device" part="C" description="Unpolarized capacitor"/>
+      <property name="Board" value="REAR"/>
+      <property name="Sheetname" value="Optical"/>
+      <property name="Sheetfile" value="04_PPG.kicad_sch"/>
+      <property name="ki_keywords" value="cap capacitor"/>
+      <property name="ki_fp_filters" value="C_*"/>
+      <sheetpath names="/Optical/" tstamps="/56b54535-d023-45c5-9cb1-b85ec96641c9/"/>
+      <tstamps>3d601fc4-e008-4576-b08a-103fce5f71ce</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="C405">
+      <value>100nF</value>
+      <footprint>Capacitor_SMD:C_0402_1005Metric</footprint>
+      <datasheet>~</datasheet>
+      <description>Local mux supply decoupling</description>
+      <fields>
+        <field name="Board">REAR</field>
+        <field name="Footprint">Capacitor_SMD:C_0402_1005Metric</field>
+        <field name="Datasheet">~</field>
+        <field name="Description">Local mux supply decoupling</field>
+      </fields>
+      <libsource lib="Device" part="C" description="Unpolarized capacitor"/>
+      <property name="Board" value="REAR"/>
+      <property name="Sheetname" value="Optical"/>
+      <property name="Sheetfile" value="04_PPG.kicad_sch"/>
+      <property name="ki_keywords" value="cap capacitor"/>
+      <property name="ki_fp_filters" value="C_*"/>
+      <sheetpath names="/Optical/" tstamps="/56b54535-d023-45c5-9cb1-b85ec96641c9/"/>
+      <tstamps>8fbe3230-bfe9-4995-a27c-3e745609693b</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="C406">
+      <value>100nF</value>
+      <footprint>Capacitor_SMD:C_0402_1005Metric</footprint>
+      <datasheet>~</datasheet>
+      <description>Local mux supply decoupling</description>
+      <fields>
+        <field name="Board">REAR</field>
+        <field name="Footprint">Capacitor_SMD:C_0402_1005Metric</field>
+        <field name="Datasheet">~</field>
+        <field name="Description">Local mux supply decoupling</field>
+      </fields>
+      <libsource lib="Device" part="C" description="Unpolarized capacitor"/>
+      <property name="Board" value="REAR"/>
+      <property name="Sheetname" value="Optical"/>
+      <property name="Sheetfile" value="04_PPG.kicad_sch"/>
+      <property name="ki_keywords" value="cap capacitor"/>
+      <property name="ki_fp_filters" value="C_*"/>
+      <sheetpath names="/Optical/" tstamps="/56b54535-d023-45c5-9cb1-b85ec96641c9/"/>
+      <tstamps>e9924ce7-150f-4184-9c27-2b93b4b817d4</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="C407">
+      <value>100nF</value>
+      <footprint>Capacitor_SMD:C_0402_1005Metric</footprint>
+      <datasheet>~</datasheet>
+      <description>Local mux supply decoupling</description>
+      <fields>
+        <field name="Board">REAR</field>
+        <field name="Footprint">Capacitor_SMD:C_0402_1005Metric</field>
+        <field name="Datasheet">~</field>
+        <field name="Description">Local mux supply decoupling</field>
+      </fields>
+      <libsource lib="Device" part="C" description="Unpolarized capacitor"/>
+      <property name="Board" value="REAR"/>
+      <property name="Sheetname" value="Optical"/>
+      <property name="Sheetfile" value="04_PPG.kicad_sch"/>
+      <property name="ki_keywords" value="cap capacitor"/>
+      <property name="ki_fp_filters" value="C_*"/>
+      <sheetpath names="/Optical/" tstamps="/56b54535-d023-45c5-9cb1-b85ec96641c9/"/>
+      <tstamps>60f1dc50-ca3f-454d-9e1e-810e37ffc891</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="C408">
+      <value>100nF</value>
+      <footprint>Capacitor_SMD:C_0402_1005Metric</footprint>
+      <datasheet>~</datasheet>
+      <description>Local mux supply decoupling</description>
+      <fields>
+        <field name="Board">REAR</field>
+        <field name="Footprint">Capacitor_SMD:C_0402_1005Metric</field>
+        <field name="Datasheet">~</field>
+        <field name="Description">Local mux supply decoupling</field>
+      </fields>
+      <libsource lib="Device" part="C" description="Unpolarized capacitor"/>
+      <property name="Board" value="REAR"/>
+      <property name="Sheetname" value="Optical"/>
+      <property name="Sheetfile" value="04_PPG.kicad_sch"/>
+      <property name="ki_keywords" value="cap capacitor"/>
+      <property name="ki_fp_filters" value="C_*"/>
+      <sheetpath names="/Optical/" tstamps="/56b54535-d023-45c5-9cb1-b85ec96641c9/"/>
+      <tstamps>a40405e3-d063-491c-bcb3-8e6bfb1fcf17</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="C4101">
+      <value>22uF</value>
+      <footprint>Capacitor_SMD:C_0402_1005Metric</footprint>
+      <datasheet>~</datasheet>
+      <description>combined VDD_ANA/VDD_DIG bulk decoupling</description>
+      <fields>
+        <field name="Board">REAR</field>
+        <field name="Footprint">Capacitor_SMD:C_0402_1005Metric</field>
+        <field name="Datasheet">~</field>
+        <field name="Description">combined VDD_ANA/VDD_DIG bulk decoupling</field>
+      </fields>
+      <libsource lib="Device" part="C" description="Unpolarized capacitor"/>
+      <property name="Board" value="REAR"/>
+      <property name="Sheetname" value="Optical"/>
+      <property name="Sheetfile" value="04_PPG.kicad_sch"/>
+      <property name="ki_keywords" value="cap capacitor"/>
+      <property name="ki_fp_filters" value="C_*"/>
+      <sheetpath names="/Optical/" tstamps="/56b54535-d023-45c5-9cb1-b85ec96641c9/"/>
+      <tstamps>d85e8b5c-b060-42a2-98b1-8f42bf4b98df</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="C4102">
+      <value>100nF</value>
+      <footprint>Capacitor_SMD:C_0402_1005Metric</footprint>
+      <datasheet>~</datasheet>
+      <description>combined VDD_ANA/VDD_DIG high-frequency decoupling</description>
+      <fields>
+        <field name="Board">REAR</field>
+        <field name="Footprint">Capacitor_SMD:C_0402_1005Metric</field>
+        <field name="Datasheet">~</field>
+        <field name="Description">combined VDD_ANA/VDD_DIG high-frequency decoupling</field>
+      </fields>
+      <libsource lib="Device" part="C" description="Unpolarized capacitor"/>
+      <property name="Board" value="REAR"/>
+      <property name="Sheetname" value="Optical"/>
+      <property name="Sheetfile" value="04_PPG.kicad_sch"/>
+      <property name="ki_keywords" value="cap capacitor"/>
+      <property name="ki_fp_filters" value="C_*"/>
+      <sheetpath names="/Optical/" tstamps="/56b54535-d023-45c5-9cb1-b85ec96641c9/"/>
+      <tstamps>94842c08-9a3c-4daa-8caa-0efc59e1777d</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="C4103">
+      <value>1.0uF</value>
+      <footprint>Capacitor_SMD:C_0402_1005Metric</footprint>
+      <datasheet>~</datasheet>
+      <description>VREF decoupling</description>
+      <fields>
+        <field name="Board">REAR</field>
+        <field name="Footprint">Capacitor_SMD:C_0402_1005Metric</field>
+        <field name="Datasheet">~</field>
+        <field name="Description">VREF decoupling</field>
+      </fields>
+      <libsource lib="Device" part="C" description="Unpolarized capacitor"/>
+      <property name="Board" value="REAR"/>
+      <property name="Sheetname" value="Optical"/>
+      <property name="Sheetfile" value="04_PPG.kicad_sch"/>
+      <property name="ki_keywords" value="cap capacitor"/>
+      <property name="ki_fp_filters" value="C_*"/>
+      <sheetpath names="/Optical/" tstamps="/56b54535-d023-45c5-9cb1-b85ec96641c9/"/>
+      <tstamps>064559f6-625a-407a-a04e-9d836e0b2e7a</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="C4104">
+      <value>10uF</value>
+      <footprint>Capacitor_SMD:C_0402_1005Metric</footprint>
+      <datasheet>~</datasheet>
+      <description>VLED local decoupling</description>
+      <fields>
+        <field name="Board">REAR</field>
+        <field name="Footprint">Capacitor_SMD:C_0402_1005Metric</field>
+        <field name="Datasheet">~</field>
+        <field name="Description">VLED local decoupling</field>
+      </fields>
+      <libsource lib="Device" part="C" description="Unpolarized capacitor"/>
+      <property name="Board" value="REAR"/>
+      <property name="Sheetname" value="Optical"/>
+      <property name="Sheetfile" value="04_PPG.kicad_sch"/>
+      <property name="ki_keywords" value="cap capacitor"/>
+      <property name="ki_fp_filters" value="C_*"/>
+      <sheetpath names="/Optical/" tstamps="/56b54535-d023-45c5-9cb1-b85ec96641c9/"/>
+      <tstamps>1a765b6a-1277-45a0-8250-39a14410cd20</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="C4201">
+      <value>22uF</value>
+      <footprint>Capacitor_SMD:C_0402_1005Metric</footprint>
+      <datasheet>~</datasheet>
+      <description>combined VDD_ANA/VDD_DIG bulk decoupling</description>
+      <fields>
+        <field name="Board">REAR</field>
+        <field name="Footprint">Capacitor_SMD:C_0402_1005Metric</field>
+        <field name="Datasheet">~</field>
+        <field name="Description">combined VDD_ANA/VDD_DIG bulk decoupling</field>
+      </fields>
+      <libsource lib="Device" part="C" description="Unpolarized capacitor"/>
+      <property name="Board" value="REAR"/>
+      <property name="Sheetname" value="Optical"/>
+      <property name="Sheetfile" value="04_PPG.kicad_sch"/>
+      <property name="ki_keywords" value="cap capacitor"/>
+      <property name="ki_fp_filters" value="C_*"/>
+      <sheetpath names="/Optical/" tstamps="/56b54535-d023-45c5-9cb1-b85ec96641c9/"/>
+      <tstamps>74dec967-4819-4e7b-a3df-59f909f391c1</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="C4202">
+      <value>100nF</value>
+      <footprint>Capacitor_SMD:C_0402_1005Metric</footprint>
+      <datasheet>~</datasheet>
+      <description>combined VDD_ANA/VDD_DIG high-frequency decoupling</description>
+      <fields>
+        <field name="Board">REAR</field>
+        <field name="Footprint">Capacitor_SMD:C_0402_1005Metric</field>
+        <field name="Datasheet">~</field>
+        <field name="Description">combined VDD_ANA/VDD_DIG high-frequency decoupling</field>
+      </fields>
+      <libsource lib="Device" part="C" description="Unpolarized capacitor"/>
+      <property name="Board" value="REAR"/>
+      <property name="Sheetname" value="Optical"/>
+      <property name="Sheetfile" value="04_PPG.kicad_sch"/>
+      <property name="ki_keywords" value="cap capacitor"/>
+      <property name="ki_fp_filters" value="C_*"/>
+      <sheetpath names="/Optical/" tstamps="/56b54535-d023-45c5-9cb1-b85ec96641c9/"/>
+      <tstamps>de232d86-e34e-4ce9-97b9-74c032fa56cf</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="C4203">
+      <value>1.0uF</value>
+      <footprint>Capacitor_SMD:C_0402_1005Metric</footprint>
+      <datasheet>~</datasheet>
+      <description>VREF decoupling</description>
+      <fields>
+        <field name="Board">REAR</field>
+        <field name="Footprint">Capacitor_SMD:C_0402_1005Metric</field>
+        <field name="Datasheet">~</field>
+        <field name="Description">VREF decoupling</field>
+      </fields>
+      <libsource lib="Device" part="C" description="Unpolarized capacitor"/>
+      <property name="Board" value="REAR"/>
+      <property name="Sheetname" value="Optical"/>
+      <property name="Sheetfile" value="04_PPG.kicad_sch"/>
+      <property name="ki_keywords" value="cap capacitor"/>
+      <property name="ki_fp_filters" value="C_*"/>
+      <sheetpath names="/Optical/" tstamps="/56b54535-d023-45c5-9cb1-b85ec96641c9/"/>
+      <tstamps>2ca274ce-ced7-4142-b7b8-d9fe5a3a24ce</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="C4204">
+      <value>10uF</value>
+      <footprint>Capacitor_SMD:C_0402_1005Metric</footprint>
+      <datasheet>~</datasheet>
+      <description>VLED local decoupling</description>
+      <fields>
+        <field name="Board">REAR</field>
+        <field name="Footprint">Capacitor_SMD:C_0402_1005Metric</field>
+        <field name="Datasheet">~</field>
+        <field name="Description">VLED local decoupling</field>
+      </fields>
+      <libsource lib="Device" part="C" description="Unpolarized capacitor"/>
+      <property name="Board" value="REAR"/>
+      <property name="Sheetname" value="Optical"/>
+      <property name="Sheetfile" value="04_PPG.kicad_sch"/>
+      <property name="ki_keywords" value="cap capacitor"/>
+      <property name="ki_fp_filters" value="C_*"/>
+      <sheetpath names="/Optical/" tstamps="/56b54535-d023-45c5-9cb1-b85ec96641c9/"/>
+      <tstamps>b7df98da-fb85-4a7f-81bd-005b4356870b</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="D401">
+      <value>SFH7018A Q65113A6157</value>
+      <footprint>sportwatch_custom:OSRAM_SFH7018A_2.4x2.4mm</footprint>
+      <description>Green/red/IR biometric LED package; footprint TBD</description>
+      <fields>
+        <field name="Board">REAR</field>
+        <field name="Footprint">sportwatch_custom:OSRAM_SFH7018A_2.4x2.4mm</field>
+        <field name="Datasheet"/>
+        <field name="Description">Green/red/IR biometric LED package; footprint TBD</field>
+      </fields>
+      <libsource lib="sportwatch_custom" part="SFH7018A" description="OSRAM SFH 7018A green/red/940nm biometric emitter, Q65113A6157"/>
+      <property name="Board" value="REAR"/>
+      <property name="Sheetname" value="Optical"/>
+      <property name="Sheetfile" value="04_PPG.kicad_sch"/>
+      <sheetpath names="/Optical/" tstamps="/56b54535-d023-45c5-9cb1-b85ec96641c9/"/>
+      <tstamps>8211c225-6d40-467c-9a46-08b7705df3de</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="3"/>
+            <pin num="5"/>
+            <pin num="7"/>
+            <pin num="8"/>
+            <pin num="2"/>
+            <pin num="4"/>
+            <pin num="6"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="D402">
+      <value>SFH7018A Q65113A6157</value>
+      <footprint>sportwatch_custom:OSRAM_SFH7018A_2.4x2.4mm</footprint>
+      <description>Green/red/IR biometric LED package; footprint TBD</description>
+      <fields>
+        <field name="Board">REAR</field>
+        <field name="Footprint">sportwatch_custom:OSRAM_SFH7018A_2.4x2.4mm</field>
+        <field name="Datasheet"/>
+        <field name="Description">Green/red/IR biometric LED package; footprint TBD</field>
+      </fields>
+      <libsource lib="sportwatch_custom" part="SFH7018A" description="OSRAM SFH 7018A green/red/940nm biometric emitter, Q65113A6157"/>
+      <property name="Board" value="REAR"/>
+      <property name="Sheetname" value="Optical"/>
+      <property name="Sheetfile" value="04_PPG.kicad_sch"/>
+      <sheetpath names="/Optical/" tstamps="/56b54535-d023-45c5-9cb1-b85ec96641c9/"/>
+      <tstamps>9560cf42-acee-4fa3-b7ac-ebc73a1215c7</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="3"/>
+            <pin num="5"/>
+            <pin num="7"/>
+            <pin num="8"/>
+            <pin num="2"/>
+            <pin num="4"/>
+            <pin num="6"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="D403">
+      <value>SFH7018A Q65113A6157</value>
+      <footprint>sportwatch_custom:OSRAM_SFH7018A_2.4x2.4mm</footprint>
+      <datasheet>SFH 7018A_EN.pdf</datasheet>
+      <description>Green/red/940nm biometric LED package; only green/red active in this bank; footprint TBD</description>
+      <fields>
+        <field name="Board">REAR</field>
+        <field name="Footprint">sportwatch_custom:OSRAM_SFH7018A_2.4x2.4mm</field>
+        <field name="Datasheet">SFH 7018A_EN.pdf</field>
+        <field name="Description">Green/red/940nm biometric LED package; only green/red active in this bank; footprint TBD</field>
+      </fields>
+      <libsource lib="sportwatch_custom" part="SFH7018A" description="OSRAM SFH 7018A green/red/940nm biometric emitter, Q65113A6157"/>
+      <property name="Board" value="REAR"/>
+      <property name="Sheetname" value="Optical"/>
+      <property name="Sheetfile" value="04_PPG.kicad_sch"/>
+      <sheetpath names="/Optical/" tstamps="/56b54535-d023-45c5-9cb1-b85ec96641c9/"/>
+      <tstamps>29561b3d-cc6d-4f8f-a023-cbe93bb5aa0d</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="3"/>
+            <pin num="5"/>
+            <pin num="7"/>
+            <pin num="8"/>
+            <pin num="2"/>
+            <pin num="4"/>
+            <pin num="6"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="D404">
+      <value>SFH7018A Q65113A6157</value>
+      <footprint>sportwatch_custom:OSRAM_SFH7018A_2.4x2.4mm</footprint>
+      <datasheet>SFH 7018A_EN.pdf</datasheet>
+      <description>Green/red/940nm biometric LED package; only green/red active in this bank; footprint TBD</description>
+      <fields>
+        <field name="Board">REAR</field>
+        <field name="Footprint">sportwatch_custom:OSRAM_SFH7018A_2.4x2.4mm</field>
+        <field name="Datasheet">SFH 7018A_EN.pdf</field>
+        <field name="Description">Green/red/940nm biometric LED package; only green/red active in this bank; footprint TBD</field>
+      </fields>
+      <libsource lib="sportwatch_custom" part="SFH7018A" description="OSRAM SFH 7018A green/red/940nm biometric emitter, Q65113A6157"/>
+      <property name="Board" value="REAR"/>
+      <property name="Sheetname" value="Optical"/>
+      <property name="Sheetfile" value="04_PPG.kicad_sch"/>
+      <sheetpath names="/Optical/" tstamps="/56b54535-d023-45c5-9cb1-b85ec96641c9/"/>
+      <tstamps>034490c5-27bf-407f-9512-92bbe8719530</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="3"/>
+            <pin num="5"/>
+            <pin num="7"/>
+            <pin num="8"/>
+            <pin num="2"/>
+            <pin num="4"/>
+            <pin num="6"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="D405">
+      <value>SFH4053B Q65115A1586</value>
+      <footprint>sportwatch_custom:OSRAM_SFH4053B_1.0x0.5mm</footprint>
+      <datasheet>https://ams-osram.com/products/leds/ir-leds/osram-chip-led-sfh-4053b</datasheet>
+      <description>850nm-class IR emitter; 70mA DC rating; footprint TBD</description>
+      <fields>
+        <field name="Board">REAR</field>
+        <field name="Footprint">sportwatch_custom:OSRAM_SFH4053B_1.0x0.5mm</field>
+        <field name="Datasheet">https://ams-osram.com/products/leds/ir-leds/osram-chip-led-sfh-4053b</field>
+        <field name="Description">850nm-class IR emitter; 70mA DC rating; footprint TBD</field>
+      </fields>
+      <libsource lib="sportwatch_custom" part="SFH4053B" description="ams OSRAM SFH 4053B 850nm-class IR emitter, Q65115A1586; footprint TBD"/>
+      <property name="Board" value="REAR"/>
+      <property name="Sheetname" value="Optical"/>
+      <property name="Sheetfile" value="04_PPG.kicad_sch"/>
+      <sheetpath names="/Optical/" tstamps="/56b54535-d023-45c5-9cb1-b85ec96641c9/"/>
+      <tstamps>8cc5760d-1d95-44ae-b12f-d419538c95b7</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="2"/>
+            <pin num="1"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="D406">
+      <value>SFH4053B Q65115A1586</value>
+      <footprint>sportwatch_custom:OSRAM_SFH4053B_1.0x0.5mm</footprint>
+      <datasheet>https://ams-osram.com/products/leds/ir-leds/osram-chip-led-sfh-4053b</datasheet>
+      <description>850nm-class IR emitter; 70mA DC rating; footprint TBD</description>
+      <fields>
+        <field name="Board">REAR</field>
+        <field name="Footprint">sportwatch_custom:OSRAM_SFH4053B_1.0x0.5mm</field>
+        <field name="Datasheet">https://ams-osram.com/products/leds/ir-leds/osram-chip-led-sfh-4053b</field>
+        <field name="Description">850nm-class IR emitter; 70mA DC rating; footprint TBD</field>
+      </fields>
+      <libsource lib="sportwatch_custom" part="SFH4053B" description="ams OSRAM SFH 4053B 850nm-class IR emitter, Q65115A1586; footprint TBD"/>
+      <property name="Board" value="REAR"/>
+      <property name="Sheetname" value="Optical"/>
+      <property name="Sheetfile" value="04_PPG.kicad_sch"/>
+      <sheetpath names="/Optical/" tstamps="/56b54535-d023-45c5-9cb1-b85ec96641c9/"/>
+      <tstamps>b6d5f9da-38ba-45e9-b9ff-bdd9f7f43e39</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="2"/>
+            <pin num="1"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="D407">
+      <value>SFH4053B Q65115A1586</value>
+      <footprint>sportwatch_custom:OSRAM_SFH4053B_1.0x0.5mm</footprint>
+      <datasheet>https://ams-osram.com/products/leds/ir-leds/osram-chip-led-sfh-4053b</datasheet>
+      <description>850nm-class IR emitter; 70mA DC rating; footprint TBD</description>
+      <fields>
+        <field name="Board">REAR</field>
+        <field name="Footprint">sportwatch_custom:OSRAM_SFH4053B_1.0x0.5mm</field>
+        <field name="Datasheet">https://ams-osram.com/products/leds/ir-leds/osram-chip-led-sfh-4053b</field>
+        <field name="Description">850nm-class IR emitter; 70mA DC rating; footprint TBD</field>
+      </fields>
+      <libsource lib="sportwatch_custom" part="SFH4053B" description="ams OSRAM SFH 4053B 850nm-class IR emitter, Q65115A1586; footprint TBD"/>
+      <property name="Board" value="REAR"/>
+      <property name="Sheetname" value="Optical"/>
+      <property name="Sheetfile" value="04_PPG.kicad_sch"/>
+      <sheetpath names="/Optical/" tstamps="/56b54535-d023-45c5-9cb1-b85ec96641c9/"/>
+      <tstamps>4ddf10a9-4514-47ec-b80d-c961aeaa0fff</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="2"/>
+            <pin num="1"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="D413">
+      <value>SFH2703H Q65115A2199</value>
+      <footprint>sportwatch_custom:OSRAM_SFH2703_3.2x2.0mm</footprint>
+      <description>Broadband PIN photodiode; footprint TBD</description>
+      <fields>
+        <field name="Board">REAR</field>
+        <field name="Footprint">sportwatch_custom:OSRAM_SFH2703_3.2x2.0mm</field>
+        <field name="Datasheet"/>
+        <field name="Description">Broadband PIN photodiode; footprint TBD</field>
+      </fields>
+      <libsource lib="sportwatch_custom" part="SFH2703H" description="OSRAM SFH 2703H broadband silicon PIN photodiode, Q65115A2199"/>
+      <property name="Board" value="REAR"/>
+      <property name="Sheetname" value="Optical"/>
+      <property name="Sheetfile" value="04_PPG.kicad_sch"/>
+      <sheetpath names="/Optical/" tstamps="/56b54535-d023-45c5-9cb1-b85ec96641c9/"/>
+      <tstamps>cb8791d2-f001-4f91-92c2-8b09beba1e7c</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="D414">
+      <value>SFH2703H Q65115A2199</value>
+      <footprint>sportwatch_custom:OSRAM_SFH2703_3.2x2.0mm</footprint>
+      <description>Broadband PIN photodiode; footprint TBD</description>
+      <fields>
+        <field name="Board">REAR</field>
+        <field name="Footprint">sportwatch_custom:OSRAM_SFH2703_3.2x2.0mm</field>
+        <field name="Datasheet"/>
+        <field name="Description">Broadband PIN photodiode; footprint TBD</field>
+      </fields>
+      <libsource lib="sportwatch_custom" part="SFH2703H" description="OSRAM SFH 2703H broadband silicon PIN photodiode, Q65115A2199"/>
+      <property name="Board" value="REAR"/>
+      <property name="Sheetname" value="Optical"/>
+      <property name="Sheetfile" value="04_PPG.kicad_sch"/>
+      <sheetpath names="/Optical/" tstamps="/56b54535-d023-45c5-9cb1-b85ec96641c9/"/>
+      <tstamps>915de66e-85e3-4d26-8489-ad97dc4359b6</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="D423">
+      <value>SFH2703H Q65115A2199</value>
+      <footprint>sportwatch_custom:OSRAM_SFH2703_3.2x2.0mm</footprint>
+      <description>Broadband PIN photodiode; footprint TBD</description>
+      <fields>
+        <field name="Board">REAR</field>
+        <field name="Footprint">sportwatch_custom:OSRAM_SFH2703_3.2x2.0mm</field>
+        <field name="Datasheet"/>
+        <field name="Description">Broadband PIN photodiode; footprint TBD</field>
+      </fields>
+      <libsource lib="sportwatch_custom" part="SFH2703H" description="OSRAM SFH 2703H broadband silicon PIN photodiode, Q65115A2199"/>
+      <property name="Board" value="REAR"/>
+      <property name="Sheetname" value="Optical"/>
+      <property name="Sheetfile" value="04_PPG.kicad_sch"/>
+      <sheetpath names="/Optical/" tstamps="/56b54535-d023-45c5-9cb1-b85ec96641c9/"/>
+      <tstamps>fdde68e9-c9a6-4b45-a37e-48cecba9843b</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="D424">
+      <value>SFH2703H Q65115A2199</value>
+      <footprint>sportwatch_custom:OSRAM_SFH2703_3.2x2.0mm</footprint>
+      <description>Broadband PIN photodiode; footprint TBD</description>
+      <fields>
+        <field name="Board">REAR</field>
+        <field name="Footprint">sportwatch_custom:OSRAM_SFH2703_3.2x2.0mm</field>
+        <field name="Datasheet"/>
+        <field name="Description">Broadband PIN photodiode; footprint TBD</field>
+      </fields>
+      <libsource lib="sportwatch_custom" part="SFH2703H" description="OSRAM SFH 2703H broadband silicon PIN photodiode, Q65115A2199"/>
+      <property name="Board" value="REAR"/>
+      <property name="Sheetname" value="Optical"/>
+      <property name="Sheetfile" value="04_PPG.kicad_sch"/>
+      <sheetpath names="/Optical/" tstamps="/56b54535-d023-45c5-9cb1-b85ec96641c9/"/>
+      <tstamps>c6029f55-63fc-46ec-ad60-bf49da46042f</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="NT401">
+      <value>PPG1_PD_GND_TIE</value>
+      <footprint>NetTie:NetTie-2_SMD_Pad0.5mm</footprint>
+      <description>Single-point PD_GND to PCB GND net tie</description>
+      <fields>
+        <field name="Board">REAR</field>
+        <field name="Footprint">NetTie:NetTie-2_SMD_Pad0.5mm</field>
+        <field name="Datasheet"/>
+        <field name="Description">Single-point PD_GND to PCB GND net tie</field>
+      </fields>
+      <libsource lib="sportwatch_custom" part="NetTie_2" description="Single-point net tie; assign proper net-tie footprint during footprint audit"/>
+      <property name="Board" value="REAR"/>
+      <property name="Sheetname" value="Optical"/>
+      <property name="Sheetfile" value="04_PPG.kicad_sch"/>
+      <sheetpath names="/Optical/" tstamps="/56b54535-d023-45c5-9cb1-b85ec96641c9/"/>
+      <tstamps>aa169eac-bd22-426c-8ab3-97f6271f3258</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="NT402">
+      <value>PPG2_PD_GND_TIE</value>
+      <footprint>NetTie:NetTie-2_SMD_Pad0.5mm</footprint>
+      <description>Single-point PD_GND to PCB GND net tie</description>
+      <fields>
+        <field name="Board">REAR</field>
+        <field name="Footprint">NetTie:NetTie-2_SMD_Pad0.5mm</field>
+        <field name="Datasheet"/>
+        <field name="Description">Single-point PD_GND to PCB GND net tie</field>
+      </fields>
+      <libsource lib="sportwatch_custom" part="NetTie_2" description="Single-point net tie; assign proper net-tie footprint during footprint audit"/>
+      <property name="Board" value="REAR"/>
+      <property name="Sheetname" value="Optical"/>
+      <property name="Sheetfile" value="04_PPG.kicad_sch"/>
+      <sheetpath names="/Optical/" tstamps="/56b54535-d023-45c5-9cb1-b85ec96641c9/"/>
+      <tstamps>fe7f43e0-1c3c-419f-9269-bf85c5a98139</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="R401">
+      <value>100k</value>
+      <footprint>Resistor_SMD:R_0402_1005Metric</footprint>
+      <datasheet>~</datasheet>
+      <description>PPG1_CS_N pull-up</description>
+      <fields>
+        <field name="Board">REAR</field>
+        <field name="Footprint">Resistor_SMD:R_0402_1005Metric</field>
+        <field name="Datasheet">~</field>
+        <field name="Description">PPG1_CS_N pull-up</field>
+      </fields>
+      <libsource lib="Device" part="R" description="Resistor"/>
+      <property name="Board" value="REAR"/>
+      <property name="Sheetname" value="Optical"/>
+      <property name="Sheetfile" value="04_PPG.kicad_sch"/>
+      <property name="ki_keywords" value="R res resistor"/>
+      <property name="ki_fp_filters" value="R_*"/>
+      <sheetpath names="/Optical/" tstamps="/56b54535-d023-45c5-9cb1-b85ec96641c9/"/>
+      <tstamps>37032851-83d4-45b5-ae54-a6733490e01f</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="R402">
+      <value>100k</value>
+      <footprint>Resistor_SMD:R_0402_1005Metric</footprint>
+      <datasheet>~</datasheet>
+      <description>PPG2_CS_N pull-up</description>
+      <fields>
+        <field name="Board">REAR</field>
+        <field name="Footprint">Resistor_SMD:R_0402_1005Metric</field>
+        <field name="Datasheet">~</field>
+        <field name="Description">PPG2_CS_N pull-up</field>
+      </fields>
+      <libsource lib="Device" part="R" description="Resistor"/>
+      <property name="Board" value="REAR"/>
+      <property name="Sheetname" value="Optical"/>
+      <property name="Sheetfile" value="04_PPG.kicad_sch"/>
+      <property name="ki_keywords" value="R res resistor"/>
+      <property name="ki_fp_filters" value="R_*"/>
+      <sheetpath names="/Optical/" tstamps="/56b54535-d023-45c5-9cb1-b85ec96641c9/"/>
+      <tstamps>70c8d7cf-4122-4165-a60a-347e3a8a8f4c</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="R403">
+      <value>47k</value>
+      <footprint>Resistor_SMD:R_0402_1005Metric</footprint>
+      <datasheet>~</datasheet>
+      <description>PPG1_INT_N pull-up</description>
+      <fields>
+        <field name="Board">REAR</field>
+        <field name="Footprint">Resistor_SMD:R_0402_1005Metric</field>
+        <field name="Datasheet">~</field>
+        <field name="Description">PPG1_INT_N pull-up</field>
+      </fields>
+      <libsource lib="Device" part="R" description="Resistor"/>
+      <property name="Board" value="REAR"/>
+      <property name="Sheetname" value="Optical"/>
+      <property name="Sheetfile" value="04_PPG.kicad_sch"/>
+      <property name="ki_keywords" value="R res resistor"/>
+      <property name="ki_fp_filters" value="R_*"/>
+      <sheetpath names="/Optical/" tstamps="/56b54535-d023-45c5-9cb1-b85ec96641c9/"/>
+      <tstamps>be09c78a-3afb-48f4-aaef-3de746d6d673</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="R404">
+      <value>47k</value>
+      <footprint>Resistor_SMD:R_0402_1005Metric</footprint>
+      <datasheet>~</datasheet>
+      <description>PPG2_INT_N pull-up</description>
+      <fields>
+        <field name="Board">REAR</field>
+        <field name="Footprint">Resistor_SMD:R_0402_1005Metric</field>
+        <field name="Datasheet">~</field>
+        <field name="Description">PPG2_INT_N pull-up</field>
+      </fields>
+      <libsource lib="Device" part="R" description="Resistor"/>
+      <property name="Board" value="REAR"/>
+      <property name="Sheetname" value="Optical"/>
+      <property name="Sheetfile" value="04_PPG.kicad_sch"/>
+      <property name="ki_keywords" value="R res resistor"/>
+      <property name="ki_fp_filters" value="R_*"/>
+      <sheetpath names="/Optical/" tstamps="/56b54535-d023-45c5-9cb1-b85ec96641c9/"/>
+      <tstamps>d995307e-5a54-45bd-88bc-fda402068b7a</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="R405">
+      <value>100k</value>
+      <footprint>Resistor_SMD:R_0402_1005Metric</footprint>
+      <datasheet>~</datasheet>
+      <description>PPG_SAMPLE_SYNC pull-up</description>
+      <fields>
+        <field name="Board">REAR</field>
+        <field name="Footprint">Resistor_SMD:R_0402_1005Metric</field>
+        <field name="Datasheet">~</field>
+        <field name="Description">PPG_SAMPLE_SYNC pull-up</field>
+      </fields>
+      <libsource lib="Device" part="R" description="Resistor"/>
+      <property name="Board" value="REAR"/>
+      <property name="Sheetname" value="Optical"/>
+      <property name="Sheetfile" value="04_PPG.kicad_sch"/>
+      <property name="ki_keywords" value="R res resistor"/>
+      <property name="ki_fp_filters" value="R_*"/>
+      <sheetpath names="/Optical/" tstamps="/56b54535-d023-45c5-9cb1-b85ec96641c9/"/>
+      <tstamps>55c721d5-6fcd-4bbc-b3f8-e7049a651bf9</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="R408">
+      <value>10k</value>
+      <footprint>Resistor_SMD:R_0402_1005Metric</footprint>
+      <fields>
+        <field name="Board">REAR</field>
+        <field name="Footprint">Resistor_SMD:R_0402_1005Metric</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="Device" part="R" description="Resistor"/>
+      <property name="Board" value="REAR"/>
+      <property name="Sheetname" value="Optical"/>
+      <property name="Sheetfile" value="04_PPG.kicad_sch"/>
+      <property name="ki_keywords" value="R res resistor"/>
+      <property name="ki_fp_filters" value="R_*"/>
+      <sheetpath names="/Optical/" tstamps="/56b54535-d023-45c5-9cb1-b85ec96641c9/"/>
+      <tstamps>f4336c15-8a77-5175-ba96-e6c76edeb545</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="R409">
+      <value>10k</value>
+      <footprint>Resistor_SMD:R_0402_1005Metric</footprint>
+      <fields>
+        <field name="Board">REAR</field>
+        <field name="Footprint">Resistor_SMD:R_0402_1005Metric</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="Device" part="R" description="Resistor"/>
+      <property name="Board" value="REAR"/>
+      <property name="Sheetname" value="Optical"/>
+      <property name="Sheetfile" value="04_PPG.kicad_sch"/>
+      <property name="ki_keywords" value="R res resistor"/>
+      <property name="ki_fp_filters" value="R_*"/>
+      <sheetpath names="/Optical/" tstamps="/56b54535-d023-45c5-9cb1-b85ec96641c9/"/>
+      <tstamps>0af21589-f9e3-56c4-aaeb-f6859c8fd0bc</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="U12">
+      <value>MAX86141ENP+T</value>
+      <footprint>sportwatch_custom:21-100134_N201A2-1_MXM</footprint>
+      <datasheet>MAX86141ENP+T</datasheet>
+      <fields>
+        <field name="Board">REAR</field>
+        <field name="Footprint">sportwatch_custom:21-100134_N201A2-1_MXM</field>
+        <field name="Datasheet">MAX86141ENP+T</field>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="2026-09-16_07-42-39" part="MAX86141ENP+T" description=""/>
+      <property name="Board" value="REAR"/>
+      <property name="Sheetname" value="Optical"/>
+      <property name="Sheetfile" value="04_PPG.kicad_sch"/>
+      <property name="ki_keywords" value="MAX86141ENP+T"/>
+      <property name="ki_fp_filters" value="sportwatch_custom:21-100134_N201A2-1_MXM"/>
+      <sheetpath names="/Optical/" tstamps="/56b54535-d023-45c5-9cb1-b85ec96641c9/"/>
+      <tstamps>77e40d42-feb0-4c8f-bde2-35586b40c2c1</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="A1"/>
+            <pin num="A2"/>
+            <pin num="A3"/>
+            <pin num="A4"/>
+            <pin num="A5"/>
+            <pin num="B1"/>
+            <pin num="B2"/>
+            <pin num="B3"/>
+            <pin num="B4"/>
+            <pin num="B5"/>
+            <pin num="D5"/>
+            <pin num="D4"/>
+            <pin num="D3"/>
+            <pin num="D2"/>
+            <pin num="D1"/>
+            <pin num="C5"/>
+            <pin num="C4"/>
+            <pin num="C3"/>
+            <pin num="C2"/>
+            <pin num="C1"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="U13">
+      <value>MAX86141ENP+T</value>
+      <footprint>sportwatch_custom:21-100134_N201A2-1_MXM</footprint>
+      <datasheet>MAX86141ENP+T</datasheet>
+      <fields>
+        <field name="Board">REAR</field>
+        <field name="Footprint">sportwatch_custom:21-100134_N201A2-1_MXM</field>
+        <field name="Datasheet">MAX86141ENP+T</field>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="2026-09-16_07-42-39" part="MAX86141ENP+T" description=""/>
+      <property name="Board" value="REAR"/>
+      <property name="Sheetname" value="Optical"/>
+      <property name="Sheetfile" value="04_PPG.kicad_sch"/>
+      <property name="ki_keywords" value="MAX86141ENP+T"/>
+      <property name="ki_fp_filters" value="sportwatch_custom:21-100134_N201A2-1_MXM"/>
+      <sheetpath names="/Optical/" tstamps="/56b54535-d023-45c5-9cb1-b85ec96641c9/"/>
+      <tstamps>68ac7160-72bc-47c2-9380-221f9282d721</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="A1"/>
+            <pin num="A2"/>
+            <pin num="A3"/>
+            <pin num="A4"/>
+            <pin num="A5"/>
+            <pin num="B1"/>
+            <pin num="B2"/>
+            <pin num="B3"/>
+            <pin num="B4"/>
+            <pin num="B5"/>
+            <pin num="D5"/>
+            <pin num="D4"/>
+            <pin num="D3"/>
+            <pin num="D2"/>
+            <pin num="D1"/>
+            <pin num="C5"/>
+            <pin num="C4"/>
+            <pin num="C3"/>
+            <pin num="C2"/>
+            <pin num="C1"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="U402">
+      <value>TS5A12301E</value>
+      <footprint>Package_BGA:Texas_DSBGA-6_0.76x1.16mm_Layout2x3_P0.4mm</footprint>
+      <datasheet>https://www.ti.com/lit/ds/symlink/ts5a12301e.pdf</datasheet>
+      <description>LED bank 2:1 SPDT mux; 1.8V-compatible control</description>
+      <fields>
+        <field name="Board">REAR</field>
+        <field name="Footprint">Package_BGA:Texas_DSBGA-6_0.76x1.16mm_Layout2x3_P0.4mm</field>
+        <field name="Datasheet">https://www.ti.com/lit/ds/symlink/ts5a12301e.pdf</field>
+        <field name="Description">LED bank 2:1 SPDT mux; 1.8V-compatible control</field>
+      </fields>
+      <libsource lib="sportwatch_custom" part="TS5A12301E" description="TI TS5A12301E 0.75-ohm SPDT analog switch, 1.8V-compatible control; YFP DSBGA6 footprint TBD/audit"/>
+      <property name="Board" value="REAR"/>
+      <property name="Sheetname" value="Optical"/>
+      <property name="Sheetfile" value="04_PPG.kicad_sch"/>
+      <sheetpath names="/Optical/" tstamps="/56b54535-d023-45c5-9cb1-b85ec96641c9/"/>
+      <tstamps>1c36e351-4967-4c67-b613-b90650e7ba66</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="B2"/>
+            <pin num="A2"/>
+            <pin num="C2"/>
+            <pin num="B1"/>
+            <pin num="C1"/>
+            <pin num="A1"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="U403">
+      <value>TS5A12301E</value>
+      <footprint>Package_BGA:Texas_DSBGA-6_0.76x1.16mm_Layout2x3_P0.4mm</footprint>
+      <datasheet>https://www.ti.com/lit/ds/symlink/ts5a12301e.pdf</datasheet>
+      <description>LED bank 2:1 SPDT mux; 1.8V-compatible control</description>
+      <fields>
+        <field name="Board">REAR</field>
+        <field name="Footprint">Package_BGA:Texas_DSBGA-6_0.76x1.16mm_Layout2x3_P0.4mm</field>
+        <field name="Datasheet">https://www.ti.com/lit/ds/symlink/ts5a12301e.pdf</field>
+        <field name="Description">LED bank 2:1 SPDT mux; 1.8V-compatible control</field>
+      </fields>
+      <libsource lib="sportwatch_custom" part="TS5A12301E" description="TI TS5A12301E 0.75-ohm SPDT analog switch, 1.8V-compatible control; YFP DSBGA6 footprint TBD/audit"/>
+      <property name="Board" value="REAR"/>
+      <property name="Sheetname" value="Optical"/>
+      <property name="Sheetfile" value="04_PPG.kicad_sch"/>
+      <sheetpath names="/Optical/" tstamps="/56b54535-d023-45c5-9cb1-b85ec96641c9/"/>
+      <tstamps>caa9e1b9-3529-4a6f-bf5a-4e9f4f027845</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="B2"/>
+            <pin num="A2"/>
+            <pin num="C2"/>
+            <pin num="B1"/>
+            <pin num="C1"/>
+            <pin num="A1"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="U404">
+      <value>TS5A12301E</value>
+      <footprint>Package_BGA:Texas_DSBGA-6_0.76x1.16mm_Layout2x3_P0.4mm</footprint>
+      <datasheet>https://www.ti.com/lit/ds/symlink/ts5a12301e.pdf</datasheet>
+      <description>LED bank 2:1 SPDT mux; 1.8V-compatible control</description>
+      <fields>
+        <field name="Board">REAR</field>
+        <field name="Footprint">Package_BGA:Texas_DSBGA-6_0.76x1.16mm_Layout2x3_P0.4mm</field>
+        <field name="Datasheet">https://www.ti.com/lit/ds/symlink/ts5a12301e.pdf</field>
+        <field name="Description">LED bank 2:1 SPDT mux; 1.8V-compatible control</field>
+      </fields>
+      <libsource lib="sportwatch_custom" part="TS5A12301E" description="TI TS5A12301E 0.75-ohm SPDT analog switch, 1.8V-compatible control; YFP DSBGA6 footprint TBD/audit"/>
+      <property name="Board" value="REAR"/>
+      <property name="Sheetname" value="Optical"/>
+      <property name="Sheetfile" value="04_PPG.kicad_sch"/>
+      <sheetpath names="/Optical/" tstamps="/56b54535-d023-45c5-9cb1-b85ec96641c9/"/>
+      <tstamps>5785c9cf-7659-498c-a1e0-cb3c3911e258</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="B2"/>
+            <pin num="A2"/>
+            <pin num="C2"/>
+            <pin num="B1"/>
+            <pin num="C1"/>
+            <pin num="A1"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="U405">
+      <value>TS5A12301E</value>
+      <footprint>Package_BGA:Texas_DSBGA-6_0.76x1.16mm_Layout2x3_P0.4mm</footprint>
+      <datasheet>https://www.ti.com/lit/ds/symlink/ts5a12301e.pdf</datasheet>
+      <description>LED bank 2:1 SPDT mux; 1.8V-compatible control</description>
+      <fields>
+        <field name="Board">REAR</field>
+        <field name="Footprint">Package_BGA:Texas_DSBGA-6_0.76x1.16mm_Layout2x3_P0.4mm</field>
+        <field name="Datasheet">https://www.ti.com/lit/ds/symlink/ts5a12301e.pdf</field>
+        <field name="Description">LED bank 2:1 SPDT mux; 1.8V-compatible control</field>
+      </fields>
+      <libsource lib="sportwatch_custom" part="TS5A12301E" description="TI TS5A12301E 0.75-ohm SPDT analog switch, 1.8V-compatible control; YFP DSBGA6 footprint TBD/audit"/>
+      <property name="Board" value="REAR"/>
+      <property name="Sheetname" value="Optical"/>
+      <property name="Sheetfile" value="04_PPG.kicad_sch"/>
+      <sheetpath names="/Optical/" tstamps="/56b54535-d023-45c5-9cb1-b85ec96641c9/"/>
+      <tstamps>b3761432-6749-4159-933c-c29aa4da4095</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="B2"/>
+            <pin num="A2"/>
+            <pin num="C2"/>
+            <pin num="B1"/>
+            <pin num="C1"/>
+            <pin num="A1"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="U406">
+      <value>TS5A12301E</value>
+      <footprint>Package_BGA:Texas_DSBGA-6_0.76x1.16mm_Layout2x3_P0.4mm</footprint>
+      <datasheet>https://www.ti.com/lit/ds/symlink/ts5a12301e.pdf</datasheet>
+      <description>LED bank 2:1 SPDT mux; 1.8V-compatible control</description>
+      <fields>
+        <field name="Board">REAR</field>
+        <field name="Footprint">Package_BGA:Texas_DSBGA-6_0.76x1.16mm_Layout2x3_P0.4mm</field>
+        <field name="Datasheet">https://www.ti.com/lit/ds/symlink/ts5a12301e.pdf</field>
+        <field name="Description">LED bank 2:1 SPDT mux; 1.8V-compatible control</field>
+      </fields>
+      <libsource lib="sportwatch_custom" part="TS5A12301E" description="TI TS5A12301E 0.75-ohm SPDT analog switch, 1.8V-compatible control; YFP DSBGA6 footprint TBD/audit"/>
+      <property name="Board" value="REAR"/>
+      <property name="Sheetname" value="Optical"/>
+      <property name="Sheetfile" value="04_PPG.kicad_sch"/>
+      <sheetpath names="/Optical/" tstamps="/56b54535-d023-45c5-9cb1-b85ec96641c9/"/>
+      <tstamps>b7e656b7-7969-4ea6-961a-a3c34408a3a3</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="B2"/>
+            <pin num="A2"/>
+            <pin num="C2"/>
+            <pin num="B1"/>
+            <pin num="C1"/>
+            <pin num="A1"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="U407">
+      <value>TS5A12301E</value>
+      <footprint>Package_BGA:Texas_DSBGA-6_0.76x1.16mm_Layout2x3_P0.4mm</footprint>
+      <datasheet>https://www.ti.com/lit/ds/symlink/ts5a12301e.pdf</datasheet>
+      <description>LED bank 2:1 SPDT mux; 1.8V-compatible control</description>
+      <fields>
+        <field name="Board">REAR</field>
+        <field name="Footprint">Package_BGA:Texas_DSBGA-6_0.76x1.16mm_Layout2x3_P0.4mm</field>
+        <field name="Datasheet">https://www.ti.com/lit/ds/symlink/ts5a12301e.pdf</field>
+        <field name="Description">LED bank 2:1 SPDT mux; 1.8V-compatible control</field>
+      </fields>
+      <libsource lib="sportwatch_custom" part="TS5A12301E" description="TI TS5A12301E 0.75-ohm SPDT analog switch, 1.8V-compatible control; YFP DSBGA6 footprint TBD/audit"/>
+      <property name="Board" value="REAR"/>
+      <property name="Sheetname" value="Optical"/>
+      <property name="Sheetfile" value="04_PPG.kicad_sch"/>
+      <sheetpath names="/Optical/" tstamps="/56b54535-d023-45c5-9cb1-b85ec96641c9/"/>
+      <tstamps>80cfe80c-28f9-4dad-a484-0fd6731291c9</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="B2"/>
+            <pin num="A2"/>
+            <pin num="C2"/>
+            <pin num="B1"/>
+            <pin num="C1"/>
+            <pin num="A1"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="C802">
+      <value>100nF</value>
+      <footprint>Capacitor_SMD:C_0402_1005Metric</footprint>
+      <datasheet>~</datasheet>
+      <description>MAX30208 VDD decoupling</description>
+      <fields>
+        <field name="Board">REAR</field>
+        <field name="Footprint">Capacitor_SMD:C_0402_1005Metric</field>
+        <field name="Datasheet">~</field>
+        <field name="Description">MAX30208 VDD decoupling</field>
+      </fields>
+      <libsource lib="Device" part="C" description="Unpolarized capacitor"/>
+      <property name="Board" value="REAR"/>
+      <property name="Sheetname" value="Temperature"/>
+      <property name="Sheetfile" value="08_TEMPERATURE.kicad_sch"/>
+      <property name="ki_keywords" value="cap capacitor"/>
+      <property name="ki_fp_filters" value="C_*"/>
+      <sheetpath names="/Temperature/" tstamps="/a4b790ff-ae97-4241-9d88-606540620ce7/"/>
+      <tstamps>e132d1a4-cb66-438b-bdac-f461cc57b353</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="U6">
+      <value>MAX30208CLB+T</value>
+      <footprint>sportwatch_custom:21-100265_MXM</footprint>
+      <datasheet>MAX30208CLB+T</datasheet>
+      <fields>
+        <field name="Board">REAR</field>
+        <field name="Footprint">sportwatch_custom:21-100265_MXM</field>
+        <field name="Datasheet">MAX30208CLB+T</field>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="2026-09-16_05-57-26" part="MAX30208CLB+T" description=""/>
+      <property name="Board" value="REAR"/>
+      <property name="Sheetname" value="Temperature"/>
+      <property name="Sheetfile" value="08_TEMPERATURE.kicad_sch"/>
+      <property name="ki_keywords" value="MAX30208CLB+T"/>
+      <property name="ki_fp_filters" value="sportwatch_custom:21-100265_MXM"/>
+      <sheetpath names="/Temperature/" tstamps="/a4b790ff-ae97-4241-9d88-606540620ce7/"/>
+      <tstamps>e51af612-e0cd-4d25-8946-9d5c1d79b36b</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+            <pin num="3"/>
+            <pin num="4"/>
+            <pin num="5"/>
+            <pin num="10"/>
+            <pin num="9"/>
+            <pin num="8"/>
+            <pin num="7"/>
+            <pin num="6"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+  </components>
+  <libparts>
+    <libpart lib="2026-09-16_05-57-26" part="MAX30208CLB+T">
+      <docs>MAX30208CLB+T</docs>
+      <footprints>
+        <fp>sportwatch_custom:21-100265_MXM</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">U</field>
+        <field name="Value">MAX30208CLB+T</field>
+        <field name="Footprint">sportwatch_custom:21-100265_MXM</field>
+        <field name="Datasheet">MAX30208CLB+T</field>
+        <field name="Description"/>
+      </fields>
+      <pins>
+        <pin num="1" name="VDD" type="power_in"/>
+        <pin num="2" name="VDD" type="power_in"/>
+        <pin num="3" name="VDD" type="power_in"/>
+        <pin num="4" name="GND" type="power_in"/>
+        <pin num="5" name="GND" type="power_in"/>
+        <pin num="6" name="GND" type="power_in"/>
+        <pin num="7" name="GPIO1" type="bidirectional"/>
+        <pin num="8" name="SDA" type="bidirectional"/>
+        <pin num="9" name="SCL" type="input"/>
+        <pin num="10" name="GPIO0" type="bidirectional"/>
+      </pins>
+    </libpart>
+    <libpart lib="2026-09-16_07-42-39" part="MAX86141ENP+T">
+      <docs>MAX86141ENP+T</docs>
+      <footprints>
+        <fp>sportwatch_custom:21-100134_N201A2-1_MXM</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">U</field>
+        <field name="Value">MAX86141ENP+T</field>
+        <field name="Footprint">sportwatch_custom:21-100134_N201A2-1_MXM</field>
+        <field name="Datasheet">MAX86141ENP+T</field>
+        <field name="Description"/>
+      </fields>
+      <pins>
+        <pin num="A1" name="VLED" type="power_in"/>
+        <pin num="A2" name="SCLK" type="input"/>
+        <pin num="A3" name="SDO" type="tri_state"/>
+        <pin num="A4" name="SDI" type="input"/>
+        <pin num="A5" name="CSB" type="input"/>
+        <pin num="B1" name="LED3_DRV" type="output"/>
+        <pin num="B2" name="*INT" type="open_collector"/>
+        <pin num="B3" name="GPIO1" type="bidirectional"/>
+        <pin num="B4" name="GPIO2" type="bidirectional"/>
+        <pin num="B5" name="VREF" type="power_out"/>
+        <pin num="C1" name="LED2_DRV" type="output"/>
+        <pin num="C2" name="VDD_DIG" type="power_in"/>
+        <pin num="C3" name="GND_DIG" type="power_in"/>
+        <pin num="C4" name="GND_ANA" type="power_in"/>
+        <pin num="C5" name="PD_GND" type="power_in"/>
+        <pin num="D1" name="LED1_DRV" type="output"/>
+        <pin num="D2" name="VDD_ANA" type="power_in"/>
+        <pin num="D3" name="PGND" type="power_in"/>
+        <pin num="D4" name="PD2_IN" type="input"/>
+        <pin num="D5" name="PD1_IN" type="input"/>
+      </pins>
+    </libpart>
+    <libpart lib="Connector_Generic" part="Conn_01x24">
+      <description>Generic connector, single row, 01x24, script generated (kicad-library-utils/schlib/autogen/connector/)</description>
+      <footprints>
+        <fp>Connector*:*_1x??_*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">J</field>
+        <field name="Value">Conn_01x24</field>
+        <field name="Footprint"/>
+        <field name="Datasheet"/>
+        <field name="Description">Generic connector, single row, 01x24, script generated (kicad-library-utils/schlib/autogen/connector/)</field>
+      </fields>
+      <pins>
+        <pin num="1" name="Pin_1" type="passive"/>
+        <pin num="2" name="Pin_2" type="passive"/>
+        <pin num="3" name="Pin_3" type="passive"/>
+        <pin num="4" name="Pin_4" type="passive"/>
+        <pin num="5" name="Pin_5" type="passive"/>
+        <pin num="6" name="Pin_6" type="passive"/>
+        <pin num="7" name="Pin_7" type="passive"/>
+        <pin num="8" name="Pin_8" type="passive"/>
+        <pin num="9" name="Pin_9" type="passive"/>
+        <pin num="10" name="Pin_10" type="passive"/>
+        <pin num="11" name="Pin_11" type="passive"/>
+        <pin num="12" name="Pin_12" type="passive"/>
+        <pin num="13" name="Pin_13" type="passive"/>
+        <pin num="14" name="Pin_14" type="passive"/>
+        <pin num="15" name="Pin_15" type="passive"/>
+        <pin num="16" name="Pin_16" type="passive"/>
+        <pin num="17" name="Pin_17" type="passive"/>
+        <pin num="18" name="Pin_18" type="passive"/>
+        <pin num="19" name="Pin_19" type="passive"/>
+        <pin num="20" name="Pin_20" type="passive"/>
+        <pin num="21" name="Pin_21" type="passive"/>
+        <pin num="22" name="Pin_22" type="passive"/>
+        <pin num="23" name="Pin_23" type="passive"/>
+        <pin num="24" name="Pin_24" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="Device" part="C">
+      <description>Unpolarized capacitor</description>
+      <footprints>
+        <fp>C_*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">C</field>
+        <field name="Value">C</field>
+        <field name="Footprint"/>
+        <field name="Datasheet"/>
+        <field name="Description">Unpolarized capacitor</field>
+      </fields>
+      <pins>
+        <pin num="1" name="" type="passive"/>
+        <pin num="2" name="" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="Device" part="R">
+      <description>Resistor</description>
+      <footprints>
+        <fp>R_*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">R</field>
+        <field name="Value">R</field>
+        <field name="Footprint"/>
+        <field name="Datasheet"/>
+        <field name="Description">Resistor</field>
+      </fields>
+      <pins>
+        <pin num="1" name="" type="passive"/>
+        <pin num="2" name="" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="sportwatch_custom" part="NetTie_2">
+      <description>Single-point net tie; assign proper net-tie footprint during footprint audit</description>
+      <fields>
+        <field name="Reference">NT</field>
+        <field name="Value">NetTie_2</field>
+        <field name="Footprint"/>
+        <field name="Datasheet"/>
+        <field name="Description">Single-point net tie; assign proper net-tie footprint during footprint audit</field>
+      </fields>
+      <pins>
+        <pin num="1" name="A" type="passive"/>
+        <pin num="2" name="B" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="sportwatch_custom" part="SFH2703H">
+      <description>OSRAM SFH 2703H broadband silicon PIN photodiode, Q65115A2199</description>
+      <docs>SFH 2703_EN.pdf</docs>
+      <fields>
+        <field name="Reference">D</field>
+        <field name="Value">SFH2703H</field>
+        <field name="Footprint"/>
+        <field name="Datasheet">SFH 2703_EN.pdf</field>
+        <field name="Description">OSRAM SFH 2703H broadband silicon PIN photodiode, Q65115A2199</field>
+      </fields>
+      <pins>
+        <pin num="1" name="CATHODE" type="passive"/>
+        <pin num="2" name="ANODE" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="sportwatch_custom" part="SFH4053B">
+      <description>ams OSRAM SFH 4053B 850nm-class IR emitter, Q65115A1586; footprint TBD</description>
+      <docs>https://ams-osram.com/products/leds/ir-leds/osram-chip-led-sfh-4053b</docs>
+      <fields>
+        <field name="Reference">D</field>
+        <field name="Value">SFH4053B</field>
+        <field name="Footprint"/>
+        <field name="Datasheet">https://ams-osram.com/products/leds/ir-leds/osram-chip-led-sfh-4053b</field>
+        <field name="Description">ams OSRAM SFH 4053B 850nm-class IR emitter, Q65115A1586; footprint TBD</field>
+      </fields>
+      <pins>
+        <pin num="1" name="ANODE" type="passive"/>
+        <pin num="2" name="CATHODE" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="sportwatch_custom" part="SFH7018A">
+      <description>OSRAM SFH 7018A green/red/940nm biometric emitter, Q65113A6157</description>
+      <docs>SFH 7018A_EN.pdf</docs>
+      <fields>
+        <field name="Reference">D</field>
+        <field name="Value">SFH7018A</field>
+        <field name="Footprint"/>
+        <field name="Datasheet">SFH 7018A_EN.pdf</field>
+        <field name="Description">OSRAM SFH 7018A green/red/940nm biometric emitter, Q65113A6157</field>
+      </fields>
+      <pins>
+        <pin num="1" name="K_GREEN_1" type="passive"/>
+        <pin num="2" name="A_RED_IR_1" type="passive"/>
+        <pin num="3" name="K_IR" type="passive"/>
+        <pin num="4" name="A_RED_IR_2" type="passive"/>
+        <pin num="5" name="K_RED" type="passive"/>
+        <pin num="6" name="A_GREEN" type="passive"/>
+        <pin num="7" name="K_GREEN_2" type="passive"/>
+        <pin num="8" name="K_GREEN_3" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="sportwatch_custom" part="TS5A12301E">
+      <description>TI TS5A12301E 0.75-ohm SPDT analog switch, 1.8V-compatible control; YFP DSBGA6 footprint TBD/audit</description>
+      <docs>https://www.ti.com/lit/ds/symlink/ts5a12301e.pdf</docs>
+      <fields>
+        <field name="Reference">U</field>
+        <field name="Value">TS5A12301E</field>
+        <field name="Footprint"/>
+        <field name="Datasheet">https://www.ti.com/lit/ds/symlink/ts5a12301e.pdf</field>
+        <field name="Description">TI TS5A12301E 0.75-ohm SPDT analog switch, 1.8V-compatible control; YFP DSBGA6 footprint TBD/audit</field>
+      </fields>
+      <pins>
+        <pin num="A1" name="NO" type="bidirectional"/>
+        <pin num="A2" name="IN" type="input"/>
+        <pin num="B1" name="GND" type="power_in"/>
+        <pin num="B2" name="COM" type="bidirectional"/>
+        <pin num="C1" name="NC" type="bidirectional"/>
+        <pin num="C2" name="VCC" type="power_in"/>
+      </pins>
+    </libpart>
+  </libparts>
+  <libraries>
+    <library logical="2026-09-16_05-57-26">
+      <uri>${KIPRJMOD}/../libraries/symbols/2026-09-16_05-57-26.kicad_sym</uri>
+    </library>
+    <library logical="2026-09-16_07-42-39">
+      <uri>${KIPRJMOD}/../libraries/symbols/2026-09-16_07-42-39.kicad_sym</uri>
+    </library>
+    <library logical="Connector_Generic">
+      <uri>${KICAD10_SYMBOL_DIR}/Connector_Generic.kicad_sym</uri>
+    </library>
+    <library logical="Device">
+      <uri>${KICAD10_SYMBOL_DIR}/Device.kicad_sym</uri>
+    </library>
+    <library logical="sportwatch_custom">
+      <uri>${KIPRJMOD}/../libraries/symbols/sportwatch_custom.kicad_sym</uri>
+    </library>
+  </libraries>
+  <nets>
+    <net code="1" name="/Optical/PPG1_LED1_GREEN_K" class="Default">
+      <node ref="D401" pin="1" pinfunction="K_GREEN_1_1" pintype="passive"/>
+      <node ref="D401" pin="7" pinfunction="K_GREEN_2_7" pintype="passive"/>
+      <node ref="D401" pin="8" pinfunction="K_GREEN_3_8" pintype="passive"/>
+      <node ref="U402" pin="A1" pinfunction="NO_A1" pintype="bidirectional"/>
+    </net>
+    <net code="2" name="/Optical/PPG1_LED2_RED_K" class="Default">
+      <node ref="D401" pin="5" pinfunction="K_RED_5" pintype="passive"/>
+      <node ref="U403" pin="A1" pinfunction="NO_A1" pintype="bidirectional"/>
+    </net>
+    <net code="3" name="/Optical/PPG1_LED3_IR850_K" class="Default">
+      <node ref="D405" pin="2" pinfunction="CATHODE_2" pintype="passive"/>
+      <node ref="U404" pin="A1" pinfunction="NO_A1" pintype="bidirectional"/>
+    </net>
+    <net code="4" name="/Optical/PPG1_LED4_GREEN_K" class="Default">
+      <node ref="D403" pin="1" pinfunction="K_GREEN_1_1" pintype="passive"/>
+      <node ref="D403" pin="7" pinfunction="K_GREEN_2_7" pintype="passive"/>
+      <node ref="D403" pin="8" pinfunction="K_GREEN_3_8" pintype="passive"/>
+      <node ref="U402" pin="C1" pinfunction="NC_C1" pintype="bidirectional"/>
+    </net>
+    <net code="5" name="/Optical/PPG1_LED5_RED_K" class="Default">
+      <node ref="D403" pin="5" pinfunction="K_RED_5" pintype="passive"/>
+      <node ref="U403" pin="C1" pinfunction="NC_C1" pintype="bidirectional"/>
+    </net>
+    <net code="6" name="/Optical/PPG1_LED6_IR850_K" class="Default">
+      <node ref="D406" pin="2" pinfunction="CATHODE_2" pintype="passive"/>
+      <node ref="U404" pin="C1" pinfunction="NC_C1" pintype="bidirectional"/>
+    </net>
+    <net code="7" name="/Optical/PPG1_LED_GREEN_DRV" class="Default">
+      <node ref="U12" pin="D1" pinfunction="LED1_DRV_D1" pintype="output"/>
+      <node ref="U402" pin="B2" pinfunction="COM_B2" pintype="bidirectional"/>
+    </net>
+    <net code="8" name="/Optical/PPG1_LED_IR_DRV" class="Default">
+      <node ref="U12" pin="B1" pinfunction="LED3_DRV_B1" pintype="output"/>
+      <node ref="U404" pin="B2" pinfunction="COM_B2" pintype="bidirectional"/>
+    </net>
+    <net code="9" name="/Optical/PPG1_LED_MUX_SEL" class="Default">
+      <node ref="R408" pin="2" pintype="passive"/>
+      <node ref="U12" pin="B4" pinfunction="GPIO2_B4" pintype="bidirectional"/>
+      <node ref="U402" pin="A2" pinfunction="IN_A2" pintype="input"/>
+      <node ref="U403" pin="A2" pinfunction="IN_A2" pintype="input"/>
+      <node ref="U404" pin="A2" pinfunction="IN_A2" pintype="input"/>
+    </net>
+    <net code="10" name="/Optical/PPG1_LED_RED_DRV" class="Default">
+      <node ref="U12" pin="C1" pinfunction="LED2_DRV_C1" pintype="output"/>
+      <node ref="U403" pin="B2" pinfunction="COM_B2" pintype="bidirectional"/>
+    </net>
+    <net code="11" name="/Optical/PPG1_PD1_IN" class="Default">
+      <node ref="D424" pin="1" pinfunction="CATHODE_1" pintype="passive"/>
+      <node ref="U12" pin="D5" pinfunction="PD1_IN_D5" pintype="input"/>
+    </net>
+    <net code="12" name="/Optical/PPG1_PD2_IN" class="Default">
+      <node ref="D414" pin="1" pinfunction="CATHODE_1" pintype="passive"/>
+      <node ref="U12" pin="D4" pinfunction="PD2_IN_D4" pintype="input"/>
+    </net>
+    <net code="13" name="/Optical/PPG1_PD_GND" class="Default">
+      <node ref="D414" pin="2" pinfunction="ANODE_2" pintype="passive"/>
+      <node ref="D424" pin="2" pinfunction="ANODE_2" pintype="passive"/>
+      <node ref="NT401" pin="1" pinfunction="A_1" pintype="passive"/>
+      <node ref="U12" pin="C5" pinfunction="PD_GND_C5" pintype="power_in"/>
+    </net>
+    <net code="14" name="/Optical/PPG1_VREF" class="Default">
+      <node ref="C4103" pin="1" pintype="passive"/>
+      <node ref="U12" pin="B5" pinfunction="VREF_B5" pintype="power_out"/>
+    </net>
+    <net code="15" name="/Optical/PPG2_LED1_GREEN_K" class="Default">
+      <node ref="D402" pin="1" pinfunction="K_GREEN_1_1" pintype="passive"/>
+      <node ref="D402" pin="7" pinfunction="K_GREEN_2_7" pintype="passive"/>
+      <node ref="D402" pin="8" pinfunction="K_GREEN_3_8" pintype="passive"/>
+      <node ref="U405" pin="A1" pinfunction="NO_A1" pintype="bidirectional"/>
+    </net>
+    <net code="16" name="/Optical/PPG2_LED2_RED_K" class="Default">
+      <node ref="D402" pin="5" pinfunction="K_RED_5" pintype="passive"/>
+      <node ref="U406" pin="A1" pinfunction="NO_A1" pintype="bidirectional"/>
+    </net>
+    <net code="17" name="/Optical/PPG2_LED3_IR850_K" class="Default">
+      <node ref="D407" pin="2" pinfunction="CATHODE_2" pintype="passive"/>
+      <node ref="U407" pin="A1" pinfunction="NO_A1" pintype="bidirectional"/>
+    </net>
+    <net code="18" name="/Optical/PPG2_LED4_GREEN_K" class="Default">
+      <node ref="D404" pin="1" pinfunction="K_GREEN_1_1" pintype="passive"/>
+      <node ref="D404" pin="7" pinfunction="K_GREEN_2_7" pintype="passive"/>
+      <node ref="D404" pin="8" pinfunction="K_GREEN_3_8" pintype="passive"/>
+      <node ref="U405" pin="C1" pinfunction="NC_C1" pintype="bidirectional"/>
+    </net>
+    <net code="19" name="/Optical/PPG2_LED5_RED_K" class="Default">
+      <node ref="D404" pin="5" pinfunction="K_RED_5" pintype="passive"/>
+      <node ref="U406" pin="C1" pinfunction="NC_C1" pintype="bidirectional"/>
+    </net>
+    <net code="20" name="/Optical/PPG2_LED6_IR940_K" class="Default">
+      <node ref="D402" pin="3" pinfunction="K_IR_3" pintype="passive"/>
+      <node ref="U407" pin="C1" pinfunction="NC_C1" pintype="bidirectional"/>
+    </net>
+    <net code="21" name="/Optical/PPG2_LED_GREEN_DRV" class="Default">
+      <node ref="U13" pin="D1" pinfunction="LED1_DRV_D1" pintype="output"/>
+      <node ref="U405" pin="B2" pinfunction="COM_B2" pintype="bidirectional"/>
+    </net>
+    <net code="22" name="/Optical/PPG2_LED_IR_DRV" class="Default">
+      <node ref="U13" pin="B1" pinfunction="LED3_DRV_B1" pintype="output"/>
+      <node ref="U407" pin="B2" pinfunction="COM_B2" pintype="bidirectional"/>
+    </net>
+    <net code="23" name="/Optical/PPG2_LED_MUX_SEL" class="Default">
+      <node ref="R409" pin="2" pintype="passive"/>
+      <node ref="U13" pin="B4" pinfunction="GPIO2_B4" pintype="bidirectional"/>
+      <node ref="U405" pin="A2" pinfunction="IN_A2" pintype="input"/>
+      <node ref="U406" pin="A2" pinfunction="IN_A2" pintype="input"/>
+      <node ref="U407" pin="A2" pinfunction="IN_A2" pintype="input"/>
+    </net>
+    <net code="24" name="/Optical/PPG2_LED_RED_DRV" class="Default">
+      <node ref="U13" pin="C1" pinfunction="LED2_DRV_C1" pintype="output"/>
+      <node ref="U406" pin="B2" pinfunction="COM_B2" pintype="bidirectional"/>
+    </net>
+    <net code="25" name="/Optical/PPG2_PD1_IN" class="Default">
+      <node ref="D423" pin="1" pinfunction="CATHODE_1" pintype="passive"/>
+      <node ref="U13" pin="D5" pinfunction="PD1_IN_D5" pintype="input"/>
+    </net>
+    <net code="26" name="/Optical/PPG2_PD2_IN" class="Default">
+      <node ref="D413" pin="1" pinfunction="CATHODE_1" pintype="passive"/>
+      <node ref="U13" pin="D4" pinfunction="PD2_IN_D4" pintype="input"/>
+    </net>
+    <net code="27" name="/Optical/PPG2_PD_GND" class="Default">
+      <node ref="D413" pin="2" pinfunction="ANODE_2" pintype="passive"/>
+      <node ref="D423" pin="2" pinfunction="ANODE_2" pintype="passive"/>
+      <node ref="NT402" pin="1" pinfunction="A_1" pintype="passive"/>
+      <node ref="U13" pin="C5" pinfunction="PD_GND_C5" pintype="power_in"/>
+    </net>
+    <net code="28" name="/Optical/PPG2_VREF" class="Default">
+      <node ref="C4203" pin="1" pintype="passive"/>
+      <node ref="U13" pin="B5" pinfunction="VREF_B5" pintype="power_out"/>
+    </net>
+    <net code="29" name="ENV_I2C_SCL" class="Default">
+      <node ref="J1502" pin="15" pinfunction="Pin_15_15" pintype="passive"/>
+      <node ref="U6" pin="9" pinfunction="SCL_9" pintype="input"/>
+    </net>
+    <net code="30" name="ENV_I2C_SDA" class="Default">
+      <node ref="J1502" pin="16" pinfunction="Pin_16_16" pintype="passive"/>
+      <node ref="U6" pin="8" pinfunction="SDA_8" pintype="bidirectional"/>
+    </net>
+    <net code="31" name="GND" class="Default">
+      <node ref="C1501" pin="2" pintype="passive"/>
+      <node ref="C403" pin="2" pintype="passive"/>
+      <node ref="C404" pin="2" pintype="passive"/>
+      <node ref="C405" pin="2" pintype="passive"/>
+      <node ref="C406" pin="2" pintype="passive"/>
+      <node ref="C407" pin="2" pintype="passive"/>
+      <node ref="C408" pin="2" pintype="passive"/>
+      <node ref="C4101" pin="2" pintype="passive"/>
+      <node ref="C4102" pin="2" pintype="passive"/>
+      <node ref="C4103" pin="2" pintype="passive"/>
+      <node ref="C4104" pin="2" pintype="passive"/>
+      <node ref="C4201" pin="2" pintype="passive"/>
+      <node ref="C4202" pin="2" pintype="passive"/>
+      <node ref="C4203" pin="2" pintype="passive"/>
+      <node ref="C4204" pin="2" pintype="passive"/>
+      <node ref="C802" pin="2" pintype="passive"/>
+      <node ref="J1502" pin="1" pinfunction="Pin_1_1" pintype="passive"/>
+      <node ref="J1502" pin="10" pinfunction="Pin_10_10" pintype="passive"/>
+      <node ref="J1502" pin="14" pinfunction="Pin_14_14" pintype="passive"/>
+      <node ref="J1502" pin="17" pinfunction="Pin_17_17" pintype="passive"/>
+      <node ref="J1502" pin="19" pinfunction="Pin_19_19" pintype="passive"/>
+      <node ref="J1502" pin="20" pinfunction="Pin_20_20" pintype="passive"/>
+      <node ref="J1502" pin="24" pinfunction="Pin_24_24" pintype="passive"/>
+      <node ref="J1502" pin="3" pinfunction="Pin_3_3" pintype="passive"/>
+      <node ref="J1502" pin="5" pinfunction="Pin_5_5" pintype="passive"/>
+      <node ref="J1502" pin="7" pinfunction="Pin_7_7" pintype="passive"/>
+      <node ref="NT401" pin="2" pinfunction="B_2" pintype="passive"/>
+      <node ref="NT402" pin="2" pinfunction="B_2" pintype="passive"/>
+      <node ref="U12" pin="C3" pinfunction="GND_DIG_C3" pintype="power_in"/>
+      <node ref="U12" pin="C4" pinfunction="GND_ANA_C4" pintype="power_in"/>
+      <node ref="U12" pin="D3" pinfunction="PGND_D3" pintype="power_in"/>
+      <node ref="U13" pin="C3" pinfunction="GND_DIG_C3" pintype="power_in"/>
+      <node ref="U13" pin="C4" pinfunction="GND_ANA_C4" pintype="power_in"/>
+      <node ref="U13" pin="D3" pinfunction="PGND_D3" pintype="power_in"/>
+      <node ref="U402" pin="B1" pinfunction="GND_B1" pintype="power_in"/>
+      <node ref="U403" pin="B1" pinfunction="GND_B1" pintype="power_in"/>
+      <node ref="U404" pin="B1" pinfunction="GND_B1" pintype="power_in"/>
+      <node ref="U405" pin="B1" pinfunction="GND_B1" pintype="power_in"/>
+      <node ref="U406" pin="B1" pinfunction="GND_B1" pintype="power_in"/>
+      <node ref="U407" pin="B1" pinfunction="GND_B1" pintype="power_in"/>
+      <node ref="U6" pin="10" pinfunction="GPIO0_10" pintype="bidirectional"/>
+      <node ref="U6" pin="4" pinfunction="GND_4" pintype="power_in"/>
+      <node ref="U6" pin="5" pinfunction="GND_5" pintype="power_in"/>
+      <node ref="U6" pin="6" pinfunction="GND_6" pintype="power_in"/>
+      <node ref="U6" pin="7" pinfunction="GPIO1_7" pintype="bidirectional"/>
+    </net>
+    <net code="32" name="PPG1_CS_N" class="Default">
+      <node ref="J1502" pin="8" pinfunction="Pin_8_8" pintype="passive"/>
+      <node ref="R401" pin="2" pintype="passive"/>
+      <node ref="U12" pin="A5" pinfunction="CSB_A5" pintype="input"/>
+    </net>
+    <net code="33" name="PPG1_INT_N" class="Default">
+      <node ref="J1502" pin="11" pinfunction="Pin_11_11" pintype="passive"/>
+      <node ref="R403" pin="2" pintype="passive"/>
+      <node ref="U12" pin="B2" pinfunction="*INT_B2" pintype="open_collector"/>
+    </net>
+    <net code="34" name="PPG2_CS_N" class="Default">
+      <node ref="J1502" pin="9" pinfunction="Pin_9_9" pintype="passive"/>
+      <node ref="R402" pin="2" pintype="passive"/>
+      <node ref="U13" pin="A5" pinfunction="CSB_A5" pintype="input"/>
+    </net>
+    <net code="35" name="PPG2_INT_N" class="Default">
+      <node ref="J1502" pin="12" pinfunction="Pin_12_12" pintype="passive"/>
+      <node ref="R404" pin="2" pintype="passive"/>
+      <node ref="U13" pin="B2" pinfunction="*INT_B2" pintype="open_collector"/>
+    </net>
+    <net code="36" name="PPG_SAMPLE_SYNC" class="Default">
+      <node ref="J1502" pin="13" pinfunction="Pin_13_13" pintype="passive"/>
+      <node ref="R405" pin="2" pintype="passive"/>
+      <node ref="U12" pin="B3" pinfunction="GPIO1_B3" pintype="bidirectional"/>
+      <node ref="U13" pin="B3" pinfunction="GPIO1_B3" pintype="bidirectional"/>
+    </net>
+    <net code="37" name="PPG_SPI_MISO" class="Default">
+      <node ref="J1502" pin="6" pinfunction="Pin_6_6" pintype="passive"/>
+      <node ref="U12" pin="A3" pinfunction="SDO_A3" pintype="tri_state"/>
+      <node ref="U13" pin="A3" pinfunction="SDO_A3" pintype="tri_state"/>
+    </net>
+    <net code="38" name="PPG_SPI_MOSI" class="Default">
+      <node ref="J1502" pin="4" pinfunction="Pin_4_4" pintype="passive"/>
+      <node ref="U12" pin="A4" pinfunction="SDI_A4" pintype="input"/>
+      <node ref="U13" pin="A4" pinfunction="SDI_A4" pintype="input"/>
+    </net>
+    <net code="39" name="PPG_SPI_SCLK" class="Default">
+      <node ref="J1502" pin="2" pinfunction="Pin_2_2" pintype="passive"/>
+      <node ref="U12" pin="A2" pinfunction="SCLK_A2" pintype="input"/>
+      <node ref="U13" pin="A2" pinfunction="SCLK_A2" pintype="input"/>
+    </net>
+    <net code="40" name="PPG_VLED" class="Default">
+      <node ref="C1501" pin="1" pintype="passive"/>
+      <node ref="C403" pin="1" pintype="passive"/>
+      <node ref="C404" pin="1" pintype="passive"/>
+      <node ref="C405" pin="1" pintype="passive"/>
+      <node ref="C406" pin="1" pintype="passive"/>
+      <node ref="C407" pin="1" pintype="passive"/>
+      <node ref="C408" pin="1" pintype="passive"/>
+      <node ref="C4104" pin="1" pintype="passive"/>
+      <node ref="C4204" pin="1" pintype="passive"/>
+      <node ref="D401" pin="2" pinfunction="A_RED_IR_1_2" pintype="passive"/>
+      <node ref="D401" pin="4" pinfunction="A_RED_IR_2_4" pintype="passive"/>
+      <node ref="D401" pin="6" pinfunction="A_GREEN_6" pintype="passive"/>
+      <node ref="D402" pin="2" pinfunction="A_RED_IR_1_2" pintype="passive"/>
+      <node ref="D402" pin="4" pinfunction="A_RED_IR_2_4" pintype="passive"/>
+      <node ref="D402" pin="6" pinfunction="A_GREEN_6" pintype="passive"/>
+      <node ref="D403" pin="2" pinfunction="A_RED_IR_1_2" pintype="passive"/>
+      <node ref="D403" pin="4" pinfunction="A_RED_IR_2_4" pintype="passive"/>
+      <node ref="D403" pin="6" pinfunction="A_GREEN_6" pintype="passive"/>
+      <node ref="D404" pin="2" pinfunction="A_RED_IR_1_2" pintype="passive"/>
+      <node ref="D404" pin="4" pinfunction="A_RED_IR_2_4" pintype="passive"/>
+      <node ref="D404" pin="6" pinfunction="A_GREEN_6" pintype="passive"/>
+      <node ref="D405" pin="1" pinfunction="ANODE_1" pintype="passive"/>
+      <node ref="D406" pin="1" pinfunction="ANODE_1" pintype="passive"/>
+      <node ref="D407" pin="1" pinfunction="ANODE_1" pintype="passive"/>
+      <node ref="J1502" pin="21" pinfunction="Pin_21_21" pintype="passive"/>
+      <node ref="J1502" pin="22" pinfunction="Pin_22_22" pintype="passive"/>
+      <node ref="J1502" pin="23" pinfunction="Pin_23_23" pintype="passive"/>
+      <node ref="U12" pin="A1" pinfunction="VLED_A1" pintype="power_in"/>
+      <node ref="U13" pin="A1" pinfunction="VLED_A1" pintype="power_in"/>
+      <node ref="U402" pin="C2" pinfunction="VCC_C2" pintype="power_in"/>
+      <node ref="U403" pin="C2" pinfunction="VCC_C2" pintype="power_in"/>
+      <node ref="U404" pin="C2" pinfunction="VCC_C2" pintype="power_in"/>
+      <node ref="U405" pin="C2" pinfunction="VCC_C2" pintype="power_in"/>
+      <node ref="U406" pin="C2" pinfunction="VCC_C2" pintype="power_in"/>
+      <node ref="U407" pin="C2" pinfunction="VCC_C2" pintype="power_in"/>
+    </net>
+    <net code="41" name="VOUT1_1V8" class="Default">
+      <node ref="C4101" pin="1" pintype="passive"/>
+      <node ref="C4102" pin="1" pintype="passive"/>
+      <node ref="C4201" pin="1" pintype="passive"/>
+      <node ref="C4202" pin="1" pintype="passive"/>
+      <node ref="C802" pin="1" pintype="passive"/>
+      <node ref="J1502" pin="18" pinfunction="Pin_18_18" pintype="passive"/>
+      <node ref="R401" pin="1" pintype="passive"/>
+      <node ref="R402" pin="1" pintype="passive"/>
+      <node ref="R403" pin="1" pintype="passive"/>
+      <node ref="R404" pin="1" pintype="passive"/>
+      <node ref="R405" pin="1" pintype="passive"/>
+      <node ref="R408" pin="1" pintype="passive"/>
+      <node ref="R409" pin="1" pintype="passive"/>
+      <node ref="U12" pin="C2" pinfunction="VDD_DIG_C2" pintype="power_in"/>
+      <node ref="U12" pin="D2" pinfunction="VDD_ANA_D2" pintype="power_in"/>
+      <node ref="U13" pin="C2" pinfunction="VDD_DIG_C2" pintype="power_in"/>
+      <node ref="U13" pin="D2" pinfunction="VDD_ANA_D2" pintype="power_in"/>
+      <node ref="U6" pin="1" pinfunction="VDD_1" pintype="power_in"/>
+      <node ref="U6" pin="2" pinfunction="VDD_2" pintype="power_in"/>
+      <node ref="U6" pin="3" pinfunction="VDD_3" pintype="power_in"/>
+    </net>
+    <net code="42" name="unconnected-(D401-K_IR-Pad3)" class="Default">
+      <node ref="D401" pin="3" pinfunction="K_IR_3" pintype="passive+no_connect"/>
+    </net>
+    <net code="43" name="unconnected-(D403-K_IR-Pad3)" class="Default">
+      <node ref="D403" pin="3" pinfunction="K_IR_3" pintype="passive+no_connect"/>
+    </net>
+    <net code="44" name="unconnected-(D404-K_IR-Pad3)" class="Default">
+      <node ref="D404" pin="3" pinfunction="K_IR_3" pintype="passive+no_connect"/>
+    </net>
+  </nets>
+</export>

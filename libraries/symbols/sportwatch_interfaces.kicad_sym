@@ -1,0 +1,13 @@
+(kicad_symbol_lib (version 20231120) (generator "kicad_symbol_editor")
+(symbol "ChargerProtection_Provision" (pin_names (offset 1.016)) (in_bom yes) (on_board yes)
+(property "Reference" "U" (at 0 10 0) (effects (font (size 1.27 1.27))))
+(property "Value" "ChargerProtection_Provision" (at 0 -10 0) (effects (font (size 1.27 1.27))))
+(property "Footprint" "" (at 0 0 0) (effects (font (size 1 1)) (hide yes)))
+(property "Datasheet" "" (at 0 0 0) (effects (font (size 1 1)) (hide yes)))
+(symbol "ChargerProtection_Provision_0_1" (rectangle (start -12.7 7.62) (end 12.7 -7.62) (stroke (width 0.254) (type default)) (fill (type background))))
+(symbol "ChargerProtection_Provision_1_1"
+(pin power_in line (at -17.78 0 0) (length 5.08) (name "RAW_IN" (effects (font (size 1 1)))) (number "1" (effects (font (size 1 1)))))
+(pin power_out line (at 17.78 0 180) (length 5.08) (name "PROTECTED_OUT" (effects (font (size 1 1)))) (number "2" (effects (font (size 1 1)))))
+(pin power_in line (at 0 -12.7 90) (length 5.08) (name "GND" (effects (font (size 1 1)))) (number "3" (effects (font (size 1 1)))))
+))
+)

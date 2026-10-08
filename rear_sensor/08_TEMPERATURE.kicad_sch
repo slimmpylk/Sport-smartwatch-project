@@ -2,9 +2,9 @@
 	(version 20260306)
 	(generator "eeschema")
 	(generator_version "10.0")
-	(uuid "d8dcaafd-ce5c-4108-953e-9473bbb6e02a")
-	(paper "A3")
-	(title_block (title "MAIN - BMP585 / OPT4001 / ENV I2C pull-ups") (date "2026-10-08") (rev "A-P1"))
+	(uuid "05d396c1-f2bc-4a6a-abf7-6a3530b3ba63")
+	(paper "A4")
+	(title_block (title "REAR - MAX30208 ten-pin Thin LGA / polled temperature") (date "2026-10-08") (rev "A-P1"))
 	(lib_symbols
 (symbol "2026-09-16_05-56-22:BMP585"
 			(pin_names
@@ -1348,7 +1348,7 @@
 		)
 )
 	(symbol
-		(lib_id "2026-09-16_05-56-22:BMP585")
+		(lib_id "2026-09-16_05-57-26:MAX30208CLB+T")
 		(at 65.000000 55.000000 0)
 		(unit 1)
 		(body_style 1)
@@ -1358,8 +1358,8 @@
 		(in_pos_files yes)
 		(dnp no)
 		(fields_autoplaced yes)
-		(uuid "379b3434-155e-47ed-9b53-a7ea51e6bf3a")
-		(property "Reference" "U4"
+		(uuid "e51af612-e0cd-4d25-8946-9d5c1d79b36b")
+		(property "Reference" "U6"
 			(at 85.320000 44.840000 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -1369,7 +1369,7 @@
 				)
 			)
 		)
-		(property "Value" "BMP585"
+		(property "Value" "MAX30208CLB+T"
 			(at 85.320000 47.380000 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -1379,7 +1379,7 @@
 				)
 			)
 		)
-		(property "Footprint" "sportwatch_custom:LGA9_BMP585_BOS"
+		(property "Footprint" "sportwatch_custom:21-100265_MXM"
 			(at 65.000000 55.000000 0)
 			(hide yes)
 			(show_name no)
@@ -1391,7 +1391,7 @@
 				)
 			)
 		)
-		(property "Datasheet" "BMP585"
+		(property "Datasheet" "MAX30208CLB+T"
 			(at 65.000000 55.000000 0)
 			(hide yes)
 			(show_name no)
@@ -1414,48 +1414,52 @@
 				)
 			)
 		)
-		(pin "3"
-			(uuid "430b9226-4a9c-43d3-b50e-8c4ef6834e3e")
-		)
-		(pin "1"
-			(uuid "7fff00dc-02b7-40ae-be0f-568f0512fd3a")
-		)
 		(pin "4"
-			(uuid "9604e87a-9cea-4cf5-86a8-ea97b65f2967")
+			(uuid "49d5d96d-7091-445b-b841-a9ec1bdd5594")
 		)
 		(pin "6"
-			(uuid "3561c1ed-20ed-4ad7-8b8c-76b556e3fe49")
-		)
-		(pin "7"
-			(uuid "43eddb6d-3ee1-4528-b127-0816ed1657ad")
-		)
-		(pin "9"
-			(uuid "fec43da9-69d9-4161-9c1f-2fced2bc58ec")
-		)
-		(pin "8"
-			(uuid "21480d24-07d1-4e2b-80f4-5fe76d19d179")
+			(uuid "7cf383b3-96a6-469b-9c4f-74a640bcc69e")
 		)
 		(pin "5"
-			(uuid "8f7cfa23-be5b-41ae-b3f0-aa409ea2ae5e")
+			(uuid "7239fec6-14eb-4d9c-b692-e78317b37429")
 		)
 		(pin "2"
-			(uuid "fc5052c6-93e2-4126-ac4e-3b7dffc5241b")
+			(uuid "630f637a-88f7-45c1-a1ee-e8c51b752b8a")
 		)
-		(instances (project "sportwatch_revA" (path "/063f9d99-6c07-44cf-ba32-e33897e06972/a1807d67-219e-4716-a518-37f4813ced3f" (reference "U4") (unit 1))))
+		(pin "8"
+			(uuid "d7de214f-2956-4740-bffa-e0aaa1a321ab")
+		)
+		(pin "1"
+			(uuid "8f966030-be06-4e59-b6ef-f305741ed2a5")
+		)
+		(pin "3"
+			(uuid "ed60f395-1001-48bc-af8a-0f32aeae44c6")
+		)
+		(pin "10"
+			(uuid "6707ac3e-fae7-4958-9d7c-940b333f3fcc")
+		)
+		(pin "7"
+			(uuid "0509a390-73ad-420f-8460-020ed8dba113")
+		)
+		(pin "9"
+			(uuid "4e05d612-bb27-4f60-b30a-7d34675a6c77")
+		)
+		(instances (project "rear_sensor_revA" (path "/e9412e56-0f4f-4ec5-ad89-3d7d6481d433/a4b790ff-ae97-4241-9d88-606540620ce7" (reference "U6") (unit 1))))
 
-(property "Board" "MAIN" (at 0 0 0) (effects (font (size 1 1)) (hide yes)))
+(property "Board" "REAR" (at 0 0 0) (effects (font (size 1 1)) (hide yes)))
 )
-	(global_label "ENV_I2C_SCL" (shape bidirectional) (at 61.190000 55.000000 0) (effects (font (size 0.8 0.8)) (justify left bottom)) (uuid "79d67712-7f2a-43a1-92db-da0c971b0f43"))
-	(global_label "ENV_I2C_SDA" (shape bidirectional) (at 61.190000 57.540000 0) (effects (font (size 0.8 0.8)) (justify left bottom)) (uuid "35f4a677-3bc5-4444-a08b-6361c5395fc5"))
-	(global_label "GND" (shape bidirectional) (at 61.190000 60.080000 0) (effects (font (size 0.8 0.8)) (justify left bottom)) (uuid "b4e27492-9e56-4fef-af02-3e5907913252"))
-	(global_label "VOUT1_1V8" (shape bidirectional) (at 61.190000 62.620000 0) (effects (font (size 0.8 0.8)) (justify left bottom)) (uuid "20289ef9-1427-444e-b424-72d2e080e4df"))
-	(global_label "BARO_INT" (shape bidirectional) (at 109.450000 65.160000 180) (effects (font (size 0.8 0.8)) (justify left bottom)) (uuid "a71ec8aa-ee5d-4355-a587-5db10bb3b655"))
-	(global_label "GND" (shape bidirectional) (at 109.450000 62.620000 180) (effects (font (size 0.8 0.8)) (justify left bottom)) (uuid "34a61d5f-bf3a-4681-8a0e-8729449cb971"))
-	(global_label "VOUT1_1V8" (shape bidirectional) (at 109.450000 60.080000 180) (effects (font (size 0.8 0.8)) (justify left bottom)) (uuid "b37ad896-a62b-4d94-9e3a-413fd19207fa"))
-	(global_label "VOUT1_1V8" (shape bidirectional) (at 109.450000 57.540000 180) (effects (font (size 0.8 0.8)) (justify left bottom)) (uuid "226c3863-8d2e-48e4-8027-5966edea316d"))
-	(no_connect (at 105.640000 55.000000) (uuid "23b8a462-9405-469f-9133-6eb523e50f73"))
+	(global_label "VOUT1_1V8" (shape bidirectional) (at 61.190000 55.000000 0) (effects (font (size 0.8 0.8)) (justify left bottom)) (uuid "6845b4b5-ab83-44fb-ba07-35cb897d981d"))
+	(global_label "VOUT1_1V8" (shape bidirectional) (at 61.190000 57.540000 0) (effects (font (size 0.8 0.8)) (justify left bottom)) (uuid "069a750e-370d-4adc-b46b-bc54028cb54e"))
+	(global_label "VOUT1_1V8" (shape bidirectional) (at 61.190000 60.080000 0) (effects (font (size 0.8 0.8)) (justify left bottom)) (uuid "223749e8-2d65-4431-bd49-fbfea8b24cd6"))
+	(global_label "GND" (shape bidirectional) (at 61.190000 62.620000 0) (effects (font (size 0.8 0.8)) (justify left bottom)) (uuid "e6206ece-9c25-4a50-8e51-783aeec1fa77"))
+	(global_label "GND" (shape bidirectional) (at 61.190000 65.160000 0) (effects (font (size 0.8 0.8)) (justify left bottom)) (uuid "c63ccdd8-62e2-4e75-a9fc-30092e2dcc67"))
+	(global_label "GND" (shape bidirectional) (at 109.450000 65.160000 180) (effects (font (size 0.8 0.8)) (justify left bottom)) (uuid "c101470f-1133-4c67-a81f-5385b02263ec"))
+	(global_label "GND" (shape bidirectional) (at 109.450000 62.620000 180) (effects (font (size 0.8 0.8)) (justify left bottom)) (uuid "d741aea3-02e0-4781-809d-4f1c8a104765"))
+	(global_label "ENV_I2C_SDA" (shape bidirectional) (at 109.450000 60.080000 180) (effects (font (size 0.8 0.8)) (justify left bottom)) (uuid "132cbdd6-1fd2-46df-98b6-7be3ddbdfa5e"))
+	(global_label "ENV_I2C_SCL" (shape bidirectional) (at 109.450000 57.540000 180) (effects (font (size 0.8 0.8)) (justify left bottom)) (uuid "0a093e2b-c8fc-4136-80a5-cd4fbfbb11a5"))
+	(global_label "GND" (shape bidirectional) (at 109.450000 55.000000 180) (effects (font (size 0.8 0.8)) (justify left bottom)) (uuid "9b7315de-bbaf-4336-a15c-6987745ea47f"))
 	(symbol
-		(lib_id "2026-09-16_05-59-08:OPT4001DTSR")
+		(lib_id "Device:C")
 		(at 190.000000 55.000000 0)
 		(unit 1)
 		(body_style 1)
@@ -1465,52 +1469,28 @@
 		(in_pos_files yes)
 		(dnp no)
 		(fields_autoplaced yes)
-		(uuid "b31d3c1d-a8f3-43fe-880a-466e068cfd30")
-		(property "Reference" "U5"
-			(at 210.320000 44.840000 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.524 1.524)
-				)
-			)
-		)
-		(property "Value" "OPT4001DTSR"
-			(at 210.320000 47.380000 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.524 1.524)
-				)
-			)
-		)
-		(property "Footprint" "sportwatch_custom:DTS0008A-MFG"
-			(at 190.000000 55.000000 0)
-			(hide yes)
+		(uuid "e132d1a4-cb66-438b-bdac-f461cc57b353")
+		(property "Reference" "C802"
+			(at 192.540000 52.460000 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
-					(italic yes)
 				)
 			)
 		)
-		(property "Datasheet" "https://www.ti.com/lit/gpn/opt4001"
-			(at 190.000000 55.000000 0)
-			(hide yes)
+		(property "Value" "100nF"
+			(at 192.540000 57.540000 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
-					(italic yes)
 				)
 			)
 		)
-		(property "Description" ""
+		(property "Footprint" "Capacitor_SMD:C_0402_1005Metric"
 			(at 190.000000 55.000000 0)
 			(hide yes)
 			(show_name no)
@@ -1521,87 +1501,8 @@
 				)
 			)
 		)
-		(pin "5"
-			(uuid "31b383fc-11f5-44b4-a427-328829b9ed21")
-		)
-		(pin "6"
-			(uuid "ad4db550-3ea6-4860-a39a-05da9852bbcd")
-		)
-		(pin "7"
-			(uuid "0eae3c38-44dc-47be-91d5-20c5b9f58576")
-		)
-		(pin "4"
-			(uuid "730534a3-3444-415c-aa1d-6fa4456562f2")
-		)
-		(pin "2"
-			(uuid "88e6cf0d-ae30-44f0-9df0-361d8921b63e")
-		)
-		(pin "1"
-			(uuid "77372511-bf15-48dc-be86-ac49aa31564d")
-		)
-		(pin "3"
-			(uuid "671eafc4-6e82-46e5-98bb-eac4221162e2")
-		)
-		(pin "8"
-			(uuid "8b6e3a62-f16f-4cd2-93f4-e34835a0b70b")
-		)
-		(instances (project "sportwatch_revA" (path "/063f9d99-6c07-44cf-ba32-e33897e06972/a1807d67-219e-4716-a518-37f4813ced3f" (reference "U5") (unit 1))))
-
-(property "Board" "MAIN" (at 0 0 0) (effects (font (size 1 1)) (hide yes)))
-)
-	(global_label "VOUT1_1V8" (shape bidirectional) (at 186.190000 55.000000 0) (effects (font (size 0.8 0.8)) (justify left bottom)) (uuid "65e77d95-00b8-4a27-9d01-7144a81fb94d"))
-	(global_label "GND" (shape bidirectional) (at 186.190000 67.700000 0) (effects (font (size 0.8 0.8)) (justify left bottom)) (uuid "550e5787-aba9-4880-8a88-2947cb155b04"))
-	(no_connect (at 230.640000 62.620000) (uuid "d65c543b-90af-4248-934d-fdf21de5e7b8"))
-	(global_label "GND" (shape bidirectional) (at 234.450000 67.700000 180) (effects (font (size 0.8 0.8)) (justify left bottom)) (uuid "11f6d3e3-cd5b-4b20-902a-034899dc95bb"))
-	(global_label "ENV_I2C_SCL" (shape bidirectional) (at 186.190000 60.080000 0) (effects (font (size 0.8 0.8)) (justify left bottom)) (uuid "6a64705e-6912-4cac-9fd8-42e8103c79e5"))
-	(no_connect (at 230.640000 60.080000) (uuid "65705007-e4c2-4a87-b170-5f2cfeed0e76"))
-	(global_label "ALS_INT" (shape bidirectional) (at 234.450000 55.000000 180) (effects (font (size 0.8 0.8)) (justify left bottom)) (uuid "3e2abc6c-5266-4754-acb5-e98b08caf7dc"))
-	(global_label "ENV_I2C_SDA" (shape bidirectional) (at 186.190000 62.620000 0) (effects (font (size 0.8 0.8)) (justify left bottom)) (uuid "1591a50d-8f04-48c5-aca5-52fdd05d2175"))
-	(symbol
-		(lib_id "Device:C")
-		(at 315.000000 55.000000 0)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "e0fbd47b-ec32-45bf-869c-901ae19e3207")
-		(property "Reference" "C801"
-			(at 317.540000 52.460000 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "100nF"
-			(at 317.540000 57.540000 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" "Capacitor_SMD:C_0402_1005Metric"
-			(at 315.000000 55.000000 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
 		(property "Datasheet" "~"
-			(at 315.000000 55.000000 0)
+			(at 190.000000 55.000000 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -1611,85 +1512,8 @@
 				)
 			)
 		)
-		(property "Description" "OPT4001 VDD decoupling"
-			(at 315.000000 55.000000 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "1"
-			(uuid "2cc73eb2-e2b8-4a92-99c1-6271a4d0c991")
-		)
-		(pin "2"
-			(uuid "18dd1e2a-6cd8-49ae-ac4b-4ab33531512b")
-		)
-		(instances (project "sportwatch_revA" (path "/063f9d99-6c07-44cf-ba32-e33897e06972/a1807d67-219e-4716-a518-37f4813ced3f" (reference "C801") (unit 1))))
-
-(property "Board" "MAIN" (at 0 0 0) (effects (font (size 1 1)) (hide yes)))
-)
-	(global_label "VOUT1_1V8" (shape bidirectional) (at 315.000000 47.380000 270) (effects (font (size 0.8 0.8)) (justify left bottom)) (uuid "66a41384-88c7-4273-907e-a5334b739bdb"))
-	(global_label "GND" (shape bidirectional) (at 315.000000 62.620000 90) (effects (font (size 0.8 0.8)) (justify left bottom)) (uuid "03de90a1-3c9f-41d4-a49d-2f04fd59d599"))
-	(symbol
-		(lib_id "Device:C")
-		(at 65.000000 125.000000 0)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "11b8cb89-5b3a-49bb-bf46-a3fbeb94357c")
-		(property "Reference" "C803"
-			(at 67.540000 122.460000 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "100nF"
-			(at 67.540000 127.540000 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" "Capacitor_SMD:C_0402_1005Metric"
-			(at 65.000000 125.000000 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 65.000000 125.000000 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "BMP585 VDDIO decoupling"
-			(at 65.000000 125.000000 0)
+		(property "Description" "MAX30208 VDD decoupling"
+			(at 190.000000 55.000000 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -1700,387 +1524,19 @@
 			)
 		)
 		(pin "1"
-			(uuid "29b187b3-7664-411d-8195-6aa118747b5b")
+			(uuid "becc3708-79ef-47a0-a073-590736729836")
 		)
 		(pin "2"
-			(uuid "385477f1-9b4e-4333-b692-8aeb20e56a69")
+			(uuid "58595034-8e2b-4f83-b06b-4766352e3fb6")
 		)
-		(instances (project "sportwatch_revA" (path "/063f9d99-6c07-44cf-ba32-e33897e06972/a1807d67-219e-4716-a518-37f4813ced3f" (reference "C803") (unit 1))))
+		(instances (project "rear_sensor_revA" (path "/e9412e56-0f4f-4ec5-ad89-3d7d6481d433/a4b790ff-ae97-4241-9d88-606540620ce7" (reference "C802") (unit 1))))
 
-(property "Board" "MAIN" (at 0 0 0) (effects (font (size 1 1)) (hide yes)))
+(property "Board" "REAR" (at 0 0 0) (effects (font (size 1 1)) (hide yes)))
 )
-	(global_label "VOUT1_1V8" (shape bidirectional) (at 65.000000 117.380000 270) (effects (font (size 0.8 0.8)) (justify left bottom)) (uuid "a457966f-c000-402a-8416-d341d3b7da41"))
-	(global_label "GND" (shape bidirectional) (at 65.000000 132.620000 90) (effects (font (size 0.8 0.8)) (justify left bottom)) (uuid "e6a7ba58-452e-4674-bbee-75c245bc85d7"))
-	(symbol
-		(lib_id "Device:C")
-		(at 190.000000 125.000000 0)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "0025c824-362e-4939-ba73-45d381a232b9")
-		(property "Reference" "C804"
-			(at 192.540000 122.460000 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "100nF"
-			(at 192.540000 127.540000 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" "Capacitor_SMD:C_0402_1005Metric"
-			(at 190.000000 125.000000 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 190.000000 125.000000 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "BMP585 VDD decoupling"
-			(at 190.000000 125.000000 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "1"
-			(uuid "c61d6d0d-7a9e-40b7-9087-84580c4e6b0d")
-		)
-		(pin "2"
-			(uuid "4ce5690f-e7c9-456b-a51a-7940752d2f4b")
-		)
-		(instances (project "sportwatch_revA" (path "/063f9d99-6c07-44cf-ba32-e33897e06972/a1807d67-219e-4716-a518-37f4813ced3f" (reference "C804") (unit 1))))
-
-(property "Board" "MAIN" (at 0 0 0) (effects (font (size 1 1)) (hide yes)))
-)
-	(global_label "VOUT1_1V8" (shape bidirectional) (at 190.000000 117.380000 270) (effects (font (size 0.8 0.8)) (justify left bottom)) (uuid "b3ebe479-1215-4337-b237-c88eae663d0e"))
-	(global_label "GND" (shape bidirectional) (at 190.000000 132.620000 90) (effects (font (size 0.8 0.8)) (justify left bottom)) (uuid "bb5462ac-e3e2-4c8c-8451-3aa1549ca309"))
-	(symbol
-		(lib_id "Device:R")
-		(at 315.000000 125.000000 0)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "84d6b076-4f22-46ce-9bb4-ca07b62abe6c")
-		(property "Reference" "R801"
-			(at 317.540000 122.460000 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "4.7k"
-			(at 317.540000 127.540000 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" "Resistor_SMD:R_0402_1005Metric"
-			(at 315.000000 125.000000 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 315.000000 125.000000 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "ENV I2C SDA pull-up"
-			(at 315.000000 125.000000 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "1"
-			(uuid "8ed996e6-f1e6-4888-bf3c-458aee2db030")
-		)
-		(pin "2"
-			(uuid "552a46d9-51c3-4ff2-aa1f-5831b1fc9a65")
-		)
-		(instances (project "sportwatch_revA" (path "/063f9d99-6c07-44cf-ba32-e33897e06972/a1807d67-219e-4716-a518-37f4813ced3f" (reference "R801") (unit 1))))
-
-(property "Board" "MAIN" (at 0 0 0) (effects (font (size 1 1)) (hide yes)))
-)
-	(global_label "VOUT1_1V8" (shape bidirectional) (at 315.000000 117.380000 270) (effects (font (size 0.8 0.8)) (justify left bottom)) (uuid "bf5524f5-128e-4bfc-8261-c3159ea599e0"))
-	(global_label "ENV_I2C_SDA" (shape bidirectional) (at 315.000000 132.620000 90) (effects (font (size 0.8 0.8)) (justify left bottom)) (uuid "08287196-ae4f-43c7-83ec-b0ec931c9c46"))
-	(symbol
-		(lib_id "Device:R")
-		(at 65.000000 195.000000 0)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "bb95deb3-f0c0-4177-9d0b-a487564b8b78")
-		(property "Reference" "R802"
-			(at 67.540000 192.460000 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "4.7k"
-			(at 67.540000 197.540000 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" "Resistor_SMD:R_0402_1005Metric"
-			(at 65.000000 195.000000 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 65.000000 195.000000 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "ENV I2C SCL pull-up"
-			(at 65.000000 195.000000 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "1"
-			(uuid "aa65fcc3-6e62-43bd-8cd6-f4b50e3c4d76")
-		)
-		(pin "2"
-			(uuid "173c1045-3137-44bb-81f1-57eb711dd90d")
-		)
-		(instances (project "sportwatch_revA" (path "/063f9d99-6c07-44cf-ba32-e33897e06972/a1807d67-219e-4716-a518-37f4813ced3f" (reference "R802") (unit 1))))
-
-(property "Board" "MAIN" (at 0 0 0) (effects (font (size 1 1)) (hide yes)))
-)
-	(global_label "VOUT1_1V8" (shape bidirectional) (at 65.000000 187.380000 270) (effects (font (size 0.8 0.8)) (justify left bottom)) (uuid "f202ae6d-b5f1-441a-b4ce-f96463f20a0e"))
-	(global_label "ENV_I2C_SCL" (shape bidirectional) (at 65.000000 202.620000 90) (effects (font (size 0.8 0.8)) (justify left bottom)) (uuid "e516048f-c359-4173-8a30-5d44c2e3c68a"))
-	(symbol
-		(lib_id "Device:R")
-		(at 190.000000 195.000000 0)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "93e3fb29-3750-480b-a21e-f43763dd6122")
-		(property "Reference" "R803"
-			(at 192.540000 192.460000 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "10k"
-			(at 192.540000 197.540000 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" "Resistor_SMD:R_0402_1005Metric"
-			(at 190.000000 195.000000 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 190.000000 195.000000 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "OPT4001 INT open-drain pull-up"
-			(at 190.000000 195.000000 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "1"
-			(uuid "ddef7019-e6bb-475b-915f-61b9385c2df3")
-		)
-		(pin "2"
-			(uuid "ace05a1b-8301-46fe-bb5a-fcf92249d083")
-		)
-		(instances (project "sportwatch_revA" (path "/063f9d99-6c07-44cf-ba32-e33897e06972/a1807d67-219e-4716-a518-37f4813ced3f" (reference "R803") (unit 1))))
-
-(property "Board" "MAIN" (at 0 0 0) (effects (font (size 1 1)) (hide yes)))
-)
-	(global_label "VOUT1_1V8" (shape bidirectional) (at 190.000000 187.380000 270) (effects (font (size 0.8 0.8)) (justify left bottom)) (uuid "9a21f61c-6060-457a-a656-12a32cdf9b08"))
-	(global_label "ALS_INT" (shape bidirectional) (at 190.000000 202.620000 90) (effects (font (size 0.8 0.8)) (justify left bottom)) (uuid "97cb55af-1773-4b2c-a053-17249e595ff1"))
-	(hierarchical_label "VOUT1_1V8"
-		(shape passive)
-		(at 20.0 210.0 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left bottom)
-		)
-		(uuid "0a028e79-b35e-4ba3-a697-b650a20fae61")
-	)
-
-	(hierarchical_label "ENV_I2C_SCL"
-		(shape bidirectional)
-		(at 190.0 210.0 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left bottom)
-		)
-		(uuid "179ed08e-8c20-45ac-8fbd-0789825088e7")
-	)
-
-	(hierarchical_label "ENV_I2C_SDA"
-		(shape bidirectional)
-		(at 20.0 222.0 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right bottom)
-		)
-		(uuid "29773613-d71c-4532-856b-84c75ae8ec08")
-	)
-
-	(hierarchical_label "BARO_INT"
-		(shape output)
-		(at 190.0 222.0 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left bottom)
-		)
-		(uuid "5adad068-7c79-4492-8f98-1dd3f50d5654")
-	)
-
-	(hierarchical_label "ALS_INT"
-		(shape output)
-		(at 20.0 234.0 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left bottom)
-		)
-		(uuid "fc4fc4e6-9658-403c-9829-2607e685018f")
-	)
-
-	(text "Board ownership and interfaces: design/interfaces/main_rear_interface.md" (at 15 15 0) (effects (font (size 1 1)) (justify left bottom)) (uuid "bffc8f50-bc55-45c1-8b85-604a3e0f8e1c"))
-	(text "MAX30208 U6/C802 moved to REAR. R801/R802 remain MAIN; no duplicated rear pull-ups." (at 15 275 0) (effects (font (size 1 1)) (justify left bottom)) (uuid "e7660590-635a-494d-8188-50a301240aa8"))
+	(global_label "VOUT1_1V8" (shape bidirectional) (at 190.000000 47.380000 270) (effects (font (size 0.8 0.8)) (justify left bottom)) (uuid "a85bc44d-f2d2-4367-84c7-106b7966aadf"))
+	(global_label "GND" (shape bidirectional) (at 190.000000 62.620000 90) (effects (font (size 0.8 0.8)) (justify left bottom)) (uuid "98476431-2b05-4851-ab5a-890890497fcf"))
+	(text "Board ownership and interfaces: design/interfaces/main_rear_interface.md" (at 15 15 0) (effects (font (size 1 1)) (justify left bottom)) (uuid "10efac25-b43e-4ed9-8378-a81a45b9bb84"))
+	(text "U6.7/U6.10 grounded. No temperature IRQ. Thermal island requires later mechanical review." (at 15 150 0) (effects (font (size 1 1)) (justify left bottom)) (uuid "233f55c3-ceda-466b-853d-04293fe026e2"))
 
 
 
@@ -2095,59 +1551,16 @@
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-(wire (pts (xy 20.0 210.0) (xy 65.0 210.0)) (stroke (width 0) (type default)) (uuid "27619350-5d2c-49a5-bf68-98e7b7d603ec"))
-(global_label "VOUT1_1V8" (shape bidirectional) (at 65.0 210.0 180) (effects (font (size 0.8 0.8)) (justify right bottom)) (uuid "82a6d776-dfeb-45be-bc30-eab44f03150c"))
-
-(wire (pts (xy 190.0 210.0) (xy 235.0 210.0)) (stroke (width 0) (type default)) (uuid "7ac6a254-2c3e-41e7-ae7a-445bd0b94ab6"))
-(global_label "ENV_I2C_SCL" (shape bidirectional) (at 235.0 210.0 180) (effects (font (size 0.8 0.8)) (justify right bottom)) (uuid "38802a1d-576e-48d4-809d-72a1993751fb"))
-
-(wire (pts (xy 20.0 222.0) (xy 65.0 222.0)) (stroke (width 0) (type default)) (uuid "082fd598-8a7d-4b64-a063-d3e57b495a8e"))
-(global_label "ENV_I2C_SDA" (shape bidirectional) (at 65.0 222.0 180) (effects (font (size 0.8 0.8)) (justify right bottom)) (uuid "afc150d5-a78b-41f5-86cb-340b877c5cee"))
-
-(wire (pts (xy 190.0 222.0) (xy 235.0 222.0)) (stroke (width 0) (type default)) (uuid "c3d3744f-5d1f-41c4-a983-bb3d7162c021"))
-(global_label "BARO_INT" (shape bidirectional) (at 235.0 222.0 180) (effects (font (size 0.8 0.8)) (justify right bottom)) (uuid "1f8b315e-f99c-4bf5-8bbc-5c1a2249703c"))
-
-(wire (pts (xy 20.0 234.0) (xy 65.0 234.0)) (stroke (width 0) (type default)) (uuid "4c14fc9f-a669-4b8d-a797-8879eace14fd"))
-(global_label "ALS_INT" (shape bidirectional) (at 65.0 234.0 180) (effects (font (size 0.8 0.8)) (justify right bottom)) (uuid "2063e709-5cb7-4da7-9f3b-08083fb45735"))
-
-(wire (pts (xy 65.0 55.0) (xy 61.19 55.0)) (stroke (width 0) (type default)) (uuid "e356c804-01fd-4bce-81d9-4e9a8ceb97ac"))
-(wire (pts (xy 65.0 57.54) (xy 61.19 57.54)) (stroke (width 0) (type default)) (uuid "b34e2e28-cb16-4e28-81be-cd8949d43be5"))
-(wire (pts (xy 65.0 60.08) (xy 61.19 60.08)) (stroke (width 0) (type default)) (uuid "21c0d5d0-6e2a-4257-b5c7-4b261ed4c679"))
-(wire (pts (xy 65.0 62.62) (xy 61.19 62.62)) (stroke (width 0) (type default)) (uuid "67e39374-b8e4-4ea9-beaf-0f77fbf38559"))
-(wire (pts (xy 105.64 65.16) (xy 109.45 65.16)) (stroke (width 0) (type default)) (uuid "234134da-81d1-490b-b42b-653b6c00cb50"))
-(wire (pts (xy 105.64 62.62) (xy 109.45 62.62)) (stroke (width 0) (type default)) (uuid "0a12d52d-c353-4201-9412-aee342e8ad6c"))
-(wire (pts (xy 105.64 60.08) (xy 109.45 60.08)) (stroke (width 0) (type default)) (uuid "332f4399-75bb-4a6f-9df4-3f2af0749ac6"))
-(wire (pts (xy 105.64 57.54) (xy 109.45 57.54)) (stroke (width 0) (type default)) (uuid "d6e53196-9575-4c5d-b695-d706931b48f7"))
-(wire (pts (xy 190.0 55.0) (xy 186.19 55.0)) (stroke (width 0) (type default)) (uuid "1b45b77f-13e4-47d1-b047-32bba7f6b182"))
-(wire (pts (xy 190.0 67.7) (xy 186.19 67.7)) (stroke (width 0) (type default)) (uuid "55ef7bf0-d48d-4f0e-b727-3ae752e02d85"))
-(wire (pts (xy 230.64 67.7) (xy 234.45 67.7)) (stroke (width 0) (type default)) (uuid "86a6a92d-94ff-4900-8a6d-917d42d0d145"))
-(wire (pts (xy 190.0 60.08) (xy 186.19 60.08)) (stroke (width 0) (type default)) (uuid "9b571fd0-c574-4e89-a13b-6265fe5ab5da"))
-(wire (pts (xy 230.64 55.0) (xy 234.45 55.0)) (stroke (width 0) (type default)) (uuid "d57bd40c-92e8-41bd-94f8-29d0bfd4d961"))
-(wire (pts (xy 190.0 62.62) (xy 186.19 62.62)) (stroke (width 0) (type default)) (uuid "23173d6f-4ab1-4950-9e5b-a19dafb1ad98"))
-(wire (pts (xy 315.0 51.19) (xy 315.0 47.379999999999995)) (stroke (width 0) (type default)) (uuid "b8d86dbb-7e12-43d6-b6ee-9a56e00582c9"))
-(wire (pts (xy 315.0 58.81) (xy 315.0 62.620000000000005)) (stroke (width 0) (type default)) (uuid "cfe498b2-e075-4889-b60a-8e05eb62c0cb"))
-(wire (pts (xy 65.0 121.19) (xy 65.0 117.38)) (stroke (width 0) (type default)) (uuid "df3c40df-4461-460c-86d9-9d56447a84da"))
-(wire (pts (xy 65.0 128.81) (xy 65.0 132.62)) (stroke (width 0) (type default)) (uuid "41566397-e212-4901-a598-b275174e2992"))
-(wire (pts (xy 190.0 121.19) (xy 190.0 117.38)) (stroke (width 0) (type default)) (uuid "979ab5dc-85c7-48eb-8b0f-9d250dc235d8"))
-(wire (pts (xy 190.0 128.81) (xy 190.0 132.62)) (stroke (width 0) (type default)) (uuid "ab208407-1d47-4279-8ef8-855b8f53650e"))
-(wire (pts (xy 315.0 121.19) (xy 315.0 117.38)) (stroke (width 0) (type default)) (uuid "01045c6a-c2ca-47f8-b5f5-d71bb82d0743"))
-(wire (pts (xy 315.0 128.81) (xy 315.0 132.62)) (stroke (width 0) (type default)) (uuid "4833eeb1-a1eb-41a8-afff-f6f6f881fd9a"))
-(wire (pts (xy 65.0 191.19) (xy 65.0 187.38)) (stroke (width 0) (type default)) (uuid "64ca465d-911a-4923-9f84-b2fcdf1df6aa"))
-(wire (pts (xy 65.0 198.81) (xy 65.0 202.62)) (stroke (width 0) (type default)) (uuid "dbb8b54c-0b6d-4dc7-8ddb-3173558bb8f2"))
-(wire (pts (xy 190.0 191.19) (xy 190.0 187.38)) (stroke (width 0) (type default)) (uuid "e3ff86c4-a5ba-4b0d-8e1d-ffe164617c8c"))
-(wire (pts (xy 190.0 198.81) (xy 190.0 202.62)) (stroke (width 0) (type default)) (uuid "10fd0c7f-38cd-482e-8c9b-d717021dfdce"))
+(wire (pts (xy 65.0 55.0) (xy 61.19 55.0)) (stroke (width 0) (type default)) (uuid "68606ada-f0b1-45a9-b179-8d21d44fcce4"))
+(wire (pts (xy 65.0 57.54) (xy 61.19 57.54)) (stroke (width 0) (type default)) (uuid "8213bf99-9acb-4fa6-808b-df4a2fac2afe"))
+(wire (pts (xy 65.0 60.08) (xy 61.19 60.08)) (stroke (width 0) (type default)) (uuid "59a1881e-7645-4ca7-b19c-9a95c30707ad"))
+(wire (pts (xy 65.0 62.62) (xy 61.19 62.62)) (stroke (width 0) (type default)) (uuid "f7e681cd-2ed9-46c0-bde2-cf0ca4446556"))
+(wire (pts (xy 65.0 65.16) (xy 61.19 65.16)) (stroke (width 0) (type default)) (uuid "f0ee0598-104b-4e3f-9f20-2cde7c4a8bd9"))
+(wire (pts (xy 105.64 65.16) (xy 109.45 65.16)) (stroke (width 0) (type default)) (uuid "a02e4b8a-da2c-4728-9064-be1f8ed4e455"))
+(wire (pts (xy 105.64 62.62) (xy 109.45 62.62)) (stroke (width 0) (type default)) (uuid "1f78e181-d322-4724-8755-35e84caf3786"))
+(wire (pts (xy 105.64 60.08) (xy 109.45 60.08)) (stroke (width 0) (type default)) (uuid "18b54df2-9da2-4099-9eac-aec1865852a8"))
+(wire (pts (xy 105.64 57.54) (xy 109.45 57.54)) (stroke (width 0) (type default)) (uuid "8257a3dd-6417-4ea6-bdac-954afbc5875c"))
+(wire (pts (xy 105.64 55.0) (xy 109.45 55.0)) (stroke (width 0) (type default)) (uuid "568576ee-3867-4ad9-9b8c-ac670f577993"))
+(wire (pts (xy 190.0 51.19) (xy 190.0 47.379999999999995)) (stroke (width 0) (type default)) (uuid "d7ad57e0-3082-436e-b87b-229e7015284f"))
+(wire (pts (xy 190.0 58.81) (xy 190.0 62.620000000000005)) (stroke (width 0) (type default)) (uuid "b2a984c7-362c-4791-937a-feddef82472e"))
 )
