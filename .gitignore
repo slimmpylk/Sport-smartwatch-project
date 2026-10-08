@@ -46,3 +46,19 @@ Thumbs.db
 #
 # Project files, fp-lib-table and sym-lib-table should also be tracked.
 output/
+
+# ------------------------------------------------------------
+# Local AI / agent tooling
+# ------------------------------------------------------------
+
+/AGENTS.md
+/CLAUDE.md
+/GEMINI.md
+
+/docs/
+
+/scripts/ai_gate.py
+/scripts/ai_gate.sh
+
+/.github/workflows/ai-gate.yml
+/opencode.jsonc
