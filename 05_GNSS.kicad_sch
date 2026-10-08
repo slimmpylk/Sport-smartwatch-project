@@ -621,7 +621,7 @@
 		)
 		(uuid "0f35b217-3162-4267-a67a-72f429e62d31")
 	)
-	(text "SDA/SCL and SAFEBOOT_N are NC because UART is primary host. Per u-blox MAX-F10S Integration Manual (UBXDOC-963802114-12892 R01) Section 3.2.3.4 p. 26 and pin table p. 7: VCC_RF is an output for optional active antenna/external LNA bias. For passive antennas (AE1420 baseline), VCC_RF and LNA_EN are intentionally unconnected (NC). Note: RF_IN pad 11 is on the south-east side facing south toward matching network."
+	(text "SDA/SCL and SAFEBOOT_N are NC because UART is primary host. Per u-blox MAX-F10S Integration Manual (UBXDOC-963802114-12892 R01) Section 3.2.3.4 p. 26 and pin table p. 7: VCC_RF is an output for optional active antenna/external LNA bias. For passive antennas (AE1420 baseline), VCC_RF and LNA_EN are intentionally unconnected (NC). Note: In KiCad normal top view (lower Y = north/up), U8 center is at ~(100, 86) and RF_IN pad 11 is at ~(103.30, 81.11) on the north-east side, facing north toward the matching network at Y ~ 79.2 (historical south/south-east wording SUPERSEDED)."
 		(exclude_from_sim no)
 		(at 24 176 0)
 		(effects

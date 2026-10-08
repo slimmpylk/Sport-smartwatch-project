@@ -17680,7 +17680,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Crystal:Crystal_SMD_2012-2Pin_2.0x1.2mm"
+		(property "Footprint" "sportwatch_custom:Crystal_SMD_ABS06_2.0x1.2mm"
 			(at 340 104 0)
 			(hide yes)
 			(show_name no)
