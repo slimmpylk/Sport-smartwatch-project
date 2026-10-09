@@ -22,8 +22,3 @@
    (condition "A.NetClass == 'Power'")
    (constraint clearance (min 0.12mm))
    (constraint track_width (min 0.25mm)))
-
-(rule "Optical PD Guard Netclass Rules"
-   (condition "A.NetClass == 'Optical_PD_Guard'")
-   (constraint clearance (min 0.10mm))
-   (constraint track_width (min 0.10mm)))

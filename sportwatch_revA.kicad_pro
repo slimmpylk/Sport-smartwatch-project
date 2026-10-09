@@ -553,25 +553,6 @@
       },
       {
         "bus_width": 12,
-        "clearance": 0.1,
-        "diff_pair_gap": 0.2,
-        "diff_pair_via_gap": 0.2,
-        "diff_pair_width": 0.1,
-        "line_style": 0,
-        "microvia_diameter": 0.2,
-        "microvia_drill": 0.1,
-        "name": "Optical_PD_Guard",
-        "pcb_color": "rgba(0, 200, 100, 0.800)",
-        "priority": 400,
-        "schematic_color": "rgba(0, 200, 100, 0.800)",
-        "track_width": 0.1,
-        "tuning_profile": "",
-        "via_diameter": 0.4,
-        "via_drill": 0.2,
-        "wire_width": 6
-      },
-      {
-        "bus_width": 12,
         "clearance": 0.12,
         "diff_pair_gap": 0.25,
         "diff_pair_via_gap": 0.25,
@@ -598,49 +579,7 @@
       "/01_APOLLO510B/APOLLO_BLE_RF": [
         "HighSpeed_50R"
       ],
-      "/04_PPG/PPG1_LED_GREEN_DRV": [
-        "Power"
-      ],
-      "/04_PPG/PPG1_LED_IR_DRV": [
-        "Power"
-      ],
-      "/04_PPG/PPG1_LED_RED_DRV": [
-        "Power"
-      ],
-      "/04_PPG/PPG1_PD1_IN": [
-        "Optical_PD_Guard"
-      ],
-      "/04_PPG/PPG1_PD2_IN": [
-        "Optical_PD_Guard"
-      ],
-      "/04_PPG/PPG1_PD_GND": [
-        "Optical_PD_Guard"
-      ],
-      "/04_PPG/PPG1_VREF": [
-        "Optical_PD_Guard"
-      ],
-      "/04_PPG/PPG2_LED_GREEN_DRV": [
-        "Power"
-      ],
-      "/04_PPG/PPG2_LED_IR_DRV": [
-        "Power"
-      ],
-      "/04_PPG/PPG2_LED_RED_DRV": [
-        "Power"
-      ],
-      "/04_PPG/PPG2_PD1_IN": [
-        "Optical_PD_Guard"
-      ],
-      "/04_PPG/PPG2_PD2_IN": [
-        "Optical_PD_Guard"
-      ],
-      "/04_PPG/PPG2_PD_GND": [
-        "Optical_PD_Guard"
-      ],
-      "/04_PPG/PPG2_VREF": [
-        "Optical_PD_Guard"
-      ],
-      "/04_PPG/PPG_VLED": [
+      "PPG_VLED": [
         "Power"
       ],
       "/DISP_MIPI_CLK_N": [
@@ -694,7 +633,7 @@
       "/SYS_3V3": [
         "Power"
       ],
-      "/VOUT1_1V8": [
+      "VOUT1_1V8": [
         "Power"
       ],
       "/VOUT2_3V0": [
@@ -741,21 +680,21 @@
       ],
       "VSYS": [
         "Power"
+      ],
+      "CHG_RAW_5V": [
+        "Power"
+      ],
+      "VBUSIN": [
+        "Power"
+      ],
+      "/VBAT": [
+        "Power"
+      ],
+      "/VSYS": [
+        "Power"
       ]
     },
     "netclass_patterns": [
-      {
-        "netclass": "Optical_PD_Guard",
-        "pattern": "*PD*IN*"
-      },
-      {
-        "netclass": "Optical_PD_Guard",
-        "pattern": "*PD_GND*"
-      },
-      {
-        "netclass": "Optical_PD_Guard",
-        "pattern": "*PPG*VREF*"
-      },
       {
         "netclass": "HighSpeed_50R",
         "pattern": "*RF*"
