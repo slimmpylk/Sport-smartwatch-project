@@ -1,0 +1,89 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1400" height="760" viewBox="0 0 1400 760" font-family="DejaVu Sans, Verdana, sans-serif">
+<title>REAR rigid-board envelope concept: wrist-side view and section</title>
+<desc>Provisional envelope class derived from live REAR courtyards; not an outline, stackup or placement.</desc>
+<defs><marker id="arr" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0 0 L10 5 L0 10 Z" fill="#222"/></marker><marker id="arrr" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0 0 L10 5 L0 10 Z" fill="#c0392b"/></marker></defs>
+<rect width="1400" height="760" fill="#ffffff"/>
+<text x="20.00" y="26.00" font-size="14.00" fill="#111" text-anchor="start" font-weight="bold">REAR rigid sensor module - envelope concept (PROVISIONAL, PARAMETRIC, not a placement)</text>
+<text x="20.00" y="44.00" font-size="10.00" fill="#555" text-anchor="start" font-weight="normal">Top view = looking at the optical face from the wrist; north up, EAST LEFT (mirrored vs front view). Section = E-W cut through the pod.</text>
+<circle cx="330.00" cy="420.00" r="242.00" fill="none" stroke="#e08a00" stroke-width="1.20" stroke-dasharray="7 3"/>
+<text x="330.00" y="172.00" font-size="9.00" fill="#e08a00" text-anchor="middle" font-weight="normal">battery Ø44 nominal (above, hidden)</text>
+<circle cx="330.00" cy="420.00" r="161.70" fill="none" stroke="#999" stroke-width="1.00" stroke-dasharray="4 3"/>
+<circle cx="330.00" cy="420.00" r="123.20" fill="none" stroke="#999" stroke-width="1.00" stroke-dasharray="4 3"/>
+<circle cx="330.00" cy="420.00" r="139.15" fill="none" stroke="#1b1b1b" stroke-width="2.00"/>
+<circle cx="330.00" cy="420.00" r="103.40" fill="none" stroke="#6a1b9a" stroke-width="1.20" stroke-dasharray="2 3"/>
+<circle cx="330.00" cy="420.00" r="101.20" fill="#b07aa1" fill-opacity="0.28" stroke="#b07aa1" stroke-width="1.50"/>
+<text x="330.00" y="416.00" font-size="10.00" fill="#000" text-anchor="middle" font-weight="bold">optical cluster</text>
+<text x="330.00" y="429.00" font-size="9.00" fill="#000" text-anchor="middle" font-weight="normal">7 emitters + 4 PDs + barriers</text>
+<path d="M209.49 489.57 L216.01 499.81 L223.40 509.44 L231.61 518.39 L240.56 526.60 L250.19 533.99 L260.43 540.51 L271.19 546.11 L282.41 550.76 L293.99 554.41 L305.84 557.04 L317.87 558.62 L330.00 559.15 L342.13 558.62 L354.16 557.04 L366.01 554.41 L377.59 550.76 L388.81 546.11 L399.58 540.51 L409.81 533.99 L419.44 526.60 L428.39 518.39 L436.60 509.44 L443.99 499.81 L450.51 489.58 L417.64 470.60 L412.90 478.05 L407.52 485.05 L401.56 491.56 L395.05 497.52 L388.05 502.90 L380.60 507.64 L372.77 511.72 L364.61 515.10 L356.19 517.75 L347.57 519.66 L338.82 520.81 L330.00 521.20 L321.18 520.81 L312.43 519.66 L303.81 517.75 L295.39 515.10 L287.23 511.72 L279.40 507.64 L271.95 502.90 L264.95 497.52 L258.44 491.56 L252.48 485.05 L247.10 478.05 L242.36 470.60 Z" fill="#59a14f" fill-opacity="0.28" stroke="#2e7d32" stroke-width="1.20"/>
+<text x="269.91" y="524.07" font-size="9.00" fill="#000" text-anchor="middle" font-weight="normal">AFE x2 + mux x6 + decoupling</text>
+<path d="M453.98 483.17 L455.07 481.00 L456.11 478.81 L457.12 476.60 L458.09 474.37 L459.02 472.13 L459.91 469.87 L460.76 467.59 L461.57 465.30 L462.34 463.00 L463.07 460.68 L463.76 458.35 L464.41 456.01 L465.02 453.66 L465.58 451.30 L466.11 448.93 L466.59 446.55 L467.04 444.16 L467.44 441.77 L467.80 439.37 L468.11 436.96 L468.39 434.55 L468.62 432.13 L468.81 429.71 L468.96 427.28 L431.06 425.30 L430.95 427.06 L430.81 428.82 L430.65 430.58 L430.45 432.33 L430.22 434.08 L429.95 435.83 L429.66 437.57 L429.34 439.31 L428.99 441.04 L428.61 442.77 L428.19 444.48 L427.75 446.19 L427.28 447.89 L426.78 449.59 L426.25 451.27 L425.69 452.95 L425.10 454.61 L424.48 456.27 L423.83 457.91 L423.16 459.54 L422.45 461.16 L421.72 462.77 L420.96 464.36 L420.17 465.94 Z" fill="#f1c40f" fill-opacity="0.45" stroke="#9a7d0a" stroke-width="1.20"/>
+<text x="446.08" y="448.10" font-size="9.00" fill="#000" text-anchor="middle" font-weight="bold">MAX30208</text>
+<text x="446.08" y="459.10" font-size="9.00" fill="#000" text-anchor="middle" font-weight="normal">thermal island</text>
+<rect x="294.80" y="541.55" width="70.40" height="17.60" fill="#c0392b" fill-opacity="0.35" stroke="#7b241c" stroke-width="1.20"/>
+<text x="330.00" y="575.15" font-size="9.00" fill="#7b241c" text-anchor="middle" font-weight="normal">J1502 / FPC attach (S edge, position 1 label TBD)</text>
+<rect x="258.38" y="301.07" width="14.00" height="14.00" fill="#555" fill-opacity="0.5" stroke="#111" stroke-width="1.00"/>
+<text x="265.38" y="328.07" font-size="8.00" fill="#111" text-anchor="middle" font-weight="normal">land</text>
+<rect x="258.38" y="524.93" width="14.00" height="14.00" fill="#555" fill-opacity="0.5" stroke="#111" stroke-width="1.00"/>
+<text x="265.38" y="551.93" font-size="8.00" fill="#111" text-anchor="middle" font-weight="normal">land</text>
+<rect x="434.93" y="348.38" width="14.00" height="14.00" fill="#555" fill-opacity="0.5" stroke="#111" stroke-width="1.00"/>
+<text x="441.93" y="375.38" font-size="8.00" fill="#111" text-anchor="middle" font-weight="normal">land</text>
+<text x="330.00" y="167.00" font-size="12.00" fill="#111" text-anchor="middle" font-weight="bold">N</text>
+<text x="330.00" y="681.80" font-size="12.00" fill="#111" text-anchor="middle" font-weight="bold">S (FPC side)</text>
+<text x="70.40" y="424.00" font-size="12.00" fill="#111" text-anchor="middle" font-weight="bold">E</text>
+<text x="589.60" y="424.00" font-size="12.00" fill="#111" text-anchor="middle" font-weight="bold">W</text>
+<text x="20.00" y="70.00" font-size="10.00" fill="#111" text-anchor="start" font-weight="normal">Envelope Ø (disc-equivalent), single-sided REAR: 22.4 / 25.3 / 29.4 mm (opt / nom / cons)</text>
+<text x="20.00" y="84.00" font-size="10.00" fill="#111" text-anchor="start" font-weight="normal">Double-sided REAR nominal Ø 18.8 mm (purple dotted), but + rear_inner in the Z stack</text>
+<text x="20.00" y="98.00" font-size="10.00" fill="#111" text-anchor="start" font-weight="normal">A_parts = 203.0 mm² of live library courtyards (REAR, 44 refs, no J1502/C1501)</text>
+<rect x="20.00" y="684.00" width="660.00" height="62.00" fill="#fdfdfd" stroke="#555" stroke-width="1.00"/>
+<text x="28.00" y="700.00" font-size="10.00" fill="#111" text-anchor="start" font-weight="bold">Board-to-assembly transform (PROPOSED, not frozen):</text>
+<text x="28.00" y="714.00" font-size="10.00" fill="#111" text-anchor="start" font-weight="normal">x_a = x_c - (x_r - x_rc)      y_a = y_c + (y_r - y_rc)</text>
+<text x="28.00" y="728.00" font-size="10.00" fill="#111" text-anchor="start" font-weight="normal">optical face = F.Cu in the current single-sided REAR file (all 44 refs on F.Cu); normal = +Z_assembly (toward wrist)</text>
+<text x="28.00" y="742.00" font-size="10.00" fill="#111" text-anchor="start" font-weight="normal">J1502 pin order: label from mating-face drawing, never from a mirrored B-side view.</text>
+<text x="740.00" y="62.00" font-size="11.00" fill="#111" text-anchor="start" font-weight="bold">Section through pod (E-W; vertical scale x3.5 exaggerated vs horizontal)</text>
+<rect x="750.00" y="100.00" width="338.30" height="45.60" fill="#f6c58a" fill-opacity="0.7" stroke="#e08a00" stroke-width="1.20" stroke-dasharray="6 3"/>
+<text x="919.15" y="122.00" font-size="10.00" fill="#000" text-anchor="middle" font-weight="normal">battery_zone 5.00 mm (cut)</text>
+<rect x="750.00" y="145.60" width="338.30" height="15.20" fill="#d9d9d9" stroke="#555" stroke-width="1.00"/>
+<text x="1094.30" y="156.60" font-size="9.00" fill="#111" text-anchor="start" font-weight="normal">lower_web 0.40 (0.30-0.60)</text>
+<text x="1094.30" y="171.80" font-size="9.00" fill="#111" text-anchor="start" font-weight="normal">rear_inner 0.00 (single-sided; +0.85 if double-sided)</text>
+<rect x="780.00" y="160.80" width="278.30" height="30.40" fill="#7fb77e" stroke="#2e7d32" stroke-width="1.20"/>
+<text x="1094.30" y="180.80" font-size="9.00" fill="#111" text-anchor="start" font-weight="normal">rear_pcb 0.80 (0.60-1.00)</text>
+<rect x="780.00" y="191.20" width="278.30" height="32.30" fill="#fbeee0" fill-opacity="0.8" stroke="#b07aa1" stroke-width="0.80" stroke-dasharray="3 2"/>
+<rect x="816.89" y="191.20" width="26.40" height="28.50" fill="#f9d5c5" stroke="#333" stroke-width="0.80"/>
+<text x="830.09" y="215.70" font-size="7.00" fill="#000" text-anchor="middle" font-weight="normal">E</text>
+<rect x="857.02" y="191.20" width="35.20" height="28.50" fill="#c5d9f9" stroke="#333" stroke-width="0.80"/>
+<text x="874.62" y="215.70" font-size="7.00" fill="#000" text-anchor="middle" font-weight="normal">PD</text>
+<rect x="905.95" y="191.20" width="26.40" height="28.50" fill="#f9d5c5" stroke="#333" stroke-width="0.80"/>
+<text x="919.15" y="215.70" font-size="7.00" fill="#000" text-anchor="middle" font-weight="normal">E</text>
+<rect x="946.08" y="191.20" width="35.20" height="28.50" fill="#c5d9f9" stroke="#333" stroke-width="0.80"/>
+<text x="963.68" y="215.70" font-size="7.00" fill="#000" text-anchor="middle" font-weight="normal">PD</text>
+<rect x="995.01" y="191.20" width="26.40" height="28.50" fill="#f9d5c5" stroke="#333" stroke-width="0.80"/>
+<text x="1008.21" y="215.70" font-size="7.00" fill="#000" text-anchor="middle" font-weight="normal">E</text>
+<rect x="805.08" y="191.20" width="5.50" height="32.30" fill="#111" stroke="#111" stroke-width="0.50"/>
+<rect x="849.61" y="191.20" width="5.50" height="32.30" fill="#111" stroke="#111" stroke-width="0.50"/>
+<rect x="894.14" y="191.20" width="5.50" height="32.30" fill="#111" stroke="#111" stroke-width="0.50"/>
+<rect x="938.66" y="191.20" width="5.50" height="32.30" fill="#111" stroke="#111" stroke-width="0.50"/>
+<rect x="983.19" y="191.20" width="5.50" height="32.30" fill="#111" stroke="#111" stroke-width="0.50"/>
+<rect x="1027.72" y="191.20" width="5.50" height="32.30" fill="#111" stroke="#111" stroke-width="0.50"/>
+<text x="1094.30" y="210.35" font-size="9.00" fill="#111" text-anchor="start" font-weight="normal">optics_zone 0.85 = h_optics_max 0.75 + c_optics 0.10</text>
+<rect x="780.00" y="223.50" width="278.30" height="19.00" fill="#cfe8ff" fill-opacity="0.8" stroke="#1f5fbf" stroke-width="1.20"/>
+<text x="919.15" y="236.00" font-size="9.00" fill="#000" text-anchor="middle" font-weight="normal">window 0.50 (0.30-0.80)</text>
+<line x1="750.00" y1="242.50" x2="1088.30" y2="242.50" stroke="#c0392b" stroke-width="1.50"/>
+<text x="750.00" y="256.50" font-size="9.00" fill="#c0392b" text-anchor="start" font-weight="normal">skin-contact plane = T_total</text>
+<line x1="690.00" y1="212.10" x2="776.00" y2="212.10" stroke="#555" stroke-width="2.00"/>
+<line x1="1062.30" y1="212.10" x2="1148.30" y2="212.10" stroke="#555" stroke-width="2.00"/>
+<text x="690.00" y="200.10" font-size="9.00" fill="#555" text-anchor="start" font-weight="normal">caseback outer plane (T_body)</text>
+<line x1="760.00" y1="242.50" x2="760.00" y2="212.10" stroke="#555" stroke-width="1.00" marker-end="url(#arr)"/>
+<text x="754.00" y="227.30" font-size="9.00" fill="#555" text-anchor="end" font-weight="normal">h_pod 0.8 nom (0-1.5)</text>
+<rect x="776.00" y="221.50" width="6.00" height="10.00" fill="#555" stroke="#111" stroke-width="0.80"/>
+<rect x="1056.30" y="221.50" width="6.00" height="10.00" fill="#555" stroke="#111" stroke-width="0.80"/>
+<text x="919.15" y="272.50" font-size="9.00" fill="#555" text-anchor="middle" font-weight="normal">hard stops at window perimeter carry wrist load; no load on optical parts</text>
+<text x="740.00" y="298.50" font-size="10.00" fill="#111" text-anchor="start" font-weight="bold">Not in the tool Z-stack (must be added before freeze):</text>
+<text x="748.00" y="312.50" font-size="9.00" fill="#111" text-anchor="start" font-weight="normal">- window retention adhesive / pod-insert flange</text>
+<text x="748.00" y="324.50" font-size="9.00" fill="#111" text-anchor="start" font-weight="normal">- barrier gasket compression set</text>
+<text x="748.00" y="336.50" font-size="9.00" fill="#111" text-anchor="start" font-weight="normal">- caseback gasket compression stack</text>
+<text x="748.00" y="348.50" font-size="9.00" fill="#111" text-anchor="start" font-weight="normal">- carrier hard-stop ribs under REAR</text>
+<text x="748.00" y="360.50" font-size="9.00" fill="#111" text-anchor="start" font-weight="normal">- FPC bend / stiffener under J1502</text>
+<text x="748.00" y="372.50" font-size="9.00" fill="#111" text-anchor="start" font-weight="normal">- SFH4053B + MAX86141 height beyond 0.75 (assumed)</text>
+<text x="740.00" y="732.00" font-size="9.00" fill="#555" text-anchor="start" font-weight="normal">Values: nominal tool layers (zstack.json); ranges PARAMETRIC (stack_parameters.json).</text>
+<text x="740.00" y="746.00" font-size="9.00" fill="#555" text-anchor="start" font-weight="normal">SFH4053B / MAX86141 heights unknown: h_optics_max is an assumption (conflict X10).</text>
+</svg>

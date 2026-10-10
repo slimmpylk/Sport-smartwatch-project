@@ -1,0 +1,118 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1300" height="800" viewBox="0 0 1300 800" font-family="DejaVu Sans, Verdana, sans-serif">
+<title>MAIN-REAR FPC path and charger harness path (plan + south radial section)</title>
+<desc>Provisional routing architecture; connector MPN, pitch and orientation are not frozen.</desc>
+<defs><marker id="arr" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0 0 L10 5 L0 10 Z" fill="#222"/></marker><marker id="arrr" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0 0 L10 5 L0 10 Z" fill="#c0392b"/></marker></defs>
+<rect width="1300" height="800" fill="#ffffff"/>
+<text x="20.00" y="26.00" font-size="14.00" fill="#111" text-anchor="start" font-weight="bold">Interconnect paths - front-view plan (left) and south radial section (right); PROVISIONAL</text>
+<text x="20.00" y="44.00" font-size="10.00" fill="#555" text-anchor="start" font-weight="normal">Solid = MAIN F.Cu level; dashed = REAR level (hidden behind battery). north = -Y, east = +X.</text>
+<circle cx="360.00" cy="400.00" r="353.50" fill="none" stroke="#555" stroke-width="2.00"/>
+<circle cx="360.00" cy="400.00" r="336.70" fill="none" stroke="#555" stroke-width="1.00" stroke-dasharray="6 3"/>
+<circle cx="360.00" cy="400.00" r="322.00" fill="none" stroke="#1f5fbf" stroke-width="2.00"/>
+<circle cx="360.00" cy="400.00" r="307.30" fill="none" stroke="#2e7d32" stroke-width="1.50"/>
+<circle cx="360.00" cy="400.00" r="308.00" fill="none" stroke="#e08a00" stroke-width="1.20" stroke-dasharray="7 3"/>
+<path d="M290.00 71.00 L458.00 71.00 L458.00 121.40 L290.00 121.40 Z" fill="#4e79a7" fill-opacity="0.3" stroke="#4e79a7" stroke-width="1.40"/>
+<text x="374.00" y="98.50" font-size="8.00" fill="#000" text-anchor="middle" font-weight="bold">GNSS</text>
+<path d="M108.00 134.00 L220.00 134.00 L220.00 232.00 L108.00 232.00 Z" fill="#59a14f" fill-opacity="0.3" stroke="#59a14f" stroke-width="1.40"/>
+<text x="164.84" y="186.73" font-size="8.00" fill="#000" text-anchor="middle" font-weight="bold">BLE</text>
+<path d="M626.00 505.00 L696.00 505.00 L696.00 617.00 L626.00 617.00 Z" fill="#59a14f" fill-opacity="0.3" stroke="#59a14f" stroke-width="1.40"/>
+<text x="652.42" y="552.38" font-size="8.00" fill="#000" text-anchor="middle" font-weight="bold">Wi-Fi</text>
+<path d="M362.80 629.60 L479.00 629.60 L479.00 694.00 L362.80 694.00 Z" fill="#59a14f" fill-opacity="0.3" stroke="#59a14f" stroke-width="1.40"/>
+<text x="421.25" y="665.50" font-size="8.00" fill="#000" text-anchor="middle" font-weight="bold">J1501</text>
+<path d="M276.00 666.00 L353.00 666.00 L353.00 708.00 L276.00 708.00 Z" fill="#59a14f" fill-opacity="0.3" stroke="#59a14f" stroke-width="1.40"/>
+<text x="314.50" y="690.00" font-size="8.00" fill="#000" text-anchor="middle" font-weight="bold">J201</text>
+<path d="M73.00 404.90 L108.00 404.90 L108.00 445.50 L73.00 445.50 Z" fill="#59a14f" fill-opacity="0.3" stroke="#59a14f" stroke-width="1.40"/>
+<text x="90.50" y="427.50" font-size="8.00" fill="#000" text-anchor="middle" font-weight="bold">J202</text>
+<path d="M101.00 570.80 L143.00 570.80 L143.00 584.80 L101.00 584.80 Z" fill="#59a14f" fill-opacity="0.3" stroke="#59a14f" stroke-width="1.40"/>
+<text x="122.00" y="581.50" font-size="8.00" fill="#000" text-anchor="middle" font-weight="bold">Bat.exit</text>
+<path d="M409.00 568.00 L507.00 568.00 L507.00 624.00 L409.00 624.00 Z" fill="#4e79a7" fill-opacity="0.3" stroke="#4e79a7" stroke-width="1.40" stroke-dasharray="1.5 2.5"/>
+<text x="458.00" y="599.00" font-size="8.00" fill="#000" text-anchor="middle" font-weight="bold">SWD</text>
+<circle cx="553.20" cy="296.40" r="140.00" fill="#59a14f" fill-opacity="0.08" stroke="#59a14f" stroke-width="1.20" stroke-dasharray="5 3"/>
+<text x="552.51" y="299.71" font-size="8.00" fill="#000" text-anchor="middle" font-weight="bold">Mag</text>
+<circle cx="360.00" cy="400.00" r="177.10" fill="#b07aa1" fill-opacity="0.12" stroke="#b07aa1" stroke-width="1.20" stroke-dasharray="5 3"/>
+<text x="360.00" y="403.00" font-size="8.00" fill="#000" text-anchor="middle" font-weight="bold">REAR env</text>
+<path d="M439.72 697.51 A308.00 308.00 0 0 1 280.28 697.51 L314.16 571.07 A177.10 177.10 0 0 0 405.84 571.07 Z" fill="#b07aa1" fill-opacity="0.3" stroke="#b07aa1" stroke-width="1.40" stroke-dasharray="1.5 2.5"/>
+<text x="360.00" y="648.56" font-size="8.00" fill="#000" text-anchor="middle" font-weight="bold">LRA</text>
+<path d="M690.90 341.65 A336.00 336.00 0 0 1 690.90 458.35 L601.28 442.54 A245.00 245.00 0 0 0 601.28 357.46 Z" fill="#b07aa1" fill-opacity="0.3" stroke="#b07aa1" stroke-width="1.40" stroke-dasharray="1.5 2.5"/>
+<text x="651.59" y="403.00" font-size="8.00" fill="#000" text-anchor="middle" font-weight="bold">Chg contact</text>
+<rect x="550.20" y="293.40" width="6.00" height="6.00" fill="#111" stroke="#111" stroke-width="0.50"/>
+<text x="559.20" y="299.40" font-size="8.00" fill="#111" text-anchor="start" font-weight="normal">U703</text>
+<rect x="93.80" y="344.50" width="6.00" height="6.00" fill="#111" stroke="#111" stroke-width="0.50"/>
+<text x="102.80" y="350.50" font-size="8.00" fill="#111" text-anchor="start" font-weight="normal">J1</text>
+<rect x="210.00" y="516.00" width="6.00" height="6.00" fill="#111" stroke="#111" stroke-width="0.50"/>
+<text x="219.00" y="522.00" font-size="8.00" fill="#111" text-anchor="start" font-weight="normal">U201</text>
+<rect x="543.20" y="593.00" width="6.00" height="6.00" fill="#111" stroke="#111" stroke-width="0.50"/>
+<text x="552.20" y="599.00" font-size="8.00" fill="#111" text-anchor="start" font-weight="normal">U7</text>
+<path d="M420.90 661.80 L420.90 713.60 L433.36 717.80" fill="none" stroke="#c0392b" stroke-width="2.40"/>
+<path d="M433.36 717.80 L399.90 572.62" fill="none" stroke="#c0392b" stroke-width="2.40" stroke-dasharray="6 3"/>
+<path d="M122.00 577.80 L96.10 591.80 L125.36 626.66 L159.24 657.04 L196.90 682.52 L237.78 702.40 L281.04 716.54 L303.30 721.30 L314.50 687.00" fill="none" stroke="#34495e" stroke-width="2.40"/>
+<path d="M615.07 444.97 L612.02 459.73 L608.12 474.28 L603.38 488.58 L597.82 502.58 L591.45 516.24 L584.30 529.50 L576.39 542.32 L567.75 554.66 L558.41 566.48 L548.39 577.74 L537.74 588.39 L526.48 598.41 L514.66 607.75 L502.32 616.39 L489.50 624.30 L476.24 631.45 L462.58 637.82 L448.58 643.38 L434.28 648.12 L419.73 652.02 L404.97 655.07 L390.07 657.25 L375.06 658.56 L360.00 659.00 L344.94 658.56 L329.93 657.25 L315.03 655.07 L300.27 652.02 L285.72 648.12 L271.42 643.38 L257.42 637.82 L243.76 631.45 L230.50 624.30 L217.68 616.39 L205.34 607.75 L193.52 598.41 L182.26 588.39 L171.61 577.74 L161.59 566.48 L152.25 554.66 L143.61 542.32 L135.70 529.50 L128.55 516.24 L122.18 502.58 L116.62 488.58 L111.88 474.28 L107.98 459.73 L104.93 444.97" fill="none" stroke="#d35400" stroke-width="2.40" stroke-dasharray="8 4"/>
+<path d="M685.38 457.37 L681.49 476.20 L676.52 494.76 L670.47 513.00 L663.38 530.86 L655.26 548.28 L646.13 565.20 L636.05 581.56 L625.02 597.30 L613.10 612.38 L600.32 626.73 L586.73 640.32 L572.38 653.10 L557.30 665.02 L541.56 676.05 L525.20 686.13 L508.28 695.26 L490.86 703.38 L473.00 710.47 L454.76 716.52 L436.20 721.49 L417.37 725.38 L398.36 728.17 L379.21 729.84 L360.00 730.40 L340.79 729.84 L321.64 728.17 L302.63 725.38 L283.80 721.49 L265.24 716.52 L247.00 710.47 L229.14 703.38 L211.72 695.26 L194.80 686.13 L178.44 676.05 L162.70 665.02 L147.62 653.10 L133.27 640.32 L119.68 626.73 L106.90 612.38 L94.98 597.30 L83.95 581.56 L73.87 565.20 L64.74 548.28 L56.62 530.86 L49.53 513.00 L43.48 494.76 L38.51 476.20 L34.62 457.37" fill="none" stroke="#8e6c00" stroke-width="1.40" stroke-dasharray="2 3"/>
+<path d="M619.00 400.00 L618.38 382.12 L616.53 364.33 L613.46 346.70 L609.17 329.33 L603.70 312.30 L597.07 295.69 L589.30 279.57 L580.44 264.03 L570.53 249.14 L559.61 234.97 L547.74 221.58 L534.98 209.05 L521.38 197.42 L507.01 186.76 L491.94 177.13 L476.24 168.55 L459.98 161.08 L443.25 154.75 L426.12 149.58 L408.68 145.62 L391.00 142.86 L373.18 141.34 L355.29 141.04 L337.43 141.99 L319.67 144.16 L302.10 147.55 L284.82 152.15 L267.89 157.93 L251.40 164.87 L235.42 172.93 L220.05 182.07 L205.34 192.25 L191.36 203.42 L178.20 215.53 L165.90 228.52 L154.52 242.33 L144.13 256.89 L134.76 272.13 L126.47 287.99 L119.30 304.38 L113.27 321.22 L108.42 338.44 L104.77 355.95 L102.34 373.68 L101.14 391.53 L101.17 409.42 L102.44 427.26 L104.93 444.97" fill="none" stroke="#999" stroke-width="1.40" stroke-dasharray="1 4"/>
+<text x="20.00" y="770.00" font-size="9.00" fill="#555" text-anchor="start" font-weight="normal">FPC: out-and-down 2 x 90 deg at south (J1501 mouth faces outward), vertical run in the annulus beside the pack, under-run in the carrier lower web to the REAR attach edge.</text>
+<text x="20.00" y="784.00" font-size="9.00" fill="#555" text-anchor="start" font-weight="normal">Charger: contact block (module-carried) rear east -&gt; REAR-level strip along the south chord (outside REAR envelope) -&gt; crosses MAIN edge at west -&gt; J202 (F.Cu).</text>
+<text x="790.00" y="60.00" font-size="11.00" fill="#111" text-anchor="start" font-weight="bold">South radial section (nominal; z from front exterior at top)</text>
+<rect x="790.00" y="92.55" width="58.90" height="34.85" fill="#cfe0f1" fill-opacity="0.8" stroke="#333" stroke-width="0.80"/>
+<rect x="790.00" y="127.40" width="124.00" height="48.45" fill="#ffffff" fill-opacity="0.5" stroke="#bbb" stroke-width="0.80"/>
+<rect x="790.00" y="175.85" width="124.00" height="13.60" fill="#7fb77e" fill-opacity="0.8" stroke="#333" stroke-width="0.80"/>
+<rect x="790.00" y="189.45" width="124.00" height="18.70" fill="#eeeeee" fill-opacity="0.8" stroke="#333" stroke-width="0.80"/>
+<rect x="790.00" y="208.15" width="71.30" height="85.00" fill="#f6c58a" fill-opacity="0.8" stroke="#333" stroke-width="0.80"/>
+<rect x="790.00" y="293.15" width="127.10" height="6.80" fill="#d9d9d9" fill-opacity="0.8" stroke="#333" stroke-width="0.80"/>
+<rect x="979.10" y="90.00" width="74.40" height="246.50" fill="#bbbbbb" fill-opacity="0.8" stroke="#555" stroke-width="1.00"/>
+<line x1="938.80" y1="90.00" x2="938.80" y2="336.50" stroke="#c0392b" stroke-width="1.20" stroke-dasharray="2 3"/>
+<text x="935.80" y="84.00" font-size="8.00" fill="#c0392b" text-anchor="end" font-weight="normal">R_case_inner conservative 23.40</text>
+<rect x="923.30" y="135.90" width="19.84" height="164.05" fill="#c0392b" fill-opacity="0.55" stroke="#7b241c" stroke-width="0.80"/>
+<line x1="1008.24" y1="165.65" x2="1008.24" y2="199.65" stroke="#c0392b" stroke-width="2.00" stroke-dasharray="4 2"/>
+<text x="1012.24" y="178.85" font-size="8.00" fill="#c0392b" text-anchor="start" font-weight="normal">180° wrap outer 24.52</text>
+<text x="844.90" y="109.55" font-size="8.00" fill="#333" text-anchor="end" font-weight="normal">display</text>
+<text x="910.00" y="173.85" font-size="8.00" fill="#1f5fbf" text-anchor="end" font-weight="normal">MAIN R 23.0</text>
+<text x="857.30" y="228.55" font-size="8.00" fill="#a35f00" text-anchor="end" font-weight="normal">pack R_max 22.15</text>
+<text x="982.10" y="84.00" font-size="8.00" fill="#111" text-anchor="start" font-weight="normal">R_case_inner 24.05</text>
+<text x="1056.50" y="102.00" font-size="8.00" fill="#111" text-anchor="start" font-weight="normal">R_case_outer 25.25</text>
+<text x="887.30" y="154.60" font-size="8.00" fill="#7b241c" text-anchor="end" font-weight="normal">FPC vertical run</text>
+<text x="887.30" y="164.60" font-size="8.00" fill="#7b241c" text-anchor="end" font-weight="normal">23.15-23.47</text>
+<text x="790.00" y="486.50" font-size="10.00" fill="#111" text-anchor="start" font-weight="bold">Paths in the plan view</text>
+<line x1="790.00" y1="497.50" x2="824.00" y2="497.50" stroke="#c0392b" stroke-width="2.40"/>
+<text x="832.00" y="501.50" font-size="9.00" fill="#111" text-anchor="start" font-weight="normal">P1 sensor FPC, out-and-down (F.Cu level)</text>
+<line x1="790.00" y1="512.50" x2="824.00" y2="512.50" stroke="#c0392b" stroke-width="2.40" stroke-dasharray="6 3"/>
+<text x="832.00" y="516.50" font-size="9.00" fill="#111" text-anchor="start" font-weight="normal">P2 FPC under-run (REAR level)</text>
+<line x1="790.00" y1="527.50" x2="824.00" y2="527.50" stroke="#34495e" stroke-width="2.40"/>
+<text x="832.00" y="531.50" font-size="9.00" fill="#111" text-anchor="start" font-weight="normal">P3 battery tail to J201</text>
+<line x1="790.00" y1="542.50" x2="824.00" y2="542.50" stroke="#d35400" stroke-width="2.40" stroke-dasharray="8 4"/>
+<text x="832.00" y="546.50" font-size="9.00" fill="#111" text-anchor="start" font-weight="normal">R1 charger strip (REAR level) - arc 51.7 mm at R 18.5</text>
+<line x1="790.00" y1="557.50" x2="824.00" y2="557.50" stroke="#8e6c00" stroke-width="1.40" stroke-dasharray="2 3"/>
+<text x="832.00" y="561.50" font-size="9.00" fill="#111" text-anchor="start" font-weight="normal">R2 annulus route (R 23.6) - arc 65.9 mm at R 23.6</text>
+<line x1="790.00" y1="572.50" x2="824.00" y2="572.50" stroke="#999" stroke-width="1.40" stroke-dasharray="1 4"/>
+<text x="832.00" y="576.50" font-size="9.00" fill="#111" text-anchor="start" font-weight="normal">R3 north route (rejected) - arc 61.3 mm at R 18.5</text>
+<line x1="790.00" y1="336.50" x2="790.00" y2="341.50" stroke="#444" stroke-width="1.00"/>
+<text x="790.00" y="353.50" font-size="8.00" fill="#444" text-anchor="middle" font-weight="normal">R 21</text>
+<line x1="852.00" y1="336.50" x2="852.00" y2="341.50" stroke="#444" stroke-width="1.00"/>
+<text x="852.00" y="353.50" font-size="8.00" fill="#444" text-anchor="middle" font-weight="normal">R 22</text>
+<line x1="914.00" y1="336.50" x2="914.00" y2="341.50" stroke="#444" stroke-width="1.00"/>
+<text x="914.00" y="353.50" font-size="8.00" fill="#444" text-anchor="middle" font-weight="normal">R 23</text>
+<line x1="976.00" y1="336.50" x2="976.00" y2="341.50" stroke="#444" stroke-width="1.00"/>
+<text x="976.00" y="353.50" font-size="8.00" fill="#444" text-anchor="middle" font-weight="normal">R 24</text>
+<line x1="1038.00" y1="336.50" x2="1038.00" y2="341.50" stroke="#444" stroke-width="1.00"/>
+<text x="1038.00" y="353.50" font-size="8.00" fill="#444" text-anchor="middle" font-weight="normal">R 25</text>
+<text x="790.00" y="392.50" font-size="10.00" fill="#111" text-anchor="start" font-weight="bold">Radial margins (tool output, mm; margin = R_case_inner - requirement)</text>
+<text x="790.00" y="406.50" font-size="9.00" fill="#444" text-anchor="start" font-weight="normal">corner</text>
+<text x="910.00" y="406.50" font-size="9.00" fill="#444" text-anchor="end" font-weight="normal">straight run</text>
+<text x="1000.00" y="406.50" font-size="9.00" fill="#444" text-anchor="end" font-weight="normal">180° wrap</text>
+<text x="1110.00" y="406.50" font-size="9.00" fill="#444" text-anchor="end" font-weight="normal">out-and-down</text>
+<text x="1210.00" y="406.50" font-size="9.00" fill="#444" text-anchor="end" font-weight="normal">MAIN-&gt;case</text>
+<text x="790.00" y="419.50" font-size="9.00" fill="#111" text-anchor="start" font-weight="normal">nominal</text>
+<text x="910.00" y="419.50" font-size="9.00" fill="#111" text-anchor="end" font-weight="normal">0.68</text>
+<text x="1000.00" y="419.50" font-size="9.00" fill="#111" text-anchor="end" font-weight="normal">-0.47</text>
+<text x="1110.00" y="419.50" font-size="9.00" fill="#111" text-anchor="end" font-weight="normal">0.58</text>
+<text x="1210.00" y="419.50" font-size="9.00" fill="#111" text-anchor="end" font-weight="normal">1.05</text>
+<text x="790.00" y="432.50" font-size="9.00" fill="#111" text-anchor="start" font-weight="normal">conservative</text>
+<text x="910.00" y="432.50" font-size="9.00" fill="#111" text-anchor="end" font-weight="normal">-0.95</text>
+<text x="1000.00" y="432.50" font-size="9.00" fill="#111" text-anchor="end" font-weight="normal">-2.10</text>
+<text x="1110.00" y="432.50" font-size="9.00" fill="#111" text-anchor="end" font-weight="normal">-1.05</text>
+<text x="1210.00" y="432.50" font-size="9.00" fill="#111" text-anchor="end" font-weight="normal">0.40</text>
+<text x="790.00" y="445.50" font-size="9.00" fill="#111" text-anchor="start" font-weight="normal">optimistic</text>
+<text x="910.00" y="445.50" font-size="9.00" fill="#111" text-anchor="end" font-weight="normal">1.40</text>
+<text x="1000.00" y="445.50" font-size="9.00" fill="#111" text-anchor="end" font-weight="normal">0.70</text>
+<text x="1110.00" y="445.50" font-size="9.00" fill="#111" text-anchor="end" font-weight="normal">1.30</text>
+<text x="1210.00" y="445.50" font-size="9.00" fill="#111" text-anchor="end" font-weight="normal">1.50</text>
+<text x="790.00" y="463.50" font-size="8.00" fill="#555" text-anchor="start" font-weight="normal">out-and-down = architecture arithmetic on tool outputs: max(R_display + R_bend, R_channel_inner, R_main) + t_fpc + c_fpc</text>
+</svg>
