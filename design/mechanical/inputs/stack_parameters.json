@@ -1,0 +1,97 @@
+{
+  "schema": "sportwatch-mech-stack/1",
+  "units": "mm",
+  "status": "PROVISIONAL PARAMETRIC STUDY - not a frozen stack; values are planning inputs with explicit class/source",
+  "coordinates": "Front view: north=-Y, east=+X; MAIN origin (100,100); Z positive from front exterior toward wrist.",
+  "conventions": {
+    "T_total": "front-most exterior surface to the outer skin-contact surface of the optical window/pod",
+    "T_body": "front-most exterior surface to the caseback outer plane, excluding pod protrusion (T_total - h_pod)",
+    "target_thickness_mm": [14.0, 15.5],
+    "target_applies_to": "UNDECIDED by owner; report margin for both T_body and T_total",
+    "corners": {
+      "nominal": "every parameter at nom",
+      "thin": "every parameter at min",
+      "thick": "every parameter at max (worst-case stack, conservative linear sum)"
+    },
+    "rss_note": "Also report an RSS stack: nom sum + sqrt(sum((max-nom)^2)) for parameters with max>nom; RSS is informational only."
+  },
+  "parameters": {
+    "t_front_extra":   {"nom": 0.0,  "min": 0.0,  "max": 0.5,  "class": "PARAMETRIC", "confidence": "LOW",    "source": "Owner decision open: display cover glass used as exterior (0) vs added sapphire/bezel lip (up to ~0.5)."},
+    "t_front_bond":    {"nom": 0.15, "min": 0.1,  "max": 0.25, "class": "PARAMETRIC", "confidence": "MEDIUM", "source": "Display-to-case bond/gasket; typical PSA/foam 0.1-0.25."},
+    "t_display":       {"nom": 2.05, "min": 1.95, "max": 2.15, "class": "KNOWN",      "confidence": "HIGH",   "source": "ZC-A1D43W-046 spec V1.0 p4 (43.9x43.9x2.05) and p5 (2.05 +/-0.1, includes integral cover glass)."},
+    "c_front":         {"nom": 0.15, "min": 0.1,  "max": 0.3,  "class": "PARAMETRIC", "confidence": "MEDIUM", "source": "Clearance between tallest F.Cu body and display rear (incl. display rear foam/tape tolerance)."},
+    "t_display_fpc_fold": {"nom": 0.4, "min": 0.3, "max": 0.6, "class": "SUPPLIER_DATA_REQUIRED", "confidence": "LOW", "source": "ZC-A1D43W-046 p5 rear view: folded FPC + steel stiffener T0.15 / PI stiffener T0.2 + tape T0.05; local folded-envelope drawing not supplied; footprint up to 0.7 MAX beyond outline."},
+    "h_j1_mated":      {"nom": 0.8,  "min": 0.8,  "max": 0.8,  "class": "KNOWN",      "confidence": "HIGH",   "source": "OCN OK-23GF/GM-04 drawing: mating height 0.8 mm."},
+    "h_shield_can":    {"nom": 0.85, "min": 0.8,  "max": 1.0,  "class": "PARAMETRIC", "confidence": "LOW",    "source": "Phase-1 provisional shield concept (two-piece can ~0.85 total); no shield MPN."},
+    "t_main":          {"nom": 0.8,  "min": 0.72, "max": 0.88, "class": "KNOWN",      "confidence": "MEDIUM", "source": "MAIN .kicad_pcb thickness 0.8 (stackup sum 0.768); +/-10% fabricator tolerance assumed (PARAMETRIC part)."},
+    "c_back":          {"nom": 0.1,  "min": 0.05, "max": 0.2,  "class": "PARAMETRIC", "confidence": "MEDIUM", "source": "Clearance B.Cu body to carrier pocket floor/film."},
+    "t_carrier_web":   {"nom": 0.5,  "min": 0.4,  "max": 0.8,  "class": "PARAMETRIC", "confidence": "LOW",    "source": "Battery carrier/midplate web; molded plastic >=0.4 typical; sheet metal option thinner but conductive (insulation/RF impact)."},
+    "t_insulator":     {"nom": 0.05, "min": 0.03, "max": 0.1,  "class": "PARAMETRIC", "confidence": "MEDIUM", "source": "PI/Kapton or PET film between pouch and any exposed board/pocket."},
+    "t_pack_nom":      {"nom": 4.5,  "min": 4.5,  "max": 4.5,  "class": "KNOWN",      "confidence": "HIGH",   "source": "LPR454440 catalog nominal thickness 4.5 mm (cell model code)."},
+    "tol_pack_thick":  {"nom": 0.1,  "min": 0.0,  "max": 0.3,  "class": "SUPPLIER_DATA_REQUIRED", "confidence": "LOW", "source": "Finished protected-pack thickness tolerance incl. tape/insulation/PCM fold; no supplier drawing."},
+    "g_axial":         {"nom": 0.3,  "min": 0.2,  "max": 0.5,  "class": "SUPPLIER_DATA_REQUIRED", "confidence": "LOW", "source": "Swelling/growth allowance; planning ~5-10% of 4.5 mm; supplier must state permitted growth and restraint."},
+    "c_axial":         {"nom": 0.1,  "min": 0.05, "max": 0.2,  "class": "PARAMETRIC", "confidence": "MEDIUM", "source": "Assembly clearance / compliant foam above pack."},
+    "t_lower_web":     {"nom": 0.4,  "min": 0.3,  "max": 0.6,  "class": "PARAMETRIC", "confidence": "LOW",    "source": "Carrier floor between pack and REAR module/FPC under-run; includes PI film."},
+    "h_rear_inner":    {"nom": 0.0,  "min": 0.0,  "max": 0.75, "class": "PARAMETRIC", "confidence": "MEDIUM", "source": "REAR battery-facing component height: 0 if single-sided (all parts on optical face), up to ~0.75 if AFEs/muxes/MAX30208-side parts go on inner face. Strategy is a study variable."},
+    "c_rear_inner":    {"nom": 0.1,  "min": 0.05, "max": 0.2,  "class": "PARAMETRIC", "confidence": "MEDIUM", "source": "Clearance REAR inner-face parts to carrier floor (applies only if h_rear_inner > 0)."},
+    "t_rear_pcb":      {"nom": 0.8,  "min": 0.6,  "max": 1.0,  "class": "PARAMETRIC", "confidence": "MEDIUM", "source": "REAR rigid board thickness; 4-layer study start (0.6-1.0). Current staging file 1.6/2-layer is a placeholder only."},
+    "h_optics_max":    {"nom": 0.75, "min": 0.7,  "max": 0.85, "class": "KNOWN",      "confidence": "MEDIUM", "source": "SFH7018A/SFH2703 0.6 +/-0.1; MAX30208 0.75; SFH4053B and MAX86141 seated height still SUPPLIER_DATA_REQUIRED (assumed <= MAX30208)."},
+    "c_optics":        {"nom": 0.1,  "min": 0.05, "max": 0.2,  "class": "PARAMETRIC", "confidence": "MEDIUM", "source": "Component top to window inner face / optical spacer."},
+    "t_window":        {"nom": 0.5,  "min": 0.3,  "max": 0.8,  "class": "PARAMETRIC", "confidence": "LOW",    "source": "Clear window (glass/sapphire/PC/PMMA) thickness; material undecided."},
+    "h_pod":           {"nom": 0.8,  "min": 0.0,  "max": 1.5,  "class": "PARAMETRIC", "confidence": "LOW",    "source": "Pod protrusion beyond caseback plane; explicitly NOT freezable from current evidence (requires wrist/strap trials). Sweep values: 0.0, 0.5, 0.8, 1.0, 1.5."}
+  },
+  "z_layers": [
+    {"id": "front_extra",   "param": "t_front_extra"},
+    {"id": "front_bond",    "param": "t_front_bond"},
+    {"id": "display",       "param": "t_display"},
+    {"id": "front_gap",     "rule": "front_gap"},
+    {"id": "main_pcb",      "param": "t_main"},
+    {"id": "back_zone",     "rule": "back_zone"},
+    {"id": "battery_zone",  "rule": "battery_zone"},
+    {"id": "lower_web",     "param": "t_lower_web"},
+    {"id": "rear_inner",    "rule": "rear_inner"},
+    {"id": "rear_pcb",      "param": "t_rear_pcb"},
+    {"id": "optics_zone",   "rule": "optics_zone"},
+    {"id": "window",        "param": "t_window"}
+  ],
+  "rules": {
+    "front_gap": "max(H_F_under_display + c_front, h_shield_can + c_front, h_j1_mated). H_F_under_display = max seated F.Cu height (package max + solder_allowance for PARAMETRIC parts) of MAIN footprints whose centre lies within r <= 21.95 mm (display outline radius 43.9/2) - the display is a rigid flat module, so its rear plane must clear the tallest part anywhere beneath it. Also report the governing reference designator and the second-tallest value with its reference.",
+    "back_zone": "max(t_carrier_web, H_B_in_battery + c_back) + t_insulator. H_B_in_battery = max seated B.Cu height of MAIN footprints whose centre lies within r <= 22.0 mm (battery nominal projection).",
+    "battery_zone": "t_pack_nom + tol_pack_thick + g_axial + c_axial",
+    "rear_inner": "0 if h_rear_inner == 0 else h_rear_inner + c_rear_inner",
+    "optics_zone": "h_optics_max + c_optics"
+  },
+  "radial": {
+    "note": "Radial budget at the south FPC station and generally. All radii from watch centre (MAIN origin). Case values are provisional targets.",
+    "parameters": {
+      "D_case_outer":   {"nom": 50.5, "min": 50.0, "max": 51.0, "class": "PARAMETRIC", "confidence": "MEDIUM", "source": "Provisional 50-51 mm case target."},
+      "t_case_wall":    {"nom": 1.2,  "min": 1.0,  "max": 1.6,  "class": "PARAMETRIC", "confidence": "LOW",    "source": "Side wall incl. draft; button bores/antenna windows need more locally."},
+      "D_pack_nom":     {"nom": 44.0, "min": 44.0, "max": 44.0, "class": "KNOWN",      "confidence": "HIGH",   "source": "LPR454440 catalog nominal diameter."},
+      "tol_pack_dia":   {"nom": 0.3,  "min": 0.2,  "max": 0.5,  "class": "SUPPLIER_DATA_REQUIRED", "confidence": "LOW", "source": "Finished-pack diameter tolerance incl. tape/edge seal; PCM/tab lobe modelled separately."},
+      "c_radial":       {"nom": 0.5,  "min": 0.5,  "max": 1.0,  "class": "PARAMETRIC", "confidence": "MEDIUM", "source": "Architecture-review proposed allowance per side beyond max finished pack (not a supplier value)."},
+      "t_carrier_wall": {"nom": 0.4,  "min": 0.3,  "max": 0.6,  "class": "PARAMETRIC", "confidence": "LOW",    "source": "Carrier side wall between pack and FPC channel (edge protection)."},
+      "t_fpc":          {"nom": 0.12, "min": 0.1,  "max": 0.2,  "class": "PARAMETRIC", "confidence": "MEDIUM", "source": "2-layer polyimide FPC with coverlays (0.1-0.15); shield film adds ~0.02-0.05."},
+      "c_fpc":          {"nom": 0.2,  "min": 0.1,  "max": 0.3,  "class": "PARAMETRIC", "confidence": "MEDIUM", "source": "FPC channel running clearance."},
+      "R_bend_min":     {"nom": 1.2,  "min": 0.6,  "max": 2.0,  "class": "SUPPLIER_DATA_REQUIRED", "confidence": "LOW", "source": "Static bend-to-install inner radius; IPC-2223 guidance ~6x (1-layer) to ~12x (2-layer) thickness; fabricator must confirm."},
+      "R_main":         {"nom": 23.0, "min": 23.0, "max": 23.0, "class": "KNOWN",      "confidence": "HIGH",   "source": "MAIN development envelope Edge.Cuts circle r=23.0 (NOT final outline)."}
+    },
+    "checks": {
+      "R_case_inner": "D_case_outer/2 - t_case_wall",
+      "R_pack_max": "(D_pack_nom + tol_pack_dia)/2",
+      "R_channel_inner": "R_pack_max + c_radial + t_carrier_wall",
+      "R_channel_outer_straight": "R_channel_inner + t_fpc + c_fpc",
+      "margin_straight_run": "R_case_inner - R_channel_outer_straight  (vertical FPC run beside the pack)",
+      "R_edge_wrap_outer": "R_main + max(R_bend_min, t_main/2) + t_fpc + c_fpc  (180-degree wrap of an FPC from a MAIN F.Cu connector around the MAIN edge)",
+      "margin_edge_wrap": "R_case_inner - R_edge_wrap_outer",
+      "margin_main_to_case": "R_case_inner - R_main  (bare MAIN edge clearance, before any FPC)"
+    },
+    "corner_rule": "Evaluate margins at nominal, at a conservative corner (case dims at min, all other terms at max), and at an optimistic corner (case dims at max, others at min). Report each with its governing terms."
+  },
+  "stations": [
+    {"id": "CENTER",  "desc": "Core under U101/U901 and storage B.Cu cavity", "xy": [100.0, 100.0]},
+    {"id": "GNSS_N",  "desc": "U8 MAX-F10S north", "xy": [100.0, 86.0]},
+    {"id": "FPC_S",   "desc": "J1501 sensor FPC reservation south", "xy": [104.35, 118.7]},
+    {"id": "J201_S",  "desc": "J201 battery termination planning window", "xy": [96.75, 120.5]},
+    {"id": "CHG_E",   "desc": "Charger contact module, rear east ~3 o'clock", "xy": [121.0, 100.0]}
+  ]
+}
