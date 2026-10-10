@@ -1,0 +1,1112 @@
+{
+  "conventions": {
+    "T_body": "front-most exterior surface to the caseback outer plane, excluding pod protrusion (T_total - h_pod)",
+    "T_total": "front-most exterior surface to the outer skin-contact surface of the optical window/pod",
+    "h_pod": "sweep variable, not a corner variable: T_body = T_total - h_pod; T_total does not depend on h_pod",
+    "margin_definition": "to_14.0 = T - 14.0 (>= 0: not thinner than lower target); to_15.5 = 15.5 - T (>= 0: within upper target)",
+    "target_applies_to": "T_total (owner decision 2026-10-10: exterior display-glass surface to deepest normal wrist-facing pod surface). T_body and h_pod are tracked separately; the target must not be forced if the parametric stack shows it infeasible.",
+    "target_thickness_mm": [
+      14.0,
+      15.5
+    ]
+  },
+  "corners": {
+    "nominal": {
+      "T_total_margins_mm": {
+        "to_14.0": 0.5,
+        "to_15.5": 1.0
+      },
+      "T_total_mm": 14.5,
+      "h_pod_sweep": [
+        {
+          "T_body_margins_mm": {
+            "to_14.0": 0.5,
+            "to_15.5": 1.0
+          },
+          "T_body_mm": 14.5,
+          "h_pod_mm": 0.0
+        },
+        {
+          "T_body_margins_mm": {
+            "to_14.0": 0.0,
+            "to_15.5": 1.5
+          },
+          "T_body_mm": 14.0,
+          "h_pod_mm": 0.5
+        },
+        {
+          "T_body_margins_mm": {
+            "to_14.0": -0.3,
+            "to_15.5": 1.8
+          },
+          "T_body_mm": 13.7,
+          "h_pod_mm": 0.8
+        },
+        {
+          "T_body_margins_mm": {
+            "to_14.0": -0.5,
+            "to_15.5": 2.0
+          },
+          "T_body_mm": 13.5,
+          "h_pod_mm": 1.0
+        },
+        {
+          "T_body_margins_mm": {
+            "to_14.0": -1.0,
+            "to_15.5": 2.5
+          },
+          "T_body_mm": 13.0,
+          "h_pod_mm": 1.5
+        }
+      ],
+      "layers": [
+        {
+          "governing_term": "t_front_extra",
+          "id": "front_extra",
+          "terms": {
+            "t_front_extra": 0.0
+          },
+          "thickness_mm": 0.0
+        },
+        {
+          "governing_term": "t_front_bond",
+          "id": "front_bond",
+          "terms": {
+            "t_front_bond": 0.15
+          },
+          "thickness_mm": 0.15
+        },
+        {
+          "governing_term": "t_display",
+          "id": "display",
+          "terms": {
+            "t_display": 2.05
+          },
+          "thickness_mm": 2.05
+        },
+        {
+          "governing_term": "H_F_under_display + c_front",
+          "id": "front_gap",
+          "terms": {
+            "H_F_under_display + c_front": 2.85,
+            "h_j1_mated": 0.8,
+            "h_shield_can + c_front": 1.0
+          },
+          "thickness_mm": 2.85
+        },
+        {
+          "governing_term": "t_main",
+          "id": "main_pcb",
+          "terms": {
+            "t_main": 0.8
+          },
+          "thickness_mm": 0.8
+        },
+        {
+          "governing_term": "H_B_in_battery + c_back (+ t_insulator)",
+          "id": "back_zone",
+          "terms": {
+            "H_B_in_battery + c_back": 1.05,
+            "t_carrier_web": 0.5,
+            "t_insulator": 0.05
+          },
+          "thickness_mm": 1.1
+        },
+        {
+          "governing_term": "sum(t_pack_nom + tol_pack_thick + g_axial + c_axial)",
+          "id": "battery_zone",
+          "terms": {
+            "c_axial": 0.1,
+            "g_axial": 0.3,
+            "t_pack_nom": 4.5,
+            "tol_pack_thick": 0.1
+          },
+          "thickness_mm": 5.0
+        },
+        {
+          "governing_term": "t_lower_web",
+          "id": "lower_web",
+          "terms": {
+            "t_lower_web": 0.4
+          },
+          "thickness_mm": 0.4
+        },
+        {
+          "governing_term": "h_rear_inner == 0",
+          "id": "rear_inner",
+          "terms": {
+            "h_rear_inner": 0.0
+          },
+          "thickness_mm": 0.0
+        },
+        {
+          "governing_term": "t_rear_pcb",
+          "id": "rear_pcb",
+          "terms": {
+            "t_rear_pcb": 0.8
+          },
+          "thickness_mm": 0.8
+        },
+        {
+          "governing_term": "h_optics_max + c_optics",
+          "id": "optics_zone",
+          "terms": {
+            "c_optics": 0.1,
+            "h_optics_max": 0.75
+          },
+          "thickness_mm": 0.85
+        },
+        {
+          "governing_term": "t_window",
+          "id": "window",
+          "terms": {
+            "t_window": 0.5
+          },
+          "thickness_mm": 0.5
+        }
+      ],
+      "parameter_set": "nom"
+    },
+    "thick": {
+      "T_total_margins_mm": {
+        "to_14.0": 3.93,
+        "to_15.5": -2.43
+      },
+      "T_total_mm": 17.93,
+      "h_pod_sweep": [
+        {
+          "T_body_margins_mm": {
+            "to_14.0": 3.93,
+            "to_15.5": -2.43
+          },
+          "T_body_mm": 17.93,
+          "h_pod_mm": 0.0
+        },
+        {
+          "T_body_margins_mm": {
+            "to_14.0": 3.43,
+            "to_15.5": -1.93
+          },
+          "T_body_mm": 17.43,
+          "h_pod_mm": 0.5
+        },
+        {
+          "T_body_margins_mm": {
+            "to_14.0": 3.13,
+            "to_15.5": -1.63
+          },
+          "T_body_mm": 17.13,
+          "h_pod_mm": 0.8
+        },
+        {
+          "T_body_margins_mm": {
+            "to_14.0": 2.93,
+            "to_15.5": -1.43
+          },
+          "T_body_mm": 16.93,
+          "h_pod_mm": 1.0
+        },
+        {
+          "T_body_margins_mm": {
+            "to_14.0": 2.43,
+            "to_15.5": -0.93
+          },
+          "T_body_mm": 16.43,
+          "h_pod_mm": 1.5
+        }
+      ],
+      "layers": [
+        {
+          "governing_term": "t_front_extra",
+          "id": "front_extra",
+          "terms": {
+            "t_front_extra": 0.5
+          },
+          "thickness_mm": 0.5
+        },
+        {
+          "governing_term": "t_front_bond",
+          "id": "front_bond",
+          "terms": {
+            "t_front_bond": 0.25
+          },
+          "thickness_mm": 0.25
+        },
+        {
+          "governing_term": "t_display",
+          "id": "display",
+          "terms": {
+            "t_display": 2.15
+          },
+          "thickness_mm": 2.15
+        },
+        {
+          "governing_term": "H_F_under_display + c_front",
+          "id": "front_gap",
+          "terms": {
+            "H_F_under_display + c_front": 3.0,
+            "h_j1_mated": 0.8,
+            "h_shield_can + c_front": 1.3
+          },
+          "thickness_mm": 3.0
+        },
+        {
+          "governing_term": "t_main",
+          "id": "main_pcb",
+          "terms": {
+            "t_main": 0.88
+          },
+          "thickness_mm": 0.88
+        },
+        {
+          "governing_term": "H_B_in_battery + c_back (+ t_insulator)",
+          "id": "back_zone",
+          "terms": {
+            "H_B_in_battery + c_back": 1.15,
+            "t_carrier_web": 0.8,
+            "t_insulator": 0.1
+          },
+          "thickness_mm": 1.25
+        },
+        {
+          "governing_term": "sum(t_pack_nom + tol_pack_thick + g_axial + c_axial)",
+          "id": "battery_zone",
+          "terms": {
+            "c_axial": 0.2,
+            "g_axial": 0.5,
+            "t_pack_nom": 4.5,
+            "tol_pack_thick": 0.3
+          },
+          "thickness_mm": 5.5
+        },
+        {
+          "governing_term": "t_lower_web",
+          "id": "lower_web",
+          "terms": {
+            "t_lower_web": 0.6
+          },
+          "thickness_mm": 0.6
+        },
+        {
+          "governing_term": "h_rear_inner + c_rear_inner",
+          "id": "rear_inner",
+          "terms": {
+            "c_rear_inner": 0.2,
+            "h_rear_inner": 0.75
+          },
+          "thickness_mm": 0.95
+        },
+        {
+          "governing_term": "t_rear_pcb",
+          "id": "rear_pcb",
+          "terms": {
+            "t_rear_pcb": 1.0
+          },
+          "thickness_mm": 1.0
+        },
+        {
+          "governing_term": "h_optics_max + c_optics",
+          "id": "optics_zone",
+          "terms": {
+            "c_optics": 0.2,
+            "h_optics_max": 0.85
+          },
+          "thickness_mm": 1.05
+        },
+        {
+          "governing_term": "t_window",
+          "id": "window",
+          "terms": {
+            "t_window": 0.8
+          },
+          "thickness_mm": 0.8
+        }
+      ],
+      "parameter_set": "max"
+    },
+    "thin": {
+      "T_total_margins_mm": {
+        "to_14.0": -0.7,
+        "to_15.5": 2.2
+      },
+      "T_total_mm": 13.3,
+      "h_pod_sweep": [
+        {
+          "T_body_margins_mm": {
+            "to_14.0": -0.7,
+            "to_15.5": 2.2
+          },
+          "T_body_mm": 13.3,
+          "h_pod_mm": 0.0
+        },
+        {
+          "T_body_margins_mm": {
+            "to_14.0": -1.2,
+            "to_15.5": 2.7
+          },
+          "T_body_mm": 12.8,
+          "h_pod_mm": 0.5
+        },
+        {
+          "T_body_margins_mm": {
+            "to_14.0": -1.5,
+            "to_15.5": 3.0
+          },
+          "T_body_mm": 12.5,
+          "h_pod_mm": 0.8
+        },
+        {
+          "T_body_margins_mm": {
+            "to_14.0": -1.7,
+            "to_15.5": 3.2
+          },
+          "T_body_mm": 12.3,
+          "h_pod_mm": 1.0
+        },
+        {
+          "T_body_margins_mm": {
+            "to_14.0": -2.2,
+            "to_15.5": 3.7
+          },
+          "T_body_mm": 11.8,
+          "h_pod_mm": 1.5
+        }
+      ],
+      "layers": [
+        {
+          "governing_term": "t_front_extra",
+          "id": "front_extra",
+          "terms": {
+            "t_front_extra": 0.0
+          },
+          "thickness_mm": 0.0
+        },
+        {
+          "governing_term": "t_front_bond",
+          "id": "front_bond",
+          "terms": {
+            "t_front_bond": 0.1
+          },
+          "thickness_mm": 0.1
+        },
+        {
+          "governing_term": "t_display",
+          "id": "display",
+          "terms": {
+            "t_display": 1.95
+          },
+          "thickness_mm": 1.95
+        },
+        {
+          "governing_term": "H_F_under_display + c_front",
+          "id": "front_gap",
+          "terms": {
+            "H_F_under_display + c_front": 2.8,
+            "h_j1_mated": 0.8,
+            "h_shield_can + c_front": 0.9
+          },
+          "thickness_mm": 2.8
+        },
+        {
+          "governing_term": "t_main",
+          "id": "main_pcb",
+          "terms": {
+            "t_main": 0.72
+          },
+          "thickness_mm": 0.72
+        },
+        {
+          "governing_term": "H_B_in_battery + c_back (+ t_insulator)",
+          "id": "back_zone",
+          "terms": {
+            "H_B_in_battery + c_back": 1.0,
+            "t_carrier_web": 0.4,
+            "t_insulator": 0.03
+          },
+          "thickness_mm": 1.03
+        },
+        {
+          "governing_term": "sum(t_pack_nom + tol_pack_thick + g_axial + c_axial)",
+          "id": "battery_zone",
+          "terms": {
+            "c_axial": 0.05,
+            "g_axial": 0.2,
+            "t_pack_nom": 4.5,
+            "tol_pack_thick": 0.0
+          },
+          "thickness_mm": 4.75
+        },
+        {
+          "governing_term": "t_lower_web",
+          "id": "lower_web",
+          "terms": {
+            "t_lower_web": 0.3
+          },
+          "thickness_mm": 0.3
+        },
+        {
+          "governing_term": "h_rear_inner == 0",
+          "id": "rear_inner",
+          "terms": {
+            "h_rear_inner": 0.0
+          },
+          "thickness_mm": 0.0
+        },
+        {
+          "governing_term": "t_rear_pcb",
+          "id": "rear_pcb",
+          "terms": {
+            "t_rear_pcb": 0.6
+          },
+          "thickness_mm": 0.6
+        },
+        {
+          "governing_term": "h_optics_max + c_optics",
+          "id": "optics_zone",
+          "terms": {
+            "c_optics": 0.05,
+            "h_optics_max": 0.7
+          },
+          "thickness_mm": 0.75
+        },
+        {
+          "governing_term": "t_window",
+          "id": "window",
+          "terms": {
+            "t_window": 0.3
+          },
+          "thickness_mm": 0.3
+        }
+      ],
+      "parameter_set": "min"
+    }
+  },
+  "height_map_inputs": {
+    "H_B_in_battery_mm": 0.95,
+    "H_B_in_battery_ref": "C901",
+    "H_F_second_mm": 1.96,
+    "H_F_second_ref": "U4",
+    "H_F_under_display_mm": 2.7,
+    "H_F_under_display_ref": "U8"
+  },
+  "inputs_sha256": {
+    "design/mechanical/inputs/input_register.json": "4da07d6a8fe71233d3ce2f5ecdf512efc86b31dfcc03133cdb1558540b2c88e7",
+    "design/mechanical/inputs/package_heights.json": "47a3c2c4b6f53f6eda9b213e353f819c4c1a1a2c13b0e173d95064ed1e6e6f22",
+    "design/mechanical/inputs/stack_parameters.json": "545306c658552cf295dec59e57ea54ce238981bfdd5558bc986143a6e3c82ffe",
+    "design/placement/phase1_placement.json": "0af00cd3e46dbc9e465b0d32a24ef065fc257295fd735ed39f5b5ea4ef0fa64b",
+    "rear_sensor/rear_sensor_revA.kicad_pcb": "8b5898f54d7faf4d61c1044b6e2418c0c89d4e85a63dab4dcddd8b3e9ebb3c1f",
+    "sportwatch_revA.kicad_pcb": "c36402cba205b0fdce79ca3f2b15af21bf8cacfba1dc08e7e4fe7bc6e2137777"
+  },
+  "parameters": {
+    "c_axial": {
+      "class": "PARAMETRIC",
+      "confidence": "MEDIUM",
+      "max": 0.2,
+      "min": 0.05,
+      "nom": 0.1,
+      "source": "Assembly clearance / compliant foam above pack."
+    },
+    "c_back": {
+      "class": "PARAMETRIC",
+      "confidence": "MEDIUM",
+      "max": 0.2,
+      "min": 0.05,
+      "nom": 0.1,
+      "source": "Clearance B.Cu body to carrier pocket floor/film."
+    },
+    "c_front": {
+      "class": "PARAMETRIC",
+      "confidence": "MEDIUM",
+      "max": 0.3,
+      "min": 0.1,
+      "nom": 0.15,
+      "source": "Clearance between tallest F.Cu body and display rear (incl. display rear foam/tape tolerance)."
+    },
+    "c_optics": {
+      "class": "PARAMETRIC",
+      "confidence": "MEDIUM",
+      "max": 0.2,
+      "min": 0.05,
+      "nom": 0.1,
+      "source": "Component top to window inner face / optical spacer."
+    },
+    "c_rear_inner": {
+      "class": "PARAMETRIC",
+      "confidence": "MEDIUM",
+      "max": 0.2,
+      "min": 0.05,
+      "nom": 0.1,
+      "source": "Clearance REAR inner-face parts to carrier floor (applies only if h_rear_inner > 0)."
+    },
+    "g_axial": {
+      "class": "SUPPLIER_DATA_REQUIRED",
+      "confidence": "LOW",
+      "max": 0.5,
+      "min": 0.2,
+      "nom": 0.3,
+      "source": "Swelling/growth allowance; planning ~5-10% of 4.5 mm; supplier must state permitted growth and restraint."
+    },
+    "h_j1_mated": {
+      "class": "KNOWN",
+      "confidence": "HIGH",
+      "max": 0.8,
+      "min": 0.8,
+      "nom": 0.8,
+      "source": "OCN OK-23GF/GM-04 drawing: mating height 0.8 mm."
+    },
+    "h_optics_max": {
+      "class": "KNOWN",
+      "confidence": "MEDIUM",
+      "max": 0.85,
+      "min": 0.7,
+      "nom": 0.75,
+      "source": "SFH7018A/SFH2703 0.6 +/-0.1; MAX30208 0.75; SFH4053B and MAX86141 seated height still SUPPLIER_DATA_REQUIRED (assumed <= MAX30208)."
+    },
+    "h_pod": {
+      "class": "PARAMETRIC",
+      "confidence": "LOW",
+      "max": 1.5,
+      "min": 0.0,
+      "nom": 0.8,
+      "source": "Pod protrusion beyond caseback plane; explicitly NOT freezable from current evidence (requires wrist/strap trials). Sweep values: 0.0, 0.5, 0.8, 1.0, 1.5."
+    },
+    "h_rear_inner": {
+      "class": "PARAMETRIC",
+      "confidence": "MEDIUM",
+      "max": 0.75,
+      "min": 0.0,
+      "nom": 0.0,
+      "source": "REAR battery-facing component height: 0 if single-sided (all parts on optical face), up to ~0.75 if AFEs/muxes/MAX30208-side parts go on inner face. Strategy is a study variable."
+    },
+    "h_shield_can": {
+      "class": "PARAMETRIC",
+      "confidence": "LOW",
+      "max": 1.0,
+      "min": 0.8,
+      "nom": 0.85,
+      "source": "Phase-1 provisional shield concept (two-piece can ~0.85 total); no shield MPN."
+    },
+    "t_carrier_web": {
+      "class": "PARAMETRIC",
+      "confidence": "LOW",
+      "max": 0.8,
+      "min": 0.4,
+      "nom": 0.5,
+      "source": "Battery carrier/midplate web; molded plastic >=0.4 typical; sheet metal option thinner but conductive (insulation/RF impact)."
+    },
+    "t_display": {
+      "class": "KNOWN",
+      "confidence": "HIGH",
+      "max": 2.15,
+      "min": 1.95,
+      "nom": 2.05,
+      "source": "ZC-A1D43W-046 spec V1.0 p4 (43.9x43.9x2.05) and p5 (2.05 +/-0.1, includes integral cover glass)."
+    },
+    "t_display_fpc_fold": {
+      "class": "SUPPLIER_DATA_REQUIRED",
+      "confidence": "LOW",
+      "max": 0.6,
+      "min": 0.3,
+      "nom": 0.4,
+      "source": "ZC-A1D43W-046 p5 rear view: folded FPC + steel stiffener T0.15 / PI stiffener T0.2 + tape T0.05; local folded-envelope drawing not supplied; footprint up to 0.7 MAX beyond outline."
+    },
+    "t_front_bond": {
+      "class": "PARAMETRIC",
+      "confidence": "MEDIUM",
+      "max": 0.25,
+      "min": 0.1,
+      "nom": 0.15,
+      "source": "Display-to-case bond/gasket; typical PSA/foam 0.1-0.25."
+    },
+    "t_front_extra": {
+      "class": "PARAMETRIC",
+      "confidence": "LOW",
+      "max": 0.5,
+      "min": 0.0,
+      "nom": 0.0,
+      "source": "Owner decision open: display cover glass used as exterior (0) vs added sapphire/bezel lip (up to ~0.5)."
+    },
+    "t_insulator": {
+      "class": "PARAMETRIC",
+      "confidence": "MEDIUM",
+      "max": 0.1,
+      "min": 0.03,
+      "nom": 0.05,
+      "source": "PI/Kapton or PET film between pouch and any exposed board/pocket."
+    },
+    "t_lower_web": {
+      "class": "PARAMETRIC",
+      "confidence": "LOW",
+      "max": 0.6,
+      "min": 0.3,
+      "nom": 0.4,
+      "source": "Carrier floor between pack and REAR module/FPC under-run; includes PI film."
+    },
+    "t_main": {
+      "class": "KNOWN",
+      "confidence": "MEDIUM",
+      "max": 0.88,
+      "min": 0.72,
+      "nom": 0.8,
+      "source": "MAIN .kicad_pcb thickness 0.8 (stackup sum 0.768); +/-10% fabricator tolerance assumed (PARAMETRIC part)."
+    },
+    "t_pack_nom": {
+      "class": "KNOWN",
+      "confidence": "HIGH",
+      "max": 4.5,
+      "min": 4.5,
+      "nom": 4.5,
+      "source": "LPR454440 catalog nominal thickness 4.5 mm (cell model code)."
+    },
+    "t_rear_pcb": {
+      "class": "PARAMETRIC",
+      "confidence": "MEDIUM",
+      "max": 1.0,
+      "min": 0.6,
+      "nom": 0.8,
+      "source": "REAR rigid board thickness; 4-layer study start (0.6-1.0). Current staging file 1.6/2-layer is a placeholder only."
+    },
+    "t_window": {
+      "class": "PARAMETRIC",
+      "confidence": "LOW",
+      "max": 0.8,
+      "min": 0.3,
+      "nom": 0.5,
+      "source": "Clear window (glass/sapphire/PC/PMMA) thickness; material undecided."
+    },
+    "tol_pack_thick": {
+      "class": "SUPPLIER_DATA_REQUIRED",
+      "confidence": "LOW",
+      "max": 0.3,
+      "min": 0.0,
+      "nom": 0.1,
+      "source": "Finished protected-pack thickness tolerance incl. tape/insulation/PCM fold; no supplier drawing."
+    }
+  },
+  "radial": {
+    "corner_resolution": "Reading A (lead-confirmed): the conservative corner minimises R_case_inner (D_case_outer at min, t_case_wall at max) with all other terms at max; the optimistic corner is the mirror image.",
+    "corner_rule": "Evaluate margins at nominal, at a conservative corner (D_case_outer at min and t_case_wall at max, i.e. smallest R_case_inner; all other terms at max), and at an optimistic corner (D_case_outer at max, t_case_wall at min; all other terms at min). Report each with its governing terms.",
+    "corners": {
+      "conservative": {
+        "checks": {
+          "R_case_inner": {
+            "formula": "D_case_outer/2 - t_case_wall",
+            "terms": {
+              "D_case_outer": 50.0,
+              "t_case_wall": 1.6
+            },
+            "value_mm": 23.4
+          },
+          "R_channel_inner": {
+            "formula": "R_pack_max + c_radial + t_carrier_wall",
+            "terms": {
+              "R_pack_max": 22.25,
+              "c_radial": 1.0,
+              "t_carrier_wall": 0.6
+            },
+            "value_mm": 23.85
+          },
+          "R_channel_outer_straight": {
+            "formula": "R_channel_inner + t_fpc + c_fpc",
+            "terms": {
+              "R_channel_inner": 23.85,
+              "c_fpc": 0.3,
+              "t_fpc": 0.2
+            },
+            "value_mm": 24.35
+          },
+          "R_edge_wrap_outer": {
+            "formula": "R_main + max(R_bend_min, t_main/2) + t_fpc + c_fpc  (180-degree wrap of an FPC from a MAIN F.Cu connector around the MAIN edge)",
+            "governing_term": "R_bend_min",
+            "terms": {
+              "R_bend_min": 2.0,
+              "R_main": 23.0,
+              "c_fpc": 0.3,
+              "t_fpc": 0.2,
+              "t_main/2": 0.44
+            },
+            "value_mm": 25.5
+          },
+          "R_pack_max": {
+            "formula": "(D_pack_nom + tol_pack_dia)/2",
+            "terms": {
+              "D_pack_nom": 44.0,
+              "tol_pack_dia": 0.5
+            },
+            "value_mm": 22.25
+          },
+          "margin_edge_wrap": {
+            "formula": "R_case_inner - R_edge_wrap_outer",
+            "result": "FAIL",
+            "sign": "-",
+            "terms": {
+              "R_case_inner": 23.4,
+              "R_edge_wrap_outer": 25.5
+            },
+            "value_mm": -2.1
+          },
+          "margin_main_to_case": {
+            "formula": "R_case_inner - R_main  (bare MAIN edge clearance, before any FPC)",
+            "result": "PASS",
+            "sign": "+",
+            "terms": {
+              "R_case_inner": 23.4,
+              "R_main": 23.0
+            },
+            "value_mm": 0.4
+          },
+          "margin_straight_run": {
+            "formula": "R_case_inner - R_channel_outer_straight  (vertical FPC run beside the pack)",
+            "result": "FAIL",
+            "sign": "-",
+            "terms": {
+              "R_case_inner": 23.4,
+              "R_channel_outer_straight": 24.35
+            },
+            "value_mm": -0.95
+          }
+        },
+        "definition": "D_case_outer at min; t_case_wall at max (reading A: only the case diameter is the 'case dim'; wall is an 'other term' at max, so R_case_inner is genuinely minimal); all other terms (incl. t_main) at max",
+        "parameters": {
+          "D_case_outer": 50.0,
+          "D_pack_nom": 44.0,
+          "R_bend_min": 2.0,
+          "R_main": 23.0,
+          "c_fpc": 0.3,
+          "c_radial": 1.0,
+          "t_carrier_wall": 0.6,
+          "t_case_wall": 1.6,
+          "t_fpc": 0.2,
+          "t_main": 0.88,
+          "tol_pack_dia": 0.5
+        }
+      },
+      "nominal": {
+        "checks": {
+          "R_case_inner": {
+            "formula": "D_case_outer/2 - t_case_wall",
+            "terms": {
+              "D_case_outer": 50.5,
+              "t_case_wall": 1.2
+            },
+            "value_mm": 24.05
+          },
+          "R_channel_inner": {
+            "formula": "R_pack_max + c_radial + t_carrier_wall",
+            "terms": {
+              "R_pack_max": 22.15,
+              "c_radial": 0.5,
+              "t_carrier_wall": 0.4
+            },
+            "value_mm": 23.05
+          },
+          "R_channel_outer_straight": {
+            "formula": "R_channel_inner + t_fpc + c_fpc",
+            "terms": {
+              "R_channel_inner": 23.05,
+              "c_fpc": 0.2,
+              "t_fpc": 0.12
+            },
+            "value_mm": 23.37
+          },
+          "R_edge_wrap_outer": {
+            "formula": "R_main + max(R_bend_min, t_main/2) + t_fpc + c_fpc  (180-degree wrap of an FPC from a MAIN F.Cu connector around the MAIN edge)",
+            "governing_term": "R_bend_min",
+            "terms": {
+              "R_bend_min": 1.2,
+              "R_main": 23.0,
+              "c_fpc": 0.2,
+              "t_fpc": 0.12,
+              "t_main/2": 0.4
+            },
+            "value_mm": 24.52
+          },
+          "R_pack_max": {
+            "formula": "(D_pack_nom + tol_pack_dia)/2",
+            "terms": {
+              "D_pack_nom": 44.0,
+              "tol_pack_dia": 0.3
+            },
+            "value_mm": 22.15
+          },
+          "margin_edge_wrap": {
+            "formula": "R_case_inner - R_edge_wrap_outer",
+            "result": "FAIL",
+            "sign": "-",
+            "terms": {
+              "R_case_inner": 24.05,
+              "R_edge_wrap_outer": 24.52
+            },
+            "value_mm": -0.47
+          },
+          "margin_main_to_case": {
+            "formula": "R_case_inner - R_main  (bare MAIN edge clearance, before any FPC)",
+            "result": "PASS",
+            "sign": "+",
+            "terms": {
+              "R_case_inner": 24.05,
+              "R_main": 23.0
+            },
+            "value_mm": 1.05
+          },
+          "margin_straight_run": {
+            "formula": "R_case_inner - R_channel_outer_straight  (vertical FPC run beside the pack)",
+            "result": "PASS",
+            "sign": "+",
+            "terms": {
+              "R_case_inner": 24.05,
+              "R_channel_outer_straight": 23.37
+            },
+            "value_mm": 0.68
+          }
+        },
+        "definition": "every parameter at nom",
+        "parameters": {
+          "D_case_outer": 50.5,
+          "D_pack_nom": 44.0,
+          "R_bend_min": 1.2,
+          "R_main": 23.0,
+          "c_fpc": 0.2,
+          "c_radial": 0.5,
+          "t_carrier_wall": 0.4,
+          "t_case_wall": 1.2,
+          "t_fpc": 0.12,
+          "t_main": 0.8,
+          "tol_pack_dia": 0.3
+        }
+      },
+      "optimistic": {
+        "checks": {
+          "R_case_inner": {
+            "formula": "D_case_outer/2 - t_case_wall",
+            "terms": {
+              "D_case_outer": 51.0,
+              "t_case_wall": 1.0
+            },
+            "value_mm": 24.5
+          },
+          "R_channel_inner": {
+            "formula": "R_pack_max + c_radial + t_carrier_wall",
+            "terms": {
+              "R_pack_max": 22.1,
+              "c_radial": 0.5,
+              "t_carrier_wall": 0.3
+            },
+            "value_mm": 22.9
+          },
+          "R_channel_outer_straight": {
+            "formula": "R_channel_inner + t_fpc + c_fpc",
+            "terms": {
+              "R_channel_inner": 22.9,
+              "c_fpc": 0.1,
+              "t_fpc": 0.1
+            },
+            "value_mm": 23.1
+          },
+          "R_edge_wrap_outer": {
+            "formula": "R_main + max(R_bend_min, t_main/2) + t_fpc + c_fpc  (180-degree wrap of an FPC from a MAIN F.Cu connector around the MAIN edge)",
+            "governing_term": "R_bend_min",
+            "terms": {
+              "R_bend_min": 0.6,
+              "R_main": 23.0,
+              "c_fpc": 0.1,
+              "t_fpc": 0.1,
+              "t_main/2": 0.36
+            },
+            "value_mm": 23.8
+          },
+          "R_pack_max": {
+            "formula": "(D_pack_nom + tol_pack_dia)/2",
+            "terms": {
+              "D_pack_nom": 44.0,
+              "tol_pack_dia": 0.2
+            },
+            "value_mm": 22.1
+          },
+          "margin_edge_wrap": {
+            "formula": "R_case_inner - R_edge_wrap_outer",
+            "result": "PASS",
+            "sign": "+",
+            "terms": {
+              "R_case_inner": 24.5,
+              "R_edge_wrap_outer": 23.8
+            },
+            "value_mm": 0.7
+          },
+          "margin_main_to_case": {
+            "formula": "R_case_inner - R_main  (bare MAIN edge clearance, before any FPC)",
+            "result": "PASS",
+            "sign": "+",
+            "terms": {
+              "R_case_inner": 24.5,
+              "R_main": 23.0
+            },
+            "value_mm": 1.5
+          },
+          "margin_straight_run": {
+            "formula": "R_case_inner - R_channel_outer_straight  (vertical FPC run beside the pack)",
+            "result": "PASS",
+            "sign": "+",
+            "terms": {
+              "R_case_inner": 24.5,
+              "R_channel_outer_straight": 23.1
+            },
+            "value_mm": 1.4
+          }
+        },
+        "definition": "D_case_outer at max; t_case_wall at min (reading A); all other terms (incl. t_main) at min",
+        "parameters": {
+          "D_case_outer": 51.0,
+          "D_pack_nom": 44.0,
+          "R_bend_min": 0.6,
+          "R_main": 23.0,
+          "c_fpc": 0.1,
+          "c_radial": 0.5,
+          "t_carrier_wall": 0.3,
+          "t_case_wall": 1.0,
+          "t_fpc": 0.1,
+          "t_main": 0.72,
+          "tol_pack_dia": 0.2
+        }
+      }
+    },
+    "note": "Radial budget at the south FPC station and generally. All radii from watch centre (MAIN origin). Case values are provisional targets.",
+    "pass_rule": "margin >= 0 -> PASS (sign '+' or '0'), margin < 0 -> FAIL (sign '-')"
+  },
+  "rss_info_only": {
+    "formula": "Also report an RSS stack: nom sum + sqrt(sum((max-nom)^2)) for parameters with max>nom; RSS is informational only.",
+    "note": "primary = every parameter referenced by a z_layer/rule (h_pod excluded: sweep, not in T_total); secondary = only parameters that govern at nominal. Informational only.",
+    "primary_all_stack_parameters": {
+      "T_total_margins_mm": {
+        "to_14.0": 1.63,
+        "to_15.5": -0.13
+      },
+      "T_total_rss_mm": 15.63,
+      "parameters": [
+        "t_front_extra",
+        "t_front_bond",
+        "t_display",
+        "c_front",
+        "h_shield_can",
+        "t_main",
+        "t_carrier_web",
+        "c_back",
+        "t_insulator",
+        "tol_pack_thick",
+        "g_axial",
+        "c_axial",
+        "t_lower_web",
+        "h_rear_inner",
+        "c_rear_inner",
+        "t_rear_pcb",
+        "h_optics_max",
+        "c_optics",
+        "t_window"
+      ],
+      "root_sum_square_mm": 1.13
+    },
+    "secondary_nominal_active_path_only": {
+      "T_total_margins_mm": {
+        "to_14.0": 1.269,
+        "to_15.5": 0.231
+      },
+      "T_total_rss_mm": 15.269,
+      "parameters": [
+        "t_front_extra",
+        "t_front_bond",
+        "t_display",
+        "c_front",
+        "t_main",
+        "c_back",
+        "t_insulator",
+        "tol_pack_thick",
+        "g_axial",
+        "c_axial",
+        "t_lower_web",
+        "t_rear_pcb",
+        "h_optics_max",
+        "c_optics",
+        "t_window"
+      ],
+      "root_sum_square_mm": 0.769
+    }
+  },
+  "rules": {
+    "back_zone": "max(t_carrier_web, H_B_in_battery + c_back) + t_insulator. H_B_in_battery = max seated B.Cu height of MAIN footprints whose centre lies within r <= 22.0 mm (battery nominal projection).",
+    "battery_zone": "t_pack_nom + tol_pack_thick + g_axial + c_axial",
+    "front_gap": "max(H_F_under_display + c_front, h_shield_can + c_front, h_j1_mated). H_F_under_display = max seated F.Cu height (package max + solder_allowance for PARAMETRIC parts) of MAIN footprints whose centre lies within r <= 21.95 mm (display outline radius 43.9/2) - the display is a rigid flat module, so its rear plane must clear the tallest part anywhere beneath it. Also report the governing reference designator and the second-tallest value with its reference.",
+    "optics_zone": "h_optics_max + c_optics",
+    "rear_inner": "0 if h_rear_inner == 0 else h_rear_inner + c_rear_inner"
+  },
+  "schema": "sportwatch-mech-zstack/1",
+  "stations": [
+    {
+      "desc": "Core under U101/U901 and storage B.Cu cavity",
+      "id": "CENTER",
+      "xy": [
+        100.0,
+        100.0
+      ]
+    },
+    {
+      "desc": "U8 MAX-F10S north",
+      "id": "GNSS_N",
+      "xy": [
+        100.0,
+        86.0
+      ]
+    },
+    {
+      "desc": "J1501 sensor FPC reservation south",
+      "id": "FPC_S",
+      "xy": [
+        104.35,
+        118.7
+      ]
+    },
+    {
+      "desc": "J201 battery termination planning window",
+      "id": "J201_S",
+      "xy": [
+        96.75,
+        120.5
+      ]
+    },
+    {
+      "desc": "Charger contact module, rear east ~3 o'clock",
+      "id": "CHG_E",
+      "xy": [
+        121.0,
+        100.0
+      ]
+    }
+  ],
+  "status": "PROVISIONAL PARAMETRIC STUDY - not a frozen stack; values are planning inputs with explicit class/source",
+  "thick_minus_nominal_mm": 3.43,
+  "top3_thick_minus_nominal": [
+    {
+      "delta_mm": 0.95,
+      "governing_nominal": "h_rear_inner == 0",
+      "governing_thick": "h_rear_inner + c_rear_inner",
+      "layer": "rear_inner",
+      "nominal_mm": 0.0,
+      "thick_mm": 0.95
+    },
+    {
+      "delta_mm": 0.5,
+      "governing_nominal": "t_front_extra",
+      "governing_thick": "t_front_extra",
+      "layer": "front_extra",
+      "nominal_mm": 0.0,
+      "thick_mm": 0.5
+    },
+    {
+      "delta_mm": 0.5,
+      "governing_nominal": "sum(t_pack_nom + tol_pack_thick + g_axial + c_axial)",
+      "governing_thick": "sum(t_pack_nom + tol_pack_thick + g_axial + c_axial)",
+      "layer": "battery_zone",
+      "nominal_mm": 5.0,
+      "thick_mm": 5.5
+    }
+  ]
+}

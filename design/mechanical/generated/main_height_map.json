@@ -1,0 +1,4955 @@
+{
+  "inputs_sha256": {
+    "design/mechanical/inputs/input_register.json": "4da07d6a8fe71233d3ce2f5ecdf512efc86b31dfcc03133cdb1558540b2c88e7",
+    "design/mechanical/inputs/package_heights.json": "47a3c2c4b6f53f6eda9b213e353f819c4c1a1a2c13b0e173d95064ed1e6e6f22",
+    "design/mechanical/inputs/stack_parameters.json": "545306c658552cf295dec59e57ea54ce238981bfdd5558bc986143a6e3c82ffe",
+    "design/placement/phase1_placement.json": "0af00cd3e46dbc9e465b0d32a24ef065fc257295fd735ed39f5b5ea4ef0fa64b",
+    "rear_sensor/rear_sensor_revA.kicad_pcb": "8b5898f54d7faf4d61c1044b6e2418c0c89d4e85a63dab4dcddd8b3e9ebb3c1f",
+    "sportwatch_revA.kicad_pcb": "c36402cba205b0fdce79ca3f2b15af21bf8cacfba1dc08e7e4fe7bc6e2137777"
+  },
+  "main_footprints": [
+    {
+      "courtyard_bbox": [
+        90.8,
+        94.15,
+        92.2,
+        94.85
+      ],
+      "footprint": "C_0201_0603Metric",
+      "height_band": "lt0.5",
+      "height_class": "PARAMETRIC",
+      "r": 10.124,
+      "ref": "C101",
+      "rot": 0.0,
+      "seated_max": 0.38,
+      "side": "F.Cu",
+      "value": "4.7uF",
+      "x": 91.5,
+      "y": 94.5
+    },
+    {
+      "courtyard_bbox": [
+        90.8,
+        95.15,
+        92.2,
+        95.85
+      ],
+      "footprint": "C_0201_0603Metric",
+      "height_band": "lt0.5",
+      "height_class": "PARAMETRIC",
+      "r": 9.618,
+      "ref": "C102",
+      "rot": 0.0,
+      "seated_max": 0.38,
+      "side": "F.Cu",
+      "value": "4.7uF",
+      "x": 91.5,
+      "y": 95.5
+    },
+    {
+      "courtyard_bbox": [
+        89.3,
+        94.15,
+        90.7,
+        94.85
+      ],
+      "footprint": "C_0201_0603Metric",
+      "height_band": "lt0.5",
+      "height_class": "PARAMETRIC",
+      "r": 11.413,
+      "ref": "C103",
+      "rot": 0.0,
+      "seated_max": 0.38,
+      "side": "F.Cu",
+      "value": "4.7uF",
+      "x": 90.0,
+      "y": 94.5
+    },
+    {
+      "courtyard_bbox": [
+        89.3,
+        95.15,
+        90.7,
+        95.85
+      ],
+      "footprint": "C_0201_0603Metric",
+      "height_band": "lt0.5",
+      "height_class": "PARAMETRIC",
+      "r": 10.966,
+      "ref": "C104",
+      "rot": 0.0,
+      "seated_max": 0.38,
+      "side": "F.Cu",
+      "value": "4.7uF",
+      "x": 90.0,
+      "y": 95.5
+    },
+    {
+      "courtyard_bbox": [
+        94.09,
+        94.74,
+        95.91,
+        95.66
+      ],
+      "footprint": "C_0402_1005Metric",
+      "height_band": "0.5-1.0",
+      "height_class": "PARAMETRIC",
+      "r": 6.931,
+      "ref": "C105",
+      "rot": 0.0,
+      "seated_max": 0.6,
+      "side": "F.Cu",
+      "value": "10uF",
+      "x": 95.0,
+      "y": 95.2
+    },
+    {
+      "courtyard_bbox": [
+        94.09,
+        95.94,
+        95.91,
+        96.86
+      ],
+      "footprint": "C_0402_1005Metric",
+      "height_band": "0.5-1.0",
+      "height_class": "PARAMETRIC",
+      "r": 6.161,
+      "ref": "C106",
+      "rot": 0.0,
+      "seated_max": 0.6,
+      "side": "F.Cu",
+      "value": "1uF",
+      "x": 95.0,
+      "y": 96.4
+    },
+    {
+      "courtyard_bbox": [
+        94.09,
+        97.14,
+        95.91,
+        98.06
+      ],
+      "footprint": "C_0402_1005Metric",
+      "height_band": "0.5-1.0",
+      "height_class": "PARAMETRIC",
+      "r": 5.546,
+      "ref": "C107",
+      "rot": 0.0,
+      "seated_max": 0.6,
+      "side": "F.Cu",
+      "value": "2.2uF",
+      "x": 95.0,
+      "y": 97.6
+    },
+    {
+      "courtyard_bbox": [
+        94.09,
+        98.34,
+        95.91,
+        99.26
+      ],
+      "footprint": "C_0402_1005Metric",
+      "height_band": "0.5-1.0",
+      "height_class": "PARAMETRIC",
+      "r": 5.142,
+      "ref": "C108",
+      "rot": 0.0,
+      "seated_max": 0.6,
+      "side": "F.Cu",
+      "value": "2.2uF",
+      "x": 95.0,
+      "y": 98.8
+    },
+    {
+      "courtyard_bbox": [
+        91.89,
+        96.54,
+        93.71,
+        97.46
+      ],
+      "footprint": "C_0402_1005Metric",
+      "height_band": "0.5-1.0",
+      "height_class": "PARAMETRIC",
+      "r": 7.8,
+      "ref": "C109",
+      "rot": 0.0,
+      "seated_max": 0.6,
+      "side": "F.Cu",
+      "value": "2.2uF",
+      "x": 92.8,
+      "y": 97.0
+    },
+    {
+      "courtyard_bbox": [
+        91.89,
+        97.94,
+        93.71,
+        98.86
+      ],
+      "footprint": "C_0402_1005Metric",
+      "height_band": "0.5-1.0",
+      "height_class": "PARAMETRIC",
+      "r": 7.376,
+      "ref": "C110",
+      "rot": 0.0,
+      "seated_max": 0.6,
+      "side": "F.Cu",
+      "value": "4.7uF",
+      "x": 92.8,
+      "y": 98.4
+    },
+    {
+      "courtyard_bbox": [
+        104.34,
+        94.59,
+        105.26,
+        96.41
+      ],
+      "footprint": "C_0402_1005Metric",
+      "height_band": "0.5-1.0",
+      "height_class": "PARAMETRIC",
+      "r": 6.58,
+      "ref": "C111",
+      "rot": 90.0,
+      "seated_max": 0.6,
+      "side": "F.Cu",
+      "value": "100nF",
+      "x": 104.8,
+      "y": 95.5
+    },
+    {
+      "courtyard_bbox": [
+        103.34,
+        96.59,
+        104.26,
+        98.41
+      ],
+      "footprint": "C_0402_1005Metric",
+      "height_band": "0.5-1.0",
+      "height_class": "PARAMETRIC",
+      "r": 4.549,
+      "ref": "C112",
+      "rot": 90.0,
+      "seated_max": 0.6,
+      "side": "F.Cu",
+      "value": "2.2uF",
+      "x": 103.8,
+      "y": 97.5
+    },
+    {
+      "courtyard_bbox": [
+        102.49,
+        93.04,
+        104.31,
+        93.96
+      ],
+      "footprint": "C_0402_1005Metric",
+      "height_band": "0.5-1.0",
+      "height_class": "PARAMETRIC",
+      "r": 7.336,
+      "ref": "C113",
+      "rot": 0.0,
+      "seated_max": 0.6,
+      "side": "F.Cu",
+      "value": "100nF",
+      "x": 103.4,
+      "y": 93.5
+    },
+    {
+      "courtyard_bbox": [
+        103.34,
+        94.59,
+        104.26,
+        96.41
+      ],
+      "footprint": "C_0402_1005Metric",
+      "height_band": "0.5-1.0",
+      "height_class": "PARAMETRIC",
+      "r": 5.89,
+      "ref": "C114",
+      "rot": 90.0,
+      "seated_max": 0.6,
+      "side": "F.Cu",
+      "value": "2.2uF",
+      "x": 103.8,
+      "y": 95.5
+    },
+    {
+      "courtyard_bbox": [
+        104.34,
+        96.59,
+        105.26,
+        98.41
+      ],
+      "footprint": "C_0402_1005Metric",
+      "height_band": "0.5-1.0",
+      "height_class": "PARAMETRIC",
+      "r": 5.412,
+      "ref": "C115",
+      "rot": 90.0,
+      "seated_max": 0.6,
+      "side": "F.Cu",
+      "value": "100nF",
+      "x": 104.8,
+      "y": 97.5
+    },
+    {
+      "courtyard_bbox": [
+        103.34,
+        98.59,
+        104.26,
+        100.41
+      ],
+      "footprint": "C_0402_1005Metric",
+      "height_band": "0.5-1.0",
+      "height_class": "PARAMETRIC",
+      "r": 3.833,
+      "ref": "C116",
+      "rot": 90.0,
+      "seated_max": 0.6,
+      "side": "F.Cu",
+      "value": "1.0uF",
+      "x": 103.8,
+      "y": 99.5
+    },
+    {
+      "courtyard_bbox": [
+        100.69,
+        91.84,
+        102.51,
+        92.76
+      ],
+      "footprint": "C_0402_1005Metric",
+      "height_band": "0.5-1.0",
+      "height_class": "PARAMETRIC",
+      "r": 7.864,
+      "ref": "C117",
+      "rot": 0.0,
+      "seated_max": 0.6,
+      "side": "F.Cu",
+      "value": "2.2uF",
+      "x": 101.6,
+      "y": 92.3
+    },
+    {
+      "courtyard_bbox": [
+        100.9,
+        92.95,
+        102.3,
+        93.65
+      ],
+      "footprint": "C_0201_0603Metric",
+      "height_band": "lt0.5",
+      "height_class": "PARAMETRIC",
+      "r": 6.888,
+      "ref": "C118",
+      "rot": 0.0,
+      "seated_max": 0.38,
+      "side": "F.Cu",
+      "value": "8.2pF",
+      "x": 101.6,
+      "y": 93.3
+    },
+    {
+      "courtyard_bbox": [
+        95.7,
+        92.95,
+        97.1,
+        93.65
+      ],
+      "footprint": "C_0201_0603Metric",
+      "height_band": "lt0.5",
+      "height_class": "PARAMETRIC",
+      "r": 7.606,
+      "ref": "C119",
+      "rot": 180.0,
+      "seated_max": 0.38,
+      "side": "F.Cu",
+      "value": "8.2pF",
+      "x": 96.4,
+      "y": 93.3
+    },
+    {
+      "courtyard_bbox": [
+        83.94,
+        99.54,
+        85.76,
+        100.46
+      ],
+      "footprint": "C_0402_1005Metric",
+      "height_band": "0.5-1.0",
+      "height_class": "PARAMETRIC",
+      "r": 15.15,
+      "ref": "C120",
+      "rot": 0.0,
+      "seated_max": 0.6,
+      "side": "F.Cu",
+      "value": "100nF",
+      "x": 84.85,
+      "y": 100.0
+    },
+    {
+      "courtyard_bbox": [
+        83.94,
+        91.54,
+        85.76,
+        92.46
+      ],
+      "footprint": "C_0402_1005Metric",
+      "height_band": "0.5-1.0",
+      "height_class": "PARAMETRIC",
+      "r": 17.132,
+      "ref": "C121",
+      "rot": 0.0,
+      "seated_max": 0.6,
+      "side": "F.Cu",
+      "value": "100nF",
+      "x": 84.85,
+      "y": 92.0
+    },
+    {
+      "courtyard_bbox": [
+        87.09,
+        88.34,
+        88.91,
+        89.26
+      ],
+      "footprint": "C_0402_1005Metric",
+      "height_band": "0.5-1.0",
+      "height_class": "PARAMETRIC",
+      "r": 16.415,
+      "ref": "C122",
+      "rot": 0.0,
+      "seated_max": 0.6,
+      "side": "F.Cu",
+      "value": "100nF",
+      "x": 88.0,
+      "y": 88.8
+    },
+    {
+      "courtyard_bbox": [
+        85.54,
+        88.14,
+        86.46,
+        89.96
+      ],
+      "footprint": "C_0402_1005Metric",
+      "height_band": "0.5-1.0",
+      "height_class": "PARAMETRIC",
+      "r": 17.774,
+      "ref": "C123",
+      "rot": 90.0,
+      "seated_max": 0.6,
+      "side": "F.Cu",
+      "value": "100nF",
+      "x": 86.0,
+      "y": 89.05
+    },
+    {
+      "courtyard_bbox": [
+        90.09,
+        87.94,
+        91.91,
+        88.86
+      ],
+      "footprint": "C_0402_1005Metric",
+      "height_band": "0.5-1.0",
+      "height_class": "PARAMETRIC",
+      "r": 14.682,
+      "ref": "C124",
+      "rot": 0.0,
+      "seated_max": 0.6,
+      "side": "F.Cu",
+      "value": "100nF",
+      "x": 91.0,
+      "y": 88.4
+    },
+    {
+      "courtyard_bbox": [
+        90.09,
+        86.69,
+        91.91,
+        87.61
+      ],
+      "footprint": "C_0402_1005Metric",
+      "height_band": "0.5-1.0",
+      "height_class": "PARAMETRIC",
+      "r": 15.688,
+      "ref": "C125",
+      "rot": 0.0,
+      "seated_max": 0.6,
+      "side": "F.Cu",
+      "value": "100nF",
+      "x": 91.0,
+      "y": 87.15
+    },
+    {
+      "courtyard_bbox": [
+        84.04,
+        100.79,
+        85.86,
+        101.71
+      ],
+      "footprint": "C_0402_1005Metric",
+      "height_band": "0.5-1.0",
+      "height_class": "PARAMETRIC",
+      "r": 15.102,
+      "ref": "C126",
+      "rot": 0.0,
+      "seated_max": 0.6,
+      "side": "F.Cu",
+      "value": "100nF",
+      "x": 84.95,
+      "y": 101.25
+    },
+    {
+      "courtyard_bbox": [
+        88.99,
+        97.09,
+        89.91,
+        98.91
+      ],
+      "footprint": "C_0402_1005Metric",
+      "height_band": "0.5-1.0",
+      "height_class": "PARAMETRIC",
+      "r": 10.738,
+      "ref": "C127",
+      "rot": 90.0,
+      "seated_max": 0.6,
+      "side": "F.Cu",
+      "value": "100nF",
+      "x": 89.45,
+      "y": 98.0
+    },
+    {
+      "courtyard_bbox": [
+        90.95,
+        97.35,
+        91.65,
+        98.75
+      ],
+      "footprint": "C_0201_0603Metric",
+      "height_band": "lt0.5",
+      "height_class": "PARAMETRIC",
+      "r": 8.916,
+      "ref": "C128",
+      "rot": 90.0,
+      "seated_max": 0.38,
+      "side": "F.Cu",
+      "value": "100pF",
+      "x": 91.3,
+      "y": 98.05
+    },
+    {
+      "courtyard_bbox": [
+        85.04,
+        102.59,
+        85.96,
+        104.41
+      ],
+      "footprint": "C_0402_1005Metric",
+      "height_band": "0.5-1.0",
+      "height_class": "PARAMETRIC",
+      "r": 14.916,
+      "ref": "C201",
+      "rot": 90.0,
+      "seated_max": 0.6,
+      "side": "F.Cu",
+      "value": "1uF",
+      "x": 85.5,
+      "y": 103.5
+    },
+    {
+      "courtyard_bbox": [
+        86.77,
+        102.02,
+        88.23,
+        104.98
+      ],
+      "footprint": "C_0603_1608Metric",
+      "height_band": "0.5-1.0",
+      "height_class": "PARAMETRIC",
+      "r": 12.981,
+      "ref": "C202",
+      "rot": 90.0,
+      "seated_max": 0.95,
+      "side": "F.Cu",
+      "value": "10uF",
+      "x": 87.5,
+      "y": 103.5
+    },
+    {
+      "courtyard_bbox": [
+        88.77,
+        102.02,
+        90.23,
+        104.98
+      ],
+      "footprint": "C_0603_1608Metric",
+      "height_band": "0.5-1.0",
+      "height_class": "PARAMETRIC",
+      "r": 11.068,
+      "ref": "C203",
+      "rot": 90.0,
+      "seated_max": 0.95,
+      "side": "F.Cu",
+      "value": "10uF",
+      "x": 89.5,
+      "y": 103.5
+    },
+    {
+      "courtyard_bbox": [
+        82.77,
+        102.52,
+        84.23,
+        105.48
+      ],
+      "footprint": "C_0603_1608Metric",
+      "height_band": "0.5-1.0",
+      "height_class": "PARAMETRIC",
+      "r": 16.978,
+      "ref": "C204",
+      "rot": 90.0,
+      "seated_max": 0.95,
+      "side": "F.Cu",
+      "value": "10uF",
+      "x": 83.5,
+      "y": 104.0
+    },
+    {
+      "courtyard_bbox": [
+        93.14,
+        106.59,
+        94.06,
+        108.41
+      ],
+      "footprint": "C_0402_1005Metric",
+      "height_band": "0.5-1.0",
+      "height_class": "PARAMETRIC",
+      "r": 9.86,
+      "ref": "C205",
+      "rot": 90.0,
+      "seated_max": 0.6,
+      "side": "F.Cu",
+      "value": "1uF",
+      "x": 93.6,
+      "y": 107.5
+    },
+    {
+      "courtyard_bbox": [
+        92.79,
+        108.84,
+        94.61,
+        109.76
+      ],
+      "footprint": "C_0402_1005Metric",
+      "height_band": "0.5-1.0",
+      "height_class": "PARAMETRIC",
+      "r": 11.233,
+      "ref": "C206",
+      "rot": 180.0,
+      "seated_max": 0.6,
+      "side": "B.Cu",
+      "value": "2.2uF",
+      "x": 93.7,
+      "y": 109.3
+    },
+    {
+      "courtyard_bbox": [
+        79.52,
+        105.77,
+        82.48,
+        107.23
+      ],
+      "footprint": "C_0603_1608Metric",
+      "height_band": "0.5-1.0",
+      "height_class": "PARAMETRIC",
+      "r": 20.081,
+      "ref": "C207",
+      "rot": 0.0,
+      "seated_max": 0.95,
+      "side": "F.Cu",
+      "value": "10uF",
+      "x": 81.0,
+      "y": 106.5
+    },
+    {
+      "courtyard_bbox": [
+        79.52,
+        108.77,
+        82.48,
+        110.23
+      ],
+      "footprint": "C_0603_1608Metric",
+      "height_band": "0.5-1.0",
+      "height_class": "PARAMETRIC",
+      "r": 21.243,
+      "ref": "C208",
+      "rot": 0.0,
+      "seated_max": 0.95,
+      "side": "F.Cu",
+      "value": "10uF",
+      "x": 81.0,
+      "y": 109.5
+    },
+    {
+      "courtyard_bbox": [
+        85.59,
+        115.54,
+        87.41,
+        116.46
+      ],
+      "footprint": "C_0402_1005Metric",
+      "height_band": "0.5-1.0",
+      "height_class": "PARAMETRIC",
+      "r": 20.934,
+      "ref": "C213",
+      "rot": 0.0,
+      "seated_max": 0.6,
+      "side": "F.Cu",
+      "value": "100nF",
+      "x": 86.5,
+      "y": 116.0
+    },
+    {
+      "courtyard_bbox": [
+        88.02,
+        116.07,
+        90.98,
+        117.53
+      ],
+      "footprint": "C_0603_1608Metric",
+      "height_band": "0.5-1.0",
+      "height_class": "PARAMETRIC",
+      "r": 19.811,
+      "ref": "C214",
+      "rot": 0.0,
+      "seated_max": 0.95,
+      "side": "F.Cu",
+      "value": "10uF",
+      "x": 89.5,
+      "y": 116.8
+    },
+    {
+      "courtyard_bbox": [
+        88.02,
+        117.87,
+        90.98,
+        119.33
+      ],
+      "footprint": "C_0603_1608Metric",
+      "height_band": "0.5-1.0",
+      "height_class": "PARAMETRIC",
+      "r": 21.359,
+      "ref": "C215",
+      "rot": 0.0,
+      "seated_max": 0.95,
+      "side": "F.Cu",
+      "value": "22uF",
+      "x": 89.5,
+      "y": 118.6
+    },
+    {
+      "courtyard_bbox": [
+        92.07,
+        113.02,
+        93.53,
+        115.98
+      ],
+      "footprint": "C_0603_1608Metric",
+      "height_band": "0.5-1.0",
+      "height_class": "PARAMETRIC",
+      "r": 16.189,
+      "ref": "C401",
+      "rot": 90.0,
+      "seated_max": 0.95,
+      "side": "F.Cu",
+      "value": "22uF",
+      "x": 92.8,
+      "y": 114.5
+    },
+    {
+      "courtyard_bbox": [
+        97.42,
+        112.8,
+        99.38,
+        116.2
+      ],
+      "footprint": "C_0805_2012Metric",
+      "height_band": "1.0-2.0",
+      "height_class": "PARAMETRIC",
+      "r": 14.588,
+      "ref": "C402",
+      "rot": 90.0,
+      "seated_max": 1.5,
+      "side": "F.Cu",
+      "value": "47uF",
+      "x": 98.4,
+      "y": 114.5
+    },
+    {
+      "courtyard_bbox": [
+        105.07,
+        99.02,
+        106.53,
+        101.98
+      ],
+      "footprint": "C_0603_1608Metric",
+      "height_band": "0.5-1.0",
+      "height_class": "PARAMETRIC",
+      "r": 5.822,
+      "ref": "C601",
+      "rot": 90.0,
+      "seated_max": 0.95,
+      "side": "F.Cu",
+      "value": "4.7uF",
+      "x": 105.8,
+      "y": 100.5
+    },
+    {
+      "courtyard_bbox": [
+        105.07,
+        105.62,
+        106.53,
+        108.58
+      ],
+      "footprint": "C_0603_1608Metric",
+      "height_band": "0.5-1.0",
+      "height_class": "PARAMETRIC",
+      "r": 9.168,
+      "ref": "C602",
+      "rot": 90.0,
+      "seated_max": 0.95,
+      "side": "F.Cu",
+      "value": "4.7uF",
+      "x": 105.8,
+      "y": 107.1
+    },
+    {
+      "courtyard_bbox": [
+        107.3,
+        98.15,
+        108.7,
+        98.85
+      ],
+      "footprint": "C_0201_0603Metric",
+      "height_band": "lt0.5",
+      "height_class": "PARAMETRIC",
+      "r": 8.139,
+      "ref": "C603",
+      "rot": 0.0,
+      "seated_max": 0.38,
+      "side": "F.Cu",
+      "value": "220nF",
+      "x": 108.0,
+      "y": 98.5
+    },
+    {
+      "courtyard_bbox": [
+        113.3,
+        98.15,
+        114.7,
+        98.85
+      ],
+      "footprint": "C_0201_0603Metric",
+      "height_band": "lt0.5",
+      "height_class": "PARAMETRIC",
+      "r": 14.08,
+      "ref": "C604",
+      "rot": 0.0,
+      "seated_max": 0.38,
+      "side": "F.Cu",
+      "value": "470nF",
+      "x": 114.0,
+      "y": 98.5
+    },
+    {
+      "courtyard_bbox": [
+        115.59,
+        100.54,
+        117.41,
+        101.46
+      ],
+      "footprint": "C_0402_1005Metric",
+      "height_band": "0.5-1.0",
+      "height_class": "PARAMETRIC",
+      "r": 16.53,
+      "ref": "C605",
+      "rot": 0.0,
+      "seated_max": 0.6,
+      "side": "F.Cu",
+      "value": "1.0uF",
+      "x": 116.5,
+      "y": 101.0
+    },
+    {
+      "courtyard_bbox": [
+        115.02,
+        105.27,
+        117.98,
+        106.73
+      ],
+      "footprint": "C_0603_1608Metric",
+      "height_band": "0.5-1.0",
+      "height_class": "PARAMETRIC",
+      "r": 17.557,
+      "ref": "C606",
+      "rot": 0.0,
+      "seated_max": 0.95,
+      "side": "F.Cu",
+      "value": "4.7uF",
+      "x": 116.5,
+      "y": 106.0
+    },
+    {
+      "courtyard_bbox": [
+        115.02,
+        106.77,
+        117.98,
+        108.23
+      ],
+      "footprint": "C_0603_1608Metric",
+      "height_band": "0.5-1.0",
+      "height_class": "PARAMETRIC",
+      "r": 18.125,
+      "ref": "C607",
+      "rot": 0.0,
+      "seated_max": 0.95,
+      "side": "F.Cu",
+      "value": "2.2uF",
+      "x": 116.5,
+      "y": 107.5
+    },
+    {
+      "courtyard_bbox": [
+        104.15,
+        100.6,
+        104.85,
+        102.0
+      ],
+      "footprint": "C_0201_0603Metric",
+      "height_band": "lt0.5",
+      "height_class": "PARAMETRIC",
+      "r": 4.684,
+      "ref": "C608",
+      "rot": 90.0,
+      "seated_max": 0.38,
+      "side": "F.Cu",
+      "value": "10nF",
+      "x": 104.5,
+      "y": 101.3
+    },
+    {
+      "courtyard_bbox": [
+        106.99,
+        108.44,
+        108.81,
+        109.36
+      ],
+      "footprint": "C_0402_1005Metric",
+      "height_band": "0.5-1.0",
+      "height_class": "PARAMETRIC",
+      "r": 11.9,
+      "ref": "C609",
+      "rot": 0.0,
+      "seated_max": 0.6,
+      "side": "F.Cu",
+      "value": "2.2uF",
+      "x": 107.9,
+      "y": 108.9
+    },
+    {
+      "courtyard_bbox": [
+        106.99,
+        107.44,
+        108.81,
+        108.36
+      ],
+      "footprint": "C_0402_1005Metric",
+      "height_band": "0.5-1.0",
+      "height_class": "PARAMETRIC",
+      "r": 11.172,
+      "ref": "C610",
+      "rot": 0.0,
+      "seated_max": 0.6,
+      "side": "F.Cu",
+      "value": "1.0uF",
+      "x": 107.9,
+      "y": 107.9
+    },
+    {
+      "courtyard_bbox": [
+        114.97,
+        97.42,
+        116.43,
+        100.38
+      ],
+      "footprint": "C_0603_1608Metric",
+      "height_band": "0.5-1.0",
+      "height_class": "PARAMETRIC",
+      "r": 15.738,
+      "ref": "C611",
+      "rot": 90.0,
+      "seated_max": 0.95,
+      "side": "F.Cu",
+      "value": "4.7uF",
+      "x": 115.7,
+      "y": 98.9
+    },
+    {
+      "courtyard_bbox": [
+        114.95,
+        103.2,
+        115.65,
+        104.6
+      ],
+      "footprint": "C_0201_0603Metric",
+      "height_band": "lt0.5",
+      "height_class": "PARAMETRIC",
+      "r": 15.789,
+      "ref": "C612",
+      "rot": 90.0,
+      "seated_max": 0.38,
+      "side": "F.Cu",
+      "value": "100nF",
+      "x": 115.3,
+      "y": 103.9
+    },
+    {
+      "courtyard_bbox": [
+        112.45,
+        98.1,
+        113.15,
+        99.5
+      ],
+      "footprint": "C_0201_0603Metric",
+      "height_band": "lt0.5",
+      "height_class": "PARAMETRIC",
+      "r": 12.856,
+      "ref": "C613",
+      "rot": 90.0,
+      "seated_max": 0.38,
+      "side": "F.Cu",
+      "value": "22nF",
+      "x": 112.8,
+      "y": 98.8
+    },
+    {
+      "courtyard_bbox": [
+        114.95,
+        101.6,
+        115.65,
+        103.0
+      ],
+      "footprint": "C_0201_0603Metric",
+      "height_band": "lt0.5",
+      "height_class": "PARAMETRIC",
+      "r": 15.472,
+      "ref": "C614",
+      "rot": 90.0,
+      "seated_max": 0.38,
+      "side": "F.Cu",
+      "value": "470nF",
+      "x": 115.3,
+      "y": 102.3
+    },
+    {
+      "courtyard_bbox": [
+        111.9,
+        97.25,
+        113.3,
+        97.95
+      ],
+      "footprint": "C_0201_0603Metric",
+      "height_band": "lt0.5",
+      "height_class": "PARAMETRIC",
+      "r": 12.827,
+      "ref": "C615",
+      "rot": 0.0,
+      "seated_max": 0.38,
+      "side": "F.Cu",
+      "value": "2.2uF",
+      "x": 112.6,
+      "y": 97.6
+    },
+    {
+      "courtyard_bbox": [
+        107.49,
+        97.14,
+        109.31,
+        98.06
+      ],
+      "footprint": "C_0402_1005Metric",
+      "height_band": "0.5-1.0",
+      "height_class": "PARAMETRIC",
+      "r": 8.736,
+      "ref": "C616",
+      "rot": 0.0,
+      "seated_max": 0.6,
+      "side": "F.Cu",
+      "value": "1.0uF",
+      "x": 108.4,
+      "y": 97.6
+    },
+    {
+      "courtyard_bbox": [
+        105.4,
+        108.75,
+        106.8,
+        109.45
+      ],
+      "footprint": "C_0201_0603Metric",
+      "height_band": "lt0.5",
+      "height_class": "PARAMETRIC",
+      "r": 10.955,
+      "ref": "C617",
+      "rot": 0.0,
+      "seated_max": 0.38,
+      "side": "F.Cu",
+      "value": "100nF",
+      "x": 106.1,
+      "y": 109.1
+    },
+    {
+      "courtyard_bbox": [
+        113.27,
+        107.52,
+        114.73,
+        110.48
+      ],
+      "footprint": "C_0603_1608Metric",
+      "height_band": "0.5-1.0",
+      "height_class": "PARAMETRIC",
+      "r": 16.643,
+      "ref": "C618",
+      "rot": 90.0,
+      "seated_max": 0.95,
+      "side": "F.Cu",
+      "value": "2.2uF",
+      "x": 114.0,
+      "y": 109.0
+    },
+    {
+      "courtyard_bbox": [
+        114.94,
+        108.29,
+        115.86,
+        110.11
+      ],
+      "footprint": "C_0402_1005Metric",
+      "height_band": "0.5-1.0",
+      "height_class": "PARAMETRIC",
+      "r": 17.939,
+      "ref": "C619",
+      "rot": 90.0,
+      "seated_max": 0.6,
+      "side": "F.Cu",
+      "value": "1.0uF",
+      "x": 115.4,
+      "y": 109.2
+    },
+    {
+      "courtyard_bbox": [
+        108.29,
+        95.44,
+        110.11,
+        96.36
+      ],
+      "footprint": "C_0402_1005Metric",
+      "height_band": "0.5-1.0",
+      "height_class": "PARAMETRIC",
+      "r": 10.072,
+      "ref": "C701",
+      "rot": 0.0,
+      "seated_max": 0.6,
+      "side": "F.Cu",
+      "value": "100nF",
+      "x": 109.2,
+      "y": 95.9
+    },
+    {
+      "courtyard_bbox": [
+        106.04,
+        95.44,
+        107.86,
+        96.36
+      ],
+      "footprint": "C_0402_1005Metric",
+      "height_band": "0.5-1.0",
+      "height_class": "PARAMETRIC",
+      "r": 8.069,
+      "ref": "C702",
+      "rot": 0.0,
+      "seated_max": 0.6,
+      "side": "F.Cu",
+      "value": "100nF",
+      "x": 106.95,
+      "y": 95.9
+    },
+    {
+      "courtyard_bbox": [
+        110.54,
+        95.44,
+        112.36,
+        96.36
+      ],
+      "footprint": "C_0402_1005Metric",
+      "height_band": "0.5-1.0",
+      "height_class": "PARAMETRIC",
+      "r": 12.162,
+      "ref": "C703",
+      "rot": 0.0,
+      "seated_max": 0.6,
+      "side": "F.Cu",
+      "value": "100nF",
+      "x": 111.45,
+      "y": 95.9
+    },
+    {
+      "courtyard_bbox": [
+        107.59,
+        89.84,
+        109.41,
+        90.76
+      ],
+      "footprint": "C_0402_1005Metric",
+      "height_band": "0.5-1.0",
+      "height_class": "PARAMETRIC",
+      "r": 12.897,
+      "ref": "C704",
+      "rot": 0.0,
+      "seated_max": 0.6,
+      "side": "F.Cu",
+      "value": "100nF",
+      "x": 108.5,
+      "y": 90.3
+    },
+    {
+      "courtyard_bbox": [
+        112.6,
+        93.87,
+        116.0,
+        95.83
+      ],
+      "footprint": "C_0805_2012Metric",
+      "height_band": "1.0-2.0",
+      "height_class": "PARAMETRIC",
+      "r": 15.199,
+      "ref": "C705",
+      "rot": 0.0,
+      "seated_max": 1.5,
+      "side": "F.Cu",
+      "value": "2.2uF",
+      "x": 114.3,
+      "y": 94.85
+    },
+    {
+      "courtyard_bbox": [
+        115.89,
+        89.99,
+        117.71,
+        90.91
+      ],
+      "footprint": "C_0402_1005Metric",
+      "height_band": "0.5-1.0",
+      "height_class": "PARAMETRIC",
+      "r": 19.325,
+      "ref": "C801",
+      "rot": 0.0,
+      "seated_max": 0.6,
+      "side": "F.Cu",
+      "value": "100nF",
+      "x": 116.8,
+      "y": 90.45
+    },
+    {
+      "courtyard_bbox": [
+        109.74,
+        84.49,
+        110.66,
+        86.31
+      ],
+      "footprint": "C_0402_1005Metric",
+      "height_band": "0.5-1.0",
+      "height_class": "PARAMETRIC",
+      "r": 17.81,
+      "ref": "C803",
+      "rot": 90.0,
+      "seated_max": 0.6,
+      "side": "F.Cu",
+      "value": "100nF",
+      "x": 110.2,
+      "y": 85.4
+    },
+    {
+      "courtyard_bbox": [
+        112.94,
+        87.49,
+        113.86,
+        89.31
+      ],
+      "footprint": "C_0402_1005Metric",
+      "height_band": "0.5-1.0",
+      "height_class": "PARAMETRIC",
+      "r": 17.723,
+      "ref": "C804",
+      "rot": 90.0,
+      "seated_max": 0.6,
+      "side": "F.Cu",
+      "value": "100nF",
+      "x": 113.4,
+      "y": 88.4
+    },
+    {
+      "courtyard_bbox": [
+        97.77,
+        105.02,
+        100.73,
+        106.48
+      ],
+      "footprint": "C_0603_1608Metric",
+      "height_band": "0.5-1.0",
+      "height_class": "PARAMETRIC",
+      "r": 5.799,
+      "ref": "C901",
+      "rot": 0.0,
+      "seated_max": 0.95,
+      "side": "B.Cu",
+      "value": "4.7uF",
+      "x": 99.25,
+      "y": 105.75
+    },
+    {
+      "courtyard_bbox": [
+        100.34,
+        107.29,
+        102.16,
+        108.21
+      ],
+      "footprint": "C_0402_1005Metric",
+      "height_band": "0.5-1.0",
+      "height_class": "PARAMETRIC",
+      "r": 7.85,
+      "ref": "C902",
+      "rot": 0.0,
+      "seated_max": 0.6,
+      "side": "B.Cu",
+      "value": "220nF",
+      "x": 101.25,
+      "y": 107.75
+    },
+    {
+      "courtyard_bbox": [
+        96.77,
+        108.52,
+        99.73,
+        109.98
+      ],
+      "footprint": "C_0603_1608Metric",
+      "height_band": "0.5-1.0",
+      "height_class": "PARAMETRIC",
+      "r": 9.414,
+      "ref": "C903",
+      "rot": 0.0,
+      "seated_max": 0.95,
+      "side": "B.Cu",
+      "value": "2.2uF",
+      "x": 98.25,
+      "y": 109.25
+    },
+    {
+      "courtyard_bbox": [
+        98.34,
+        103.89,
+        100.16,
+        104.81
+      ],
+      "footprint": "C_0402_1005Metric",
+      "height_band": "0.5-1.0",
+      "height_class": "PARAMETRIC",
+      "r": 4.414,
+      "ref": "C904",
+      "rot": 0.0,
+      "seated_max": 0.6,
+      "side": "B.Cu",
+      "value": "100nF",
+      "x": 99.25,
+      "y": 104.35
+    },
+    {
+      "courtyard_bbox": [
+        96.59,
+        103.84,
+        97.51,
+        105.66
+      ],
+      "footprint": "C_0402_1005Metric",
+      "height_band": "0.5-1.0",
+      "height_class": "PARAMETRIC",
+      "r": 5.592,
+      "ref": "C905",
+      "rot": 90.0,
+      "seated_max": 0.6,
+      "side": "B.Cu",
+      "value": "1.0uF",
+      "x": 97.05,
+      "y": 104.75
+    },
+    {
+      "courtyard_bbox": [
+        95.39,
+        103.84,
+        96.31,
+        105.66
+      ],
+      "footprint": "C_0402_1005Metric",
+      "height_band": "0.5-1.0",
+      "height_class": "PARAMETRIC",
+      "r": 6.308,
+      "ref": "C906",
+      "rot": 90.0,
+      "seated_max": 0.6,
+      "side": "B.Cu",
+      "value": "100nF",
+      "x": 95.85,
+      "y": 104.75
+    },
+    {
+      "courtyard_bbox": [
+        112.39,
+        115.54,
+        114.21,
+        116.46
+      ],
+      "footprint": "C_0402_1005Metric",
+      "height_band": "0.5-1.0",
+      "height_class": "PARAMETRIC",
+      "r": 20.806,
+      "ref": "C1001",
+      "rot": 0.0,
+      "seated_max": 0.6,
+      "side": "F.Cu",
+      "value": "100nF",
+      "x": 113.3,
+      "y": 116.0
+    },
+    {
+      "courtyard_bbox": [
+        111.09,
+        115.09,
+        112.01,
+        116.91
+      ],
+      "footprint": "C_0402_1005Metric",
+      "height_band": "0.5-1.0",
+      "height_class": "PARAMETRIC",
+      "r": 19.733,
+      "ref": "C1002",
+      "rot": 90.0,
+      "seated_max": 0.6,
+      "side": "F.Cu",
+      "value": "100nF",
+      "x": 111.55,
+      "y": 116.0
+    },
+    {
+      "courtyard_bbox": [
+        80.54,
+        89.59,
+        81.46,
+        91.41
+      ],
+      "footprint": "C_0402_1005Metric",
+      "height_band": "0.5-1.0",
+      "height_class": "PARAMETRIC",
+      "r": 21.243,
+      "ref": "C1101",
+      "rot": 90.0,
+      "seated_max": 0.6,
+      "side": "F.Cu",
+      "value": "47nF",
+      "x": 81.0,
+      "y": 90.5
+    },
+    {
+      "courtyard_bbox": [
+        78.54,
+        103.34,
+        79.46,
+        105.16
+      ],
+      "footprint": "C_0402_1005Metric",
+      "height_band": "0.5-1.0",
+      "height_class": "PARAMETRIC",
+      "r": 21.426,
+      "ref": "C1102",
+      "rot": 90.0,
+      "seated_max": 0.6,
+      "side": "F.Cu",
+      "value": "47nF",
+      "x": 79.0,
+      "y": 104.25
+    },
+    {
+      "courtyard_bbox": [
+        82.34,
+        113.29,
+        84.16,
+        114.21
+      ],
+      "footprint": "C_0402_1005Metric",
+      "height_band": "0.5-1.0",
+      "height_class": "PARAMETRIC",
+      "r": 21.671,
+      "ref": "C1103",
+      "rot": 0.0,
+      "seated_max": 0.6,
+      "side": "F.Cu",
+      "value": "47nF",
+      "x": 83.25,
+      "y": 113.75
+    },
+    {
+      "courtyard_bbox": [
+        116.59,
+        92.54,
+        118.41,
+        93.46
+      ],
+      "footprint": "C_0402_1005Metric",
+      "height_band": "0.5-1.0",
+      "height_class": "PARAMETRIC",
+      "r": 18.848,
+      "ref": "C1104",
+      "rot": 0.0,
+      "seated_max": 0.6,
+      "side": "F.Cu",
+      "value": "47nF",
+      "x": 117.5,
+      "y": 93.0
+    },
+    {
+      "courtyard_bbox": [
+        116.49,
+        111.54,
+        118.31,
+        112.46
+      ],
+      "footprint": "C_0402_1005Metric",
+      "height_band": "0.5-1.0",
+      "height_class": "PARAMETRIC",
+      "r": 21.137,
+      "ref": "C1105",
+      "rot": 0.0,
+      "seated_max": 0.6,
+      "side": "F.Cu",
+      "value": "47nF",
+      "x": 117.4,
+      "y": 112.0
+    },
+    {
+      "courtyard_bbox": [
+        92.4,
+        89.35,
+        93.1,
+        90.75
+      ],
+      "footprint": "C_0201_0603Metric",
+      "height_band": "lt0.5",
+      "height_class": "PARAMETRIC",
+      "r": 12.311,
+      "ref": "C1401",
+      "rot": 90.0,
+      "seated_max": 0.38,
+      "side": "F.Cu",
+      "value": "18pF",
+      "x": 92.75,
+      "y": 90.05
+    },
+    {
+      "courtyard_bbox": [
+        93.3,
+        89.35,
+        94.0,
+        90.75
+      ],
+      "footprint": "C_0201_0603Metric",
+      "height_band": "lt0.5",
+      "height_class": "PARAMETRIC",
+      "r": 11.804,
+      "ref": "C1402",
+      "rot": 90.0,
+      "seated_max": 0.38,
+      "side": "F.Cu",
+      "value": "2.8pF",
+      "x": 93.65,
+      "y": 90.05
+    },
+    {
+      "courtyard_bbox": [
+        92.4,
+        87.75,
+        93.1,
+        89.15
+      ],
+      "footprint": "C_0201_0603Metric",
+      "height_band": "lt0.5",
+      "height_class": "PARAMETRIC",
+      "r": 13.637,
+      "ref": "C1403",
+      "rot": 90.0,
+      "seated_max": 0.38,
+      "side": "F.Cu",
+      "value": "3.2pF",
+      "x": 92.75,
+      "y": 88.45
+    },
+    {
+      "courtyard_bbox": [
+        93.3,
+        86.15,
+        94.0,
+        87.55
+      ],
+      "footprint": "C_0201_0603Metric",
+      "height_band": "lt0.5",
+      "height_class": "PARAMETRIC",
+      "r": 14.603,
+      "ref": "C1404",
+      "rot": 90.0,
+      "seated_max": 0.38,
+      "side": "F.Cu",
+      "value": "1.0pF DNP",
+      "x": 93.65,
+      "y": 86.85
+    },
+    {
+      "courtyard_bbox": [
+        92.4,
+        86.15,
+        93.1,
+        87.55
+      ],
+      "footprint": "C_0201_0603Metric",
+      "height_band": "lt0.5",
+      "height_class": "PARAMETRIC",
+      "r": 15.016,
+      "ref": "C1405",
+      "rot": 90.0,
+      "seated_max": 0.38,
+      "side": "F.Cu",
+      "value": "220pF",
+      "x": 92.75,
+      "y": 86.85
+    },
+    {
+      "courtyard_bbox": [
+        117.3,
+        102.65,
+        118.7,
+        103.35
+      ],
+      "footprint": "C_0201_0603Metric",
+      "height_band": "lt0.5",
+      "height_class": "PARAMETRIC",
+      "r": 18.248,
+      "ref": "C1410",
+      "rot": 0.0,
+      "seated_max": 0.38,
+      "side": "F.Cu",
+      "value": "DNP",
+      "x": 118.0,
+      "y": 103.0
+    },
+    {
+      "courtyard_bbox": [
+        118.3,
+        104.65,
+        119.7,
+        105.35
+      ],
+      "footprint": "C_0201_0603Metric",
+      "height_band": "lt0.5",
+      "height_class": "PARAMETRIC",
+      "r": 19.647,
+      "ref": "C1411",
+      "rot": 0.0,
+      "seated_max": 0.38,
+      "side": "F.Cu",
+      "value": "DNP",
+      "x": 119.0,
+      "y": 105.0
+    },
+    {
+      "courtyard_bbox": [
+        100.9,
+        78.85,
+        102.3,
+        79.55
+      ],
+      "footprint": "C_0201_0603Metric",
+      "height_band": "lt0.5",
+      "height_class": "PARAMETRIC",
+      "r": 20.861,
+      "ref": "C1420",
+      "rot": 0.0,
+      "seated_max": 0.38,
+      "side": "F.Cu",
+      "value": "DNP",
+      "x": 101.6,
+      "y": 79.2
+    },
+    {
+      "courtyard_bbox": [
+        104.3,
+        78.85,
+        105.7,
+        79.55
+      ],
+      "footprint": "C_0201_0603Metric",
+      "height_band": "lt0.5",
+      "height_class": "PARAMETRIC",
+      "r": 21.393,
+      "ref": "C1421",
+      "rot": 0.0,
+      "seated_max": 0.38,
+      "side": "F.Cu",
+      "value": "DNP",
+      "x": 105.0,
+      "y": 79.2
+    },
+    {
+      "courtyard_bbox": [
+        79.45,
+        92.25,
+        82.95,
+        100.25
+      ],
+      "footprint": "OK-23GF024-04",
+      "height_band": "0.5-1.0",
+      "height_class": "KNOWN",
+      "r": 19.17,
+      "ref": "J1",
+      "rot": 90.0,
+      "seated_max": 0.8,
+      "side": "F.Cu",
+      "value": "ZC-A1D43W-046",
+      "x": 81.2,
+      "y": 96.25
+    },
+    {
+      "courtyard_bbox": [
+        103.5,
+        112.0,
+        110.5,
+        116.0
+      ],
+      "footprint": "Tag-Connect_TC2030-IDC-NL_2x03_P1.27mm_Vertical",
+      "height_band": "lt0.5",
+      "height_class": "KNOWN",
+      "r": 15.652,
+      "ref": "J1301",
+      "rot": 0.0,
+      "seated_max": 0.0,
+      "side": "F.Cu",
+      "value": "TC2030-CTX-NL_TARGET",
+      "x": 107.0,
+      "y": 114.0
+    },
+    {
+      "courtyard_bbox": [
+        92.02,
+        92.57,
+        94.98,
+        94.03
+      ],
+      "footprint": "L_0603_1608Metric",
+      "height_band": "1.0-2.0",
+      "height_class": "PARAMETRIC",
+      "r": 9.335,
+      "ref": "L101",
+      "rot": 0.0,
+      "seated_max": 1.05,
+      "side": "F.Cu",
+      "value": "2.2uH / Isat>=1A / DCR<550mR",
+      "x": 93.5,
+      "y": 93.3
+    },
+    {
+      "courtyard_bbox": [
+        82.92,
+        105.77,
+        85.88,
+        107.23
+      ],
+      "footprint": "L_0603_1608Metric",
+      "height_band": "1.0-2.0",
+      "height_class": "PARAMETRIC",
+      "r": 16.9,
+      "ref": "L201",
+      "rot": 0.0,
+      "seated_max": 1.05,
+      "side": "F.Cu",
+      "value": "2.2uH",
+      "x": 84.4,
+      "y": 106.5
+    },
+    {
+      "courtyard_bbox": [
+        82.92,
+        108.77,
+        85.88,
+        110.23
+      ],
+      "footprint": "L_0603_1608Metric",
+      "height_band": "1.0-2.0",
+      "height_class": "PARAMETRIC",
+      "r": 18.265,
+      "ref": "L202",
+      "rot": 0.0,
+      "seated_max": 1.05,
+      "side": "F.Cu",
+      "value": "2.2uH",
+      "x": 84.4,
+      "y": 109.5
+    },
+    {
+      "courtyard_bbox": [
+        84.55,
+        112.85,
+        87.45,
+        115.15
+      ],
+      "footprint": "L_2016_2016Metric",
+      "height_band": "1.0-2.0",
+      "height_class": "PARAMETRIC",
+      "r": 19.799,
+      "ref": "L203",
+      "rot": 0.0,
+      "seated_max": 1.25,
+      "side": "F.Cu",
+      "value": "2.2uH",
+      "x": 86.0,
+      "y": 114.0
+    },
+    {
+      "courtyard_bbox": [
+        94.05,
+        116.45,
+        96.95,
+        118.75
+      ],
+      "footprint": "L_2016_2016Metric",
+      "height_band": "1.0-2.0",
+      "height_class": "PARAMETRIC",
+      "r": 18.166,
+      "ref": "L401",
+      "rot": 0.0,
+      "seated_max": 1.25,
+      "side": "F.Cu",
+      "value": "1uH",
+      "x": 95.5,
+      "y": 117.6
+    },
+    {
+      "courtyard_bbox": [
+        104.65,
+        102.35,
+        106.95,
+        105.25
+      ],
+      "footprint": "L_2016_2016Metric",
+      "height_band": "1.0-2.0",
+      "height_class": "PARAMETRIC",
+      "r": 6.934,
+      "ref": "L601",
+      "rot": 90.0,
+      "seated_max": 1.25,
+      "side": "F.Cu",
+      "value": "3.3uH_1A_DCR<=200mR",
+      "x": 105.8,
+      "y": 103.8
+    },
+    {
+      "courtyard_bbox": [
+        92.4,
+        90.95,
+        93.1,
+        92.35
+      ],
+      "footprint": "L_0201_0603Metric",
+      "height_band": "lt0.5",
+      "height_class": "PARAMETRIC",
+      "r": 11.058,
+      "ref": "L1401",
+      "rot": -90.0,
+      "seated_max": 0.38,
+      "side": "F.Cu",
+      "value": "1.5nH",
+      "x": 92.75,
+      "y": 91.65
+    },
+    {
+      "courtyard_bbox": [
+        93.3,
+        90.95,
+        94.0,
+        92.35
+      ],
+      "footprint": "L_0201_0603Metric",
+      "height_band": "lt0.5",
+      "height_class": "PARAMETRIC",
+      "r": 10.49,
+      "ref": "L1402",
+      "rot": 90.0,
+      "seated_max": 0.38,
+      "side": "F.Cu",
+      "value": "1.8nH",
+      "x": 93.65,
+      "y": 91.65
+    },
+    {
+      "courtyard_bbox": [
+        80.1,
+        103.8,
+        81.9,
+        104.6
+      ],
+      "footprint": "NetTie-2_SMD_Pad0.5mm",
+      "height_band": "lt0.5",
+      "height_class": "KNOWN",
+      "r": 19.459,
+      "ref": "NT201",
+      "rot": 0.0,
+      "seated_max": 0.0,
+      "side": "F.Cu",
+      "value": "NetTie_2",
+      "x": 81.0,
+      "y": 104.2
+    },
+    {
+      "courtyard_bbox": [
+        82.6,
+        111.1,
+        84.4,
+        111.9
+      ],
+      "footprint": "NetTie-2_SMD_Pad0.5mm",
+      "height_band": "lt0.5",
+      "height_class": "KNOWN",
+      "r": 20.112,
+      "ref": "NT202",
+      "rot": 0.0,
+      "seated_max": 0.0,
+      "side": "F.Cu",
+      "value": "NetTie_2",
+      "x": 83.5,
+      "y": 111.5
+    },
+    {
+      "courtyard_bbox": [
+        104.73,
+        92.52,
+        105.67,
+        94.38
+      ],
+      "footprint": "R_0402_1005Metric",
+      "height_band": "lt0.5",
+      "height_class": "PARAMETRIC",
+      "r": 8.363,
+      "ref": "R101",
+      "rot": 90.0,
+      "seated_max": 0.45,
+      "side": "F.Cu",
+      "value": "10M",
+      "x": 105.2,
+      "y": 93.45
+    },
+    {
+      "courtyard_bbox": [
+        84.38,
+        88.07,
+        85.32,
+        89.93
+      ],
+      "footprint": "R_0402_1005Metric",
+      "height_band": "lt0.5",
+      "height_class": "PARAMETRIC",
+      "r": 18.722,
+      "ref": "R102",
+      "rot": 90.0,
+      "seated_max": 0.45,
+      "side": "F.Cu",
+      "value": "100k",
+      "x": 84.85,
+      "y": 89.0
+    },
+    {
+      "courtyard_bbox": [
+        82.07,
+        88.58,
+        83.93,
+        89.52
+      ],
+      "footprint": "R_0402_1005Metric",
+      "height_band": "lt0.5",
+      "height_class": "PARAMETRIC",
+      "r": 20.221,
+      "ref": "R103",
+      "rot": 0.0,
+      "seated_max": 0.45,
+      "side": "F.Cu",
+      "value": "100k",
+      "x": 83.0,
+      "y": 89.05
+    },
+    {
+      "courtyard_bbox": [
+        81.62,
+        107.58,
+        83.48,
+        108.52
+      ],
+      "footprint": "R_0402_1005Metric",
+      "height_band": "lt0.5",
+      "height_class": "PARAMETRIC",
+      "r": 19.217,
+      "ref": "R104",
+      "rot": 0.0,
+      "seated_max": 0.45,
+      "side": "F.Cu",
+      "value": "4.7k",
+      "x": 82.55,
+      "y": 108.05
+    },
+    {
+      "courtyard_bbox": [
+        96.37,
+        100.83,
+        98.23,
+        101.77
+      ],
+      "footprint": "R_0402_1005Metric",
+      "height_band": "lt0.5",
+      "height_class": "PARAMETRIC",
+      "r": 2.997,
+      "ref": "R105",
+      "rot": 0.0,
+      "seated_max": 0.45,
+      "side": "F.Cu",
+      "value": "4.7k",
+      "x": 97.3,
+      "y": 101.3
+    },
+    {
+      "courtyard_bbox": [
+        98.62,
+        100.83,
+        100.48,
+        101.77
+      ],
+      "footprint": "R_0402_1005Metric",
+      "height_band": "lt0.5",
+      "height_class": "PARAMETRIC",
+      "r": 1.376,
+      "ref": "R106",
+      "rot": 0.0,
+      "seated_max": 0.45,
+      "side": "F.Cu",
+      "value": "4.7k",
+      "x": 99.55,
+      "y": 101.3
+    },
+    {
+      "courtyard_bbox": [
+        83.87,
+        107.58,
+        85.73,
+        108.52
+      ],
+      "footprint": "R_0402_1005Metric",
+      "height_band": "lt0.5",
+      "height_class": "PARAMETRIC",
+      "r": 17.2,
+      "ref": "R107",
+      "rot": 0.0,
+      "seated_max": 0.45,
+      "side": "F.Cu",
+      "value": "4.7k",
+      "x": 84.8,
+      "y": 108.05
+    },
+    {
+      "courtyard_bbox": [
+        91.87,
+        102.08,
+        93.73,
+        103.02
+      ],
+      "footprint": "R_0402_1005Metric",
+      "height_band": "lt0.5",
+      "height_class": "PARAMETRIC",
+      "r": 7.638,
+      "ref": "R108",
+      "rot": 0.0,
+      "seated_max": 0.45,
+      "side": "F.Cu",
+      "value": "200k",
+      "x": 92.8,
+      "y": 102.55
+    },
+    {
+      "courtyard_bbox": [
+        79.32,
+        107.53,
+        81.18,
+        108.47
+      ],
+      "footprint": "R_0402_1005Metric",
+      "height_band": "lt0.5",
+      "height_class": "PARAMETRIC",
+      "r": 21.309,
+      "ref": "R109",
+      "rot": 0.0,
+      "seated_max": 0.45,
+      "side": "F.Cu",
+      "value": "300k",
+      "x": 80.25,
+      "y": 108.0
+    },
+    {
+      "courtyard_bbox": [
+        91.28,
+        116.32,
+        92.22,
+        118.18
+      ],
+      "footprint": "R_0402_1005Metric",
+      "height_band": "lt0.5",
+      "height_class": "PARAMETRIC",
+      "r": 19.121,
+      "ref": "R110",
+      "rot": 90.0,
+      "seated_max": 0.45,
+      "side": "F.Cu",
+      "value": "10k",
+      "x": 91.75,
+      "y": 117.25
+    },
+    {
+      "courtyard_bbox": [
+        100.8,
+        101.125,
+        102.2,
+        101.825
+      ],
+      "footprint": "R_0201_0603Metric",
+      "height_band": "lt0.5",
+      "height_class": "PARAMETRIC",
+      "r": 2.104,
+      "ref": "R111",
+      "rot": 0.0,
+      "seated_max": 0.33,
+      "side": "F.Cu",
+      "value": "22R initial",
+      "x": 101.5,
+      "y": 101.475
+    },
+    {
+      "courtyard_bbox": [
+        92.53,
+        116.32,
+        93.47,
+        118.18
+      ],
+      "footprint": "R_0402_1005Metric",
+      "height_band": "lt0.5",
+      "height_class": "PARAMETRIC",
+      "r": 18.616,
+      "ref": "R201",
+      "rot": 90.0,
+      "seated_max": 0.45,
+      "side": "F.Cu",
+      "value": "10k",
+      "x": 93.0,
+      "y": 117.25
+    },
+    {
+      "courtyard_bbox": [
+        91.32,
+        118.53,
+        93.18,
+        119.47
+      ],
+      "footprint": "R_0402_1005Metric",
+      "height_band": "lt0.5",
+      "height_class": "PARAMETRIC",
+      "r": 20.52,
+      "ref": "R202",
+      "rot": 0.0,
+      "seated_max": 0.45,
+      "side": "F.Cu",
+      "value": "10k",
+      "x": 92.25,
+      "y": 119.0
+    },
+    {
+      "courtyard_bbox": [
+        92.87,
+        105.43,
+        94.73,
+        106.37
+      ],
+      "footprint": "R_0402_1005Metric",
+      "height_band": "lt0.5",
+      "height_class": "PARAMETRIC",
+      "r": 8.559,
+      "ref": "R203",
+      "rot": 0.0,
+      "seated_max": 0.45,
+      "side": "F.Cu",
+      "value": "47k",
+      "x": 93.8,
+      "y": 105.9
+    },
+    {
+      "courtyard_bbox": [
+        97.32,
+        116.53,
+        99.18,
+        117.47
+      ],
+      "footprint": "R_0402_1005Metric",
+      "height_band": "lt0.5",
+      "height_class": "PARAMETRIC",
+      "r": 17.09,
+      "ref": "R204",
+      "rot": 0.0,
+      "seated_max": 0.45,
+      "side": "F.Cu",
+      "value": "150k",
+      "x": 98.25,
+      "y": 117.0
+    },
+    {
+      "courtyard_bbox": [
+        91.77,
+        111.83,
+        93.63,
+        112.77
+      ],
+      "footprint": "R_0402_1005Metric",
+      "height_band": "lt0.5",
+      "height_class": "PARAMETRIC",
+      "r": 14.303,
+      "ref": "R205",
+      "rot": 0.0,
+      "seated_max": 0.45,
+      "side": "F.Cu",
+      "value": "36.5k",
+      "x": 92.7,
+      "y": 112.3
+    },
+    {
+      "courtyard_bbox": [
+        92.87,
+        110.63,
+        94.73,
+        111.57
+      ],
+      "footprint": "R_0402_1005Metric",
+      "height_band": "lt0.5",
+      "height_class": "PARAMETRIC",
+      "r": 12.714,
+      "ref": "R206",
+      "rot": 0.0,
+      "seated_max": 0.45,
+      "side": "F.Cu",
+      "value": "0R",
+      "x": 93.8,
+      "y": 111.1
+    },
+    {
+      "courtyard_bbox": [
+        92.87,
+        109.43,
+        94.73,
+        110.37
+      ],
+      "footprint": "R_0402_1005Metric",
+      "height_band": "lt0.5",
+      "height_class": "PARAMETRIC",
+      "r": 11.681,
+      "ref": "R207",
+      "rot": 0.0,
+      "seated_max": 0.45,
+      "side": "F.Cu",
+      "value": "16.2k",
+      "x": 93.8,
+      "y": 109.9
+    },
+    {
+      "courtyard_bbox": [
+        90.63,
+        102.195,
+        91.57,
+        104.055
+      ],
+      "footprint": "R_0402_1005Metric",
+      "height_band": "lt0.5",
+      "height_class": "PARAMETRIC",
+      "r": 9.433,
+      "ref": "R301",
+      "rot": 90.0,
+      "seated_max": 0.45,
+      "side": "F.Cu",
+      "value": "3.6k",
+      "x": 91.1,
+      "y": 103.125
+    },
+    {
+      "courtyard_bbox": [
+        92.63,
+        94.395,
+        93.57,
+        96.255
+      ],
+      "footprint": "R_0402_1005Metric",
+      "height_band": "lt0.5",
+      "height_class": "PARAMETRIC",
+      "r": 8.335,
+      "ref": "R302",
+      "rot": 90.0,
+      "seated_max": 0.45,
+      "side": "F.Cu",
+      "value": "3.6k",
+      "x": 93.1,
+      "y": 95.325
+    },
+    {
+      "courtyard_bbox": [
+        84.395,
+        90.38,
+        86.255,
+        91.32
+      ],
+      "footprint": "R_0402_1005Metric",
+      "height_band": "lt0.5",
+      "height_class": "PARAMETRIC",
+      "r": 17.294,
+      "ref": "R303",
+      "rot": 0.0,
+      "seated_max": 0.45,
+      "side": "F.Cu",
+      "value": "100k",
+      "x": 85.325,
+      "y": 90.85
+    },
+    {
+      "courtyard_bbox": [
+        81.695,
+        90.93,
+        83.555,
+        91.87
+      ],
+      "footprint": "R_0402_1005Metric",
+      "height_band": "lt0.5",
+      "height_class": "PARAMETRIC",
+      "r": 19.387,
+      "ref": "R304",
+      "rot": 0.0,
+      "seated_max": 0.45,
+      "side": "F.Cu",
+      "value": "100k",
+      "x": 82.625,
+      "y": 91.4
+    },
+    {
+      "courtyard_bbox": [
+        82.145,
+        89.78,
+        84.005,
+        90.72
+      ],
+      "footprint": "R_0402_1005Metric",
+      "height_band": "lt0.5",
+      "height_class": "PARAMETRIC",
+      "r": 19.532,
+      "ref": "R305",
+      "rot": 0.0,
+      "seated_max": 0.45,
+      "side": "F.Cu",
+      "value": "10k",
+      "x": 83.075,
+      "y": 90.25
+    },
+    {
+      "courtyard_bbox": [
+        77.655,
+        97.17,
+        78.595,
+        99.03
+      ],
+      "footprint": "R_0402_1005Metric",
+      "height_band": "lt0.5",
+      "height_class": "PARAMETRIC",
+      "r": 21.957,
+      "ref": "R306",
+      "rot": 90.0,
+      "seated_max": 0.45,
+      "side": "F.Cu",
+      "value": "10k",
+      "x": 78.125,
+      "y": 98.1
+    },
+    {
+      "courtyard_bbox": [
+        93.87,
+        112.03,
+        95.73,
+        112.97
+      ],
+      "footprint": "R_0402_1005Metric",
+      "height_band": "lt0.5",
+      "height_class": "PARAMETRIC",
+      "r": 13.538,
+      "ref": "R406",
+      "rot": 0.0,
+      "seated_max": 0.45,
+      "side": "F.Cu",
+      "value": "604k 1%",
+      "x": 94.8,
+      "y": 112.5
+    },
+    {
+      "courtyard_bbox": [
+        95.87,
+        111.73,
+        97.73,
+        112.67
+      ],
+      "footprint": "R_0402_1005Metric",
+      "height_band": "lt0.5",
+      "height_class": "PARAMETRIC",
+      "r": 12.613,
+      "ref": "R407",
+      "rot": 0.0,
+      "seated_max": 0.45,
+      "side": "F.Cu",
+      "value": "91k 1%",
+      "x": 96.8,
+      "y": 112.2
+    },
+    {
+      "courtyard_bbox": [
+        116.03,
+        102.57,
+        116.97,
+        104.43
+      ],
+      "footprint": "R_0402_1005Metric",
+      "height_band": "lt0.5",
+      "height_class": "PARAMETRIC",
+      "r": 16.867,
+      "ref": "R601",
+      "rot": 90.0,
+      "seated_max": 0.45,
+      "side": "F.Cu",
+      "value": "100k",
+      "x": 116.5,
+      "y": 103.5
+    },
+    {
+      "courtyard_bbox": [
+        107.78,
+        109.57,
+        108.72,
+        111.43
+      ],
+      "footprint": "R_0402_1005Metric",
+      "height_band": "lt0.5",
+      "height_class": "PARAMETRIC",
+      "r": 13.353,
+      "ref": "R602",
+      "rot": 90.0,
+      "seated_max": 0.45,
+      "side": "F.Cu",
+      "value": "100k",
+      "x": 108.25,
+      "y": 110.5
+    },
+    {
+      "courtyard_bbox": [
+        112.87,
+        90.38,
+        114.73,
+        91.32
+      ],
+      "footprint": "R_0402_1005Metric",
+      "height_band": "lt0.5",
+      "height_class": "PARAMETRIC",
+      "r": 16.558,
+      "ref": "R701",
+      "rot": 0.0,
+      "seated_max": 0.45,
+      "side": "F.Cu",
+      "value": "10k",
+      "x": 113.8,
+      "y": 90.85
+    },
+    {
+      "courtyard_bbox": [
+        115.08,
+        91.67,
+        116.02,
+        93.53
+      ],
+      "footprint": "R_0402_1005Metric",
+      "height_band": "lt0.5",
+      "height_class": "PARAMETRIC",
+      "r": 17.221,
+      "ref": "R702",
+      "rot": 90.0,
+      "seated_max": 0.45,
+      "side": "F.Cu",
+      "value": "10k",
+      "x": 115.55,
+      "y": 92.6
+    },
+    {
+      "courtyard_bbox": [
+        115.28,
+        84.72,
+        116.22,
+        86.58
+      ],
+      "footprint": "R_0402_1005Metric",
+      "height_band": "lt0.5",
+      "height_class": "PARAMETRIC",
+      "r": 21.307,
+      "ref": "R801",
+      "rot": 90.0,
+      "seated_max": 0.45,
+      "side": "F.Cu",
+      "value": "4.7k",
+      "x": 115.75,
+      "y": 85.65
+    },
+    {
+      "courtyard_bbox": [
+        111.57,
+        82.18,
+        113.43,
+        83.12
+      ],
+      "footprint": "R_0402_1005Metric",
+      "height_band": "lt0.5",
+      "height_class": "PARAMETRIC",
+      "r": 21.384,
+      "ref": "R802",
+      "rot": 0.0,
+      "seated_max": 0.45,
+      "side": "F.Cu",
+      "value": "4.7k",
+      "x": 112.5,
+      "y": 82.65
+    },
+    {
+      "courtyard_bbox": [
+        114.03,
+        87.72,
+        114.97,
+        89.58
+      ],
+      "footprint": "R_0402_1005Metric",
+      "height_band": "lt0.5",
+      "height_class": "PARAMETRIC",
+      "r": 18.414,
+      "ref": "R803",
+      "rot": 90.0,
+      "seated_max": 0.45,
+      "side": "F.Cu",
+      "value": "10k",
+      "x": 114.5,
+      "y": 88.65
+    },
+    {
+      "courtyard_bbox": [
+        97.82,
+        107.28,
+        99.68,
+        108.22
+      ],
+      "footprint": "R_0402_1005Metric",
+      "height_band": "lt0.5",
+      "height_class": "PARAMETRIC",
+      "r": 7.85,
+      "ref": "R901",
+      "rot": 0.0,
+      "seated_max": 0.45,
+      "side": "B.Cu",
+      "value": "10k",
+      "x": 98.75,
+      "y": 107.75
+    },
+    {
+      "courtyard_bbox": [
+        96.82,
+        102.68,
+        98.68,
+        103.62
+      ],
+      "footprint": "R_0402_1005Metric",
+      "height_band": "lt0.5",
+      "height_class": "PARAMETRIC",
+      "r": 3.871,
+      "ref": "R902",
+      "rot": 0.0,
+      "seated_max": 0.45,
+      "side": "B.Cu",
+      "value": "47k",
+      "x": 97.75,
+      "y": 103.15
+    },
+    {
+      "courtyard_bbox": [
+        98.98,
+        101.82,
+        99.92,
+        103.68
+      ],
+      "footprint": "R_0402_1005Metric",
+      "height_band": "lt0.5",
+      "height_class": "PARAMETRIC",
+      "r": 2.804,
+      "ref": "R903",
+      "rot": 90.0,
+      "seated_max": 0.45,
+      "side": "B.Cu",
+      "value": "47k",
+      "x": 99.45,
+      "y": 102.75
+    },
+    {
+      "courtyard_bbox": [
+        100.38,
+        102.82,
+        101.32,
+        104.68
+      ],
+      "footprint": "R_0402_1005Metric",
+      "height_band": "lt0.5",
+      "height_class": "PARAMETRIC",
+      "r": 3.845,
+      "ref": "R904",
+      "rot": 90.0,
+      "seated_max": 0.45,
+      "side": "B.Cu",
+      "value": "47k",
+      "x": 100.85,
+      "y": 103.75
+    },
+    {
+      "courtyard_bbox": [
+        94.72,
+        102.68,
+        96.58,
+        103.62
+      ],
+      "footprint": "R_0402_1005Metric",
+      "height_band": "lt0.5",
+      "height_class": "PARAMETRIC",
+      "r": 5.371,
+      "ref": "R905",
+      "rot": 0.0,
+      "seated_max": 0.45,
+      "side": "B.Cu",
+      "value": "47k",
+      "x": 95.65,
+      "y": 103.15
+    },
+    {
+      "courtyard_bbox": [
+        95.62,
+        105.88,
+        97.48,
+        106.82
+      ],
+      "footprint": "R_0402_1005Metric",
+      "height_band": "lt0.5",
+      "height_class": "PARAMETRIC",
+      "r": 7.227,
+      "ref": "R906",
+      "rot": 0.0,
+      "seated_max": 0.45,
+      "side": "B.Cu",
+      "value": "47k",
+      "x": 96.55,
+      "y": 106.35
+    },
+    {
+      "courtyard_bbox": [
+        100.98,
+        104.92,
+        101.92,
+        106.78
+      ],
+      "footprint": "R_0402_1005Metric",
+      "height_band": "lt0.5",
+      "height_class": "PARAMETRIC",
+      "r": 6.027,
+      "ref": "R907",
+      "rot": 90.0,
+      "seated_max": 0.45,
+      "side": "B.Cu",
+      "value": "47k",
+      "x": 101.45,
+      "y": 105.85
+    },
+    {
+      "courtyard_bbox": [
+        100.22,
+        101.58,
+        102.08,
+        102.52
+      ],
+      "footprint": "R_0402_1005Metric",
+      "height_band": "lt0.5",
+      "height_class": "PARAMETRIC",
+      "r": 2.351,
+      "ref": "R908",
+      "rot": 0.0,
+      "seated_max": 0.45,
+      "side": "B.Cu",
+      "value": "47k",
+      "x": 101.15,
+      "y": 102.05
+    },
+    {
+      "courtyard_bbox": [
+        101.58,
+        102.82,
+        102.52,
+        104.68
+      ],
+      "footprint": "R_0402_1005Metric",
+      "height_band": "lt0.5",
+      "height_class": "PARAMETRIC",
+      "r": 4.274,
+      "ref": "R909",
+      "rot": 90.0,
+      "seated_max": 0.45,
+      "side": "B.Cu",
+      "value": "47k",
+      "x": 102.05,
+      "y": 103.75
+    },
+    {
+      "courtyard_bbox": [
+        99.98,
+        108.42,
+        100.92,
+        110.28
+      ],
+      "footprint": "R_0402_1005Metric",
+      "height_band": "lt0.5",
+      "height_class": "PARAMETRIC",
+      "r": 9.361,
+      "ref": "R910",
+      "rot": 90.0,
+      "seated_max": 0.45,
+      "side": "B.Cu",
+      "value": "47k",
+      "x": 100.45,
+      "y": 109.35
+    },
+    {
+      "courtyard_bbox": [
+        111.08,
+        112.82,
+        112.02,
+        114.68
+      ],
+      "footprint": "R_0402_1005Metric",
+      "height_band": "lt0.5",
+      "height_class": "PARAMETRIC",
+      "r": 17.957,
+      "ref": "R1001",
+      "rot": 90.0,
+      "seated_max": 0.45,
+      "side": "F.Cu",
+      "value": "2.2k",
+      "x": 111.55,
+      "y": 113.75
+    },
+    {
+      "courtyard_bbox": [
+        108.87,
+        116.28,
+        110.73,
+        117.22
+      ],
+      "footprint": "R_0402_1005Metric",
+      "height_band": "lt0.5",
+      "height_class": "PARAMETRIC",
+      "r": 19.406,
+      "ref": "R1002",
+      "rot": 0.0,
+      "seated_max": 0.45,
+      "side": "F.Cu",
+      "value": "2.2k",
+      "x": 109.8,
+      "y": 116.75
+    },
+    {
+      "courtyard_bbox": [
+        114.58,
+        114.57,
+        115.52,
+        116.43
+      ],
+      "footprint": "R_0402_1005Metric",
+      "height_band": "lt0.5",
+      "height_class": "PARAMETRIC",
+      "r": 21.604,
+      "ref": "R1003",
+      "rot": 90.0,
+      "seated_max": 0.45,
+      "side": "F.Cu",
+      "value": "220k",
+      "x": 115.05,
+      "y": 115.5
+    },
+    {
+      "courtyard_bbox": [
+        114.58,
+        112.32,
+        115.52,
+        114.18
+      ],
+      "footprint": "R_0402_1005Metric",
+      "height_band": "lt0.5",
+      "height_class": "PARAMETRIC",
+      "r": 20.052,
+      "ref": "R1004",
+      "rot": 90.0,
+      "seated_max": 0.45,
+      "side": "F.Cu",
+      "value": "2.2k",
+      "x": 115.05,
+      "y": 113.25
+    },
+    {
+      "courtyard_bbox": [
+        90.03,
+        83.57,
+        90.97,
+        85.43
+      ],
+      "footprint": "R_0402_1005Metric",
+      "height_band": "lt0.5",
+      "height_class": "PARAMETRIC",
+      "r": 18.18,
+      "ref": "R1101",
+      "rot": 90.0,
+      "seated_max": 0.45,
+      "side": "F.Cu",
+      "value": "100k",
+      "x": 90.5,
+      "y": 84.5
+    },
+    {
+      "courtyard_bbox": [
+        78.53,
+        101.07,
+        79.47,
+        102.93
+      ],
+      "footprint": "R_0402_1005Metric",
+      "height_band": "lt0.5",
+      "height_class": "PARAMETRIC",
+      "r": 21.095,
+      "ref": "R1102",
+      "rot": 90.0,
+      "seated_max": 0.45,
+      "side": "F.Cu",
+      "value": "100k",
+      "x": 79.0,
+      "y": 102.0
+    },
+    {
+      "courtyard_bbox": [
+        85.82,
+        116.78,
+        87.68,
+        117.72
+      ],
+      "footprint": "R_0402_1005Metric",
+      "height_band": "lt0.5",
+      "height_class": "PARAMETRIC",
+      "r": 21.751,
+      "ref": "R1103",
+      "rot": 0.0,
+      "seated_max": 0.45,
+      "side": "F.Cu",
+      "value": "100k",
+      "x": 86.75,
+      "y": 117.25
+    },
+    {
+      "courtyard_bbox": [
+        116.57,
+        93.78,
+        118.43,
+        94.72
+      ],
+      "footprint": "R_0402_1005Metric",
+      "height_band": "lt0.5",
+      "height_class": "PARAMETRIC",
+      "r": 18.42,
+      "ref": "R1104",
+      "rot": 0.0,
+      "seated_max": 0.45,
+      "side": "F.Cu",
+      "value": "100k",
+      "x": 117.5,
+      "y": 94.25
+    },
+    {
+      "courtyard_bbox": [
+        116.47,
+        110.28,
+        118.33,
+        111.22
+      ],
+      "footprint": "R_0402_1005Metric",
+      "height_band": "lt0.5",
+      "height_class": "PARAMETRIC",
+      "r": 20.453,
+      "ref": "R1105",
+      "rot": 0.0,
+      "seated_max": 0.45,
+      "side": "F.Cu",
+      "value": "100k",
+      "x": 117.4,
+      "y": 110.75
+    },
+    {
+      "courtyard_bbox": [
+        93.3,
+        87.75,
+        94.0,
+        89.15
+      ],
+      "footprint": "R_0201_0603Metric",
+      "height_band": "lt0.5",
+      "height_class": "PARAMETRIC",
+      "r": 13.18,
+      "ref": "R1401",
+      "rot": 90.0,
+      "seated_max": 0.33,
+      "side": "F.Cu",
+      "value": "0R (Lm2 tune)",
+      "x": 93.65,
+      "y": 88.45
+    },
+    {
+      "courtyard_bbox": [
+        117.3,
+        103.65,
+        118.7,
+        104.35
+      ],
+      "footprint": "R_0201_0603Metric",
+      "height_band": "lt0.5",
+      "height_class": "PARAMETRIC",
+      "r": 18.439,
+      "ref": "R1410",
+      "rot": 0.0,
+      "seated_max": 0.33,
+      "side": "F.Cu",
+      "value": "0R",
+      "x": 118.0,
+      "y": 104.0
+    },
+    {
+      "courtyard_bbox": [
+        102.6,
+        78.85,
+        104.0,
+        79.55
+      ],
+      "footprint": "R_0201_0603Metric",
+      "height_band": "lt0.5",
+      "height_class": "PARAMETRIC",
+      "r": 21.06,
+      "ref": "R1420",
+      "rot": 0.0,
+      "seated_max": 0.33,
+      "side": "F.Cu",
+      "value": "0R",
+      "x": 103.3,
+      "y": 79.2
+    },
+    {
+      "courtyard_bbox": [
+        106.0,
+        80.8,
+        108.0,
+        82.8
+      ],
+      "footprint": "TestPoint_Pad_D1.0mm",
+      "height_band": "lt0.5",
+      "height_class": "KNOWN",
+      "r": 19.5,
+      "ref": "TP1301",
+      "rot": 0.0,
+      "seated_max": 0.0,
+      "side": "F.Cu",
+      "value": "VBAT",
+      "x": 107.0,
+      "y": 81.8
+    },
+    {
+      "courtyard_bbox": [
+        108.6,
+        80.8,
+        110.6,
+        82.8
+      ],
+      "footprint": "TestPoint_Pad_D1.0mm",
+      "height_band": "lt0.5",
+      "height_class": "KNOWN",
+      "r": 20.577,
+      "ref": "TP1302",
+      "rot": 0.0,
+      "seated_max": 0.0,
+      "side": "F.Cu",
+      "value": "VSYS",
+      "x": 109.6,
+      "y": 81.8
+    },
+    {
+      "courtyard_bbox": [
+        106.0,
+        83.4,
+        108.0,
+        85.4
+      ],
+      "footprint": "TestPoint_Pad_D1.0mm",
+      "height_band": "lt0.5",
+      "height_class": "KNOWN",
+      "r": 17.099,
+      "ref": "TP1303",
+      "rot": 0.0,
+      "seated_max": 0.0,
+      "side": "F.Cu",
+      "value": "VOUT1_1V8",
+      "x": 107.0,
+      "y": 84.4
+    },
+    {
+      "courtyard_bbox": [
+        108.6,
+        86.65,
+        110.6,
+        88.65
+      ],
+      "footprint": "TestPoint_Pad_D1.0mm",
+      "height_band": "lt0.5",
+      "height_class": "KNOWN",
+      "r": 15.642,
+      "ref": "TP1304",
+      "rot": 0.0,
+      "seated_max": 0.0,
+      "side": "F.Cu",
+      "value": "VOUT2_3V0_PROVISIONAL",
+      "x": 109.6,
+      "y": 87.65
+    },
+    {
+      "courtyard_bbox": [
+        106.0,
+        86.0,
+        108.0,
+        88.0
+      ],
+      "footprint": "TestPoint_Pad_D1.0mm",
+      "height_band": "lt0.5",
+      "height_class": "KNOWN",
+      "r": 14.765,
+      "ref": "TP1305",
+      "rot": 0.0,
+      "seated_max": 0.0,
+      "side": "F.Cu",
+      "value": "SYS_3V3",
+      "x": 107.0,
+      "y": 87.0
+    },
+    {
+      "courtyard_bbox": [
+        110.85,
+        87.75,
+        112.85,
+        89.75
+      ],
+      "footprint": "TestPoint_Pad_D1.0mm",
+      "height_band": "lt0.5",
+      "height_class": "KNOWN",
+      "r": 16.34,
+      "ref": "TP1306",
+      "rot": 0.0,
+      "seated_max": 0.0,
+      "side": "F.Cu",
+      "value": "GND",
+      "x": 111.85,
+      "y": 88.75
+    },
+    {
+      "courtyard_bbox": [
+        111.1,
+        83.5,
+        114.9,
+        87.3
+      ],
+      "footprint": "LGA9_BMP585_BOS",
+      "height_band": "1.0-2.0",
+      "height_class": "KNOWN",
+      "r": 19.549,
+      "ref": "U4",
+      "rot": 0.0,
+      "seated_max": 1.96,
+      "side": "F.Cu",
+      "value": "BMP585",
+      "x": 113.0,
+      "y": 85.4
+    },
+    {
+      "courtyard_bbox": [
+        115.8,
+        87.05,
+        118.7,
+        89.75
+      ],
+      "footprint": "DTS0008A-MFG",
+      "height_band": "0.5-1.0",
+      "height_class": "KNOWN",
+      "r": 20.788,
+      "ref": "U5",
+      "rot": 0.0,
+      "seated_max": 0.6,
+      "side": "F.Cu",
+      "value": "OPT4001DTSR",
+      "x": 117.25,
+      "y": 88.4
+    },
+    {
+      "courtyard_bbox": [
+        112.3,
+        113.05,
+        114.3,
+        114.95
+      ],
+      "footprint": "YFF0009AHAN",
+      "height_band": "0.5-1.0",
+      "height_class": "KNOWN",
+      "r": 19.31,
+      "ref": "U7",
+      "rot": 0.0,
+      "seated_max": 0.625,
+      "side": "F.Cu",
+      "value": "DRV2625YFFR",
+      "x": 113.3,
+      "y": 114.0
+    },
+    {
+      "courtyard_bbox": [
+        94.399,
+        80.394,
+        105.601,
+        91.606
+      ],
+      "footprint": "MAX-F10S_UBL",
+      "height_band": "ge2.0",
+      "height_class": "KNOWN",
+      "r": 14.0,
+      "ref": "U8",
+      "rot": 90.0,
+      "seated_max": 2.7,
+      "side": "F.Cu",
+      "value": "MAX-F10S-00B",
+      "x": 100.0,
+      "y": 86.0
+    },
+    {
+      "courtyard_bbox": [
+        107.398,
+        99.898,
+        114.602,
+        107.102
+      ],
+      "footprint": "QFN48_6X6_NOR",
+      "height_band": "0.5-1.0",
+      "height_class": "KNOWN",
+      "r": 11.543,
+      "ref": "U9",
+      "rot": 180.0,
+      "seated_max": 0.9,
+      "side": "F.Cu",
+      "value": "NRF7002-QFAA-R7",
+      "x": 111.0,
+      "y": 103.5
+    },
+    {
+      "courtyard_bbox": [
+        108.95,
+        108.3,
+        113.05,
+        111.7
+      ],
+      "footprint": "SOT-23-6",
+      "height_band": "1.0-2.0",
+      "height_class": "PARAMETRIC",
+      "r": 14.866,
+      "ref": "U11",
+      "rot": 0.0,
+      "seated_max": 1.5,
+      "side": "F.Cu",
+      "value": "TPS22918DBVT",
+      "x": 111.0,
+      "y": 110.0
+    },
+    {
+      "courtyard_bbox": [
+        96.9,
+        94.4,
+        103.1,
+        100.6
+      ],
+      "footprint": "BGA-153_5.6x5.6mm_Layout13x13_P0.4mm_Ball0.25mm_Pad0.22mm_NSMD",
+      "height_band": "0.5-1.0",
+      "height_class": "KNOWN",
+      "r": 2.5,
+      "ref": "U101",
+      "rot": 0.0,
+      "seated_max": 0.8,
+      "side": "F.Cu",
+      "value": "AP510BFA-CBR",
+      "x": 100.0,
+      "y": 97.5
+    },
+    {
+      "courtyard_bbox": [
+        84.45,
+        92.85,
+        88.75,
+        99.15
+      ],
+      "footprint": "Texas_RHL0024A",
+      "height_band": "1.0-2.0",
+      "height_class": "PARAMETRIC",
+      "r": 13.984,
+      "ref": "U102",
+      "rot": 0.0,
+      "seated_max": 1.05,
+      "side": "F.Cu",
+      "value": "SN74AXC8T245",
+      "x": 86.6,
+      "y": 96.0
+    },
+    {
+      "courtyard_bbox": [
+        86.8,
+        89.85,
+        89.2,
+        91.75
+      ],
+      "footprint": "SOT-563",
+      "height_band": "0.5-1.0",
+      "height_class": "PARAMETRIC",
+      "r": 15.121,
+      "ref": "U103",
+      "rot": 0.0,
+      "seated_max": 0.65,
+      "side": "F.Cu",
+      "value": "TXB0101DRLR",
+      "x": 88.0,
+      "y": 90.8
+    },
+    {
+      "courtyard_bbox": [
+        89.8,
+        89.45,
+        92.2,
+        91.35
+      ],
+      "footprint": "SOT-563",
+      "height_band": "0.5-1.0",
+      "height_class": "PARAMETRIC",
+      "r": 13.159,
+      "ref": "U104",
+      "rot": 0.0,
+      "seated_max": 0.65,
+      "side": "F.Cu",
+      "value": "SN74AXC1T45",
+      "x": 91.0,
+      "y": 90.4
+    },
+    {
+      "courtyard_bbox": [
+        86.25,
+        99.8,
+        88.65,
+        101.7
+      ],
+      "footprint": "SOT-563",
+      "height_band": "0.5-1.0",
+      "height_class": "PARAMETRIC",
+      "r": 12.572,
+      "ref": "U105",
+      "rot": 0.0,
+      "seated_max": 0.65,
+      "side": "F.Cu",
+      "value": "SN74AXC1T45",
+      "x": 87.45,
+      "y": 100.75
+    },
+    {
+      "courtyard_bbox": [
+        89.02,
+        99.3,
+        93.58,
+        101.8
+      ],
+      "footprint": "VSSOP-8_2.3x2mm_P0.5mm",
+      "height_band": "0.5-1.0",
+      "height_class": "PARAMETRIC",
+      "r": 8.717,
+      "ref": "U106",
+      "rot": 0.0,
+      "seated_max": 0.95,
+      "side": "F.Cu",
+      "value": "PCA9306DCU",
+      "x": 91.3,
+      "y": 100.55
+    },
+    {
+      "courtyard_bbox": [
+        86.4,
+        105.4,
+        92.6,
+        111.6
+      ],
+      "footprint": "QFN-32-1EP_5x5mm_P0.5mm_EP3.6x3.6mm_ThermalVias",
+      "height_band": "0.5-1.0",
+      "height_class": "KNOWN",
+      "r": 13.509,
+      "ref": "U201",
+      "rot": 0.0,
+      "seated_max": 0.9,
+      "side": "F.Cu",
+      "value": "nPM1300-QEXX",
+      "x": 89.5,
+      "y": 108.5
+    },
+    {
+      "courtyard_bbox": [
+        87.62,
+        113.0,
+        91.38,
+        116.0
+      ],
+      "footprint": "WSON-10-1EP_2.5x2.5mm_P0.5mm_EP1.2x2mm_ThermalVias",
+      "height_band": "0.5-1.0",
+      "height_class": "PARAMETRIC",
+      "r": 17.903,
+      "ref": "U202",
+      "rot": 0.0,
+      "seated_max": 0.85,
+      "side": "F.Cu",
+      "value": "TPS63900",
+      "x": 89.5,
+      "y": 114.5
+    },
+    {
+      "courtyard_bbox": [
+        94.18,
+        113.2,
+        96.82,
+        115.8
+      ],
+      "footprint": "SOT-583-8",
+      "height_band": "0.5-1.0",
+      "height_class": "PARAMETRIC",
+      "r": 15.182,
+      "ref": "U401",
+      "rot": 0.0,
+      "seated_max": 0.65,
+      "side": "F.Cu",
+      "value": "TPS631000DRLR",
+      "x": 95.5,
+      "y": 114.5
+    },
+    {
+      "courtyard_bbox": [
+        107.092,
+        91.346,
+        111.308,
+        95.054
+      ],
+      "footprint": "LGA-14L_STM",
+      "height_band": "0.5-1.0",
+      "height_class": "KNOWN",
+      "r": 11.44,
+      "ref": "U702",
+      "rot": 0.0,
+      "seated_max": 0.86,
+      "side": "F.Cu",
+      "value": "LSM6DSV16XTR",
+      "x": 109.2,
+      "y": 93.2
+    },
+    {
+      "courtyard_bbox": [
+        112.911,
+        91.711,
+        114.689,
+        93.489
+      ],
+      "footprint": "BGA9_BMM350_BOS",
+      "height_band": "0.5-1.0",
+      "height_class": "KNOWN",
+      "r": 15.659,
+      "ref": "U703",
+      "rot": 0.0,
+      "seated_max": 0.5,
+      "side": "F.Cu",
+      "value": "BMM350",
+      "x": 113.8,
+      "y": 92.6
+    },
+    {
+      "courtyard_bbox": [
+        95.6,
+        102.35,
+        104.4,
+        111.65
+      ],
+      "footprint": "FBGA-153_8.0x8.5mm_Layout14x14_P0.5mm",
+      "height_band": "0.5-1.0",
+      "height_class": "KNOWN",
+      "r": 7.0,
+      "ref": "U901",
+      "rot": 0.0,
+      "seated_max": 0.8,
+      "side": "F.Cu",
+      "value": "EMMC64G-TB9F-06011",
+      "x": 100.0,
+      "y": 107.0
+    },
+    {
+      "courtyard_bbox": [
+        109.45,
+        97.25,
+        111.75,
+        99.15
+      ],
+      "footprint": "Crystal_1612-4Pin_1.6x1.2mm",
+      "height_band": "0.5-1.0",
+      "height_class": "PARAMETRIC",
+      "r": 10.752,
+      "ref": "Y1",
+      "rot": 0.0,
+      "seated_max": 0.5,
+      "side": "F.Cu",
+      "value": "NX1612SA-40M-EXS00A-CS14264",
+      "x": 110.6,
+      "y": 98.2
+    },
+    {
+      "courtyard_bbox": [
+        97.65,
+        92.35,
+        100.35,
+        94.25
+      ],
+      "footprint": "Crystal_SMD_ABS06_2.0x1.2mm",
+      "height_band": "0.5-1.0",
+      "height_class": "PARAMETRIC",
+      "r": 6.774,
+      "ref": "Y101",
+      "rot": 180.0,
+      "seated_max": 0.65,
+      "side": "F.Cu",
+      "value": "ABS06-32.768KHZ-6-1-T",
+      "x": 99.0,
+      "y": 93.3
+    },
+    {
+      "courtyard_bbox": [
+        94.05,
+        100.05,
+        95.95,
+        102.35
+      ],
+      "footprint": "Crystal_1612-4Pin_1.6x1.2mm",
+      "height_band": "0.5-1.0",
+      "height_class": "PARAMETRIC",
+      "r": 5.142,
+      "ref": "Y102",
+      "rot": -90.0,
+      "seated_max": 0.5,
+      "side": "F.Cu",
+      "value": "NX1612SA-48M-EXS00A-CS14265",
+      "x": 95.0,
+      "y": 101.2
+    }
+  ],
+  "origin_mm": [
+    100.0,
+    100.0
+  ],
+  "rear_footprints": [
+    {
+      "courtyard_bbox": [
+        24.09,
+        24.54,
+        25.91,
+        25.46
+      ],
+      "footprint": "C_0402_1005Metric",
+      "height_band": "0.5-1.0",
+      "height_class": "PARAMETRIC",
+      "r": null,
+      "ref": "C403",
+      "rot": 0.0,
+      "seated_max": 0.6,
+      "side": "F.Cu",
+      "value": "100nF",
+      "x": 25.0,
+      "y": 25.0
+    },
+    {
+      "courtyard_bbox": [
+        36.09,
+        24.54,
+        37.91,
+        25.46
+      ],
+      "footprint": "C_0402_1005Metric",
+      "height_band": "0.5-1.0",
+      "height_class": "PARAMETRIC",
+      "r": null,
+      "ref": "C404",
+      "rot": 0.0,
+      "seated_max": 0.6,
+      "side": "F.Cu",
+      "value": "100nF",
+      "x": 37.0,
+      "y": 25.0
+    },
+    {
+      "courtyard_bbox": [
+        48.09,
+        24.54,
+        49.91,
+        25.46
+      ],
+      "footprint": "C_0402_1005Metric",
+      "height_band": "0.5-1.0",
+      "height_class": "PARAMETRIC",
+      "r": null,
+      "ref": "C405",
+      "rot": 0.0,
+      "seated_max": 0.6,
+      "side": "F.Cu",
+      "value": "100nF",
+      "x": 49.0,
+      "y": 25.0
+    },
+    {
+      "courtyard_bbox": [
+        60.09,
+        24.54,
+        61.91,
+        25.46
+      ],
+      "footprint": "C_0402_1005Metric",
+      "height_band": "0.5-1.0",
+      "height_class": "PARAMETRIC",
+      "r": null,
+      "ref": "C406",
+      "rot": 0.0,
+      "seated_max": 0.6,
+      "side": "F.Cu",
+      "value": "100nF",
+      "x": 61.0,
+      "y": 25.0
+    },
+    {
+      "courtyard_bbox": [
+        72.09,
+        24.54,
+        73.91,
+        25.46
+      ],
+      "footprint": "C_0402_1005Metric",
+      "height_band": "0.5-1.0",
+      "height_class": "PARAMETRIC",
+      "r": null,
+      "ref": "C407",
+      "rot": 0.0,
+      "seated_max": 0.6,
+      "side": "F.Cu",
+      "value": "100nF",
+      "x": 73.0,
+      "y": 25.0
+    },
+    {
+      "courtyard_bbox": [
+        84.09,
+        24.54,
+        85.91,
+        25.46
+      ],
+      "footprint": "C_0402_1005Metric",
+      "height_band": "0.5-1.0",
+      "height_class": "PARAMETRIC",
+      "r": null,
+      "ref": "C408",
+      "rot": 0.0,
+      "seated_max": 0.6,
+      "side": "F.Cu",
+      "value": "100nF",
+      "x": 85.0,
+      "y": 25.0
+    },
+    {
+      "courtyard_bbox": [
+        96.09,
+        36.54,
+        97.91,
+        37.46
+      ],
+      "footprint": "C_0402_1005Metric",
+      "height_band": "0.5-1.0",
+      "height_class": "PARAMETRIC",
+      "r": null,
+      "ref": "C802",
+      "rot": 0.0,
+      "seated_max": 0.6,
+      "side": "F.Cu",
+      "value": "100nF",
+      "x": 97.0,
+      "y": 37.0
+    },
+    {
+      "courtyard_bbox": [
+        96.09,
+        24.54,
+        97.91,
+        25.46
+      ],
+      "footprint": "C_0402_1005Metric",
+      "height_band": "0.5-1.0",
+      "height_class": "PARAMETRIC",
+      "r": null,
+      "ref": "C4101",
+      "rot": 0.0,
+      "seated_max": 0.6,
+      "side": "F.Cu",
+      "value": "22uF",
+      "x": 97.0,
+      "y": 25.0
+    },
+    {
+      "courtyard_bbox": [
+        108.09,
+        24.54,
+        109.91,
+        25.46
+      ],
+      "footprint": "C_0402_1005Metric",
+      "height_band": "0.5-1.0",
+      "height_class": "PARAMETRIC",
+      "r": null,
+      "ref": "C4102",
+      "rot": 0.0,
+      "seated_max": 0.6,
+      "side": "F.Cu",
+      "value": "100nF",
+      "x": 109.0,
+      "y": 25.0
+    },
+    {
+      "courtyard_bbox": [
+        24.09,
+        36.54,
+        25.91,
+        37.46
+      ],
+      "footprint": "C_0402_1005Metric",
+      "height_band": "0.5-1.0",
+      "height_class": "PARAMETRIC",
+      "r": null,
+      "ref": "C4103",
+      "rot": 0.0,
+      "seated_max": 0.6,
+      "side": "F.Cu",
+      "value": "1.0uF",
+      "x": 25.0,
+      "y": 37.0
+    },
+    {
+      "courtyard_bbox": [
+        36.09,
+        36.54,
+        37.91,
+        37.46
+      ],
+      "footprint": "C_0402_1005Metric",
+      "height_band": "0.5-1.0",
+      "height_class": "PARAMETRIC",
+      "r": null,
+      "ref": "C4104",
+      "rot": 0.0,
+      "seated_max": 0.6,
+      "side": "F.Cu",
+      "value": "10uF",
+      "x": 37.0,
+      "y": 37.0
+    },
+    {
+      "courtyard_bbox": [
+        48.09,
+        36.54,
+        49.91,
+        37.46
+      ],
+      "footprint": "C_0402_1005Metric",
+      "height_band": "0.5-1.0",
+      "height_class": "PARAMETRIC",
+      "r": null,
+      "ref": "C4201",
+      "rot": 0.0,
+      "seated_max": 0.6,
+      "side": "F.Cu",
+      "value": "22uF",
+      "x": 49.0,
+      "y": 37.0
+    },
+    {
+      "courtyard_bbox": [
+        60.09,
+        36.54,
+        61.91,
+        37.46
+      ],
+      "footprint": "C_0402_1005Metric",
+      "height_band": "0.5-1.0",
+      "height_class": "PARAMETRIC",
+      "r": null,
+      "ref": "C4202",
+      "rot": 0.0,
+      "seated_max": 0.6,
+      "side": "F.Cu",
+      "value": "100nF",
+      "x": 61.0,
+      "y": 37.0
+    },
+    {
+      "courtyard_bbox": [
+        72.09,
+        36.54,
+        73.91,
+        37.46
+      ],
+      "footprint": "C_0402_1005Metric",
+      "height_band": "0.5-1.0",
+      "height_class": "PARAMETRIC",
+      "r": null,
+      "ref": "C4203",
+      "rot": 0.0,
+      "seated_max": 0.6,
+      "side": "F.Cu",
+      "value": "1.0uF",
+      "x": 73.0,
+      "y": 37.0
+    },
+    {
+      "courtyard_bbox": [
+        84.09,
+        36.54,
+        85.91,
+        37.46
+      ],
+      "footprint": "C_0402_1005Metric",
+      "height_band": "0.5-1.0",
+      "height_class": "PARAMETRIC",
+      "r": null,
+      "ref": "C4204",
+      "rot": 0.0,
+      "seated_max": 0.6,
+      "side": "F.Cu",
+      "value": "10uF",
+      "x": 85.0,
+      "y": 37.0
+    },
+    {
+      "courtyard_bbox": [
+        107.25,
+        35.25,
+        110.75,
+        38.75
+      ],
+      "footprint": "OSRAM_SFH7018A_2.4x2.4mm",
+      "height_band": "0.5-1.0",
+      "height_class": "KNOWN",
+      "r": null,
+      "ref": "D401",
+      "rot": 0.0,
+      "seated_max": 0.7,
+      "side": "F.Cu",
+      "value": "SFH7018A Q65113A6157",
+      "x": 109.0,
+      "y": 37.0
+    },
+    {
+      "courtyard_bbox": [
+        23.25,
+        47.25,
+        26.75,
+        50.75
+      ],
+      "footprint": "OSRAM_SFH7018A_2.4x2.4mm",
+      "height_band": "0.5-1.0",
+      "height_class": "KNOWN",
+      "r": null,
+      "ref": "D402",
+      "rot": 0.0,
+      "seated_max": 0.7,
+      "side": "F.Cu",
+      "value": "SFH7018A Q65113A6157",
+      "x": 25.0,
+      "y": 49.0
+    },
+    {
+      "courtyard_bbox": [
+        35.25,
+        47.25,
+        38.75,
+        50.75
+      ],
+      "footprint": "OSRAM_SFH7018A_2.4x2.4mm",
+      "height_band": "0.5-1.0",
+      "height_class": "KNOWN",
+      "r": null,
+      "ref": "D403",
+      "rot": 0.0,
+      "seated_max": 0.7,
+      "side": "F.Cu",
+      "value": "SFH7018A Q65113A6157",
+      "x": 37.0,
+      "y": 49.0
+    },
+    {
+      "courtyard_bbox": [
+        47.25,
+        47.25,
+        50.75,
+        50.75
+      ],
+      "footprint": "OSRAM_SFH7018A_2.4x2.4mm",
+      "height_band": "0.5-1.0",
+      "height_class": "KNOWN",
+      "r": null,
+      "ref": "D404",
+      "rot": 0.0,
+      "seated_max": 0.7,
+      "side": "F.Cu",
+      "value": "SFH7018A Q65113A6157",
+      "x": 49.0,
+      "y": 49.0
+    },
+    {
+      "courtyard_bbox": [
+        60.0,
+        48.5,
+        62.0,
+        49.5
+      ],
+      "footprint": "OSRAM_SFH4053B_1.0x0.5mm",
+      "height_band": "unknown",
+      "height_class": "SUPPLIER_DATA_REQUIRED",
+      "r": null,
+      "ref": "D405",
+      "rot": 0.0,
+      "seated_max": null,
+      "side": "F.Cu",
+      "value": "SFH4053B Q65115A1586",
+      "x": 61.0,
+      "y": 49.0
+    },
+    {
+      "courtyard_bbox": [
+        72.0,
+        48.5,
+        74.0,
+        49.5
+      ],
+      "footprint": "OSRAM_SFH4053B_1.0x0.5mm",
+      "height_band": "unknown",
+      "height_class": "SUPPLIER_DATA_REQUIRED",
+      "r": null,
+      "ref": "D406",
+      "rot": 0.0,
+      "seated_max": null,
+      "side": "F.Cu",
+      "value": "SFH4053B Q65115A1586",
+      "x": 73.0,
+      "y": 49.0
+    },
+    {
+      "courtyard_bbox": [
+        84.0,
+        48.5,
+        86.0,
+        49.5
+      ],
+      "footprint": "OSRAM_SFH4053B_1.0x0.5mm",
+      "height_band": "unknown",
+      "height_class": "SUPPLIER_DATA_REQUIRED",
+      "r": null,
+      "ref": "D407",
+      "rot": 0.0,
+      "seated_max": null,
+      "side": "F.Cu",
+      "value": "SFH4053B Q65115A1586",
+      "x": 85.0,
+      "y": 49.0
+    },
+    {
+      "courtyard_bbox": [
+        95.15,
+        47.75,
+        98.85,
+        50.25
+      ],
+      "footprint": "OSRAM_SFH2703_3.2x2.0mm",
+      "height_band": "0.5-1.0",
+      "height_class": "KNOWN",
+      "r": null,
+      "ref": "D413",
+      "rot": 0.0,
+      "seated_max": 0.7,
+      "side": "F.Cu",
+      "value": "SFH2703H Q65115A2199",
+      "x": 97.0,
+      "y": 49.0
+    },
+    {
+      "courtyard_bbox": [
+        107.15,
+        47.75,
+        110.85,
+        50.25
+      ],
+      "footprint": "OSRAM_SFH2703_3.2x2.0mm",
+      "height_band": "0.5-1.0",
+      "height_class": "KNOWN",
+      "r": null,
+      "ref": "D414",
+      "rot": 0.0,
+      "seated_max": 0.7,
+      "side": "F.Cu",
+      "value": "SFH2703H Q65115A2199",
+      "x": 109.0,
+      "y": 49.0
+    },
+    {
+      "courtyard_bbox": [
+        23.15,
+        59.75,
+        26.85,
+        62.25
+      ],
+      "footprint": "OSRAM_SFH2703_3.2x2.0mm",
+      "height_band": "0.5-1.0",
+      "height_class": "KNOWN",
+      "r": null,
+      "ref": "D423",
+      "rot": 0.0,
+      "seated_max": 0.7,
+      "side": "F.Cu",
+      "value": "SFH2703H Q65115A2199",
+      "x": 25.0,
+      "y": 61.0
+    },
+    {
+      "courtyard_bbox": [
+        35.15,
+        59.75,
+        38.85,
+        62.25
+      ],
+      "footprint": "OSRAM_SFH2703_3.2x2.0mm",
+      "height_band": "0.5-1.0",
+      "height_class": "KNOWN",
+      "r": null,
+      "ref": "D424",
+      "rot": 0.0,
+      "seated_max": 0.7,
+      "side": "F.Cu",
+      "value": "SFH2703H Q65115A2199",
+      "x": 37.0,
+      "y": 61.0
+    },
+    {
+      "courtyard_bbox": [
+        48.1,
+        60.6,
+        49.9,
+        61.4
+      ],
+      "footprint": "NetTie-2_SMD_Pad0.5mm",
+      "height_band": "lt0.5",
+      "height_class": "KNOWN",
+      "r": null,
+      "ref": "NT401",
+      "rot": 0.0,
+      "seated_max": 0.0,
+      "side": "F.Cu",
+      "value": "PPG1_PD_GND_TIE",
+      "x": 49.0,
+      "y": 61.0
+    },
+    {
+      "courtyard_bbox": [
+        60.1,
+        60.6,
+        61.9,
+        61.4
+      ],
+      "footprint": "NetTie-2_SMD_Pad0.5mm",
+      "height_band": "lt0.5",
+      "height_class": "KNOWN",
+      "r": null,
+      "ref": "NT402",
+      "rot": 0.0,
+      "seated_max": 0.0,
+      "side": "F.Cu",
+      "value": "PPG2_PD_GND_TIE",
+      "x": 61.0,
+      "y": 61.0
+    },
+    {
+      "courtyard_bbox": [
+        72.07,
+        60.53,
+        73.93,
+        61.47
+      ],
+      "footprint": "R_0402_1005Metric",
+      "height_band": "lt0.5",
+      "height_class": "PARAMETRIC",
+      "r": null,
+      "ref": "R401",
+      "rot": 0.0,
+      "seated_max": 0.45,
+      "side": "F.Cu",
+      "value": "100k",
+      "x": 73.0,
+      "y": 61.0
+    },
+    {
+      "courtyard_bbox": [
+        84.07,
+        60.53,
+        85.93,
+        61.47
+      ],
+      "footprint": "R_0402_1005Metric",
+      "height_band": "lt0.5",
+      "height_class": "PARAMETRIC",
+      "r": null,
+      "ref": "R402",
+      "rot": 0.0,
+      "seated_max": 0.45,
+      "side": "F.Cu",
+      "value": "100k",
+      "x": 85.0,
+      "y": 61.0
+    },
+    {
+      "courtyard_bbox": [
+        96.07,
+        60.53,
+        97.93,
+        61.47
+      ],
+      "footprint": "R_0402_1005Metric",
+      "height_band": "lt0.5",
+      "height_class": "PARAMETRIC",
+      "r": null,
+      "ref": "R403",
+      "rot": 0.0,
+      "seated_max": 0.45,
+      "side": "F.Cu",
+      "value": "47k",
+      "x": 97.0,
+      "y": 61.0
+    },
+    {
+      "courtyard_bbox": [
+        108.07,
+        60.53,
+        109.93,
+        61.47
+      ],
+      "footprint": "R_0402_1005Metric",
+      "height_band": "lt0.5",
+      "height_class": "PARAMETRIC",
+      "r": null,
+      "ref": "R404",
+      "rot": 0.0,
+      "seated_max": 0.45,
+      "side": "F.Cu",
+      "value": "47k",
+      "x": 109.0,
+      "y": 61.0
+    },
+    {
+      "courtyard_bbox": [
+        24.07,
+        72.53,
+        25.93,
+        73.47
+      ],
+      "footprint": "R_0402_1005Metric",
+      "height_band": "lt0.5",
+      "height_class": "PARAMETRIC",
+      "r": null,
+      "ref": "R405",
+      "rot": 0.0,
+      "seated_max": 0.45,
+      "side": "F.Cu",
+      "value": "100k",
+      "x": 25.0,
+      "y": 73.0
+    },
+    {
+      "courtyard_bbox": [
+        36.07,
+        72.53,
+        37.93,
+        73.47
+      ],
+      "footprint": "R_0402_1005Metric",
+      "height_band": "lt0.5",
+      "height_class": "PARAMETRIC",
+      "r": null,
+      "ref": "R408",
+      "rot": 0.0,
+      "seated_max": 0.45,
+      "side": "F.Cu",
+      "value": "10k",
+      "x": 37.0,
+      "y": 73.0
+    },
+    {
+      "courtyard_bbox": [
+        48.07,
+        72.53,
+        49.93,
+        73.47
+      ],
+      "footprint": "R_0402_1005Metric",
+      "height_band": "lt0.5",
+      "height_class": "PARAMETRIC",
+      "r": null,
+      "ref": "R409",
+      "rot": 0.0,
+      "seated_max": 0.45,
+      "side": "F.Cu",
+      "value": "10k",
+      "x": 49.0,
+      "y": 73.0
+    },
+    {
+      "courtyard_bbox": [
+        59.743,
+        83.743,
+        62.257,
+        86.257
+      ],
+      "footprint": "21-100265_MXM",
+      "height_band": "0.5-1.0",
+      "height_class": "KNOWN",
+      "r": null,
+      "ref": "U6",
+      "rot": 0.0,
+      "seated_max": 0.75,
+      "side": "F.Cu",
+      "value": "MAX30208CLB+T",
+      "x": 61.0,
+      "y": 85.0
+    },
+    {
+      "courtyard_bbox": [
+        59.717,
+        71.819,
+        62.283,
+        74.181
+      ],
+      "footprint": "21-100134_N201A2-1_MXM",
+      "height_band": "unknown",
+      "height_class": "SUPPLIER_DATA_REQUIRED",
+      "r": null,
+      "ref": "U12",
+      "rot": 0.0,
+      "seated_max": null,
+      "side": "F.Cu",
+      "value": "MAX86141ENP+T",
+      "x": 61.0,
+      "y": 73.0
+    },
+    {
+      "courtyard_bbox": [
+        71.717,
+        71.819,
+        74.283,
+        74.181
+      ],
+      "footprint": "21-100134_N201A2-1_MXM",
+      "height_band": "unknown",
+      "height_class": "SUPPLIER_DATA_REQUIRED",
+      "r": null,
+      "ref": "U13",
+      "rot": 0.0,
+      "seated_max": null,
+      "side": "F.Cu",
+      "value": "MAX86141ENP+T",
+      "x": 73.0,
+      "y": 73.0
+    },
+    {
+      "courtyard_bbox": [
+        83.62,
+        71.42,
+        86.38,
+        74.58
+      ],
+      "footprint": "Texas_DSBGA-6_0.76x1.16mm_Layout2x3_P0.4mm",
+      "height_band": "0.5-1.0",
+      "height_class": "PARAMETRIC",
+      "r": null,
+      "ref": "U402",
+      "rot": 0.0,
+      "seated_max": 0.55,
+      "side": "F.Cu",
+      "value": "TS5A12301E",
+      "x": 85.0,
+      "y": 73.0
+    },
+    {
+      "courtyard_bbox": [
+        95.62,
+        71.42,
+        98.38,
+        74.58
+      ],
+      "footprint": "Texas_DSBGA-6_0.76x1.16mm_Layout2x3_P0.4mm",
+      "height_band": "0.5-1.0",
+      "height_class": "PARAMETRIC",
+      "r": null,
+      "ref": "U403",
+      "rot": 0.0,
+      "seated_max": 0.55,
+      "side": "F.Cu",
+      "value": "TS5A12301E",
+      "x": 97.0,
+      "y": 73.0
+    },
+    {
+      "courtyard_bbox": [
+        107.62,
+        71.42,
+        110.38,
+        74.58
+      ],
+      "footprint": "Texas_DSBGA-6_0.76x1.16mm_Layout2x3_P0.4mm",
+      "height_band": "0.5-1.0",
+      "height_class": "PARAMETRIC",
+      "r": null,
+      "ref": "U404",
+      "rot": 0.0,
+      "seated_max": 0.55,
+      "side": "F.Cu",
+      "value": "TS5A12301E",
+      "x": 109.0,
+      "y": 73.0
+    },
+    {
+      "courtyard_bbox": [
+        23.62,
+        83.42,
+        26.38,
+        86.58
+      ],
+      "footprint": "Texas_DSBGA-6_0.76x1.16mm_Layout2x3_P0.4mm",
+      "height_band": "0.5-1.0",
+      "height_class": "PARAMETRIC",
+      "r": null,
+      "ref": "U405",
+      "rot": 0.0,
+      "seated_max": 0.55,
+      "side": "F.Cu",
+      "value": "TS5A12301E",
+      "x": 25.0,
+      "y": 85.0
+    },
+    {
+      "courtyard_bbox": [
+        35.62,
+        83.42,
+        38.38,
+        86.58
+      ],
+      "footprint": "Texas_DSBGA-6_0.76x1.16mm_Layout2x3_P0.4mm",
+      "height_band": "0.5-1.0",
+      "height_class": "PARAMETRIC",
+      "r": null,
+      "ref": "U406",
+      "rot": 0.0,
+      "seated_max": 0.55,
+      "side": "F.Cu",
+      "value": "TS5A12301E",
+      "x": 37.0,
+      "y": 85.0
+    },
+    {
+      "courtyard_bbox": [
+        47.62,
+        83.42,
+        50.38,
+        86.58
+      ],
+      "footprint": "Texas_DSBGA-6_0.76x1.16mm_Layout2x3_P0.4mm",
+      "height_band": "0.5-1.0",
+      "height_class": "PARAMETRIC",
+      "r": null,
+      "ref": "U407",
+      "rot": 0.0,
+      "seated_max": 0.55,
+      "side": "F.Cu",
+      "value": "TS5A12301E",
+      "x": 49.0,
+      "y": 85.0
+    }
+  ],
+  "schema": "sportwatch-mech-height-map/1",
+  "seated_max_rule": "PARAMETRIC: max_mm + solder_allowance_mm; KNOWN: max_mm; null if max_mm is null",
+  "solder_allowance_mm": 0.05,
+  "summary": {
+    "H_B_in_battery": {
+      "parts_considered": 17,
+      "radius_limit_mm": 22.0,
+      "ref": "C901",
+      "unknown_height_refs_in_region": [],
+      "value": 0.95
+    },
+    "H_F_under_display": {
+      "parts_considered": 166,
+      "radius_limit_mm": 21.95,
+      "ref": "U8",
+      "runner_up_ref": "U4",
+      "runner_up_value": 1.96,
+      "top5": [
+        {
+          "footprint": "MAX-F10S_UBL",
+          "r": 14.0,
+          "ref": "U8",
+          "seated_max": 2.7,
+          "x": 100.0,
+          "y": 86.0
+        },
+        {
+          "footprint": "LGA9_BMP585_BOS",
+          "r": 19.549,
+          "ref": "U4",
+          "seated_max": 1.96,
+          "x": 113.0,
+          "y": 85.4
+        },
+        {
+          "footprint": "C_0805_2012Metric",
+          "r": 14.588,
+          "ref": "C402",
+          "seated_max": 1.5,
+          "x": 98.4,
+          "y": 114.5
+        },
+        {
+          "footprint": "C_0805_2012Metric",
+          "r": 15.199,
+          "ref": "C705",
+          "seated_max": 1.5,
+          "x": 114.3,
+          "y": 94.85
+        },
+        {
+          "footprint": "SOT-23-6",
+          "r": 14.866,
+          "ref": "U11",
+          "seated_max": 1.5,
+          "x": 111.0,
+          "y": 110.0
+        }
+      ],
+      "unknown_height_refs_in_region": [],
+      "value": 2.7
+    },
+    "access": [
+      {
+        "footprint": "Tag-Connect_TC2030-IDC-NL_2x03_P1.27mm_Vertical",
+        "r": 15.652,
+        "ref": "J1301",
+        "side": "F.Cu",
+        "x": 107.0,
+        "y": 114.0
+      },
+      {
+        "footprint": "TestPoint_Pad_D1.0mm",
+        "r": 19.5,
+        "ref": "TP1301",
+        "side": "F.Cu",
+        "x": 107.0,
+        "y": 81.8
+      },
+      {
+        "footprint": "TestPoint_Pad_D1.0mm",
+        "r": 20.577,
+        "ref": "TP1302",
+        "side": "F.Cu",
+        "x": 109.6,
+        "y": 81.8
+      },
+      {
+        "footprint": "TestPoint_Pad_D1.0mm",
+        "r": 17.099,
+        "ref": "TP1303",
+        "side": "F.Cu",
+        "x": 107.0,
+        "y": 84.4
+      },
+      {
+        "footprint": "TestPoint_Pad_D1.0mm",
+        "r": 15.642,
+        "ref": "TP1304",
+        "side": "F.Cu",
+        "x": 109.6,
+        "y": 87.65
+      },
+      {
+        "footprint": "TestPoint_Pad_D1.0mm",
+        "r": 14.765,
+        "ref": "TP1305",
+        "side": "F.Cu",
+        "x": 107.0,
+        "y": 87.0
+      },
+      {
+        "footprint": "TestPoint_Pad_D1.0mm",
+        "r": 16.34,
+        "ref": "TP1306",
+        "side": "F.Cu",
+        "x": 111.85,
+        "y": 88.75
+      }
+    ],
+    "b_cu_list": [
+      {
+        "footprint": "C_0402_1005Metric",
+        "in_battery": true,
+        "r": 11.233,
+        "ref": "C206",
+        "seated_max": 0.6,
+        "value": "2.2uF",
+        "x": 93.7,
+        "y": 109.3
+      },
+      {
+        "footprint": "C_0603_1608Metric",
+        "in_battery": true,
+        "r": 5.799,
+        "ref": "C901",
+        "seated_max": 0.95,
+        "value": "4.7uF",
+        "x": 99.25,
+        "y": 105.75
+      },
+      {
+        "footprint": "C_0402_1005Metric",
+        "in_battery": true,
+        "r": 7.85,
+        "ref": "C902",
+        "seated_max": 0.6,
+        "value": "220nF",
+        "x": 101.25,
+        "y": 107.75
+      },
+      {
+        "footprint": "C_0603_1608Metric",
+        "in_battery": true,
+        "r": 9.414,
+        "ref": "C903",
+        "seated_max": 0.95,
+        "value": "2.2uF",
+        "x": 98.25,
+        "y": 109.25
+      },
+      {
+        "footprint": "C_0402_1005Metric",
+        "in_battery": true,
+        "r": 4.414,
+        "ref": "C904",
+        "seated_max": 0.6,
+        "value": "100nF",
+        "x": 99.25,
+        "y": 104.35
+      },
+      {
+        "footprint": "C_0402_1005Metric",
+        "in_battery": true,
+        "r": 5.592,
+        "ref": "C905",
+        "seated_max": 0.6,
+        "value": "1.0uF",
+        "x": 97.05,
+        "y": 104.75
+      },
+      {
+        "footprint": "C_0402_1005Metric",
+        "in_battery": true,
+        "r": 6.308,
+        "ref": "C906",
+        "seated_max": 0.6,
+        "value": "100nF",
+        "x": 95.85,
+        "y": 104.75
+      },
+      {
+        "footprint": "R_0402_1005Metric",
+        "in_battery": true,
+        "r": 7.85,
+        "ref": "R901",
+        "seated_max": 0.45,
+        "value": "10k",
+        "x": 98.75,
+        "y": 107.75
+      },
+      {
+        "footprint": "R_0402_1005Metric",
+        "in_battery": true,
+        "r": 3.871,
+        "ref": "R902",
+        "seated_max": 0.45,
+        "value": "47k",
+        "x": 97.75,
+        "y": 103.15
+      },
+      {
+        "footprint": "R_0402_1005Metric",
+        "in_battery": true,
+        "r": 2.804,
+        "ref": "R903",
+        "seated_max": 0.45,
+        "value": "47k",
+        "x": 99.45,
+        "y": 102.75
+      },
+      {
+        "footprint": "R_0402_1005Metric",
+        "in_battery": true,
+        "r": 3.845,
+        "ref": "R904",
+        "seated_max": 0.45,
+        "value": "47k",
+        "x": 100.85,
+        "y": 103.75
+      },
+      {
+        "footprint": "R_0402_1005Metric",
+        "in_battery": true,
+        "r": 5.371,
+        "ref": "R905",
+        "seated_max": 0.45,
+        "value": "47k",
+        "x": 95.65,
+        "y": 103.15
+      },
+      {
+        "footprint": "R_0402_1005Metric",
+        "in_battery": true,
+        "r": 7.227,
+        "ref": "R906",
+        "seated_max": 0.45,
+        "value": "47k",
+        "x": 96.55,
+        "y": 106.35
+      },
+      {
+        "footprint": "R_0402_1005Metric",
+        "in_battery": true,
+        "r": 6.027,
+        "ref": "R907",
+        "seated_max": 0.45,
+        "value": "47k",
+        "x": 101.45,
+        "y": 105.85
+      },
+      {
+        "footprint": "R_0402_1005Metric",
+        "in_battery": true,
+        "r": 2.351,
+        "ref": "R908",
+        "seated_max": 0.45,
+        "value": "47k",
+        "x": 101.15,
+        "y": 102.05
+      },
+      {
+        "footprint": "R_0402_1005Metric",
+        "in_battery": true,
+        "r": 4.274,
+        "ref": "R909",
+        "seated_max": 0.45,
+        "value": "47k",
+        "x": 102.05,
+        "y": 103.75
+      },
+      {
+        "footprint": "R_0402_1005Metric",
+        "in_battery": true,
+        "r": 9.361,
+        "ref": "R910",
+        "seated_max": 0.45,
+        "value": "47k",
+        "x": 100.45,
+        "y": 109.35
+      }
+    ],
+    "counts_by_side": {
+      "MAIN": {
+        "B.Cu": 17,
+        "F.Cu": 167,
+        "total": 184
+      },
+      "REAR": {
+        "B.Cu": 0,
+        "F.Cu": 44,
+        "total": 44
+      }
+    },
+    "f_cu_top15": [
+      {
+        "footprint": "MAX-F10S_UBL",
+        "r": 14.0,
+        "ref": "U8",
+        "seated_max": 2.7,
+        "x": 100.0,
+        "y": 86.0
+      },
+      {
+        "footprint": "LGA9_BMP585_BOS",
+        "r": 19.549,
+        "ref": "U4",
+        "seated_max": 1.96,
+        "x": 113.0,
+        "y": 85.4
+      },
+      {
+        "footprint": "C_0805_2012Metric",
+        "r": 14.588,
+        "ref": "C402",
+        "seated_max": 1.5,
+        "x": 98.4,
+        "y": 114.5
+      },
+      {
+        "footprint": "C_0805_2012Metric",
+        "r": 15.199,
+        "ref": "C705",
+        "seated_max": 1.5,
+        "x": 114.3,
+        "y": 94.85
+      },
+      {
+        "footprint": "SOT-23-6",
+        "r": 14.866,
+        "ref": "U11",
+        "seated_max": 1.5,
+        "x": 111.0,
+        "y": 110.0
+      },
+      {
+        "footprint": "L_2016_2016Metric",
+        "r": 19.799,
+        "ref": "L203",
+        "seated_max": 1.25,
+        "x": 86.0,
+        "y": 114.0
+      },
+      {
+        "footprint": "L_2016_2016Metric",
+        "r": 18.166,
+        "ref": "L401",
+        "seated_max": 1.25,
+        "x": 95.5,
+        "y": 117.6
+      },
+      {
+        "footprint": "L_2016_2016Metric",
+        "r": 6.934,
+        "ref": "L601",
+        "seated_max": 1.25,
+        "x": 105.8,
+        "y": 103.8
+      },
+      {
+        "footprint": "L_0603_1608Metric",
+        "r": 9.335,
+        "ref": "L101",
+        "seated_max": 1.05,
+        "x": 93.5,
+        "y": 93.3
+      },
+      {
+        "footprint": "L_0603_1608Metric",
+        "r": 16.9,
+        "ref": "L201",
+        "seated_max": 1.05,
+        "x": 84.4,
+        "y": 106.5
+      },
+      {
+        "footprint": "L_0603_1608Metric",
+        "r": 18.265,
+        "ref": "L202",
+        "seated_max": 1.05,
+        "x": 84.4,
+        "y": 109.5
+      },
+      {
+        "footprint": "Texas_RHL0024A",
+        "r": 13.984,
+        "ref": "U102",
+        "seated_max": 1.05,
+        "x": 86.6,
+        "y": 96.0
+      },
+      {
+        "footprint": "C_0603_1608Metric",
+        "r": 12.981,
+        "ref": "C202",
+        "seated_max": 0.95,
+        "x": 87.5,
+        "y": 103.5
+      },
+      {
+        "footprint": "C_0603_1608Metric",
+        "r": 11.068,
+        "ref": "C203",
+        "seated_max": 0.95,
+        "x": 89.5,
+        "y": 103.5
+      },
+      {
+        "footprint": "C_0603_1608Metric",
+        "r": 16.978,
+        "ref": "C204",
+        "seated_max": 0.95,
+        "x": 83.5,
+        "y": 104.0
+      }
+    ],
+    "rear": {
+      "count": 44,
+      "max_known_ref": "U6",
+      "max_known_seated_mm": 0.75,
+      "unknown_height_refs": [
+        "D405",
+        "D406",
+        "D407",
+        "U12",
+        "U13"
+      ]
+    },
+    "reservations": [
+      {
+        "footprints": [
+          {
+            "footprint": "C_0201_0603Metric",
+            "hit": "centre+bbox",
+            "ref": "C1420",
+            "seated_max": 0.38,
+            "side": "F.Cu"
+          },
+          {
+            "footprint": "C_0201_0603Metric",
+            "hit": "centre+bbox",
+            "ref": "C1421",
+            "seated_max": 0.38,
+            "side": "F.Cu"
+          },
+          {
+            "footprint": "R_0201_0603Metric",
+            "hit": "centre+bbox",
+            "ref": "R1420",
+            "seated_max": 0.33,
+            "side": "F.Cu"
+          }
+        ],
+        "name": "GNSS radiator / feed opportunity",
+        "rect": [
+          95,
+          76.5,
+          107,
+          80.1
+        ],
+        "scope": "all assembly heights; exact radiator TBD"
+      },
+      {
+        "footprints": [],
+        "name": "BLE radiator opportunity",
+        "rect": [
+          82,
+          81,
+          90,
+          88
+        ],
+        "scope": "north-west; button overlap must close in CAD"
+      },
+      {
+        "footprints": [],
+        "name": "Wi-Fi radiator opportunity",
+        "rect": [
+          119,
+          107.5,
+          124,
+          115.5
+        ],
+        "scope": "south-east; case/charger/button height integration TBD"
+      },
+      {
+        "footprints": [],
+        "name": "J1501 sensor FPC",
+        "rect": [
+          100.2,
+          116.4,
+          108.5,
+          121.0
+        ],
+        "scope": "F.Cu body/latch plus external south bypass; MPN/height/bend TBD"
+      },
+      {
+        "footprints": [],
+        "name": "battery wire exit / strain relief",
+        "rect": [
+          81.5,
+          112.2,
+          84.5,
+          113.2
+        ],
+        "scope": "coarse side-channel exit only; NOT connector-body reservation"
+      },
+      {
+        "footprints": [],
+        "name": "main charger protection / J202",
+        "rect": [
+          79.5,
+          100.35,
+          82.0,
+          103.25
+        ],
+        "scope": "F.Cu; raw harness/protection roles TBD, near C201/PMIC"
+      },
+      {
+        "footprints": [],
+        "name": "support search SW",
+        "rect": [
+          87.0,
+          119.5,
+          91.5,
+          123.5
+        ],
+        "scope": "case-supported opportunity; no boss geometry approved"
+      },
+      {
+        "footprints": [],
+        "name": "support search SE",
+        "rect": [
+          109,
+          117.5,
+          113,
+          121.8
+        ],
+        "scope": "case-supported opportunity; no boss geometry approved"
+      },
+      {
+        "footprints": [],
+        "name": "support search north-east",
+        "rect": [
+          113.5,
+          80,
+          118,
+          83.0
+        ],
+        "scope": "case opportunity excluding vent/radiator"
+      },
+      {
+        "footprints": [],
+        "name": "J201 battery termination",
+        "rect": [
+          94,
+          119,
+          99.5,
+          122
+        ],
+        "scope": "F.Cu 5.5 x 3 mm connector-body planning window plus external SW service approach; MPN and height TBD; verify against supplier exit and display clearance"
+      }
+    ],
+    "unknown_height": [
+      {
+        "board": "REAR",
+        "footprint": "OSRAM_SFH4053B_1.0x0.5mm",
+        "ref": "D405",
+        "side": "F.Cu"
+      },
+      {
+        "board": "REAR",
+        "footprint": "OSRAM_SFH4053B_1.0x0.5mm",
+        "ref": "D406",
+        "side": "F.Cu"
+      },
+      {
+        "board": "REAR",
+        "footprint": "OSRAM_SFH4053B_1.0x0.5mm",
+        "ref": "D407",
+        "side": "F.Cu"
+      },
+      {
+        "board": "REAR",
+        "footprint": "21-100134_N201A2-1_MXM",
+        "ref": "U12",
+        "side": "F.Cu"
+      },
+      {
+        "board": "REAR",
+        "footprint": "21-100134_N201A2-1_MXM",
+        "ref": "U13",
+        "side": "F.Cu"
+      }
+    ]
+  }
+}

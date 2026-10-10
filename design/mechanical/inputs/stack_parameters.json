@@ -7,7 +7,7 @@
     "T_total": "front-most exterior surface to the outer skin-contact surface of the optical window/pod",
     "T_body": "front-most exterior surface to the caseback outer plane, excluding pod protrusion (T_total - h_pod)",
     "target_thickness_mm": [14.0, 15.5],
-    "target_applies_to": "UNDECIDED by owner; report margin for both T_body and T_total",
+    "target_applies_to": "T_total (owner decision 2026-10-10: exterior display-glass surface to deepest normal wrist-facing pod surface). T_body and h_pod are tracked separately; the target must not be forced if the parametric stack shows it infeasible.",
     "corners": {
       "nominal": "every parameter at nom",
       "thin": "every parameter at min",
@@ -85,7 +85,7 @@
       "margin_edge_wrap": "R_case_inner - R_edge_wrap_outer",
       "margin_main_to_case": "R_case_inner - R_main  (bare MAIN edge clearance, before any FPC)"
     },
-    "corner_rule": "Evaluate margins at nominal, at a conservative corner (case dims at min, all other terms at max), and at an optimistic corner (case dims at max, others at min). Report each with its governing terms."
+    "corner_rule": "Evaluate margins at nominal, at a conservative corner (D_case_outer at min and t_case_wall at max, i.e. smallest R_case_inner; all other terms at max), and at an optimistic corner (D_case_outer at max, t_case_wall at min; all other terms at min). Report each with its governing terms."
   },
   "stations": [
     {"id": "CENTER",  "desc": "Core under U101/U901 and storage B.Cu cavity", "xy": [100.0, 100.0]},
