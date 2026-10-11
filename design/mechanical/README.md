@@ -10,11 +10,11 @@ electrical partition change. Frozen invariants are listed in `inputs/input_regis
 |---|---|
 | `PHASE_BRIEF.md` | Scope contract (objectives, owner confirmations, deliverables, rules). Input; not edited by the architecture package. |
 | `architecture.md` | The architecture document: sections A-J and 11-15 (Z-stack, height map, battery/carrier, REAR board, optical pod, MAX30208 thermal path, FPC path, charger module, reservations, assembly/service/SWD, dimension table, conflicts register, requests, unfrozen list, next gate). |
-| `architecture.json` | Machine-readable architecture: reservations (clock, radial, Z, class), tool quotes, REAR envelope derivation, FPC/charger path parameters, assembly steps, conflicts, supplier requests, owner decisions, unfrozen items, next gate. |
+| `architecture.json` | Machine-readable architecture: reservations (clock, radial, Z, class), tool quotes, REAR envelope derivation, FPC/charger path parameters, edge-crossing model (display support land, bend start, three-corner radial budget of every F.Cu edge crossing), assembly steps, conflicts, supplier requests, owner decisions, unfrozen items, next gate. |
 | `tools/arch_diagrams.py` | Stdlib-only diagram generator and consistency checker (`build` / `check`). |
 | `generated/perimeter_map.svg` | Front-view clock/sector reservation map with Z-level legend, envelopes and conflict markers. |
 | `generated/rear_module_concept.svg` | REAR envelope concept: wrist-side top view with the board-to-assembly transform, and a section through the pod with parametric dimensions. |
-| `generated/interconnect_paths.svg` | MAIN-REAR FPC path and charger harness paths in plan view plus the south radial section. |
+| `generated/interconnect_paths.svg` | MAIN-REAR FPC path and charger harness paths (incl. the west riser) in plan view plus the south radial section with the display land, the derived bend geometry and the edge-crossing budget. |
 | `inputs/` | `input_register.json`, `package_heights.json`, `stack_parameters.json` (authoritative inputs; read-only for this package). |
 | `tools/mech_model.py`, `tools/mech_model_spec.md` | Deterministic height-map / Z-stack / radial model and its specification. |
 | `generated/main_height_map.*`, `generated/zstack.*`, `generated/zstack_section.svg` | Outputs of `mech_model.py` (quoted by the architecture package, never hand-edited). |
@@ -38,12 +38,18 @@ python3 design/mechanical/tools/arch_diagrams.py build   # writes the three SVGs
 python3 design/mechanical/tools/arch_diagrams.py check   # byte-compares SVGs and runs the consistency checks; never writes
 ```
 
-`arch_diagrams.py check` verifies, among others: source SHA-256 pins; frozen-invariant list identical to the register; quoted stack and radial numbers equal to
-`zstack.json`; every reservation has clock range, radial range, Z level(s) and class; every overlapping reservation pair at a shared Z level is listed in a
-conflict; every conflict has severity, options and an owner-decision flag; the nine brief candidates are all present; every SUPPLIER_DATA_REQUIRED register id,
-stack parameter and package height has a supplier request; no KNOWN value lacks a source; scenario, lever, FPC, REAR-envelope and support arithmetic is
-recomputed; the sensor FPC still carries exactly 24 positions / 13 nets with no REAR-local or charger net; LPR454440 unchanged; architecture.md carries every
-conflict, request, decision and reservation id.
+`arch_diagrams.py check` verifies, among others: source SHA-256 pins; frozen-invariant list identical to the register; **numeric-leaf coverage** - every
+int/float in `architecture.json` is compared against its generated / register / placement / derived source (tool quotes with the complete expected key set,
+geometry incl. case outer min/max/nominal, reservation geometry ties, every dimension D01-D43, scenario, lever, edge-crossing, REAR-envelope, support,
+pack-edge and charger arithmetic) or is listed in the `COVERAGE_EXEMPT` table of `arch_diagrams.py` with a reason (study placeholders, diagram anchors);
+any other numeric leaf, or a stale exemption, fails the check, and a built-in self-test proves that an injected leaf or a mutated case radius is caught;
+every reservation has clock range, radial range, Z level(s) and class; every overlapping reservation pair at a shared Z level - found by an exact analytic
+strip-sweep detector (slivers, thin, coincident and contained shapes found; merely abutting boundaries excluded; built-in self-test cases fail the check if
+the detector regresses) - is listed in a conflict; every conflict has severity, options and an owner-decision flag; the nine brief candidates are all
+present; every SUPPLIER_DATA_REQUIRED register id, stack parameter and package height has a supplier request; no KNOWN value lacks a source; the
+edge-crossing flat exit reproduces the tool 180-degree wrap margin; the sensor FPC still carries exactly 24 positions / 13 nets with no REAR-local or charger
+net; LPR454440 unchanged; architecture.md carries every conflict, request, decision, reservation and edge-crossing id and the generated rows (dimensions,
+reservations, edge-crossing budget, land headroom, crossing radial table, overlap register) verbatim.
 
 ## Editing rules
 

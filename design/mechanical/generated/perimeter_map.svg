@@ -38,6 +38,7 @@
 <circle cx="430.00" cy="430.00" r="307.30" fill="none" stroke="#2e7d32" stroke-width="1.80"/>
 <circle cx="430.00" cy="430.00" r="308.00" fill="none" stroke="#e08a00" stroke-width="1.50" stroke-dasharray="7 3"/>
 <circle cx="430.00" cy="430.00" r="272.30" fill="none" stroke="#2e7d32" stroke-width="0.80" stroke-dasharray="2 3"/>
+<path d="M430.00 93.30 A336.70 336.70 0 1 1 430.00 766.70 A336.70 336.70 0 1 1 430.00 93.30 Z M430.00 143.70 A286.30 286.30 0 1 0 430.00 716.30 A286.30 286.30 0 1 0 430.00 143.70 Z" fill="#59a14f" fill-opacity="0.1" stroke="#59a14f" stroke-width="1.00" stroke-dasharray="5 3"/>
 <circle cx="430.00" cy="430.00" r="177.10" fill="#b07aa1" fill-opacity="0.12" stroke="#b07aa1" stroke-width="1.20" stroke-dasharray="5 3"/>
 <circle cx="623.20" cy="326.40" r="140.00" fill="#59a14f" fill-opacity="0.08" stroke="#59a14f" stroke-width="1.20" stroke-dasharray="5 3"/>
 <path d="M705.75 478.62 A280.00 280.00 0 0 1 154.25 478.62 L195.62 471.33 A238.00 238.00 0 0 0 664.38 471.33 Z" fill="#b07aa1" fill-opacity="0.3" stroke="#b07aa1" stroke-width="1.40" stroke-dasharray="5 3"/>
@@ -57,6 +58,8 @@
 <path d="M149.55 645.20 A353.50 353.50 0 0 1 103.41 565.28 L158.38 542.51 A294.00 294.00 0 0 0 196.75 608.98 Z" fill="#59a14f" fill-opacity="0.3" stroke="#59a14f" stroke-width="1.40" stroke-dasharray="1.5 2.5"/>
 <path d="M710.45 214.80 A353.50 353.50 0 0 1 756.59 294.72 L701.62 317.49 A294.00 294.00 0 0 0 663.25 251.02 Z" fill="#59a14f" fill-opacity="0.3" stroke="#59a14f" stroke-width="1.40" stroke-dasharray="1.5 2.5"/>
 <path d="M756.59 565.28 A353.50 353.50 0 0 1 710.45 645.20 L663.25 608.98 A294.00 294.00 0 0 0 701.62 542.51 Z" fill="#59a14f" fill-opacity="0.3" stroke="#59a14f" stroke-width="1.40" stroke-dasharray="1.5 2.5"/>
+<path d="M422.36 766.61 A336.70 336.70 0 0 1 148.91 615.35 L160.59 607.64 A322.70 322.70 0 0 0 422.68 752.62 Z" fill="#59a14f" fill-opacity="0.3" stroke="#59a14f" stroke-width="1.40" stroke-dasharray="5 3"/>
+<path d="M128.73 545.65 A322.70 322.70 0 0 1 110.44 474.91 L166.59 467.02 A266.00 266.00 0 0 0 181.67 525.33 Z" fill="#59a14f" fill-opacity="0.3" stroke="#59a14f" stroke-width="1.40" stroke-dasharray="5 3"/>
 <circle cx="528.00" cy="175.20" r="14.00" fill="#4e79a7" fill-opacity="0.3" stroke="#4e79a7" stroke-width="1.20"/>
 <circle cx="564.40" cy="175.20" r="14.00" fill="#4e79a7" fill-opacity="0.3" stroke="#4e79a7" stroke-width="1.20"/>
 <circle cx="528.00" cy="211.60" r="14.00" fill="#4e79a7" fill-opacity="0.3" stroke="#4e79a7" stroke-width="1.20"/>
@@ -67,8 +70,10 @@
 <path d="M346.00 696.00 L423.00 696.00 L423.00 738.00 L346.00 738.00 Z" fill="#59a14f" fill-opacity="0.3" stroke="#59a14f" stroke-width="1.40"/>
 <path d="M584.95 728.93 A336.70 336.70 0 0 1 432.94 766.69 L432.77 747.23 A317.24 317.24 0 0 0 575.99 711.65 Z" fill="#59a14f" fill-opacity="0.3" stroke="#59a14f" stroke-width="1.40" stroke-dasharray="5 3"/>
 <path d="M248.00 703.00 L311.00 703.00 L311.00 759.00 L248.00 759.00 Z" fill="#59a14f" fill-opacity="0.3" stroke="#59a14f" stroke-width="1.40"/>
+<path d="M128.73 545.65 A322.70 322.70 0 0 1 113.23 491.57 L155.14 483.43 A280.00 280.00 0 0 0 168.60 530.34 Z" fill="#b07aa1" fill-opacity="0.3" stroke="#b07aa1" stroke-width="1.40" stroke-dasharray="5 3"/>
 <path d="M619.00 150.00 L682.00 150.00 L682.00 192.00 L619.00 192.00 Z" fill="#59a14f" fill-opacity="0.3" stroke="#59a14f" stroke-width="1.40"/>
 <path d="M143.00 434.90 L178.00 434.90 L178.00 475.50 L143.00 475.50 Z" fill="#59a14f" fill-opacity="0.3" stroke="#59a14f" stroke-width="1.40"/>
+<path d="M115.66 550.66 A336.70 336.70 0 0 1 99.49 494.25 L113.23 491.57 A322.70 322.70 0 0 0 128.73 545.65 Z" fill="#59a14f" fill-opacity="0.3" stroke="#59a14f" stroke-width="1.40" stroke-dasharray="5 3"/>
 <path d="M171.00 600.80 L213.00 600.80 L213.00 614.80 L171.00 614.80 Z" fill="#59a14f" fill-opacity="0.3" stroke="#59a14f" stroke-width="1.40"/>
 <rect x="427.50" y="231.50" width="5.00" height="5.00" fill="#111" stroke="#111" stroke-width="0.50"/>
 <text x="435.00" y="237.00" font-size="8.00" fill="#111" text-anchor="start" font-weight="normal">U8</text>
@@ -119,6 +124,11 @@
 <text x="508.39" y="747.62" font-size="8.00" fill="#000" text-anchor="middle" font-weight="bold">FPC corr</text>
 <text x="721.59" y="433.00" font-size="8.00" fill="#000" text-anchor="middle" font-weight="bold">Chg contact</text>
 <text x="430.00" y="616.11" font-size="8.00" fill="#000" text-anchor="middle" font-weight="bold">Chg route</text>
+<text x="298.40" y="127.80" font-size="8.00" fill="#000" text-anchor="middle" font-weight="bold">Disp land</text>
+<text x="158.40" y="573.00" font-size="8.00" fill="#000" text-anchor="middle" font-weight="bold">Chg link</text>
+<text x="110.80" y="550.60" font-size="8.00" fill="#000" text-anchor="middle" font-weight="bold">Chg riser</text>
+<text x="214.40" y="497.40" font-size="8.00" fill="#000" text-anchor="middle" font-weight="bold">Chg appr</text>
+<text x="276.82" y="710.60" font-size="8.00" fill="#000" text-anchor="middle" font-weight="bold">Batt tail</text>
 <line x1="430.00" y1="234.00" x2="444.00" y2="220.00" stroke="#c0392b" stroke-width="1.00"/>
 <circle cx="430.00" cy="234.00" r="2.00" fill="#c0392b" stroke="#c0392b" stroke-width="1.00"/>
 <circle cx="444.00" cy="220.00" r="9.50" fill="#ffffff" fill-opacity="0.9" stroke="#c0392b" stroke-width="1.80"/>
@@ -179,6 +189,10 @@
 <circle cx="511.20" cy="521.00" r="2.00" fill="#7f8c8d" stroke="#7f8c8d" stroke-width="1.00"/>
 <circle cx="525.20" cy="507.00" r="9.50" fill="#ffffff" fill-opacity="0.9" stroke="#7f8c8d" stroke-width="1.80"/>
 <text x="525.20" y="510.20" font-size="8.00" fill="#7f8c8d" text-anchor="middle" font-weight="bold">X19</text>
+<line x1="136.00" y1="493.00" x2="150.00" y2="479.00" stroke="#c0392b" stroke-width="1.00"/>
+<circle cx="136.00" cy="493.00" r="2.00" fill="#c0392b" stroke="#c0392b" stroke-width="1.00"/>
+<circle cx="150.00" cy="479.00" r="9.50" fill="#ffffff" fill-opacity="0.9" stroke="#c0392b" stroke-width="1.80"/>
+<text x="150.00" y="482.20" font-size="8.00" fill="#c0392b" text-anchor="middle" font-weight="bold">X24</text>
 <line x1="60.00" y1="120.00" x2="60.00" y2="70.00" stroke="#111" stroke-width="2.00" marker-end="url(#arr)"/>
 <text x="60.00" y="62.00" font-size="11.00" fill="#111" text-anchor="middle" font-weight="bold">N (-Y)</text>
 <text x="880.00" y="92.00" font-size="12.00" fill="#111" text-anchor="start" font-weight="bold">Z levels (fill colour)</text>
@@ -223,15 +237,17 @@
 <text x="880.00" y="545.00" font-size="9.00" fill="#c0392b" text-anchor="start" font-weight="normal">X10 SFH4053B and MAX86141 seated heights are unknown (hidden d</text>
 <text x="880.00" y="558.00" font-size="9.00" fill="#d35400" text-anchor="start" font-weight="normal">X11 Optical-face population dictates pod footprint (single- vs</text>
 <text x="880.00" y="571.00" font-size="9.00" fill="#d35400" text-anchor="start" font-weight="normal">X12 J1502 face and mated height drive the single-/double-sided</text>
-<text x="880.00" y="584.00" font-size="9.00" fill="#c0392b" text-anchor="start" font-weight="normal">X13 Three (four) conductors must cross from the rear side to F</text>
+<text x="880.00" y="584.00" font-size="9.00" fill="#c0392b" text-anchor="start" font-weight="normal">X13 Four conductors rise through one thin annulus and cross th</text>
 <text x="880.00" y="597.00" font-size="9.00" fill="#d35400" text-anchor="start" font-weight="normal">X14 Three support windows leave a 194-degree unsupported arc o</text>
 <text x="880.00" y="610.00" font-size="9.00" fill="#d35400" text-anchor="start" font-weight="normal">X15 North-east sector: vent, ALS, SW4, support, TP13xx and BMM</text>
 <text x="880.00" y="623.00" font-size="9.00" fill="#d35400" text-anchor="start" font-weight="normal">X16 BMM350 exposure to charge current, LED pulses and ferromag</text>
 <text x="880.00" y="636.00" font-size="9.00" fill="#d35400" text-anchor="start" font-weight="normal">X17 GNSS radiator "all assembly heights" volume overlaps displ</text>
-<text x="880.00" y="649.00" font-size="9.00" fill="#7f8c8d" text-anchor="start" font-weight="normal">X18 Support windows and battery exit overlap the nominal pack </text>
+<text x="880.00" y="649.00" font-size="9.00" fill="#7f8c8d" text-anchor="start" font-weight="normal">X18 Support search windows and battery exit overlap the nomina</text>
 <text x="880.00" y="662.00" font-size="9.00" fill="#7f8c8d" text-anchor="start" font-weight="normal">X19 Two 0603 B.Cu capacitors govern the back zone</text>
 <text x="880.00" y="675.00" font-size="9.00" fill="#d35400" text-anchor="start" font-weight="normal">X20 Pack growth / compression must never load the optical stac</text>
 <text x="880.00" y="688.00" font-size="9.00" fill="#d35400" text-anchor="start" font-weight="normal">X21 No ingress / water-resistance target is defined</text>
 <text x="880.00" y="701.00" font-size="9.00" fill="#d35400" text-anchor="start" font-weight="normal">X22 Several Z items are not in the tool stack</text>
+<text x="880.00" y="714.00" font-size="9.00" fill="#d35400" text-anchor="start" font-weight="normal">X23 Residual crosstalk through a continuous optical window is </text>
+<text x="880.00" y="727.00" font-size="9.00" fill="#c0392b" text-anchor="start" font-weight="normal">X24 Display support land competes with the display-FPC fold, r</text>
 <text x="20.00" y="846.00" font-size="9.00" fill="#555" text-anchor="start" font-weight="normal">Clock faces: az = degrees clockwise from north; z-levels per architecture.json reservations. Black squares: key MAIN parts from main_height_map.json.</text>
 </svg>
