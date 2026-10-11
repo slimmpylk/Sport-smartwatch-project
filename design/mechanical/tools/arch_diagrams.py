@@ -519,7 +519,7 @@ def stack_param(zs, name, which):
 
 
 # --------------------------------------------------------- derived quantities
-SCEN_TOL_PARAMS = ("t_front_bond", "t_display", "c_front", "t_main", "c_back", "t_insulator",
+SCEN_TOL_PARAMS = ("t_display", "c_front", "t_main", "c_back", "t_insulator",
                    "tol_pack_thick", "g_axial", "c_axial", "h_optics_max", "c_optics")
 
 
@@ -528,38 +528,51 @@ def tolerance_deltas(zs):
 
 
 def derive_scenarios(arch, zs):
-    """Scenario totals from tool layer outputs; design choices fixed, tolerances stacked."""
+    """Scenario totals from tool layer outputs; design choices fixed, tolerances stacked.
+
+    G1 (2026-10-11): the tool nominal IS the G1 baseline (OD-COVER separate cover lens
+    + OD-REAR-SIDED double-sided REAR integrated as explicit stack layers). The rows are
+    therefore G1-relative configurations: `cover` adds/removes the whole cover stack
+    (t_cover + t_cover_bond), `double_sided_rear` adds/removes the whole inner-side stack
+    (h_rear_inner + c_rear_inner); window / REAR PCB / lower web stay max-design choices.
+    """
     nom = zs["corners"]["nominal"]["T_total_mm"]
     thick = zs["corners"]["thick"]["T_total_mm"]
     tol = tolerance_deltas(zs)
     tol_lin = sum(tol.values())
     tol_rss = math.sqrt(sum(v * v for v in tol.values()))
-    d_inner_nom = stack_param(zs, "h_rear_inner", "max") + stack_param(zs, "c_rear_inner", "nom")
-    d_inner_tol = stack_param(zs, "c_rear_inner", "max") - stack_param(zs, "c_rear_inner", "nom")
+    d_cover_nom = stack_param(zs, "t_cover", "nom") + stack_param(zs, "t_cover_bond", "nom")
+    d_cover_tol = ((stack_param(zs, "t_cover", "max") - stack_param(zs, "t_cover", "nom"))
+                   + (stack_param(zs, "t_cover_bond", "max") - stack_param(zs, "t_cover_bond", "nom")))
+    d_inner_nom = stack_param(zs, "h_rear_inner", "nom") + stack_param(zs, "c_rear_inner", "nom")
+    d_inner_tol = ((stack_param(zs, "h_rear_inner", "max") - stack_param(zs, "h_rear_inner", "nom"))
+                   + (stack_param(zs, "c_rear_inner", "max") - stack_param(zs, "c_rear_inner", "nom")))
     cl = {c: corner_layers(zs, c) for c in ("nominal", "thick")}
-    d_cover = cl["thick"]["front_extra"] - cl["nominal"]["front_extra"]
     d_window = cl["thick"]["window"] - cl["nominal"]["window"]
     d_pcb = cl["thick"]["rear_pcb"] - cl["nominal"]["rear_pcb"]
     d_web = cl["thick"]["lower_web"] - cl["nominal"]["lower_web"]
     lo, hi = zs["conventions"]["target_thickness_mm"]
+    base = nom - d_cover_nom - d_inner_nom
     rows = []
     for s in arch["scenarios"]:
         design = 0.0
         tol_l = tol_lin
         tol_r2 = sum(v * v for v in tol.values())
+        if s.get("cover", s.get("added_cover", False)):
+            design += d_cover_nom
+            tol_l += d_cover_tol
+            tol_r2 += d_cover_tol ** 2
         if s["double_sided_rear"]:
             design += d_inner_nom
             tol_l += d_inner_tol
             tol_r2 += d_inner_tol ** 2
-        if s["added_cover"]:
-            design += d_cover
         if s["window_max"]:
             design += d_window
         if s["rear_pcb_max"]:
             design += d_pcb
         if s["lower_web_max"]:
             design += d_web
-        t_nom = nom + design
+        t_nom = base + design
         t_lin = t_nom + tol_l
         t_rss = t_nom + math.sqrt(tol_r2)
         rows.append({
@@ -575,8 +588,8 @@ def derive_scenarios(arch, zs):
         "tolerance_deltas_mm": tol,
         "tolerance_sum_linear_mm": round(tol_lin, 3),
         "tolerance_rss_mm": round(tol_rss, 3),
+        "design_delta_cover_nominal_class_mm": round(d_cover_nom, 3),
         "design_delta_double_sided_nominal_class_mm": round(d_inner_nom, 3),
-        "design_delta_added_cover_mm": round(d_cover, 3),
         "design_delta_window_max_mm": round(d_window, 3),
         "design_delta_rear_pcb_max_mm": round(d_pcb, 3),
         "design_delta_lower_web_max_mm": round(d_web, 3),
@@ -1196,10 +1209,15 @@ def build_rear_module(arch, zs, hm, d):
     svg.rect(xl - 30, y, wpx + 60, lay["lower_web"] * vs, "#d9d9d9", "#555", 1.0)
     svg.text(xl + wpx + 36, y + 11, "lower_web %s (%s-%s)" % (f2(lay["lower_web"]), f2(par["t_lower_web"]["min"]), f2(par["t_lower_web"]["max"])), 9)
     y += lay["lower_web"] * vs
-    # rear_inner
+    # rear_inner (G1 baseline: double-sided REAR, OD-REAR-SIDED - J1502 + passives on the inner face)
     ri = lay["rear_inner"]
-    svg.text(xl + wpx + 36, y + 11, "rear_inner %s (single-sided; +%s if double-sided)" % (
-        f2(ri), f2(d["scenarios"]["design_delta_double_sided_nominal_class_mm"])), 9)
+    if ri > 0:
+        svg.rect(xl - 30, y, wpx + 60, ri * vs, "#e8d8ee", "#6a1b9a", 1.0, "3 2", 0.6)
+        svg.text(xl + wpx + 36, y + 11, "rear_inner %s (G1 baseline: double-sided, OD-REAR-SIDED; h_rear_inner %s + c_rear_inner %s)" % (
+            f2(ri), f2(par["h_rear_inner"]["nom"]), f2(par["c_rear_inner"]["nom"])), 9)
+        y += ri * vs
+    else:
+        svg.text(xl + wpx + 36, y + 11, "rear_inner 0 (single-sided)", 9)
     # PCB
     svg.rect(xl, y, wpx, lay["rear_pcb"] * vs, "#7fb77e", "#2e7d32", 1.2)
     svg.text(xl + wpx + 36, y + 20, "rear_pcb %s (%s-%s)" % (f2(lay["rear_pcb"]), f2(par["t_rear_pcb"]["min"]), f2(par["t_rear_pcb"]["max"])), 9)
@@ -1325,7 +1343,7 @@ def build_interconnect(arch, zs, hm, d):
         return ox + (r - r_lo) * hs
     z = 0.0
     zpos = {}
-    for lid in ("front_extra", "front_bond", "display", "front_gap", "main_pcb", "back_zone", "battery_zone",
+    for lid in ("cover", "cover_bond", "display", "front_gap", "main_pcb", "back_zone", "battery_zone",
                 "lower_web", "rear_inner", "rear_pcb", "optics_zone", "window"):
         zpos[lid] = (z, z + lay[lid])
         z += lay[lid]
@@ -1961,6 +1979,76 @@ def validate_numbers(cov, arch, zs, hm, reg, d):
     need([r["id"] for r in arch["scenario_results"]["rows"]] == [r["id"] for r in sc["rows"]], "scenario order")
     full_ = next(r for r in sc["rows"] if r["id"] == arch["scenario_results"]["full_thick_reproduction_scenario"])
     need(close(full_["T_worst_linear_mm"], zs["corners"]["thick"]["T_total_mm"]), "all-max scenario != tool thick corner")
+    # G1 quotes (G1_BRIEF.md 4.2): every g1 number in architecture.json must equal generated/g1_scenarios.json
+    g1gen = load_json(MECH / "generated" / "g1_scenarios.json")
+    g1 = arch.get("g1")
+    need(isinstance(g1, dict), "architecture.json lacks the g1 section")
+    if isinstance(g1, dict):
+        grows = {r["id"]: r for r in g1.get("scenario_results", [])}
+        for s in g1gen["scenarios"]:
+            r = grows.get(s["id"])
+            need(r is not None, "g1.scenario_results lacks %s" % s["id"])
+            if r is not None:
+                for k in ("T_nominal_mm", "T_rss_mm", "T_worst_linear_mm", "T_body_mm", "h_pod_mm",
+                          "t_cover_mm", "t_cover_bond_mm", "h_rear_inner_mm",
+                          "tolerance_sum_linear_mm", "tolerance_rss_mm"):
+                    cov.cmp(("g1", "scenario_results", s["id"], k), s[k])
+        for oid, opt in g1gen["cover_options"].items():
+            if "t_cover_mm" in opt:
+                for k in ("min", "nom", "max"):
+                    cov.cmp(("g1", "cover_options", oid, "t_cover_mm", k), opt["t_cover_mm"][k])
+            if opt["status"] == "COMPUTED":
+                cov.cmp(("g1", "cover_options", oid, "gap_used_nominal_mm"), opt["gap_used_nominal_mm"])
+                cov.cmp(("g1", "cover_options", oid, "gap_raise_from_stack_nominal_mm"),
+                        opt["gap_raise_from_stack_nominal_mm"])
+                cov.cmp(("g1", "cover_options", oid, "w_cover_nominal_mm"), opt["w_cover_nominal_mm"])
+                cov.cmp(("g1", "cover_options", oid, "gap_required_nominal_mm"), opt["gap_required_nominal_mm"])
+        cov.cmp(("g1", "cover_sizing_check", "t_cover_stack_mm"), g1gen["cover_sizing_check"]["t_cover_stack_mm"])
+        cov.cmp(("g1", "cover_sizing_check", "t_cover_sized_mm"), g1gen["cover_sizing_check"]["t_cover_sized_mm"])
+        cov.cmp(("g1", "legacy_cross_check", "computed_mm"), g1gen["legacy_cross_check"]["computed_mm"])
+        cov.cmp(("g1", "legacy_cross_check", "expected_mm"), g1gen["legacy_cross_check"]["expected_mm"])
+        dc = g1gen["deterministic_checks"]
+        cov.cmp(("g1", "deterministic_checks", "fpc_underrun_lower_web", "requirement_mm"),
+                dc["fpc_underrun_lower_web"]["requirement_mm"])
+        cov.cmp(("g1", "deterministic_checks", "fpc_underrun_lower_web", "available_mm"),
+                dc["fpc_underrun_lower_web"]["available_mm"])
+        cov.cmp(("g1", "deterministic_checks", "fpc_underrun_lower_web", "margin_mm"),
+                dc["fpc_underrun_lower_web"]["margin_mm"])
+        for k in ("module_side_mm", "module_half_side_mm", "module_circumradius_mm",
+                  "max_centre_radius_in_main_mm", "min_centre_radius_to_clear_display_mm"):
+            cov.cmp(("g1", "deterministic_checks", "u8_relocation_fcu_geometry", k),
+                    dc["u8_relocation_fcu_geometry"][k])
+        for c in ("nominal", "conservative"):
+            cov.cmp(("g1", "deterministic_checks", "rear_seal_band", "R_case_inner_mm", c),
+                    dc["rear_seal_band"]["R_case_inner_mm"][c])
+            for k in ("fit_margin_mm", "wall_margin_mm"):
+                cov.cmp(("g1", "deterministic_checks", "cover_rim", c, k), dc["cover_rim"][c][k])
+        wp = dc["window_plate"]
+        cov.cmp(("g1", "deterministic_checks", "window_plate", "frame_overlap_mm"), wp["frame_overlap_mm"])
+        cov.cmp(("g1", "deterministic_checks", "window_plate", "rows_passing"), wp["rows_passing"])
+        cov.cmp(("g1", "deterministic_checks", "window_plate", "rows_conditional"), wp["rows_conditional"])
+        cov.cmp(("g1", "deterministic_checks", "window_plate", "rows_total"), wp["rows_total"])
+        for c in ("nominal", "conservative"):
+            cov.cmp(("g1", "deterministic_checks", "window_plate", "unsupported_radius_mm", c),
+                    wp["unsupported_radius_mm"][c])
+        for k in ("min", "nom", "max"):
+            cov.cmp(("g1", "deterministic_checks", "window_plate", "standoff_available_mm", k),
+                    wp["standoff_available_mm"][k])
+        for row in wp["rows"]:
+            for k in ("t_mm", "unsupported_radius_mm", "w_clamped_mm", "sigma_clamped_MPa",
+                      "w_simply_supported_mm", "sigma_simply_supported_MPa", "sigma_allow_MPa",
+                      "w_over_t", "deflection_limit_mm"):
+                cov.cmp(("g1", "deterministic_checks", "window_plate", "rows", row["id"], k), row[k])
+        for k in ("T_nominal_mm", "T_rss_mm"):
+            cov.cmp(("g1", "tradeoff", "thinnest_scenario", k), g1gen["g1_verdict"]["thinnest_scenario"][k])
+            cov.cmp(("g1", "tradeoff", "thinnest_all_credible_levers", k),
+                    g1gen["g1_verdict"]["thinnest_all_credible_levers"][k])
+        need(g1.get("verdict") == g1gen["g1_verdict"]["verdict"],
+             "g1 verdict %r != generated %r" % (g1.get("verdict"), g1gen["g1_verdict"]["verdict"]))
+        for row in g1.get("conflict_status", []):
+            src = next((c for c in arch["conflicts"] if c["id"] == row["id"]), None)
+            need(src is not None and src.get("g1_status") == row.get("g1_status"),
+                 "g1.conflict_status %s disagrees with the conflict register" % row.get("id"))
     for k, v in d["levers"].items():
         cov.cmp(("lever_results", k), v)
     # FPC path
@@ -2008,6 +2096,14 @@ def validate_numbers(cov, arch, zs, hm, reg, d):
         if isinstance(c.get("brief_candidate"), int):
             need(1 <= c["brief_candidate"] <= 9, "conflict %s brief_candidate out of range" % c["id"])
             cov.mark(("conflicts", c["id"], "brief_candidate"))
+    # conflicts: G1 status (G1_BRIEF.md section 7) - exactly one valid g1_status with evidence
+    for c in arch["conflicts"]:
+        st = c.get("g1_status")
+        need(st in ("CLOSED", "REMAINS_OPEN", "SUPPLIER_DATA_GATED", "OWNER_DECISION_GATED", "DEFERRED"),
+             "conflict %s lacks a valid g1_status (got %r)" % (c["id"], st))
+        ev = c.get("g1_evidence")
+        need(isinstance(ev, str) and len(ev) >= 10,
+             "conflict %s lacks g1 evidence/dependency text" % c["id"])
     for i, st in enumerate(arch["assembly"]["steps"]):
         cov.cmp(("assembly", "steps", i, "n"), i + 1, 0)
     # dimensions

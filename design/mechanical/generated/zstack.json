@@ -13,68 +13,68 @@
   "corners": {
     "nominal": {
       "T_total_margins_mm": {
-        "to_14.0": 0.5,
-        "to_15.5": 1.0
+        "to_14.0": 2.75,
+        "to_15.5": -1.25
       },
-      "T_total_mm": 14.5,
+      "T_total_mm": 16.75,
       "h_pod_sweep": [
         {
           "T_body_margins_mm": {
-            "to_14.0": 0.5,
-            "to_15.5": 1.0
+            "to_14.0": 2.75,
+            "to_15.5": -1.25
           },
-          "T_body_mm": 14.5,
+          "T_body_mm": 16.75,
           "h_pod_mm": 0.0
         },
         {
           "T_body_margins_mm": {
-            "to_14.0": 0.0,
-            "to_15.5": 1.5
+            "to_14.0": 2.25,
+            "to_15.5": -0.75
           },
-          "T_body_mm": 14.0,
+          "T_body_mm": 16.25,
           "h_pod_mm": 0.5
         },
         {
           "T_body_margins_mm": {
-            "to_14.0": -0.3,
-            "to_15.5": 1.8
+            "to_14.0": 1.95,
+            "to_15.5": -0.45
           },
-          "T_body_mm": 13.7,
+          "T_body_mm": 15.95,
           "h_pod_mm": 0.8
         },
         {
           "T_body_margins_mm": {
-            "to_14.0": -0.5,
-            "to_15.5": 2.0
+            "to_14.0": 1.75,
+            "to_15.5": -0.25
           },
-          "T_body_mm": 13.5,
+          "T_body_mm": 15.75,
           "h_pod_mm": 1.0
         },
         {
           "T_body_margins_mm": {
-            "to_14.0": -1.0,
-            "to_15.5": 2.5
+            "to_14.0": 1.25,
+            "to_15.5": 0.25
           },
-          "T_body_mm": 13.0,
+          "T_body_mm": 15.25,
           "h_pod_mm": 1.5
         }
       ],
       "layers": [
         {
-          "governing_term": "t_front_extra",
-          "id": "front_extra",
+          "governing_term": "t_cover",
+          "id": "cover",
           "terms": {
-            "t_front_extra": 0.0
+            "t_cover": 1.25
           },
-          "thickness_mm": 0.0
+          "thickness_mm": 1.25
         },
         {
-          "governing_term": "t_front_bond",
-          "id": "front_bond",
+          "governing_term": "t_cover_bond",
+          "id": "cover_bond",
           "terms": {
-            "t_front_bond": 0.15
+            "t_cover_bond": 0.25
           },
-          "thickness_mm": 0.15
+          "thickness_mm": 0.25
         },
         {
           "governing_term": "t_display",
@@ -132,12 +132,13 @@
           "thickness_mm": 0.4
         },
         {
-          "governing_term": "h_rear_inner == 0",
+          "governing_term": "h_rear_inner + c_rear_inner",
           "id": "rear_inner",
           "terms": {
-            "h_rear_inner": 0.0
+            "c_rear_inner": 0.1,
+            "h_rear_inner": 0.8
           },
-          "thickness_mm": 0.0
+          "thickness_mm": 0.9
         },
         {
           "governing_term": "t_rear_pcb",
@@ -169,68 +170,68 @@
     },
     "thick": {
       "T_total_margins_mm": {
-        "to_14.0": 3.93,
-        "to_15.5": -2.43
+        "to_14.0": 5.53,
+        "to_15.5": -4.03
       },
-      "T_total_mm": 17.93,
+      "T_total_mm": 19.53,
       "h_pod_sweep": [
         {
           "T_body_margins_mm": {
-            "to_14.0": 3.93,
-            "to_15.5": -2.43
+            "to_14.0": 5.53,
+            "to_15.5": -4.03
           },
-          "T_body_mm": 17.93,
+          "T_body_mm": 19.53,
           "h_pod_mm": 0.0
         },
         {
           "T_body_margins_mm": {
-            "to_14.0": 3.43,
-            "to_15.5": -1.93
+            "to_14.0": 5.03,
+            "to_15.5": -3.53
           },
-          "T_body_mm": 17.43,
+          "T_body_mm": 19.03,
           "h_pod_mm": 0.5
         },
         {
           "T_body_margins_mm": {
-            "to_14.0": 3.13,
-            "to_15.5": -1.63
+            "to_14.0": 4.73,
+            "to_15.5": -3.23
           },
-          "T_body_mm": 17.13,
+          "T_body_mm": 18.73,
           "h_pod_mm": 0.8
         },
         {
           "T_body_margins_mm": {
-            "to_14.0": 2.93,
-            "to_15.5": -1.43
+            "to_14.0": 4.53,
+            "to_15.5": -3.03
           },
-          "T_body_mm": 16.93,
+          "T_body_mm": 18.53,
           "h_pod_mm": 1.0
         },
         {
           "T_body_margins_mm": {
-            "to_14.0": 2.43,
-            "to_15.5": -0.93
+            "to_14.0": 4.03,
+            "to_15.5": -2.53
           },
-          "T_body_mm": 16.43,
+          "T_body_mm": 18.03,
           "h_pod_mm": 1.5
         }
       ],
       "layers": [
         {
-          "governing_term": "t_front_extra",
-          "id": "front_extra",
+          "governing_term": "t_cover",
+          "id": "cover",
           "terms": {
-            "t_front_extra": 0.5
+            "t_cover": 1.7
           },
-          "thickness_mm": 0.5
+          "thickness_mm": 1.7
         },
         {
-          "governing_term": "t_front_bond",
-          "id": "front_bond",
+          "governing_term": "t_cover_bond",
+          "id": "cover_bond",
           "terms": {
-            "t_front_bond": 0.25
+            "t_cover_bond": 0.4
           },
-          "thickness_mm": 0.25
+          "thickness_mm": 0.4
         },
         {
           "governing_term": "t_display",
@@ -292,9 +293,9 @@
           "id": "rear_inner",
           "terms": {
             "c_rear_inner": 0.2,
-            "h_rear_inner": 0.75
+            "h_rear_inner": 1.0
           },
-          "thickness_mm": 0.95
+          "thickness_mm": 1.2
         },
         {
           "governing_term": "t_rear_pcb",
@@ -326,66 +327,66 @@
     },
     "thin": {
       "T_total_margins_mm": {
-        "to_14.0": -0.7,
-        "to_15.5": 2.2
+        "to_14.0": 0.95,
+        "to_15.5": 0.55
       },
-      "T_total_mm": 13.3,
+      "T_total_mm": 14.95,
       "h_pod_sweep": [
         {
           "T_body_margins_mm": {
-            "to_14.0": -0.7,
-            "to_15.5": 2.2
+            "to_14.0": 0.95,
+            "to_15.5": 0.55
           },
-          "T_body_mm": 13.3,
+          "T_body_mm": 14.95,
           "h_pod_mm": 0.0
         },
         {
           "T_body_margins_mm": {
-            "to_14.0": -1.2,
-            "to_15.5": 2.7
+            "to_14.0": 0.45,
+            "to_15.5": 1.05
           },
-          "T_body_mm": 12.8,
+          "T_body_mm": 14.45,
           "h_pod_mm": 0.5
         },
         {
           "T_body_margins_mm": {
-            "to_14.0": -1.5,
-            "to_15.5": 3.0
+            "to_14.0": 0.15,
+            "to_15.5": 1.35
           },
-          "T_body_mm": 12.5,
+          "T_body_mm": 14.15,
           "h_pod_mm": 0.8
         },
         {
           "T_body_margins_mm": {
-            "to_14.0": -1.7,
-            "to_15.5": 3.2
+            "to_14.0": -0.05,
+            "to_15.5": 1.55
           },
-          "T_body_mm": 12.3,
+          "T_body_mm": 13.95,
           "h_pod_mm": 1.0
         },
         {
           "T_body_margins_mm": {
-            "to_14.0": -2.2,
-            "to_15.5": 3.7
+            "to_14.0": -0.55,
+            "to_15.5": 2.05
           },
-          "T_body_mm": 11.8,
+          "T_body_mm": 13.45,
           "h_pod_mm": 1.5
         }
       ],
       "layers": [
         {
-          "governing_term": "t_front_extra",
-          "id": "front_extra",
+          "governing_term": "t_cover",
+          "id": "cover",
           "terms": {
-            "t_front_extra": 0.0
+            "t_cover": 1.0
           },
-          "thickness_mm": 0.0
+          "thickness_mm": 1.0
         },
         {
-          "governing_term": "t_front_bond",
-          "id": "front_bond",
+          "governing_term": "t_cover_bond",
+          "id": "cover_bond",
           "terms": {
-            "t_front_bond": 0.1
+            "t_cover_bond": 0.1
           },
           "thickness_mm": 0.1
         },
@@ -445,12 +446,13 @@
           "thickness_mm": 0.3
         },
         {
-          "governing_term": "h_rear_inner == 0",
+          "governing_term": "h_rear_inner + c_rear_inner",
           "id": "rear_inner",
           "terms": {
-            "h_rear_inner": 0.0
+            "c_rear_inner": 0.05,
+            "h_rear_inner": 0.6
           },
-          "thickness_mm": 0.0
+          "thickness_mm": 0.65
         },
         {
           "governing_term": "t_rear_pcb",
@@ -490,9 +492,9 @@
     "H_F_under_display_ref": "U8"
   },
   "inputs_sha256": {
-    "design/mechanical/inputs/input_register.json": "4da07d6a8fe71233d3ce2f5ecdf512efc86b31dfcc03133cdb1558540b2c88e7",
+    "design/mechanical/inputs/input_register.json": "a35654836b342d2073b75c9c88949346e508abb4b87e7a54b2c7382fcaee9def",
     "design/mechanical/inputs/package_heights.json": "47a3c2c4b6f53f6eda9b213e353f819c4c1a1a2c13b0e173d95064ed1e6e6f22",
-    "design/mechanical/inputs/stack_parameters.json": "545306c658552cf295dec59e57ea54ce238981bfdd5558bc986143a6e3c82ffe",
+    "design/mechanical/inputs/stack_parameters.json": "f6919f30cebf956d516c5cffdac1a21a7b245dd7ae47548734976fddb8228277",
     "design/placement/phase1_placement.json": "0af00cd3e46dbc9e465b0d32a24ef065fc257295fd735ed39f5b5ea4ef0fa64b",
     "rear_sensor/rear_sensor_revA.kicad_pcb": "8b5898f54d7faf4d61c1044b6e2418c0c89d4e85a63dab4dcddd8b3e9ebb3c1f",
     "sportwatch_revA.kicad_pcb": "c36402cba205b0fdce79ca3f2b15af21bf8cacfba1dc08e7e4fe7bc6e2137777"
@@ -571,12 +573,12 @@
       "source": "Pod protrusion beyond caseback plane; explicitly NOT freezable from current evidence (requires wrist/strap trials). Sweep values: 0.0, 0.5, 0.8, 1.0, 1.5."
     },
     "h_rear_inner": {
-      "class": "PARAMETRIC",
-      "confidence": "MEDIUM",
-      "max": 0.75,
-      "min": 0.0,
-      "nom": 0.0,
-      "source": "REAR battery-facing component height: 0 if single-sided (all parts on optical face), up to ~0.75 if AFEs/muxes/MAX30208-side parts go on inner face. Strategy is a study variable."
+      "class": "SUPPLIER_DATA_REQUIRED",
+      "confidence": "LOW",
+      "max": 1.0,
+      "min": 0.6,
+      "nom": 0.8,
+      "source": "G1 baseline, owner decision OD-REAR-SIDED 2026-10-11: double-sided REAR; emitters, PDs and sensitive PPG/analog parts stay on the skin-facing side, the inner (battery-facing) side carries J1502 and passives. Governing inner part = J1502 mated height (MPN unselected, SR-FPC-MECH): fine-pitch board-to-FPC class 0.6-1.0, nominal 0.8 = the only local datum of that class (J1 OK-23GF 0.8 mated, input_register J1-DISPLAY; not a J1502 value); 0402 passives seat at 0.60 (0.65 high-CV) and do not govern at nominal."
     },
     "h_shield_can": {
       "class": "PARAMETRIC",
@@ -594,6 +596,22 @@
       "nom": 0.5,
       "source": "Battery carrier/midplate web; molded plastic >=0.4 typical; sheet metal option thinner but conductive (insulation/RF impact)."
     },
+    "t_cover": {
+      "class": "PARAMETRIC",
+      "confidence": "LOW",
+      "max": 1.7,
+      "min": 1.0,
+      "nom": 1.25,
+      "source": "G1 baseline, owner decision OD-COVER 2026-10-11: separate exterior cover lens bonded/sealed to the case; material/thickness PARAMETRIC until the case/display integration study. Values are the 5 ATM plate sizing of the baseline option COVER-SAP-AIR (sapphire class, cover alone carries the pressure, air gap to the display) by tools/g1_scenarios.py: nom = simply-supported edge at nominal planning properties, min = clamped edge at nominal properties, max = simply-supported edge at the conservative corner; conservative upward grid rounding (0.05 mm) is applied directly to the unrounded requirement (the unrounded conservative requirement is ~1.6516 mm, so the grid result is 1.70 mm); g1_scenarios.py check fails if these differ from the sizing. The min-max span covers sizing bounds (edge model and corner), the plate manufacturing tolerance is carried separately (g1_scenarios tolerance policy). Planning material properties, not supplier data (SR-COVER-LENS)."
+    },
+    "t_cover_bond": {
+      "class": "PARAMETRIC",
+      "confidence": "LOW",
+      "max": 0.4,
+      "min": 0.1,
+      "nom": 0.25,
+      "source": "G1 baseline (OD-COVER): Z between the cover rear face and the display front face at the centre. Baseline air gap 0.25 (cover bonded to a case bezel ledge outside the display; gap >= cover deflection at 5 ATM + 0.05, checked by g1_scenarios.py); min 0.10 = optically bonded (OCA) lamination class, not the baseline; max 0.40 = PSA/air-gap stack with flatness allowance. Replaces the pre-G1 display-to-case bond t_front_bond (0.10-0.25)."
+    },
     "t_display": {
       "class": "KNOWN",
       "confidence": "HIGH",
@@ -609,22 +627,6 @@
       "min": 0.3,
       "nom": 0.4,
       "source": "ZC-A1D43W-046 p5 rear view: folded FPC + steel stiffener T0.15 / PI stiffener T0.2 + tape T0.05; local folded-envelope drawing not supplied; footprint up to 0.7 MAX beyond outline."
-    },
-    "t_front_bond": {
-      "class": "PARAMETRIC",
-      "confidence": "MEDIUM",
-      "max": 0.25,
-      "min": 0.1,
-      "nom": 0.15,
-      "source": "Display-to-case bond/gasket; typical PSA/foam 0.1-0.25."
-    },
-    "t_front_extra": {
-      "class": "PARAMETRIC",
-      "confidence": "LOW",
-      "max": 0.5,
-      "min": 0.0,
-      "nom": 0.0,
-      "source": "Owner decision open: display cover glass used as exterior (0) vs added sapphire/bezel lip (up to ~0.5)."
     },
     "t_insulator": {
       "class": "PARAMETRIC",
@@ -978,13 +980,13 @@
     "note": "primary = every parameter referenced by a z_layer/rule (h_pod excluded: sweep, not in T_total); secondary = only parameters that govern at nominal. Informational only.",
     "primary_all_stack_parameters": {
       "T_total_margins_mm": {
-        "to_14.0": 1.63,
-        "to_15.5": -0.13
+        "to_14.0": 3.598,
+        "to_15.5": -2.098
       },
-      "T_total_rss_mm": 15.63,
+      "T_total_rss_mm": 17.598,
       "parameters": [
-        "t_front_extra",
-        "t_front_bond",
+        "t_cover",
+        "t_cover_bond",
         "t_display",
         "c_front",
         "h_shield_can",
@@ -1003,17 +1005,17 @@
         "c_optics",
         "t_window"
       ],
-      "root_sum_square_mm": 1.13
+      "root_sum_square_mm": 0.848
     },
     "secondary_nominal_active_path_only": {
       "T_total_margins_mm": {
-        "to_14.0": 1.269,
-        "to_15.5": 0.231
+        "to_14.0": 3.529,
+        "to_15.5": -2.029
       },
-      "T_total_rss_mm": 15.269,
+      "T_total_rss_mm": 17.529,
       "parameters": [
-        "t_front_extra",
-        "t_front_bond",
+        "t_cover",
+        "t_cover_bond",
         "t_display",
         "c_front",
         "t_main",
@@ -1023,12 +1025,14 @@
         "g_axial",
         "c_axial",
         "t_lower_web",
+        "h_rear_inner",
+        "c_rear_inner",
         "t_rear_pcb",
         "h_optics_max",
         "c_optics",
         "t_window"
       ],
-      "root_sum_square_mm": 0.769
+      "root_sum_square_mm": 0.779
     }
   },
   "rules": {
@@ -1081,25 +1085,9 @@
       ]
     }
   ],
-  "status": "PROVISIONAL PARAMETRIC STUDY - not a frozen stack; values are planning inputs with explicit class/source",
-  "thick_minus_nominal_mm": 3.43,
+  "status": "PROVISIONAL PARAMETRIC STUDY - not a frozen stack; values are planning inputs with explicit class/source. G1 baseline: owner decisions OD-COVER (separate exterior cover lens) and OD-REAR-SIDED (double-sided REAR), 2026-10-11",
+  "thick_minus_nominal_mm": 2.78,
   "top3_thick_minus_nominal": [
-    {
-      "delta_mm": 0.95,
-      "governing_nominal": "h_rear_inner == 0",
-      "governing_thick": "h_rear_inner + c_rear_inner",
-      "layer": "rear_inner",
-      "nominal_mm": 0.0,
-      "thick_mm": 0.95
-    },
-    {
-      "delta_mm": 0.5,
-      "governing_nominal": "t_front_extra",
-      "governing_thick": "t_front_extra",
-      "layer": "front_extra",
-      "nominal_mm": 0.0,
-      "thick_mm": 0.5
-    },
     {
       "delta_mm": 0.5,
       "governing_nominal": "sum(t_pack_nom + tol_pack_thick + g_axial + c_axial)",
@@ -1107,6 +1095,22 @@
       "layer": "battery_zone",
       "nominal_mm": 5.0,
       "thick_mm": 5.5
+    },
+    {
+      "delta_mm": 0.45,
+      "governing_nominal": "t_cover",
+      "governing_thick": "t_cover",
+      "layer": "cover",
+      "nominal_mm": 1.25,
+      "thick_mm": 1.7
+    },
+    {
+      "delta_mm": 0.3,
+      "governing_nominal": "t_window",
+      "governing_thick": "t_window",
+      "layer": "window",
+      "nominal_mm": 0.5,
+      "thick_mm": 0.8
     }
   ]
 }

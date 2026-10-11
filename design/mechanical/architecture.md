@@ -22,18 +22,18 @@ clockwise from north. Z positive from the front exterior toward the wrist. Reser
 
 | Question | Answer |
 |---|---|
-| Does the stack meet 14.0-15.5 mm (T_total)? | **Conditionally.** Nominal 14.5 mm (+0.5 to 14.0, +1.0 to 15.5). Tolerance-RSS 14.91 mm for a single-sided REAR (S1). Linear worst case 15.78 mm for the best scenario (S1): **no scenario meets 15.5 mm with linear worst-case tolerances**; the tool thick corner is 17.93 mm. |
-| What governs the nominal stack? | battery_zone 5.00, front_gap 2.85 (U8 MAX-F10S), display 2.05, back_zone 1.10 (C901/C903, 0603 on B.Cu), optics 0.85, window 0.50. |
-| Controllable levers | single-sided REAR (-0.85 nominal-class / -0.95 thick), glass-exterior cover (-0.5), C901/C903 as 0402 (-0.35), U8 policy (-0.74; protected foundation). |
+| Does the stack meet 14.0-15.5 mm (T_total)? | **NO — G1 verdict: THICKNESS OWNER DECISION REQUIRED.** G1 baseline (OD-COVER + OD-REAR-SIDED integrated): nominal 16.75 mm, RSS 17.20 mm, linear worst 18.41 mm; tool thick corner 19.53 mm. No thickness-recovery scenario is credibly <= 15.5 mm (section G1; thinnest all-credible-lever scenario G1-K2 = 16.08 mm nominal / 16.52 RSS). |
+| What governs the nominal stack? | battery_zone 5.00, front_gap 2.85 (U8 MAX-F10S), cover 1.25 + cover_bond 0.25 (OD-COVER), display 2.05, rear_inner 0.90 (OD-REAR-SIDED, double-sided), back_zone 1.10 (C901/C903, 0603 on B.Cu), optics 0.85, window 0.50. |
+| Controllable levers (G1) | C901/C903 as 0402 (-0.30, credible later task), REAR inner-side flex tail (-0.10) / tail + 0201 cap (-0.37), combinations (G1-K2 -0.67); NOT levers: single-sided REAR (OD-REAR-SIDED decided double-sided), U8 relocation (geometry excludes an F.Cu escape; B.Cu thickens), J1501/J201 to B.Cu (inside the pack projection), h_pod (T_total does not depend on it). |
 | Radial / FPC | The tool 180-degree edge wrap fails nominal (-0.47). A 2 x 90-degree out-and-down is bounded by the derived bend geometry: nominal margin -0.47 (flat exit) to +0.68 (exit at the display-land ceiling), positive only with the J1501 mouth at R <= 22.53 and an exit >= 0.10 mm above F.Cu. **No edge crossing passes the conservative corner** (>= 0.95 mm short). The charger riser (XC-J202) and battery tail (XB-J201) share this budget (section G). |
 | Largest unknowns | SFH4053B and MAX86141 seated heights (X10), finished-pack drawing, display-FPC fold drawing and permitted display support region (SR-DISPLAY-LAND), FPC connector MPN / height / exit height, charger harness construction, LRA / buttons / antennas. |
-| Next gate | G1 owner-decision and supplier-data closure with independent review, then G2 REAR placement and G3 case/outline co-design (section 15). |
+| Next gate | **G1 COMPLETE (2026-10-11), verdict THICKNESS OWNER DECISION REQUIRED** — the owner decides the thickness target versus the credible levers; then G2 REAR placement and G3 case/outline co-design (section 15). |
 
 ---
 
 ## A. Z-stack (cover to wrist)
 
-**KNOWN.** Target (owner, 2026-10-10): 14.0-15.5 mm applies to **T_total** = exterior display-glass surface to the deepest normal wrist-facing
+**KNOWN.** Target (owner, 2026-10-10): 14.0-15.5 mm applies to **T_total** = front-most exterior surface (G1: the separate cover lens, OD-COVER) to the deepest normal wrist-facing
 surface of the rear optical pod (PHASE_BRIEF 1a; `stack_parameters.json` conventions). T_body = T_total - h_pod; T_total does not depend on h_pod.
 Display module 2.05 +/-0.1 (ZC-A1D43W-046 spec pp4-5). MAIN 0.8 mm, 8 Cu layers (live PCB). LPR454440 nominal cell 4.5 mm (catalog).
 H_F_under_display 2.7 mm (U8 MAX-F10S, u-blox table), runner-up 1.96 mm (U4 BMP585); H_B_in_battery 0.95 mm (C901, PARAMETRIC typical 0603).
@@ -42,56 +42,66 @@ H_F_under_display 2.7 mm (U8 MAX-F10S, u-blox table), runner-up 1.96 mm (U4 BMP5
 
 | Layer | thin | nominal | thick | Class of the governing term |
 |---|---:|---:|---:|---|
-| front_extra | 0 | 0 | 0.5 | PARAMETRIC LOW (owner decision open) |
-| front_bond | 0.1 | 0.15 | 0.25 | PARAMETRIC |
+| cover | 1.0 | 1.25 | 1.70 | PARAMETRIC LOW (OD-COVER; 5 ATM plate sizing, conservative upward grid rounding, SR-COVER-LENS) |
+| cover_bond | 0.1 | 0.25 | 0.4 | PARAMETRIC LOW (air gap 0.25 nominal / OCA 0.15 class) |
 | display | 1.95 | 2.05 | 2.15 | KNOWN |
 | front_gap | 2.8 | 2.85 | 3.0 | KNOWN part height (U8) + PARAMETRIC clearance |
 | main_pcb | 0.72 | 0.8 | 0.88 | KNOWN nominal, PARAMETRIC tolerance |
 | back_zone | 1.03 | 1.1 | 1.25 | PARAMETRIC (no passive MPN) |
 | battery_zone | 4.75 | 5.0 | 5.5 | KNOWN nominal cell + SUPPLIER_DATA_REQUIRED tolerance / growth |
 | lower_web | 0.3 | 0.4 | 0.6 | PARAMETRIC LOW |
-| rear_inner | 0 | 0 | 0.95 | PARAMETRIC (design choice: single- vs double-sided REAR) |
+| rear_inner | 0.65 | 0.9 | 1.2 | SUPPLIER_DATA_REQUIRED (OD-REAR-SIDED double-sided REAR; J1502 mated height, SR-FPC-MECH) |
 | rear_pcb | 0.6 | 0.8 | 1.0 | PARAMETRIC (staging file 1.6 mm / 2-layer is a placeholder) |
 | optics_zone | 0.75 | 0.85 | 1.05 | KNOWN for MAX30208 / SFH7018A / SFH2703; **assumed** for SFH4053B and MAX86141 (X10) |
 | window | 0.3 | 0.5 | 0.8 | PARAMETRIC LOW (material undecided) |
-| **T_total** | **13.3** | **14.5** | **17.93** | |
+| **T_total** | **14.95** | **16.75** | **19.53** | G1 baseline = OD-COVER + OD-REAR-SIDED integrated |
 
-Tool margins to 14.0 / 15.5: thin -0.7 / +2.2; nominal +0.5 / +1.0; thick +3.93 / -2.43. T_body nominal for h_pod 0 / 0.5 / 0.8 / 1.0 / 1.5 =
-14.5 / 14.0 / 13.7 / 13.5 / 13.0 mm (h_pod is PARAMETRIC LOW and cannot be frozen without wrist/strap trials). Tool RSS (informational):
-primary 15.63 mm, secondary 15.269 mm; the primary RSS treats design variables (window, REAR PCB, lower web) as tolerances.
+Tool margins to 14.0 / 15.5: thin +0.95 / +0.55; nominal +2.75 / -1.25; thick +5.53 / -4.03. T_body nominal for h_pod 0 / 0.5 / 0.8 / 1.0 / 1.5 =
+16.75 / 16.25 / 15.95 / 15.75 / 15.25 mm (h_pod is PARAMETRIC LOW and cannot be frozen without wrist/strap trials). Tool RSS (informational):
+primary 17.598 mm, secondary 17.529 mm; the primary RSS treats design variables (window, REAR PCB, lower web) as tolerances.
 
-**Governing layers.** battery_zone is 34 % of the nominal stack (5.0 / 14.5), front_gap 20 %, display 14 %, back_zone 8 %. Largest contributors to
-thick - nominal (tool): rear_inner 0.95, front_extra 0.5, battery_zone 0.5.
+**Governing layers.** battery_zone is 30 % of the nominal stack (5.0 / 16.75), front_gap 17 %, display 12 %, back_zone 7 %. Largest contributors to
+thick - nominal (tool): battery_zone 0.5, cover 0.45, window 0.3.
 
-**Scenarios (brief candidate 9).** Design choices are fixed per scenario; tolerance/supplier/clearance terms are then stacked. The tolerance terms
-are the nominal-to-max deltas of t_front_bond 0.10, t_display 0.10, c_front 0.15, t_main 0.08, c_back 0.10, t_insulator 0.05, tol_pack_thick 0.20,
-g_axial 0.20, c_axial 0.10, h_optics_max 0.10, c_optics 0.10: 1.28 mm linear, 0.414 mm RSS. Arithmetic: scenario = tool nominal 14.5 + design delta +
-tolerance stack. Design deltas from the tool layers: added cover +0.5; double-sided REAR +0.85 (h_rear_inner 0.75 + c_rear_inner 0.10, nominal class;
-the tool thick corner carries 0.95); window 0.8 +0.3; REAR PCB 1.0 +0.2; lower web 0.6 +0.2 (double-sided adds +0.10 of c_rear_inner tolerance).
+**Scenarios (brief candidate 9, G1-relative).** The G1 baseline (S4: separate cover + double-sided REAR, owner decisions 2026-10-11) IS the tool nominal
+16.75 mm. Rows are G1-relative configurations: `cover` adds/removes the whole cover stack (t_cover + t_cover_bond, +1.50 nominal / +0.60 tolerance: t_cover 0.45 sizing-bound span + t_cover_bond 0.15),
+`double_sided_rear` adds/removes the whole inner-side stack (h_rear_inner + c_rear_inner, +0.90 / +0.30). The tolerance terms are the nominal-to-max
+deltas of t_display 0.10, c_front 0.15, t_main 0.08, c_back 0.10, t_insulator 0.05, tol_pack_thick 0.20, g_axial 0.20, c_axial 0.10,
+h_optics_max 0.10, c_optics 0.10: 1.18 mm linear, 0.402 mm RSS. Arithmetic: scenario = (tool nominal - cover stack - inner stack) + design deltas +
+tolerance stack. Design deltas from the tool layers: window 0.8 +0.3; REAR PCB 1.0 +0.2; lower web 0.6 +0.2. The inner stack carries +0.90 nominal / +0.30 tolerance.
 
 | Scenario | Design choices | T nominal tol. | T RSS tol. | T linear worst | <= 15.5 (nominal / RSS / linear) |
 |---|---|---:|---:|---:|---|
-| S1 | single-sided REAR, glass exterior, nominal web/PCB/window | 14.50 | 14.91 | 15.78 | yes / yes / **no** |
-| S2 | S1 but double-sided REAR | 15.35 | 15.78 | 16.73 | yes / no / no |
-| S3 | S1 + added cover / bezel lip (0.5) | 15.00 | 15.41 | 16.28 | yes / yes / no |
-| S4 | S2 + added cover | 15.85 | 16.28 | 17.23 | no / no / no |
-| S5 | S1 with window 0.8, REAR PCB 1.0, web 0.6 | 15.20 | 15.61 | 16.48 | yes / no / no |
-| S6 | all design choices maximal | 16.55 | 16.98 | 17.93 | no / no / no |
+| S1 | no separate cover, single-sided REAR (pre-G1 reference) | 14.35 | 14.75 | 15.53 | yes / yes / **no** |
+| S2 | double-sided REAR inner stack only, no separate cover | 15.25 | 15.75 | 16.73 | yes / no / **no** |
+| S3 | separate cover only, single-sided REAR | 15.85 | 16.57 | 17.63 | no / no / **no** |
+| S4 | **G1 baseline: cover (OD-COVER) + double-sided REAR (OD-REAR-SIDED)** | 16.75 | 17.53 | 18.83 | no / no / **no** |
+| S5 | no cover, single-sided, window 0.8, REAR PCB 1.0, web 0.6 | 15.05 | 15.45 | 16.23 | yes / yes / **no** |
+| S6 | all design choices present and maximal (reproduces the tool thick corner) | 17.45 | 18.23 | 19.53 | no / no / **no** |
 
-S6 reproduces the tool thick corner (17.93), which is the arithmetic cross-check that the decomposition is complete.
+The G1 thickness-recovery scenarios (levers, cover ranges, combinations) are computed by `tools/g1_scenarios.py` and reported in section **G1** below
+and `generated/g1_scenarios.md`; the two tables use different tolerance policies (this table: corner-based design choices; G1: per-scenario governing
+part tolerances), so their S4/G1-S4 rows differ deliberately.
 
-**What must change.** *To meet 15.5 mm:* at nominal nothing; with RSS tolerances keep the REAR single-sided (S1, or S3 if the owner chooses a lip);
-with linear worst-case tolerances remove a further 0.28 mm from S1, for example C901/C903 as 0402 (-0.35: back_zone 0.75 / 0.90 nominal / thick;
-S1 linear becomes 15.43 mm) or the U8 policy (-0.74, frozen foundation). *To meet 14.0 mm:* nominal is 0.5 mm above the lower target; the thin
-corner is 0.7 mm below it. Nothing has to change to stay at or above 14.0 mm unless the owner intends 14.0 mm as a floor, which is then an owner
-clarification (the architecture would add thickness on purpose, not remove it). T_body at nominal h_pod 0.8 is 13.7 mm, i.e. 0.3 mm below the
-lower target, which is acceptable only because the target applies to T_total.
+S6 reproduces the tool thick corner (19.53), which is the arithmetic cross-check that the decomposition is complete.
 
-**Honest feasibility verdict.** Nominal: feasible with margin. Statistical: feasible only for a single-sided REAR (S1/S3). Worst case: not feasible
-without additional levers (0.28 mm for S1). The verdict depends on the unverified assumption that SFH4053B and MAX86141 are not taller than
-0.75 mm (X10), on the unselected passives (no MPN), and on pack tolerance/growth numbers that are SUPPLIER_DATA_REQUIRED.
-Lever arithmetic was cross-checked once on a throw-away copy of the tool inputs outside the repository (T_total nominal 13.76 / thick 17.19 with
-U8 set to zero height; back_zone 0.75 / 0.90 and T_total 14.15 / 17.58 with C901/C903 as 0402); no repository file was changed.
+**What must change (G1, current).** The G1 baseline is 16.75 mm nominal (1.25 mm over the 15.5 mm upper target). The G1 thickness-recovery study
+(section G1, `tools/g1_scenarios.py`) evaluated every credible lever and their combinations: the thinnest scenario using only credible later-task
+levers is G1-K2 (C901/C903 as 0402 + REAR inner-side flex tail with 0201 passives) at 16.08 mm nominal / 16.52 mm RSS - still 0.58 mm over at
+nominal. The only sub-15.5-nominal scenario (G1-K4, 15.18 mm) needs a supplier-gated carrier-floor pocket lever and an owner-gated laminated
+cover and still fails its RSS (15.67 mm). Per the G1 stop rule the verdict is **THICKNESS OWNER DECISION REQUIRED**: the owner decides the
+thickness target versus the credible levers; no requirement is weakened. *To stay at or above 14.0 mm:* the thin corner is 14.95 mm (+0.95).
+
+**Honest feasibility verdict (G1, current).** Nominal: NOT feasible within 15.5 mm (16.75 mm baseline; best credible-lever scenario 16.08 mm).
+Statistical (RSS): not feasible (17.20 mm baseline; 16.52 mm best). Worst case (linear): not feasible (18.41 mm baseline). The verdict depends on
+the unverified assumption that SFH4053B and MAX86141 are not taller than 0.75 mm (X10), on the unselected passives (no MPN), and on pack
+tolerance/growth numbers that are SUPPLIER_DATA_REQUIRED.
+
+*Historical (pre-G1, retained for traceability - superseded by the G1 baseline above):* on the pre-G1 stack (nominal 14.5 mm) the target was met
+at nominal by S1/S2/S3/S5 and by RSS only by S1/S3, and no scenario met 15.5 mm with linear worst-case tolerances (best S1: 15.78 mm); with
+C901/C903 as 0402 (-0.35) S1 linear became 15.43 mm. Lever arithmetic was cross-checked once on a throw-away copy of the tool inputs outside
+the repository (T_total nominal 13.76 / thick 17.19 with U8 set to zero height; back_zone 0.75 / 0.90 and T_total 14.15 / 17.58 with
+C901/C903 as 0402); no repository file was changed.
 
 **Not in the tool stack (X22):** window retention adhesive / pod-insert flange, barrier-gasket compression set, caseback gasket compression,
 carrier hard-stop ribs, FPC stiffener. Only c_optics (0.05-0.2) can absorb them today.
@@ -161,9 +171,12 @@ on F.Cu, no copper, no approved outline. J1502 and C1501 are footprint-TBD.
 **Provisional envelope (derivation, PARAMETRIC LOW).** A_parts = 203.0 mm2 (sum of live library courtyards of the 44 refs; emitters + PDs 92.0). Board
 area = A_parts / eta + A_conn + A_lands with eta 0.55 / 0.45 / 0.35, A_conn 15 / 30 / 60 mm2 (J1502 not selected), A_lands 10 / 20 / 40 mm2 (placeholders):
 394.1 / 501.1 / 680.0 mm2, disc-equivalent Ø 22.4 / 25.3 / 29.4 mm. Span limit = 2 x s_ED_max (4 / 6 / 8) + 2.4 (SFH7018A width) + 2 x margin (1.5 / 2 / 3) =
-13.4 / 18.4 / 24.4 mm, so area governs. Double-sided: the larger face group (inner 103.0 vs optical 100.0 mm2) divided by eta gives Ø 16.4 / 18.8 / 22.4 and the
-span limit gives 24.4 at the conservative corner. **Outline class: a compact rounded envelope of about Ø25 mm (22-29), not a full-battery-size board; far
-inside the Ø44 pack projection.** The values are sizing, not an outline.
+13.4 / 18.4 / 24.4 mm, so area governs. Double-sided (G1, OD-REAR-SIDED 2026-10-11): the skin-facing (optical) group is the larger face group -
+optical 167.33 mm2 (frozen: emitters, PDs, U12/U13 AFEs, U402-U407 muxes, NT401/NT402, U6, C802) vs inner 35.68 mm2 (J1502 + passives) - divided by eta
+gives Ø 20.5 / 23.2 / 27.1 mm (opt / nom / cons; architecture.json rear_module.envelope_results, recomputed by arch_diagrams.py check), and the span
+limit gives 24.4 at the conservative corner; the area-derived diameter 27.13 mm exceeds the 24.4 mm span, so the area governs and the conservative envelope is ≈ 27.1 mm. **Outline class: a compact rounded envelope of about Ø25 mm (22-29), not a
+full-battery-size board; far inside the Ø44 pack projection.** The values are sizing, not an outline. (Pre-G1 text quoted inner 103.0 vs optical
+100.0 mm2 and Ø 16.4 / 18.8 / 22.4 - superseded by the corrected side allocation.)
 
 **Orientation and transform (proposed).** FPC attach edge at south (az ~167-180, toward J1501); MAX30208 tongue at az ~255 (away from AFEs, FPC edge and
 the east charger block); optical cluster at the centre; AFE/mux band on the south half. Transform REAR frame to assembly frame (front view):
@@ -171,19 +184,20 @@ x_a = x_c - (x_r - x_rc), y_a = y_c + (y_r - y_rc): the board is turned like a b
 current single-sided file) has normal +Z (toward the wrist). Viewed from the wrist, north is up and east is left. J1502 position 1 must be labelled on
 the manufacturer mating-face drawing, never read from a mirrored B-side view (interface contract).
 
-**Component-side strategy.**
+**Component-side strategy.** *Pre-G1 comparison (historical - the single-sided column is NOT the current baseline):*
 
-| | Single-sided (baseline S1) | Double-sided (S2) |
+| | Single-sided (pre-G1 S1, superseded) | Double-sided (G1 baseline, OD-REAR-SIDED 2026-10-11) |
 |---|---|---|
-| rear_inner | 0 | +0.85 nominal class (0.95 thick), carries c_rear_inner tolerance |
-| Pod footprint | must cover every optical-face part: envelope Ø 22-29 | can shrink to the optical group |
-| AFE-to-PD routing | same-side, guarded, short | AFEs under PDs (via-in-pad), shortest PD_IN |
+| rear_inner | 0 | +0.90 nominal (h_rear_inner 0.8 + c_rear_inner 0.1; 1.20 thick), carries c_rear_inner tolerance |
+| Pod footprint | must cover every optical-face part: envelope Ø 22-29 | covers the frozen optical group (Ø 20.5-27.1) |
+| AFE-to-PD routing | same-side, guarded, short | AFEs / muxes / NTCs stay on the skin-facing optical face (frozen sensitive PPG/analog geometry, NOT relocated), guarded routing; passives + J1502 on the inner face |
 | J1502 | optical face inside the pod, or edge FPC | inner face (costs its mated height + c_rear_inner) |
-| Reviewable now | yes | needs J1502 height and pod trial |
+| Reviewable now | yes | needs J1502 height (SR-FPC-MECH) and pod trial |
 
-Rationale for the baseline: interior depth from the optical face to the skin plane is optics_zone + window = 1.35 mm nominal while the caseback plane is
-h_pod (0.8 nominal) above the skin plane, leaving 0.55 mm minus the caseback wall outside the pod; 0.6-0.75 mm parts on the optical face cannot sit there,
-so single-sided REAR implies a pod as large as the envelope (X11).
+Rationale (current, G1): interior depth from the optical face to the skin plane is optics_zone + window = 1.35 mm nominal while the caseback plane is
+h_pod (0.8 nominal) above the skin plane, leaving 0.55 mm minus the caseback wall outside the pod; 0.6-0.75 mm parts on the optical face cannot sit there.
+*Pre-G1* this implied a single-sided pod as large as the envelope (X11); OD-REAR-SIDED (2026-10-11) decided double-sided, so the pod covers the frozen
+optical group and the inner side carries J1502 + passives at rear_inner +0.90 mm nominal.
 
 **Support, hard stops, screws, gasket.** REAR rests on three lands of the carrier floor (illustrative az 30 / 150 / 300) outside the optical cluster, is located
 by two dowel features and retained by clips or by screws (screws consume land area). Compression and wrist load travel window -> pod frame / hard stops ->
@@ -239,7 +253,8 @@ prototype boards; keep PD_IN short and guarded.
 
 **Pod / mesa and skin contact.** Window flush with the pod frame, pod protruding h_pod 0-1.5 mm beyond the caseback plane (nominal 0.8, to be settled by
 wrist/strap trials); pod diameter equals the REAR envelope for single-sided. **Sealing.** Window bonded to a pod frame (PSA or adhesive) and the frame
-face-sealed to the caseback aperture (pod insert), or a monolithic caseback window; the ingress target is undefined (OD-WATER, X21). **Hard stops.** Carrier
+face-sealed to the caseback aperture (pod insert), or a monolithic caseback window; the ingress target is 5 ATM / swim-capable (OD-WATER
+2026-10-11; sealing-stack design and qualification are G1/G3 work, see section G1.4). **Hard stops.** Carrier
 ribs directly under the window frame carry wrist and gasket load around the optical packages (X20).
 
 **Alternatives.** W1 full-depth opaque isolation and W2 separate small windows (likely better isolation, more parts and seals; to be compared by
@@ -397,7 +412,7 @@ case outer radius 25.25 for overlap tests).
 | SW4 | Button SW4 (2 o'clock) | 1:45-2:15 | 52.5-67.5 | 21.00-25.25 | MAIN | SUPPLIER_DATA_REQUIRED | input_register SECTORS (SW1-3 left 10/9/8, SW4-5 right 2/4) + BUTTONS (mechanism unselected); half-width 7.5 deg is a PARAMETRIC placeholder |
 | SW5 | Button SW5 (4 o'clock) | 3:45-4:15 | 112.5-127.5 | 21.00-25.25 | MAIN | SUPPLIER_DATA_REQUIRED | input_register SECTORS (SW1-3 left 10/9/8, SW4-5 right 2/4) + BUTTONS (mechanism unselected); half-width 7.5 deg is a PARAMETRIC placeholder |
 | MAG_CLEAR | BMM350 magnetic-clean zone (placeholder) | 12:44-3:23 | 22.1-101.3 | 5.76-25.24 | MAIN+REAR | PARAMETRIC | BMM350 U703 at (113.8,92.6) (main_height_map.json); input_register frozen invariant "no watch-side permanent magnet"; 10 mm radius is a placeholder to be set by measurement |
-| REAR_ENV | REAR rigid board + pod envelope (nominal, single-sided) | 12:00-12:00 | 0.0-360.0 | 0.00-12.65 | REAR | PARAMETRIC | architecture.json rear_module.envelope_results (derivation over live REAR courtyards) |
+| REAR_ENV | REAR rigid board + pod envelope (max envelope = single-sided nominal; G1 baseline double-sided shrinks it, X11) | 12:00-12:00 | 0.0-360.0 | 0.00-12.65 | REAR | PARAMETRIC | architecture.json rear_module.envelope_results (derivation over live REAR courtyards) |
 | LRA | LRA pocket (south, REAR level) | 5:30-6:30 | 165.0-195.0 | 12.65-22.00 | REAR | SUPPLIER_DATA_REQUIRED | input_register SECTORS (LRA S 5:30-6:30) + LRA (footprint TBD); REAR-level placement is an architecture proposal |
 | FPC_UNDER | Sensor FPC under-run (carrier lower web) | 5:05-5:59 | 152.6-179.5 | 12.65-22.66 | REAR | PARAMETRIC | architecture proposal; azimuth = J1501 reservation range (derived), radial from REAR envelope edge to R 22.66 |
 | FPC_CORR | Sensor FPC vertical run (annulus) | 5:05-5:59 | 152.6-179.5 | 22.66-24.05 | MAIN+BATTERY | PARAMETRIC | architecture proposal; stack_parameters radial R_channel / R_case_inner (zstack radial) |
@@ -466,7 +481,7 @@ display is bonded to before the module goes in, so each crossing's conductor mus
 | ID | Quantity | Value / range | Unit | Class | Conf. | Source |
 |---|---|---|---|---|---|---|
 | D01 | T_total target | 14.0 / 15.5 | mm | KNOWN | HIGH | PHASE_BRIEF.md 1a owner confirmation 2026-10-10 (exterior display glass to deepest wrist-facing pod surface) |
-| D02 | T_total thin / nominal / thick | thin 13.3, nominal 14.5, thick 17.93 | mm | PARAMETRIC | MEDIUM | generated/zstack.json corners |
+| D02 | T_total thin / nominal / thick | thin 14.95, nominal 16.75, thick 19.53 | mm | PARAMETRIC | MEDIUM | generated/zstack.json corners (G1 baseline: OD-COVER + OD-REAR-SIDED integrated) |
 | D03 | H_F_under_display | 2.7 | mm | KNOWN | HIGH | main_height_map.json U8 (u-blox MAX-F10S mechanical table) |
 | D04 | H_F runner-up | 1.96 | mm | KNOWN | HIGH | main_height_map.json U4 (Bosch BMP585) |
 | D05 | H_B_in_battery | 0.95 | mm | PARAMETRIC | MEDIUM | main_height_map.json C901/C903 (0603 typical 0.9 + 0.05 solder; no MPN) |
@@ -478,7 +493,7 @@ display is bonded to before the module goes in, so each crossing's conductor mus
 | D11 | battery_zone (thin/nom/thick) | thin 4.75, nominal 5.0, thick 5.5 | mm | SUPPLIER_DATA_REQUIRED | LOW | zstack.json; tol_pack_thick, g_axial are SUPPLIER |
 | D12 | lower_web | min 0.3, nom 0.4, max 0.6 | mm | PARAMETRIC | LOW | stack_parameters.json |
 | D13 | t_rear_pcb | min 0.6, nom 0.8, max 1.0 | mm | PARAMETRIC | MEDIUM | stack_parameters.json (staging file 1.6 mm/2-layer is placeholder) |
-| D14 | h_rear_inner (single / double-sided) | min 0.0, nom 0.0, max 0.75 | mm | PARAMETRIC | MEDIUM | stack_parameters.json |
+| D14 | h_rear_inner (double-sided REAR inner face, OD-REAR-SIDED) | min 0.6, nom 0.8, max 1.0 | mm | SUPPLIER_DATA_REQUIRED | LOW | stack_parameters.json (J1502 mated-height class, SR-FPC-MECH) |
 | D15 | optics_zone | h_optics_max min 0.7, nom 0.75, max 0.85, c_optics min 0.05, nom 0.1, max 0.2 | mm | KNOWN | MEDIUM | h_optics_max anchored on MAX30208 0.75 and SFH7018A/2703 0.6+/-0.1 (stack_parameters.json); SFH4053B/MAX86141 assumed (X10) |
 | D16 | t_window | min 0.3, nom 0.5, max 0.8 | mm | PARAMETRIC | LOW | stack_parameters.json; material undecided |
 | D17 | h_pod sweep | 0.0 / 0.5 / 0.8 / 1.0 / 1.5 | mm | PARAMETRIC | LOW | stack_parameters.json; needs wrist/strap trials |
@@ -488,7 +503,7 @@ display is bonded to before the module goes in, so each crossing's conductor mus
 | D21 | Edge-crossing / FPC out-and-down margin, exit at the land ceiling (upper bound) nominal / conservative / optimistic | 0.68 / -0.95 / 1.3 | mm | PARAMETRIC | LOW | edge_crossings.results.budget margin_at_h_max_mm (geometric derivation on zstack.json radial corners + display_land ranges) |
 | D22 | REAR parts courtyard area | 203.01 | mm2 | KNOWN | MEDIUM | main_height_map.json rear_footprints (library courtyards; 44 refs) |
 | D23 | REAR envelope diameter single-sided opt / nom / cons | optimistic 22.4, nominal 25.3, conservative 29.4 | mm | PARAMETRIC | LOW | rear_module.envelope_derivation |
-| D24 | REAR envelope diameter double-sided opt / nom / cons | optimistic 16.4, nominal 18.8, conservative 24.4 | mm | PARAMETRIC | LOW | rear_module.envelope_derivation |
+| D24 | REAR envelope diameter double-sided opt / nom / cons (G1 baseline, OD-REAR-SIDED) | optimistic 20.5, nominal 23.2, conservative 27.1 | mm | PARAMETRIC | LOW | rear_module.envelope_derivation |
 | D25 | Emitter-detector spacing study range | 3.0 / 8.0 | mm | PARAMETRIC | LOW | study placeholder; to be measured; no spacing claimed optimal |
 | D26 | Minimum geometric emitter-PD pitch | 2.2 / 3.1 | mm | PARAMETRIC | LOW | half-bodies of SFH7018A 2.4 + SFH2703 2.0 or 3.2 plus 0.3-0.5 barrier (arithmetic on KNOWN OPT-PKG sizes; barrier thickness PARAMETRIC) |
 | D27 | FPC length excl. service loop | 26.3 | mm | PARAMETRIC | LOW | fpc_path.length_estimate |
@@ -539,10 +554,11 @@ boundaries that merely abut are not an overlap. Area is estimated separately for
 | X18-PACK-EDGE | - | NEW | LOW | no | Support search windows and battery exit overlap the nominal pack disc |
 | X19-BCU-0603 | - | NEW | LOW | no | Two 0603 B.Cu capacitors govern the back zone |
 | X20-GROWTH-VS-OPTICS | - | NEW | MEDIUM | no | Pack growth / compression must never load the optical stack |
-| X21-INGRESS-UNDEFINED | - | NEW | MEDIUM | **YES** (OD-WATER) | No ingress / water-resistance target is defined |
+| X21-INGRESS-UNDEFINED | - | REFINED | MEDIUM | **YES** (OD-WATER, answered 2026-10-11) | Ingress target answered (5 ATM / swim-capable); sealing-stack design and qualification still undefined |
 | X22-UNMODELLED-Z | - | NEW | MEDIUM | no | Several Z items are not in the tool stack |
 | X23-WINDOW-CROSSTALK | - | NEW | MEDIUM | no | Residual crosstalk through a continuous optical window is unverified |
 | X24-DISPLAY-LAND | - | NEW | HIGH | **YES** (OD-COVER, OD-WATER) | Display support land competes with the display-FPC fold, rim parts and every F.Cu edge crossing |
+| X25-COVER-CASE-FIT | - | NEW (G1) | MEDIUM | no | Cover free span + bond/seal land + bezel wall vs the provisional case inner radius (G1 integration finding, see section G1) |
 
 **Overlap register (generated; exact analytic detector).** Every pair of reservations whose open interiors intersect at a shared Z level (clipped at the nominal case outer radius 25.25), with the area estimate (Gauss-Legendre, reporting only) and the conflicts that list both. Areas shown as 0.00 are real slivers below 0.005 mm2.
 
@@ -606,7 +622,7 @@ boundaries that merely abut are not an overlap. Area is estimated separately for
 ### C1-FRONT-GAP - Front gap governed by U8 MAX-F10S (2.7 mm max)
 
 - **Verdict:** CONFIRMED; **severity:** HIGH; **owner decision:** YES (OD-U8); **gate:** before case + final MAIN outline co-design
-- **Description:** The gap between the rigid display rear plane and MAIN F.Cu is set by one part: U8 (2.7 mm max, at (100,86), r 14.0, fully under the display). The runner-up is U4 BMP585 at 1.96 mm. front_gap is 2.85 mm of the 14.5 mm nominal T_total.
+- **Description:** The gap between the rigid display rear plane and MAIN F.Cu is set by one part: U8 (2.7 mm max, at (100,86), r 14.0, fully under the display). The runner-up is U4 BMP585 at 1.96 mm. front_gap is 2.85 mm of the 16.75 mm nominal T_total (G1 baseline; the pre-G1 stack quoted 14.5 mm here - superseded).
 - **Evidence:**
   - generated/zstack.md layer table: front_gap 2.80 / 2.85 / 3.00 mm (thin / nominal / thick), governing term H_F_under_display + c_front
   - generated/main_height_map.md: H_F_under_display 2.7 (U8), runner-up 1.96 (U4); next three F.Cu parts are 1.5 (C402, C705, U11, PARAMETRIC)
@@ -738,15 +754,17 @@ boundaries that merely abut are not an overlap. Area is estimated separately for
 ### C9-THICK-CORNER - Thick corner mixes design choices with tolerances
 
 - **Verdict:** CONFIRMED; **severity:** HIGH; **owner decision:** YES (OD-COVER, OD-REAR-SIDED); **gate:** before case co-design
-- **Description:** Of the 3.43 mm between nominal and thick, 2.05 mm are design choices (added cover 0.5, double-sided REAR 0.85 at nominal-class, window 0.3, REAR PCB 0.2, lower web 0.2) and 1.38 mm are tolerance / supplier / clearance terms (1.28 linear + 0.10 for c_rear_inner). With design choices fixed per scenario the 15.5 mm upper target is met at nominal tolerances by S1, S2, S3 and S5, by RSS tolerances only by S1 and S3, and by no scenario with linear worst-case tolerances (best, S1: 15.78 mm).
+- **Description:** PRE-G1 (historical): of the 3.43 mm between nominal and thick on the pre-G1 stack, 2.05 mm were design choices (added cover 0.5, double-sided REAR 0.85 at nominal-class, window 0.3, REAR PCB 0.2, lower web 0.2) and 1.38 mm were tolerance / supplier / clearance terms; the 15.5 mm upper target was met at nominal tolerances by S1/S2/S3/S5 and by RSS only by S1/S3. G1 (current): the baseline is the integrated G1 stack (nominal 16.75, thick 19.53 - cover and double-sided REAR are baseline layers now); the thickness-recovery study (16 scenarios, `tools/g1_scenarios.py`, section G1) finds NO scenario credibly <= 15.5 mm; verdict THICKNESS OWNER DECISION REQUIRED.
 - **Evidence:**
-  - zstack.md: thick - nominal = 3.43; top-3 contributors rear_inner 0.95, front_extra 0.5, battery_zone 0.5
-  - architecture.json scenario_results (recomputed from tool layer outputs by arch_diagrams.py check; S6 reproduces the tool thick corner 17.93)
-  - Linear worst-case S1 = 14.5 + 1.28 = 15.78 mm; with C901/C903 as 0402 (-0.35, X19) = 15.43 mm
+  - zstack.md (G1 baseline): thick - nominal = 2.78; top-3 contributors battery_zone 0.5, cover 0.45, window 0.3
+  - architecture.json scenario_results (G1-relative, recomputed from tool layer outputs by arch_diagrams.py check; S6 reproduces the tool thick corner 19.53)
+  - generated/g1_scenarios.json: 16 G1 scenarios; thinnest all-credible-lever G1-K2 = 16.08 nominal / 16.52 RSS; only sub-15.5-nominal G1-K4 = 15.18 fails its RSS (15.67) and needs gated levers
+  - pre-G1 (historical): zstack thick - nominal = 3.43 on the pre-G1 stack; linear worst-case S1 = 14.5 + 1.28 = 15.78 mm; with C901/C903 as 0402 (-0.35, X19) = 15.43 mm
 - **Options:**
-  - O1: Report scenarios, not one thick number (adopted).
-  - O2: Take X19 (-0.35) and the U8 policy (C1) to bring S1 below 15.5 at linear worst case.
-- **Recommended provisional direction:** Baseline architecture = S1; S3 only if the owner selects a lip/bezel; S2 only with levers X19 / C1 closed.
+  - O1: Report scenarios, not one thick number (adopted, both pre-G1 and G1).
+  - O2 (pre-G1, historical): take X19 (-0.35) and the U8 policy (C1) to bring S1 below 15.5 at linear worst case - superseded by the G1 scenario study.
+  - O3 (G1): owner decides the thickness target versus the credible levers (accept > 15.5 mm, relax a target term with evidence, or authorize a gated lever path).
+- **Recommended provisional direction:** G1 verdict: THICKNESS OWNER DECISION REQUIRED - owner decision on the thickness target (see section G1.6).
 
 ### X10-OPTICS-HEIGHT-UNKNOWN - SFH4053B and MAX86141 seated heights are unknown (hidden dependence in optics_zone)
 
@@ -764,15 +782,15 @@ boundaries that merely abut are not an overlap. Area is estimated separately for
 ### X11-POD-FOOTPRINT - Optical-face population dictates pod footprint (single- vs double-sided REAR)
 
 - **Verdict:** NEW; **severity:** MEDIUM; **owner decision:** YES (OD-REAR-SIDED); **gate:** before REAR placement / case co-design
-- **Description:** The interior depth from the REAR optical face to the skin plane is optics_zone + window = 1.35 mm nominal; the caseback plane is h_pod (0.8 nominal) above the skin plane, leaving 0.55 mm minus the caseback wall outside the pod. Parts 0.6-0.75 mm tall on the optical face therefore have to sit inside the pod footprint. Single-sided REAR means the pod covers the whole envelope (D 22.4-29.4 mm); double-sided can shrink it to the optical group but costs rear_inner (0.85 mm nominal-class).
+- **Description:** The interior depth from the REAR optical face to the skin plane is optics_zone + window = 1.35 mm nominal; the caseback plane is h_pod (0.8 nominal) above the skin plane, leaving 0.55 mm minus the caseback wall outside the pod. Parts 0.6-0.75 mm tall on the optical face therefore have to sit inside the pod footprint. G1 (OD-REAR-SIDED 2026-10-11): the baseline is double-sided REAR - the pod covers the optical group (double-sided envelope D 20.5-27.1 mm, opt/cons; the frozen skin-facing group is the emitters/PDs + U12/U13 AFEs + U402-U407 muxes + NT401/NT402 NTCs + U6 + C802) instead of the whole single-sided envelope (D 22.4-29.4 mm), at the cost of rear_inner (0.90 mm nominal). h_pod is not a thickness lever.
 - **Evidence:**
   - zstack.md nominal layers optics_zone 0.85, window 0.5; h_pod nominal 0.8 (stack_parameters.json, PARAMETRIC LOW)
   - architecture.json rear_module.envelope_results
 - **Options:**
-  - O1: Pod covers all optical-face parts (single-sided).
-  - O2: Double-sided REAR with a small pod.
-  - O3: Lower h_pod to 0-0.5 (wrist trials).
-- **Recommended provisional direction:** O1 as baseline; evaluate O3 with wrist trials before choosing O2.
+  - O1: Pod covers all optical-face parts (single-sided) - NOT selected (OD-REAR-SIDED decided double-sided; also not a thickness lever in G1).
+  - O2: Double-sided REAR with the pod over the optical group - DECIDED baseline (OD-REAR-SIDED 2026-10-11).
+  - O3: Lower h_pod to 0-0.5 (wrist trials) - h_pod is not a thickness lever; needs wrist/strap trials.
+- **Recommended provisional direction:** O2 (decided baseline); O3 only with wrist-trial evidence; O1 not selected.
 - **Reservations involved:** REAR_ENV
 
 ### X12-J1502-FACE - J1502 face and mated height drive the single-/double-sided decision
@@ -901,16 +919,18 @@ boundaries that merely abut are not an overlap. Area is estimated separately for
 - **Recommended provisional direction:** O1; restraint rules from the pack supplier.
 - **Reservations involved:** PACK, REAR_ENV
 
-### X21-INGRESS-UNDEFINED - No ingress / water-resistance target is defined
+### X21-INGRESS-UNDEFINED - Ingress target answered (OD-WATER: 5 ATM); sealing-stack design and qualification still undefined
 
-- **Verdict:** NEW; **severity:** MEDIUM; **owner decision:** YES (OD-WATER); **gate:** before case co-design
-- **Description:** Seal count is large (display bond, caseback, pod window, five buttons, vent membrane, charger contacts) and each consumes radial or axial budget. No requirement exists in the register or brief.
+- **Verdict:** REFINED (G1); **severity:** MEDIUM; **owner decision:** YES (OD-WATER, answered 2026-10-11); **gate:** before case co-design
+- **Description (G1):** the target is no longer undefined - 5 ATM / swim-capable is the Rev-A mechanical design target. What remains undefined is the sealing-stack design and qualification: front cover seal, caseback seal, optical window, button and charger feedthrough seals, vent membrane, gasket compression and land widths, and caseback/window stiffness under pressure. The G1 axial/radial consequences and deterministic checks are in section G1.4; qualification items ATM-Q1..Q6 are listed there.
 - **Evidence:**
-  - input_register: no ingress entry
-  - PHASE_BRIEF.md section 5-E (sealing)
+  - input_register OD-WATER (owner decision 2026-10-11)
+  - architecture.json g1.atm5 (implications, plate checks, qualification items)
+  - generated/g1_scenarios.json deterministic_checks (cover plate, window plate, seal band, cover rim)
 - **Options:**
-  - O1: Owner sets splash / swim / depth class; seal architecture follows.
-- **Recommended provisional direction:** Owner decision OD-WATER before case co-design.
+  - O1 (pre-G1, historical): owner sets splash / swim / depth class - ANSWERED: 5 ATM / swim-capable.
+  - O2 (G1): G3 sealing-stack design against the 5 ATM target with the g1.atm5 implications; run ATM-Q1..Q6 qualification.
+- **Recommended provisional direction:** O2.
 
 ### X22-UNMODELLED-Z - Several Z items are not in the tool stack
 
@@ -949,22 +969,25 @@ boundaries that merely abut are not an overlap. Area is estimated separately for
   - Overlap register (MAIN level): DISP_FPC x DISP_LAND 21.51, VENT x DISP_LAND 41.94, MAG_CLEAR x DISP_LAND 63.65, GNSS_RAD x DISP_LAND 39.30, SW1-SW5 x DISP_LAND 17.99 each, BATT_TAIL x DISP_LAND 22.73 mm2 and the other pairs listed in section 12
 - **Options:**
   - O1: Rear support land (DISP_LAND), interrupted at the fold, relieved or <= 0.74 mm thick over U4, non-conductive near radiators and non-ferromagnetic near the BMM350.
-  - O2: Front lip over the display border instead (OD-COVER: +0.5 mm t_front_extra); removes the ledge from the front gap.
+  - O2: Front lip over the display border instead - CLOSED by OD-COVER (2026-10-11): a separate cover lens is the exterior structural and water barrier; the land is support/bond geometry only.
   - O3: Discrete support pads plus a bond to the fold stiffener / J1 region only (needs SR-DISPLAY-LAND).
-- **Recommended provisional direction:** O1 as the working assumption for G2/G3 with the fold interruption and the U4 relief; decide O1 against O2 together with OD-COVER (and OD-WATER if the land is also the front seal); issue SR-DISPLAY-LAND.
+- **Recommended provisional direction:** O1 as the working assumption for G2/G3 with the fold interruption and the U4 relief (g1_status REMAINS_OPEN: the -0.06 mm conservative U4 clearance, the display-FPC fold interference and the land geometry are unresolved; OD-COVER resolved only the sealing responsibility). Issue SR-DISPLAY-LAND and SR-DISPLAY-FPC.
 - **Reservations involved:** DISP_LAND, DISP_FPC, GNSS_RAD, BLE_RAD, WIFI_RAD, J1501, J201, J202, BATT_EXIT, SUP_SW, SUP_SE, SUP_NE, TP, VENT, SW1, SW2, SW3, SW4, SW5, MAG_CLEAR, FPC_CORR, CHG_RISER, CHG_APPROACH, BATT_TAIL
 
 ### Owner decisions required
 
+All seven decisions were ANSWERED by the owner on 2026-10-11 (G1_BRIEF.md section 2; recorded in `inputs/input_register.json` and integrated in the
+g1 section below). The questions are kept for traceability.
+
 | ID | Question | Blocks | Status |
 |---|---|---|---|
-| OD-COVER | Exterior cover strategy: display integral glass flush (t_front_extra 0) or an added sapphire/bezel lip (up to +0.5 mm)? | T_total budget (+0.5), assembly order V1/V2, front seal, display support land versus front lip (X24) | OWNER DECISION REQUIRED |
-| OD-WATER | Water/ingress resistance target (class, depth, test)? | seal architecture, radial and axial budgets, whether the display land is the front seal (X24) | OWNER DECISION REQUIRED |
-| OD-U8 | May the GNSS part U8 (protected foundation) be replaced or moved to recover up to 0.74 mm? | front gap, T_total | OWNER DECISION REQUIRED (touches frozen foundation) |
-| OD-DEVACCESS | Is post-closure SWD/TP access required, and may J1301/TP13xx be relocated in a later placement phase? | assembly/service sequence, MAIN placement | OWNER DECISION REQUIRED |
-| OD-J202 | May the J202 charger entry (approved placement) move toward the contact block, or is the long harness accepted? | charger path, west-sector crowding, west charger riser XC-J202 | OWNER DECISION REQUIRED |
-| OD-CONN-SIDE | May J1501/J201 move to B.Cu or an edge feature be added to MAIN in the placement/outline phases? | edge crossings, FPC radial budget | OWNER DECISION REQUIRED |
-| OD-REAR-SIDED | Single-sided REAR (baseline) or double-sided REAR / hot-bar FPC tail, given the stack, pod and service trade? | REAR placement, T_total (+0.85 nominal-class), J1502 selection | OWNER DECISION REQUIRED |
+| OD-COVER | Exterior cover strategy: display integral glass flush (t_front_extra 0) or an added sapphire/bezel lip (up to +0.5 mm)? | T_total budget (+0.5), assembly order V1/V2, front seal, display support land versus front lip (X24) | **ANSWERED 2026-10-11**: separate exterior cover lens, bonded/sealed as part of the case; display module is not the structural/water barrier; material/thickness PARAMETRIC (SR-COVER-LENS) |
+| OD-WATER | Water/ingress resistance target (class, depth, test)? | seal architecture, radial and axial budgets, whether the display land is the front seal (X24) | **ANSWERED 2026-10-11**: 5 ATM / swim-capable is the Rev-A mechanical design target; sealing-stack design and pressure/leak qualification are future validation work (g1.atm5) |
+| OD-U8 | May the GNSS part U8 (protected foundation) be replaced or moved to recover up to 0.74 mm? | front gap, T_total | **ANSWERED 2026-10-11**: U8 may move if mechanical AND RF evidence supports it; part replacement needs separate electrical/RF review (not G1). G1 geometry: no F.Cu escape, B.Cu thickens the stack; U8 stays |
+| OD-DEVACCESS | Is post-closure SWD/TP access required, and may J1301/TP13xx be relocated in a later placement phase? | assembly/service sequence, MAIN placement | **ANSWERED 2026-10-11**: SWD/test access required during development, manufacturing and bring-up; external access after final sealing not required (all F.Cu mating in build state S1) |
+| OD-J202 | May the J202 charger entry (approved placement) move toward the contact block, or is the long harness accepted? | charger path, west-sector crowding, west charger riser XC-J202 | **ANSWERED 2026-10-11**: the charger entry may move if the mechanical/interconnect study supports it; frozen electrical charger architecture preserved; G1 does not move J202 |
+| OD-CONN-SIDE | May J1501/J201 move to B.Cu or an edge feature be added to MAIN in the placement/outline phases? | edge crossings, FPC radial budget | **ANSWERED 2026-10-11**: only if stack, assembly and routing evidence supports it, not for convenience. G1 evaluated B.Cu relocation (G1-CB): not a thickness lever |
+| OD-REAR-SIDED | Single-sided REAR (baseline) or double-sided REAR / hot-bar FPC tail, given the stack, pod and service trade? | REAR placement, T_total (+0.85 nominal-class), J1502 selection | **ANSWERED 2026-10-11**: DOUBLE-SIDED REAR; emitters, PDs and sensitive PPG/analog geometry stay on the skin-facing side; connector/support/passive placement allowed on the inner side (h_rear_inner, SR-FPC-MECH) |
 
 ## 13. Unresolved blockers and supplier / owner requests
 
@@ -974,16 +997,17 @@ with the stand-in until the gate.
 | ID | Register id | Who | What | Affects | Hard gate | Parametric stand-in |
 |---|---|---|---|---|---|---|
 | SR-DISPLAY-FPC | DISPLAY-FPC | Display supplier (ZC-A1D43W-046) | Folded-FPC envelope drawing: thickness, fold exit direction/width, plug location and alignment float, bend radius, border/ink window for ALS | front gap (local), west corridor, J1 blind mate, ALS aperture, SW1/SW2 position | before case/outline co-design | t_display_fpc_fold 0.3-0.6; fold footprint +0.7 beyond outline |
-| SR-DISPLAY-LAND | DISPLAY-MOD | Display supplier (ZC-A1D43W-046) | Permitted rear support / bond region under the rim (minimum and maximum land width), flatness and allowed pressure, whether the rear border is free of FPC / stiffener, bond material guidance | display support land DISP_LAND (w_land, t_land), front seal concept, edge-crossing land ceiling | before case co-design (G3) | w_land 0.5-1.5 (< 2.5 POL border); t_land 0.3-0.8 |
+| SR-DISPLAY-LAND | DISPLAY-MOD | Display supplier (ZC-A1D43W-046) | Permitted rear support / bond region under the rim (minimum and maximum land width), flatness and allowed pressure, whether the rear border is free of FPC / stiffener, bond material guidance; whether any display-front lamination pressure is permitted (COVER-*-OCA options). G1 (OD-COVER 2026-10-11): the land is support/bond geometry only, NOT the primary water seal - the separate cover lens seals (SR-COVER-LENS) | display support land DISP_LAND (w_land, t_land), cover-to-case seal concept (SR-COVER-LENS), edge-crossing land ceiling | before case co-design (G3) | w_land 0.5-1.5 (< 2.5 POL border); t_land 0.3-0.8 |
+| SR-COVER-LENS | COVER-STRATEGY | Cover lens supplier (material/mechanical; owner selects) | Cover lens material, thickness and tolerances, OD/geometry, edge treatment, bonding method, adhesive/seal stack, pressure/water-sealing constraints (5 ATM, OD-WATER), optical requirements (display transmission, ALS aperture). G1 sizes the baseline sapphire-class cover by the 5 ATM plate check (t_cover 1.0-1.65); planning allowables, not supplier data | t_cover, t_cover_bond, cover plate sizing and air gap, front cover seal, G1 baseline thickness, X25-COVER-CASE-FIT | before case co-design (G3) and cover freeze | t_cover 1.0-1.65 (5 ATM plate sizing, COVER-SAP-AIR); t_cover_bond 0.1-0.4 (air gap 0.25 nominal / OCA 0.15 class) |
 | SR-BATT-PACK | BATT-PACK | Battery supplier (LPR454440) | Finished protected-pack drawing: max Ø and thickness, tolerance, edge seal, tape/insulation | battery_zone, R_pack_max, annulus | before final outline/case | tol_pack_thick 0-0.3; tol_pack_dia 0.2-0.5 |
 | SR-BATT-PCM | BATT-PCM | Battery supplier | PCM envelope and location, tabs, wire/FPC exit, mating connector; tail exit azimuth (preferably at the J201 azimuth 181-197) and tail thickness / bend radius | J201 MPN, carrier pockets, battery tail path, battery tail annulus run (BATT_TAIL, XB-J201) | before J201 MPN and carrier design | BATT_EXIT window [81.5,112.2,84.5,113.2] |
 | SR-BATT-GROWTH | BATT-GROWTH | Battery supplier | Permitted swelling/growth allowance and restraint/compression limits | battery_zone, hard stops, optical load path | before carrier/case freeze | g_axial 0.2-0.5; c_axial 0.05-0.2 |
 | SR-BATT-NTC | BATT-NTC | Battery supplier | NTC presence, curve and placement (PMIC needs NTC on J201.2) | J201 pin map, PMIC config | before J201 MPN | none (BAT_NTC pin reserved) |
-| SR-FPC-MECH | FPC-MECH | Connector and FPC fabricator | J1501/J1502 MPN, pitch, rating, latch/mated height, bend radius, stiffener, length; FPC exit height above F.Cu at the mouth and mouth position relative to the footprint (edge-crossing bend start) | edge wrap, rear_inner, lower web, GND/VLED conductor width, bend start / J1501 mouth radius | before final outline / REAR placement freeze | R_bend_min 0.6-2.0; t_fpc 0.1-0.2; connector run 4.6; exit height >= 0.10 mm and mouth R <= 22.53 required at nominal (edge_crossings) |
-| SR-CHG-MECH | CHG-MECH | Contact/dock supplier | Contact geometry, metallurgy, feedthrough seal, dock force/travel, keying, protection silicon; harness construction (flat flex or wires), conductor thickness and width, bend radius, current rating, exit height at J202 | contact block envelope, caseback aperture, ESD entry, charger riser radial budget (XC-J202) | before contact-module selection | block az 80-100, r 17.5-24 placeholder; riser slot az 249-259 (CHG_RISER); flat-flex stand-in t 0.1-0.2, R_bend 0.6-2.0; conductor <= 0.80 mm thick beside the pack (nominal) |
-| SR-LRA | LRA | LRA supplier (owner selects) | Actuator envelope and mounting method; lead exit and mounting (decides whether the XL-LRA edge crossing exists) | LRA pocket, south sector | before perimeter freeze | pocket az 165-195, r 12.65-22 (REAR) |
-| SR-BUTTONS | BUTTONS | Switch/pusher supplier (owner selects) | Switch footprint, height, mechanism and seal | SW1-SW5 windows, wall thickness, west corridor | before perimeter freeze | half-width 7.5 deg, r 21-25.25 placeholder |
-| SR-ANTENNAS | ANTENNAS | Antenna supplier / RF consultant | Radiator concepts and keep-outs for GNSS, BLE, Wi-Fi, diplexer U10 | radome volumes, display shadowing, caseback metal | before case co-design | reservation rectangles as published |
+| SR-FPC-MECH | FPC-MECH | Connector and FPC fabricator | J1501/J1502 MPN, pitch, rating, latch/mated height, bend radius, stiffener, length; FPC exit height above F.Cu at the mouth and mouth position relative to the footprint (edge-crossing bend start). G1 (OD-REAR-SIDED 2026-10-11): the authorized double-sided REAR needs the J1502 face and mated height on the inner side, or a hot-bar / ACF flex-tail construction (tail land pattern, bonding process, rework rule) - h_rear_inner is gated on this request | edge wrap, rear_inner, lower web, GND/VLED conductor width, bend start / J1501 mouth radius | before final outline / REAR placement freeze | R_bend_min 0.6-2.0; h_rear_inner 0.6-1.0 (J1502 mated-height class); t_fpc 0.1-0.2; connector run 4.6; exit height >= 0.10 mm and mouth R <= 22.53 required at nominal (edge_crossings) |
+| SR-CHG-MECH | CHG-MECH | Contact/dock supplier | Contact geometry, metallurgy, dock force/travel, keying, protection silicon; harness construction (flat flex or wires), conductor thickness and width, bend radius, current rating, exit height at J202. G1 (OD-WATER 2026-10-11): explicit 5 ATM feedthrough/sealing requirement - the sealed contact feedthrough must be pressure-tested to the 5 ATM test pressure (ATM-Q3); the contact block crosses the caseback seal band and cannot share the face seal | contact block envelope, caseback aperture, ESD entry, charger riser radial budget (XC-J202), caseback seal band | before contact-module selection | block az 80-100, r 17.5-24 placeholder; riser slot az 249-259 (CHG_RISER); flat-flex stand-in t 0.1-0.2, R_bend 0.6-2.0; conductor <= 0.80 mm thick beside the pack (nominal) |
+| SR-LRA | LRA | LRA supplier (owner selects) | Actuator envelope and mounting method; lead exit and mounting (decides whether the XL-LRA edge crossing exists). G1: kept gated pending supplier/component selection; no supplier invented | LRA pocket, south sector | before perimeter freeze | pocket az 165-195, r 12.65-22 (REAR) |
+| SR-BUTTONS | BUTTONS | Switch/pusher supplier (owner selects) | Switch footprint, height, mechanism and seal. G1 (OD-WATER 2026-10-11): explicit 5 ATM sealing requirement - O-ring / membrane button seal pressure and cycling tested to the 5 ATM test pressure (ATM-Q2) | SW1-SW5 windows, wall thickness, west corridor, case wall bores | before perimeter freeze | half-width 7.5 deg, r 21-25.25 placeholder |
+| SR-ANTENNAS | ANTENNAS | Antenna supplier / RF consultant | Radiator concepts and keep-outs for GNSS, BLE, Wi-Fi, diplexer U10. G1: kept gated pending supplier/component selection; no supplier invented | radome volumes, display shadowing, caseback metal | before case co-design | reservation rectangles as published |
 | SR-SFH4053B-DS | SFH4053B-DS | OSRAM / ams OSRAM | SFH 4053B datasheet: seated height, optical axis, radiant pattern | optics_zone, D405-D407 placement | before REAR optical placement | h_optics_max 0.7-0.85 (assumed) |
 | SR-MAX86141-HEIGHT | (package/stack input) | Analog Devices | MAX86141 WLP package outline 21-100134 (seated height) | optics_zone | before REAR optical placement | h_optics_max 0.7-0.85 (assumed) |
 | SR-TAGCONNECT | (package/stack input) | Tag-Connect | TC2030-IDC-NL probe engagement volume and retaining clip envelope | J1301 access volume, assembly state S1 | before development fixture design | vertical volume above F.Cu as a labelled reservation |
@@ -995,12 +1019,12 @@ only), and the absence of any approved REAR outline, stackup or rules.
 ## 14. What remains intentionally unfrozen
 
 - REAR outline, stackup, placement, optical spacing, barrier design, window isolation concept (W0/W1/W2, X23), window material/thickness
-- single- vs double-sided REAR; J1502 face/MPN/orientation; J1501 MPN/pitch/orientation
+- J1502 MPN/orientation and the inner-side termination choice (connector vs flex tail, SR-FPC-MECH); J1501 MPN/pitch/orientation
 - h_pod, T_body, caseback plane, pod footprint, window retention
 - case outline, wall, bosses, screws, gaskets, ingress class
-- display support land (width, thickness, interruptions, material) and the front-lip alternative
+- display support land (width, thickness, interruptions, material); the front-lip alternative is CLOSED by OD-COVER (the cover lens seals)
 - MAIN final outline (R 23 is a development envelope), supports, notches
-- cover strategy (glass exterior vs lip), assembly order V1/V2
+- cover lens material/thickness and bond stack (SR-COVER-LENS, PARAMETRIC; OD-COVER strategy decided 2026-10-11), assembly order V1/V2
 - battery carrier geometry, pockets, restraint, wire exit, PCM location
 - charger riser slot (az 249-259), battery tail annulus run, J1501 mouth radius and every edge-crossing exit height
 - charger contact block geometry, seal, dock, key; J202 location
@@ -1014,14 +1038,16 @@ and no charger-positive in the sensor FPC; LPR454440; MAIN Ø46 development enve
 
 ## 15. Next engineering gate
 
-**Recommendation: G1 first.** (1) Independent review of this package and of `architecture.json`; (2) owner answers to OD-COVER, OD-REAR-SIDED and
-OD-WATER (the three that change the stack and the assembly order) and, at least as a direction, OD-DEVACCESS, OD-J202, OD-CONN-SIDE and OD-U8;
-(3) issue the supplier requests of section 13. Then run G2 (REAR optical + guarded-analog placement study) and G3 (case + final MAIN outline
-co-design) in parallel where their entry criteria are met. All work stays reversible until outline freeze.
+**Recommendation: G1 COMPLETE (2026-10-11) — verdict THICKNESS OWNER DECISION REQUIRED.** The seven owner decisions are integrated (section G1),
+the supplier requests are issue-ready (section 13, SR-COVER-LENS added), the thickness-recovery scenarios and 5 ATM implications are computed
+(section G1, `generated/g1_scenarios.json`), and every conflict carries a g1_status. The blocking item is the owner thickness decision (C9):
+no scenario is credibly <= 15.5 mm (thinnest all-credible-lever scenario G1-K2 = 16.08 mm nominal / 16.52 RSS). Take that decision, then run
+G2 (REAR optical + guarded-analog placement study) and G3 (case + final MAIN outline co-design) in parallel where their entry criteria are
+met. All work stays reversible until outline freeze.
 
-- **G1 entry:** independent review of this package passes; OD-COVER, OD-REAR-SIDED, OD-WATER answered; supplier requests SR-* issued
-- **G2 entry:** SR-SFH4053B-DS and SR-MAX86141-HEIGHT closed; SR-FPC-MECH closed (J1502 face/height known); OD-REAR-SIDED answered; h_pod trial plan agreed; J1501 mouth radius <= 22.53 and exit height known from SR-FPC-MECH (edge crossing XF-J1501)
-- **G3 entry:** SR-BATT-PACK, SR-BATT-PCM, SR-BATT-GROWTH closed; SR-DISPLAY-LAND closed (display support land) and OD-COVER answered for land versus lip; SR-DISPLAY-FPC closed; OD-COVER, OD-WATER, OD-DEVACCESS answered; LRA, button and antenna selections made; MG-WINDOW-XTALK result (X23) or an explicit owner acceptance of the unverified W0 baseline
+- **G1 entry:** COMPLETE — independent review of this package; OD-COVER, OD-REAR-SIDED, OD-WATER, OD-U8, OD-DEVACCESS, OD-J202, OD-CONN-SIDE answered and integrated; supplier requests SR-* issued; scenario study + 5 ATM implications recorded; verdict THICKNESS OWNER DECISION REQUIRED
+- **G2 entry:** SR-SFH4053B-DS and SR-MAX86141-HEIGHT closed; SR-FPC-MECH closed (J1502 face/height or flex tail known); owner thickness decision taken (C9, G1 verdict); h_pod trial plan agreed; J1501 mouth radius <= 22.53 and exit height known from SR-FPC-MECH (edge crossing XF-J1501)
+- **G3 entry:** SR-BATT-PACK, SR-BATT-PCM, SR-BATT-GROWTH closed (incl. the INNER-NEST unsupported-span data); SR-DISPLAY-LAND closed (display support land geometry); SR-COVER-LENS closed (cover material/thickness); SR-DISPLAY-FPC closed; LRA, button and antenna selections made; X25-COVER-CASE-FIT closed (front aperture / case outer vs the cover stack); MG-WINDOW-XTALK result (X23) or an explicit owner acceptance of the unverified W0 baseline
 
 Exit criteria for G1: every conflict has an owner/reviewer disposition; every HIGH item has either a closed datum or an agreed stand-in range.
 
@@ -1042,3 +1068,132 @@ Exit criteria for G1: every conflict has an owner/reviewer disposition; every HI
 | RF / vent / button / LRA reservations | section I; C5-C8, X15, X17, X24 (display land against radiators, vent and buttons) |
 | Hidden dependence on unknown supplier dimensions | X10 and every SR-* request (incl. exit height / mouth radius SR-FPC-MECH, harness SR-CHG-MECH, display land SR-DISPLAY-LAND); `arch_diagrams.py check` lists all SUPPLIER ids and fails on any numeric value that is neither validated against a source nor an exempted placeholder |
 | Accidental violation of frozen electrical boundaries | `arch_diagrams.py check` verifies 24 positions / 13 nets, no REAR-local or charger net in the sensor FPC, battery LPR454440, invariants copied verbatim |
+
+---
+---
+---
+
+## G1. Owner-decision integration (2026-10-11)
+
+Scope: `design/mechanical/G1_BRIEF.md`. The seven owner decisions of 2026-10-11 (section 2 of the brief) are recorded in `inputs/input_register.json` and integrated below. The G1 baseline stack is the tool nominal: OD-COVER (separate exterior cover lens, stack layers `t_cover` + `t_cover_bond`) + OD-REAR-SIDED (double-sided REAR, inner-side layer `h_rear_inner`). Every number in this section is computed by `tools/g1_scenarios.py` (`generated/g1_scenarios.json` / `.md`, byte-identical regeneration enforced by `g1_scenarios.py check`); `arch_diagrams.py check` fails if any number quoted here differs from the generated value.
+
+### G1.1 Owner decisions integrated
+
+| ID | Decision (2026-10-11) | Integrated as |
+|---|---|---|
+| OD-COVER | Separate exterior cover lens/glass over the display, bonded/sealed as part of the case; the display module is not the exterior structural or water barrier; material/thickness PARAMETRIC until the case/display integration study. Integrated as stack layers t_cover + t_cover_bond (G1 baseline, SR-COVER-LENS). | stack layers t_cover + t_cover_bond (G1 baseline); SR-COVER-LENS; X24 sealing responsibility resolved (geometry REMAINS_OPEN) |
+| OD-REAR-SIDED | Double-sided REAR PCB; emitters, photodiodes and sensitive PPG/analog geometry stay on the skin-facing side; connector/support/passive placement allowed on the inner side. Integrated as h_rear_inner (J1502 + passives; G1 baseline, SR-FPC-MECH). | stack layer h_rear_inner (J1502 + passives on the inner face); frozen skin-facing group incl. U12/U13, U402-U407, NT401/NT402; SR-FPC-MECH |
+| OD-WATER | 5 ATM / swim-capable sealing is the Rev-A mechanical design target; sealing-stack design and pressure/leak qualification are future validation work. Recorded in g1.atm5 (implications + qualification items ATM-Q1..Q6). | 5 ATM implications (G1.4) + qualification items ATM-Q1..Q6; SR-CHG-MECH / SR-BUTTONS sealing requirements |
+| OD-U8 | U8 may move if mechanical AND RF evidence supports it; part replacement needs separate electrical/RF review (not G1). G1 evaluated relocation geometrically: no F.Cu escape (g1_scenarios u8 check), B.Cu thickens the stack; U8 placement unchanged in G1. | deterministic U8 relocation geometry check (G1.3); scenarios G1-U8F / G1-U8B |
+| OD-DEVACCESS | SWD/test access required during development, manufacturing and bring-up; external SWD access after final sealing not required. All F.Cu mating stays in build state S1. | assembly build state S1 (all F.Cu mating before display install) |
+| OD-J202 | The charger entry may move if the mechanical/interconnect study supports it; the frozen electrical charger architecture is preserved. G1 does not move J202. | charger entry unchanged in G1; option open for a later placement phase |
+| OD-CONN-SIDE | J1501/J201 may move to the opposite PCB side only if stack, assembly and routing evidence supports it. G1 evaluated B.Cu relocation (G1-CB): connectors land inside the pack projection and do not thin the stack; not a lever. | scenario G1-CB (B.Cu connectors): not a thickness lever |
+
+OD-COVER and OD-REAR-SIDED are NOT revoked or reinterpreted because scenarios are over target (G1_BRIEF.md section 2).
+
+### G1.2 Thickness-recovery scenarios
+
+Target T_total 14.0-15.5 mm. Credibility rule (no optimistic/best-case supplier assumptions): nominal <= 15.5 AND RSS <= 15.5, every lever CREDIBLE_LATER_TASK (a later task inside existing authority), cover sized by the 5 ATM plate check with a passing air-gap check, no failed deterministic check, heights from package_heights max + solder (+ high-CV allowance), never nominal/minimum supplier values; h_pod is not a lever (T_total does not depend on it). The linear worst case is reported, not required. RSS uses each parameter's ACTUAL single-term sensitivity through the scenario rules (nesting can zero the lower-web sensitivity or double-count the insulator).
+
+| Scenario | T nominal | T RSS | T linear worst | T_body (h_pod 0.8) | <= 15.5 credible | Blocking reasons |
+|---|---:|---:|---:|---:|---|---|
+| G1-S4 | 16.750 | 17.195 | 18.410 | 15.950 | no | nominal T_total 16.75 > 15.5; RSS T_total 17.19 > 15.5 |
+| G1-P1 | 16.450 | 16.895 | 18.110 | 15.650 | no | nominal T_total 16.45 > 15.5; RSS T_total 16.89 > 15.5 |
+| G1-U8F | 16.750 | 17.195 | 18.410 | 15.950 | no | nominal T_total 16.75 > 15.5; RSS T_total 17.19 > 15.5; lever U8-F status NOT_A_LEVER; u8_relocation_fcu_geometry fails |
+| G1-U8B | 17.760 | 18.205 | 19.420 | 16.960 | no | nominal T_total 17.76 > 15.5; RSS T_total 18.20 > 15.5; lever U8-B status NOT_A_LEVER |
+| G1-CVG | 17.350 | 17.795 | 19.010 | 16.550 | no | nominal T_total 17.35 > 15.5; RSS T_total 17.79 > 15.5 |
+| G1-CVL | 16.200 | 16.685 | 18.010 | 15.400 | no | nominal T_total 16.20 > 15.5; RSS T_total 16.69 > 15.5; cover option COVER-SAP-OCA status OWNER_DECISION_GATED |
+| G1-CVGL | 16.200 | 16.685 | 18.010 | 15.400 | no | nominal T_total 16.20 > 15.5; RSS T_total 16.69 > 15.5; cover option COVER-GLS-OCA status OWNER_DECISION_GATED |
+| G1-IT | 16.650 | 17.095 | 18.310 | 15.850 | no | nominal T_total 16.65 > 15.5; RSS T_total 17.09 > 15.5 |
+| G1-I0 | 16.380 | 16.825 | 18.040 | 15.580 | no | nominal T_total 16.38 > 15.5; RSS T_total 16.82 > 15.5 |
+| G1-IS | 16.650 | 17.086 | 18.260 | 15.850 | no | nominal T_total 16.65 > 15.5; RSS T_total 17.09 > 15.5; lever INNER-SKINCONN status SUPPLIER_DATA_GATED |
+| G1-IN | 16.030 | 16.480 | 17.690 | 15.230 | no | nominal T_total 16.03 > 15.5; RSS T_total 16.48 > 15.5; lever INNER-NEST status SUPPLIER_DATA_GATED |
+| G1-CB | 16.750 | 17.195 | 18.410 | 15.950 | no | nominal T_total 16.75 > 15.5; RSS T_total 17.19 > 15.5; lever CONN-SIDE-B status NOT_A_LEVER |
+| G1-K1 | 16.350 | 16.795 | 18.010 | 15.550 | no | nominal T_total 16.35 > 15.5; RSS T_total 16.79 > 15.5 |
+| G1-K2 | 16.080 | 16.525 | 17.740 | 15.280 | no | nominal T_total 16.08 > 15.5; RSS T_total 16.52 > 15.5 |
+| G1-K3 | 15.730 | 16.180 | 17.390 | 14.930 | no | nominal T_total 15.73 > 15.5; RSS T_total 16.18 > 15.5; lever INNER-NEST status SUPPLIER_DATA_GATED |
+| G1-K4 | 15.180 | 15.670 | 16.990 | 14.380 | no | RSS T_total 15.67 > 15.5; lever INNER-NEST status SUPPLIER_DATA_GATED; cover option COVER-SAP-OCA status OWNER_DECISION_GATED |
+
+Cover options (5 ATM plate sizing, linear Kirchhoff plate, simply-supported sizing case, conservative upward grid rounding):
+
+| Option | Material | Bond | t_cover min/nom/max | Plate | Air gap | Gap used |
+|---|---|---|---|---|---|---|
+| COVER-GLS-AIR | cs_glass | air_gap | 1.400 / 1.750 / 2.400 | PASS | PASS | 0.350 |
+| COVER-GLS-OCA | - | oca | 0.600 / 0.800 / 1.000 | n/a (laminate not computable) | n/a | 0.150 |
+| COVER-SAP-AIR | sapphire | air_gap | 1.000 / 1.250 / 1.700 | PASS | PASS | 0.250 |
+| COVER-SAP-OCA | - | oca | 0.600 / 0.800 / 1.000 | n/a (laminate not computable) | n/a | 0.150 |
+
+Baseline cover sizing vs `inputs/stack_parameters.json` t_cover: PASS (stack 1.000/1.250/1.700, sized 1.000/1.250/1.700; the unrounded conservative requirement is ~1.6516 mm and the conservative upward 0.05 mm grid rounding gives 1.70 mm).
+
+Legacy arithmetic cross-check (package scenario S4 reproduced with the package tolerance terms): LEGACY-S4 nominal 15.850 / RSS 16.276 / linear 17.230 vs expected 15.850 / 16.276 / 17.230 - PASS.
+
+Passive-height optimisation evidence (P-0402, C901/C903 0603 -> 0402): 0402 MLCC in 4.7 uF and 2.2 uF exist as a class (no MPN invented). At 3.0 V a 6.3 V-class 0402 4.7 uF part loses a large share of its capacitance to DC bias; the effective capacitance must be checked against eMMC VCC guidance and, if short, C901 split into two 0402 parts (same height) or C902/C901 re-balanced. C903 at 1.8 V has less derating. Electrically valid in principle; requires the later MAIN BOM/placement task. G1 changes no schematic or footprint.
+
+### G1.3 Deterministic checks (5 ATM and geometry)
+
+- FPC under-run in the lower web: PASS (need 0.250 mm, have 0.300 mm, margin 0.050 mm).
+- U8 relocation on F.Cu (OD-U8): INFEASIBLE. Valid necessary bounds for a 10 mm square module: centre <= R_main - s/2 = 18.000 mm (inscribed-circle containment in MAIN) and centre > R_display = 21.950 mm (the module centre is a point of the module, so clearing the display outline requires the centre beyond it). 18.000 < 21.950, so no F.Cu position escapes the rigid display; the earlier orientation-dependent R_main - circumradius bound is replaced by this valid pair.
+- Caseback seal band (5 ATM, radial band at the case inner wall at REAR level): R_case_inner 24.050 mm nominal / 23.400 mm conservative; reservations crossing the band and needing separate feedthrough seals: CHG_CONTACT, VENT.
+- Cover rim vs the provisional case inner radius: nominal fit margin 0.550 mm with residual wall -0.150 mm (below the 0.7 mm bezel minimum); conservative fit margin -1.100 mm - the cover assembly does not fit the provisional mid-wall inner radius at the conservative corner. New conflict X25-COVER-CASE-FIT; gate G3 case co-design.
+- Optical window plate under 5 ATM (ATM-2, analytical model only, NOT a qualification): unsupported radius 10.600 / 12.550 mm (nominal / conservative = double-sided REAR envelope radius - 1.0 mm frame overlap); standoff available 0.100 mm nominal (c_optics). Support bounds: clamped = OPTIMISTIC / stronger-support bound, simply-supported = conservative / weaker-support bound (sizing case); outcomes are reported per support independently. 1 of 18 combinations pass the simply-supported bound; 3 more pass only the clamped bound and are CONDITIONAL ON VERIFIED CLAMPED/RESTRAINED SUPPORT (bond restraint unresolved, gated). 1 of 18 material/thickness/corner combinations pass the conservative simply-supported bound; 3 more pass only the clamped (optimistic) bound and are CONDITIONAL ON VERIFIED CLAMPED/RESTRAINED SUPPORT - the window bond restraint is unresolved and stays gated. No analytical result here is a 5 ATM qualification (ATM-Q2, X23 retained).
+  - Model validity: Linear small-deflection Kirchhoff plate, circular, uniform pressure. Support bounds: clamped edge = OPTIMISTIC / stronger-support bound (assumes verified edge rotation restraint); simply-supported edge = conservative / weaker-support bound and the sizing case. Outcomes are reported per support independently; a row passes only if the simply-supported bound passes. Validity limit: flagged where w/t > 0.5 (membrane stiffening then makes the linear result conservative). Analytical model with PARAMETRIC planning properties only - NOT a 5 ATM qualification; the actual window geometry, material and bond restraint remain unresolved (G2 pod concept / G3 caseback, ATM-Q2 window variant, X23) and any clamped-only pass is CONDITIONAL ON VERIFIED CLAMPED/RESTRAINED SUPPORT.
+
+### G1.4 5 ATM implications (OD-WATER)
+
+Axial and radial consequences of the 5 ATM / swim-capable target. Where a simple deterministic check was possible it is in `tools/g1_scenarios.py` (cover plate sizing + air gap + rim, window plate, seal-band crossings, FPC under-run); everything else is a qualification item with its gate. The analytical models are NOT 5 ATM qualification. Sealing-stack design and pressure/leak qualification are future validation work.
+
+| ID | Item | Axial consequence | Radial consequence | Check / qualification | Gate |
+|---|---|---|---|---|---|
+| ATM-1 | Front cover seal and cover strength | cover lens t_cover (sized 5 ATM) + air gap t_cover_bond in the centre stack | cover bond / seal land w_cover_land beyond the free span a; bezel wall outside the cover edge | cover_plate, cover_rim | G3 case co-design; SR-COVER-LENS |
+| ATM-2 | Optical window strength and seal | t_window and window retention flange (X22); the window must not deflect onto the optics or be propped by the barrier walls (X20) | window bond overlap a_window_frame | window_plate | G2 pod concept / G3 caseback; MG-WINDOW-XTALK window variant |
+| ATM-3 | Caseback seal, gasket compression and land width | gasket compression set and caseback stiffness are not in the stack (X22) | seal band at the case inner wall at REAR level must clear every REAR-level reservation or that item is sealed separately | rear_seal_band | G3 case co-design |
+| ATM-4 | Button seals SW1-SW5 | none in the centre stack | O-ring / membrane bore per button in the case wall (r 21-25.25 placeholders) | ATM-Q2 button seal pressure / cycling test after SR-BUTTONS selection | before perimeter freeze (SR-BUTTONS) |
+| ATM-5 | Charger contact feedthrough seal | contact block face seal compression at REAR level | CHG_CONTACT r 17.5-24.0 crosses the caseback seal band (rear_seal_band check) | rear_seal_band | before contact-module selection (SR-CHG-MECH) |
+| ATM-6 | Barometer vent membrane (U4) | membrane + support in the NE wall | VENT reservation az 30-60, r 19.5-25.25 | ATM-Q4 membrane water-entry pressure >= test pressure and barometer response (supplier membrane data) | G3 case co-design |
+| ATM-7 | Caseback / window stiffness under pressure | caseback and pod deflection must not load the REAR optical stack or the pack (X20) | none | ATM-Q5 caseback deflection analysis once the caseback material and thickness exist (G3), then a pressure test with the REAR module fitted | G3 case co-design |
+| ATM-8 | Leak / pressure qualification of the closed watch | none | none | ATM-Q1 select the 5 ATM test standard and margin (owner / qualification plan), then pressure + leak test of closed prototypes; ATM-Q6 swim / dynamic exposure as stated by that standard | before Rev-A sealing qualification |
+
+Qualification items: ATM-Q1 select the 5 ATM test standard and margin (owner / qualification plan); ATM-Q2 button seal pressure / cycling test after SR-BUTTONS selection (window variant under 5 ATM - the G1.3 window plate calculation is analytical only and any clamped-only pass is conditional on verified bond restraint); ATM-Q3 sealed charger contact feedthrough pressure test (SR-CHG-MECH); ATM-Q4 vent membrane water-entry pressure >= test pressure and barometer response; ATM-Q5 caseback deflection analysis once the caseback material/thickness exist (G3), then a pressure test with the REAR module fitted; ATM-Q6 swim / dynamic exposure as stated by the selected standard.
+
+### G1.5 Conflict reassessment (g1_status)
+
+Every conflict of section 12 now carries exactly one `g1_status` with evidence/dependency (`arch_diagrams.py check` enforces this). New conflict exposed by the integration: X25-COVER-CASE-FIT.
+
+| Conflict | g1_status | Evidence / dependency |
+|---|---|---|
+| C1-FRONT-GAP | REMAINS_OPEN | G1 evaluated U8 relocation (g1_scenarios G1-U8F/G1-U8B): the deterministic u8_relocation_fcu_geometry check shows no F.Cu position of a 10 mm module escapes the display outline (max centre radius 15.93 < 21.95), and B.Cu relocation thickens the stack to 17.76 nominal (G1-U8B). U8 stays in G1. Dependency: RF evidence for any move (OD-U8) and a later placement phase; owner thickness decision (C9). |
+| C2-DISPLAY-SIDE-CONNECTORS | REMAINS_OPEN | OD-DEVACCESS (2026-10-11) removes the post-sealing external-access requirement; all F.Cu mating (J1, J1301 SWD, TP13xx, J1501, J201, J202) stays in build state S1 (display absent). G1 changes no connector face. Dependency: assembly-order freeze, SR-FPC-MECH and SR-TAGCONNECT. |
+| C3-EDGE-WRAP | SUPPLIER_DATA_GATED | Already gated. Dependency: SR-FPC-MECH (R_bend_min, FPC exit heights, mouth radii) before outline freeze. |
+| C4-CHARGER-PATH | REMAINS_OPEN | OD-J202 permits moving the charger entry with mechanical/interconnect evidence; G1 does not move J202. Dependency: later placement phase plus SR-CHG-MECH (5 ATM feedthrough, ATM-Q3). |
+| C5-SOUTH-CROWDING | DEFERRED | Deferred to G2 (REAR optical + guarded-analog placement); unchanged by G1. |
+| C6-DISPLAY-FPC-FOLD | SUPPLIER_DATA_GATED | Dependency: SR-DISPLAY-FPC folded-FPC envelope drawing (t_display_fpc_fold is SUPPLIER_DATA_REQUIRED). |
+| C7-WIFI-BEYOND-BOARD | DEFERRED | Deferred to G3 case co-design (Wi-Fi radiator volume extends beyond the Ø46 development envelope). |
+| C8-GNSS-OCCUPIED | REMAINS_OPEN | OD-U8 allows a move only with mechanical AND RF evidence; the G1 geometry check excludes an F.Cu escape and B.Cu thickens the stack. Dependency: RF evidence (GNSS feed, antenna region) + placement phase. |
+| C9-THICK-CORNER | OWNER_DECISION_GATED | G1 scenario study (16 scenarios, tools/g1_scenarios.py, generated/g1_scenarios.json): no scenario is credibly <= 15.5 mm. Thinnest all-credible-lever scenario G1-K2 = 16.08 nominal / 16.53 RSS; the only sub-15.5-nominal scenario G1-K4 = 15.18 fails its RSS (15.67) and needs a supplier-gated pocket lever and an owner-gated laminated cover. Verdict: THICKNESS OWNER DECISION REQUIRED (G1_BRIEF.md 4.6 stop rule). |
+| X10-OPTICS-HEIGHT-UNKNOWN | SUPPLIER_DATA_GATED | Already gated. Dependency: SR-SFH4053B-DS and SR-MAX86141-HEIGHT before REAR optical placement. |
+| X11-POD-FOOTPRINT | REMAINS_OPEN | h_pod is not a lever (T_total does not depend on it; G1_BRIEF.md 4.5). Dependency: wrist/strap trials and the G2/G3 pod concept. |
+| X12-J1502-FACE | REMAINS_OPEN | OD-REAR-SIDED authorizes the inner-side J1502 with passives. G1 scenarios: G1-IT (flex tail, 0.70 mm inner height) and G1-I0 (tail + 0201 cap, 0.43 mm) are credible later tasks; G1-IS (skin-face connector) is supplier-gated. Dependency: SR-FPC-MECH (J1502 mated height or tail construction) + G2. |
+| X13-EDGE-CROSSINGS | SUPPLIER_DATA_GATED | Dependency: SR-FPC-MECH / SR-CHG-MECH / SR-BATT-PCM exit heights and mouth radii (unchanged by G1). |
+| X14-SUPPORT-GAP | DEFERRED | Deferred to G3 case co-design (case supports). |
+| X15-NE-CROWDING | DEFERRED | Deferred to G3 case co-design (NE vent/ALS crowding). |
+| X16-MAGNETOMETER | REMAINS_OPEN | Dependency: magnetometer interference analysis with the frozen charger-contact position; not addressed by G1 (no watch-side magnet introduced). |
+| X17-GNSS-ALL-HEIGHTS | REMAINS_OPEN | OD-U8: relocation needs RF evidence; the G1 geometry check excludes an F.Cu escape; U8 placement is not changed in G1. |
+| X18-PACK-EDGE | SUPPLIER_DATA_GATED | Dependency: SR-BATT-PACK finished-pack drawing (diameter/tolerance). |
+| X19-BCU-0603 | REMAINS_OPEN | G1 lever P-0402 (C901/C903 0603 -> 0402, 0.65 mm high-CV seated incl. solder and high-CV allowance) is a credible later task (-0.30 mm nominal, G1-P1). Dependency: later MAIN BOM/placement task - 0402 parts with >= 6.3 V rating, DC-bias effective capacitance at 3.0 V / 1.8 V vs eMMC guidance (electrical evidence in inputs/g1_scenarios.json); G1 changes no schematic or footprint. |
+| X20-GROWTH-VS-OPTICS | SUPPLIER_DATA_GATED | Dependency: SR-BATT-GROWTH permitted growth/restraint; the INNER-NEST carrier-floor pocket lever is gated on it (pack bulge into a window must never load the REAR stack). |
+| X21-INGRESS-UNDEFINED | REMAINS_OPEN | OD-WATER (2026-10-11) sets 5 ATM / swim-capable as the Rev-A mechanical design target. G1 records the 5 ATM implications (g1.atm5: cover plate sizing, seal bands, feedthrough seals, qualification items ATM-Q1..Q6). Dependency: G3 sealing-stack design + pressure/leak qualification (future validation work). |
+| X22-UNMODELLED-Z | REMAINS_OPEN | Gasket compression and caseback stiffness are not in the stack. Dependency: G3 caseback design and ATM-Q5 deflection analysis under the 5 ATM test pressure. |
+| X23-WINDOW-CROSSTALK | SUPPLIER_DATA_GATED | Already gated on MG-WINDOW-XTALK. The 5 ATM window plate check is added as qualification item ATM-Q2 window variant (g1.atm5). |
+| X24-DISPLAY-LAND | REMAINS_OPEN | OD-COVER (2026-10-11) resolves only the sealing responsibility: the separate cover lens is the exterior structural/water barrier and the display land is support/bond geometry. The conflict's geometry scope is NOT resolved: the -0.06 mm conservative U4 clearance (t_land must stay <= 0.74 mm over U4 or be relieved), the display-FPC fold interference (~10 mm of unsupported rim unless the supplier permits bonding to the fold stiffener) and the support-land geometry itself remain open. Dependencies: SR-DISPLAY-LAND (permitted support region, flatness, allowed pressure), SR-DISPLAY-FPC (fold envelope), G3 case co-design for the U4 relief / land interruption. |
+| X25-COVER-CASE-FIT | REMAINS_OPEN | G1 integration exposes the radial cover stack vs the provisional case: deterministic check cover_rim fails at the conservative corner (-1.10 mm) and the nominal residual wall (0.55) is below t_bezel_min (0.7). Dependency: G3 case co-design (front aperture / case outer / land width) + SR-COVER-LENS + SR-DISPLAY-LAND. |
+
+### G1.6 G1 verdict
+
+**THICKNESS OWNER DECISION REQUIRED**
+
+Stop rule (G1_BRIEF.md 4.6): no scenario is credibly <= 15.5 mm, so the G1 verdict is THICKNESS OWNER DECISION REQUIRED; the tradeoff table is presented and no requirement is weakened. OD-COVER and OD-REAR-SIDED are NOT revoked.
+
+- Thinnest scenario: G1-K4 at 15.180 mm nominal / 15.670 mm RSS (credible <= 15.5: no).
+- Thinnest scenario using only CREDIBLE_LATER_TASK levers: G1-K2 at 16.080 mm nominal / 16.525 mm RSS (still over target).
+
+Per the stop rule (G1_BRIEF.md 4.6) the tradeoff table above is presented and G1 stops here: no requirement is weakened to reach 15.5 mm, and OD-COVER / OD-REAR-SIDED stand. The owner decision needed (C9): accept > 15.5 mm, relax a target term with evidence, or authorize a gated lever path (INNER-NEST pocketing needs SR-BATT-GROWTH unsupported-span data; a laminated cover needs OD-COVER-LOADPATH + SR-DISPLAY-LAND + SR-COVER-LENS) - noting G1-K4 (15.18 nominal) still fails its RSS (15.67) and is not credible as it stands.

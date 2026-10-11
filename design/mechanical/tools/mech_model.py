@@ -67,7 +67,7 @@ EXPECTED_RADIAL_CHECKS = {
     "margin_edge_wrap": "R_case_inner - R_edge_wrap_outer",
     "margin_main_to_case": "R_case_inner - R_main  (bare MAIN edge clearance, before any FPC)",
 }
-EXPECTED_Z_ORDER = ["front_extra", "front_bond", "display", "front_gap", "main_pcb", "back_zone",
+EXPECTED_Z_ORDER = ["cover", "cover_bond", "display", "front_gap", "main_pcb", "back_zone",
                     "battery_zone", "lower_web", "rear_inner", "rear_pcb", "optics_zone", "window"]
 
 
@@ -526,8 +526,8 @@ def eval_stack(p, hf, hb):
     def direct(lid, name):
         add(lid, p[name], name, {name: p[name]}, [name])
 
-    direct("front_extra", "t_front_extra")
-    direct("front_bond", "t_front_bond")
+    direct("cover", "t_cover")            # G1 baseline: separate exterior cover lens (OD-COVER)
+    direct("cover_bond", "t_cover_bond")  # cover rear face to display front face (air gap or OCA)
     direct("display", "t_display")
     # front_gap
     t = [("H_F_under_display + c_front", hf + p["c_front"], ["c_front"]),

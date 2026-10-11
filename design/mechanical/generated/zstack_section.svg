@@ -3,50 +3,50 @@
 <text x="10" y="20" font-size="14" font-weight="bold">Z-stack CENTER station (nominal) - front at top</text>
 <text x="10" y="36" font-size="10">front view from display; north = -Y; PROVISIONAL PARAMETRIC STUDY</text>
 <text x="70" y="72" font-size="10">FRONT (display exterior)</text>
-<line x1="70" y1="80" x2="180" y2="80" stroke="#444444" stroke-width="1"/>
-<polyline points="180,80 200,93 212,93" fill="none" stroke="#888888" stroke-width="0.7"/>
-<text x="216" y="97" font-size="10">front_extra 0 mm  [t_front_extra]</text>
-<rect x="70" y="80" width="110" height="5.4" fill="#f4cccc" stroke="#444444" stroke-width="0.8"/>
-<polyline points="180,82.7 200,110 212,110" fill="none" stroke="#888888" stroke-width="0.7"/>
-<text x="216" y="114" font-size="10">front_bond 0.15 mm  [t_front_bond]</text>
-<rect x="70" y="85.4" width="110" height="73.8" fill="#cfe2f3" stroke="#444444" stroke-width="0.8"/>
-<polyline points="180,122.3 200,127 212,127" fill="none" stroke="#888888" stroke-width="0.7"/>
-<text x="216" y="131" font-size="10">display 2.05 mm  [t_display]</text>
-<rect x="70" y="159.2" width="110" height="102.6" fill="#ead1dc" stroke="#444444" stroke-width="0.8"/>
-<polyline points="180,210.5 200,210.5 212,210.5" fill="none" stroke="#888888" stroke-width="0.7"/>
-<text x="216" y="214.5" font-size="10">front_gap 2.85 mm  [H_F_under_display + c_front]</text>
-<rect x="70" y="261.8" width="110" height="28.8" fill="#d9d2e9" stroke="#444444" stroke-width="0.8"/>
-<polyline points="180,276.2 200,276.2 212,276.2" fill="none" stroke="#888888" stroke-width="0.7"/>
-<text x="216" y="280.2" font-size="10">main_pcb 0.8 mm  [t_main]</text>
-<rect x="70" y="290.6" width="110" height="39.6" fill="#d0e0e3" stroke="#444444" stroke-width="0.8"/>
-<polyline points="180,310.4 200,310.4 212,310.4" fill="none" stroke="#888888" stroke-width="0.7"/>
-<text x="216" y="314.4" font-size="10">back_zone 1.1 mm  [H_B_in_battery + c_back (+ t_insulator)]</text>
-<rect x="70" y="330.2" width="110" height="180" fill="#fff2cc" stroke="#444444" stroke-width="0.8"/>
-<polyline points="180,420.2 200,420.2 212,420.2" fill="none" stroke="#888888" stroke-width="0.7"/>
-<text x="216" y="424.2" font-size="10">battery_zone 5 mm  [sum(t_pack_nom + tol_pack_thick + g_axial + c_axial)]</text>
-<rect x="70" y="510.2" width="110" height="14.4" fill="#d9ead3" stroke="#444444" stroke-width="0.8"/>
-<polyline points="180,517.4 200,517.4 212,517.4" fill="none" stroke="#888888" stroke-width="0.7"/>
-<text x="216" y="521.4" font-size="10">lower_web 0.4 mm  [t_lower_web]</text>
-<line x1="70" y1="524.6" x2="180" y2="524.6" stroke="#444444" stroke-width="1"/>
-<polyline points="180,524.6 200,534.4 212,534.4" fill="none" stroke="#888888" stroke-width="0.7"/>
-<text x="216" y="538.4" font-size="10">rear_inner 0 mm  [h_rear_inner == 0]</text>
-<rect x="70" y="524.6" width="110" height="28.8" fill="#c9daf8" stroke="#444444" stroke-width="0.8"/>
-<polyline points="180,539 200,551.4 212,551.4" fill="none" stroke="#888888" stroke-width="0.7"/>
-<text x="216" y="555.4" font-size="10">rear_pcb 0.8 mm  [t_rear_pcb]</text>
-<rect x="70" y="553.4" width="110" height="30.6" fill="#ffe599" stroke="#444444" stroke-width="0.8"/>
-<polyline points="180,568.7 200,568.7 212,568.7" fill="none" stroke="#888888" stroke-width="0.7"/>
-<text x="216" y="572.7" font-size="10">optics_zone 0.85 mm  [h_optics_max + c_optics]</text>
-<rect x="70" y="584" width="110" height="18" fill="#a2c4c9" stroke="#444444" stroke-width="0.8"/>
-<polyline points="180,593 200,593 212,593" fill="none" stroke="#888888" stroke-width="0.7"/>
-<text x="216" y="597" font-size="10">window 0.5 mm  [t_window]</text>
-<text x="70" y="618" font-size="10">REAR (skin contact / window outer face)</text>
-<line x1="52" y1="80" x2="52" y2="602" stroke="#000000" stroke-width="1"/>
+<rect x="70" y="80" width="110" height="45" fill="#fce5cd" stroke="#444444" stroke-width="0.8"/>
+<polyline points="180,102.5 200,102.5 212,102.5" fill="none" stroke="#888888" stroke-width="0.7"/>
+<text x="216" y="106.5" font-size="10">cover 1.25 mm  [t_cover]</text>
+<rect x="70" y="125" width="110" height="9" fill="#f4cccc" stroke="#444444" stroke-width="0.8"/>
+<polyline points="180,129.5 200,129.5 212,129.5" fill="none" stroke="#888888" stroke-width="0.7"/>
+<text x="216" y="133.5" font-size="10">cover_bond 0.25 mm  [t_cover_bond]</text>
+<rect x="70" y="134" width="110" height="73.8" fill="#cfe2f3" stroke="#444444" stroke-width="0.8"/>
+<polyline points="180,170.9 200,170.9 212,170.9" fill="none" stroke="#888888" stroke-width="0.7"/>
+<text x="216" y="174.9" font-size="10">display 2.05 mm  [t_display]</text>
+<rect x="70" y="207.8" width="110" height="102.6" fill="#ead1dc" stroke="#444444" stroke-width="0.8"/>
+<polyline points="180,259.1 200,259.1 212,259.1" fill="none" stroke="#888888" stroke-width="0.7"/>
+<text x="216" y="263.1" font-size="10">front_gap 2.85 mm  [H_F_under_display + c_front]</text>
+<rect x="70" y="310.4" width="110" height="28.8" fill="#d9d2e9" stroke="#444444" stroke-width="0.8"/>
+<polyline points="180,324.8 200,324.8 212,324.8" fill="none" stroke="#888888" stroke-width="0.7"/>
+<text x="216" y="328.8" font-size="10">main_pcb 0.8 mm  [t_main]</text>
+<rect x="70" y="339.2" width="110" height="39.6" fill="#d0e0e3" stroke="#444444" stroke-width="0.8"/>
+<polyline points="180,359 200,359 212,359" fill="none" stroke="#888888" stroke-width="0.7"/>
+<text x="216" y="363" font-size="10">back_zone 1.1 mm  [H_B_in_battery + c_back (+ t_insulator)]</text>
+<rect x="70" y="378.8" width="110" height="180" fill="#fff2cc" stroke="#444444" stroke-width="0.8"/>
+<polyline points="180,468.8 200,468.8 212,468.8" fill="none" stroke="#888888" stroke-width="0.7"/>
+<text x="216" y="472.8" font-size="10">battery_zone 5 mm  [sum(t_pack_nom + tol_pack_thick + g_axial + c_axial)]</text>
+<rect x="70" y="558.8" width="110" height="14.4" fill="#d9ead3" stroke="#444444" stroke-width="0.8"/>
+<polyline points="180,566 200,566 212,566" fill="none" stroke="#888888" stroke-width="0.7"/>
+<text x="216" y="570" font-size="10">lower_web 0.4 mm  [t_lower_web]</text>
+<rect x="70" y="573.2" width="110" height="32.4" fill="#e6b8af" stroke="#444444" stroke-width="0.8"/>
+<polyline points="180,589.4 200,589.4 212,589.4" fill="none" stroke="#888888" stroke-width="0.7"/>
+<text x="216" y="593.4" font-size="10">rear_inner 0.9 mm  [h_rear_inner + c_rear_inner]</text>
+<rect x="70" y="605.6" width="110" height="28.8" fill="#c9daf8" stroke="#444444" stroke-width="0.8"/>
+<polyline points="180,620 200,620 212,620" fill="none" stroke="#888888" stroke-width="0.7"/>
+<text x="216" y="624" font-size="10">rear_pcb 0.8 mm  [t_rear_pcb]</text>
+<rect x="70" y="634.4" width="110" height="30.6" fill="#ffe599" stroke="#444444" stroke-width="0.8"/>
+<polyline points="180,649.7 200,649.7 212,649.7" fill="none" stroke="#888888" stroke-width="0.7"/>
+<text x="216" y="653.7" font-size="10">optics_zone 0.85 mm  [h_optics_max + c_optics]</text>
+<rect x="70" y="665" width="110" height="18" fill="#a2c4c9" stroke="#444444" stroke-width="0.8"/>
+<polyline points="180,674 200,674 212,674" fill="none" stroke="#888888" stroke-width="0.7"/>
+<text x="216" y="678" font-size="10">window 0.5 mm  [t_window]</text>
+<text x="70" y="699" font-size="10">REAR (skin contact / window outer face)</text>
+<line x1="52" y1="80" x2="52" y2="683" stroke="#000000" stroke-width="1"/>
 <line x1="48" y1="80" x2="56" y2="80" stroke="#000000"/>
-<line x1="48" y1="602" x2="56" y2="602" stroke="#000000"/>
-<text x="46" y="341" font-size="11" text-anchor="middle" transform="rotate(-90 46 341)">T_total = 14.5 mm</text>
-<line x1="64" y1="573.2" x2="186" y2="573.2" stroke="#cc0000" stroke-width="1" stroke-dasharray="4 2"/>
-<text x="70" y="636" font-size="10" fill="#cc0000">dashed: T_body plane at h_pod = 0.8 nominal (T_body = 13.7 mm)</text>
-<text x="70" y="654" font-size="10">nominal margins: T_total to 14.0 = 0.5, to 15.5 = 1</text>
+<line x1="48" y1="683" x2="56" y2="683" stroke="#000000"/>
+<text x="46" y="381.5" font-size="11" text-anchor="middle" transform="rotate(-90 46 381.5)">T_total = 16.75 mm</text>
+<line x1="64" y1="654.2" x2="186" y2="654.2" stroke="#cc0000" stroke-width="1" stroke-dasharray="4 2"/>
+<text x="70" y="717" font-size="10" fill="#cc0000">dashed: T_body plane at h_pod = 0.8 nominal (T_body = 15.95 mm)</text>
+<text x="70" y="735" font-size="10">nominal margins: T_total to 14.0 = 2.75, to 15.5 = -1.25</text>
 <text x="700" y="20" font-size="14" font-weight="bold">South radial section (nominal) - r from watch centre</text>
 <text x="700" y="36" font-size="10">radius axis in mm; margins = R_case_inner - requirement</text>
 <text x="700" y="58" font-size="10">A. straight FPC run beside pack</text>

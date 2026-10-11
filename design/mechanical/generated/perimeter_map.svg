@@ -245,9 +245,10 @@
 <text x="880.00" y="649.00" font-size="9.00" fill="#7f8c8d" text-anchor="start" font-weight="normal">X18 Support search windows and battery exit overlap the nomina</text>
 <text x="880.00" y="662.00" font-size="9.00" fill="#7f8c8d" text-anchor="start" font-weight="normal">X19 Two 0603 B.Cu capacitors govern the back zone</text>
 <text x="880.00" y="675.00" font-size="9.00" fill="#d35400" text-anchor="start" font-weight="normal">X20 Pack growth / compression must never load the optical stac</text>
-<text x="880.00" y="688.00" font-size="9.00" fill="#d35400" text-anchor="start" font-weight="normal">X21 No ingress / water-resistance target is defined</text>
+<text x="880.00" y="688.00" font-size="9.00" fill="#d35400" text-anchor="start" font-weight="normal">X21 Ingress target answered (OD-WATER: 5 ATM / swim-capable); </text>
 <text x="880.00" y="701.00" font-size="9.00" fill="#d35400" text-anchor="start" font-weight="normal">X22 Several Z items are not in the tool stack</text>
 <text x="880.00" y="714.00" font-size="9.00" fill="#d35400" text-anchor="start" font-weight="normal">X23 Residual crosstalk through a continuous optical window is </text>
 <text x="880.00" y="727.00" font-size="9.00" fill="#c0392b" text-anchor="start" font-weight="normal">X24 Display support land competes with the display-FPC fold, r</text>
+<text x="880.00" y="740.00" font-size="9.00" fill="#d35400" text-anchor="start" font-weight="normal">X25 Cover free span + bond/seal land + bezel wall vs the provi</text>
 <text x="20.00" y="846.00" font-size="9.00" fill="#555" text-anchor="start" font-weight="normal">Clock faces: az = degrees clockwise from north; z-levels per architecture.json reservations. Black squares: key MAIN parts from main_height_map.json.</text>
 </svg>

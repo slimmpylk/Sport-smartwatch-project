@@ -1,0 +1,232 @@
+{
+  "schema": "sportwatch-mech-g1-scenarios/1",
+  "status": "PROVISIONAL G1 thickness-recovery study (design/mechanical/G1_BRIEF.md section 4). Authored definitions only: every total, sizing, check and credibility verdict is computed by tools/g1_scenarios.py from these definitions, inputs/stack_parameters.json (via mech_model.eval_stack) and generated/main_height_map.json. Nothing here is a supplier dimension.",
+  "baseline_cover_option": "COVER-SAP-AIR",
+  "credibility_rule": [
+    "nominal T_total <= target upper (15.5) AND RSS T_total <= target upper; the linear worst case is reported, not required",
+    "every lever in the scenario has status CREDIBLE_LATER_TASK (a later electrical / placement / G2 task inside existing authority, no unavailable supplier, RF or owner evidence)",
+    "the cover option is sized by the 5 ATM plate check (status PASS or PASS_NOMINAL) and its air gap check passes; a laminated (OCA) option is not computable today",
+    "no deterministic scenario check fails (FPC under-run in the lower web, U8 geometric feasibility)",
+    "no lever uses a best-case supplier value: heights come from package_heights.json max + solder allowance (+ high-CV allowance), never from nominal or minimum supplier values; h_pod is not a lever because T_total does not depend on it"
+  ],
+  "tolerance_policy": {
+    "note": "Design choices are fixed per scenario at their scenario value; tolerance terms are then stacked: linear = every term at +delta simultaneously (evaluated through the stack rules), RSS = nominal + sqrt(sum of squared single-term sensitivities).",
+    "package_terms_from_stack_max_minus_nom": ["t_display", "c_front", "t_main", "c_back", "t_insulator", "tol_pack_thick", "g_axial", "c_axial", "h_optics_max", "c_optics"],
+    "package_terms_explicit": [
+      {"param": "t_cover_bond", "delta_mm": 0.1, "note": "bond-line term carried over unchanged from the package t_front_bond tolerance (0.25 - 0.15)"}
+    ],
+    "double_sided_terms_from_stack_max_minus_nom": ["c_rear_inner"],
+    "g1_added_terms": [
+      {"param": "t_cover", "delta_mm": 0.05, "note": "G1-added: cover lens thickness tolerance (ground sapphire / glass class); PARAMETRIC, SR-COVER-LENS"},
+      {"param": "h_rear_inner", "delta_mm": 0.05, "note": "G1-added: inner-face governing part height tolerance (connector mated height or passive); PARAMETRIC, SR-FPC-MECH"},
+      {"param": "t_rear_pcb", "delta_mm": 0.08, "note": "G1-added: REAR PCB fabrication tolerance (+10 % of 0.8, same rule as t_main); the package carried none"},
+      {"param": "t_window", "delta_mm": 0.05, "note": "G1-added: optical window thickness tolerance; the package carried none"},
+      {"param": "t_lower_web", "delta_mm": 0.05, "note": "G1-added: moulded carrier floor tolerance; the package carried none"}
+    ]
+  },
+  "legacy_reference": {
+    "id": "LEGACY-S4",
+    "note": "Reproduction of the package scenario S4 (added cover 0.5 + double-sided REAR) with the package tolerance terms only, as the arithmetic cross-check of the G1 starting point.",
+    "overrides": {"t_cover": 0.5, "t_cover_bond": 0.15, "h_rear_inner": 0.75},
+    "expected_mm": {"nominal": 15.85, "rss": 16.276, "linear": 17.23},
+    "expected_source": "architecture.json scenario_results S4 at commit 4e80e9e (package: 15.85 nominal / 16.28 RSS / 17.23 linear worst, architecture.md A)"
+  },
+  "h_pod_reported_mm": 0.8,
+  "heights": {
+    "high_cv_extra_mm": 0.05,
+    "high_cv_note": "PARAMETRIC: package_heights.json C_0402_1005Metric note 'high-CV parts may be 0.6+'; added on top of max_mm + solder allowance for 2.2 uF-and-above 0402 MLCC (no MPN)",
+    "tail_joint_mm": 0.05,
+    "tail_joint_note": "PARAMETRIC: hot-bar / ACF solder or adhesive line under a flex tail; the tail itself uses t_fpc max from stack_parameters radial",
+    "h_conn_class_param": "h_rear_inner",
+    "h_conn_note": "fine-pitch board-to-FPC connector mated-height class (same range as h_rear_inner, governed by J1502); used for any connector moved onto a face it does not occupy today"
+  },
+  "electrical_evidence": {
+    "schematic": "09_STORAGE.kicad_sch",
+    "refs": {
+      "C901": {"value": "4.7uF", "footprint": "C_0603_1608Metric", "description": "eMMC VCC bulk decoupling", "rail": "VCC = VOUT2_3V0_PROVISIONAL (3.0 V; Kingston 2.7-3.6 V)"},
+      "C903": {"value": "2.2uF", "footprint": "C_0603_1608Metric", "description": "eMMC VCCQ bulk decoupling", "rail": "VCCQ = VOUT1_1V8 (1.8 V)"}
+    },
+    "rail_source": "09_STORAGE.kicad_sch sheet notes (read-only): 'VCC = VOUT2_3V0_PROVISIONAL. Kingston allows 2.7-3.6 V', 'VCCQ = VOUT1_1V8', 'C901/C902: VCC 4.7uF + 220nF. C903/C904: VCCQ 2.2uF + 100nF'",
+    "voltage_rating": "no voltage-rating property on C901/C903 in the schematic or BOM (no MPN); a later task must select the rating",
+    "assessment": "0402 MLCC in 4.7 uF and 2.2 uF exist as a class (no MPN invented). At 3.0 V a 6.3 V-class 0402 4.7 uF part loses a large share of its capacitance to DC bias; the effective capacitance must be checked against eMMC VCC guidance and, if short, C901 split into two 0402 parts (same height) or C902/C901 re-balanced. C903 at 1.8 V has less derating. Electrically valid in principle; requires the later MAIN BOM/placement task. G1 changes no schematic or footprint."
+  },
+  "levers": [
+    {
+      "id": "P-0402",
+      "title": "C901 / C903 re-footprinted 0603 -> 0402 (B.Cu, governing back_zone)",
+      "type": "bcu_refootprint",
+      "refs": ["C901", "C903"],
+      "to_footprint": "C_0402_1005Metric",
+      "high_cv": true,
+      "status": "CREDIBLE_LATER_TASK",
+      "design_change": "C901 (4.7 uF) and C903 (2.2 uF) as 0402 high-CV MLCC; carrier storage pocket depth recomputed",
+      "dependencies": ["later MAIN BOM / placement task: 0402 parts with >= 6.3 V rating, DC-bias effective capacitance at 3.0 V / 1.8 V vs eMMC guidance, schematic footprint change, PCB re-placement inside the storage pocket"],
+      "risks": ["DC-bias derating may need a second 0402 on VCC (same height, more area)", "high-CV 0402 heights vary by MPN: the 0.05 high-CV allowance must be confirmed at MPN freeze"]
+    },
+    {
+      "id": "U8-F",
+      "title": "U8 relocated elsewhere on MAIN F.Cu (OD-U8 relocation, part unchanged)",
+      "type": "u8_relocate_fcu",
+      "status": "NOT_A_LEVER",
+      "design_change": "none evaluated as feasible: the rigid display covers every F.Cu position a 10 mm module can occupy",
+      "dependencies": ["RF evidence would also be required (GNSS feed network C1420/C1421/R1420, GNSS_RAD, display shadowing) - not reached because the geometry already excludes the lever"],
+      "risks": ["none added; U8 placement is not changed in G1"]
+    },
+    {
+      "id": "U8-B",
+      "title": "U8 moved to MAIN B.Cu (OD-U8 relocation, part unchanged)",
+      "type": "u8_relocate_bcu",
+      "status": "NOT_A_LEVER",
+      "design_change": "U8 on B.Cu inside the pack projection: front gap falls to the runner-up, back zone rises to the U8 height",
+      "dependencies": ["RF evidence (antenna feed through the board, pack and carrier shadowing) - not reached because the stack gets thicker"],
+      "risks": ["module faces the pack: thermal and RF coupling to the cell; thicker stack"]
+    },
+    {
+      "id": "INNER-TAIL",
+      "title": "Hot-bar / ACF flex tail instead of an inner-face J1502 connector",
+      "type": "inner_height",
+      "inner_parts": "0402_high_cv",
+      "tail": true,
+      "status": "CREDIBLE_LATER_TASK",
+      "design_change": "J1502 becomes a 24-position solder/ACF tail land on the REAR inner face (positions, nets and continuity map unchanged); the inner face carries 0402 passives incl. the 22 uF / 10 uF high-CV parts",
+      "dependencies": ["SR-FPC-MECH: tail construction, land pattern, bonding process and rework rule", "G2 REAR placement", "service model: REAR + FPC become one sub-assembly; J1501 on MAIN stays the demountable joint (OD-DEVACCESS needs no post-closure access)"],
+      "risks": ["REAR and FPC can no longer be separated without re-bonding", "tail exit must turn into the lower web without loading the REAR board"]
+    },
+    {
+      "id": "INNER-0201",
+      "title": "Flex tail + inner-face passives capped at the 0201 class (high-CV parts stay skin-side)",
+      "type": "inner_height",
+      "inner_parts": "0201",
+      "tail": true,
+      "status": "CREDIBLE_LATER_TASK",
+      "design_change": "inner face: flex tail land + 0201 passives only (100 nF / 1 uF class, 0402 resistors re-footprinted to 0201); C4101/C4201 (22 uF) and C4104/C4204 (10 uF) stay on the skin face next to the AFEs, below h_optics_max",
+      "dependencies": ["INNER-TAIL dependencies", "G2 placement and electrical review of REAR decoupling placement (values read from rear_sensor/04_PPG.kicad_sch: C403-C408 100 nF, C4102/C4202 100 nF, C4103/C4203 1.0 uF, C802 100 nF, R401-R409 10k-100k)"],
+      "risks": ["skin-face area grows by the high-CV parts (pod footprint, X11)", "0201 assembly on the inner face of a double-sided board"]
+    },
+    {
+      "id": "INNER-NEST",
+      "title": "Carrier floor pocketed over the REAR inner-face parts (as MAIN B.Cu pockets)",
+      "type": "inner_nest",
+      "status": "SUPPLIER_DATA_GATED",
+      "design_change": "lower web keeps its thickness but opens windows over the inner-face parts; a PI film closes the window toward the pack: rear_inner + lower_web -> max(lower_web, rear_inner) + t_insulator",
+      "dependencies": ["SR-BATT-GROWTH: permitted unsupported pack span over the windows and growth pressure", "X20: pack growth must never load the REAR board / optical stack"],
+      "risks": ["pack bulge into a window loads the REAR inner parts and pushes the optical stack (X20)", "FPC under-run must route around the windows"]
+    },
+    {
+      "id": "INNER-SKINCONN",
+      "title": "J1502 on the skin face (inside the pod), inner face passives only",
+      "type": "skin_connector",
+      "inner_parts": "0402_high_cv",
+      "status": "SUPPLIER_DATA_GATED",
+      "design_change": "J1502 moves to the optical face inside the pod; the FPC wraps the REAR edge; the connector competes with h_optics_max",
+      "dependencies": ["SR-FPC-MECH: mated height must be <= h_optics_max or it raises optics_zone", "G2: pod footprint grows by the connector"],
+      "risks": ["connector inside the optical pod: stray light, pod footprint (X11)", "FPC wrap around the REAR edge needs bend radius"]
+    },
+    {
+      "id": "CONN-SIDE-B",
+      "title": "J1501 and J201 moved to MAIN B.Cu (OD-CONN-SIDE evidence)",
+      "type": "bcu_connector",
+      "status": "NOT_A_LEVER",
+      "design_change": "connectors on B.Cu inside the pack projection (only 1.0 mm of MAIN lies outside R_pack_nom): the connector mated height joins the back zone",
+      "dependencies": ["placement phase; SR-FPC-MECH and SR-BATT-PCM mated heights"],
+      "risks": ["thicker back zone; connector under the pack"]
+    }
+  ],
+  "cover_options": [
+    {
+      "id": "COVER-SAP-AIR",
+      "title": "Sapphire-class cover, carries 5 ATM alone, air gap to the display (G1 baseline)",
+      "material": "sapphire",
+      "bond": "air_gap",
+      "status": "COMPUTED",
+      "design_change": "separate sapphire-class cover bonded/sealed to a case bezel ledge outside the display (a > R_display); air gap to the display front face",
+      "dependencies": ["SR-COVER-LENS (material strength, thickness tolerance, edge finish, bond)", "SR-DISPLAY-LAND (display support only, not the seal)", "5 ATM qualification of the cover-to-case bond"],
+      "risks": ["planning strength allowables are not supplier data", "simply-supported sizing at the conservative corner needs the max thickness"]
+    },
+    {
+      "id": "COVER-GLS-AIR",
+      "title": "Chemically strengthened glass cover, carries 5 ATM alone, air gap",
+      "material": "cs_glass",
+      "bond": "air_gap",
+      "status": "COMPUTED",
+      "design_change": "aluminosilicate CS glass cover sized by the same plate check; larger air gap for its larger deflection",
+      "dependencies": ["SR-COVER-LENS"],
+      "risks": ["lower planning allowable and stiffness than sapphire: thicker cover and air gap"]
+    },
+    {
+      "id": "COVER-SAP-OCA",
+      "title": "Sapphire-class cover optically bonded (OCA) to the display; laminate shares the pressure",
+      "material": "sapphire",
+      "bond": "oca",
+      "t_cover_mm": {"min": 0.6, "nom": 0.8, "max": 1.0},
+      "t_cover_note": "PARAMETRIC LOW planning range for a laminated cover; the laminate cannot be sized without the display glass build-up and its permitted pressure (SR-DISPLAY-LAND, SR-COVER-LENS); nominal is not the minimum",
+      "status": "OWNER_DECISION_GATED",
+      "design_change": "cover laminated to the display front with OCA; pressure load shared with the display module",
+      "dependencies": ["OD-COVER-LOADPATH: owner clarification whether a laminated display that shares the pressure load is compatible with OD-COVER ('display module is not the exterior structural or water barrier')", "SR-DISPLAY-LAND: permitted pressure / lamination on the display front", "SR-COVER-LENS: laminate design"],
+      "risks": ["display module carries part of the 5 ATM load", "lamination yield / rework: display and cover become one part"]
+    },
+    {
+      "id": "COVER-GLS-OCA",
+      "title": "CS glass cover optically bonded (OCA) to the display",
+      "material": "cs_glass",
+      "bond": "oca",
+      "t_cover_mm": {"min": 0.6, "nom": 0.8, "max": 1.0},
+      "t_cover_note": "PARAMETRIC LOW planning range, same basis as COVER-SAP-OCA",
+      "status": "OWNER_DECISION_GATED",
+      "design_change": "as COVER-SAP-OCA with CS glass",
+      "dependencies": ["as COVER-SAP-OCA"],
+      "risks": ["as COVER-SAP-OCA; lower scratch resistance than sapphire"]
+    }
+  ],
+  "oca_t_cover_bond_mm": 0.15,
+  "oca_note": "PARAMETRIC: OCA lamination layer 0.10-0.25 class, nominal 0.15 (not the minimum); replaces the air gap for laminated options",
+  "plate_check": {
+    "method": "Linear small-deflection Kirchhoff plate, circular, uniform pressure p (Roark / Timoshenko closed forms): D = E t^3 / (12 (1 - nu^2)); clamped edge: w = p a^4 / (64 D), sigma = 3 p a^2 / (4 t^2); simply supported edge: w = (5 + nu) p a^4 / (64 (1 + nu) D), sigma = 3 (3 + nu) p a^2 / (8 t^2). A PSA / adhesive ring on a ledge lets the edge rotate, so simply supported is the sizing case; clamped is the optimistic bound. Flagged beyond small-deflection validity when w / t > 0.5 (membrane stiffening then makes the linear result conservative).",
+    "corners": "nominal = p nom, a nom, nu nom, E nom, sigma_allow nom; conservative = p max, a max, nu max, E min, sigma_allow min",
+    "status_rule": "PASS = simply supported passes at the conservative corner; PASS_NOMINAL = passes at nominal only; FAIL = fails at nominal",
+    "rounding_mm": 0.05,
+    "p_test_MPa": {"min": 0.5, "nom": 0.5, "max": 0.625, "class": "PARAMETRIC", "confidence": "LOW", "source": "OD-WATER 2026-10-11: 5 ATM read as 5 bar static overpressure; max = 1.25 x assumed qualification margin. The test standard and its margin are not in the repository (qualification item ATM-Q1)."},
+    "a_cover_mm": {"min": 22.15, "nom": 22.5, "max": 23.0, "class": "PARAMETRIC", "confidence": "LOW", "source": "Free span radius of the cover = inner edge of its bond ledge; the ledge lies outside the display (R_display 21.95 + >= 0.2 assembly clearance) so the display can approach the cover; max = MAIN radius 23.0 (case G3)."},
+    "w_cover_land_mm": {"min": 0.8, "nom": 1.0, "max": 1.5, "class": "PARAMETRIC", "confidence": "LOW", "source": "Cover bond / seal land width beyond a (PSA or adhesive ring for 5 ATM); SR-COVER-LENS."},
+    "t_bezel_min_mm": {"min": 0.5, "nom": 0.7, "max": 1.0, "class": "PARAMETRIC", "confidence": "LOW", "source": "Minimum case bezel wall outside the cover edge (case G3)."},
+    "c_gap_mm": 0.05,
+    "c_gap_note": "PARAMETRIC: minimum residual air gap between the deflected cover and the display at the test pressure",
+    "a_window_frame_mm": 1.0,
+    "a_window_note": "PARAMETRIC: window bond / frame overlap subtracted from the double-sided REAR envelope radius to get the unsupported window radius (barrier walls are not counted as supports: they must not carry the pressure load, X20)",
+    "materials": {
+      "sapphire": {"E_MPa": {"min": 345000, "nom": 345000, "max": 470000}, "nu": {"min": 0.25, "nom": 0.29, "max": 0.3}, "sigma_allow_MPa": {"min": 150, "nom": 200, "max": 300}, "class": "PARAMETRIC", "confidence": "LOW", "source": "generic single-crystal sapphire class (orientation-dependent modulus); sigma_allow = planning design allowable at the test pressure (flexural strength class divided by a safety factor), not a supplier value; SR-COVER-LENS"},
+      "cs_glass": {"E_MPa": {"min": 65000, "nom": 71000, "max": 77000}, "nu": {"min": 0.21, "nom": 0.22, "max": 0.23}, "sigma_allow_MPa": {"min": 70, "nom": 100, "max": 150}, "class": "PARAMETRIC", "confidence": "LOW", "source": "generic chemically strengthened aluminosilicate glass class; planning allowable, not a supplier value; SR-COVER-LENS"},
+      "pc": {"E_MPa": {"min": 2200, "nom": 2300, "max": 2400}, "nu": {"min": 0.37, "nom": 0.37, "max": 0.38}, "sigma_allow_MPa": {"min": 20, "nom": 30, "max": 40}, "class": "PARAMETRIC", "confidence": "LOW", "source": "generic optical polycarbonate class (window option only); planning allowable incl. creep, not a supplier value"}
+    },
+    "window_materials": ["sapphire", "cs_glass", "pc"],
+    "w_caseback_seal_mm": {"min": 0.8, "nom": 1.0, "max": 1.5, "class": "PARAMETRIC", "confidence": "LOW", "source": "Radial band for a caseback face / radial seal at the case inner wall at REAR level (O-ring or flat gasket groove + land; G3)."}
+  },
+  "scenarios": [
+    {"id": "G1-S4", "title": "G1 baseline: OD-COVER (sapphire, air gap) + OD-REAR-SIDED (inner J1502), no levers", "cover": "COVER-SAP-AIR", "levers": [], "candidate": true},
+    {"id": "G1-P1", "title": "Passive-height optimisation: C901/C903 as 0402", "cover": "COVER-SAP-AIR", "levers": ["P-0402"], "candidate": true},
+    {"id": "G1-U8F", "title": "U8 relocated on F.Cu", "cover": "COVER-SAP-AIR", "levers": ["U8-F"], "candidate": true},
+    {"id": "G1-U8B", "title": "U8 relocated to B.Cu", "cover": "COVER-SAP-AIR", "levers": ["U8-B"], "candidate": true},
+    {"id": "G1-CVG", "title": "Cover range: CS glass, air gap", "cover": "COVER-GLS-AIR", "levers": [], "candidate": true},
+    {"id": "G1-CVL", "title": "Cover range: sapphire laminated (OCA)", "cover": "COVER-SAP-OCA", "levers": [], "candidate": true},
+    {"id": "G1-CVGL", "title": "Cover range: CS glass laminated (OCA)", "cover": "COVER-GLS-OCA", "levers": [], "candidate": true},
+    {"id": "G1-IT", "title": "Inner side: flex tail instead of J1502", "cover": "COVER-SAP-AIR", "levers": ["INNER-TAIL"], "candidate": true},
+    {"id": "G1-I0", "title": "Inner side: flex tail + 0201 cap", "cover": "COVER-SAP-AIR", "levers": ["INNER-0201"], "candidate": true},
+    {"id": "G1-IS", "title": "Inner side: J1502 on the skin face", "cover": "COVER-SAP-AIR", "levers": ["INNER-SKINCONN"], "candidate": true},
+    {"id": "G1-IN", "title": "Inner side: 0201 cap + floor pockets", "cover": "COVER-SAP-AIR", "levers": ["INNER-0201", "INNER-NEST"], "candidate": true},
+    {"id": "G1-CB", "title": "J1501 / J201 on B.Cu (OD-CONN-SIDE)", "cover": "COVER-SAP-AIR", "levers": ["CONN-SIDE-B"], "candidate": true},
+    {"id": "G1-K1", "title": "Combination: P-0402 + INNER-TAIL", "cover": "COVER-SAP-AIR", "levers": ["P-0402", "INNER-TAIL"], "candidate": true},
+    {"id": "G1-K2", "title": "Combination: P-0402 + INNER-0201 (all credible levers)", "cover": "COVER-SAP-AIR", "levers": ["P-0402", "INNER-0201"], "candidate": true},
+    {"id": "G1-K3", "title": "Combination: K2 + INNER-NEST", "cover": "COVER-SAP-AIR", "levers": ["P-0402", "INNER-0201", "INNER-NEST"], "candidate": true},
+    {"id": "G1-K4", "title": "Combination: K3 + laminated sapphire cover (every lever)", "cover": "COVER-SAP-OCA", "levers": ["P-0402", "INNER-0201", "INNER-NEST"], "candidate": true}
+  ],
+  "atm5_implications": [
+    {"id": "ATM-1", "item": "Front cover seal and cover strength", "axial": "cover lens t_cover (sized 5 ATM) + air gap t_cover_bond in the centre stack", "radial": "cover bond / seal land w_cover_land beyond the free span a; bezel wall outside the cover edge", "check": "cover_plate, cover_rim", "gate": "G3 case co-design; SR-COVER-LENS"},
+    {"id": "ATM-2", "item": "Optical window strength and seal", "axial": "t_window and window retention flange (X22); the window must not deflect onto the optics or be propped by the barrier walls (X20)", "radial": "window bond overlap a_window_frame", "check": "window_plate", "gate": "G2 pod concept / G3 caseback; MG-WINDOW-XTALK window variant"},
+    {"id": "ATM-3", "item": "Caseback seal, gasket compression and land width", "axial": "gasket compression set and caseback stiffness are not in the stack (X22)", "radial": "seal band at the case inner wall at REAR level must clear every REAR-level reservation or that item is sealed separately", "check": "rear_seal_band", "gate": "G3 case co-design"},
+    {"id": "ATM-4", "item": "Button seals SW1-SW5", "axial": "none in the centre stack", "radial": "O-ring / membrane bore per button in the case wall (r 21-25.25 placeholders)", "check": null, "qualification": "ATM-Q2 button seal pressure / cycling test after SR-BUTTONS selection", "gate": "before perimeter freeze (SR-BUTTONS)"},
+    {"id": "ATM-5", "item": "Charger contact feedthrough seal", "axial": "contact block face seal compression at REAR level", "radial": "CHG_CONTACT r 17.5-24.0 crosses the caseback seal band (rear_seal_band check)", "check": "rear_seal_band", "qualification": "ATM-Q3 sealed contact feedthrough pressure test (SR-CHG-MECH)", "gate": "before contact-module selection (SR-CHG-MECH)"},
+    {"id": "ATM-6", "item": "Barometer vent membrane (U4)", "axial": "membrane + support in the NE wall", "radial": "VENT reservation az 30-60, r 19.5-25.25", "check": null, "qualification": "ATM-Q4 membrane water-entry pressure >= test pressure and barometer response (supplier membrane data)", "gate": "G3 case co-design"},
+    {"id": "ATM-7", "item": "Caseback / window stiffness under pressure", "axial": "caseback and pod deflection must not load the REAR optical stack or the pack (X20)", "radial": "none", "check": null, "qualification": "ATM-Q5 caseback deflection analysis once the caseback material and thickness exist (G3), then a pressure test with the REAR module fitted", "gate": "G3 case co-design"},
+    {"id": "ATM-8", "item": "Leak / pressure qualification of the closed watch", "axial": "none", "radial": "none", "check": null, "qualification": "ATM-Q1 select the 5 ATM test standard and margin (owner / qualification plan), then pressure + leak test of closed prototypes; ATM-Q6 swim / dynamic exposure as stated by that standard", "gate": "before Rev-A sealing qualification"}
+  ]
+}

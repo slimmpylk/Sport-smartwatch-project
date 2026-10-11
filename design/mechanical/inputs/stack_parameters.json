@@ -1,7 +1,7 @@
 {
   "schema": "sportwatch-mech-stack/1",
   "units": "mm",
-  "status": "PROVISIONAL PARAMETRIC STUDY - not a frozen stack; values are planning inputs with explicit class/source",
+  "status": "PROVISIONAL PARAMETRIC STUDY - not a frozen stack; values are planning inputs with explicit class/source. G1 baseline: owner decisions OD-COVER (separate exterior cover lens) and OD-REAR-SIDED (double-sided REAR), 2026-10-11",
   "coordinates": "Front view: north=-Y, east=+X; MAIN origin (100,100); Z positive from front exterior toward wrist.",
   "conventions": {
     "T_total": "front-most exterior surface to the outer skin-contact surface of the optical window/pod",
@@ -16,8 +16,8 @@
     "rss_note": "Also report an RSS stack: nom sum + sqrt(sum((max-nom)^2)) for parameters with max>nom; RSS is informational only."
   },
   "parameters": {
-    "t_front_extra":   {"nom": 0.0,  "min": 0.0,  "max": 0.5,  "class": "PARAMETRIC", "confidence": "LOW",    "source": "Owner decision open: display cover glass used as exterior (0) vs added sapphire/bezel lip (up to ~0.5)."},
-    "t_front_bond":    {"nom": 0.15, "min": 0.1,  "max": 0.25, "class": "PARAMETRIC", "confidence": "MEDIUM", "source": "Display-to-case bond/gasket; typical PSA/foam 0.1-0.25."},
+    "t_cover":         {"nom": 1.25, "min": 1.0,  "max": 1.7,  "class": "PARAMETRIC", "confidence": "LOW",    "source": "G1 baseline, owner decision OD-COVER 2026-10-11: separate exterior cover lens bonded/sealed to the case; material/thickness PARAMETRIC until the case/display integration study. Values are the 5 ATM plate sizing of the baseline option COVER-SAP-AIR (sapphire class, cover alone carries the pressure, air gap to the display) by tools/g1_scenarios.py: nom = simply-supported edge at nominal planning properties, min = clamped edge at nominal properties, max = simply-supported edge at the conservative corner; conservative upward grid rounding (0.05 mm) is applied directly to the unrounded requirement (the unrounded conservative requirement is ~1.6516 mm, so the grid result is 1.70 mm); g1_scenarios.py check fails if these differ from the sizing. The min-max span covers sizing bounds (edge model and corner), the plate manufacturing tolerance is carried separately (g1_scenarios tolerance policy). Planning material properties, not supplier data (SR-COVER-LENS)."},
+    "t_cover_bond":    {"nom": 0.25, "min": 0.1,  "max": 0.4,  "class": "PARAMETRIC", "confidence": "LOW",    "source": "G1 baseline (OD-COVER): Z between the cover rear face and the display front face at the centre. Baseline air gap 0.25 (cover bonded to a case bezel ledge outside the display; gap >= cover deflection at 5 ATM + 0.05, checked by g1_scenarios.py); min 0.10 = optically bonded (OCA) lamination class, not the baseline; max 0.40 = PSA/air-gap stack with flatness allowance. Replaces the pre-G1 display-to-case bond t_front_bond (0.10-0.25)."},
     "t_display":       {"nom": 2.05, "min": 1.95, "max": 2.15, "class": "KNOWN",      "confidence": "HIGH",   "source": "ZC-A1D43W-046 spec V1.0 p4 (43.9x43.9x2.05) and p5 (2.05 +/-0.1, includes integral cover glass)."},
     "c_front":         {"nom": 0.15, "min": 0.1,  "max": 0.3,  "class": "PARAMETRIC", "confidence": "MEDIUM", "source": "Clearance between tallest F.Cu body and display rear (incl. display rear foam/tape tolerance)."},
     "t_display_fpc_fold": {"nom": 0.4, "min": 0.3, "max": 0.6, "class": "SUPPLIER_DATA_REQUIRED", "confidence": "LOW", "source": "ZC-A1D43W-046 p5 rear view: folded FPC + steel stiffener T0.15 / PI stiffener T0.2 + tape T0.05; local folded-envelope drawing not supplied; footprint up to 0.7 MAX beyond outline."},
@@ -32,7 +32,7 @@
     "g_axial":         {"nom": 0.3,  "min": 0.2,  "max": 0.5,  "class": "SUPPLIER_DATA_REQUIRED", "confidence": "LOW", "source": "Swelling/growth allowance; planning ~5-10% of 4.5 mm; supplier must state permitted growth and restraint."},
     "c_axial":         {"nom": 0.1,  "min": 0.05, "max": 0.2,  "class": "PARAMETRIC", "confidence": "MEDIUM", "source": "Assembly clearance / compliant foam above pack."},
     "t_lower_web":     {"nom": 0.4,  "min": 0.3,  "max": 0.6,  "class": "PARAMETRIC", "confidence": "LOW",    "source": "Carrier floor between pack and REAR module/FPC under-run; includes PI film."},
-    "h_rear_inner":    {"nom": 0.0,  "min": 0.0,  "max": 0.75, "class": "PARAMETRIC", "confidence": "MEDIUM", "source": "REAR battery-facing component height: 0 if single-sided (all parts on optical face), up to ~0.75 if AFEs/muxes/MAX30208-side parts go on inner face. Strategy is a study variable."},
+    "h_rear_inner":    {"nom": 0.8,  "min": 0.6,  "max": 1.0,  "class": "SUPPLIER_DATA_REQUIRED", "confidence": "LOW", "source": "G1 baseline, owner decision OD-REAR-SIDED 2026-10-11: double-sided REAR; emitters, PDs and sensitive PPG/analog parts stay on the skin-facing side, the inner (battery-facing) side carries J1502 and passives. Governing inner part = J1502 mated height (MPN unselected, SR-FPC-MECH): fine-pitch board-to-FPC class 0.6-1.0, nominal 0.8 = the only local datum of that class (J1 OK-23GF 0.8 mated, input_register J1-DISPLAY; not a J1502 value); 0402 passives seat at 0.60 (0.65 high-CV) and do not govern at nominal."},
     "c_rear_inner":    {"nom": 0.1,  "min": 0.05, "max": 0.2,  "class": "PARAMETRIC", "confidence": "MEDIUM", "source": "Clearance REAR inner-face parts to carrier floor (applies only if h_rear_inner > 0)."},
     "t_rear_pcb":      {"nom": 0.8,  "min": 0.6,  "max": 1.0,  "class": "PARAMETRIC", "confidence": "MEDIUM", "source": "REAR rigid board thickness; 4-layer study start (0.6-1.0). Current staging file 1.6/2-layer is a placeholder only."},
     "h_optics_max":    {"nom": 0.75, "min": 0.7,  "max": 0.85, "class": "KNOWN",      "confidence": "MEDIUM", "source": "SFH7018A/SFH2703 0.6 +/-0.1; MAX30208 0.75; SFH4053B and MAX86141 seated height still SUPPLIER_DATA_REQUIRED (assumed <= MAX30208)."},
@@ -41,8 +41,8 @@
     "h_pod":           {"nom": 0.8,  "min": 0.0,  "max": 1.5,  "class": "PARAMETRIC", "confidence": "LOW",    "source": "Pod protrusion beyond caseback plane; explicitly NOT freezable from current evidence (requires wrist/strap trials). Sweep values: 0.0, 0.5, 0.8, 1.0, 1.5."}
   },
   "z_layers": [
-    {"id": "front_extra",   "param": "t_front_extra"},
-    {"id": "front_bond",    "param": "t_front_bond"},
+    {"id": "cover",         "param": "t_cover"},
+    {"id": "cover_bond",    "param": "t_cover_bond"},
     {"id": "display",       "param": "t_display"},
     {"id": "front_gap",     "rule": "front_gap"},
     {"id": "main_pcb",      "param": "t_main"},

@@ -1,0 +1,2175 @@
+{
+  "atm5_implications": [
+    {
+      "axial": "cover lens t_cover (sized 5 ATM) + air gap t_cover_bond in the centre stack",
+      "check": "cover_plate, cover_rim",
+      "gate": "G3 case co-design; SR-COVER-LENS",
+      "id": "ATM-1",
+      "item": "Front cover seal and cover strength",
+      "radial": "cover bond / seal land w_cover_land beyond the free span a; bezel wall outside the cover edge"
+    },
+    {
+      "axial": "t_window and window retention flange (X22); the window must not deflect onto the optics or be propped by the barrier walls (X20)",
+      "check": "window_plate",
+      "gate": "G2 pod concept / G3 caseback; MG-WINDOW-XTALK window variant",
+      "id": "ATM-2",
+      "item": "Optical window strength and seal",
+      "radial": "window bond overlap a_window_frame"
+    },
+    {
+      "axial": "gasket compression set and caseback stiffness are not in the stack (X22)",
+      "check": "rear_seal_band",
+      "gate": "G3 case co-design",
+      "id": "ATM-3",
+      "item": "Caseback seal, gasket compression and land width",
+      "radial": "seal band at the case inner wall at REAR level must clear every REAR-level reservation or that item is sealed separately"
+    },
+    {
+      "axial": "none in the centre stack",
+      "check": null,
+      "gate": "before perimeter freeze (SR-BUTTONS)",
+      "id": "ATM-4",
+      "item": "Button seals SW1-SW5",
+      "qualification": "ATM-Q2 button seal pressure / cycling test after SR-BUTTONS selection",
+      "radial": "O-ring / membrane bore per button in the case wall (r 21-25.25 placeholders)"
+    },
+    {
+      "axial": "contact block face seal compression at REAR level",
+      "check": "rear_seal_band",
+      "gate": "before contact-module selection (SR-CHG-MECH)",
+      "id": "ATM-5",
+      "item": "Charger contact feedthrough seal",
+      "qualification": "ATM-Q3 sealed contact feedthrough pressure test (SR-CHG-MECH)",
+      "radial": "CHG_CONTACT r 17.5-24.0 crosses the caseback seal band (rear_seal_band check)"
+    },
+    {
+      "axial": "membrane + support in the NE wall",
+      "check": null,
+      "gate": "G3 case co-design",
+      "id": "ATM-6",
+      "item": "Barometer vent membrane (U4)",
+      "qualification": "ATM-Q4 membrane water-entry pressure >= test pressure and barometer response (supplier membrane data)",
+      "radial": "VENT reservation az 30-60, r 19.5-25.25"
+    },
+    {
+      "axial": "caseback and pod deflection must not load the REAR optical stack or the pack (X20)",
+      "check": null,
+      "gate": "G3 case co-design",
+      "id": "ATM-7",
+      "item": "Caseback / window stiffness under pressure",
+      "qualification": "ATM-Q5 caseback deflection analysis once the caseback material and thickness exist (G3), then a pressure test with the REAR module fitted",
+      "radial": "none"
+    },
+    {
+      "axial": "none",
+      "check": null,
+      "gate": "before Rev-A sealing qualification",
+      "id": "ATM-8",
+      "item": "Leak / pressure qualification of the closed watch",
+      "qualification": "ATM-Q1 select the 5 ATM test standard and margin (owner / qualification plan), then pressure + leak test of closed prototypes; ATM-Q6 swim / dynamic exposure as stated by that standard",
+      "radial": "none"
+    }
+  ],
+  "baseline_cover_option": "COVER-SAP-AIR",
+  "cover_options": {
+    "COVER-GLS-AIR": {
+      "air_gap_check": "PASS",
+      "bond": "air_gap",
+      "dependencies": [
+        "SR-COVER-LENS"
+      ],
+      "design_change": "aluminosilicate CS glass cover sized by the same plate check; larger air gap for its larger deflection",
+      "gap_available_max_mm": 0.4,
+      "gap_available_nominal_mm": 0.25,
+      "gap_raise_from_stack_nominal_mm": 0.1,
+      "gap_required_conservative_mm": 0.2,
+      "gap_required_nominal_mm": 0.35,
+      "gap_used_nominal_mm": 0.35,
+      "id": "COVER-GLS-AIR",
+      "material": "cs_glass",
+      "plate_rows": [
+        {
+          "corner": "nominal",
+          "edge": "ss",
+          "pass": true,
+          "sigma_MPa": 99.804,
+          "sigma_allow_MPa": 100,
+          "t_mm": 1.75,
+          "w_mm": 0.257,
+          "w_over_t": 0.147
+        },
+        {
+          "corner": "nominal",
+          "edge": "clamped",
+          "pass": true,
+          "sigma_MPa": 61.99,
+          "sigma_allow_MPa": 100,
+          "t_mm": 1.75,
+          "w_mm": 0.06,
+          "w_over_t": 0.034
+        },
+        {
+          "corner": "conservative",
+          "edge": "ss",
+          "pass": true,
+          "sigma_MPa": 69.526,
+          "sigma_allow_MPa": 70,
+          "t_mm": 2.4,
+          "w_mm": 0.147,
+          "w_over_t": 0.061
+        },
+        {
+          "corner": "conservative",
+          "edge": "clamped",
+          "pass": true,
+          "sigma_MPa": 43.05,
+          "sigma_allow_MPa": 70,
+          "t_mm": 2.4,
+          "w_mm": 0.035,
+          "w_over_t": 0.014
+        }
+      ],
+      "plate_status": "PASS",
+      "risks": [
+        "lower planning allowable and stiffness than sapphire: thicker cover and air gap"
+      ],
+      "status": "COMPUTED",
+      "t_cover_mm": {
+        "max": 2.4,
+        "min": 1.4,
+        "nom": 1.75
+      },
+      "title": "Chemically strengthened glass cover, carries 5 ATM alone, air gap",
+      "w_cover_conservative_mm": 0.147,
+      "w_cover_nominal_mm": 0.257
+    },
+    "COVER-GLS-OCA": {
+      "dependencies": [
+        "as COVER-SAP-OCA"
+      ],
+      "design_change": "as COVER-SAP-OCA with CS glass",
+      "id": "COVER-GLS-OCA",
+      "risks": [
+        "as COVER-SAP-OCA; lower scratch resistance than sapphire"
+      ],
+      "status": "OWNER_DECISION_GATED",
+      "t_cover_mm": {
+        "max": 1.0,
+        "min": 0.6,
+        "nom": 0.8
+      },
+      "t_cover_note": "PARAMETRIC LOW planning range, same basis as COVER-SAP-OCA",
+      "title": "CS glass cover optically bonded (OCA) to the display"
+    },
+    "COVER-SAP-AIR": {
+      "air_gap_check": "PASS",
+      "bond": "air_gap",
+      "dependencies": [
+        "SR-COVER-LENS (material strength, thickness tolerance, edge finish, bond)",
+        "SR-DISPLAY-LAND (display support only, not the seal)",
+        "5 ATM qualification of the cover-to-case bond"
+      ],
+      "design_change": "separate sapphire-class cover bonded/sealed to a case bezel ledge outside the display (a > R_display); air gap to the display front face",
+      "gap_available_max_mm": 0.4,
+      "gap_available_nominal_mm": 0.25,
+      "gap_raise_from_stack_nominal_mm": 0.0,
+      "gap_required_conservative_mm": 0.15,
+      "gap_required_nominal_mm": 0.2,
+      "gap_used_nominal_mm": 0.25,
+      "id": "COVER-SAP-AIR",
+      "material": "sapphire",
+      "plate_rows": [
+        {
+          "corner": "nominal",
+          "edge": "ss",
+          "pass": true,
+          "sigma_MPa": 199.868,
+          "sigma_allow_MPa": 200,
+          "t_mm": 1.25,
+          "w_mm": 0.134,
+          "w_over_t": 0.107
+        },
+        {
+          "corner": "nominal",
+          "edge": "clamped",
+          "pass": true,
+          "sigma_MPa": 121.5,
+          "sigma_allow_MPa": 200,
+          "t_mm": 1.25,
+          "w_mm": 0.033,
+          "w_over_t": 0.026
+        },
+        {
+          "corner": "conservative",
+          "edge": "ss",
+          "pass": true,
+          "sigma_MPa": 141.574,
+          "sigma_allow_MPa": 150,
+          "t_mm": 1.7,
+          "w_mm": 0.072,
+          "w_over_t": 0.042
+        },
+        {
+          "corner": "conservative",
+          "edge": "clamped",
+          "pass": true,
+          "sigma_MPa": 85.802,
+          "sigma_allow_MPa": 150,
+          "t_mm": 1.7,
+          "w_mm": 0.018,
+          "w_over_t": 0.01
+        }
+      ],
+      "plate_status": "PASS",
+      "risks": [
+        "planning strength allowables are not supplier data",
+        "simply-supported sizing at the conservative corner needs the max thickness"
+      ],
+      "status": "COMPUTED",
+      "t_cover_mm": {
+        "max": 1.7,
+        "min": 1.0,
+        "nom": 1.25
+      },
+      "title": "Sapphire-class cover, carries 5 ATM alone, air gap to the display (G1 baseline)",
+      "w_cover_conservative_mm": 0.072,
+      "w_cover_nominal_mm": 0.134
+    },
+    "COVER-SAP-OCA": {
+      "dependencies": [
+        "OD-COVER-LOADPATH: owner clarification whether a laminated display that shares the pressure load is compatible with OD-COVER ('display module is not the exterior structural or water barrier')",
+        "SR-DISPLAY-LAND: permitted pressure / lamination on the display front",
+        "SR-COVER-LENS: laminate design"
+      ],
+      "design_change": "cover laminated to the display front with OCA; pressure load shared with the display module",
+      "id": "COVER-SAP-OCA",
+      "risks": [
+        "display module carries part of the 5 ATM load",
+        "lamination yield / rework: display and cover become one part"
+      ],
+      "status": "OWNER_DECISION_GATED",
+      "t_cover_mm": {
+        "max": 1.0,
+        "min": 0.6,
+        "nom": 0.8
+      },
+      "t_cover_note": "PARAMETRIC LOW planning range for a laminated cover; the laminate cannot be sized without the display glass build-up and its permitted pressure (SR-DISPLAY-LAND, SR-COVER-LENS); nominal is not the minimum",
+      "title": "Sapphire-class cover optically bonded (OCA) to the display; laminate shares the pressure"
+    }
+  },
+  "cover_sizing_check": {
+    "pass": true,
+    "t_cover_sized_mm": {
+      "max": 1.7,
+      "min": 1.0,
+      "nom": 1.25
+    },
+    "t_cover_stack_mm": {
+      "max": 1.7,
+      "min": 1.0,
+      "nom": 1.25
+    }
+  },
+  "deterministic_checks": {
+    "cover_rim": {
+      "conservative": {
+        "R_case_inner_mm": 23.4,
+        "cover_outer_edge_mm": 24.5,
+        "fit_margin_mm": -1.1,
+        "residual_wall_mm": -1.1,
+        "t_bezel_min_mm": 1.0,
+        "wall_margin_mm": -2.1
+      },
+      "nominal": {
+        "R_case_inner_mm": 24.05,
+        "cover_outer_edge_mm": 23.5,
+        "fit_margin_mm": 0.55,
+        "residual_wall_mm": 0.55,
+        "t_bezel_min_mm": 0.7,
+        "wall_margin_mm": -0.15
+      }
+    },
+    "fpc_underrun_lower_web": {
+      "available_mm": 0.3,
+      "margin_mm": 0.05,
+      "note": "t_lower_web min vs t_fpc max + 0.05 handling clearance (stack_parameters radial)",
+      "pass": true,
+      "requirement_mm": 0.25
+    },
+    "rear_seal_band": {
+      "R_case_inner_mm": {
+        "conservative": 23.4,
+        "nominal": 24.05
+      },
+      "crossings": [
+        {
+          "corner": "nominal",
+          "reservation": "VENT",
+          "reservation_r_mm": [
+            19.5,
+            25.25
+          ],
+          "seal_band_r_mm": [
+            23.05,
+            24.05
+          ]
+        },
+        {
+          "corner": "conservative",
+          "reservation": "VENT",
+          "reservation_r_mm": [
+            19.5,
+            25.25
+          ],
+          "seal_band_r_mm": [
+            21.9,
+            23.4
+          ]
+        },
+        {
+          "corner": "nominal",
+          "reservation": "CHG_CONTACT",
+          "reservation_r_mm": [
+            17.5,
+            24.0
+          ],
+          "seal_band_r_mm": [
+            23.05,
+            24.05
+          ]
+        },
+        {
+          "corner": "conservative",
+          "reservation": "CHG_CONTACT",
+          "reservation_r_mm": [
+            17.5,
+            24.0
+          ],
+          "seal_band_r_mm": [
+            21.9,
+            23.4
+          ]
+        }
+      ],
+      "note": "Reservations whose radial range reaches the caseback seal band at the case inner wall must be sealed as separate feedthroughs (ATM-4/ATM-5/ATM-6), not through the face seal",
+      "seal_band_width_mm": {
+        "class": "PARAMETRIC",
+        "confidence": "LOW",
+        "max": 1.5,
+        "min": 0.8,
+        "nom": 1.0,
+        "source": "Radial band for a caseback face / radial seal at the case inner wall at REAR level (O-ring or flat gasket groove + land; G3)."
+      }
+    },
+    "u8_relocation_fcu_geometry": {
+      "max_centre_radius_in_main_mm": 18.0,
+      "min_centre_radius_to_clear_display_mm": 21.95,
+      "module_circumradius_mm": 7.071,
+      "module_half_side_mm": 5.0,
+      "module_side_mm": 10.0,
+      "note": "U8-F is feasible only if some module centre lies outside the display outline while the module stays on MAIN. Necessary bounds: centre <= R_main - s/2 = 18.00 mm (inscribed-circle containment) and centre > R_display = 21.95 mm (the centre is a point of the module). 18.00 < 21.95, so no F.Cu position of a 10 mm module escapes the rigid display; the lever cannot remove U8 from the governing front-gap stack (RF evidence not even reached). The earlier R_main - circumradius bound was orientation-dependent and is replaced by this valid necessary-condition pair.",
+      "pass": false
+    },
+    "window_plate": {
+      "frame_overlap_mm": 1.0,
+      "model": "Linear small-deflection Kirchhoff plate, circular, uniform pressure. Support bounds: clamped edge = OPTIMISTIC / stronger-support bound (assumes verified edge rotation restraint); simply-supported edge = conservative / weaker-support bound and the sizing case. Outcomes are reported per support independently; a row passes only if the simply-supported bound passes. Validity limit: flagged where w/t > 0.5 (membrane stiffening then makes the linear result conservative). Analytical model with PARAMETRIC planning properties only - NOT a 5 ATM qualification; the actual window geometry, material and bond restraint remain unresolved (G2 pod concept / G3 caseback, ATM-Q2 window variant, X23) and any clamped-only pass is CONDITIONAL ON VERIFIED CLAMPED/RESTRAINED SUPPORT.",
+      "rows": [
+        {
+          "corner": "nominal",
+          "deflection_limit_mm": 0.1,
+          "deflection_ok": false,
+          "id": "sapphire-t0p3-nominal",
+          "material": "sapphire",
+          "pass": false,
+          "sigma_allow_MPa": 200,
+          "sigma_clamped_MPa": 468.167,
+          "sigma_simply_supported_MPa": 770.134,
+          "stress_ok_clamped": false,
+          "stress_ok_simply_supported": false,
+          "support_result": "FAIL (conservative simply-supported bound)",
+          "t_mm": 0.3,
+          "unsupported_radius_mm": 10.6,
+          "w_clamped_mm": 0.116,
+          "w_over_t": 1.591,
+          "w_simply_supported_mm": 0.477
+        },
+        {
+          "corner": "conservative",
+          "deflection_limit_mm": 0.05,
+          "deflection_ok": false,
+          "id": "sapphire-t0p3-conservative",
+          "material": "sapphire",
+          "pass": false,
+          "sigma_allow_MPa": 150,
+          "sigma_clamped_MPa": 820.326,
+          "sigma_simply_supported_MPa": 1353.537,
+          "stress_ok_clamped": false,
+          "stress_ok_simply_supported": false,
+          "support_result": "FAIL (conservative simply-supported bound)",
+          "t_mm": 0.3,
+          "unsupported_radius_mm": 12.55,
+          "w_clamped_mm": 0.284,
+          "w_over_t": 3.859,
+          "w_simply_supported_mm": 1.158
+        },
+        {
+          "corner": "nominal",
+          "deflection_limit_mm": 0.1,
+          "deflection_ok": false,
+          "id": "sapphire-t0p5-nominal",
+          "material": "sapphire",
+          "pass": false,
+          "sigma_allow_MPa": 200,
+          "sigma_clamped_MPa": 168.54,
+          "sigma_simply_supported_MPa": 277.248,
+          "stress_ok_clamped": true,
+          "stress_ok_simply_supported": false,
+          "support_result": "CONDITIONAL ON VERIFIED CLAMPED/RESTRAINED SUPPORT (clamped bound passes, simply-supported bound fails)",
+          "t_mm": 0.5,
+          "unsupported_radius_mm": 10.6,
+          "w_clamped_mm": 0.025,
+          "w_over_t": 0.206,
+          "w_simply_supported_mm": 0.103
+        },
+        {
+          "corner": "conservative",
+          "deflection_limit_mm": 0.05,
+          "deflection_ok": false,
+          "id": "sapphire-t0p5-conservative",
+          "material": "sapphire",
+          "pass": false,
+          "sigma_allow_MPa": 150,
+          "sigma_clamped_MPa": 295.317,
+          "sigma_simply_supported_MPa": 487.273,
+          "stress_ok_clamped": false,
+          "stress_ok_simply_supported": false,
+          "support_result": "FAIL (conservative simply-supported bound)",
+          "t_mm": 0.5,
+          "unsupported_radius_mm": 12.55,
+          "w_clamped_mm": 0.061,
+          "w_over_t": 0.5,
+          "w_simply_supported_mm": 0.25
+        },
+        {
+          "corner": "nominal",
+          "deflection_limit_mm": 0.1,
+          "deflection_ok": true,
+          "id": "sapphire-t0p8-nominal",
+          "material": "sapphire",
+          "pass": true,
+          "sigma_allow_MPa": 200,
+          "sigma_clamped_MPa": 65.836,
+          "sigma_simply_supported_MPa": 108.3,
+          "stress_ok_clamped": true,
+          "stress_ok_simply_supported": true,
+          "support_result": "PASS (both support bounds)",
+          "t_mm": 0.8,
+          "unsupported_radius_mm": 10.6,
+          "w_clamped_mm": 0.006,
+          "w_over_t": 0.031,
+          "w_simply_supported_mm": 0.025
+        },
+        {
+          "corner": "conservative",
+          "deflection_limit_mm": 0.05,
+          "deflection_ok": false,
+          "id": "sapphire-t0p8-conservative",
+          "material": "sapphire",
+          "pass": false,
+          "sigma_allow_MPa": 150,
+          "sigma_clamped_MPa": 115.358,
+          "sigma_simply_supported_MPa": 190.341,
+          "stress_ok_clamped": true,
+          "stress_ok_simply_supported": false,
+          "support_result": "CONDITIONAL ON VERIFIED CLAMPED/RESTRAINED SUPPORT (clamped bound passes, simply-supported bound fails)",
+          "t_mm": 0.8,
+          "unsupported_radius_mm": 12.55,
+          "w_clamped_mm": 0.015,
+          "w_over_t": 0.076,
+          "w_simply_supported_mm": 0.061
+        },
+        {
+          "corner": "nominal",
+          "deflection_limit_mm": 0.1,
+          "deflection_ok": false,
+          "id": "cs_glass-t0p3-nominal",
+          "material": "cs_glass",
+          "pass": false,
+          "sigma_allow_MPa": 100,
+          "sigma_clamped_MPa": 468.167,
+          "sigma_simply_supported_MPa": 753.748,
+          "stress_ok_clamped": false,
+          "stress_ok_simply_supported": false,
+          "support_result": "FAIL (conservative simply-supported bound)",
+          "t_mm": 0.3,
+          "unsupported_radius_mm": 10.6,
+          "w_clamped_mm": 0.588,
+          "w_over_t": 8.379,
+          "w_simply_supported_mm": 2.514
+        },
+        {
+          "corner": "conservative",
+          "deflection_limit_mm": 0.05,
+          "deflection_ok": false,
+          "id": "cs_glass-t0p3-conservative",
+          "material": "cs_glass",
+          "pass": false,
+          "sigma_allow_MPa": 70,
+          "sigma_clamped_MPa": 820.326,
+          "sigma_simply_supported_MPa": 1324.826,
+          "stress_ok_clamped": false,
+          "stress_ok_simply_supported": false,
+          "support_result": "FAIL (conservative simply-supported bound)",
+          "t_mm": 0.3,
+          "unsupported_radius_mm": 12.55,
+          "w_clamped_mm": 1.569,
+          "w_over_t": 22.236,
+          "w_simply_supported_mm": 6.671
+        },
+        {
+          "corner": "nominal",
+          "deflection_limit_mm": 0.1,
+          "deflection_ok": false,
+          "id": "cs_glass-t0p5-nominal",
+          "material": "cs_glass",
+          "pass": false,
+          "sigma_allow_MPa": 100,
+          "sigma_clamped_MPa": 168.54,
+          "sigma_simply_supported_MPa": 271.349,
+          "stress_ok_clamped": false,
+          "stress_ok_simply_supported": false,
+          "support_result": "FAIL (conservative simply-supported bound)",
+          "t_mm": 0.5,
+          "unsupported_radius_mm": 10.6,
+          "w_clamped_mm": 0.127,
+          "w_over_t": 1.086,
+          "w_simply_supported_mm": 0.543
+        },
+        {
+          "corner": "conservative",
+          "deflection_limit_mm": 0.05,
+          "deflection_ok": false,
+          "id": "cs_glass-t0p5-conservative",
+          "material": "cs_glass",
+          "pass": false,
+          "sigma_allow_MPa": 70,
+          "sigma_clamped_MPa": 295.317,
+          "sigma_simply_supported_MPa": 476.937,
+          "stress_ok_clamped": false,
+          "stress_ok_simply_supported": false,
+          "support_result": "FAIL (conservative simply-supported bound)",
+          "t_mm": 0.5,
+          "unsupported_radius_mm": 12.55,
+          "w_clamped_mm": 0.339,
+          "w_over_t": 2.882,
+          "w_simply_supported_mm": 1.441
+        },
+        {
+          "corner": "nominal",
+          "deflection_limit_mm": 0.1,
+          "deflection_ok": false,
+          "id": "cs_glass-t0p8-nominal",
+          "material": "cs_glass",
+          "pass": false,
+          "sigma_allow_MPa": 100,
+          "sigma_clamped_MPa": 65.836,
+          "sigma_simply_supported_MPa": 105.996,
+          "stress_ok_clamped": true,
+          "stress_ok_simply_supported": false,
+          "support_result": "CONDITIONAL ON VERIFIED CLAMPED/RESTRAINED SUPPORT (clamped bound passes, simply-supported bound fails)",
+          "t_mm": 0.8,
+          "unsupported_radius_mm": 10.6,
+          "w_clamped_mm": 0.031,
+          "w_over_t": 0.166,
+          "w_simply_supported_mm": 0.133
+        },
+        {
+          "corner": "conservative",
+          "deflection_limit_mm": 0.05,
+          "deflection_ok": false,
+          "id": "cs_glass-t0p8-conservative",
+          "material": "cs_glass",
+          "pass": false,
+          "sigma_allow_MPa": 70,
+          "sigma_clamped_MPa": 115.358,
+          "sigma_simply_supported_MPa": 186.304,
+          "stress_ok_clamped": false,
+          "stress_ok_simply_supported": false,
+          "support_result": "FAIL (conservative simply-supported bound)",
+          "t_mm": 0.8,
+          "unsupported_radius_mm": 12.55,
+          "w_clamped_mm": 0.083,
+          "w_over_t": 0.44,
+          "w_simply_supported_mm": 0.352
+        },
+        {
+          "corner": "nominal",
+          "deflection_limit_mm": 0.1,
+          "deflection_ok": false,
+          "id": "pc-t0p3-nominal",
+          "material": "pc",
+          "pass": false,
+          "sigma_allow_MPa": 30,
+          "sigma_clamped_MPa": 468.167,
+          "sigma_simply_supported_MPa": 788.861,
+          "stress_ok_clamped": false,
+          "stress_ok_simply_supported": false,
+          "support_result": "FAIL (conservative simply-supported bound)",
+          "t_mm": 0.3,
+          "unsupported_radius_mm": 10.6,
+          "w_clamped_mm": 16.45,
+          "w_over_t": 214.93,
+          "w_simply_supported_mm": 64.479
+        },
+        {
+          "corner": "conservative",
+          "deflection_limit_mm": 0.05,
+          "deflection_ok": false,
+          "id": "pc-t0p3-conservative",
+          "material": "pc",
+          "pass": false,
+          "sigma_allow_MPa": 20,
+          "sigma_clamped_MPa": 820.326,
+          "sigma_simply_supported_MPa": 1386.35,
+          "stress_ok_clamped": false,
+          "stress_ok_simply_supported": false,
+          "support_result": "FAIL (conservative simply-supported bound)",
+          "t_mm": 0.3,
+          "unsupported_radius_mm": 12.55,
+          "w_clamped_mm": 41.874,
+          "w_over_t": 544.155,
+          "w_simply_supported_mm": 163.246
+        },
+        {
+          "corner": "nominal",
+          "deflection_limit_mm": 0.1,
+          "deflection_ok": false,
+          "id": "pc-t0p5-nominal",
+          "material": "pc",
+          "pass": false,
+          "sigma_allow_MPa": 30,
+          "sigma_clamped_MPa": 168.54,
+          "sigma_simply_supported_MPa": 283.99,
+          "stress_ok_clamped": false,
+          "stress_ok_simply_supported": false,
+          "support_result": "FAIL (conservative simply-supported bound)",
+          "t_mm": 0.5,
+          "unsupported_radius_mm": 10.6,
+          "w_clamped_mm": 3.553,
+          "w_over_t": 27.855,
+          "w_simply_supported_mm": 13.927
+        },
+        {
+          "corner": "conservative",
+          "deflection_limit_mm": 0.05,
+          "deflection_ok": false,
+          "id": "pc-t0p5-conservative",
+          "material": "pc",
+          "pass": false,
+          "sigma_allow_MPa": 20,
+          "sigma_clamped_MPa": 295.317,
+          "sigma_simply_supported_MPa": 499.086,
+          "stress_ok_clamped": false,
+          "stress_ok_simply_supported": false,
+          "support_result": "FAIL (conservative simply-supported bound)",
+          "t_mm": 0.5,
+          "unsupported_radius_mm": 12.55,
+          "w_clamped_mm": 9.045,
+          "w_over_t": 70.522,
+          "w_simply_supported_mm": 35.261
+        },
+        {
+          "corner": "nominal",
+          "deflection_limit_mm": 0.1,
+          "deflection_ok": false,
+          "id": "pc-t0p8-nominal",
+          "material": "pc",
+          "pass": false,
+          "sigma_allow_MPa": 30,
+          "sigma_clamped_MPa": 65.836,
+          "sigma_simply_supported_MPa": 110.934,
+          "stress_ok_clamped": false,
+          "stress_ok_simply_supported": false,
+          "support_result": "FAIL (conservative simply-supported bound)",
+          "t_mm": 0.8,
+          "unsupported_radius_mm": 10.6,
+          "w_clamped_mm": 0.867,
+          "w_over_t": 4.25,
+          "w_simply_supported_mm": 3.4
+        },
+        {
+          "corner": "conservative",
+          "deflection_limit_mm": 0.05,
+          "deflection_ok": false,
+          "id": "pc-t0p8-conservative",
+          "material": "pc",
+          "pass": false,
+          "sigma_allow_MPa": 20,
+          "sigma_clamped_MPa": 115.358,
+          "sigma_simply_supported_MPa": 194.955,
+          "stress_ok_clamped": false,
+          "stress_ok_simply_supported": false,
+          "support_result": "FAIL (conservative simply-supported bound)",
+          "t_mm": 0.8,
+          "unsupported_radius_mm": 12.55,
+          "w_clamped_mm": 2.208,
+          "w_over_t": 10.761,
+          "w_simply_supported_mm": 8.609
+        }
+      ],
+      "rows_conditional": 3,
+      "rows_passing": 1,
+      "rows_total": 18,
+      "standoff_available_mm": {
+        "max": 0.2,
+        "min": 0.05,
+        "nom": 0.1
+      },
+      "unsupported_radius_mm": {
+        "conservative": 12.55,
+        "nominal": 10.6
+      },
+      "verdict": "1 of 18 material/thickness/corner combinations pass the conservative simply-supported bound; 3 more pass only the clamped (optimistic) bound and are CONDITIONAL ON VERIFIED CLAMPED/RESTRAINED SUPPORT - the window bond restraint is unresolved and stays gated. No analytical result here is a 5 ATM qualification (ATM-Q2, X23 retained)."
+    }
+  },
+  "electrical_evidence": {
+    "assessment": "0402 MLCC in 4.7 uF and 2.2 uF exist as a class (no MPN invented). At 3.0 V a 6.3 V-class 0402 4.7 uF part loses a large share of its capacitance to DC bias; the effective capacitance must be checked against eMMC VCC guidance and, if short, C901 split into two 0402 parts (same height) or C902/C901 re-balanced. C903 at 1.8 V has less derating. Electrically valid in principle; requires the later MAIN BOM/placement task. G1 changes no schematic or footprint.",
+    "rail_source": "09_STORAGE.kicad_sch sheet notes (read-only): 'VCC = VOUT2_3V0_PROVISIONAL. Kingston allows 2.7-3.6 V', 'VCCQ = VOUT1_1V8', 'C901/C902: VCC 4.7uF + 220nF. C903/C904: VCCQ 2.2uF + 100nF'",
+    "refs": {
+      "C901": {
+        "description": "eMMC VCC bulk decoupling",
+        "footprint": "C_0603_1608Metric",
+        "rail": "VCC = VOUT2_3V0_PROVISIONAL (3.0 V; Kingston 2.7-3.6 V)",
+        "value": "4.7uF"
+      },
+      "C903": {
+        "description": "eMMC VCCQ bulk decoupling",
+        "footprint": "C_0603_1608Metric",
+        "rail": "VCCQ = VOUT1_1V8 (1.8 V)",
+        "value": "2.2uF"
+      }
+    },
+    "schematic": "09_STORAGE.kicad_sch",
+    "voltage_rating": "no voltage-rating property on C901/C903 in the schematic or BOM (no MPN); a later task must select the rating"
+  },
+  "g1_verdict": {
+    "note": "Stop rule (G1_BRIEF.md 4.6): no scenario is credibly <= 15.5 mm, so the G1 verdict is THICKNESS OWNER DECISION REQUIRED; the tradeoff table is presented and no requirement is weakened. OD-COVER and OD-REAR-SIDED are NOT revoked.",
+    "rule": "credible = nominal <= 15.5 AND RSS <= 15.5, every lever CREDIBLE_LATER_TASK, cover plate PASS/PASS_NOMINAL with air-gap PASS, no failed deterministic check, no best-case supplier value; the linear worst case is reported, not required",
+    "thinnest_all_credible_levers": {
+      "T_nominal_mm": 16.08,
+      "T_rss_mm": 16.525,
+      "id": "G1-K2"
+    },
+    "thinnest_scenario": {
+      "T_nominal_mm": 15.18,
+      "T_rss_mm": 15.67,
+      "blocking_reasons": [
+        "RSS T_total 15.67 > 15.5",
+        "lever INNER-NEST status SUPPLIER_DATA_GATED",
+        "cover option COVER-SAP-OCA status OWNER_DECISION_GATED"
+      ],
+      "credible_leq_15_5_mm": false,
+      "id": "G1-K4"
+    },
+    "verdict": "THICKNESS OWNER DECISION REQUIRED"
+  },
+  "legacy_cross_check": {
+    "computed_mm": {
+      "linear": 17.23,
+      "nominal": 15.85,
+      "rss": 16.276
+    },
+    "expected_mm": {
+      "linear": 17.23,
+      "nominal": 15.85,
+      "rss": 16.276
+    },
+    "id": "LEGACY-S4",
+    "pass": true,
+    "tolerance_terms": {
+      "c_axial": 0.1,
+      "c_back": 0.1,
+      "c_front": 0.15,
+      "c_optics": 0.1,
+      "c_rear_inner": 0.1,
+      "g_axial": 0.2,
+      "h_optics_max": 0.1,
+      "t_cover_bond": 0.1,
+      "t_display": 0.1,
+      "t_insulator": 0.05,
+      "t_main": 0.08,
+      "tol_pack_thick": 0.2
+    }
+  },
+  "scenarios": [
+    {
+      "H_B_in_battery_mm": 0.95,
+      "H_F_under_display_mm": 2.7,
+      "T_body_mm": 15.95,
+      "T_nominal_mm": 16.75,
+      "T_rss_mm": 17.195,
+      "T_worst_linear_mm": 18.41,
+      "blocking_reasons": [
+        "nominal T_total 16.75 > 15.5",
+        "RSS T_total 17.19 > 15.5"
+      ],
+      "cover": "COVER-SAP-AIR",
+      "credible_leq_15_5_mm": false,
+      "dependencies": [
+        "SR-COVER-LENS (material strength, thickness tolerance, edge finish, bond)",
+        "SR-DISPLAY-LAND (display support only, not the seal)",
+        "5 ATM qualification of the cover-to-case bond"
+      ],
+      "design_changes": [
+        "cover COVER-SAP-AIR: separate sapphire-class cover bonded/sealed to a case bezel ledge outside the display (a > R_display); air gap to the display front face"
+      ],
+      "h_pod_mm": 0.8,
+      "h_rear_inner_mm": 0.8,
+      "id": "G1-S4",
+      "levers": [],
+      "meets_upper_nominal": false,
+      "meets_upper_rss": false,
+      "meets_upper_worst_linear": false,
+      "risks": [
+        "planning strength allowables are not supplier data",
+        "simply-supported sizing at the conservative corner needs the max thickness"
+      ],
+      "stack_adjustments": [],
+      "t_cover_bond_mm": 0.25,
+      "t_cover_mm": 1.25,
+      "title": "G1 baseline: OD-COVER (sapphire, air gap) + OD-REAR-SIDED (inner J1502), no levers",
+      "tolerance_deltas_mm": {
+        "c_axial": 0.1,
+        "c_back": 0.1,
+        "c_front": 0.15,
+        "c_optics": 0.1,
+        "c_rear_inner": 0.1,
+        "g_axial": 0.2,
+        "h_optics_max": 0.1,
+        "h_rear_inner": 0.05,
+        "t_cover": 0.05,
+        "t_cover_bond": 0.1,
+        "t_display": 0.1,
+        "t_insulator": 0.05,
+        "t_lower_web": 0.05,
+        "t_main": 0.08,
+        "t_rear_pcb": 0.08,
+        "t_window": 0.05,
+        "tol_pack_thick": 0.2
+      },
+      "tolerance_rss_mm": 0.445,
+      "tolerance_sensitivities_mm": {
+        "c_axial": 0.1,
+        "c_back": 0.1,
+        "c_front": 0.15,
+        "c_optics": 0.1,
+        "c_rear_inner": 0.1,
+        "g_axial": 0.2,
+        "h_optics_max": 0.1,
+        "h_rear_inner": 0.05,
+        "t_cover": 0.05,
+        "t_cover_bond": 0.1,
+        "t_display": 0.1,
+        "t_insulator": 0.05,
+        "t_lower_web": 0.05,
+        "t_main": 0.08,
+        "t_rear_pcb": 0.08,
+        "t_window": 0.05,
+        "tol_pack_thick": 0.2
+      },
+      "tolerance_sum_linear_mm": 1.66
+    },
+    {
+      "H_B_in_battery_mm": 0.65,
+      "H_F_under_display_mm": 2.7,
+      "T_body_mm": 15.65,
+      "T_nominal_mm": 16.45,
+      "T_rss_mm": 16.895,
+      "T_worst_linear_mm": 18.11,
+      "blocking_reasons": [
+        "nominal T_total 16.45 > 15.5",
+        "RSS T_total 16.89 > 15.5"
+      ],
+      "cover": "COVER-SAP-AIR",
+      "credible_leq_15_5_mm": false,
+      "dependencies": [
+        "P-0402: later MAIN BOM / placement task: 0402 parts with >= 6.3 V rating, DC-bias effective capacitance at 3.0 V / 1.8 V vs eMMC guidance, schematic footprint change, PCB re-placement inside the storage pocket",
+        "SR-COVER-LENS (material strength, thickness tolerance, edge finish, bond)",
+        "SR-DISPLAY-LAND (display support only, not the seal)",
+        "5 ATM qualification of the cover-to-case bond"
+      ],
+      "design_changes": [
+        "P-0402: C901 (4.7 uF) and C903 (2.2 uF) as 0402 high-CV MLCC; carrier storage pocket depth recomputed",
+        "cover COVER-SAP-AIR: separate sapphire-class cover bonded/sealed to a case bezel ledge outside the display (a > R_display); air gap to the display front face"
+      ],
+      "h_pod_mm": 0.8,
+      "h_rear_inner_mm": 0.8,
+      "id": "G1-P1",
+      "levers": [
+        "P-0402"
+      ],
+      "meets_upper_nominal": false,
+      "meets_upper_rss": false,
+      "meets_upper_worst_linear": false,
+      "risks": [
+        "P-0402: DC-bias derating may need a second 0402 on VCC (same height, more area)",
+        "P-0402: high-CV 0402 heights vary by MPN: the 0.05 high-CV allowance must be confirmed at MPN freeze",
+        "planning strength allowables are not supplier data",
+        "simply-supported sizing at the conservative corner needs the max thickness"
+      ],
+      "stack_adjustments": [],
+      "t_cover_bond_mm": 0.25,
+      "t_cover_mm": 1.25,
+      "title": "Passive-height optimisation: C901/C903 as 0402",
+      "tolerance_deltas_mm": {
+        "c_axial": 0.1,
+        "c_back": 0.1,
+        "c_front": 0.15,
+        "c_optics": 0.1,
+        "c_rear_inner": 0.1,
+        "g_axial": 0.2,
+        "h_optics_max": 0.1,
+        "h_rear_inner": 0.05,
+        "t_cover": 0.05,
+        "t_cover_bond": 0.1,
+        "t_display": 0.1,
+        "t_insulator": 0.05,
+        "t_lower_web": 0.05,
+        "t_main": 0.08,
+        "t_rear_pcb": 0.08,
+        "t_window": 0.05,
+        "tol_pack_thick": 0.2
+      },
+      "tolerance_rss_mm": 0.445,
+      "tolerance_sensitivities_mm": {
+        "c_axial": 0.1,
+        "c_back": 0.1,
+        "c_front": 0.15,
+        "c_optics": 0.1,
+        "c_rear_inner": 0.1,
+        "g_axial": 0.2,
+        "h_optics_max": 0.1,
+        "h_rear_inner": 0.05,
+        "t_cover": 0.05,
+        "t_cover_bond": 0.1,
+        "t_display": 0.1,
+        "t_insulator": 0.05,
+        "t_lower_web": 0.05,
+        "t_main": 0.08,
+        "t_rear_pcb": 0.08,
+        "t_window": 0.05,
+        "tol_pack_thick": 0.2
+      },
+      "tolerance_sum_linear_mm": 1.66
+    },
+    {
+      "H_B_in_battery_mm": 0.95,
+      "H_F_under_display_mm": 2.7,
+      "T_body_mm": 15.95,
+      "T_nominal_mm": 16.75,
+      "T_rss_mm": 17.195,
+      "T_worst_linear_mm": 18.41,
+      "blocking_reasons": [
+        "nominal T_total 16.75 > 15.5",
+        "RSS T_total 17.19 > 15.5",
+        "lever U8-F status NOT_A_LEVER",
+        "u8_relocation_fcu_geometry fails"
+      ],
+      "cover": "COVER-SAP-AIR",
+      "credible_leq_15_5_mm": false,
+      "dependencies": [
+        "U8-F: RF evidence would also be required (GNSS feed network C1420/C1421/R1420, GNSS_RAD, display shadowing) - not reached because the geometry already excludes the lever",
+        "SR-COVER-LENS (material strength, thickness tolerance, edge finish, bond)",
+        "SR-DISPLAY-LAND (display support only, not the seal)",
+        "5 ATM qualification of the cover-to-case bond"
+      ],
+      "design_changes": [
+        "U8-F: none evaluated as feasible: the rigid display covers every F.Cu position a 10 mm module can occupy",
+        "cover COVER-SAP-AIR: separate sapphire-class cover bonded/sealed to a case bezel ledge outside the display (a > R_display); air gap to the display front face"
+      ],
+      "h_pod_mm": 0.8,
+      "h_rear_inner_mm": 0.8,
+      "id": "G1-U8F",
+      "levers": [
+        "U8-F"
+      ],
+      "meets_upper_nominal": false,
+      "meets_upper_rss": false,
+      "meets_upper_worst_linear": false,
+      "risks": [
+        "U8-F: none added; U8 placement is not changed in G1",
+        "planning strength allowables are not supplier data",
+        "simply-supported sizing at the conservative corner needs the max thickness"
+      ],
+      "stack_adjustments": [],
+      "t_cover_bond_mm": 0.25,
+      "t_cover_mm": 1.25,
+      "title": "U8 relocated on F.Cu",
+      "tolerance_deltas_mm": {
+        "c_axial": 0.1,
+        "c_back": 0.1,
+        "c_front": 0.15,
+        "c_optics": 0.1,
+        "c_rear_inner": 0.1,
+        "g_axial": 0.2,
+        "h_optics_max": 0.1,
+        "h_rear_inner": 0.05,
+        "t_cover": 0.05,
+        "t_cover_bond": 0.1,
+        "t_display": 0.1,
+        "t_insulator": 0.05,
+        "t_lower_web": 0.05,
+        "t_main": 0.08,
+        "t_rear_pcb": 0.08,
+        "t_window": 0.05,
+        "tol_pack_thick": 0.2
+      },
+      "tolerance_rss_mm": 0.445,
+      "tolerance_sensitivities_mm": {
+        "c_axial": 0.1,
+        "c_back": 0.1,
+        "c_front": 0.15,
+        "c_optics": 0.1,
+        "c_rear_inner": 0.1,
+        "g_axial": 0.2,
+        "h_optics_max": 0.1,
+        "h_rear_inner": 0.05,
+        "t_cover": 0.05,
+        "t_cover_bond": 0.1,
+        "t_display": 0.1,
+        "t_insulator": 0.05,
+        "t_lower_web": 0.05,
+        "t_main": 0.08,
+        "t_rear_pcb": 0.08,
+        "t_window": 0.05,
+        "tol_pack_thick": 0.2
+      },
+      "tolerance_sum_linear_mm": 1.66
+    },
+    {
+      "H_B_in_battery_mm": 2.7,
+      "H_F_under_display_mm": 1.96,
+      "T_body_mm": 16.96,
+      "T_nominal_mm": 17.76,
+      "T_rss_mm": 18.205,
+      "T_worst_linear_mm": 19.42,
+      "blocking_reasons": [
+        "nominal T_total 17.76 > 15.5",
+        "RSS T_total 18.20 > 15.5",
+        "lever U8-B status NOT_A_LEVER"
+      ],
+      "cover": "COVER-SAP-AIR",
+      "credible_leq_15_5_mm": false,
+      "dependencies": [
+        "U8-B: RF evidence (antenna feed through the board, pack and carrier shadowing) - not reached because the stack gets thicker",
+        "SR-COVER-LENS (material strength, thickness tolerance, edge finish, bond)",
+        "SR-DISPLAY-LAND (display support only, not the seal)",
+        "5 ATM qualification of the cover-to-case bond"
+      ],
+      "design_changes": [
+        "U8-B: U8 on B.Cu inside the pack projection: front gap falls to the runner-up, back zone rises to the U8 height",
+        "cover COVER-SAP-AIR: separate sapphire-class cover bonded/sealed to a case bezel ledge outside the display (a > R_display); air gap to the display front face"
+      ],
+      "h_pod_mm": 0.8,
+      "h_rear_inner_mm": 0.8,
+      "id": "G1-U8B",
+      "levers": [
+        "U8-B"
+      ],
+      "meets_upper_nominal": false,
+      "meets_upper_rss": false,
+      "meets_upper_worst_linear": false,
+      "risks": [
+        "U8-B: module faces the pack: thermal and RF coupling to the cell; thicker stack",
+        "planning strength allowables are not supplier data",
+        "simply-supported sizing at the conservative corner needs the max thickness"
+      ],
+      "stack_adjustments": [],
+      "t_cover_bond_mm": 0.25,
+      "t_cover_mm": 1.25,
+      "title": "U8 relocated to B.Cu",
+      "tolerance_deltas_mm": {
+        "c_axial": 0.1,
+        "c_back": 0.1,
+        "c_front": 0.15,
+        "c_optics": 0.1,
+        "c_rear_inner": 0.1,
+        "g_axial": 0.2,
+        "h_optics_max": 0.1,
+        "h_rear_inner": 0.05,
+        "t_cover": 0.05,
+        "t_cover_bond": 0.1,
+        "t_display": 0.1,
+        "t_insulator": 0.05,
+        "t_lower_web": 0.05,
+        "t_main": 0.08,
+        "t_rear_pcb": 0.08,
+        "t_window": 0.05,
+        "tol_pack_thick": 0.2
+      },
+      "tolerance_rss_mm": 0.445,
+      "tolerance_sensitivities_mm": {
+        "c_axial": 0.1,
+        "c_back": 0.1,
+        "c_front": 0.15,
+        "c_optics": 0.1,
+        "c_rear_inner": 0.1,
+        "g_axial": 0.2,
+        "h_optics_max": 0.1,
+        "h_rear_inner": 0.05,
+        "t_cover": 0.05,
+        "t_cover_bond": 0.1,
+        "t_display": 0.1,
+        "t_insulator": 0.05,
+        "t_lower_web": 0.05,
+        "t_main": 0.08,
+        "t_rear_pcb": 0.08,
+        "t_window": 0.05,
+        "tol_pack_thick": 0.2
+      },
+      "tolerance_sum_linear_mm": 1.66
+    },
+    {
+      "H_B_in_battery_mm": 0.95,
+      "H_F_under_display_mm": 2.7,
+      "T_body_mm": 16.55,
+      "T_nominal_mm": 17.35,
+      "T_rss_mm": 17.795,
+      "T_worst_linear_mm": 19.01,
+      "blocking_reasons": [
+        "nominal T_total 17.35 > 15.5",
+        "RSS T_total 17.79 > 15.5"
+      ],
+      "cover": "COVER-GLS-AIR",
+      "credible_leq_15_5_mm": false,
+      "dependencies": [
+        "SR-COVER-LENS"
+      ],
+      "design_changes": [
+        "cover COVER-GLS-AIR: aluminosilicate CS glass cover sized by the same plate check; larger air gap for its larger deflection"
+      ],
+      "h_pod_mm": 0.8,
+      "h_rear_inner_mm": 0.8,
+      "id": "G1-CVG",
+      "levers": [],
+      "meets_upper_nominal": false,
+      "meets_upper_rss": false,
+      "meets_upper_worst_linear": false,
+      "risks": [
+        "lower planning allowable and stiffness than sapphire: thicker cover and air gap"
+      ],
+      "stack_adjustments": [],
+      "t_cover_bond_mm": 0.35,
+      "t_cover_mm": 1.75,
+      "title": "Cover range: CS glass, air gap",
+      "tolerance_deltas_mm": {
+        "c_axial": 0.1,
+        "c_back": 0.1,
+        "c_front": 0.15,
+        "c_optics": 0.1,
+        "c_rear_inner": 0.1,
+        "g_axial": 0.2,
+        "h_optics_max": 0.1,
+        "h_rear_inner": 0.05,
+        "t_cover": 0.05,
+        "t_cover_bond": 0.1,
+        "t_display": 0.1,
+        "t_insulator": 0.05,
+        "t_lower_web": 0.05,
+        "t_main": 0.08,
+        "t_rear_pcb": 0.08,
+        "t_window": 0.05,
+        "tol_pack_thick": 0.2
+      },
+      "tolerance_rss_mm": 0.445,
+      "tolerance_sensitivities_mm": {
+        "c_axial": 0.1,
+        "c_back": 0.1,
+        "c_front": 0.15,
+        "c_optics": 0.1,
+        "c_rear_inner": 0.1,
+        "g_axial": 0.2,
+        "h_optics_max": 0.1,
+        "h_rear_inner": 0.05,
+        "t_cover": 0.05,
+        "t_cover_bond": 0.1,
+        "t_display": 0.1,
+        "t_insulator": 0.05,
+        "t_lower_web": 0.05,
+        "t_main": 0.08,
+        "t_rear_pcb": 0.08,
+        "t_window": 0.05,
+        "tol_pack_thick": 0.2
+      },
+      "tolerance_sum_linear_mm": 1.66
+    },
+    {
+      "H_B_in_battery_mm": 0.95,
+      "H_F_under_display_mm": 2.7,
+      "T_body_mm": 15.4,
+      "T_nominal_mm": 16.2,
+      "T_rss_mm": 16.685,
+      "T_worst_linear_mm": 18.01,
+      "blocking_reasons": [
+        "nominal T_total 16.20 > 15.5",
+        "RSS T_total 16.69 > 15.5",
+        "cover option COVER-SAP-OCA status OWNER_DECISION_GATED"
+      ],
+      "cover": "COVER-SAP-OCA",
+      "credible_leq_15_5_mm": false,
+      "dependencies": [
+        "OD-COVER-LOADPATH: owner clarification whether a laminated display that shares the pressure load is compatible with OD-COVER ('display module is not the exterior structural or water barrier')",
+        "SR-DISPLAY-LAND: permitted pressure / lamination on the display front",
+        "SR-COVER-LENS: laminate design"
+      ],
+      "design_changes": [
+        "cover COVER-SAP-OCA: cover laminated to the display front with OCA; pressure load shared with the display module"
+      ],
+      "h_pod_mm": 0.8,
+      "h_rear_inner_mm": 0.8,
+      "id": "G1-CVL",
+      "levers": [],
+      "meets_upper_nominal": false,
+      "meets_upper_rss": false,
+      "meets_upper_worst_linear": false,
+      "risks": [
+        "display module carries part of the 5 ATM load",
+        "lamination yield / rework: display and cover become one part"
+      ],
+      "stack_adjustments": [],
+      "t_cover_bond_mm": 0.15,
+      "t_cover_mm": 0.8,
+      "title": "Cover range: sapphire laminated (OCA)",
+      "tolerance_deltas_mm": {
+        "c_axial": 0.1,
+        "c_back": 0.1,
+        "c_front": 0.15,
+        "c_optics": 0.1,
+        "c_rear_inner": 0.1,
+        "g_axial": 0.2,
+        "h_optics_max": 0.1,
+        "h_rear_inner": 0.05,
+        "t_cover": 0.2,
+        "t_cover_bond": 0.1,
+        "t_display": 0.1,
+        "t_insulator": 0.05,
+        "t_lower_web": 0.05,
+        "t_main": 0.08,
+        "t_rear_pcb": 0.08,
+        "t_window": 0.05,
+        "tol_pack_thick": 0.2
+      },
+      "tolerance_rss_mm": 0.485,
+      "tolerance_sensitivities_mm": {
+        "c_axial": 0.1,
+        "c_back": 0.1,
+        "c_front": 0.15,
+        "c_optics": 0.1,
+        "c_rear_inner": 0.1,
+        "g_axial": 0.2,
+        "h_optics_max": 0.1,
+        "h_rear_inner": 0.05,
+        "t_cover": 0.2,
+        "t_cover_bond": 0.1,
+        "t_display": 0.1,
+        "t_insulator": 0.05,
+        "t_lower_web": 0.05,
+        "t_main": 0.08,
+        "t_rear_pcb": 0.08,
+        "t_window": 0.05,
+        "tol_pack_thick": 0.2
+      },
+      "tolerance_sum_linear_mm": 1.81
+    },
+    {
+      "H_B_in_battery_mm": 0.95,
+      "H_F_under_display_mm": 2.7,
+      "T_body_mm": 15.4,
+      "T_nominal_mm": 16.2,
+      "T_rss_mm": 16.685,
+      "T_worst_linear_mm": 18.01,
+      "blocking_reasons": [
+        "nominal T_total 16.20 > 15.5",
+        "RSS T_total 16.69 > 15.5",
+        "cover option COVER-GLS-OCA status OWNER_DECISION_GATED"
+      ],
+      "cover": "COVER-GLS-OCA",
+      "credible_leq_15_5_mm": false,
+      "dependencies": [
+        "as COVER-SAP-OCA"
+      ],
+      "design_changes": [
+        "cover COVER-GLS-OCA: as COVER-SAP-OCA with CS glass"
+      ],
+      "h_pod_mm": 0.8,
+      "h_rear_inner_mm": 0.8,
+      "id": "G1-CVGL",
+      "levers": [],
+      "meets_upper_nominal": false,
+      "meets_upper_rss": false,
+      "meets_upper_worst_linear": false,
+      "risks": [
+        "as COVER-SAP-OCA; lower scratch resistance than sapphire"
+      ],
+      "stack_adjustments": [],
+      "t_cover_bond_mm": 0.15,
+      "t_cover_mm": 0.8,
+      "title": "Cover range: CS glass laminated (OCA)",
+      "tolerance_deltas_mm": {
+        "c_axial": 0.1,
+        "c_back": 0.1,
+        "c_front": 0.15,
+        "c_optics": 0.1,
+        "c_rear_inner": 0.1,
+        "g_axial": 0.2,
+        "h_optics_max": 0.1,
+        "h_rear_inner": 0.05,
+        "t_cover": 0.2,
+        "t_cover_bond": 0.1,
+        "t_display": 0.1,
+        "t_insulator": 0.05,
+        "t_lower_web": 0.05,
+        "t_main": 0.08,
+        "t_rear_pcb": 0.08,
+        "t_window": 0.05,
+        "tol_pack_thick": 0.2
+      },
+      "tolerance_rss_mm": 0.485,
+      "tolerance_sensitivities_mm": {
+        "c_axial": 0.1,
+        "c_back": 0.1,
+        "c_front": 0.15,
+        "c_optics": 0.1,
+        "c_rear_inner": 0.1,
+        "g_axial": 0.2,
+        "h_optics_max": 0.1,
+        "h_rear_inner": 0.05,
+        "t_cover": 0.2,
+        "t_cover_bond": 0.1,
+        "t_display": 0.1,
+        "t_insulator": 0.05,
+        "t_lower_web": 0.05,
+        "t_main": 0.08,
+        "t_rear_pcb": 0.08,
+        "t_window": 0.05,
+        "tol_pack_thick": 0.2
+      },
+      "tolerance_sum_linear_mm": 1.81
+    },
+    {
+      "H_B_in_battery_mm": 0.95,
+      "H_F_under_display_mm": 2.7,
+      "T_body_mm": 15.85,
+      "T_nominal_mm": 16.65,
+      "T_rss_mm": 17.095,
+      "T_worst_linear_mm": 18.31,
+      "blocking_reasons": [
+        "nominal T_total 16.65 > 15.5",
+        "RSS T_total 17.09 > 15.5"
+      ],
+      "cover": "COVER-SAP-AIR",
+      "credible_leq_15_5_mm": false,
+      "dependencies": [
+        "INNER-TAIL: SR-FPC-MECH: tail construction, land pattern, bonding process and rework rule",
+        "INNER-TAIL: G2 REAR placement",
+        "INNER-TAIL: service model: REAR + FPC become one sub-assembly; J1501 on MAIN stays the demountable joint (OD-DEVACCESS needs no post-closure access)",
+        "SR-COVER-LENS (material strength, thickness tolerance, edge finish, bond)",
+        "SR-DISPLAY-LAND (display support only, not the seal)",
+        "5 ATM qualification of the cover-to-case bond"
+      ],
+      "design_changes": [
+        "INNER-TAIL: J1502 becomes a 24-position solder/ACF tail land on the REAR inner face (positions, nets and continuity map unchanged); the inner face carries 0402 passives incl. the 22 uF / 10 uF high-CV parts",
+        "cover COVER-SAP-AIR: separate sapphire-class cover bonded/sealed to a case bezel ledge outside the display (a > R_display); air gap to the display front face"
+      ],
+      "h_pod_mm": 0.8,
+      "h_rear_inner_mm": 0.7,
+      "id": "G1-IT",
+      "levers": [
+        "INNER-TAIL"
+      ],
+      "meets_upper_nominal": false,
+      "meets_upper_rss": false,
+      "meets_upper_worst_linear": false,
+      "risks": [
+        "INNER-TAIL: REAR and FPC can no longer be separated without re-bonding",
+        "INNER-TAIL: tail exit must turn into the lower web without loading the REAR board",
+        "planning strength allowables are not supplier data",
+        "simply-supported sizing at the conservative corner needs the max thickness"
+      ],
+      "stack_adjustments": [],
+      "t_cover_bond_mm": 0.25,
+      "t_cover_mm": 1.25,
+      "title": "Inner side: flex tail instead of J1502",
+      "tolerance_deltas_mm": {
+        "c_axial": 0.1,
+        "c_back": 0.1,
+        "c_front": 0.15,
+        "c_optics": 0.1,
+        "c_rear_inner": 0.1,
+        "g_axial": 0.2,
+        "h_optics_max": 0.1,
+        "h_rear_inner": 0.05,
+        "t_cover": 0.05,
+        "t_cover_bond": 0.1,
+        "t_display": 0.1,
+        "t_insulator": 0.05,
+        "t_lower_web": 0.05,
+        "t_main": 0.08,
+        "t_rear_pcb": 0.08,
+        "t_window": 0.05,
+        "tol_pack_thick": 0.2
+      },
+      "tolerance_rss_mm": 0.445,
+      "tolerance_sensitivities_mm": {
+        "c_axial": 0.1,
+        "c_back": 0.1,
+        "c_front": 0.15,
+        "c_optics": 0.1,
+        "c_rear_inner": 0.1,
+        "g_axial": 0.2,
+        "h_optics_max": 0.1,
+        "h_rear_inner": 0.05,
+        "t_cover": 0.05,
+        "t_cover_bond": 0.1,
+        "t_display": 0.1,
+        "t_insulator": 0.05,
+        "t_lower_web": 0.05,
+        "t_main": 0.08,
+        "t_rear_pcb": 0.08,
+        "t_window": 0.05,
+        "tol_pack_thick": 0.2
+      },
+      "tolerance_sum_linear_mm": 1.66
+    },
+    {
+      "H_B_in_battery_mm": 0.95,
+      "H_F_under_display_mm": 2.7,
+      "T_body_mm": 15.58,
+      "T_nominal_mm": 16.38,
+      "T_rss_mm": 16.825,
+      "T_worst_linear_mm": 18.04,
+      "blocking_reasons": [
+        "nominal T_total 16.38 > 15.5",
+        "RSS T_total 16.82 > 15.5"
+      ],
+      "cover": "COVER-SAP-AIR",
+      "credible_leq_15_5_mm": false,
+      "dependencies": [
+        "INNER-0201: INNER-TAIL dependencies",
+        "INNER-0201: G2 placement and electrical review of REAR decoupling placement (values read from rear_sensor/04_PPG.kicad_sch: C403-C408 100 nF, C4102/C4202 100 nF, C4103/C4203 1.0 uF, C802 100 nF, R401-R409 10k-100k)",
+        "SR-COVER-LENS (material strength, thickness tolerance, edge finish, bond)",
+        "SR-DISPLAY-LAND (display support only, not the seal)",
+        "5 ATM qualification of the cover-to-case bond"
+      ],
+      "design_changes": [
+        "INNER-0201: inner face: flex tail land + 0201 passives only (100 nF / 1 uF class, 0402 resistors re-footprinted to 0201); C4101/C4201 (22 uF) and C4104/C4204 (10 uF) stay on the skin face next to the AFEs, below h_optics_max",
+        "cover COVER-SAP-AIR: separate sapphire-class cover bonded/sealed to a case bezel ledge outside the display (a > R_display); air gap to the display front face"
+      ],
+      "h_pod_mm": 0.8,
+      "h_rear_inner_mm": 0.43,
+      "id": "G1-I0",
+      "levers": [
+        "INNER-0201"
+      ],
+      "meets_upper_nominal": false,
+      "meets_upper_rss": false,
+      "meets_upper_worst_linear": false,
+      "risks": [
+        "INNER-0201: skin-face area grows by the high-CV parts (pod footprint, X11)",
+        "INNER-0201: 0201 assembly on the inner face of a double-sided board",
+        "planning strength allowables are not supplier data",
+        "simply-supported sizing at the conservative corner needs the max thickness"
+      ],
+      "stack_adjustments": [],
+      "t_cover_bond_mm": 0.25,
+      "t_cover_mm": 1.25,
+      "title": "Inner side: flex tail + 0201 cap",
+      "tolerance_deltas_mm": {
+        "c_axial": 0.1,
+        "c_back": 0.1,
+        "c_front": 0.15,
+        "c_optics": 0.1,
+        "c_rear_inner": 0.1,
+        "g_axial": 0.2,
+        "h_optics_max": 0.1,
+        "h_rear_inner": 0.05,
+        "t_cover": 0.05,
+        "t_cover_bond": 0.1,
+        "t_display": 0.1,
+        "t_insulator": 0.05,
+        "t_lower_web": 0.05,
+        "t_main": 0.08,
+        "t_rear_pcb": 0.08,
+        "t_window": 0.05,
+        "tol_pack_thick": 0.2
+      },
+      "tolerance_rss_mm": 0.445,
+      "tolerance_sensitivities_mm": {
+        "c_axial": 0.1,
+        "c_back": 0.1,
+        "c_front": 0.15,
+        "c_optics": 0.1,
+        "c_rear_inner": 0.1,
+        "g_axial": 0.2,
+        "h_optics_max": 0.1,
+        "h_rear_inner": 0.05,
+        "t_cover": 0.05,
+        "t_cover_bond": 0.1,
+        "t_display": 0.1,
+        "t_insulator": 0.05,
+        "t_lower_web": 0.05,
+        "t_main": 0.08,
+        "t_rear_pcb": 0.08,
+        "t_window": 0.05,
+        "tol_pack_thick": 0.2
+      },
+      "tolerance_sum_linear_mm": 1.66
+    },
+    {
+      "H_B_in_battery_mm": 0.95,
+      "H_F_under_display_mm": 2.7,
+      "T_body_mm": 15.85,
+      "T_nominal_mm": 16.65,
+      "T_rss_mm": 17.086,
+      "T_worst_linear_mm": 18.26,
+      "blocking_reasons": [
+        "nominal T_total 16.65 > 15.5",
+        "RSS T_total 17.09 > 15.5",
+        "lever INNER-SKINCONN status SUPPLIER_DATA_GATED"
+      ],
+      "cover": "COVER-SAP-AIR",
+      "credible_leq_15_5_mm": false,
+      "dependencies": [
+        "INNER-SKINCONN: SR-FPC-MECH: mated height must be <= h_optics_max or it raises optics_zone",
+        "INNER-SKINCONN: G2: pod footprint grows by the connector",
+        "SR-COVER-LENS (material strength, thickness tolerance, edge finish, bond)",
+        "SR-DISPLAY-LAND (display support only, not the seal)",
+        "5 ATM qualification of the cover-to-case bond"
+      ],
+      "design_changes": [
+        "INNER-SKINCONN: J1502 moves to the optical face inside the pod; the FPC wraps the REAR edge; the connector competes with h_optics_max",
+        "cover COVER-SAP-AIR: separate sapphire-class cover bonded/sealed to a case bezel ledge outside the display (a > R_display); air gap to the display front face"
+      ],
+      "h_pod_mm": 0.8,
+      "h_rear_inner_mm": 0.65,
+      "id": "G1-IS",
+      "levers": [
+        "INNER-SKINCONN"
+      ],
+      "meets_upper_nominal": false,
+      "meets_upper_rss": false,
+      "meets_upper_worst_linear": false,
+      "risks": [
+        "INNER-SKINCONN: connector inside the optical pod: stray light, pod footprint (X11)",
+        "INNER-SKINCONN: FPC wrap around the REAR edge needs bend radius",
+        "planning strength allowables are not supplier data",
+        "simply-supported sizing at the conservative corner needs the max thickness"
+      ],
+      "stack_adjustments": [
+        "optics_zone raised to clear J1502 on the skin face: 0.900 mm"
+      ],
+      "t_cover_bond_mm": 0.25,
+      "t_cover_mm": 1.25,
+      "title": "Inner side: J1502 on the skin face",
+      "tolerance_deltas_mm": {
+        "c_axial": 0.1,
+        "c_back": 0.1,
+        "c_front": 0.15,
+        "c_optics": 0.1,
+        "c_rear_inner": 0.1,
+        "g_axial": 0.2,
+        "h_optics_max": 0.1,
+        "h_rear_inner": 0.05,
+        "t_cover": 0.05,
+        "t_cover_bond": 0.1,
+        "t_display": 0.1,
+        "t_insulator": 0.05,
+        "t_lower_web": 0.05,
+        "t_main": 0.08,
+        "t_rear_pcb": 0.08,
+        "t_window": 0.05,
+        "tol_pack_thick": 0.2
+      },
+      "tolerance_rss_mm": 0.436,
+      "tolerance_sensitivities_mm": {
+        "c_axial": 0.1,
+        "c_back": 0.1,
+        "c_front": 0.15,
+        "c_optics": 0.1,
+        "c_rear_inner": 0.1,
+        "g_axial": 0.2,
+        "h_optics_max": 0.05,
+        "h_rear_inner": 0.05,
+        "t_cover": 0.05,
+        "t_cover_bond": 0.1,
+        "t_display": 0.1,
+        "t_insulator": 0.05,
+        "t_lower_web": 0.05,
+        "t_main": 0.08,
+        "t_rear_pcb": 0.08,
+        "t_window": 0.05,
+        "tol_pack_thick": 0.2
+      },
+      "tolerance_sum_linear_mm": 1.61
+    },
+    {
+      "H_B_in_battery_mm": 0.95,
+      "H_F_under_display_mm": 2.7,
+      "T_body_mm": 15.23,
+      "T_nominal_mm": 16.03,
+      "T_rss_mm": 16.48,
+      "T_worst_linear_mm": 17.69,
+      "blocking_reasons": [
+        "nominal T_total 16.03 > 15.5",
+        "RSS T_total 16.48 > 15.5",
+        "lever INNER-NEST status SUPPLIER_DATA_GATED"
+      ],
+      "cover": "COVER-SAP-AIR",
+      "credible_leq_15_5_mm": false,
+      "dependencies": [
+        "INNER-0201: INNER-TAIL dependencies",
+        "INNER-0201: G2 placement and electrical review of REAR decoupling placement (values read from rear_sensor/04_PPG.kicad_sch: C403-C408 100 nF, C4102/C4202 100 nF, C4103/C4203 1.0 uF, C802 100 nF, R401-R409 10k-100k)",
+        "INNER-NEST: SR-BATT-GROWTH: permitted unsupported pack span over the windows and growth pressure",
+        "INNER-NEST: X20: pack growth must never load the REAR board / optical stack",
+        "SR-COVER-LENS (material strength, thickness tolerance, edge finish, bond)",
+        "SR-DISPLAY-LAND (display support only, not the seal)",
+        "5 ATM qualification of the cover-to-case bond"
+      ],
+      "design_changes": [
+        "INNER-0201: inner face: flex tail land + 0201 passives only (100 nF / 1 uF class, 0402 resistors re-footprinted to 0201); C4101/C4201 (22 uF) and C4104/C4204 (10 uF) stay on the skin face next to the AFEs, below h_optics_max",
+        "INNER-NEST: lower web keeps its thickness but opens windows over the inner-face parts; a PI film closes the window toward the pack: rear_inner + lower_web -> max(lower_web, rear_inner) + t_insulator",
+        "cover COVER-SAP-AIR: separate sapphire-class cover bonded/sealed to a case bezel ledge outside the display (a > R_display); air gap to the display front face"
+      ],
+      "h_pod_mm": 0.8,
+      "h_rear_inner_mm": 0.43,
+      "id": "G1-IN",
+      "levers": [
+        "INNER-0201",
+        "INNER-NEST"
+      ],
+      "meets_upper_nominal": false,
+      "meets_upper_rss": false,
+      "meets_upper_worst_linear": false,
+      "risks": [
+        "INNER-0201: skin-face area grows by the high-CV parts (pod footprint, X11)",
+        "INNER-0201: 0201 assembly on the inner face of a double-sided board",
+        "INNER-NEST: pack bulge into a window loads the REAR inner parts and pushes the optical stack (X20)",
+        "INNER-NEST: FPC under-run must route around the windows",
+        "planning strength allowables are not supplier data",
+        "simply-supported sizing at the conservative corner needs the max thickness"
+      ],
+      "stack_adjustments": [
+        "rear_inner + lower_web -> max(lower_web, rear_inner) + t_insulator = 0.580 mm (was 0.400 + 0.530)"
+      ],
+      "t_cover_bond_mm": 0.25,
+      "t_cover_mm": 1.25,
+      "title": "Inner side: 0201 cap + floor pockets",
+      "tolerance_deltas_mm": {
+        "c_axial": 0.1,
+        "c_back": 0.1,
+        "c_front": 0.15,
+        "c_optics": 0.1,
+        "c_rear_inner": 0.1,
+        "g_axial": 0.2,
+        "h_optics_max": 0.1,
+        "h_rear_inner": 0.05,
+        "t_cover": 0.05,
+        "t_cover_bond": 0.1,
+        "t_display": 0.1,
+        "t_insulator": 0.05,
+        "t_lower_web": 0.05,
+        "t_main": 0.08,
+        "t_rear_pcb": 0.08,
+        "t_window": 0.05,
+        "tol_pack_thick": 0.2
+      },
+      "tolerance_rss_mm": 0.45,
+      "tolerance_sensitivities_mm": {
+        "c_axial": 0.1,
+        "c_back": 0.1,
+        "c_front": 0.15,
+        "c_optics": 0.1,
+        "c_rear_inner": 0.1,
+        "g_axial": 0.2,
+        "h_optics_max": 0.1,
+        "h_rear_inner": 0.05,
+        "t_cover": 0.05,
+        "t_cover_bond": 0.1,
+        "t_display": 0.1,
+        "t_insulator": 0.1,
+        "t_lower_web": 0.0,
+        "t_main": 0.08,
+        "t_rear_pcb": 0.08,
+        "t_window": 0.05,
+        "tol_pack_thick": 0.2
+      },
+      "tolerance_sum_linear_mm": 1.66
+    },
+    {
+      "H_B_in_battery_mm": 0.95,
+      "H_F_under_display_mm": 2.7,
+      "T_body_mm": 15.95,
+      "T_nominal_mm": 16.75,
+      "T_rss_mm": 17.195,
+      "T_worst_linear_mm": 18.41,
+      "blocking_reasons": [
+        "nominal T_total 16.75 > 15.5",
+        "RSS T_total 17.19 > 15.5",
+        "lever CONN-SIDE-B status NOT_A_LEVER"
+      ],
+      "cover": "COVER-SAP-AIR",
+      "credible_leq_15_5_mm": false,
+      "dependencies": [
+        "CONN-SIDE-B: placement phase; SR-FPC-MECH and SR-BATT-PCM mated heights",
+        "SR-COVER-LENS (material strength, thickness tolerance, edge finish, bond)",
+        "SR-DISPLAY-LAND (display support only, not the seal)",
+        "5 ATM qualification of the cover-to-case bond"
+      ],
+      "design_changes": [
+        "CONN-SIDE-B: connectors on B.Cu inside the pack projection (only 1.0 mm of MAIN lies outside R_pack_nom): the connector mated height joins the back zone",
+        "cover COVER-SAP-AIR: separate sapphire-class cover bonded/sealed to a case bezel ledge outside the display (a > R_display); air gap to the display front face"
+      ],
+      "h_pod_mm": 0.8,
+      "h_rear_inner_mm": 0.8,
+      "id": "G1-CB",
+      "levers": [
+        "CONN-SIDE-B"
+      ],
+      "meets_upper_nominal": false,
+      "meets_upper_rss": false,
+      "meets_upper_worst_linear": false,
+      "risks": [
+        "CONN-SIDE-B: thicker back zone; connector under the pack",
+        "planning strength allowables are not supplier data",
+        "simply-supported sizing at the conservative corner needs the max thickness"
+      ],
+      "stack_adjustments": [
+        "back_zone = max(H_B + c_back, connector mated height) + t_insulator = 1.100 mm (connector class nominal 0.80 does not exceed H_B + c_back)"
+      ],
+      "t_cover_bond_mm": 0.25,
+      "t_cover_mm": 1.25,
+      "title": "J1501 / J201 on B.Cu (OD-CONN-SIDE)",
+      "tolerance_deltas_mm": {
+        "c_axial": 0.1,
+        "c_back": 0.1,
+        "c_front": 0.15,
+        "c_optics": 0.1,
+        "c_rear_inner": 0.1,
+        "g_axial": 0.2,
+        "h_optics_max": 0.1,
+        "h_rear_inner": 0.05,
+        "t_cover": 0.05,
+        "t_cover_bond": 0.1,
+        "t_display": 0.1,
+        "t_insulator": 0.05,
+        "t_lower_web": 0.05,
+        "t_main": 0.08,
+        "t_rear_pcb": 0.08,
+        "t_window": 0.05,
+        "tol_pack_thick": 0.2
+      },
+      "tolerance_rss_mm": 0.445,
+      "tolerance_sensitivities_mm": {
+        "c_axial": 0.1,
+        "c_back": 0.1,
+        "c_front": 0.15,
+        "c_optics": 0.1,
+        "c_rear_inner": 0.1,
+        "g_axial": 0.2,
+        "h_optics_max": 0.1,
+        "h_rear_inner": 0.05,
+        "t_cover": 0.05,
+        "t_cover_bond": 0.1,
+        "t_display": 0.1,
+        "t_insulator": 0.05,
+        "t_lower_web": 0.05,
+        "t_main": 0.08,
+        "t_rear_pcb": 0.08,
+        "t_window": 0.05,
+        "tol_pack_thick": 0.2
+      },
+      "tolerance_sum_linear_mm": 1.66
+    },
+    {
+      "H_B_in_battery_mm": 0.65,
+      "H_F_under_display_mm": 2.7,
+      "T_body_mm": 15.55,
+      "T_nominal_mm": 16.35,
+      "T_rss_mm": 16.795,
+      "T_worst_linear_mm": 18.01,
+      "blocking_reasons": [
+        "nominal T_total 16.35 > 15.5",
+        "RSS T_total 16.79 > 15.5"
+      ],
+      "cover": "COVER-SAP-AIR",
+      "credible_leq_15_5_mm": false,
+      "dependencies": [
+        "P-0402: later MAIN BOM / placement task: 0402 parts with >= 6.3 V rating, DC-bias effective capacitance at 3.0 V / 1.8 V vs eMMC guidance, schematic footprint change, PCB re-placement inside the storage pocket",
+        "INNER-TAIL: SR-FPC-MECH: tail construction, land pattern, bonding process and rework rule",
+        "INNER-TAIL: G2 REAR placement",
+        "INNER-TAIL: service model: REAR + FPC become one sub-assembly; J1501 on MAIN stays the demountable joint (OD-DEVACCESS needs no post-closure access)",
+        "SR-COVER-LENS (material strength, thickness tolerance, edge finish, bond)",
+        "SR-DISPLAY-LAND (display support only, not the seal)",
+        "5 ATM qualification of the cover-to-case bond"
+      ],
+      "design_changes": [
+        "P-0402: C901 (4.7 uF) and C903 (2.2 uF) as 0402 high-CV MLCC; carrier storage pocket depth recomputed",
+        "INNER-TAIL: J1502 becomes a 24-position solder/ACF tail land on the REAR inner face (positions, nets and continuity map unchanged); the inner face carries 0402 passives incl. the 22 uF / 10 uF high-CV parts",
+        "cover COVER-SAP-AIR: separate sapphire-class cover bonded/sealed to a case bezel ledge outside the display (a > R_display); air gap to the display front face"
+      ],
+      "h_pod_mm": 0.8,
+      "h_rear_inner_mm": 0.7,
+      "id": "G1-K1",
+      "levers": [
+        "P-0402",
+        "INNER-TAIL"
+      ],
+      "meets_upper_nominal": false,
+      "meets_upper_rss": false,
+      "meets_upper_worst_linear": false,
+      "risks": [
+        "P-0402: DC-bias derating may need a second 0402 on VCC (same height, more area)",
+        "P-0402: high-CV 0402 heights vary by MPN: the 0.05 high-CV allowance must be confirmed at MPN freeze",
+        "INNER-TAIL: REAR and FPC can no longer be separated without re-bonding",
+        "INNER-TAIL: tail exit must turn into the lower web without loading the REAR board",
+        "planning strength allowables are not supplier data",
+        "simply-supported sizing at the conservative corner needs the max thickness"
+      ],
+      "stack_adjustments": [],
+      "t_cover_bond_mm": 0.25,
+      "t_cover_mm": 1.25,
+      "title": "Combination: P-0402 + INNER-TAIL",
+      "tolerance_deltas_mm": {
+        "c_axial": 0.1,
+        "c_back": 0.1,
+        "c_front": 0.15,
+        "c_optics": 0.1,
+        "c_rear_inner": 0.1,
+        "g_axial": 0.2,
+        "h_optics_max": 0.1,
+        "h_rear_inner": 0.05,
+        "t_cover": 0.05,
+        "t_cover_bond": 0.1,
+        "t_display": 0.1,
+        "t_insulator": 0.05,
+        "t_lower_web": 0.05,
+        "t_main": 0.08,
+        "t_rear_pcb": 0.08,
+        "t_window": 0.05,
+        "tol_pack_thick": 0.2
+      },
+      "tolerance_rss_mm": 0.445,
+      "tolerance_sensitivities_mm": {
+        "c_axial": 0.1,
+        "c_back": 0.1,
+        "c_front": 0.15,
+        "c_optics": 0.1,
+        "c_rear_inner": 0.1,
+        "g_axial": 0.2,
+        "h_optics_max": 0.1,
+        "h_rear_inner": 0.05,
+        "t_cover": 0.05,
+        "t_cover_bond": 0.1,
+        "t_display": 0.1,
+        "t_insulator": 0.05,
+        "t_lower_web": 0.05,
+        "t_main": 0.08,
+        "t_rear_pcb": 0.08,
+        "t_window": 0.05,
+        "tol_pack_thick": 0.2
+      },
+      "tolerance_sum_linear_mm": 1.66
+    },
+    {
+      "H_B_in_battery_mm": 0.65,
+      "H_F_under_display_mm": 2.7,
+      "T_body_mm": 15.28,
+      "T_nominal_mm": 16.08,
+      "T_rss_mm": 16.525,
+      "T_worst_linear_mm": 17.74,
+      "blocking_reasons": [
+        "nominal T_total 16.08 > 15.5",
+        "RSS T_total 16.52 > 15.5"
+      ],
+      "cover": "COVER-SAP-AIR",
+      "credible_leq_15_5_mm": false,
+      "dependencies": [
+        "P-0402: later MAIN BOM / placement task: 0402 parts with >= 6.3 V rating, DC-bias effective capacitance at 3.0 V / 1.8 V vs eMMC guidance, schematic footprint change, PCB re-placement inside the storage pocket",
+        "INNER-0201: INNER-TAIL dependencies",
+        "INNER-0201: G2 placement and electrical review of REAR decoupling placement (values read from rear_sensor/04_PPG.kicad_sch: C403-C408 100 nF, C4102/C4202 100 nF, C4103/C4203 1.0 uF, C802 100 nF, R401-R409 10k-100k)",
+        "SR-COVER-LENS (material strength, thickness tolerance, edge finish, bond)",
+        "SR-DISPLAY-LAND (display support only, not the seal)",
+        "5 ATM qualification of the cover-to-case bond"
+      ],
+      "design_changes": [
+        "P-0402: C901 (4.7 uF) and C903 (2.2 uF) as 0402 high-CV MLCC; carrier storage pocket depth recomputed",
+        "INNER-0201: inner face: flex tail land + 0201 passives only (100 nF / 1 uF class, 0402 resistors re-footprinted to 0201); C4101/C4201 (22 uF) and C4104/C4204 (10 uF) stay on the skin face next to the AFEs, below h_optics_max",
+        "cover COVER-SAP-AIR: separate sapphire-class cover bonded/sealed to a case bezel ledge outside the display (a > R_display); air gap to the display front face"
+      ],
+      "h_pod_mm": 0.8,
+      "h_rear_inner_mm": 0.43,
+      "id": "G1-K2",
+      "levers": [
+        "P-0402",
+        "INNER-0201"
+      ],
+      "meets_upper_nominal": false,
+      "meets_upper_rss": false,
+      "meets_upper_worst_linear": false,
+      "risks": [
+        "P-0402: DC-bias derating may need a second 0402 on VCC (same height, more area)",
+        "P-0402: high-CV 0402 heights vary by MPN: the 0.05 high-CV allowance must be confirmed at MPN freeze",
+        "INNER-0201: skin-face area grows by the high-CV parts (pod footprint, X11)",
+        "INNER-0201: 0201 assembly on the inner face of a double-sided board",
+        "planning strength allowables are not supplier data",
+        "simply-supported sizing at the conservative corner needs the max thickness"
+      ],
+      "stack_adjustments": [],
+      "t_cover_bond_mm": 0.25,
+      "t_cover_mm": 1.25,
+      "title": "Combination: P-0402 + INNER-0201 (all credible levers)",
+      "tolerance_deltas_mm": {
+        "c_axial": 0.1,
+        "c_back": 0.1,
+        "c_front": 0.15,
+        "c_optics": 0.1,
+        "c_rear_inner": 0.1,
+        "g_axial": 0.2,
+        "h_optics_max": 0.1,
+        "h_rear_inner": 0.05,
+        "t_cover": 0.05,
+        "t_cover_bond": 0.1,
+        "t_display": 0.1,
+        "t_insulator": 0.05,
+        "t_lower_web": 0.05,
+        "t_main": 0.08,
+        "t_rear_pcb": 0.08,
+        "t_window": 0.05,
+        "tol_pack_thick": 0.2
+      },
+      "tolerance_rss_mm": 0.445,
+      "tolerance_sensitivities_mm": {
+        "c_axial": 0.1,
+        "c_back": 0.1,
+        "c_front": 0.15,
+        "c_optics": 0.1,
+        "c_rear_inner": 0.1,
+        "g_axial": 0.2,
+        "h_optics_max": 0.1,
+        "h_rear_inner": 0.05,
+        "t_cover": 0.05,
+        "t_cover_bond": 0.1,
+        "t_display": 0.1,
+        "t_insulator": 0.05,
+        "t_lower_web": 0.05,
+        "t_main": 0.08,
+        "t_rear_pcb": 0.08,
+        "t_window": 0.05,
+        "tol_pack_thick": 0.2
+      },
+      "tolerance_sum_linear_mm": 1.66
+    },
+    {
+      "H_B_in_battery_mm": 0.65,
+      "H_F_under_display_mm": 2.7,
+      "T_body_mm": 14.93,
+      "T_nominal_mm": 15.73,
+      "T_rss_mm": 16.18,
+      "T_worst_linear_mm": 17.39,
+      "blocking_reasons": [
+        "nominal T_total 15.73 > 15.5",
+        "RSS T_total 16.18 > 15.5",
+        "lever INNER-NEST status SUPPLIER_DATA_GATED"
+      ],
+      "cover": "COVER-SAP-AIR",
+      "credible_leq_15_5_mm": false,
+      "dependencies": [
+        "P-0402: later MAIN BOM / placement task: 0402 parts with >= 6.3 V rating, DC-bias effective capacitance at 3.0 V / 1.8 V vs eMMC guidance, schematic footprint change, PCB re-placement inside the storage pocket",
+        "INNER-0201: INNER-TAIL dependencies",
+        "INNER-0201: G2 placement and electrical review of REAR decoupling placement (values read from rear_sensor/04_PPG.kicad_sch: C403-C408 100 nF, C4102/C4202 100 nF, C4103/C4203 1.0 uF, C802 100 nF, R401-R409 10k-100k)",
+        "INNER-NEST: SR-BATT-GROWTH: permitted unsupported pack span over the windows and growth pressure",
+        "INNER-NEST: X20: pack growth must never load the REAR board / optical stack",
+        "SR-COVER-LENS (material strength, thickness tolerance, edge finish, bond)",
+        "SR-DISPLAY-LAND (display support only, not the seal)",
+        "5 ATM qualification of the cover-to-case bond"
+      ],
+      "design_changes": [
+        "P-0402: C901 (4.7 uF) and C903 (2.2 uF) as 0402 high-CV MLCC; carrier storage pocket depth recomputed",
+        "INNER-0201: inner face: flex tail land + 0201 passives only (100 nF / 1 uF class, 0402 resistors re-footprinted to 0201); C4101/C4201 (22 uF) and C4104/C4204 (10 uF) stay on the skin face next to the AFEs, below h_optics_max",
+        "INNER-NEST: lower web keeps its thickness but opens windows over the inner-face parts; a PI film closes the window toward the pack: rear_inner + lower_web -> max(lower_web, rear_inner) + t_insulator",
+        "cover COVER-SAP-AIR: separate sapphire-class cover bonded/sealed to a case bezel ledge outside the display (a > R_display); air gap to the display front face"
+      ],
+      "h_pod_mm": 0.8,
+      "h_rear_inner_mm": 0.43,
+      "id": "G1-K3",
+      "levers": [
+        "P-0402",
+        "INNER-0201",
+        "INNER-NEST"
+      ],
+      "meets_upper_nominal": false,
+      "meets_upper_rss": false,
+      "meets_upper_worst_linear": false,
+      "risks": [
+        "P-0402: DC-bias derating may need a second 0402 on VCC (same height, more area)",
+        "P-0402: high-CV 0402 heights vary by MPN: the 0.05 high-CV allowance must be confirmed at MPN freeze",
+        "INNER-0201: skin-face area grows by the high-CV parts (pod footprint, X11)",
+        "INNER-0201: 0201 assembly on the inner face of a double-sided board",
+        "INNER-NEST: pack bulge into a window loads the REAR inner parts and pushes the optical stack (X20)",
+        "INNER-NEST: FPC under-run must route around the windows",
+        "planning strength allowables are not supplier data",
+        "simply-supported sizing at the conservative corner needs the max thickness"
+      ],
+      "stack_adjustments": [
+        "rear_inner + lower_web -> max(lower_web, rear_inner) + t_insulator = 0.580 mm (was 0.400 + 0.530)"
+      ],
+      "t_cover_bond_mm": 0.25,
+      "t_cover_mm": 1.25,
+      "title": "Combination: K2 + INNER-NEST",
+      "tolerance_deltas_mm": {
+        "c_axial": 0.1,
+        "c_back": 0.1,
+        "c_front": 0.15,
+        "c_optics": 0.1,
+        "c_rear_inner": 0.1,
+        "g_axial": 0.2,
+        "h_optics_max": 0.1,
+        "h_rear_inner": 0.05,
+        "t_cover": 0.05,
+        "t_cover_bond": 0.1,
+        "t_display": 0.1,
+        "t_insulator": 0.05,
+        "t_lower_web": 0.05,
+        "t_main": 0.08,
+        "t_rear_pcb": 0.08,
+        "t_window": 0.05,
+        "tol_pack_thick": 0.2
+      },
+      "tolerance_rss_mm": 0.45,
+      "tolerance_sensitivities_mm": {
+        "c_axial": 0.1,
+        "c_back": 0.1,
+        "c_front": 0.15,
+        "c_optics": 0.1,
+        "c_rear_inner": 0.1,
+        "g_axial": 0.2,
+        "h_optics_max": 0.1,
+        "h_rear_inner": 0.05,
+        "t_cover": 0.05,
+        "t_cover_bond": 0.1,
+        "t_display": 0.1,
+        "t_insulator": 0.1,
+        "t_lower_web": 0.0,
+        "t_main": 0.08,
+        "t_rear_pcb": 0.08,
+        "t_window": 0.05,
+        "tol_pack_thick": 0.2
+      },
+      "tolerance_sum_linear_mm": 1.66
+    },
+    {
+      "H_B_in_battery_mm": 0.65,
+      "H_F_under_display_mm": 2.7,
+      "T_body_mm": 14.38,
+      "T_nominal_mm": 15.18,
+      "T_rss_mm": 15.67,
+      "T_worst_linear_mm": 16.99,
+      "blocking_reasons": [
+        "RSS T_total 15.67 > 15.5",
+        "lever INNER-NEST status SUPPLIER_DATA_GATED",
+        "cover option COVER-SAP-OCA status OWNER_DECISION_GATED"
+      ],
+      "cover": "COVER-SAP-OCA",
+      "credible_leq_15_5_mm": false,
+      "dependencies": [
+        "P-0402: later MAIN BOM / placement task: 0402 parts with >= 6.3 V rating, DC-bias effective capacitance at 3.0 V / 1.8 V vs eMMC guidance, schematic footprint change, PCB re-placement inside the storage pocket",
+        "INNER-0201: INNER-TAIL dependencies",
+        "INNER-0201: G2 placement and electrical review of REAR decoupling placement (values read from rear_sensor/04_PPG.kicad_sch: C403-C408 100 nF, C4102/C4202 100 nF, C4103/C4203 1.0 uF, C802 100 nF, R401-R409 10k-100k)",
+        "INNER-NEST: SR-BATT-GROWTH: permitted unsupported pack span over the windows and growth pressure",
+        "INNER-NEST: X20: pack growth must never load the REAR board / optical stack",
+        "OD-COVER-LOADPATH: owner clarification whether a laminated display that shares the pressure load is compatible with OD-COVER ('display module is not the exterior structural or water barrier')",
+        "SR-DISPLAY-LAND: permitted pressure / lamination on the display front",
+        "SR-COVER-LENS: laminate design"
+      ],
+      "design_changes": [
+        "P-0402: C901 (4.7 uF) and C903 (2.2 uF) as 0402 high-CV MLCC; carrier storage pocket depth recomputed",
+        "INNER-0201: inner face: flex tail land + 0201 passives only (100 nF / 1 uF class, 0402 resistors re-footprinted to 0201); C4101/C4201 (22 uF) and C4104/C4204 (10 uF) stay on the skin face next to the AFEs, below h_optics_max",
+        "INNER-NEST: lower web keeps its thickness but opens windows over the inner-face parts; a PI film closes the window toward the pack: rear_inner + lower_web -> max(lower_web, rear_inner) + t_insulator",
+        "cover COVER-SAP-OCA: cover laminated to the display front with OCA; pressure load shared with the display module"
+      ],
+      "h_pod_mm": 0.8,
+      "h_rear_inner_mm": 0.43,
+      "id": "G1-K4",
+      "levers": [
+        "P-0402",
+        "INNER-0201",
+        "INNER-NEST"
+      ],
+      "meets_upper_nominal": true,
+      "meets_upper_rss": false,
+      "meets_upper_worst_linear": false,
+      "risks": [
+        "P-0402: DC-bias derating may need a second 0402 on VCC (same height, more area)",
+        "P-0402: high-CV 0402 heights vary by MPN: the 0.05 high-CV allowance must be confirmed at MPN freeze",
+        "INNER-0201: skin-face area grows by the high-CV parts (pod footprint, X11)",
+        "INNER-0201: 0201 assembly on the inner face of a double-sided board",
+        "INNER-NEST: pack bulge into a window loads the REAR inner parts and pushes the optical stack (X20)",
+        "INNER-NEST: FPC under-run must route around the windows",
+        "display module carries part of the 5 ATM load",
+        "lamination yield / rework: display and cover become one part"
+      ],
+      "stack_adjustments": [
+        "rear_inner + lower_web -> max(lower_web, rear_inner) + t_insulator = 0.580 mm (was 0.400 + 0.530)"
+      ],
+      "t_cover_bond_mm": 0.15,
+      "t_cover_mm": 0.8,
+      "title": "Combination: K3 + laminated sapphire cover (every lever)",
+      "tolerance_deltas_mm": {
+        "c_axial": 0.1,
+        "c_back": 0.1,
+        "c_front": 0.15,
+        "c_optics": 0.1,
+        "c_rear_inner": 0.1,
+        "g_axial": 0.2,
+        "h_optics_max": 0.1,
+        "h_rear_inner": 0.05,
+        "t_cover": 0.2,
+        "t_cover_bond": 0.1,
+        "t_display": 0.1,
+        "t_insulator": 0.05,
+        "t_lower_web": 0.05,
+        "t_main": 0.08,
+        "t_rear_pcb": 0.08,
+        "t_window": 0.05,
+        "tol_pack_thick": 0.2
+      },
+      "tolerance_rss_mm": 0.49,
+      "tolerance_sensitivities_mm": {
+        "c_axial": 0.1,
+        "c_back": 0.1,
+        "c_front": 0.15,
+        "c_optics": 0.1,
+        "c_rear_inner": 0.1,
+        "g_axial": 0.2,
+        "h_optics_max": 0.1,
+        "h_rear_inner": 0.05,
+        "t_cover": 0.2,
+        "t_cover_bond": 0.1,
+        "t_display": 0.1,
+        "t_insulator": 0.1,
+        "t_lower_web": 0.0,
+        "t_main": 0.08,
+        "t_rear_pcb": 0.08,
+        "t_window": 0.05,
+        "tol_pack_thick": 0.2
+      },
+      "tolerance_sum_linear_mm": 1.81
+    }
+  ],
+  "schema": "sportwatch-mech-g1-scenarios/1",
+  "status": "G1 thickness-recovery study (G1_BRIEF.md section 4); all values computed, none hand-typed",
+  "target_T_total_mm": [
+    14.0,
+    15.5
+  ]
+}
