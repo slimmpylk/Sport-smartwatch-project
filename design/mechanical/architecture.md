@@ -60,6 +60,11 @@ Tool margins to 14.0 / 15.5: thin +0.95 / +0.55; nominal +2.75 / -1.25; thick +5
 16.75 / 16.25 / 15.95 / 15.75 / 15.25 mm (h_pod is PARAMETRIC LOW and cannot be frozen without wrist/strap trials). Tool RSS (informational):
 primary 17.598 mm, secondary 17.529 mm; the primary RSS treats design variables (window, REAR PCB, lower web) as tolerances.
 
+**Distinction between RSS metrics and planning envelope:**
+- **G1 scenario RSS (17.195 mm):** scenario-specific tolerance policy evaluating actual single-term stack responses for the G1 baseline (G1-S4: nominal 16.750 mm, RSS 17.195 mm, linear worst 18.410 mm); authoritative for the G1 thickness decision.
+- **Broad planning RSS (17.598 mm):** broad max-minus-nominal parameter ranges across the model (secondary nominal-active RSS: 17.529 mm), including wider planning ranges and inactive alternatives; an intentionally conservative planning metric.
+- **All-maximum planning envelope (19.530 mm):** separate all-maximum planning envelope (linear sum of all thick-corner parameters). These are distinct metrics, not competing values.
+
 **Governing layers.** battery_zone is 30 % of the nominal stack (5.0 / 16.75), front_gap 17 %, display 12 %, back_zone 7 %. Largest contributors to
 thick - nominal (tool): battery_zone 0.5, cover 0.45, window 0.3.
 
@@ -996,7 +1001,7 @@ with the stand-in until the gate.
 
 | ID | Register id | Who | What | Affects | Hard gate | Parametric stand-in |
 |---|---|---|---|---|---|---|
-| SR-DISPLAY-FPC | DISPLAY-FPC | Display supplier (ZC-A1D43W-046) | Folded-FPC envelope drawing: thickness, fold exit direction/width, plug location and alignment float, bend radius, border/ink window for ALS | front gap (local), west corridor, J1 blind mate, ALS aperture, SW1/SW2 position | before case/outline co-design | t_display_fpc_fold 0.3-0.6; fold footprint +0.7 beyond outline |
+| SR-DISPLAY-FPC | DISPLAY-FPC | Display supplier (ZC-A1D43W-046) | Folded-FPC envelope drawing: thickness, fold exit direction/width, plug location and alignment float, bend radius, border/ink window for ALS; manufacturer drawing constraint component area <= 1.2 mm applies to the local FPC component area, is not the panel/module thickness, and does NOT establish a thickness-saving lever (assembled/folded FPC overlap and height still require supplier/mechanical confirmation; do not infer removable integral glass or subtract display glass from the stack) | front gap (local), west corridor, J1 blind mate, ALS aperture, SW1/SW2 position | before case/outline co-design | t_display_fpc_fold 0.3-0.6; fold footprint +0.7 beyond outline |
 | SR-DISPLAY-LAND | DISPLAY-MOD | Display supplier (ZC-A1D43W-046) | Permitted rear support / bond region under the rim (minimum and maximum land width), flatness and allowed pressure, whether the rear border is free of FPC / stiffener, bond material guidance; whether any display-front lamination pressure is permitted (COVER-*-OCA options). G1 (OD-COVER 2026-10-11): the land is support/bond geometry only, NOT the primary water seal - the separate cover lens seals (SR-COVER-LENS) | display support land DISP_LAND (w_land, t_land), cover-to-case seal concept (SR-COVER-LENS), edge-crossing land ceiling | before case co-design (G3) | w_land 0.5-1.5 (< 2.5 POL border); t_land 0.3-0.8 |
 | SR-COVER-LENS | COVER-STRATEGY | Cover lens supplier (material/mechanical; owner selects) | Cover lens material, thickness and tolerances, OD/geometry, edge treatment, bonding method, adhesive/seal stack, pressure/water-sealing constraints (5 ATM, OD-WATER), optical requirements (display transmission, ALS aperture). G1 sizes the baseline sapphire-class cover by the 5 ATM plate check (t_cover 1.0-1.65); planning allowables, not supplier data | t_cover, t_cover_bond, cover plate sizing and air gap, front cover seal, G1 baseline thickness, X25-COVER-CASE-FIT | before case co-design (G3) and cover freeze | t_cover 1.0-1.65 (5 ATM plate sizing, COVER-SAP-AIR); t_cover_bond 0.1-0.4 (air gap 0.25 nominal / OCA 0.15 class) |
 | SR-BATT-PACK | BATT-PACK | Battery supplier (LPR454440) | Finished protected-pack drawing: max Ø and thickness, tolerance, edge seal, tape/insulation | battery_zone, R_pack_max, annulus | before final outline/case | tol_pack_thick 0-0.3; tol_pack_dia 0.2-0.5 |
@@ -1045,7 +1050,7 @@ no scenario is credibly <= 15.5 mm (thinnest all-credible-lever scenario G1-K2 =
 G2 (REAR optical + guarded-analog placement study) and G3 (case + final MAIN outline co-design) in parallel where their entry criteria are
 met. All work stays reversible until outline freeze.
 
-- **G1 entry:** COMPLETE — independent review of this package; OD-COVER, OD-REAR-SIDED, OD-WATER, OD-U8, OD-DEVACCESS, OD-J202, OD-CONN-SIDE answered and integrated; supplier requests SR-* issued; scenario study + 5 ATM implications recorded; verdict THICKNESS OWNER DECISION REQUIRED
+- **G1 entry:** COMPLETE — independent review of this package; OD-COVER, OD-REAR-SIDED, OD-WATER, OD-U8, OD-DEVACCESS, OD-J202, OD-CONN-SIDE answered and integrated; supplier requests SR-* drafted / issue-ready; scenario study + 5 ATM implications recorded; verdict THICKNESS OWNER DECISION REQUIRED
 - **G2 entry:** SR-SFH4053B-DS and SR-MAX86141-HEIGHT closed; SR-FPC-MECH closed (J1502 face/height or flex tail known); owner thickness decision taken (C9, G1 verdict); h_pod trial plan agreed; J1501 mouth radius <= 22.53 and exit height known from SR-FPC-MECH (edge crossing XF-J1501)
 - **G3 entry:** SR-BATT-PACK, SR-BATT-PCM, SR-BATT-GROWTH closed (incl. the INNER-NEST unsupported-span data); SR-DISPLAY-LAND closed (display support land geometry); SR-COVER-LENS closed (cover material/thickness); SR-DISPLAY-FPC closed; LRA, button and antenna selections made; X25-COVER-CASE-FIT closed (front aperture / case outer vs the cover stack); MG-WINDOW-XTALK result (X23) or an explicit owner acceptance of the unverified W0 baseline
 

@@ -705,7 +705,6 @@ def render_md(res):
         o.append("| %s | %s | %s | %s | %s | %s |" % (
             a["id"], a["item"], a["axial"], a["radial"],
             a.get("check") or a.get("qualification", ""), a["gate"]))
-    o.append("")
     return "\n".join(o) + "\n"
 
 

@@ -3330,7 +3330,7 @@
       "id": "SR-DISPLAY-FPC",
       "register_id": "DISPLAY-FPC",
       "who": "Display supplier (ZC-A1D43W-046)",
-      "what": "Folded-FPC envelope drawing: thickness, fold exit direction/width, plug location and alignment float, bend radius, border/ink window for ALS",
+      "what": "Folded-FPC envelope drawing: thickness, fold exit direction/width, plug location and alignment float, bend radius, border/ink window for ALS; manufacturer drawing constraint component area <= 1.2 mm applies to the local FPC component area, is not the panel/module thickness, and does NOT establish a thickness-saving lever (assembled/folded FPC overlap and height still require supplier/mechanical confirmation; do not infer removable integral glass or subtract display glass from the stack)",
       "affects": "front gap (local), west corridor, J1 blind mate, ALS aperture, SW1/SW2 position",
       "gate": "before case/outline co-design",
       "parametric_stand_in": "t_display_fpc_fold 0.3-0.6; fold footprint +0.7 beyond outline",
@@ -4252,7 +4252,7 @@
     "recommendation": "G1 (owner-decision integration) is COMPLETE with verdict THICKNESS OWNER DECISION REQUIRED: no thickness scenario is credibly <= 15.5 mm (g1 section; thinnest all-credible-lever scenario G1-K2 = 16.08 mm nominal / 16.53 RSS). The owner must decide the thickness target versus the credible levers (or accept > 15.5 mm) before G2/G3 thickness work proceeds; then G2: REAR optical + guarded-analog placement study in parallel with G3: case + final MAIN outline co-design.",
     "entry_criteria": {
       "G1": [
-        "COMPLETE 2026-10-11: owner decisions OD-COVER / OD-REAR-SIDED / OD-WATER / OD-U8 / OD-DEVACCESS / OD-J202 / OD-CONN-SIDE integrated (input_register.json + g1 section); supplier requests issued (SR-COVER-LENS added, SR-DISPLAY-LAND / SR-FPC-MECH / SR-CHG-MECH / SR-BUTTONS updated, SR-LRA / SR-ANTENNAS kept gated); thickness scenario study + 5 ATM implications recorded (generated/g1_scenarios.json); conflicts carry g1_status; verdict THICKNESS OWNER DECISION REQUIRED (g1.verdict)"
+        "COMPLETE 2026-10-11: owner decisions OD-COVER / OD-REAR-SIDED / OD-WATER / OD-U8 / OD-DEVACCESS / OD-J202 / OD-CONN-SIDE integrated (input_register.json + g1 section); supplier requests drafted / issue-ready (SR-COVER-LENS added, SR-DISPLAY-LAND / SR-FPC-MECH / SR-CHG-MECH / SR-BUTTONS updated, SR-LRA / SR-ANTENNAS kept gated); thickness scenario study + 5 ATM implications recorded (generated/g1_scenarios.json); conflicts carry g1_status; verdict THICKNESS OWNER DECISION REQUIRED (g1.verdict)"
       ],
       "G2": [
         "SR-SFH4053B-DS and SR-MAX86141-HEIGHT closed",

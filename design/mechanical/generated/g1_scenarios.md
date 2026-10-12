@@ -68,4 +68,3 @@ Baseline cover sizing vs inputs/stack_parameters.json t_cover: PASS (stack 1.000
 | ATM-6 | Barometer vent membrane (U4) | membrane + support in the NE wall | VENT reservation az 30-60, r 19.5-25.25 | ATM-Q4 membrane water-entry pressure >= test pressure and barometer response (supplier membrane data) | G3 case co-design |
 | ATM-7 | Caseback / window stiffness under pressure | caseback and pod deflection must not load the REAR optical stack or the pack (X20) | none | ATM-Q5 caseback deflection analysis once the caseback material and thickness exist (G3), then a pressure test with the REAR module fitted | G3 case co-design |
 | ATM-8 | Leak / pressure qualification of the closed watch | none | none | ATM-Q1 select the 5 ATM test standard and margin (owner / qualification plan), then pressure + leak test of closed prototypes; ATM-Q6 swim / dynamic exposure as stated by that standard | before Rev-A sealing qualification |
-
