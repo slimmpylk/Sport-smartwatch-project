@@ -179,7 +179,7 @@ python3 -B design/mechanical/tools/g1_scenarios.py check
 python3 -B design/mechanical/tools/arch_diagrams.py check
 python3 -B design/mechanical/tools/g2_interconnect.py check
 git diff --exit-code 168badbab6de1201bb3209902a53fe1e4b874cc9 -- design/mechanical/inputs/stack_parameters.json design/mechanical/inputs/package_heights.json design/mechanical/inputs/g1_scenarios.json design/mechanical/tools/mech_model.py design/mechanical/tools/mech_model_spec.md design/mechanical/tools/g1_scenarios.py design/mechanical/generated/zstack.json design/mechanical/generated/zstack.md design/mechanical/generated/zstack_section.svg design/mechanical/generated/main_height_map.json design/mechanical/generated/main_height_map.md design/mechanical/generated/main_height_map.svg design/mechanical/generated/g1_scenarios.json design/mechanical/generated/g1_scenarios.md
-git diff --exit-code 168badbab6de1201bb3209902a53fe1e4b874cc9 -- '*.kicad_pcb' '*.kicad_sch' '*.kicad_pro' design/interfaces design/placement rear_sensor libraries
+git diff --exit-code 168badbab6de1201bb3209902a53fe1e4b874cc9 -- '*.kicad_pcb' '*.kicad_sch' '*.kicad_pro' '*.kicad_prl' design/interfaces design/placement rear_sensor libraries
 git diff --check
 ```
 
