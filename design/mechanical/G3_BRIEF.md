@@ -336,9 +336,13 @@ exactly one `g3_status` per conflict, and that the G2 section is unchanged.
        the owner accepting the delta;
     b. SFH4053B footprint/package and emitting-area data MANUFACTURER_VERIFIED and the D405–D407 geometry
        re-run with it;
-    c. J1502 tail: land width/pitch/rows, joint thickness ≤ 0.05 mm (G2 tail_joint max), per-position current
+    c. J1502 tail: land width/pitch/rows, joint thickness ≤ 0.05 mm (a G3 supplier-qualification closure
+       requirement, stricter than the immutable G2 range; G2 tail_joint remains 0.03 / 0.05 / 0.08 mm
+       min / nominal / max and is not altered), per-position current
        ≥ 41.3 mA continuous-equivalent for PPG_VLED (124 mA / 3, G1 arithmetic, the rating basis to be
-       confirmed by the supplier) and the land fit of section 6.4.2 SUPPLIER-confirmed.
+       confirmed by the supplier) and the land fit of section 6.4.2 SUPPLIER-confirmed. A supplier-confirmed
+       joint thickness > 0.05 mm but ≤ 0.08 mm does not invalidate G2, but criterion 10 is then not satisfied
+       and the verdict is at most CONDITIONAL; the requirement is not relaxed.
 11. `README.md` / `architecture.md` record "G2 CLOSED — PASS WITH SUPPLIER/ENGINEERING GATES" (OD-G3-RECORD)
     without changing any G2 gate status and without any statement that authorizes G4.
 
@@ -351,6 +355,9 @@ exactly one `g3_status` per conflict, and that the G2 section is unchanged.
   OD-THICK-REVA headroom; verdict G3 OWNER DECISION REQUIRED.
 - The 24-position tail cannot be placed on the inner face under any evaluated land arrangement: stop and report
   (G2 J1502 allocation is affected).
+- J1502 supplier/process cannot demonstrate joint thickness ≤ 0.05 mm: this prevents G3 final closure
+  (criterion 10c) but is not a violation of the immutable G2 tail_joint maximum of 0.08 mm and does not change
+  G2-REVA or G2-REVA-HI.
 - A required input is missing or contradictory, or the live repo disagrees with this brief: stop and report.
 - Any immutable file would have to change, or a deterministic check fails and cannot be fixed in scope: stop.
 
