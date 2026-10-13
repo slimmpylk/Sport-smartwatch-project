@@ -27,6 +27,8 @@ performance, sealing, assembly robustness or frozen electrical boundaries to mee
 OD-CONN-SIDE, as recorded in `inputs/input_register.json`. Do not revoke or reinterpret any of them.
 
 Record OD-THICK-REVA in `inputs/input_register.json` as an owner-decision entry with this date and source.
+Recording it changes that file's SHA-256, which `mech_model.py` embeds as provenance in two G1 generated
+JSON files; the single permitted consequence of that is the provenance-only exception defined in section 4.
 
 ## 3. Frozen (do not change)
 
@@ -51,12 +53,32 @@ Record OD-THICK-REVA in `inputs/input_register.json` as an owner-decision entry 
 `generated/perimeter_map.svg`, `generated/rear_module_concept.svg`. Plus these new files:
 `inputs/g2_interconnect.json`, `tools/g2_interconnect.py` (build/check) and its generated outputs
 `generated/g2_interconnect.json`, `generated/g2_interconnect.md` and optionally `generated/g2_allocation.svg`.
-Generated files are written only by the tools and must regenerate byte-identically.
+Generated files are written only by the tools and must regenerate byte-identically (the G1
+provenance-only exception below excepted).
 
-**G1 record is immutable.** These must stay byte-identical to `168badb`:
+**G1 record is immutable** (engineering content). These must stay byte-identical to `168badb`:
 - `inputs/stack_parameters.json`, `inputs/package_heights.json`, `inputs/g1_scenarios.json`;
 - `tools/mech_model.py`, `tools/mech_model_spec.md`, `tools/g1_scenarios.py`;
-- `generated/zstack.*`, `generated/main_height_map.*`, `generated/g1_scenarios.*`.
+- `generated/zstack.md`, `generated/zstack_section.svg`, `generated/main_height_map.md`,
+  `generated/main_height_map.svg`, `generated/g1_scenarios.*`.
+
+**Provenance-only exception (the ONLY one).** `mech_model.py` records the SHA-256 of
+`inputs/input_register.json` in the `inputs_sha256` field of `generated/zstack.json` and
+`generated/main_height_map.json`. Recording OD-THICK-REVA (section 2) therefore legitimately changes
+exactly that one provenance value in each of those two files. They are writable ONLY to regenerate
+that provenance: after recording OD-THICK-REVA, run
+`python3 -B design/mechanical/tools/mech_model.py heights` and
+`python3 -B design/mechanical/tools/mech_model.py stack`. With respect to `168badb`, the ONLY
+permitted semantic difference in each of `generated/zstack.json` and
+`generated/main_height_map.json` is the value of
+`inputs_sha256["design/mechanical/inputs/input_register.json"]`. No other field may change. This
+exception does NOT authorize changes to: any calculated geometry; any thickness value; any
+tolerance; any component count; any scenario result; any other `inputs_sha256` entry;
+`tools/mech_model.py`, `tools/mech_model_spec.md` or `tools/g1_scenarios.py`;
+`inputs/stack_parameters.json`, `inputs/package_heights.json` or `inputs/g1_scenarios.json`; any
+other G1 generated output; any KiCad/interface/placement file. Section 9 validates this semantically
+(the files are not removed from validation). The invariant is: G1 ENGINEERING CONTENT IMMUTABLE + G1
+PROVENANCE MAY ACKNOWLEDGE THE NEW OWNER-DECISION REGISTER HASH.
 
 `tools/g2_interconnect.py` may import `mech_model` / `g1_scenarios` functions and their tolerance policy. Any new
 G2 parameter (connector stack, stiffener, flex, bend, pack-edge geometry) lives in `inputs/g2_interconnect.json`.
@@ -178,10 +200,61 @@ python3 -B design/mechanical/tools/mech_model.py check
 python3 -B design/mechanical/tools/g1_scenarios.py check
 python3 -B design/mechanical/tools/arch_diagrams.py check
 python3 -B design/mechanical/tools/g2_interconnect.py check
-git diff --exit-code 168badbab6de1201bb3209902a53fe1e4b874cc9 -- design/mechanical/inputs/stack_parameters.json design/mechanical/inputs/package_heights.json design/mechanical/inputs/g1_scenarios.json design/mechanical/tools/mech_model.py design/mechanical/tools/mech_model_spec.md design/mechanical/tools/g1_scenarios.py design/mechanical/generated/zstack.json design/mechanical/generated/zstack.md design/mechanical/generated/zstack_section.svg design/mechanical/generated/main_height_map.json design/mechanical/generated/main_height_map.md design/mechanical/generated/main_height_map.svg design/mechanical/generated/g1_scenarios.json design/mechanical/generated/g1_scenarios.md
+git diff --exit-code 168badbab6de1201bb3209902a53fe1e4b874cc9 -- design/mechanical/inputs/stack_parameters.json design/mechanical/inputs/package_heights.json design/mechanical/inputs/g1_scenarios.json design/mechanical/tools/mech_model.py design/mechanical/tools/mech_model_spec.md design/mechanical/tools/g1_scenarios.py design/mechanical/generated/zstack.md design/mechanical/generated/zstack_section.svg design/mechanical/generated/main_height_map.md design/mechanical/generated/main_height_map.svg design/mechanical/generated/g1_scenarios.json design/mechanical/generated/g1_scenarios.md
 git diff --exit-code 168badbab6de1201bb3209902a53fe1e4b874cc9 -- '*.kicad_pcb' '*.kicad_sch' '*.kicad_pro' '*.kicad_prl' design/interfaces design/placement rear_sensor libraries
+python3 -B -c '<semantic provenance check, see below>'
 git diff --check
 ```
+
+Validation rules:
+
+- **A. Byte-identity.** Every G1-immutable file OTHER than `generated/zstack.json` and
+  `generated/main_height_map.json` must remain byte-identical to `168badb` (the first `git diff`).
+- **B. Semantic provenance check.** `generated/zstack.json` and `generated/main_height_map.json` are
+  NOT removed from validation. For each of them, the check loads the file from commit `168badb`
+  (`git show`) and the current working-tree JSON, normalizes ONLY
+  `inputs_sha256["design/mechanical/inputs/input_register.json"]` (set to a fixed sentinel in both),
+  and fails if any other semantic difference exists. Every other JSON field — all calculated
+  geometry, thickness values, tolerances, component counts and scenario results — must compare
+  equal. The check:
+
+  ```python
+  import json, subprocess, sys
+  BASE = "168badbab6de1201bb3209902a53fe1e4b874cc9"
+  REG = "design/mechanical/inputs/input_register.json"
+  FILES = ["design/mechanical/generated/zstack.json",
+           "design/mechanical/generated/main_height_map.json"]
+  def normalize(doc, path):
+      hashes = doc.get("inputs_sha256")
+      if not isinstance(hashes, dict) or REG not in hashes:
+          sys.exit("FAIL: %s lacks inputs_sha256[%s]" % (path, REG))
+      hashes[REG] = None  # the one provenance-only field, exempt from comparison
+      return doc
+  bad = []
+  for path in FILES:
+      old = json.loads(subprocess.run(
+          ["git", "show", BASE + ":" + path],
+          capture_output=True, check=True).stdout)
+      with open(path) as fh:
+          new = json.load(fh)
+      if old != new and normalize(old, path) != normalize(new, path):
+          bad.append(path)
+  if bad:
+      sys.exit("FAIL: vs " + BASE + " only inputs_sha256[input_register.json] may differ in: "
+               + ", ".join(bad))
+  print("PASS: zstack.json / main_height_map.json differ from " + BASE
+        + " only in inputs_sha256[input_register.json]")
+  ```
+
+- **C. After regenerating the two provenance records** (section 4: `mech_model.py heights` and
+  `mech_model.py stack` run once after OD-THICK-REVA is recorded),
+  `python3 -B design/mechanical/tools/mech_model.py check` must exit 0. This also proves the new
+  register hash is the correct current one.
+- **D.** All G1 numerical/model outputs remain identical: this follows from B (normalized equality
+  with `168badb` covers every numeric field) plus C (the working tree equals a fresh regeneration
+  from the current inputs).
+- **E.** KiCad/interface/placement immutability is unchanged, including `*.kicad_prl` (the second
+  `git diff`).
 
 `arch_diagrams.py check` is extended so that every G2 number quoted in `architecture.md` / `architecture.json` is
 checked against `generated/g2_interconnect.json`, and every conflict carries exactly one `g2_status`.
@@ -209,8 +282,13 @@ reproduce G1-K2.
    radial failure and X25 are handed to G3/G4 with numbers.
 9. The supplier requests in section 8 carry numeric acceptance values and are drafted / issue-ready. No supplier
    dimension is invented.
-10. All section 9 commands exit 0. Generated files regenerate byte-identically. The G1-immutable files, KiCad files
-    and the interface/placement trees are unchanged. Changes stay inside `design/mechanical/**`.
+10. All section 9 commands exit 0, including the semantic provenance check. G2 generated files
+    regenerate byte-identically. Every G1-immutable file OTHER than `generated/zstack.json` and
+    `generated/main_height_map.json` is byte-identical to `168badb`; those two differ from `168badb`
+    only in `inputs_sha256["design/mechanical/inputs/input_register.json"]`, `mech_model.py check`
+    exits 0 after their provenance regeneration, and all G1 numerical/model outputs are identical.
+    The KiCad files and the interface/placement trees are unchanged. Changes stay inside
+    `design/mechanical/**`.
 11. The C1-FRONT-GAP "15.93" residue is fixed.
 
 ## 11. Stop conditions
@@ -220,7 +298,9 @@ reproduce G1-K2.
 - No allocation meets OD-THICK-REVA with credible levers: finish the package with verdict **REV-A STACK OWNER
   DECISION REQUIRED**, show the tradeoff, and stop. Never weaken a requirement.
 - A required input is missing or contradictory, or the live state disagrees with this brief: stop and report.
-- A G1-immutable file would have to change: stop and report.
+- A G1-immutable file other than the two provenance-only JSONs would have to change, or either of
+  `generated/zstack.json` / `generated/main_height_map.json` would have to change in any field other
+  than `inputs_sha256["design/mechanical/inputs/input_register.json"]`: stop and report.
 - A deterministic check fails and cannot be fixed inside scope: stop and report.
 
 ## 12. Independent review must challenge
