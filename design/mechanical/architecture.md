@@ -27,7 +27,7 @@ clockwise from north. Z positive from the front exterior toward the wrist. Reser
 | Controllable levers (G1) | C901/C903 as 0402 (-0.30, credible later task), REAR inner-side flex tail (-0.10) / tail + 0201 cap (-0.37), combinations (G1-K2 -0.67); NOT levers: single-sided REAR (OD-REAR-SIDED decided double-sided), U8 relocation (geometry excludes an F.Cu escape; B.Cu thickens), J1501/J201 to B.Cu (inside the pack projection), h_pod (T_total does not depend on it). |
 | Radial / FPC | The tool 180-degree edge wrap fails nominal (-0.47). A 2 x 90-degree out-and-down is bounded by the derived bend geometry: nominal margin -0.47 (flat exit) to +0.68 (exit at the display-land ceiling), positive only with the J1501 mouth at R <= 22.53 and an exit >= 0.10 mm above F.Cu. **No edge crossing passes the conservative corner** (>= 0.95 mm short). The charger riser (XC-J202) and battery tail (XB-J201) share this budget (section G). |
 | Largest unknowns | SFH4053B and MAX86141 seated heights (X10), finished-pack drawing, display-FPC fold drawing and permitted display support region (SR-DISPLAY-LAND), FPC connector MPN / height / exit height, charger harness construction, LRA / buttons / antennas. |
-| Next gate | **G1 COMPLETE (2026-10-11), verdict THICKNESS OWNER DECISION REQUIRED** — the owner decides the thickness target versus the credible levers; then G2 REAR placement and G3 case/outline co-design (section 15). |
+| Next gate | G2 acceptance/review first; then separately authorized G3 REAR optical/guarded-analog study, G4 case/outline co-design and later KiCad allocation implementation (section 15). |
 
 ---
 
@@ -284,6 +284,10 @@ samples during charging; the settle times are prototype measurements. **Alternat
 
 ## G. MAIN to REAR FPC path
 
+<!-- G2 NOTE G -->
+Current allocation, fold and supplier limits are in section G2. The following G1 geometry is retained for comparison; the G2 sensor groove is inside the lower web, and the charger/haptic perimeter channels are below it. No raw analog or charger-positive signal enters the sensor FPC.
+<!-- END G2 NOTE -->
+
 **KNOWN contract.** J1501 (MAIN) to J1502 (REAR), 24 abstract positions / 13 nets: 1=GND 2=PPG_SPI_SCLK 3=GND 4=PPG_SPI_MOSI 5=GND 6=PPG_SPI_MISO 7=GND 8=PPG1_CS_N 9=PPG2_CS_N 10=GND 11=PPG1_INT_N 12=PPG2_INT_N 13=PPG_SAMPLE_SYNC 14=GND 15=ENV_I2C_SCL 16=ENV_I2C_SDA 17=GND 18=VOUT1_1V8 19=GND 20=GND 21=PPG_VLED 22=PPG_VLED 23=PPG_VLED 24=GND. Ten GND, three PPG_VLED, SPI x3, CS x2, INT x2,
 SAMPLE_SYNC, I2C x2, VOUT1_1V8. MPN, pitch, mated height, orientation and permutation are not frozen. No charger-positive, PD_IN, PD_GND, VREF, LED
 cathode or mux-select net is in the FPC. The Ø46 / Ø44 annulus (margin_main_to_case 0.40 / 1.05 / 1.50 mm conservative / nominal / optimistic) is **not a channel**; the radial outputs below are used.
@@ -362,6 +366,10 @@ hot-bar tail (OD-REAR-SIDED). **Risks.** C3, X12, X13, X24. **Unblocks.** connec
 
 ## H. Charger contact module
 
+<!-- G2 NOTE H -->
+Section G2 governs the current charger option trade. The separate contact feedthrough remains sealed independently. The selected perimeter channel lies below the intact lower web outside the REAR outline; the original co-planar crossing proposal is superseded.
+<!-- END G2 NOTE -->
+
 **KNOWN.** Four contacts C1..C4 = GND / +5V / +5V / GND at rear east (~3 o'clock), separate assembly; J202 on MAIN F.Cu west [79.5-82.0, 100.35-103.25]
 (az 260-269) near PMIC U201 (1 = CHG_RAW_5V, 2 = GND); U1201 and D1201 on MAIN, mandatory ESD_ENTRY at the feedthrough; no charger-positive in the
 sensor FPC; no watch-side magnet. 0.4 A charge-current setting.
@@ -387,6 +395,10 @@ avoid the optical region (REAR_ENV), antennas (Wi-Fi window starts 7.7 degrees a
 as its own project (charger_harness.md). **Risks.** C4, X13, X16, X24. **Unblocks.** contact-module and harness selection (with the riser budget as a requirement).
 
 ## I. Structural and perimeter reservations
+
+<!-- G2 NOTE I -->
+Current supplemental reservations are in architecture.json g2.reservations and generated/g2_allocation.svg. Existing reservations below remain the comparison baseline. New regions are provisional and do not place components or freeze a case.
+<!-- END G2 NOTE -->
 
 Reservations are volumes reserved by function; a PCB footprint that merely fits does not entitle use of perimeter that a seal, boss, radiator, button or
 vent needs. Table generated from `architecture.json` (az clockwise from north; R from the watch centre; rectangles from the register are clipped at the
@@ -445,6 +457,10 @@ thick (or relieved) over U4, and every F.Cu edge crossing passes under it (h_max
 (X13); a pack exit at the J201 azimuth (SR-BATT-PCM) deletes it.
 
 ## J. Assembly, service and SWD sequence
+
+<!-- G2 NOTE J -->
+Use the S0–S3 procedure in section G2 for the current allocation. Battery isolation precedes development remating; supplier/fixture service constraints remain open. Earlier assembly variants below are historical alternatives.
+<!-- END G2 NOTE -->
 
 **Build states.** S0 bare MAIN on the bench; S1 MAIN + battery + REAR module open, display absent; S2 display seated, caseback open; S3 closed.
 
@@ -530,6 +546,10 @@ display is bonded to before the module goes in, so each crossing's conductor mus
 | D43 | Charger approach z window over C207 nominal / conservative / optimistic | 0.88 / 0.25 / 1.45 | mm | PARAMETRIC | LOW | edge_crossings.results.crossings XC-J202 z_window_mm = h_max - c_fpc - h_parts |
 
 ## 12. Conflicts register
+
+<!-- G2 NOTE 12 -->
+Each conflict now has one current g2_status and g2_evidence; see the generated G2 conflict table. G1 statuses below preserve history and do not override G2.
+<!-- END G2 NOTE -->
 
 Verdicts: CONFIRMED / REFINED / REFUTED for the nine lead-identified candidates (brief section 7), NEW for items found during this study. Overlapping
 reservations at the same Z level are enumerated by the generator and each pair is listed in at least one conflict. The detector is analytic: it cuts the
@@ -996,6 +1016,10 @@ g1 section below). The questions are kept for traceability.
 
 ## 13. Unresolved blockers and supplier / owner requests
 
+<!-- G2 NOTE 13 -->
+The G2 draft supplier requests in architecture.json add numerical acceptance requirements. The generated G2 report contains every option-specific limit. The owner issues requests; none have been sent.
+<!-- END G2 NOTE -->
+
 Each request names who, what, what it affects, the hard gate and the parametric stand-in used until the data arrive. Work continues reversibly
 with the stand-in until the gate.
 
@@ -1023,6 +1047,10 @@ only), and the absence of any approved REAR outline, stackup or rules.
 
 ## 14. What remains intentionally unfrozen
 
+<!-- G2 NOTE 14 -->
+G2 chooses a reversible nominal planning allocation. Actual supplier parts, mirrored physical mating map, processes, RF validation, case geometry and all downstream implementation remain unfrozen.
+<!-- END G2 NOTE -->
+
 - REAR outline, stackup, placement, optical spacing, barrier design, window isolation concept (W0/W1/W2, X23), window material/thickness
 - J1502 MPN/orientation and the inner-side termination choice (connector vs flex tail, SR-FPC-MECH); J1501 MPN/pitch/orientation
 - h_pod, T_body, caseback plane, pod footprint, window retention
@@ -1043,20 +1071,13 @@ and no charger-positive in the sensor FPC; LPR454440; MAIN Ø46 development enve
 
 ## 15. Next engineering gate
 
-**Recommendation: G1 COMPLETE (2026-10-11) — verdict THICKNESS OWNER DECISION REQUIRED.** The seven owner decisions are integrated (section G1),
-the supplier requests are issue-ready (section 13, SR-COVER-LENS added), the thickness-recovery scenarios and 5 ATM implications are computed
-(section G1, `generated/g1_scenarios.json`), and every conflict carries a g1_status. The blocking item is the owner thickness decision (C9):
-no scenario is credibly <= 15.5 mm (thinnest all-credible-lever scenario G1-K2 = 16.08 mm nominal / 16.52 RSS). Take that decision, then run
-G2 (REAR optical + guarded-analog placement study) and G3 (case + final MAIN outline co-design) in parallel where their entry criteria are
-met. All work stays reversible until outline freeze.
+G2 remains subject to its recorded acceptance gaps and independent review. No later phase is authorized.
 
-- **G1 entry:** COMPLETE — independent review of this package; OD-COVER, OD-REAR-SIDED, OD-WATER, OD-U8, OD-DEVACCESS, OD-J202, OD-CONN-SIDE answered and integrated; supplier requests SR-* drafted / issue-ready; scenario study + 5 ATM implications recorded; verdict THICKNESS OWNER DECISION REQUIRED
-- **G2 entry:** SR-SFH4053B-DS and SR-MAX86141-HEIGHT closed; SR-FPC-MECH closed (J1502 face/height or flex tail known); owner thickness decision taken (C9, G1 verdict); h_pod trial plan agreed; J1501 mouth radius <= 22.53 and exit height known from SR-FPC-MECH (edge crossing XF-J1501)
-- **G3 entry:** SR-BATT-PACK, SR-BATT-PCM, SR-BATT-GROWTH closed (incl. the INNER-NEST unsupported-span data); SR-DISPLAY-LAND closed (display support land geometry); SR-COVER-LENS closed (cover material/thickness); SR-DISPLAY-FPC closed; LRA, button and antenna selections made; X25-COVER-CASE-FIT closed (front aperture / case outer vs the cover stack); MG-WINDOW-XTALK result (X23) or an explicit owner acceptance of the unverified W0 baseline
+- **G3 — REAR optical + guarded-analog placement study:** close G2 review and sensor/attach data gates, component-height evidence and the optical measurement plan. Preserve all sensitive paths on the skin-facing REAR side. Carry the conservative channel deficit forward explicitly.
+- **G4 — case + final MAIN outline co-design:** close pack, PCM, growth, display fold/land, cover, actuator/button/antenna and sealing inputs. Resolve X25 and the conservative radial deficit; establish pressure/leak qualification.
+- **Later KiCad allocation implementation:** requires explicit authorization, independent G2 acceptance, supplier-confirmed envelopes/processes, verified physical mating permutation, passive DC-bias evidence, reviewed U7 control/power/decoupling allocation, and validated assembly/isolation fixtures. General routing remains separately gated.
 
-Exit criteria for G1: every conflict has an owner/reviewer disposition; every HIGH item has either a closed datum or an agreed stand-in range.
-
----
+The G1 section below is the historical owner-decision and calculation record. Its old gate names and thickness verdict are historical; the current gate mapping above and OD-THICK-REVA govern this study.
 
 ## Appendix: reviewer challenge map
 
@@ -1166,7 +1187,7 @@ Every conflict of section 12 now carries exactly one `g1_status` with evidence/d
 
 | Conflict | g1_status | Evidence / dependency |
 |---|---|---|
-| C1-FRONT-GAP | REMAINS_OPEN | G1 evaluated U8 relocation (g1_scenarios G1-U8F/G1-U8B): the deterministic u8_relocation_fcu_geometry check shows no F.Cu position of a 10 mm module escapes the display outline (max centre radius 15.93 < 21.95), and B.Cu relocation thickens the stack to 17.76 nominal (G1-U8B). U8 stays in G1. Dependency: RF evidence for any move (OD-U8) and a later placement phase; owner thickness decision (C9). |
+| C1-FRONT-GAP | REMAINS_OPEN | G1 evaluated U8 relocation (g1_scenarios G1-U8F/G1-U8B): the deterministic u8_relocation_fcu_geometry check shows no F.Cu position of a 10 mm module escapes the display outline (max centre radius 18.00 < 21.95), and B.Cu relocation thickens the stack to 17.76 nominal (G1-U8B). U8 stays in G1. Dependency: RF evidence for any move (OD-U8) and a later placement phase; owner thickness decision (C9). |
 | C2-DISPLAY-SIDE-CONNECTORS | REMAINS_OPEN | OD-DEVACCESS (2026-10-11) removes the post-sealing external-access requirement; all F.Cu mating (J1, J1301 SWD, TP13xx, J1501, J201, J202) stays in build state S1 (display absent). G1 changes no connector face. Dependency: assembly-order freeze, SR-FPC-MECH and SR-TAGCONNECT. |
 | C3-EDGE-WRAP | SUPPLIER_DATA_GATED | Already gated. Dependency: SR-FPC-MECH (R_bend_min, FPC exit heights, mouth radii) before outline freeze. |
 | C4-CHARGER-PATH | REMAINS_OPEN | OD-J202 permits moving the charger entry with mechanical/interconnect evidence; G1 does not move J202. Dependency: later placement phase plus SR-CHG-MECH (5 ATM feedthrough, ATM-Q3). |
@@ -1202,3 +1223,124 @@ Stop rule (G1_BRIEF.md 4.6): no scenario is credibly <= 15.5 mm, so the G1 verdi
 - Thinnest scenario using only CREDIBLE_LATER_TASK levers: G1-K2 at 16.080 mm nominal / 16.525 mm RSS (still over target).
 
 Per the stop rule (G1_BRIEF.md 4.6) the tradeoff table above is presented and G1 stops here: no requirement is weakened to reach 15.5 mm, and OD-COVER / OD-REAR-SIDED stand. The owner decision needed (C9): accept > 15.5 mm, relax a target term with evidence, or authorize a gated lever path (INNER-NEST pocketing needs SR-BATT-GROWTH unsupported-span data; a laminated cover needs OD-COVER-LOADPATH + SR-DISPLAY-LAND + SR-COVER-LENS) - noting G1-K4 (15.18 nominal) still fails its RSS (15.67) and is not credible as it stands.
+
+<!-- G2 GENERATED BEGIN -->
+## G2
+
+**G2 CONDITIONAL — ENGINEERING GATES OPEN**
+
+OD-THICK-REVA governs this provisional integration: nominal ≤ 16.5 mm and RSS ≤ 17.0 mm. The earlier 14.0–15.5 mm target is a non-binding production goal. Source: owner decision 2026-10-12.
+
+All numbers below are PROJECT_DERIVED from generated/g2_interconnect.json unless labelled otherwise. No supplier dimension is asserted. Full three-corner calculations, overlaps, routing estimates, numeric acceptance requirements and alternative options are in [the generated G2 report](generated/g2_interconnect.md).
+
+| Interface option | Outcome | Selected | Side | XY window / azimuth | Length excluding service mm | Bends |
+|---|---|---|---|---|---:|---:|
+| J1501-F.Cu | CONDITIONAL | True | F.Cu | [100.2, 116.4, 108.5, 121] / [152.603, 179.454] | 27.081 | 2 |
+| J1501-B.Cu | CONDITIONAL | False | B.Cu | [100.2, 116.4, 108.5, 121] / [152.603, 179.454] | 24.659 | 2 |
+| J1502-TAIL0402 | CONDITIONAL | True | REAR-inner | None / [158, 178] | 11.450 | 0 |
+| J1502-TAIL0201 | REJECTED | False | REAR-inner | None / [158, 178] | 11.450 | 0 |
+| J1502-CONNECTOR | CONDITIONAL | False | REAR-inner | None / [158, 178] | 11.450 | 0 |
+| J201-F.Cu | CONDITIONAL | True | F.Cu | [94, 119, 99.5, 122] / [181.302, 197.526] | 29.698 | 6 |
+| J201-B.Cu | CONDITIONAL | False | B.Cu | [84.5, 112.5, 87.9, 115.4] / [218.157, 231.116] | 13.117 | 4 |
+| J202-WEST-F.Cu | CONDITIONAL | True | F.Cu | [79.5, 100.35, 82, 103.25] / [259.765, 269.022] | 78.016 | 6 |
+| J202-WEST-B.Cu | REJECTED | False | B.Cu | [79.5, 100.35, 82, 103.25] / [259.765, 269.022] | 71.307 | 4 |
+| J202-EAST-B.Cu | CONDITIONAL | False | B.Cu | [118, 103.8, 121.5, 106.8] / [100.023, 110.695] | 21.921 | 4 |
+| U7-F.Cu | REJECTED | False | F.Cu | [112.3, 113.05, 114.3, 114.95] / [132.383, 140.554] | 46.786 | 6 |
+| U7-B.Cu | CONDITIONAL | True | B.Cu | [112.3, 113.05, 114.3, 114.95] / [132.383, 140.554] | 40.391 | 4 |
+| J1301-RETAIN | CONDITIONAL | True | F.Cu | [103.5, 112.0, 110.5, 116.0] / [138.814, 167.661] | 0.000 | 0 |
+| J1-RETAIN | CONDITIONAL | True | F.Cu | [79.45, 92.25, 82.95, 100.25] / [269.16, 294.444] | 7.190 | 1 |
+| U8-RETAIN | RECOMMENDED | True | F.Cu | [94.399, 80.394, 105.601, 91.606] / [326.286, 33.714] | 0.000 | 0 |
+| C901-C903-P0402 | RECOMMENDED | True | B.Cu | [96.77, 105.02, 100.73, 109.98] / [171.726, 212.758] | 0.000 | 0 |
+
+| Selected interface | mating / exit | mated Z range mm | path |
+|---|---|---|---|
+| J1501 | Insert radially inward into outward-facing mouth; actuate latch from F.Cu / Radially outward toward riser azimuth; inward-facing branch at REAR/pack end | {"max": 1.4, "min": 0.77, "nom": 1.05} | Generated path_regions; corner length excludes service slack |
+| J1502 | Bond under process fixture / toward J1501 south riser | {"max": 0.73, "min": 0.68, "nom": 0.7} | radially outward in lower-web groove to the common sensor riser; counted once in J1501 installed length |
+| J201 | Insert radially outward into inward-facing J201 mouth; actuate from F.Cu / Inboard toward the raised front-gap arc, then SW riser; no long annulus tail | {"max": 1.4, "min": 0.77, "nom": 1.05} | Generated path_regions; corner length excludes service slack |
+| J202 | Insert radially inward into outward-facing mouth; actuate latch from F.Cu / Radially outward toward riser azimuth; inward-facing branch at REAR/pack end | {"max": 1.4, "min": 0.77, "nom": 1.05} | Generated path_regions; corner length excludes service slack |
+| U7/LRA | Solder insulated lead pair on B.Cu with strain relief; no demountable latch / Radially outward toward the allocated LRA riser | {"max": 0.625, "min": 0.625, "nom": 0.625} | Generated path_regions; corner length excludes service slack |
+| J1301 | Z insertion from F.Cu in S0/S1 / not applicable: probe or soldered component | {"max": 0.0, "min": 0.0, "nom": 0.0} | not applicable |
+| J1 | Z insertion from F.Cu in S0/S1 / west display fold | {"max": 0.8, "min": 0.8, "nom": 0.8} | west DISP_FPC envelope |
+| U8 | soldered; no mating operation / not applicable: probe or soldered component | {"max": 2.7, "min": 2.7, "nom": 2.7} | not applicable |
+| C901/C903 | soldered; no mating operation / not applicable: probe or soldered component | {"max": 0.65, "min": 0.65, "nom": 0.65} | not applicable |
+
+| Stack | nominal | RSS | linear worst | T_body (h_pod 0.8) | compliance |
+|---|---:|---:|---:|---:|---|
+| G2-K2-REF | 16.080 | 16.525 | 17.740 | 15.280 | reference PASS |
+| G2-REVA | 16.350 | 16.796 | 18.040 | 15.550 | True |
+| G2-REVA-HI | 16.380 | 16.825 | 18.040 | 15.580 | True |
+
+| B.Cu option | K2-neutral h_stack max | Rev-A nominal h_stack max | R_bend max nominal | fold length required |
+|---|---:|---:|---:|---:|
+| J1501-B.Cu | 0.650 | 0.800 | 1.773 | 11.602 |
+| J201-B.Cu | 0.650 | 0.800 | 1.773 | 11.145 |
+| J202-WEST-B.Cu | 0.650 | 0.800 | 1.773 | 14.688 |
+| J202-EAST-B.Cu | 0.650 | 0.800 | 1.773 | 9.076 |
+
+RSS additionally limits positive stack variation; the generated joint-acceptance table is mandatory, not optional. A side change requires a verified mirrored physical mating map with the logical interface unchanged.
+
+P-0402 is adopted as a CREDIBLE_LATER_TASK. C901/C903 retain the electrical evidence gate: ≥6.3 V class, effective capacitance at 3.0 V / 1.8 V against eMMC requirements; a second same-height passive may be needed. No footprint/schematic edit is made. No supplier-gated nesting, cover lamination or reduced pod height is credited.
+
+Assembly/service (PROVISIONAL_ASSUMPTION):
+
+- **S0**: Battery isolated at accessible external development break/fixture; charger detached. Probe bare MAIN F.Cu and TP1301-TP1306. Mate no live battery connector.
+- **S1**: Bond/test REAR tail on its inner face before carrier insertion. Fit carrier, pack insulation and independent charger module. For B.Cu options hold MAIN B.Cu-up on a jig, mate cold, rotate about the single common tangent hinge in joint_book_fold with computed joint slack (isolated option hinges are lower bounds only) in the OUTSIDE assembly jig, then capture slack in its reserved pocket. F.Cu connectors mate visibly before the display. Connect battery last for bring-up; isolate again before any manipulation.
+- **S2**: Remove SWD probe/clip; verify carrier guide-pin relief. Connect J1 visibly with display hinged; close display onto support land without trapping the fold. Blind Z-mating is allowed only after SR-J1-ALIGN fixture verification. Caseback remains open; connectors beneath the display cannot be accessed directly.
+- **S3**: Inspect strain relief, separated charger feedthrough and seals; close caseback using hard stops. No external SWD requirement. Rework reverses S3 to S1 with battery isolation BEFORE moving MAIN/display; log every J1 cycle. A bonded REAR tail is serviced by replacing the REAR+tail unit through J1501, not repeated tail peeling.
+- **isolation**: Use an external development battery disconnect in the test fixture before closing the stack; for a sealed unit detach charger and open caseback, isolate pack at a supplier-provided accessible pack-tail break before lifting MAIN. If no accessible isolation break can be provided, the remating process is SUPPLIER_DATA_REQUIRED and not release-ready; never hot-unplug under the display.
+
+The rigid MAIN folds about the single common tangent hinge in joint_book_fold; isolated option hinges provide lower bounds only. Required slack and pocket requirements are recorded per option and for the joint fold. Slack stays outside the case during rotation and never doubles inside the annulus. J1 budget: 50 rated / 25 planned mating cycles.
+
+U8 RF verification:
+
+- Retain live U8 MAX-F10S at (100,86) on F.Cu; no relocation/part-change study.
+- Verify C1420/C1421/R1420 are the intended feed/matching network inside GNSS_RAD (C8), with tuned matching on the assembled case.
+- Verify GNSS_RAD through every Z level (X17), display shielding, cover/case shadowing, battery/carrier metal and radome dielectric.
+- Measure antenna efficiency, sensitivity and detuning with wrist/strap, charge dock, buttons, display activity, BLE/Wi-Fi coexistence. No RF improvement is credited to thickness.
+
+G3 must carry the unchanged conservative radial margin -0.950 mm to G4. X25 remains: conservative cover fit -1.100 mm; nominal wall margin -0.150 mm. No downstream phase is authorized.
+
+| Conflict | g2_status | Evidence |
+|---|---|---|
+| C1-FRONT-GAP | REMAINS_OPEN | U8 retained F.Cu north. G1 valid necessary bound 18.00 < 21.95; no relocation or GNSS change studied. RF list remains required. |
+| C2-DISPLAY-SIDE-CONNECTORS | REMAINS_OPEN | G2 allocation is provisional; prior geometry/qualification dependency remains. See generated option checks and supplier requirements. |
+| C3-EDGE-WRAP | SUPPLIER_DATA_GATED | Numeric supplier acceptance requirements in G2 supplier requests; conservative geometry/qualification is not closed. |
+| C4-CHARGER-PATH | REMAINS_OPEN | G2 allocation is provisional; prior geometry/qualification dependency remains. See generated option checks and supplier requirements. |
+| C5-SOUTH-CROWDING | DEFERRED_G3 | G3 REAR optical/guarded-analog integration, including inner-face attach and lower-web crossings, remains separately authorized work. |
+| C6-DISPLAY-FPC-FOLD | SUPPLIER_DATA_GATED | Numeric supplier acceptance requirements in G2 supplier requests; conservative geometry/qualification is not closed. |
+| C7-WIFI-BEYOND-BOARD | REMAINS_OPEN | Deferred to G4 case + final MAIN outline (status REMAINS_OPEN; no DEFERRED_G4 enum in contract). Carry G1 cover fit -1.100 mm conservative and residual wall -0.150 mm nominal; land clearance -0.060 mm conservative where applicable. |
+| C8-GNSS-OCCUPIED | REMAINS_OPEN | G2 allocation is provisional; prior geometry/qualification dependency remains. See generated option checks and supplier requirements. |
+| C9-THICK-CORNER | RESOLVED_BY_G2 | OD-THICK-REVA applied; see generated G2-REVA nominal/RSS compliance. HI result separately reported; no gated lever credited. |
+| X10-OPTICS-HEIGHT-UNKNOWN | SUPPLIER_DATA_GATED | Numeric supplier acceptance requirements in G2 supplier requests; conservative geometry/qualification is not closed. |
+| X11-POD-FOOTPRINT | DEFERRED_G3 | G3 REAR optical/guarded-analog integration, including inner-face attach and lower-web crossings, remains separately authorized work. |
+| X12-J1502-FACE | DEFERRED_G3 | G3 REAR optical/guarded-analog integration, including inner-face attach and lower-web crossings, remains separately authorized work. |
+| X13-EDGE-CROSSINGS | REMAINS_OPEN | G2 allocation is provisional; prior geometry/qualification dependency remains. See generated option checks and supplier requirements. |
+| X14-SUPPORT-GAP | REMAINS_OPEN | Deferred to G4 case + final MAIN outline (status REMAINS_OPEN; no DEFERRED_G4 enum in contract). Carry G1 cover fit -1.100 mm conservative and residual wall -0.150 mm nominal; land clearance -0.060 mm conservative where applicable. |
+| X15-NE-CROWDING | REMAINS_OPEN | Deferred to G4 case + final MAIN outline (status REMAINS_OPEN; no DEFERRED_G4 enum in contract). Carry G1 cover fit -1.100 mm conservative and residual wall -0.150 mm nominal; land clearance -0.060 mm conservative where applicable. |
+| X16-MAGNETOMETER | REMAINS_OPEN | G2 allocation is provisional; prior geometry/qualification dependency remains. See generated option checks and supplier requirements. |
+| X17-GNSS-ALL-HEIGHTS | REMAINS_OPEN | G2 allocation is provisional; prior geometry/qualification dependency remains. See generated option checks and supplier requirements. |
+| X18-PACK-EDGE | SUPPLIER_DATA_GATED | Numeric supplier acceptance requirements in G2 supplier requests; conservative geometry/qualification is not closed. |
+| X19-BCU-0603 | RESOLVED_BY_G2 | P-0402 adopted as a credible later task. DC-bias/effective capacitance evidence remains mandatory before electrical implementation. |
+| X20-GROWTH-VS-OPTICS | SUPPLIER_DATA_GATED | Numeric supplier acceptance requirements in G2 supplier requests; conservative geometry/qualification is not closed. |
+| X21-INGRESS-UNDEFINED | REMAINS_OPEN | Deferred to G4 case + final MAIN outline (status REMAINS_OPEN; no DEFERRED_G4 enum in contract). Carry G1 cover fit -1.100 mm conservative and residual wall -0.150 mm nominal; land clearance -0.060 mm conservative where applicable. |
+| X22-UNMODELLED-Z | REMAINS_OPEN | Deferred to G4 case + final MAIN outline (status REMAINS_OPEN; no DEFERRED_G4 enum in contract). Carry G1 cover fit -1.100 mm conservative and residual wall -0.150 mm nominal; land clearance -0.060 mm conservative where applicable. |
+| X23-WINDOW-CROSSTALK | SUPPLIER_DATA_GATED | Numeric supplier acceptance requirements in G2 supplier requests; conservative geometry/qualification is not closed. |
+| X24-DISPLAY-LAND | REMAINS_OPEN | Deferred to G4 case + final MAIN outline (status REMAINS_OPEN; no DEFERRED_G4 enum in contract). Carry G1 cover fit -1.100 mm conservative and residual wall -0.150 mm nominal; land clearance -0.060 mm conservative where applicable. |
+| X25-COVER-CASE-FIT | REMAINS_OPEN | Deferred to G4 case + final MAIN outline (status REMAINS_OPEN; no DEFERRED_G4 enum in contract). Carry G1 cover fit -1.100 mm conservative and residual wall -0.150 mm nominal; land clearance -0.060 mm conservative where applicable. |
+| G2-CROSSING-HEIGHT | SUPPLIER_DATA_GATED | Shared lower-web crossing heights computed in shared_corridors; no unverified thin flex is credited. |
+| G2-BOOK-FOLD | SUPPLIER_DATA_GATED | B.Cu options need quantified tangent-hinge slack, remating space and accessible battery isolation. Requirements in each option. |
+| G2-PROBE-RELIEF | SUPPLIER_DATA_GATED | Tag-Connect through-board guide pins must fit the derived clearance or use carrier relief / S0 fixture. No added seated Z. |
+| G2-BACK-STACK | SUPPLIER_DATA_GATED | Full connector + flex + stiffener + solder stack and its positive uncertainty must meet both nominal and RSS limits. |
+| G2-DISCOVERED-INTERFACES | SUPPLIER_DATA_GATED | SW1-SW5, antenna feeds and TP access registered; supplier feed construction remains unknown. |
+
+Drafted / issue-ready supplier requests (owner issues): SR-FPC-MECH, SR-BATT-PCM, SR-BATT-PACK, SR-CHG-MECH, SR-TAGCONNECT, SR-LRA, SR-BUTTONS, SR-DISPLAY-FPC, SR-ANTENNAS. Numeric requirements are incorporated into architecture.json and the generated report.
+
+G2 reservations: G2-J1501-F.Cu-0, G2-J1501-F.Cu-1, G2-J1501-F.Cu-2, G2-J201-F.Cu-0, G2-J201-F.Cu-1, G2-J201-F.Cu-2, G2-J202-WEST-F.Cu-0, G2-J202-WEST-F.Cu-1, G2-J202-WEST-F.Cu-2, G2-U7-B.Cu-0, G2-U7-B.Cu-1, G2-U7-B.Cu-2, G2-U7-SERVICE-POCKET.
+
+Remaining acceptance gaps:
+
+- AE1420: supplier-controlled feed construction prevents a final length/bend/Z allocation (acceptance 2).
+- AE1401: supplier-controlled feed construction prevents a final length/bend/Z allocation (acceptance 2).
+- AE1410: supplier-controlled feed construction prevents a final length/bend/Z allocation (acceptance 2).
+
+<!-- G2 GENERATED END -->

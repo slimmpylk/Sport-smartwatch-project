@@ -3,7 +3,7 @@
 <desc>Provisional routing architecture; connector MPN, pitch and orientation are not frozen.</desc>
 <defs><marker id="arr" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0 0 L10 5 L0 10 Z" fill="#222"/></marker><marker id="arrr" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0 0 L10 5 L0 10 Z" fill="#c0392b"/></marker></defs>
 <rect width="1420" height="800" fill="#ffffff"/>
-<text x="20.00" y="26.00" font-size="14.00" fill="#111" text-anchor="start" font-weight="bold">Interconnect paths - front-view plan (left) and south radial section (right); PROVISIONAL</text>
+<text x="20.00" y="26.00" font-size="14.00" fill="#111" text-anchor="start" font-weight="bold">G1 interconnect comparison - current G2 paths and section-channel allocation are in g2_interconnect.md</text>
 <text x="20.00" y="44.00" font-size="10.00" fill="#555" text-anchor="start" font-weight="normal">Solid = MAIN F.Cu level; dashed = REAR level (hidden behind battery). north = -Y, east = +X.</text>
 <circle cx="360.00" cy="400.00" r="353.50" fill="none" stroke="#555" stroke-width="2.00"/>
 <circle cx="360.00" cy="400.00" r="336.70" fill="none" stroke="#555" stroke-width="1.00" stroke-dasharray="6 3"/>

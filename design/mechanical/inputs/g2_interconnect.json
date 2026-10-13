@@ -1,0 +1,582 @@
+{
+  "schema": "sportwatch-g2-input/1",
+  "authority": "G2_BRIEF.md sections 2-10; no KiCad edits",
+  "evidence_policy": "Every result object declares one evidence_class inherited by its scalar fields; nested objects override it. Planning envelopes are not supplier dimensions.",
+  "limits": {
+    "nominal_mm": 16.5,
+    "rss_mm": 17.0,
+    "evidence_class": "OWNER_DECISION",
+    "source": "OD-THICK-REVA 2026-10-12"
+  },
+  "reference": {
+    "nominal_mm": 16.08,
+    "rss_mm": 16.525,
+    "linear_mm": 17.74,
+    "evidence_class": "PROJECT_DERIVED",
+    "source": "G1-K2, immutable G1 output; cross-check only, not stack input"
+  },
+  "parameters": {
+    "mated_mm": {
+      "min": 0.6,
+      "nom": 0.8,
+      "max": 1.0,
+      "evidence_class": "PROVISIONAL_ASSUMPTION",
+      "rationale": "G1 h_rear_inner connector class; MPN unknown. Same class applied to all unselected connectors on both sides."
+    },
+    "stiffener_mm": {
+      "min": 0.05,
+      "nom": 0.1,
+      "max": 0.15,
+      "evidence_class": "PROVISIONAL_ASSUMPTION",
+      "rationale": "Planning budget for reinforcement; no supplier construction selected. Added to mated envelope conservatively; vendor must identify any double-counting."
+    },
+    "solder_mm": {
+      "min": 0.02,
+      "nom": 0.03,
+      "max": 0.05,
+      "evidence_class": "PROVISIONAL_ASSUMPTION",
+      "rationale": "Planning allowance for seated solder/attach variation, added outside mated height."
+    },
+    "exit_mm": {
+      "min": 0.4,
+      "nom": 0.6,
+      "max": 0.8,
+      "evidence_class": "PROVISIONAL_ASSUMPTION",
+      "rationale": "Connector mouth height from its PCB face: budget to verify with drawing, not inferred from mated height."
+    },
+    "harness_width_mm": {
+      "min": 0.8,
+      "nom": 1.5,
+      "max": 2.0,
+      "evidence_class": "PROVISIONAL_ASSUMPTION",
+      "rationale": "Paired power/return flat-flex planning corridor, not round-wire diameter."
+    },
+    "sensor_pitch_mm": {
+      "min": 0.2,
+      "nom": 0.25,
+      "max": 0.3,
+      "evidence_class": "PROVISIONAL_ASSUMPTION",
+      "rationale": "Unselected fine-pitch class. Twenty-four positions must fit the available south width including edges."
+    },
+    "sensor_edge_margin_mm": {
+      "min": 0.2,
+      "nom": 0.35,
+      "max": 0.5,
+      "evidence_class": "PROVISIONAL_ASSUMPTION",
+      "rationale": "Each cable edge beyond outermost conductor centre; planning allowance."
+    },
+    "assembly_clearance_mm": {
+      "min": 0.1,
+      "nom": 0.2,
+      "max": 0.3,
+      "evidence_class": "PROVISIONAL_ASSUMPTION",
+      "rationale": "Working insertion/withdrawal and conductor clearance; same G1 channel clearance class."
+    },
+    "service_slack_mm": {
+      "min": 10,
+      "nom": 20,
+      "max": 30,
+      "evidence_class": "PROVISIONAL_ASSUMPTION",
+      "rationale": "G1 reversible mating slack; checked separately from installed length."
+    },
+    "tail_joint_mm": {
+      "min": 0.03,
+      "nom": 0.05,
+      "max": 0.08,
+      "evidence_class": "PROVISIONAL_ASSUMPTION",
+      "rationale": "G1 nominal 0.05 joint; range is a process budget, supplier must verify hot-bar/ACF."
+    },
+    "collar_clearance_mm": {
+      "min": 0.05,
+      "nom": 0.1,
+      "max": 0.15,
+      "evidence_class": "PROVISIONAL_ASSUMPTION",
+      "rationale": "Minimum continuous material between lower-web flex groove and LRA cavity; not removed for stack compliance."
+    },
+    "pcm_az_deg": {
+      "min": 220,
+      "nom": 230,
+      "max": 240,
+      "evidence_class": "PROVISIONAL_ASSUMPTION",
+      "rationale": "Plausible SW finished-pack exit sweep brackets phase-1 BATT_EXIT; actual exit unknown."
+    },
+    "fcu_overpass_radius_mm": {
+      "min": 15.5,
+      "nom": 16.5,
+      "max": 17.5,
+      "evidence_class": "PROVISIONAL_ASSUMPTION",
+      "rationale": "Inboard front-gap battery-tail arc with inward J201 mouth. The 16.5 mm midpoint of 15.5-17.5 leaves geometric approach space for an S-jog above live power-part courtyards; no supplier size or best-case radius is assumed."
+    },
+    "development_cycles": {
+      "rated": 50,
+      "planned": 25,
+      "evidence_class": "PROJECT_DERIVED",
+      "source": "input_register J1-DISPLAY; architecture assembly budget"
+    },
+    "vled_peak_mA": {
+      "value": 124,
+      "evidence_class": "PROJECT_DERIVED",
+      "source": "input_register PPG-LOAD initial two-AFE policy; excludes recharge"
+    },
+    "vled_position_requirement_mA": {
+      "min": 124,
+      "nom": 150,
+      "max": 200,
+      "evidence_class": "PROVISIONAL_ASSUMPTION",
+      "rationale": "Procurement requirement per VLED position including imbalance; nominal leaves 26 mA per-position recharge reserve if one position carries the full initial pulse. Actual recharge waveform must be verified."
+    },
+    "lra_lead_exit_mm": {
+      "min": 0.03,
+      "nom": 0.05,
+      "max": 0.1,
+      "evidence_class": "PROVISIONAL_ASSUMPTION",
+      "rationale": "Direct insulated lead attach beside U7, not the top of its package. Allowance for solder plus lead exit; verify SR-LRA."
+    },
+    "lra_route_radius_mm": {
+      "min": 19.5,
+      "nom": 20.5,
+      "max": 21.5,
+      "evidence_class": "PROVISIONAL_ASSUMPTION",
+      "rationale": "Separate concentric perimeter corridor from charger pair at R18.5; both below lower web and outside REAR board, within closed case."
+    },
+    "approach_half_width_mm": {
+      "min": 0.75,
+      "nom": 1,
+      "max": 1.25,
+      "evidence_class": "PROVISIONAL_ASSUMPTION",
+      "rationale": "Conservative routing-estimate corridor half-width around a conductor centreline; not a selected cable size."
+    },
+    "approach_angle_margin_deg": {
+      "min": 0.5,
+      "nom": 2,
+      "max": 3.5,
+      "evidence_class": "PROVISIONAL_ASSUMPTION",
+      "rationale": "Planning angular tolerance at each end of the on-board approach corridor."
+    }
+  },
+  "options": [
+    {
+      "id": "J1501-F.Cu",
+      "interface": "J1501",
+      "side": "F.Cu",
+      "window_rect_mm": [
+        100.2,
+        116.4,
+        108.5,
+        121
+      ],
+      "evidence_class": "PROVISIONAL_ASSUMPTION",
+      "source": "G2 planning window; checked against live courtyards, not a footprint placement",
+      "riser_az_deg": [
+        158,
+        178
+      ],
+      "crossing": "XF-J1501",
+      "supplier": "SR-FPC-MECH",
+      "positions": 24,
+      "signal_positions": 10,
+      "source_radius_mm": 11.6,
+      "source_az_deg": 168,
+      "route_kind": "sensor",
+      "service_joints": 1,
+      "routing_target_ref": "U101",
+      "assembly_actions": [
+        "Attach and inspect conductor",
+        "Form front-edge crossing before display",
+        "Capture strain relief"
+      ]
+    },
+    {
+      "id": "J1501-B.Cu",
+      "interface": "J1501",
+      "side": "B.Cu",
+      "window_rect_mm": [
+        100.2,
+        116.4,
+        108.5,
+        121
+      ],
+      "evidence_class": "PROVISIONAL_ASSUMPTION",
+      "source": "G2 planning window; checked against live courtyards, not a footprint placement",
+      "riser_az_deg": [
+        158,
+        178
+      ],
+      "crossing": "XF-J1501",
+      "supplier": "SR-FPC-MECH",
+      "positions": 24,
+      "signal_positions": 10,
+      "source_radius_mm": 11.6,
+      "source_az_deg": 168,
+      "route_kind": "sensor",
+      "service_joints": 1,
+      "routing_target_ref": "U101",
+      "assembly_actions": [
+        "Support MAIN B.Cu-up",
+        "Attach and inspect conductor",
+        "Fold MAIN about tangent hinge",
+        "Capture slack without loading pack"
+      ]
+    },
+    {
+      "id": "J1502-TAIL0402",
+      "interface": "J1502",
+      "side": "REAR-inner",
+      "window_rect_mm": null,
+      "evidence_class": "PROVISIONAL_ASSUMPTION",
+      "source": "G2 planning window; checked against live courtyards, not a footprint placement",
+      "termination": "tail",
+      "lever": "INNER-TAIL",
+      "supplier": "SR-FPC-MECH",
+      "service_joints": 0,
+      "routing_changes": 0,
+      "assembly_actions": [
+        "Bond tail in process fixture",
+        "Inspect continuity and strain relief"
+      ]
+    },
+    {
+      "id": "J1502-TAIL0201",
+      "interface": "J1502",
+      "side": "REAR-inner",
+      "window_rect_mm": null,
+      "evidence_class": "PROVISIONAL_ASSUMPTION",
+      "source": "G2 planning window; checked against live courtyards, not a footprint placement",
+      "termination": "tail",
+      "lever": "INNER-0201",
+      "supplier": "SR-FPC-MECH",
+      "service_joints": 0,
+      "routing_changes": 1,
+      "assembly_actions": [
+        "Bond tail in process fixture",
+        "Inspect continuity and strain relief",
+        "Verify reduced-package inner-face assembly process"
+      ]
+    },
+    {
+      "id": "J1502-CONNECTOR",
+      "interface": "J1502",
+      "side": "REAR-inner",
+      "window_rect_mm": null,
+      "evidence_class": "PROVISIONAL_ASSUMPTION",
+      "source": "G2 planning window; checked against live courtyards, not a footprint placement",
+      "termination": "connector",
+      "lever": null,
+      "supplier": "SR-FPC-MECH",
+      "service_joints": 1,
+      "routing_changes": 0,
+      "assembly_actions": [
+        "Insert and latch inner-face connector",
+        "Inspect continuity and strain relief"
+      ]
+    },
+    {
+      "id": "J201-F.Cu",
+      "interface": "J201",
+      "side": "F.Cu",
+      "window_rect_mm": [
+        94,
+        119,
+        99.5,
+        122
+      ],
+      "evidence_class": "PROVISIONAL_ASSUMPTION",
+      "source": "G2 planning window; checked against live courtyards, not a footprint placement",
+      "riser_az_deg": [
+        224,
+        232
+      ],
+      "crossing": "XB-J201",
+      "supplier": "SR-BATT-PCM",
+      "positions": 3,
+      "signal_positions": 1,
+      "source_radius_mm": 22.15,
+      "source_az_deg": 230,
+      "route_kind": "battery",
+      "service_joints": 1,
+      "routing_target_ref": "U201",
+      "assembly_actions": [
+        "Attach and inspect conductor",
+        "Form front-edge crossing before display",
+        "Capture strain relief"
+      ],
+      "mouth_direction": "inboard"
+    },
+    {
+      "id": "J201-B.Cu",
+      "interface": "J201",
+      "side": "B.Cu",
+      "window_rect_mm": [
+        84.5,
+        112.5,
+        87.9,
+        115.4
+      ],
+      "evidence_class": "PROVISIONAL_ASSUMPTION",
+      "source": "G2 SW inner shoulder planning window narrowed after MAIN containment and SW3 overlap checks; actual PCM exit SR-BATT-PCM",
+      "riser_az_deg": [
+        224,
+        232
+      ],
+      "crossing": "XB-J201",
+      "supplier": "SR-BATT-PCM",
+      "positions": 3,
+      "signal_positions": 1,
+      "source_radius_mm": 22.15,
+      "source_az_deg": 230,
+      "route_kind": "battery",
+      "service_joints": 1,
+      "routing_target_ref": "U201",
+      "assembly_actions": [
+        "Support MAIN B.Cu-up",
+        "Attach and inspect conductor",
+        "Fold MAIN about tangent hinge",
+        "Capture slack without loading pack"
+      ]
+    },
+    {
+      "id": "J202-WEST-F.Cu",
+      "interface": "J202",
+      "side": "F.Cu",
+      "window_rect_mm": [
+        79.5,
+        100.35,
+        82,
+        103.25
+      ],
+      "evidence_class": "PROVISIONAL_ASSUMPTION",
+      "source": "G2 planning window; checked against live courtyards, not a footprint placement",
+      "riser_az_deg": [
+        249,
+        259
+      ],
+      "crossing": "XC-J202",
+      "supplier": "SR-CHG-MECH",
+      "positions": 2,
+      "signal_positions": 0,
+      "source_radius_mm": 18.5,
+      "source_az_deg": 100,
+      "route_kind": "charger",
+      "service_joints": 1,
+      "routing_target_ref": "U201",
+      "entry_protection_relocation": false,
+      "assembly_actions": [
+        "Attach and inspect conductor",
+        "Form front-edge crossing before display",
+        "Capture strain relief"
+      ]
+    },
+    {
+      "id": "J202-WEST-B.Cu",
+      "interface": "J202",
+      "side": "B.Cu",
+      "window_rect_mm": [
+        79.5,
+        100.35,
+        82,
+        103.25
+      ],
+      "evidence_class": "PROVISIONAL_ASSUMPTION",
+      "source": "G2 planning window; checked against live courtyards, not a footprint placement",
+      "riser_az_deg": [
+        249,
+        259
+      ],
+      "crossing": "XC-J202",
+      "supplier": "SR-CHG-MECH",
+      "positions": 2,
+      "signal_positions": 0,
+      "source_radius_mm": 18.5,
+      "source_az_deg": 100,
+      "route_kind": "charger",
+      "service_joints": 1,
+      "routing_target_ref": "U201",
+      "entry_protection_relocation": false,
+      "assembly_actions": [
+        "Support MAIN B.Cu-up",
+        "Attach and inspect conductor",
+        "Fold MAIN about tangent hinge",
+        "Capture slack without loading pack"
+      ]
+    },
+    {
+      "id": "J202-EAST-B.Cu",
+      "interface": "J202",
+      "side": "B.Cu",
+      "window_rect_mm": [
+        118,
+        103.8,
+        121.5,
+        106.8
+      ],
+      "evidence_class": "PROVISIONAL_ASSUMPTION",
+      "source": "G2 planning window; checked against live courtyards, not a footprint placement",
+      "riser_az_deg": [
+        102,
+        107
+      ],
+      "crossing": "XC-J202",
+      "supplier": "SR-CHG-MECH",
+      "positions": 2,
+      "signal_positions": 0,
+      "source_radius_mm": 18.5,
+      "source_az_deg": 100,
+      "route_kind": "charger",
+      "service_joints": 1,
+      "routing_target_ref": "U201",
+      "entry_protection_relocation": true,
+      "assembly_actions": [
+        "Support MAIN B.Cu-up",
+        "Attach and inspect conductor",
+        "Fold MAIN about tangent hinge",
+        "Capture slack without loading pack"
+      ]
+    },
+    {
+      "id": "U7-F.Cu",
+      "interface": "U7/LRA",
+      "side": "F.Cu",
+      "window_rect_mm": [
+        112.3,
+        113.05,
+        114.3,
+        114.95
+      ],
+      "evidence_class": "PROVISIONAL_ASSUMPTION",
+      "source": "G2 planning window; checked against live courtyards, not a footprint placement",
+      "riser_az_deg": [
+        134,
+        141
+      ],
+      "crossing": "XL-LRA",
+      "supplier": "SR-LRA",
+      "positions": 2,
+      "signal_positions": 4,
+      "source_radius_mm": 18.5,
+      "source_az_deg": 190,
+      "route_kind": "lra",
+      "service_joints": 0,
+      "routing_target_ref": "U101",
+      "assembly_actions": [
+        "Attach and inspect conductor",
+        "Form front-edge crossing before display",
+        "Capture strain relief"
+      ]
+    },
+    {
+      "id": "U7-B.Cu",
+      "interface": "U7/LRA",
+      "side": "B.Cu",
+      "window_rect_mm": [
+        112.3,
+        113.05,
+        114.3,
+        114.95
+      ],
+      "evidence_class": "PROVISIONAL_ASSUMPTION",
+      "source": "G2 planning window; checked against live courtyards, not a footprint placement",
+      "riser_az_deg": [
+        134,
+        141
+      ],
+      "crossing": "XL-LRA",
+      "supplier": "SR-LRA",
+      "positions": 2,
+      "signal_positions": 4,
+      "source_radius_mm": 18.5,
+      "source_az_deg": 190,
+      "route_kind": "lra",
+      "service_joints": 0,
+      "routing_target_ref": "U101",
+      "assembly_actions": [
+        "Support MAIN B.Cu-up",
+        "Attach and inspect conductor",
+        "Fold MAIN about tangent hinge",
+        "Capture slack without loading pack"
+      ]
+    },
+    {
+      "id": "J1301-RETAIN",
+      "interface": "J1301",
+      "side": "F.Cu",
+      "window_rect_mm": null,
+      "evidence_class": "PROVISIONAL_ASSUMPTION",
+      "source": "G2 planning window; checked against live courtyards, not a footprint placement",
+      "retained_ref": "J1301",
+      "supplier": "SR-TAGCONNECT"
+    },
+    {
+      "id": "J1-RETAIN",
+      "interface": "J1",
+      "side": "F.Cu",
+      "window_rect_mm": null,
+      "evidence_class": "PROVISIONAL_ASSUMPTION",
+      "source": "G2 planning window; checked against live courtyards, not a footprint placement",
+      "retained_ref": "J1",
+      "supplier": "SR-DISPLAY-FPC"
+    },
+    {
+      "id": "U8-RETAIN",
+      "interface": "U8",
+      "side": "F.Cu",
+      "window_rect_mm": null,
+      "evidence_class": "PROVISIONAL_ASSUMPTION",
+      "source": "G2 planning window; checked against live courtyards, not a footprint placement",
+      "retained_ref": "U8",
+      "supplier": "SR-ANTENNAS"
+    },
+    {
+      "id": "C901-C903-P0402",
+      "interface": "C901/C903",
+      "side": "B.Cu",
+      "window_rect_mm": null,
+      "evidence_class": "PROVISIONAL_ASSUMPTION",
+      "source": "G2 planning window; checked against live courtyards, not a footprint placement",
+      "retained_ref": "C901",
+      "supplier": null
+    }
+  ],
+  "corner_policy": "Use G1 radial corners unchanged; axial clearances use minimum space/maximum conductor at conservative and the reverse at optimistic. G1 tolerance terms imported unchanged; added connector-stack ranges enter as independent positive max-minus-nom sensitivities. Existing h_rear_inner tolerance remains, deliberately conservative.",
+  "selection_rule": [
+    "no frozen-invariant or owner-decision impact",
+    "Rev-A nominal and RSS compliant",
+    "MAIN-edge crossings then display-land interactions",
+    "5 ATM seal-band then button-bore crossings",
+    "installed flex length then bends",
+    "assembly action count then remating service robustness (demountable joint count); equal-quality supplier retention qualification remains required",
+    "via transitions then on-board Manhattan length"
+  ],
+  "assembly": {
+    "evidence_class": "PROVISIONAL_ASSUMPTION",
+    "S0": "Battery isolated at accessible external development break/fixture; charger detached. Probe bare MAIN F.Cu and TP1301-TP1306. Mate no live battery connector.",
+    "S1": "Bond/test REAR tail on its inner face before carrier insertion. Fit carrier, pack insulation and independent charger module. For B.Cu options hold MAIN B.Cu-up on a jig, mate cold, rotate about the single common tangent hinge in joint_book_fold with computed joint slack (isolated option hinges are lower bounds only) in the OUTSIDE assembly jig, then capture slack in its reserved pocket. F.Cu connectors mate visibly before the display. Connect battery last for bring-up; isolate again before any manipulation.",
+    "S2": "Remove SWD probe/clip; verify carrier guide-pin relief. Connect J1 visibly with display hinged; close display onto support land without trapping the fold. Blind Z-mating is allowed only after SR-J1-ALIGN fixture verification. Caseback remains open; connectors beneath the display cannot be accessed directly.",
+    "S3": "Inspect strain relief, separated charger feedthrough and seals; close caseback using hard stops. No external SWD requirement. Rework reverses S3 to S1 with battery isolation BEFORE moving MAIN/display; log every J1 cycle. A bonded REAR tail is serviced by replacing the REAR+tail unit through J1501, not repeated tail peeling.",
+    "isolation": "Use an external development battery disconnect in the test fixture before closing the stack; for a sealed unit detach charger and open caseback, isolate pack at a supplier-provided accessible pack-tail break before lifting MAIN. If no accessible isolation break can be provided, the remating process is SUPPLIER_DATA_REQUIRED and not release-ready; never hot-unplug under the display."
+  },
+  "rf_verification": [
+    "Retain live U8 MAX-F10S at (100,86) on F.Cu; no relocation/part-change study.",
+    "Verify C1420/C1421/R1420 are the intended feed/matching network inside GNSS_RAD (C8), with tuned matching on the assembled case.",
+    "Verify GNSS_RAD through every Z level (X17), display shielding, cover/case shadowing, battery/carrier metal and radome dielectric.",
+    "Measure antenna efficiency, sensitivity and detuning with wrist/strap, charge dock, buttons, display activity, BLE/Wi-Fi coexistence. No RF improvement is credited to thickness."
+  ],
+  "channel_architecture": {
+    "evidence_class": "PROVISIONAL_ASSUMPTION",
+    "sensor": "Sensor under-run occupies a groove INSIDE the carrier lower web; preserve minimum residual separating material.",
+    "charger": "Charger strip runs BELOW the intact lower web in the perimeter outside the REAR outline, within the existing rear-inner Z gap; no carrier thinning or pack support removal.",
+    "lra": "LRA lead pair uses a separate concentric perimeter channel below the lower web. Actuator pocket lies lower than both lead channels; supplier must meet the calculated residual height envelope.",
+    "service": "Capture slack in dedicated perimeter pockets below the web; never double a cable in the battery annulus. Pocket area, height and strain relief are supplier/fixture gates."
+  },
+  "service_pocket": {
+    "az_deg": [
+      128,
+      164
+    ],
+    "radial_mm": [
+      14,
+      18.5
+    ],
+    "evidence_class": "PROVISIONAL_ASSUMPTION",
+    "rationale": "U7 lead slack lies flat below lower web outside REAR outline; a serpentine in the radial/azimuth plane avoids a tall Z fold. Verify fit and actuator separation numerically."
+  }
+}

@@ -1,10 +1,10 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="1240" height="860" viewBox="0 0 1240 860" font-family="DejaVu Sans, Verdana, sans-serif">
+<svg xmlns="http://www.w3.org/2000/svg" width="1240" height="930" viewBox="0 0 1240 930" font-family="DejaVu Sans, Verdana, sans-serif">
 <title>Rev-A perimeter / Z-level reservation map (front view)</title>
 <desc>Front view from display; north = -Y, east = +X. Provisional reversible architecture study; not a frozen outline.</desc>
 <defs><marker id="arr" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0 0 L10 5 L0 10 Z" fill="#222"/></marker><marker id="arrr" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0 0 L10 5 L0 10 Z" fill="#c0392b"/></marker></defs>
-<rect width="1240" height="860" fill="#ffffff"/>
+<rect width="1240" height="930" fill="#ffffff"/>
 <text x="20.00" y="26.00" font-size="14.00" fill="#111" text-anchor="start" font-weight="bold">Rev-A perimeter reservation map - front view from display; north = -Y (up), east = +X (right)</text>
-<text x="20.00" y="44.00" font-size="10.00" fill="#555" text-anchor="start" font-weight="normal">PROVISIONAL / REVERSIBLE architecture study. Reservations are coarse planning volumes, not geometry approvals.</text>
+<text x="20.00" y="44.00" font-size="10.00" fill="#555" text-anchor="start" font-weight="normal">G1 comparison reservations; current G2 allocation is in g2_allocation.svg. Provisional, no geometry approval.</text>
 <line x1="430.00" y1="71.60" x2="430.00" y2="60.40" stroke="#777" stroke-width="1.00"/>
 <text x="430.00" y="51.80" font-size="12.00" fill="#444" text-anchor="middle" font-weight="normal">12</text>
 <line x1="609.20" y1="119.62" x2="614.80" y2="109.92" stroke="#777" stroke-width="1.00"/>
@@ -193,6 +193,26 @@
 <circle cx="136.00" cy="493.00" r="2.00" fill="#c0392b" stroke="#c0392b" stroke-width="1.00"/>
 <circle cx="150.00" cy="479.00" r="9.50" fill="#ffffff" fill-opacity="0.9" stroke="#c0392b" stroke-width="1.80"/>
 <text x="150.00" y="482.20" font-size="8.00" fill="#c0392b" text-anchor="middle" font-weight="bold">X24</text>
+<line x1="402.00" y1="402.00" x2="416.00" y2="388.00" stroke="#c0392b" stroke-width="1.00"/>
+<circle cx="402.00" cy="402.00" r="2.00" fill="#c0392b" stroke="#c0392b" stroke-width="1.00"/>
+<circle cx="416.00" cy="388.00" r="9.50" fill="#ffffff" fill-opacity="0.9" stroke="#c0392b" stroke-width="1.80"/>
+<text x="416.00" y="391.20" font-size="8.00" fill="#c0392b" text-anchor="middle" font-weight="bold">G2A</text>
+<line x1="430.00" y1="402.00" x2="444.00" y2="388.00" stroke="#c0392b" stroke-width="1.00"/>
+<circle cx="430.00" cy="402.00" r="2.00" fill="#c0392b" stroke="#c0392b" stroke-width="1.00"/>
+<circle cx="444.00" cy="388.00" r="9.50" fill="#ffffff" fill-opacity="0.9" stroke="#c0392b" stroke-width="1.80"/>
+<text x="444.00" y="391.20" font-size="8.00" fill="#c0392b" text-anchor="middle" font-weight="bold">G2B</text>
+<line x1="458.00" y1="402.00" x2="472.00" y2="388.00" stroke="#c0392b" stroke-width="1.00"/>
+<circle cx="458.00" cy="402.00" r="2.00" fill="#c0392b" stroke="#c0392b" stroke-width="1.00"/>
+<circle cx="472.00" cy="388.00" r="9.50" fill="#ffffff" fill-opacity="0.9" stroke="#c0392b" stroke-width="1.80"/>
+<text x="472.00" y="391.20" font-size="8.00" fill="#c0392b" text-anchor="middle" font-weight="bold">G2C</text>
+<line x1="486.00" y1="402.00" x2="500.00" y2="388.00" stroke="#c0392b" stroke-width="1.00"/>
+<circle cx="486.00" cy="402.00" r="2.00" fill="#c0392b" stroke="#c0392b" stroke-width="1.00"/>
+<circle cx="500.00" cy="388.00" r="9.50" fill="#ffffff" fill-opacity="0.9" stroke="#c0392b" stroke-width="1.80"/>
+<text x="500.00" y="391.20" font-size="8.00" fill="#c0392b" text-anchor="middle" font-weight="bold">G2D</text>
+<line x1="514.00" y1="402.00" x2="528.00" y2="388.00" stroke="#c0392b" stroke-width="1.00"/>
+<circle cx="514.00" cy="402.00" r="2.00" fill="#c0392b" stroke="#c0392b" stroke-width="1.00"/>
+<circle cx="528.00" cy="388.00" r="9.50" fill="#ffffff" fill-opacity="0.9" stroke="#c0392b" stroke-width="1.80"/>
+<text x="528.00" y="391.20" font-size="8.00" fill="#c0392b" text-anchor="middle" font-weight="bold">G2E</text>
 <line x1="60.00" y1="120.00" x2="60.00" y2="70.00" stroke="#111" stroke-width="2.00" marker-end="url(#arr)"/>
 <text x="60.00" y="62.00" font-size="11.00" fill="#111" text-anchor="middle" font-weight="bold">N (-Y)</text>
 <text x="880.00" y="92.00" font-size="12.00" fill="#111" text-anchor="start" font-weight="bold">Z levels (fill colour)</text>
@@ -250,5 +270,10 @@
 <text x="880.00" y="714.00" font-size="9.00" fill="#d35400" text-anchor="start" font-weight="normal">X23 Residual crosstalk through a continuous optical window is </text>
 <text x="880.00" y="727.00" font-size="9.00" fill="#c0392b" text-anchor="start" font-weight="normal">X24 Display support land competes with the display-FPC fold, r</text>
 <text x="880.00" y="740.00" font-size="9.00" fill="#d35400" text-anchor="start" font-weight="normal">X25 Cover free span + bond/seal land + bezel wall vs the provi</text>
-<text x="20.00" y="846.00" font-size="9.00" fill="#555" text-anchor="start" font-weight="normal">Clock faces: az = degrees clockwise from north; z-levels per architecture.json reservations. Black squares: key MAIN parts from main_height_map.json.</text>
+<text x="880.00" y="753.00" font-size="9.00" fill="#c0392b" text-anchor="start" font-weight="normal">G2A Crossing Height</text>
+<text x="880.00" y="766.00" font-size="9.00" fill="#c0392b" text-anchor="start" font-weight="normal">G2B Book Fold</text>
+<text x="880.00" y="779.00" font-size="9.00" fill="#c0392b" text-anchor="start" font-weight="normal">G2C Probe Relief</text>
+<text x="880.00" y="792.00" font-size="9.00" fill="#c0392b" text-anchor="start" font-weight="normal">G2D Back Stack</text>
+<text x="880.00" y="805.00" font-size="9.00" fill="#c0392b" text-anchor="start" font-weight="normal">G2E Discovered Interfaces</text>
+<text x="20.00" y="916.00" font-size="9.00" fill="#555" text-anchor="start" font-weight="normal">Clock faces: az = degrees clockwise from north; z-levels per architecture.json reservations. Black squares: key MAIN parts from main_height_map.json.</text>
 </svg>

@@ -1,11 +1,10 @@
 # design/mechanical - Rev-A multi-board mechanical stack and rear sensor module architecture
 
-**Status: PROVISIONAL, REVERSIBLE architecture study.** G1 (owner-decision integration, 2026-10-11) is COMPLETE with verdict **THICKNESS OWNER
-DECISION REQUIRED** (architecture.md section G1): the seven owner decisions are integrated, the thickness-recovery scenarios and the 5 ATM
-implications are computed by `tools/g1_scenarios.py`, and no scenario is credibly <= 15.5 mm. Exit means "architecture coherent, conflicts
-exposed, unknowns tracked", not "mechanics final". Nothing in this directory authorises KiCad edits, routing, an outline freeze, case CAD,
-connector/antenna selection, a battery change or an electrical partition change. Frozen invariants are listed in `inputs/input_register.json`
-and copied verbatim into `architecture.json`.
+**Status: G2 CONDITIONAL — ENGINEERING GATES OPEN.** The G2 deterministic study and package are implemented;
+nominal allocation, stack results and outstanding acceptance gaps are in the generated G2 report. Generator
+consistency is separate from engineering acceptance. The G1 numerical record remains immutable apart from the
+authorized register-hash provenance update. All work is provisional and reversible; no KiCad edit, routing,
+outline freeze, part selection, supplier request issuance or downstream phase is authorized.
 
 ## Package index
 
@@ -28,7 +27,7 @@ and copied verbatim into `architecture.json`.
 ## Conventions
 
  - Front view from the display: north/12 = -Y, east/3 = +X, south/6 = +Y, west/9 = -X; MAIN origin (100,100). Azimuth = degrees clockwise from north.
- - Z positive from the front exterior toward the wrist. T_total = front-most exterior surface (cover lens) to the deepest wrist-facing pod surface (target 14.0-15.5 mm);
+ - Z positive from the front exterior toward the wrist. T_total = front-most exterior surface (cover lens) to the deepest wrist-facing pod surface (Rev-A owner limit: nominal ≤16.5 mm, RSS ≤17.0 mm; historical 14.0–15.5 mm is a non-binding production goal);
    T_body = T_total - h_pod. Reservation Z levels: FRONT, MAIN, BATTERY, REAR.
  - Every number is labelled KNOWN / PARAMETRIC / SUPPLIER_DATA_REQUIRED with a source. Missing supplier data is never invented; each gap is a request tied to
    a gate. Anything that would need a frozen invariant to change is an OWNER DECISION REQUIRED item.
@@ -68,5 +67,50 @@ arithmetic cross-check (15.85 / 16.276 / 17.23) passes; every scenario number qu
 ## Editing rules
 
 `architecture.json` is the authored source for the diagrams and the cross-checks. After editing it, run `arch_diagrams.py build` and then `check`.
-If `inputs/` change, re-run `mech_model.py` first (the source SHA-256 pins in `architecture.json` will otherwise fail the check). G1 scenario
+For the authorized G2 input-register provenance change only, re-run `mech_model.py` first (the source SHA-256 pins in `architecture.json` will otherwise fail the check). G1 scenario
 definitions live in `inputs/g1_scenarios.json`; all totals are computed by `tools/g1_scenarios.py` - never hand-edit `generated/`.
+
+## G2 interconnect and Rev-A stack study
+
+The current interconnect allocation, stack and open gates are in
+[`generated/g2_interconnect.md`](generated/g2_interconnect.md) and
+[`generated/g2_allocation.svg`](generated/g2_allocation.svg). `architecture.md` section G2 and
+`architecture.json.g2` quote the generated result exactly. The original three diagrams retain the
+G1 comparison geometry; current G2 corridors are supplemental reservations in `g2.reservations`.
+
+- Contract: `G2_BRIEF.md` (current corrected provenance exception).
+- Authored planning ranges/options: `inputs/g2_interconnect.json`. These are budgets, not supplier dimensions.
+- Generator/checker: `tools/g2_interconnect.py`.
+- Outputs: `generated/g2_interconnect.json`, `generated/g2_interconnect.md`, `generated/g2_allocation.svg`.
+- `arch_diagrams.py check` validates the complete G2 block, numeric supplier requirements, exact generated
+  Markdown section and exactly one current conflict status/evidence pair. Duplicate JSON keys fail parsing.
+
+```bash
+python3 -B design/mechanical/tools/g2_interconnect.py build
+python3 -B design/mechanical/tools/g2_interconnect.py check
+python3 -B design/mechanical/tools/arch_diagrams.py build
+python3 -B design/mechanical/tools/arch_diagrams.py check
+python3 -B design/mechanical/tools/mech_model.py check
+python3 -B design/mechanical/tools/g1_scenarios.py check
+```
+
+`build` writes only the G2 generated outputs. Architecture quotations must be updated to the exact
+`architecture_section()` output and result JSON when the inputs change; the checks detect stale quotations.
+A generator consistency PASS is **not** G2 engineering acceptance: inspect `acceptance_complete`,
+`unsatisfied_acceptance`, supplier gates and the overall verdict. Unknown antenna feed construction remains
+explicitly unallocated instead of receiving invented flex length, bend count or mated height.
+
+The Rev-A owner limit is nominal ≤16.5 mm and RSS ≤17.0 mm, measured from the exterior structural/sealing
+cover to the deepest normal wrist-facing pod surface. The historical 14.0–15.5 mm figure is now a
+non-binding Rev-B/production goal. Linear worst is reported separately. No supplier-gated or owner-gated
+thickness lever is credited. P-0402 keeps its electrical/DC-bias evidence gate.
+
+G1 engineering content is immutable against `168badbab6de1201bb3209902a53fe1e4b874cc9`. The only exception
+is the register hash in `generated/zstack.json` and `generated/main_height_map.json`; the existing
+`mech_model.py heights` and `stack` interfaces regenerate it, with every other semantic value unchanged.
+Do not regenerate or edit G1 scenario inputs or outputs to accommodate G2. Run both immutable-tree git
+checks and the positive semantic provenance comparison exactly as given in `G2_BRIEF.md` section 9.
+
+G3 means REAR optical + guarded-analog placement; G4 means case + final MAIN outline co-design. A later
+KiCad allocation implementation phase needs explicit authorization, supplier-confirmed envelopes and
+mating map, electrical evidence and independent review. No downstream work or routing is authorized.

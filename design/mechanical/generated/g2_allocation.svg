@@ -1,0 +1,35 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="820" height="790" viewBox="0 0 820 790" font-family="DejaVu Sans, Verdana, sans-serif">
+<title>G2 provisional allocation — front view; no KiCad placement</title>
+<desc>Nominal planning reservation geometry. Labels list selected options; all supplier gates remain. MAIN and pack circles are provisional envelopes.</desc>
+<defs><marker id="arr" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0 0 L10 5 L0 10 Z" fill="#222"/></marker><marker id="arrr" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0 0 L10 5 L0 10 Z" fill="#c0392b"/></marker></defs>
+<rect width="820" height="790" fill="#ffffff"/>
+<text x="20.00" y="28.00" font-size="16.00" fill="#111" text-anchor="start" font-weight="normal">G2 CONDITIONAL — ENGINEERING GATES OPEN</text>
+<circle cx="400.00" cy="365.00" r="230.00" fill="none" stroke="#333" stroke-width="1.00"/>
+<circle cx="400.00" cy="365.00" r="220.00" fill="none" stroke="#bbb" stroke-width="1.00"/>
+<text x="443.50" y="525.00" font-size="9.00" fill="#0072b2" text-anchor="middle" font-weight="normal">J1501-F.Cu</text>
+<rect x="402.00" y="529.00" width="83.00" height="46.00" fill="none" stroke="#0072b2" stroke-width="1.00"/>
+<path d="M490.09 587.99 A240.50 240.50 0 0 1 408.39 605.35 L408.08 596.47 A231.61 231.61 0 0 0 486.76 579.75 Z" fill="none" stroke="#d55e00" stroke-width="1.00"/>
+<path d="M512.90 567.23 A231.61 231.61 0 0 1 379.12 595.67 L389.54 480.53 A116.00 116.00 0 0 0 456.54 466.29 Z" fill="none" stroke="#009e73" stroke-width="1.00"/>
+<text x="367.50" y="551.00" font-size="9.00" fill="#cc79a7" text-anchor="middle" font-weight="normal">J201-F.Cu</text>
+<rect x="340.00" y="555.00" width="55.00" height="30.00" fill="none" stroke="#cc79a7" stroke-width="1.00"/>
+<path d="M232.93 538.00 A240.50 240.50 0 0 1 210.48 513.07 L218.36 506.91 A230.50 230.50 0 0 0 239.88 530.81 Z" fill="none" stroke="#0072b2" stroke-width="1.00"/>
+<path d="M378.65 538.69 A175.00 175.00 0 0 1 265.94 477.49 L281.26 464.63 A155.00 155.00 0 0 0 381.09 518.84 Z" fill="none" stroke="#d55e00" stroke-width="1.00"/>
+<text x="207.50" y="364.50" font-size="9.00" fill="#009e73" text-anchor="middle" font-weight="normal">J202-WEST-F.Cu</text>
+<rect x="195.00" y="368.50" width="25.00" height="29.00" fill="none" stroke="#009e73" stroke-width="1.00"/>
+<path d="M175.47 451.19 A240.50 240.50 0 0 1 163.92 410.89 L173.73 408.98 A230.50 230.50 0 0 0 184.81 447.60 Z" fill="none" stroke="#cc79a7" stroke-width="1.00"/>
+<path d="M589.58 398.43 A192.50 192.50 0 0 1 214.96 418.06 L229.38 413.93 A177.50 177.50 0 0 0 574.80 395.82 Z" fill="none" stroke="#0072b2" stroke-width="1.00"/>
+<text x="533.00" y="491.50" font-size="9.00" fill="#d55e00" text-anchor="middle" font-weight="normal">U7-B.Cu</text>
+<rect x="523.00" y="495.50" width="20.00" height="19.00" fill="none" stroke="#d55e00" stroke-width="1.00"/>
+<path d="M573.00 532.07 A240.50 240.50 0 0 1 551.35 551.90 L545.06 544.13 A230.50 230.50 0 0 0 565.81 525.12 Z" fill="none" stroke="#009e73" stroke-width="1.00"/>
+<path d="M543.56 521.67 A212.50 212.50 0 0 1 363.10 574.27 L365.70 559.50 A197.50 197.50 0 0 0 533.43 510.61 Z" fill="none" stroke="#cc79a7" stroke-width="1.00"/>
+<path d="M545.78 478.90 A185.00 185.00 0 0 1 450.99 542.83 L438.59 499.58 A140.00 140.00 0 0 0 510.32 451.19 Z" fill="none" stroke="#0072b2" stroke-width="1.00"/>
+<text x="20.00" y="605.00" font-size="10.00" fill="#111" text-anchor="start" font-weight="normal">J1301: J1301-RETAIN</text>
+<text x="20.00" y="617.00" font-size="10.00" fill="#111" text-anchor="start" font-weight="normal">J1: J1-RETAIN</text>
+<text x="20.00" y="629.00" font-size="10.00" fill="#111" text-anchor="start" font-weight="normal">U8: U8-RETAIN</text>
+<text x="20.00" y="641.00" font-size="10.00" fill="#111" text-anchor="start" font-weight="normal">C901/C903: C901-C903-P0402</text>
+<text x="20.00" y="653.00" font-size="10.00" fill="#111" text-anchor="start" font-weight="normal">J1501: J1501-F.Cu</text>
+<text x="20.00" y="665.00" font-size="10.00" fill="#111" text-anchor="start" font-weight="normal">J1502: J1502-TAIL0402</text>
+<text x="20.00" y="677.00" font-size="10.00" fill="#111" text-anchor="start" font-weight="normal">J201: J201-F.Cu</text>
+<text x="20.00" y="689.00" font-size="10.00" fill="#111" text-anchor="start" font-weight="normal">J202: J202-WEST-F.Cu</text>
+<text x="20.00" y="701.00" font-size="10.00" fill="#111" text-anchor="start" font-weight="normal">U7/LRA: U7-B.Cu</text>
+</svg>

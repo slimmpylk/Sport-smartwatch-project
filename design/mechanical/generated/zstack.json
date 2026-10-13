@@ -492,7 +492,7 @@
     "H_F_under_display_ref": "U8"
   },
   "inputs_sha256": {
-    "design/mechanical/inputs/input_register.json": "a35654836b342d2073b75c9c88949346e508abb4b87e7a54b2c7382fcaee9def",
+    "design/mechanical/inputs/input_register.json": "cf36cd3e70c41110b4a709c0b201800793f94ccc1e3335c3998dffbd0a69d7c7",
     "design/mechanical/inputs/package_heights.json": "47a3c2c4b6f53f6eda9b213e353f819c4c1a1a2c13b0e173d95064ed1e6e6f22",
     "design/mechanical/inputs/stack_parameters.json": "f6919f30cebf956d516c5cffdac1a21a7b245dd7ae47548734976fddb8228277",
     "design/placement/phase1_placement.json": "0af00cd3e46dbc9e465b0d32a24ef065fc257295fd735ed39f5b5ea4ef0fa64b",

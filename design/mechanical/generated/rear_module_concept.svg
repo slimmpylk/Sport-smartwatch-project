@@ -3,7 +3,7 @@
 <desc>Provisional envelope class derived from live REAR courtyards; not an outline, stackup or placement.</desc>
 <defs><marker id="arr" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0 0 L10 5 L0 10 Z" fill="#222"/></marker><marker id="arrr" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0 0 L10 5 L0 10 Z" fill="#c0392b"/></marker></defs>
 <rect width="1400" height="760" fill="#ffffff"/>
-<text x="20.00" y="26.00" font-size="14.00" fill="#111" text-anchor="start" font-weight="bold">REAR rigid sensor module - envelope concept (PROVISIONAL, PARAMETRIC, not a placement)</text>
+<text x="20.00" y="26.00" font-size="14.00" fill="#111" text-anchor="start" font-weight="bold">G1 REAR envelope comparison - current G2 attach and channels: g2_allocation.svg</text>
 <text x="20.00" y="44.00" font-size="10.00" fill="#555" text-anchor="start" font-weight="normal">Top view = looking at the optical face from the wrist; north up, EAST LEFT (mirrored vs front view). Section = E-W cut through the pod.</text>
 <circle cx="330.00" cy="420.00" r="242.00" fill="none" stroke="#e08a00" stroke-width="1.20" stroke-dasharray="7 3"/>
 <text x="330.00" y="172.00" font-size="9.00" fill="#e08a00" text-anchor="middle" font-weight="normal">battery Ø44 nominal (above, hidden)</text>
