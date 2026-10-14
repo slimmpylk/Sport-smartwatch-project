@@ -42,6 +42,43 @@ New for G3 — **APPROVED by the owner 2026-10-13**. Record them verbatim in thi
 - **OD-G3-RECORD — APPROVED.** G3 may update engineering documentation to record "G2 CLOSED — PASS WITH
   SUPPLIER/ENGINEERING GATES". This does not close any remaining G2 supplier gates and does not authorize G4.
 
+**OD-G3-MAX86141-PKG — APPROVED**
+
+The generic >=0.500 mm LED-current/aggressor spacing rule does not apply to
+manufacturer-fixed same-package pin/pad adjacency inside the MAX86141 package
+courtyard.
+
+For MAX86141 only, package-fixed adjacency such as D3 PGND ↔ D4 PD2_IN is
+exempt from the >=0.500 mm rule inside the package courtyard.
+
+The exemption ends at the package courtyard boundary.
+
+Outside that boundary, the >=0.500 mm rule applies in full to:
+
+- LED-current-loop copper
+- VLED
+- LEDx_DRV
+- PGND / LED-return copper
+- digital aggressors
+- tail-land copper
+
+No discretionary LED-current, VLED, LED_DRV or PGND copper may enter the
+PD_IN/PD_GND sensitive corridor outside the package-fixed escape.
+
+PD_IN / PD_GND requirements remain unchanged:
+
+- PD_IN guarded by PD_GND
+- adjacent PCB ground plane
+- PD_GND single-point tie through NT401/NT402
+- zero-via PD_IN project rule
+- any package-boundary guard interruption must be explicitly modeled
+
+PGND D3 should escape by via-in-pad or away from the PD_IN corridor where
+physically possible, with minimum loop area.
+
+Aggressor-to-shield spacing outside the courtyard must account for actual copper/pad extents rather than
+centre-only distances. This decision does not weaken the >=0.500 mm rule globally.
+
 **Lead application of OD-G3-SIDE (binding for G3 unless the owner amends it):**
 - Skin face, named: D401–D407, D413/D414/D423/D424, U12/U13, U6.
 - Skin face, "required by locality" (consistent with the G1 skin-face group in
@@ -203,14 +240,27 @@ Evaluate each check at nominal and report conservative / optimistic where a para
    is read from the SFH2703 curve or carried as MANUFACTURER_DATA_REQUIRED; C_corridor per mm PROVISIONAL.
 3. PD_GND: shield region per AFE = PD courtyards + PD_IN corridors + guard; NT401/NT402 ≤ 2.0 mm from its
    AFE PD_GND ball (U12.C5 / U13.C5) and on the AFE side; shield regions must not intersect any LED-current,
-   VLED, digital or tail-land region (plan, both faces projected).
+   VLED, LEDx_DRV, PGND / LED-return, digital or tail-land region (plan, both faces projected), except for
+   manufacturer-fixed same-package pin/pad adjacency inside the MAX86141 package courtyard under
+   OD-G3-MAX86141-PKG. No discretionary LED-current, VLED, LED_DRV or PGND copper may enter the PD_IN/PD_GND
+   sensitive corridor outside the package-fixed escape; any package-boundary guard interruption must be
+   explicitly modeled. All PD_IN / PD_GND guarding, adjacent-plane, single-point-tie and zero-via requirements
+   remain unchanged.
 4. VREF C4103/C4203 ≤ 2.0 mm to B5; VDD 0.1 µF (C4102/C4202) ≤ 2.0 mm and 22 µF (C4101/C4201) ≤ 3.0 mm to
    C2/D2; VLED caps C403–C408 ≤ 2.0 mm to their mux; C4104/C4204 ≤ 4.0 mm to their AFE A1 (all PROVISIONAL).
    Opposite-face placement counts the via and is reported.
 5. LED current loops: for every LED chip, loop polygon VLED cap → anode → cathode → mux → AFE LED_DRV → PGND →
-   cap; loop area reported (ranking), and no loop may intersect a PD_GND shield region (hard).
-6. Aggressor separation: ≥ 0.5 mm plan gap (PROVISIONAL) from any shield region to LED-current, VLED, SPI/INT/CS
-   corridors and the tail land; digital corridors from the tail to AFEs must not cross shield regions.
+   cap; loop area reported (ranking), and no loop may intersect a PD_GND shield region (hard), except for
+   manufacturer-fixed same-package pin/pad adjacency inside the MAX86141 package courtyard under
+   OD-G3-MAX86141-PKG. The exemption ends at the courtyard boundary; outside it, the >=0.500 mm spacing rule
+   applies in full. PGND D3 should escape by via-in-pad or away from the PD_IN corridor where physically
+   possible, with minimum loop area.
+6. Aggressor separation: >=0.500 mm plan gap (PROVISIONAL) from any shield region to LED-current-loop copper,
+   VLED, LEDx_DRV, PGND / LED-return copper, digital aggressors (including SPI/INT/CS corridors) and tail-land
+   copper; digital corridors from the tail to AFEs must not cross shield regions. Only manufacturer-fixed
+   same-package pin/pad adjacency inside the MAX86141 package courtyard is exempt under OD-G3-MAX86141-PKG
+   (for example, D3 PGND ↔ D4 PD2_IN). Outside that boundary the >=0.500 mm rule applies in full, measured
+   using actual copper/pad extents rather than centre-only distances. No global spacing relaxation is granted.
 7. MAX86141 escape: the six inner balls (B2, B3, B4, C2, C3, C4) need via-in-pad/microvia escape → REAR
    stackup requirement (HDI, ≥4 layers, layer roles L1 PD_IN + coplanar PD_GND; L2 PD_GND shield islands;
    L3 solid GND adjacent; L4 inner face). Fab feasibility within t_rear_pcb 0.6–1.0 is SUPPLIER_DATA_REQUIRED;
