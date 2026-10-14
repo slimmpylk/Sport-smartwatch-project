@@ -1,0 +1,1906 @@
+{
+  "architecture_projection_sha256": "a8b6fafe5b1cbd953368382ab1396033528fdafe687543763ef830be3981b2e4",
+  "candidates": [
+    {
+      "evidence_class": "PROVISIONAL_ASSUMPTION",
+      "id": "G3-A",
+      "name": "G1 mirrored groups, AFEs toward south tail",
+      "outline_radius_mm": 16.4,
+      "pd_vias": 0,
+      "placements": {
+        "C403": {
+          "evidence_class": "PROVISIONAL_ASSUMPTION",
+          "face": "inner",
+          "rotation_deg": 180,
+          "xy": [
+            -4.2,
+            9.0
+          ]
+        },
+        "C404": {
+          "evidence_class": "PROVISIONAL_ASSUMPTION",
+          "face": "inner",
+          "rotation_deg": 180,
+          "xy": [
+            -7.2,
+            9.0
+          ]
+        },
+        "C405": {
+          "evidence_class": "PROVISIONAL_ASSUMPTION",
+          "face": "inner",
+          "rotation_deg": 180,
+          "xy": [
+            -10.2,
+            9.0
+          ]
+        },
+        "C406": {
+          "evidence_class": "PROVISIONAL_ASSUMPTION",
+          "face": "inner",
+          "rotation_deg": 0,
+          "xy": [
+            4.2,
+            9.0
+          ]
+        },
+        "C407": {
+          "evidence_class": "PROVISIONAL_ASSUMPTION",
+          "face": "inner",
+          "rotation_deg": 0,
+          "xy": [
+            7.2,
+            9.0
+          ]
+        },
+        "C408": {
+          "evidence_class": "PROVISIONAL_ASSUMPTION",
+          "face": "inner",
+          "rotation_deg": 0,
+          "xy": [
+            10.2,
+            9.0
+          ]
+        },
+        "C4101": {
+          "evidence_class": "PROVISIONAL_ASSUMPTION",
+          "face": "inner",
+          "rotation_deg": 180,
+          "xy": [
+            -5.7,
+            4.5
+          ]
+        },
+        "C4102": {
+          "evidence_class": "PROVISIONAL_ASSUMPTION",
+          "face": "inner",
+          "rotation_deg": 270,
+          "xy": [
+            -6.8,
+            3.0
+          ]
+        },
+        "C4103": {
+          "evidence_class": "PROVISIONAL_ASSUMPTION",
+          "face": "skin",
+          "rotation_deg": 270,
+          "xy": [
+            -9.5,
+            4.5
+          ]
+        },
+        "C4104": {
+          "evidence_class": "PROVISIONAL_ASSUMPTION",
+          "face": "inner",
+          "rotation_deg": 180,
+          "xy": [
+            -5.4,
+            6.0
+          ]
+        },
+        "C4201": {
+          "evidence_class": "PROVISIONAL_ASSUMPTION",
+          "face": "inner",
+          "rotation_deg": 0,
+          "xy": [
+            5.7,
+            4.5
+          ]
+        },
+        "C4202": {
+          "evidence_class": "PROVISIONAL_ASSUMPTION",
+          "face": "inner",
+          "rotation_deg": 270,
+          "xy": [
+            6.8,
+            3.0
+          ]
+        },
+        "C4203": {
+          "evidence_class": "PROVISIONAL_ASSUMPTION",
+          "face": "skin",
+          "rotation_deg": 270,
+          "xy": [
+            9.5,
+            4.5
+          ]
+        },
+        "C4204": {
+          "evidence_class": "PROVISIONAL_ASSUMPTION",
+          "face": "inner",
+          "rotation_deg": 0,
+          "xy": [
+            5.4,
+            6.0
+          ]
+        },
+        "D401": {
+          "evidence_class": "PROVISIONAL_ASSUMPTION",
+          "face": "skin",
+          "rotation_deg": 180,
+          "xy": [
+            -3.2,
+            3.0
+          ]
+        },
+        "D402": {
+          "evidence_class": "PROVISIONAL_ASSUMPTION",
+          "face": "skin",
+          "rotation_deg": 0,
+          "xy": [
+            3.2,
+            3.0
+          ]
+        },
+        "D403": {
+          "evidence_class": "PROVISIONAL_ASSUMPTION",
+          "face": "skin",
+          "rotation_deg": 180,
+          "xy": [
+            -2.9,
+            -1.5
+          ]
+        },
+        "D404": {
+          "evidence_class": "PROVISIONAL_ASSUMPTION",
+          "face": "skin",
+          "rotation_deg": 0,
+          "xy": [
+            2.9,
+            -1.5
+          ]
+        },
+        "D405": {
+          "evidence_class": "PROVISIONAL_ASSUMPTION",
+          "face": "skin",
+          "rotation_deg": 180,
+          "xy": [
+            -2.4,
+            6.5
+          ]
+        },
+        "D406": {
+          "evidence_class": "PROVISIONAL_ASSUMPTION",
+          "face": "skin",
+          "rotation_deg": 180,
+          "xy": [
+            -6.2,
+            6.0
+          ]
+        },
+        "D407": {
+          "evidence_class": "PROVISIONAL_ASSUMPTION",
+          "face": "skin",
+          "rotation_deg": 0,
+          "xy": [
+            2.4,
+            6.5
+          ]
+        },
+        "D413": {
+          "evidence_class": "PROVISIONAL_ASSUMPTION",
+          "face": "skin",
+          "rotation_deg": 90,
+          "xy": [
+            6.7,
+            -1.2
+          ]
+        },
+        "D414": {
+          "evidence_class": "PROVISIONAL_ASSUMPTION",
+          "face": "skin",
+          "rotation_deg": 90,
+          "xy": [
+            -6.7,
+            -1.2
+          ]
+        },
+        "D423": {
+          "evidence_class": "PROVISIONAL_ASSUMPTION",
+          "face": "skin",
+          "rotation_deg": 0,
+          "xy": [
+            10.7,
+            1.2
+          ]
+        },
+        "D424": {
+          "evidence_class": "PROVISIONAL_ASSUMPTION",
+          "face": "skin",
+          "rotation_deg": 180,
+          "xy": [
+            -10.7,
+            1.2
+          ]
+        },
+        "NT401": {
+          "evidence_class": "PROVISIONAL_ASSUMPTION",
+          "face": "skin",
+          "rotation_deg": 180,
+          "xy": [
+            -10.0,
+            2.9
+          ]
+        },
+        "NT402": {
+          "evidence_class": "PROVISIONAL_ASSUMPTION",
+          "face": "skin",
+          "rotation_deg": 0,
+          "xy": [
+            10.0,
+            2.9
+          ]
+        },
+        "R401": {
+          "evidence_class": "PROVISIONAL_ASSUMPTION",
+          "face": "inner",
+          "rotation_deg": 90,
+          "xy": [
+            -6,
+            -10
+          ]
+        },
+        "R402": {
+          "evidence_class": "PROVISIONAL_ASSUMPTION",
+          "face": "inner",
+          "rotation_deg": 90,
+          "xy": [
+            -4,
+            -10
+          ]
+        },
+        "R403": {
+          "evidence_class": "PROVISIONAL_ASSUMPTION",
+          "face": "inner",
+          "rotation_deg": 90,
+          "xy": [
+            -2,
+            -10
+          ]
+        },
+        "R404": {
+          "evidence_class": "PROVISIONAL_ASSUMPTION",
+          "face": "inner",
+          "rotation_deg": 90,
+          "xy": [
+            0,
+            -10
+          ]
+        },
+        "R405": {
+          "evidence_class": "PROVISIONAL_ASSUMPTION",
+          "face": "inner",
+          "rotation_deg": 90,
+          "xy": [
+            2,
+            -10
+          ]
+        },
+        "R408": {
+          "evidence_class": "PROVISIONAL_ASSUMPTION",
+          "face": "inner",
+          "rotation_deg": 90,
+          "xy": [
+            4,
+            -10
+          ]
+        },
+        "R409": {
+          "evidence_class": "PROVISIONAL_ASSUMPTION",
+          "face": "inner",
+          "rotation_deg": 90,
+          "xy": [
+            6,
+            -10
+          ]
+        },
+        "U12": {
+          "evidence_class": "PROVISIONAL_ASSUMPTION",
+          "face": "skin",
+          "rotation_deg": 180,
+          "xy": [
+            -7.2,
+            3.0
+          ]
+        },
+        "U13": {
+          "evidence_class": "PROVISIONAL_ASSUMPTION",
+          "face": "skin",
+          "rotation_deg": 0,
+          "xy": [
+            7.2,
+            3.0
+          ]
+        },
+        "U402": {
+          "evidence_class": "PROVISIONAL_ASSUMPTION",
+          "face": "skin",
+          "rotation_deg": 180,
+          "xy": [
+            -4.2,
+            9.0
+          ]
+        },
+        "U403": {
+          "evidence_class": "PROVISIONAL_ASSUMPTION",
+          "face": "skin",
+          "rotation_deg": 180,
+          "xy": [
+            -7.2,
+            9.0
+          ]
+        },
+        "U404": {
+          "evidence_class": "PROVISIONAL_ASSUMPTION",
+          "face": "skin",
+          "rotation_deg": 180,
+          "xy": [
+            -10.2,
+            9.0
+          ]
+        },
+        "U405": {
+          "evidence_class": "PROVISIONAL_ASSUMPTION",
+          "face": "skin",
+          "rotation_deg": 0,
+          "xy": [
+            4.2,
+            9.0
+          ]
+        },
+        "U406": {
+          "evidence_class": "PROVISIONAL_ASSUMPTION",
+          "face": "skin",
+          "rotation_deg": 0,
+          "xy": [
+            7.2,
+            9.0
+          ]
+        },
+        "U407": {
+          "evidence_class": "PROVISIONAL_ASSUMPTION",
+          "face": "skin",
+          "rotation_deg": 0,
+          "xy": [
+            10.2,
+            9.0
+          ]
+        }
+      },
+      "rationale": "Authored finite topology, tested without favouring its name or ordering.",
+      "tail_policy": "rank all allowed land arrangements",
+      "thermal_policy": "rank enumerated tongue sites",
+      "vref_inner_variant": {
+        "enabled": true,
+        "via_count": 1,
+        "xy_policy": "AFE centre"
+      },
+      "vref_vias": 0
+    },
+    {
+      "evidence_class": "PROVISIONAL_ASSUMPTION",
+      "id": "G3-B",
+      "name": "Central emitters with peripheral PDs",
+      "outline_radius_mm": 16.4,
+      "pd_vias": 0,
+      "placements": {
+        "C403": {
+          "evidence_class": "PROVISIONAL_ASSUMPTION",
+          "face": "inner",
+          "rotation_deg": 180,
+          "xy": [
+            -3.0,
+            6.0
+          ]
+        },
+        "C404": {
+          "evidence_class": "PROVISIONAL_ASSUMPTION",
+          "face": "inner",
+          "rotation_deg": 180,
+          "xy": [
+            -6.0,
+            6.0
+          ]
+        },
+        "C405": {
+          "evidence_class": "PROVISIONAL_ASSUMPTION",
+          "face": "inner",
+          "rotation_deg": 180,
+          "xy": [
+            -9.0,
+            6.0
+          ]
+        },
+        "C406": {
+          "evidence_class": "PROVISIONAL_ASSUMPTION",
+          "face": "inner",
+          "rotation_deg": 0,
+          "xy": [
+            3.0,
+            -6.0
+          ]
+        },
+        "C407": {
+          "evidence_class": "PROVISIONAL_ASSUMPTION",
+          "face": "inner",
+          "rotation_deg": 0,
+          "xy": [
+            6.0,
+            -6.0
+          ]
+        },
+        "C408": {
+          "evidence_class": "PROVISIONAL_ASSUMPTION",
+          "face": "inner",
+          "rotation_deg": 0,
+          "xy": [
+            9.0,
+            -6.0
+          ]
+        },
+        "C4101": {
+          "evidence_class": "PROVISIONAL_ASSUMPTION",
+          "face": "inner",
+          "rotation_deg": 180,
+          "xy": [
+            -4.5,
+            1.5
+          ]
+        },
+        "C4102": {
+          "evidence_class": "PROVISIONAL_ASSUMPTION",
+          "face": "inner",
+          "rotation_deg": 270,
+          "xy": [
+            -5.6,
+            0.0
+          ]
+        },
+        "C4103": {
+          "evidence_class": "PROVISIONAL_ASSUMPTION",
+          "face": "skin",
+          "rotation_deg": 270,
+          "xy": [
+            -8.3,
+            1.5
+          ]
+        },
+        "C4104": {
+          "evidence_class": "PROVISIONAL_ASSUMPTION",
+          "face": "inner",
+          "rotation_deg": 180,
+          "xy": [
+            -4.2,
+            3.0
+          ]
+        },
+        "C4201": {
+          "evidence_class": "PROVISIONAL_ASSUMPTION",
+          "face": "inner",
+          "rotation_deg": 0,
+          "xy": [
+            4.5,
+            -1.5
+          ]
+        },
+        "C4202": {
+          "evidence_class": "PROVISIONAL_ASSUMPTION",
+          "face": "inner",
+          "rotation_deg": 90,
+          "xy": [
+            5.6,
+            0.0
+          ]
+        },
+        "C4203": {
+          "evidence_class": "PROVISIONAL_ASSUMPTION",
+          "face": "skin",
+          "rotation_deg": 90,
+          "xy": [
+            8.3,
+            -1.5
+          ]
+        },
+        "C4204": {
+          "evidence_class": "PROVISIONAL_ASSUMPTION",
+          "face": "inner",
+          "rotation_deg": 0,
+          "xy": [
+            4.2,
+            -3.0
+          ]
+        },
+        "D401": {
+          "evidence_class": "PROVISIONAL_ASSUMPTION",
+          "face": "skin",
+          "rotation_deg": 180,
+          "xy": [
+            -2.0,
+            0.0
+          ]
+        },
+        "D402": {
+          "evidence_class": "PROVISIONAL_ASSUMPTION",
+          "face": "skin",
+          "rotation_deg": 0,
+          "xy": [
+            2.0,
+            0.0
+          ]
+        },
+        "D403": {
+          "evidence_class": "PROVISIONAL_ASSUMPTION",
+          "face": "skin",
+          "rotation_deg": 180,
+          "xy": [
+            -1.7,
+            -4.5
+          ]
+        },
+        "D404": {
+          "evidence_class": "PROVISIONAL_ASSUMPTION",
+          "face": "skin",
+          "rotation_deg": 0,
+          "xy": [
+            1.7,
+            4.5
+          ]
+        },
+        "D405": {
+          "evidence_class": "PROVISIONAL_ASSUMPTION",
+          "face": "skin",
+          "rotation_deg": 180,
+          "xy": [
+            -1.2,
+            3.5
+          ]
+        },
+        "D406": {
+          "evidence_class": "PROVISIONAL_ASSUMPTION",
+          "face": "skin",
+          "rotation_deg": 180,
+          "xy": [
+            -5.0,
+            3.0
+          ]
+        },
+        "D407": {
+          "evidence_class": "PROVISIONAL_ASSUMPTION",
+          "face": "skin",
+          "rotation_deg": 0,
+          "xy": [
+            1.2,
+            -3.5
+          ]
+        },
+        "D413": {
+          "evidence_class": "PROVISIONAL_ASSUMPTION",
+          "face": "skin",
+          "rotation_deg": 270,
+          "xy": [
+            5.5,
+            4.2
+          ]
+        },
+        "D414": {
+          "evidence_class": "PROVISIONAL_ASSUMPTION",
+          "face": "skin",
+          "rotation_deg": 90,
+          "xy": [
+            -5.5,
+            -4.2
+          ]
+        },
+        "D423": {
+          "evidence_class": "PROVISIONAL_ASSUMPTION",
+          "face": "skin",
+          "rotation_deg": 0,
+          "xy": [
+            9.5,
+            1.8
+          ]
+        },
+        "D424": {
+          "evidence_class": "PROVISIONAL_ASSUMPTION",
+          "face": "skin",
+          "rotation_deg": 180,
+          "xy": [
+            -9.5,
+            -1.8
+          ]
+        },
+        "NT401": {
+          "evidence_class": "PROVISIONAL_ASSUMPTION",
+          "face": "skin",
+          "rotation_deg": 180,
+          "xy": [
+            -8.8,
+            -0.1
+          ]
+        },
+        "NT402": {
+          "evidence_class": "PROVISIONAL_ASSUMPTION",
+          "face": "skin",
+          "rotation_deg": 0,
+          "xy": [
+            8.8,
+            0.1
+          ]
+        },
+        "R401": {
+          "evidence_class": "PROVISIONAL_ASSUMPTION",
+          "face": "inner",
+          "rotation_deg": 90,
+          "xy": [
+            -6,
+            -10
+          ]
+        },
+        "R402": {
+          "evidence_class": "PROVISIONAL_ASSUMPTION",
+          "face": "inner",
+          "rotation_deg": 90,
+          "xy": [
+            -4,
+            -10
+          ]
+        },
+        "R403": {
+          "evidence_class": "PROVISIONAL_ASSUMPTION",
+          "face": "inner",
+          "rotation_deg": 90,
+          "xy": [
+            -2,
+            -10
+          ]
+        },
+        "R404": {
+          "evidence_class": "PROVISIONAL_ASSUMPTION",
+          "face": "inner",
+          "rotation_deg": 90,
+          "xy": [
+            0,
+            -10
+          ]
+        },
+        "R405": {
+          "evidence_class": "PROVISIONAL_ASSUMPTION",
+          "face": "inner",
+          "rotation_deg": 90,
+          "xy": [
+            2,
+            -10
+          ]
+        },
+        "R408": {
+          "evidence_class": "PROVISIONAL_ASSUMPTION",
+          "face": "inner",
+          "rotation_deg": 90,
+          "xy": [
+            4,
+            -10
+          ]
+        },
+        "R409": {
+          "evidence_class": "PROVISIONAL_ASSUMPTION",
+          "face": "inner",
+          "rotation_deg": 90,
+          "xy": [
+            6,
+            -10
+          ]
+        },
+        "U12": {
+          "evidence_class": "PROVISIONAL_ASSUMPTION",
+          "face": "skin",
+          "rotation_deg": 180,
+          "xy": [
+            -6.0,
+            0.0
+          ]
+        },
+        "U13": {
+          "evidence_class": "PROVISIONAL_ASSUMPTION",
+          "face": "skin",
+          "rotation_deg": 0,
+          "xy": [
+            6.0,
+            0.0
+          ]
+        },
+        "U402": {
+          "evidence_class": "PROVISIONAL_ASSUMPTION",
+          "face": "skin",
+          "rotation_deg": 180,
+          "xy": [
+            -3.0,
+            6.0
+          ]
+        },
+        "U403": {
+          "evidence_class": "PROVISIONAL_ASSUMPTION",
+          "face": "skin",
+          "rotation_deg": 180,
+          "xy": [
+            -6.0,
+            6.0
+          ]
+        },
+        "U404": {
+          "evidence_class": "PROVISIONAL_ASSUMPTION",
+          "face": "skin",
+          "rotation_deg": 180,
+          "xy": [
+            -9.0,
+            6.0
+          ]
+        },
+        "U405": {
+          "evidence_class": "PROVISIONAL_ASSUMPTION",
+          "face": "skin",
+          "rotation_deg": 0,
+          "xy": [
+            3.0,
+            -6.0
+          ]
+        },
+        "U406": {
+          "evidence_class": "PROVISIONAL_ASSUMPTION",
+          "face": "skin",
+          "rotation_deg": 0,
+          "xy": [
+            6.0,
+            -6.0
+          ]
+        },
+        "U407": {
+          "evidence_class": "PROVISIONAL_ASSUMPTION",
+          "face": "skin",
+          "rotation_deg": 0,
+          "xy": [
+            9.0,
+            -6.0
+          ]
+        }
+      },
+      "rationale": "Authored finite topology, tested without favouring its name or ordering.",
+      "tail_policy": "rank all allowed land arrangements",
+      "thermal_policy": "rank enumerated tongue sites",
+      "vref_inner_variant": {
+        "enabled": true,
+        "via_count": 1,
+        "xy_policy": "AFE centre"
+      },
+      "vref_vias": 0
+    },
+    {
+      "evidence_class": "PROVISIONAL_ASSUMPTION",
+      "id": "G3-C",
+      "name": "Staggered north/south AFE groups",
+      "outline_radius_mm": 16.4,
+      "pd_vias": 0,
+      "placements": {
+        "C403": {
+          "evidence_class": "PROVISIONAL_ASSUMPTION",
+          "face": "inner",
+          "rotation_deg": 90,
+          "xy": [
+            -9.0,
+            -3.5
+          ]
+        },
+        "C404": {
+          "evidence_class": "PROVISIONAL_ASSUMPTION",
+          "face": "inner",
+          "rotation_deg": 90,
+          "xy": [
+            -9.0,
+            -6.5
+          ]
+        },
+        "C405": {
+          "evidence_class": "PROVISIONAL_ASSUMPTION",
+          "face": "inner",
+          "rotation_deg": 90,
+          "xy": [
+            -9.0,
+            -9.5
+          ]
+        },
+        "C406": {
+          "evidence_class": "PROVISIONAL_ASSUMPTION",
+          "face": "inner",
+          "rotation_deg": 270,
+          "xy": [
+            9.0,
+            3.5
+          ]
+        },
+        "C407": {
+          "evidence_class": "PROVISIONAL_ASSUMPTION",
+          "face": "inner",
+          "rotation_deg": 270,
+          "xy": [
+            9.0,
+            6.5
+          ]
+        },
+        "C408": {
+          "evidence_class": "PROVISIONAL_ASSUMPTION",
+          "face": "inner",
+          "rotation_deg": 270,
+          "xy": [
+            9.0,
+            9.5
+          ]
+        },
+        "C4101": {
+          "evidence_class": "PROVISIONAL_ASSUMPTION",
+          "face": "inner",
+          "rotation_deg": 90,
+          "xy": [
+            -4.5,
+            -5.0
+          ]
+        },
+        "C4102": {
+          "evidence_class": "PROVISIONAL_ASSUMPTION",
+          "face": "inner",
+          "rotation_deg": 180,
+          "xy": [
+            -3.0,
+            -6.1
+          ]
+        },
+        "C4103": {
+          "evidence_class": "PROVISIONAL_ASSUMPTION",
+          "face": "skin",
+          "rotation_deg": 180,
+          "xy": [
+            -4.5,
+            -8.8
+          ]
+        },
+        "C4104": {
+          "evidence_class": "PROVISIONAL_ASSUMPTION",
+          "face": "inner",
+          "rotation_deg": 90,
+          "xy": [
+            -6.0,
+            -4.7
+          ]
+        },
+        "C4201": {
+          "evidence_class": "PROVISIONAL_ASSUMPTION",
+          "face": "inner",
+          "rotation_deg": 270,
+          "xy": [
+            4.5,
+            5.0
+          ]
+        },
+        "C4202": {
+          "evidence_class": "PROVISIONAL_ASSUMPTION",
+          "face": "inner",
+          "rotation_deg": 0,
+          "xy": [
+            3.0,
+            6.1
+          ]
+        },
+        "C4203": {
+          "evidence_class": "PROVISIONAL_ASSUMPTION",
+          "face": "skin",
+          "rotation_deg": 0,
+          "xy": [
+            4.5,
+            8.8
+          ]
+        },
+        "C4204": {
+          "evidence_class": "PROVISIONAL_ASSUMPTION",
+          "face": "inner",
+          "rotation_deg": 270,
+          "xy": [
+            6.0,
+            4.7
+          ]
+        },
+        "D401": {
+          "evidence_class": "PROVISIONAL_ASSUMPTION",
+          "face": "skin",
+          "rotation_deg": 90,
+          "xy": [
+            -3.0,
+            -2.5
+          ]
+        },
+        "D402": {
+          "evidence_class": "PROVISIONAL_ASSUMPTION",
+          "face": "skin",
+          "rotation_deg": 270,
+          "xy": [
+            3.0,
+            2.5
+          ]
+        },
+        "D403": {
+          "evidence_class": "PROVISIONAL_ASSUMPTION",
+          "face": "skin",
+          "rotation_deg": 90,
+          "xy": [
+            1.5,
+            -2.2
+          ]
+        },
+        "D404": {
+          "evidence_class": "PROVISIONAL_ASSUMPTION",
+          "face": "skin",
+          "rotation_deg": 270,
+          "xy": [
+            -1.5,
+            2.2
+          ]
+        },
+        "D405": {
+          "evidence_class": "PROVISIONAL_ASSUMPTION",
+          "face": "skin",
+          "rotation_deg": 90,
+          "xy": [
+            -6.5,
+            -1.7
+          ]
+        },
+        "D406": {
+          "evidence_class": "PROVISIONAL_ASSUMPTION",
+          "face": "skin",
+          "rotation_deg": 90,
+          "xy": [
+            -6.0,
+            -5.5
+          ]
+        },
+        "D407": {
+          "evidence_class": "PROVISIONAL_ASSUMPTION",
+          "face": "skin",
+          "rotation_deg": 270,
+          "xy": [
+            6.5,
+            1.7
+          ]
+        },
+        "D413": {
+          "evidence_class": "PROVISIONAL_ASSUMPTION",
+          "face": "skin",
+          "rotation_deg": 180,
+          "xy": [
+            -1.2,
+            6.0
+          ]
+        },
+        "D414": {
+          "evidence_class": "PROVISIONAL_ASSUMPTION",
+          "face": "skin",
+          "rotation_deg": 0,
+          "xy": [
+            1.2,
+            -6.0
+          ]
+        },
+        "D423": {
+          "evidence_class": "PROVISIONAL_ASSUMPTION",
+          "face": "skin",
+          "rotation_deg": 270,
+          "xy": [
+            1.2,
+            10.0
+          ]
+        },
+        "D424": {
+          "evidence_class": "PROVISIONAL_ASSUMPTION",
+          "face": "skin",
+          "rotation_deg": 90,
+          "xy": [
+            -1.2,
+            -10.0
+          ]
+        },
+        "NT401": {
+          "evidence_class": "PROVISIONAL_ASSUMPTION",
+          "face": "skin",
+          "rotation_deg": 90,
+          "xy": [
+            -2.9,
+            -9.3
+          ]
+        },
+        "NT402": {
+          "evidence_class": "PROVISIONAL_ASSUMPTION",
+          "face": "skin",
+          "rotation_deg": 270,
+          "xy": [
+            2.9,
+            9.3
+          ]
+        },
+        "R401": {
+          "evidence_class": "PROVISIONAL_ASSUMPTION",
+          "face": "inner",
+          "rotation_deg": 90,
+          "xy": [
+            -6,
+            -10
+          ]
+        },
+        "R402": {
+          "evidence_class": "PROVISIONAL_ASSUMPTION",
+          "face": "inner",
+          "rotation_deg": 90,
+          "xy": [
+            -4,
+            -10
+          ]
+        },
+        "R403": {
+          "evidence_class": "PROVISIONAL_ASSUMPTION",
+          "face": "inner",
+          "rotation_deg": 90,
+          "xy": [
+            -2,
+            -10
+          ]
+        },
+        "R404": {
+          "evidence_class": "PROVISIONAL_ASSUMPTION",
+          "face": "inner",
+          "rotation_deg": 90,
+          "xy": [
+            0,
+            -10
+          ]
+        },
+        "R405": {
+          "evidence_class": "PROVISIONAL_ASSUMPTION",
+          "face": "inner",
+          "rotation_deg": 90,
+          "xy": [
+            2,
+            -10
+          ]
+        },
+        "R408": {
+          "evidence_class": "PROVISIONAL_ASSUMPTION",
+          "face": "inner",
+          "rotation_deg": 90,
+          "xy": [
+            4,
+            -10
+          ]
+        },
+        "R409": {
+          "evidence_class": "PROVISIONAL_ASSUMPTION",
+          "face": "inner",
+          "rotation_deg": 90,
+          "xy": [
+            6,
+            -10
+          ]
+        },
+        "U12": {
+          "evidence_class": "PROVISIONAL_ASSUMPTION",
+          "face": "skin",
+          "rotation_deg": 90,
+          "xy": [
+            -3.0,
+            -6.5
+          ]
+        },
+        "U13": {
+          "evidence_class": "PROVISIONAL_ASSUMPTION",
+          "face": "skin",
+          "rotation_deg": 270,
+          "xy": [
+            3.0,
+            6.5
+          ]
+        },
+        "U402": {
+          "evidence_class": "PROVISIONAL_ASSUMPTION",
+          "face": "skin",
+          "rotation_deg": 90,
+          "xy": [
+            -9.0,
+            -3.5
+          ]
+        },
+        "U403": {
+          "evidence_class": "PROVISIONAL_ASSUMPTION",
+          "face": "skin",
+          "rotation_deg": 90,
+          "xy": [
+            -9.0,
+            -6.5
+          ]
+        },
+        "U404": {
+          "evidence_class": "PROVISIONAL_ASSUMPTION",
+          "face": "skin",
+          "rotation_deg": 90,
+          "xy": [
+            -9.0,
+            -9.5
+          ]
+        },
+        "U405": {
+          "evidence_class": "PROVISIONAL_ASSUMPTION",
+          "face": "skin",
+          "rotation_deg": 270,
+          "xy": [
+            9.0,
+            3.5
+          ]
+        },
+        "U406": {
+          "evidence_class": "PROVISIONAL_ASSUMPTION",
+          "face": "skin",
+          "rotation_deg": 270,
+          "xy": [
+            9.0,
+            6.5
+          ]
+        },
+        "U407": {
+          "evidence_class": "PROVISIONAL_ASSUMPTION",
+          "face": "skin",
+          "rotation_deg": 270,
+          "xy": [
+            9.0,
+            9.5
+          ]
+        }
+      },
+      "rationale": "Authored finite topology, tested without favouring its name or ordering.",
+      "tail_policy": "rank all allowed land arrangements",
+      "thermal_policy": "rank enumerated tongue sites",
+      "vref_inner_variant": {
+        "enabled": true,
+        "via_count": 1,
+        "xy_policy": "AFE centre"
+      },
+      "vref_vias": 0
+    }
+  ],
+  "contract_values": {
+    "conservative_radial_margin_mm": -0.95,
+    "cover_fit_mm": -1.1,
+    "evidence_class": "PROJECT_DERIVED",
+    "g3_joint_closure_max_mm": 0.05,
+    "guard_noise_datasheet_multiplier": 1.5,
+    "guard_spi_noise_delta_fraction": 0.1,
+    "min_hdi_layers": 4,
+    "pd_bias_low_limit_pf": 65,
+    "source": "G3_BRIEF sections 6,8,11 and immutable G2; thresholds only, not supplied qualification",
+    "vled_current_ma": 124,
+    "vled_per_position_threshold_ma": 41.3,
+    "vled_positions": 3
+  },
+  "evidence_class": "PROVISIONAL_ASSUMPTION",
+  "evidence_policy": "Each object inherits its nearest evidence_class; source-derived results override authored planning inputs. No supplier dimensions are asserted. All coordinates are mm in the REAR skin-face frame, origin at envelope centre. Standard footprints are read from immutable embedded PCB geometry; available project .kicad_mod originals are additionally pinned.",
+  "limits": {
+    "aggressor_mm": 0.5,
+    "evidence_class": "PROVISIONAL_ASSUMPTION",
+    "inner_ceiling_mm": 0.65,
+    "isolation_fraction": 0.6,
+    "nt_mm": 2,
+    "outline_radius_mm": 16.5,
+    "pd_path_mm": 6,
+    "source": "G3_BRIEF.md sections 6.1\u20136.5",
+    "support_chip_mm": 1,
+    "thermal_charger_mm": 4,
+    "thermal_emitter_mm": 4,
+    "thermal_other_mm": 3,
+    "thermode_mm": 1,
+    "vdd_bulk_mm": 3,
+    "vdd_small_mm": 2,
+    "vled_afe_mm": 4,
+    "vled_mux_mm": 2,
+    "vref_mm": 2,
+    "vref_projection_mm": 0.5
+  },
+  "manufacturer_facts": {
+    "MAX30208": {
+      "body_mm": [
+        2,
+        2
+      ],
+      "evidence_class": "MANUFACTURER_VERIFIED",
+      "height_max_mm": 0.75,
+      "reflow_max_c": 220,
+      "source": "../datasheets/sensors/MAX30208.pdf pp1,2,7",
+      "theta_ja_c_per_w": 241.3,
+      "theta_jc_c_per_w": 53.9
+    },
+    "MAX86141": {
+      "body_mm": [
+        2.048,
+        1.848
+      ],
+      "evidence_class": "MANUFACTURER_VERIFIED",
+      "pdbias_codes": [
+        "0x1",
+        "0x5",
+        "0x6",
+        "0x7"
+      ],
+      "pdbias_limits_pf": [
+        65,
+        130,
+        260,
+        520
+      ],
+      "pitch_mm": 0.4,
+      "source": "../datasheets/ppg/max86140-max86141.pdf Rev5 pp1,11,49\u201352"
+    },
+    "SFH2703H": {
+      "body_mm": [
+        3.2,
+        2
+      ],
+      "capacitance_5v_typ_pf": 9,
+      "chip_mm": [
+        2.8,
+        1.4
+      ],
+      "evidence_class": "MANUFACTURER_VERIFIED",
+      "half_angle_deg": 65,
+      "height_max_mm": 0.7,
+      "height_nom_mm": 0.6,
+      "reflow": {
+        "cycles_max": null,
+        "evidence_class": "MANUFACTURER_VERIFIED",
+        "peak_max_c": 260,
+        "peak_recommended_c": 245,
+        "source": "SFH 2703 v1.2 p10, reflow profile",
+        "time_above_liquidus_max_s": 100
+      },
+      "sensitive_area_mm2": 3.27,
+      "source": "../datasheets/ppg/SFH 2703_EN.pdf v1.2 pp3,5,8"
+    },
+    "SFH7018A": {
+      "body_mm": [
+        2.4,
+        2.4
+      ],
+      "cavities": 2,
+      "chip_mm": {
+        "536": [
+          0.75,
+          0.75
+        ],
+        "660": [
+          0.3,
+          0.3
+        ],
+        "940": [
+          0.3,
+          0.3
+        ]
+      },
+      "evidence_class": "MANUFACTURER_VERIFIED",
+      "half_angle_deg": 60,
+      "height_max_mm": 0.7,
+      "height_nom_mm": 0.6,
+      "reflow": {
+        "cycles_max": null,
+        "evidence_class": "MANUFACTURER_VERIFIED",
+        "peak_max_c": 260,
+        "peak_recommended_c": 245,
+        "source": "SFH 7018A v1.1 p17, reflow profile",
+        "time_above_liquidus_max_s": 100
+      },
+      "source": "../datasheets/ppg/SFH 7018A_EN.pdf v1.1 pp5,15"
+    }
+  },
+  "manufacturer_unknowns": {
+    "evidence_class": "MANUFACTURER_DATA_REQUIRED",
+    "items": [
+      "SFH4053B package, seated height, emitting area, half-angle",
+      "MAX86141 seated height (outline 21-100134)",
+      "TS5A12301E YFP seated height",
+      "SFH2703H C_PD at 0 V, including tolerance",
+      "Active-area-to-footprint coordinate registration",
+      "Reflow-cycle limits for MAX86141/MAX30208/TS5A12301E",
+      "MAX86141 0.254 mm land diameter: AN1891 / 21-100134 land-pattern evidence"
+    ]
+  },
+  "optics": {
+    "active_area_offsets": {
+      "aperture_centre_rule": "Each aperture centre = package XY + rotation * active-area offset; no offset is set to zero as a manufacturer fact. Numeric package-centred full-cone envelopes are diagnostic only.",
+      "evidence_class": "MANUFACTURER_DATA_REQUIRED",
+      "parameter_names": [
+        "delta_x_active_mm",
+        "delta_y_active_mm"
+      ],
+      "source": "SFH7018A v1.1 p15 and SFH2703 v1.2 p8 inspected; footprint-to-drawing registration is not qualified"
+    },
+    "aperture_policy": "Active-size + 2*(window + air depth)*tan(half-angle), unrefracted geometric envelope; no optical-throughput or isolation claim.",
+    "bins_mm": [
+      [
+        3,
+        5
+      ],
+      [
+        5,
+        6.5
+      ],
+      [
+        6.5,
+        8
+      ]
+    ],
+    "die_offset_policy": "Package-centre spacing only; no inferred die offsets. Aperture alignment offsets remain manufacturer drawing-registration gates.",
+    "evidence_class": "PROVISIONAL_ASSUMPTION",
+    "range_mm": [
+      3,
+      8
+    ],
+    "wavelength_labels_nm": [
+      536,
+      660,
+      850,
+      940
+    ],
+    "window_mm": [
+      0.3,
+      0.5,
+      0.8
+    ]
+  },
+  "owner_decisions": [
+    {
+      "date": "2026-10-13",
+      "evidence_class": "OWNER_DECISION",
+      "id": "OD-G3-ENTRY",
+      "source": "owner decision, G3_BRIEF.md section 2",
+      "verbatim": "- **OD-G3-ENTRY \u2014 APPROVED.** The existing G3 entry items \"close SFH4053B/MAX86141 height and optical evidence\n  gaps\" and \"verify J1502 attach/current/rating/flex-channel geometry\" are reclassified from G3 ENTRY requirements\n  to G3 CLOSURE gates. G3 may begin as a bounded parametric engineering study before those supplier /\n  manufacturer values are closed. G3 may not claim final closure unless its brief-defined numeric closure\n  conditions are satisfied (section 11, criteria 5 and 10)."
+    },
+    {
+      "date": "2026-10-13",
+      "evidence_class": "OWNER_DECISION",
+      "id": "OD-G3-SIDE",
+      "source": "owner decision, G3_BRIEF.md section 2",
+      "verbatim": "- **OD-G3-SIDE \u2014 APPROVED.** G3 face-allocation baseline. Skin-facing REAR: emitters, photodiodes, both MAX86141\n  AFEs, MAX30208, and sensitive optical/analog components required by locality. Inner-facing REAR: other\n  suitable passives, J1502 tail/support structures, mechanically suitable non-sensitive support components.\n  VREF capacitors are skin-facing by default; an inner-face VREF capacitor is permitted only directly under its\n  AFE and with no more than one via, if the deterministic G3 study proves the topology. No inner-face AFE\n  alternative study is authorized."
+    },
+    {
+      "date": "2026-10-13",
+      "evidence_class": "OWNER_DECISION",
+      "id": "OD-G3-RECORD",
+      "source": "owner decision, G3_BRIEF.md section 2",
+      "verbatim": "- **OD-G3-RECORD \u2014 APPROVED.** G3 may update engineering documentation to record \"G2 CLOSED \u2014 PASS WITH\n  SUPPLIER/ENGINEERING GATES\". This does not close any remaining G2 supplier gates and does not authorize G4."
+    },
+    {
+      "evidence_class": "OWNER_DECISION",
+      "id": "OD-G3-MAX86141-PKG",
+      "source": "owner decision, G3_BRIEF.md section 2",
+      "verbatim": "**OD-G3-MAX86141-PKG \u2014 APPROVED**\n\nThe generic >=0.500 mm LED-current/aggressor spacing rule does not apply to\nmanufacturer-fixed same-package pin/pad adjacency inside the MAX86141 package\ncourtyard.\n\nFor MAX86141 only, package-fixed adjacency such as D3 PGND \u2194 D4 PD2_IN is\nexempt from the >=0.500 mm rule inside the package courtyard.\n\nThe exemption ends at the package courtyard boundary.\n\nOutside that boundary, the >=0.500 mm rule applies in full to:\n\n- LED-current-loop copper\n- VLED\n- LEDx_DRV\n- PGND / LED-return copper\n- digital aggressors\n- tail-land copper\n\nNo discretionary LED-current, VLED, LED_DRV or PGND copper may enter the\nPD_IN/PD_GND sensitive corridor outside the package-fixed escape.\n\nPD_IN / PD_GND requirements remain unchanged:\n\n- PD_IN guarded by PD_GND\n- adjacent PCB ground plane\n- PD_GND single-point tie through NT401/NT402\n- zero-via PD_IN project rule\n- any package-boundary guard interruption must be explicitly modeled\n\nPGND D3 should escape by via-in-pad or away from the PD_IN corridor where\nphysically possible, with minimum loop area.\n\nAggressor-to-shield spacing outside the courtyard must account for actual copper/pad extents rather than\ncentre-only distances. This decision does not weaken the >=0.500 mm rule globally."
+    }
+  ],
+  "parameters": {
+    "adhesive_mm": {
+      "evidence_class": "PROVISIONAL_ASSUMPTION",
+      "max": 0.1,
+      "min": 0.025,
+      "nom": 0.05,
+      "rationale": "Window retention suballocation of c_optics; no qualified adhesive."
+    },
+    "barrier_mm": {
+      "evidence_class": "PROVISIONAL_ASSUMPTION",
+      "max": 0.5,
+      "min": 0.2,
+      "nom": 0.35,
+      "rationale": "Brief section 6.2 bounded opaque-wall study."
+    },
+    "c1501_depth_mm": {
+      "evidence_class": "PROVISIONAL_ASSUMPTION",
+      "max": 1.6,
+      "min": 0.8,
+      "nom": 1.2,
+      "rationale": "DNP reservoir space budget only."
+    },
+    "c1501_height_mm": {
+      "evidence_class": "PROVISIONAL_ASSUMPTION",
+      "max": 0.65,
+      "min": 0.45,
+      "nom": 0.55,
+      "rationale": "Reservation ceiling, not a selected or thinned component."
+    },
+    "c1501_width_mm": {
+      "evidence_class": "PROVISIONAL_ASSUMPTION",
+      "max": 2.5,
+      "min": 1.5,
+      "nom": 2,
+      "rationale": "DNP reservoir space budget only; footprint and electrical sizing unresolved."
+    },
+    "caseback_wall_mm": {
+      "evidence_class": "PROVISIONAL_ASSUMPTION",
+      "max": 0.8,
+      "min": 0.3,
+      "nom": 0.5,
+      "rationale": "G4 sensitivity only, not case design."
+    },
+    "compression_mm": {
+      "evidence_class": "PROVISIONAL_ASSUMPTION",
+      "max": 0.1,
+      "min": 0.025,
+      "nom": 0.05,
+      "rationale": "Barrier-gasket compression suballocation of c_optics."
+    },
+    "corridor_pf_per_mm": {
+      "evidence_class": "PROVISIONAL_ASSUMPTION",
+      "max": 0.3,
+      "min": 0.1,
+      "nom": 0.2,
+      "rationale": "Sensitivity only; no dielectric/stackup available. Measure actual parasitic C."
+    },
+    "edge_mm": {
+      "evidence_class": "PROVISIONAL_ASSUMPTION",
+      "max": 0.7,
+      "min": 0.3,
+      "nom": 0.5,
+      "rationale": "Outline clearance study; no fab rule selected."
+    },
+    "frame_wall_mm": {
+      "evidence_class": "PROVISIONAL_ASSUMPTION",
+      "max": 1,
+      "min": 0.5,
+      "nom": 0.75,
+      "rationale": "Brief pod-frame study."
+    },
+    "guard_copper_mm": {
+      "evidence_class": "PROVISIONAL_ASSUMPTION",
+      "max": 0.15,
+      "min": 0.1,
+      "nom": 0.125,
+      "rationale": "Brief provisional fab class."
+    },
+    "guard_space_mm": {
+      "evidence_class": "PROVISIONAL_ASSUMPTION",
+      "max": 0.1,
+      "min": 0.075,
+      "nom": 0.0875,
+      "rationale": "Brief provisional fab class."
+    },
+    "guard_trace_mm": {
+      "evidence_class": "PROVISIONAL_ASSUMPTION",
+      "max": 0.1,
+      "min": 0.075,
+      "nom": 0.0875,
+      "rationale": "Brief provisional fab class."
+    },
+    "land_depth_mm": {
+      "evidence_class": "PROVISIONAL_ASSUMPTION",
+      "max": 1.2,
+      "min": 0.8,
+      "nom": 1,
+      "rationale": "Bond-land depth reservation only; supplier confirmation required."
+    },
+    "neck_width_mm": {
+      "evidence_class": "PROVISIONAL_ASSUMPTION",
+      "max": 2,
+      "min": 1,
+      "nom": 1.5,
+      "rationale": "Rigid tongue neck for four thin traces; thermal qualification pending."
+    },
+    "row_spacing_mm": {
+      "evidence_class": "PROVISIONAL_ASSUMPTION",
+      "max": 1,
+      "min": 0.6,
+      "nom": 0.8,
+      "rationale": "Two-row bond-land study; not supplier pitch."
+    },
+    "seal_land_mm": {
+      "evidence_class": "PROVISIONAL_ASSUMPTION",
+      "max": 0.8,
+      "min": 0.3,
+      "nom": 0.5,
+      "rationale": "Unqualified per-cell seal-land reservation; supplier must qualify."
+    },
+    "slot_width_mm": {
+      "evidence_class": "PROVISIONAL_ASSUMPTION",
+      "max": 0.5,
+      "min": 0.3,
+      "nom": 0.4,
+      "rationale": "Thermal tongue slot reservation; supplier routing capability unqualified."
+    },
+    "strain_relief_mm": {
+      "evidence_class": "PROVISIONAL_ASSUMPTION",
+      "max": 2,
+      "min": 1,
+      "nom": 1.5,
+      "rationale": "Radial strain relief reservation; verify peel-load process."
+    },
+    "support_size_mm": {
+      "evidence_class": "PROVISIONAL_ASSUMPTION",
+      "max": 1.2,
+      "min": 0.8,
+      "nom": 1,
+      "rationale": "Carrier hard-stop square reservation, load qualification pending."
+    },
+    "wall_clearance_mm": {
+      "evidence_class": "PROVISIONAL_ASSUMPTION",
+      "max": 0.15,
+      "min": 0.05,
+      "nom": 0.1,
+      "rationale": "Brief nominal wall clearance; alignment sensitivity."
+    }
+  },
+  "schema": "sportwatch-g3-input/1",
+  "search": {
+    "c1501_offset_mm": [
+      -3,
+      0
+    ],
+    "c802_offset_mm": [
+      0,
+      2
+    ],
+    "entry_vertical_first": [
+      false,
+      true
+    ],
+    "evidence_class": "PROVISIONAL_ASSUMPTION",
+    "outline_vertices": 72,
+    "placement_trials": {
+      "base_candidate": "G3-B",
+      "evidence_class": "PROVISIONAL_ASSUMPTION",
+      "policy": "Every trial is screened on the same nominal pad/guard and courtyard predicates. Any hard failure rejects it; survivors receive all three-corner optical, thermal, tail, support and stack checks and section 7 ranking. No optimality claimed outside this finite design space.",
+      "trials": [
+        {
+          "id": "G3-B-S01",
+          "offsets_mm": {
+            "D403": [
+              0,
+              -0.3
+            ],
+            "D404": [
+              0,
+              0.3
+            ]
+          },
+          "rationale": "Move paired red emitters; check LED5 clearance and optical package collisions."
+        },
+        {
+          "id": "G3-B-S02",
+          "offsets_mm": {
+            "D403": [
+              0,
+              -0.6
+            ],
+            "D404": [
+              0,
+              0.6
+            ]
+          },
+          "rationale": "Move paired red emitters; check LED5 clearance and optical package collisions."
+        },
+        {
+          "id": "G3-B-S03",
+          "offsets_mm": {
+            "D403": [
+              0.3,
+              0
+            ],
+            "D404": [
+              -0.3,
+              0
+            ]
+          },
+          "rationale": "Move paired red emitters; check LED5 clearance and optical package collisions."
+        },
+        {
+          "id": "G3-B-S04",
+          "offsets_mm": {
+            "D403": [
+              0.3,
+              -0.3
+            ],
+            "D404": [
+              -0.3,
+              0.3
+            ]
+          },
+          "rationale": "Move paired red emitters; check LED5 clearance and optical package collisions."
+        },
+        {
+          "id": "G3-B-S05",
+          "offsets_mm": {
+            "D403": [
+              0.3,
+              -0.6
+            ],
+            "D404": [
+              -0.3,
+              0.6
+            ]
+          },
+          "rationale": "Move paired red emitters; check LED5 clearance and optical package collisions."
+        },
+        {
+          "id": "G3-B-S06",
+          "offsets_mm": {
+            "D403": [
+              0.6,
+              0
+            ],
+            "D404": [
+              -0.6,
+              0
+            ]
+          },
+          "rationale": "Move paired red emitters; check LED5 clearance and optical package collisions."
+        },
+        {
+          "id": "G3-B-S07",
+          "offsets_mm": {
+            "D403": [
+              0.6,
+              -0.3
+            ],
+            "D404": [
+              -0.6,
+              0.3
+            ]
+          },
+          "rationale": "Move paired red emitters; check LED5 clearance and optical package collisions."
+        },
+        {
+          "id": "G3-B-S08",
+          "offsets_mm": {
+            "D403": [
+              0.6,
+              -0.6
+            ],
+            "D404": [
+              -0.6,
+              0.6
+            ]
+          },
+          "rationale": "Move paired red emitters; check LED5 clearance and optical package collisions."
+        },
+        {
+          "id": "G3-B-S09",
+          "offsets_mm": {
+            "D403": [
+              0.9,
+              0
+            ],
+            "D404": [
+              -0.9,
+              0
+            ]
+          },
+          "rationale": "Move paired red emitters; check LED5 clearance and optical package collisions."
+        },
+        {
+          "id": "G3-B-S10",
+          "offsets_mm": {
+            "D403": [
+              0.9,
+              -0.3
+            ],
+            "D404": [
+              -0.9,
+              0.3
+            ]
+          },
+          "rationale": "Move paired red emitters; check LED5 clearance and optical package collisions."
+        },
+        {
+          "id": "G3-B-S11",
+          "offsets_mm": {
+            "D403": [
+              0.9,
+              -0.6
+            ],
+            "D404": [
+              -0.9,
+              0.6
+            ]
+          },
+          "rationale": "Move paired red emitters; check LED5 clearance and optical package collisions."
+        },
+        {
+          "id": "G3-B-S12",
+          "offsets_mm": {
+            "D403": [
+              0.3,
+              0
+            ],
+            "D404": [
+              -0.3,
+              0
+            ],
+            "D405": [
+              -0.3,
+              0
+            ],
+            "D407": [
+              0.3,
+              0
+            ]
+          },
+          "rationale": "Coupled red/IR850 placement correction preserves local package gaps while opening LED5 shield clearance."
+        },
+        {
+          "id": "G3-B-S13",
+          "offsets_mm": {
+            "D403": [
+              0.6,
+              0
+            ],
+            "D404": [
+              -0.6,
+              0
+            ],
+            "D405": [
+              -0.6,
+              0
+            ],
+            "D407": [
+              0.6,
+              0
+            ]
+          },
+          "rationale": "Coupled red/IR850 placement correction preserves local package gaps while opening LED5 shield clearance."
+        },
+        {
+          "id": "G3-B-S14",
+          "offsets_mm": {
+            "D403": [
+              0.9,
+              0
+            ],
+            "D404": [
+              -0.9,
+              0
+            ],
+            "D405": [
+              -0.9,
+              0
+            ],
+            "D407": [
+              0.9,
+              0
+            ]
+          },
+          "rationale": "Coupled red/IR850 placement correction preserves local package gaps while opening LED5 shield clearance."
+        }
+      ]
+    },
+    "rationale": "Finite equal-term placement/reservation study, no optimality claim.",
+    "reservation_arc_step_deg": 0.5,
+    "rmax_step_deg": 5,
+    "support_azimuth_deg": [
+      0,
+      15,
+      30,
+      45,
+      60,
+      75,
+      90,
+      105,
+      120,
+      135,
+      150,
+      165,
+      180,
+      195,
+      210,
+      225,
+      240,
+      255,
+      270,
+      285,
+      300,
+      315,
+      330,
+      345
+    ],
+    "support_radii_mm": [
+      13.5,
+      14.5,
+      15
+    ],
+    "tail_arrangements": [
+      "tangential",
+      "radial",
+      "two_row"
+    ],
+    "tail_azimuth_deg": [
+      156,
+      162,
+      166.05,
+      170,
+      176
+    ],
+    "tail_centres_r_mm": [
+      10.6,
+      11.3,
+      12.55
+    ],
+    "thermal_azimuth_deg": [
+      0,
+      15,
+      30,
+      45,
+      60,
+      75,
+      90,
+      105,
+      120,
+      135,
+      150,
+      165,
+      180,
+      195,
+      210,
+      225,
+      240,
+      255,
+      270,
+      285,
+      300,
+      315,
+      330,
+      345
+    ],
+    "thermal_radii_mm": [
+      12,
+      13,
+      14
+    ]
+  },
+  "source_sha256": {
+    "../datasheets/ppg/SFH 2703_EN.pdf": "e9d5eb7bcb9747c100b4c82d6a26102f6385269a4f6b4a4894af36a1937233f8",
+    "../datasheets/ppg/SFH 7018A_EN.pdf": "bf5215ef6c6a08286a5ca5094061c54a3a8666f6a88984d551dba8beb8aad01b",
+    "../datasheets/ppg/max86140-max86141.pdf": "c7acc8fea1a7642bfe885e922ab1d816824cfff51b3490196f22bae1b0acf886",
+    "../datasheets/sensors/MAX30208.pdf": "66a237bbca1c93ce59709973acfa5a0147741fbec7cc1066d698715d6c7ecaf0",
+    "design/interfaces/main_rear_interface.json": "b742439e499f1882d2b9ecd98e40e1b91f1f29aace3bdb12fca930516e6d9ea5",
+    "design/interfaces/validation/rear_netlist.xml": "ffad3396ce59b8a26e2ecf340a6ba530da076807132330dfcfdb88814f32a6d1",
+    "design/mechanical/G3_BRIEF.md": "61ff19452f43f97ab877f25d03366765fcbc34d633b2cd150f27ca779869e07d",
+    "design/mechanical/generated/g2_interconnect.json": "3898959942812dddedb981a37ca5c2b74c44300d726b3ee30f4b47f62d0cceeb",
+    "design/mechanical/inputs/g2_interconnect.json": "bc01799e9f3f577e3704655241a9fec6b986e00c0a491a2d0b67b1953332c0d7",
+    "design/mechanical/inputs/input_register.json": "cf36cd3e70c41110b4a709c0b201800793f94ccc1e3335c3998dffbd0a69d7c7",
+    "design/mechanical/inputs/package_heights.json": "47a3c2c4b6f53f6eda9b213e353f819c4c1a1a2c13b0e173d95064ed1e6e6f22",
+    "design/mechanical/inputs/stack_parameters.json": "f6919f30cebf956d516c5cffdac1a21a7b245dd7ae47548734976fddb8228277",
+    "libraries/footprints/sportwatch_custom.pretty/21-100134_N201A2-1_MXM.kicad_mod": "11d2b703eb1e051be086ee52cf2651853bcd9a739826674bd4eb77ea9b8f5ca2",
+    "libraries/footprints/sportwatch_custom.pretty/21-100265_MXM.kicad_mod": "37724cfca6b0f813ea8cb0686e4b169d78e6ca08fc11c5a9878d293a087892c8",
+    "libraries/footprints/sportwatch_custom.pretty/OSRAM_SFH2703_3.2x2.0mm.kicad_mod": "08c0a89cfd5dca9f01b037aa159bdafd75d311f8801fd820ef2353eb4f90b1cd",
+    "libraries/footprints/sportwatch_custom.pretty/OSRAM_SFH4053B_1.0x0.5mm.kicad_mod": "ed3e80bac683e8cfadcc1ce1cdc3bb27571ee349ce028cc77e44435389fabe13",
+    "libraries/footprints/sportwatch_custom.pretty/OSRAM_SFH7018A_2.4x2.4mm.kicad_mod": "b7898a96eaf11731d43a55f983965f1055b8a39d7316c80ec57dd5b8827060c3",
+    "rear_sensor/04_PPG.kicad_sch": "0ea8a01887dcc8151555c5bf8dfc6ff8829c98c59d47c036fc59e445b66af2cd",
+    "rear_sensor/08_TEMPERATURE.kicad_sch": "346ed11b2e76d1243ad748a9cd5f105acb9ba488c95e2f9900758fff756b7906",
+    "rear_sensor/rear_sensor_revA.kicad_pcb": "8b5898f54d7faf4d61c1044b6e2418c0c89d4e85a63dab4dcddd8b3e9ebb3c1f",
+    "rear_sensor/rear_sensor_revA.kicad_sch": "f55dc63d06633a79aba99fc09097b0cddc5060070b25c513962eebca1225f8cb"
+  }
+}

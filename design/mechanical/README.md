@@ -1,10 +1,13 @@
 # design/mechanical - Rev-A multi-board mechanical stack and rear sensor module architecture
 
-**Status: G2 CONDITIONAL — ENGINEERING GATES OPEN.** The G2 deterministic study and package are implemented;
-nominal allocation, stack results and outstanding acceptance gaps are in the generated G2 report. Generator
-consistency is separate from engineering acceptance. The G1 numerical record remains immutable apart from the
-authorized register-hash provenance update. All work is provisional and reversible; no KiCad edit, routing,
-outline freeze, part selection, supplier request issuance or downstream phase is authorized.
+**Status: G3 CONDITIONAL — SUPPLIER/MEASUREMENT GATES OPEN.** Recommended study candidate: **G3-B-S14**.
+The corrected package exemption, both orthogonal VLED-entry orientations, physical pad/trace clearance,
+ordered-loop checks and placement search are recorded in the generated report. All nominal hard checks
+pass for the selected candidate; conservative-corner failures and evidence gates remain explicit.
+
+**G2 CLOSED — PASS WITH SUPPLIER/ENGINEERING GATES** (OD-G3-RECORD). This records the accepted review
+status without changing any immutable G2 result or closing any supplier gate. G4 and KiCad edits remain
+unauthorized. All G3 placements and reservations are reversible study evidence.
 
 ## Package index
 
@@ -114,3 +117,39 @@ checks and the positive semantic provenance comparison exactly as given in `G2_B
 G3 means REAR optical + guarded-analog placement; G4 means case + final MAIN outline co-design. A later
 KiCad allocation implementation phase needs explicit authorization, supplier-confirmed envelopes and
 mating map, electrical evidence and independent review. No downstream work or routing is authorized.
+
+## G3 REAR optical and guarded-analog placement study
+
+- Contract: `G3_BRIEF.md`, including OD-G3-MAX86141-PKG and the J1502 joint erratum.
+- Authored geometry, ranges and evidence pins: `inputs/g3_rear_optical.json`.
+- Stdlib-only generator/checker: `tools/g3_rear_optical.py`.
+- Generated results: `generated/g3_rear_optical.json`, `generated/g3_rear_optical.md`.
+- Generated drawings: `generated/g3_rear_faces.svg`, `generated/g3_rear_section.svg`.
+- Exact quotations: `architecture.json.g3` and the marked G3 section in `architecture.md`.
+
+```bash
+python3 -B design/mechanical/tools/g3_rear_optical.py build
+python3 -B design/mechanical/tools/g3_rear_optical.py check
+python3 -B design/mechanical/tools/arch_diagrams.py check
+```
+
+G3 `build` writes only its four generated outputs. Synchronize the architecture quotations to the generated
+JSON and `architecture_section()` before checking. Do not regenerate or edit G1/G2 records for G3.
+`check` regenerates in memory, compares exact bytes, verifies source pins, all physical channel associations,
+the quoted documents and mutation tests. Architecture provenance hashes the exact read-only
+`reservations`, `rear_module` and `g2.reservations` projection to avoid a circular hash of its G3 quotation.
+Available project `.kicad_mod` originals are pinned; standard-library footprints use the pinned immutable
+PCB's embedded geometry because standalone system libraries are absent locally.
+
+A consistency PASS does not mean engineering acceptance. Rejected candidates and all their failures are
+retained; no score can override a hard failure. The complete section 10 validation command set remains
+mandatory. Review `acceptance`, `unsatisfied_acceptance`, closure gates and the overall verdict.
+
+The correction retains the three original topologies and evaluates 14 authored placement trials.
+Nominal hard failures screen out trials; survivors receive the complete three-corner study.
+Hard aggressor gaps are edge-to-edge using pad bounding extents and finite-width trace reservations;
+ordered polygons control loop acceptance and convex hulls are diagnostic only. Package exemptions
+apply only within the owning MAX86141 courtyard to fixed pads/terminal escapes. Nonterminal copper
+and foreign aggressors retain full exclusions. VLED alternatives are ranked deterministically and
+the selected paths feed the thermal study. The 0.254 mm MAX86141 lands are unchanged and remain
+an AN1891 / 21-100134 evidence gate. G3 build/check also exercise these correction regressions.

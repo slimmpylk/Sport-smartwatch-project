@@ -1967,6 +1967,20 @@ def validate_numbers(cov, arch, zs, hm, reg, d):
             need(c.get("g2_status") == expected.get("g2_status") and c.get("g2_evidence") == expected.get("g2_evidence"), "G2 conflict evidence differs: " + c["id"])
     else:
         need(False, "G2 package/generated output missing")
+    # G3 is an independent deterministic study. Cover the entire quoted block,
+    # including every number, and preserve the G2 quotation byte-for-byte.
+    g3_path = GEN / "g3_rear_optical.json"
+    if "g3" in arch and g3_path.exists():
+        import g3_rear_optical
+        g3gen = load_json(g3_path)
+        cov.cmp(("g3",), g3gen, 0)
+        need(arch["g3"] == g3gen, "G3 block differs from generated output")
+        try:
+            g3_rear_optical.check_architecture(g3gen)
+        except (AssertionError, KeyError, ValueError) as exc:
+            need(False, "G3 package consistency: " + str(exc))
+    elif "g3" in arch or g3_path.exists():
+        need(False, "G3 package/generated output missing")
     regn = register_numbers(reg)
     stack_in = load_json(MECH / "inputs" / "stack_parameters.json")
     quote_checks(cov, arch, zs, hm)
