@@ -1,0 +1,49 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1180" height="760" viewBox="0 0 1180 760" font-family="sans-serif">
+<title>G4 assembly</title>
+<rect x="0" y="0" width="1180" height="760" fill="#ffffff"/>
+<text x="20.00" y="26.00" font-size="13" text-anchor="start" fill="#111" font-weight="bold">G4 assembly / insertion / service sequence (deterministic; issues: )</text>
+<rect x="20" y="42" width="760" height="30" rx="4" fill="#fbfcfc" stroke="#1e8449"/>
+<text x="30.00" y="60.00" font-size="10" text-anchor="start" fill="#111" font-weight="normal">A1  Caseback sub-assembly: window(s) bonded into the caseback pod frame (P1) or pod frame on the REAR module (P2);</text>
+<text x="30.00" y="69.00" font-size="8" text-anchor="start" fill="#555" font-weight="normal">direction: bench | battery: absent</text>
+<rect x="20" y="80" width="760" height="30" rx="4" fill="#fbfcfc" stroke="#1e8449"/>
+<text x="30.00" y="98.00" font-size="10" text-anchor="start" fill="#111" font-weight="normal">A2  Midcase sub-assembly: vent membrane bonded from inside</text>
+<text x="30.00" y="107.00" font-size="8" text-anchor="start" fill="#555" font-weight="normal">direction: interior (rear opening) | battery: absent</text>
+<rect x="20" y="118" width="760" height="30" rx="4" fill="#fbfcfc" stroke="#1e8449"/>
+<text x="30.00" y="136.00" font-size="10" text-anchor="start" fill="#111" font-weight="normal">A3  REAR + J1502 tail bonded and tested; thermode access before carrier</text>
+<text x="30.00" y="145.00" font-size="8" text-anchor="start" fill="#555" font-weight="normal">direction: bench | battery: absent</text>
+<rect x="20" y="156" width="760" height="30" rx="4" fill="#fbfcfc" stroke="#1e8449"/>
+<text x="30.00" y="174.00" font-size="10" text-anchor="start" fill="#111" font-weight="normal">A4  Module stack on fixture: MAIN + carrier + pack + REAR, J1501 / J201 / J202 / LRA leads mated or soldered visib</text>
+<text x="30.00" y="183.00" font-size="8" text-anchor="start" fill="#555" font-weight="normal">direction: bench | battery: isolated</text>
+<rect x="20" y="194" width="760" height="30" rx="4" fill="#fbfcfc" stroke="#1e8449"/>
+<text x="30.00" y="212.00" font-size="10" text-anchor="start" fill="#111" font-weight="normal">A5  LRA bonded into its pocket</text>
+<text x="30.00" y="221.00" font-size="8" text-anchor="start" fill="#555" font-weight="normal">direction: undefined (no feasible LRA pose) | battery: isolated | H22: no feasible LRA pose, so the LRA access direction is un</text>
+<rect x="20" y="232" width="760" height="30" rx="4" fill="#fbfcfc" stroke="#1e8449"/>
+<text x="30.00" y="250.00" font-size="10" text-anchor="start" fill="#111" font-weight="normal">A6  Rear insertion of the module into the midcase</text>
+<text x="30.00" y="259.00" font-size="8" text-anchor="start" fill="#555" font-weight="normal">direction: +Z from rear (wrist side) toward front | battery: isolated</text>
+<rect x="20" y="270" width="760" height="30" rx="4" fill="#fbfcfc" stroke="#1e8449"/>
+<text x="30.00" y="288.00" font-size="10" text-anchor="start" fill="#111" font-weight="normal">A7  Display mated at J1 through the open front aperture and seated on DISP_LAND (G2 S2, visible mating, counts one</text>
+<text x="30.00" y="297.00" font-size="8" text-anchor="start" fill="#555" font-weight="normal">direction: -Z from front | battery: isolated</text>
+<rect x="20" y="308" width="760" height="30" rx="4" fill="#fbfcfc" stroke="#1e8449"/>
+<text x="30.00" y="326.00" font-size="10" text-anchor="start" fill="#111" font-weight="normal">A8  Cover bonded to the bezel ledge (front pressure boundary closed)</text>
+<text x="30.00" y="335.00" font-size="8" text-anchor="start" fill="#555" font-weight="normal">direction: -Z from front | battery: isolated</text>
+<rect x="20" y="346" width="760" height="30" rx="4" fill="#fbfcfc" stroke="#1e8449"/>
+<text x="30.00" y="364.00" font-size="10" text-anchor="start" fill="#111" font-weight="normal">A9  Button pushers with O-rings inserted radially from outside and retained</text>
+<text x="30.00" y="373.00" font-size="8" text-anchor="start" fill="#555" font-weight="normal">direction: radial inward from outside | battery: isolated</text>
+<rect x="20" y="384" width="760" height="30" rx="4" fill="#fbfcfc" stroke="#1e8449"/>
+<text x="30.00" y="402.00" font-size="10" text-anchor="start" fill="#111" font-weight="normal">A10  Battery isolation closed; functional test through charger contacts</text>
+<text x="30.00" y="411.00" font-size="8" text-anchor="start" fill="#555" font-weight="normal">direction: rear (caseback open) | battery: connected</text>
+<rect x="20" y="422" width="760" height="30" rx="4" fill="#fbfcfc" stroke="#1e8449"/>
+<text x="30.00" y="440.00" font-size="10" text-anchor="start" fill="#111" font-weight="normal">A11  Caseback closed from rear with candidate S-CB-MAIN seal; S-CHG is a bonded feedthrough cured and inspected bef</text>
+<text x="30.00" y="449.00" font-size="8" text-anchor="start" fill="#555" font-weight="normal">direction: +Z from rear | battery: connected</text>
+<text x="820.00" y="60.00" font-size="11" text-anchor="start" fill="#111" font-weight="bold">Rear-insertion envelope (linear worst margins, mm)</text>
+<rect x="820" y="90" width="157.5" height="16" fill="#58d68d"/>
+<text x="987.50" y="102.00" font-size="10" text-anchor="start" fill="#111" font-weight="normal">H23-INSERT-MAIN 1.050</text>
+<rect x="820" y="120" width="30.0" height="16" fill="#58d68d"/>
+<text x="860.00" y="132.00" font-size="10" text-anchor="start" fill="#111" font-weight="normal">H23-INSERT-BATTERY 0.200</text>
+<rect x="820" y="150" width="121.5" height="16" fill="#58d68d"/>
+<text x="951.50" y="162.00" font-size="10" text-anchor="start" fill="#111" font-weight="normal">H23-INSERT-REAR 0.810</text>
+<text x="800.00" y="200.00" font-size="10" text-anchor="start" fill="#c0392b" font-weight="normal">Service: cover debond needed to reach J1</text>
+<text x="800.00" y="216.00" font-size="10" text-anchor="start" fill="#c0392b" font-weight="normal">(gate SERVICE-COVER-REBOND).</text>
+<text x="800.00" y="236.00" font-size="10" text-anchor="start" fill="#111" font-weight="normal">Cover-first case sub-assembly is not executable:</text>
+<text x="800.00" y="252.00" font-size="10" text-anchor="start" fill="#111" font-weight="normal">DISP_LAND lies behind display; clarification required.</text>
+</svg>

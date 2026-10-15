@@ -1,0 +1,1221 @@
+{
+  "schema": "sportwatch-g4-input/1",
+  "status": "AUTHORED PROVISIONAL INPUTS for the G4 case / caseback / sealing-architecture closure study (G4_BRIEF.md). Parameters, ranges, process-class tolerances, candidate definitions, sweep grids and evidence pins only. No result, verdict, outcome or margin is authored here; every result is computed by tools/g4_case_sealing.py.",
+  "evidence_policy": "Every value carries one evidence class (G4_BRIEF section 6.1). PROVISIONAL_ASSUMPTION values are planning ranges with rationale and are never supplier, manufacturer, RF or material data. SUPPLIER_GATED terms enter linear-worst and RSS-adverse evaluations at their conservative planning limit and are never narrowed. MFG_TOL values are declared once per process class and are identical for every candidate using that class.",
+  "source_sha256": {
+    "design/mechanical/inputs/stack_parameters.json": "f6919f30cebf956d516c5cffdac1a21a7b245dd7ae47548734976fddb8228277",
+    "design/mechanical/inputs/package_heights.json": "47a3c2c4b6f53f6eda9b213e353f819c4c1a1a2c13b0e173d95064ed1e6e6f22",
+    "design/mechanical/inputs/input_register.json": "cf36cd3e70c41110b4a709c0b201800793f94ccc1e3335c3998dffbd0a69d7c7",
+    "design/mechanical/inputs/g1_scenarios.json": "cfcf445003bb4a49d73a61d8eb3d916344325d4efe93722eb3fff8d4ab218819",
+    "design/mechanical/generated/g1_scenarios.json": "557de32c15e3e3be32e8dc73a2b63b5f8f0971af1d8cfbe4d6a3646ba86ecc3c",
+    "design/mechanical/inputs/g2_interconnect.json": "bc01799e9f3f577e3704655241a9fec6b986e00c0a491a2d0b67b1953332c0d7",
+    "design/mechanical/generated/g2_interconnect.json": "3898959942812dddedb981a37ca5c2b74c44300d726b3ee30f4b47f62d0cceeb",
+    "design/mechanical/inputs/g3_rear_optical.json": "3181c4e775be8ce7fb424d0f54f517d97d965b8af816bccb1555aeeaa6036421",
+    "design/mechanical/generated/g3_rear_optical.json": "1649f6b2f2b199081fa78f2e93a942f917272a06459e936ad6e6e77450b82fc8",
+    "design/mechanical/generated/zstack.json": "7803be8c695b4ce06961c6aa1d8c44ea2117d6217af2b9f653470220b294dfdf",
+    "design/mechanical/generated/main_height_map.json": "60fbdd233a1112e688df3855b3ec2b7f81b0aa9db2236d3a3579e69d48d008b6"
+  },
+  "architecture_projection": {
+    "path": "design/mechanical/architecture.json",
+    "keys": [
+      "reservations",
+      "rear_module",
+      "g2.reservations",
+      "edge_crossings"
+    ],
+    "sha256": "cf7cd55ee28690656aece5eb45ddd3ca6067c1afae1f8fb50188070eaa51cb53",
+    "note": "Canonical hash (g2_interconnect.dumps) of the read-only projection; the g1/g2/g3/g4 quotations and conflict statuses are excluded to avoid a circular hash."
+  },
+  "baselines": {
+    "g1": "168badbab6de1201bb3209902a53fe1e4b874cc9",
+    "g2": "eea49e447895e574a3f48e0b9777f57880dcd632",
+    "g3": "afb19ac173ce67c7e9599313cc5a0942e026ade9",
+    "g4_brief_path": "design/mechanical/G4_BRIEF.md",
+    "g4_brief_baseline": "resolved at run time as the commit that introduced design/mechanical/G4_BRIEF.md"
+  },
+  "owner_decisions": [
+    {
+      "id": "OD-G4-RECORD",
+      "date": "2026-10-14",
+      "class": "OWNER_DECISION",
+      "source": "owner decision, G4_BRIEF.md section 2",
+      "verbatim": "Record:\n\nG3 CLOSED — PASS WITH SUPPLIER/MEASUREMENT GATES\n\nand freeze G3-B-S14 as the authoritative G4 carry-in.\n\nThis administrative closure does NOT:\n- close any G3 criterion-10 supplier/manufacturer/measurement gate;\n- change the generated historical G3 verdict;\n- authorize KiCad work;\n- authorize G5 or any later implementation phase."
+    },
+    {
+      "id": "OD-G4-ENTRY",
+      "date": "2026-10-14",
+      "class": "OWNER_DECISION",
+      "source": "owner decision, G4_BRIEF.md section 2",
+      "verbatim": "Reclassify the existing \"SR-ANTENNAS before G4\" requirement from a G4 ENTRY blocker to a G5 / RF-closure requirement.\n\nG4 may begin with antenna/feed construction unresolved, provided it:\n\n- preserves the frozen radiator volumes;\n- permits no new metal/wiring intrusion into those volumes;\n- does not invent antenna feed dimensions;\n- does not freeze radome dielectric or final case material based on unsupported RF assumptions;\n- makes no RF-performance claims.\n\nAE1401 / AE1410 / AE1420 construction and final RF validation remain G5 gates.\n\nG5 is explicitly allowed to reopen G4 case/material/envelope decisions if real RF evidence proves the G4 assumptions\nincompatible."
+    },
+    {
+      "id": "OD-G4-ENVELOPE",
+      "date": "2026-10-14",
+      "class": "OWNER_DECISION",
+      "source": "owner decision, G4_BRIEF.md section 2",
+      "verbatim": "Rev-A case-body outside diameter hard ceiling:\n\n<= 51.0 mm\n\nexcluding lugs.\n\nLocal functional bosses may extend at most +1.0 mm beyond the case-body envelope where the G4 brief explicitly permits\nand validates them.\n\n51.0 mm is a HARD MAXIMUM, not the design target.\n\nThe deterministic G4 study must minimize case diameter within all other hard requirements and report:\n\n- selected diameter;\n- minimum feasible diameter found;\n- margin to the 51.0 mm ceiling.\n\nIf no compliant design exists at <=51.0 mm, G4 must stop and report the minimum required diameter rather than silently\nexceeding the owner limit."
+    },
+    {
+      "id": "OD-G4-CORNER",
+      "date": "2026-10-14",
+      "class": "OWNER_DECISION",
+      "source": "owner decision, G4_BRIEF.md section 2",
+      "verbatim": "For dimensions that G4 itself designs, use:\n\ndesign value + explicitly declared manufacturing tolerance\n\nrather than treating the entire planning range as manufacturing tolerance.\n\nFor supplier/manufacturer-gated quantities:\n- retain the applicable conservative/worst planning value until qualified;\n- do not convert missing supplier data into optimistic tolerances.\n\nPreserve and report the historical G1/G2 conservative calculations unchanged alongside the new G4 calculation.\n\nG4 must report separately:\n\n- legacy carry-in result;\n- nominal;\n- RSS;\n- linear worst;\n- governing owner/supplier/manufacturer terms.\n\nNo speculative compression, material, adhesive, battery-growth, seal or supplier credit may be used to close a margin."
+    }
+  ],
+  "deferred_owner_decisions": [
+    {
+      "id": "OD-G4-ATM-STD",
+      "kind": "closure",
+      "default": "p_test 0.500 nom / 0.625 max MPa (G1 inputs/g1_scenarios.json plate_check.p_test_MPa, PARAMETRIC)",
+      "question": "Select the 5 ATM qualification standard and test margin (ATM-Q1)."
+    },
+    {
+      "id": "OD-G4-MATERIAL",
+      "kind": "closure",
+      "default": "none chosen; candidate families compared on mechanical, sealing, keep-out and magnetic criteria only",
+      "question": "Choose the case / caseback material family for Rev-A prototypes; conditional on G5 RF evidence."
+    },
+    {
+      "id": "OD-G4-STRAP",
+      "kind": "closure",
+      "default": "lug inner width envelope 20-22 mm, PROVISIONAL",
+      "question": "Strap / lug interface class (lug inner width, spring-bar / quick-release type, conductive or not)."
+    },
+    {
+      "id": "OD-G4-LRA-MAG",
+      "kind": "closure",
+      "default": "LRA envelope inside MAG_CLEAR infeasible; outside it the U703 distance is ranked only",
+      "question": "Whether the 'no watch-side permanent magnet' invariant covers the LRA internal magnet, and if so whether it is authorized."
+    },
+    {
+      "id": "OD-G4-WINDOW",
+      "kind": "trigger",
+      "trigger": "no W0 configuration passes the section 8.3 screen without a stack delta",
+      "question": "Accept a frame/rib-supported pod window (W1 or W2) as the Rev-A mechanical baseline before MG-WINDOW-XTALK data exist."
+    },
+    {
+      "id": "OD-G4-STACK",
+      "kind": "trigger",
+      "trigger": "any nonzero G4 Z delta, or compliance on G2-REVA but not G2-REVA-HI",
+      "question": "Accept a nonzero Rev-A Z delta."
+    }
+  ],
+  "errata": [
+    {
+      "id": "E-G4-01",
+      "title": "Stale G3 conflict-status evidence",
+      "text": "The G3 conflict_status evidence for C5-SOUTH-CROWDING, X11-POD-FOOTPRINT and X12-J1502-FACE states 'no recommended topology until nominal hard checks pass'. It is superseded by the accepted G3-B-S14 selection (OD-G4-RECORD). Recorded prospectively; the G3 records stay byte-identical.",
+      "affects": [
+        "C5-SOUTH-CROWDING",
+        "X11-POD-FOOTPRINT",
+        "X12-J1502-FACE"
+      ]
+    },
+    {
+      "id": "E-G4-02",
+      "title": "Historical LRA disposition invalid",
+      "text": "G3 dispositioned the S14 outline x LRA overlap (28.431 mm2) as 'C5/SR-FPC-MECH lower-web Z separation requires qualified cross-section'. That disposition does not resolve the conflict: an LRA cannot be hidden in the lower web (0.4 mm nominal, 0.3 mm minimum). The historical LRA reservation (az 165-195, r 12.65-22.00, REAR level) is not a valid frozen placement. G4 searches a valid LRA placement window (section 8.9) or stops. The LRA is never silently removed.",
+      "affects": [
+        "LRA"
+      ]
+    }
+  ],
+  "contract_values": {
+    "legacy": {
+      "conservative_radial_margin_mm": -0.95,
+      "x25_conservative_cover_fit_mm": -1.1,
+      "x25_nominal_fit_mm": 0.55,
+      "x25_nominal_bezel_wall_margin_mm": -0.15,
+      "t_bezel_min_nominal_mm": 0.7,
+      "edge_margin_at_land_ceiling_mm": {
+        "nominal": 0.68,
+        "conservative": -0.95,
+        "optimistic": 1.3
+      },
+      "edge_margin_flat_exit_mm": {
+        "nominal": -0.47,
+        "conservative": -2.1,
+        "optimistic": 0.7
+      },
+      "t_allow_straight_mm": {
+        "nominal": 0.8,
+        "conservative": -0.75,
+        "optimistic": 1.5
+      },
+      "lower_web_margin_mm": {
+        "nominal": 0.08,
+        "conservative": -0.2,
+        "optimistic": 0.4
+      },
+      "u4_land_headroom_mm": {
+        "nominal": 0.24,
+        "conservative": -0.06,
+        "optimistic": 0.44
+      }
+    },
+    "g2_stacks_mm": {
+      "G2-REVA": {
+        "nominal": 16.35,
+        "rss": 16.796,
+        "linear": 18.04
+      },
+      "G2-REVA-HI": {
+        "nominal": 16.38,
+        "rss": 16.825,
+        "linear": 18.04
+      }
+    },
+    "g3_delta_mm": {
+      "nominal": 0.0,
+      "rss": 0.0,
+      "linear": 0.0
+    },
+    "owner_limits": {
+      "nominal_mm": 16.5,
+      "rss_mm": 17.0,
+      "D_case_body_max_mm": 51.0,
+      "boss_extension_max_mm": 1.0
+    },
+    "s14": {
+      "candidate": "G3-B-S14",
+      "outline_radius_mm": 16.4,
+      "pod_area_mm2": 411.997,
+      "pod_depth_mm": {
+        "nominal": 1.35,
+        "conservative": 1.85,
+        "optimistic": 1.05
+      },
+      "caseback_residual_before_wall_mm": {
+        "nominal": 0.55,
+        "conservative": 1.05,
+        "optimistic": 0.25
+      },
+      "support_azimuths_deg": [
+        30,
+        150,
+        270
+      ],
+      "tail_exit_id": "radial-r11.3-a166.05",
+      "tail_land_nominal_mm": [
+        6.45,
+        1.0
+      ],
+      "tail_conservative_width_mm": 7.9,
+      "u6_azimuth_deg": 45,
+      "u6_radius_mm": 13,
+      "seal_land_mm": {
+        "min": 0.3,
+        "nom": 0.5,
+        "max": 0.8
+      },
+      "plan_clearances_mm": {
+        "CHG_CONTACT": 1.1,
+        "CHG_LINK": 3.6,
+        "CHG_ROUTE": 0.6
+      },
+      "u6_to_chg_contact_mm": 8.367,
+      "outline_overlaps_mm2": {
+        "FPC_UNDER": 25.492,
+        "LRA": 28.431,
+        "MAG_CLEAR": 150.586
+      }
+    }
+  },
+  "levels": {
+    "note": "G4 Z-stratified case section levels mapped onto the frozen G2-REVA layer order (no new layer). REAR_UPPER is the conductor channel band directly below the lower web; CASEBACK is the caseback interface band.",
+    "COVER": [
+      "cover",
+      "cover_bond"
+    ],
+    "DISPLAY": [
+      "display"
+    ],
+    "FRONT_GAP": [
+      "front_gap"
+    ],
+    "MAIN": [
+      "main_pcb",
+      "back_zone"
+    ],
+    "BATTERY": [
+      "battery_zone",
+      "lower_web"
+    ],
+    "REAR": [
+      "rear_inner",
+      "rear_pcb",
+      "optics_zone"
+    ],
+    "CASEBACK": [
+      "window"
+    ]
+  },
+  "process_classes": {
+    "PC-POLY-MOULD": {
+      "title": "glass-filled engineering polymer, injection moulded",
+      "radius_mm": 0.05,
+      "thickness_mm": 0.05,
+      "groove_depth_mm": 0.03,
+      "groove_width_mm": 0.03,
+      "boss_mm": 0.05,
+      "od_radius_mm": 0.03,
+      "evidence_class": "PROVISIONAL_ASSUMPTION",
+      "rationale": "Planning precision-moulding class for small parts (+/-0.03 to +/-0.05 on short features); supplier process capability required."
+    },
+    "PC-METAL-MACH": {
+      "title": "CNC-machined non-ferromagnetic metal",
+      "radius_mm": 0.02,
+      "thickness_mm": 0.02,
+      "groove_depth_mm": 0.01,
+      "groove_width_mm": 0.01,
+      "boss_mm": 0.02,
+      "od_radius_mm": 0.02,
+      "evidence_class": "PROVISIONAL_ASSUMPTION",
+      "rationale": "Planning fine-machining class; supplier process capability required."
+    },
+    "PC-CERAMIC-GRIND": {
+      "title": "sintered and ground technical ceramic",
+      "radius_mm": 0.02,
+      "thickness_mm": 0.02,
+      "groove_depth_mm": 0.02,
+      "groove_width_mm": 0.02,
+      "boss_mm": 0.02,
+      "od_radius_mm": 0.02,
+      "evidence_class": "PROVISIONAL_ASSUMPTION",
+      "rationale": "Planning ground-ceramic class after sintering shrink compensation; supplier process capability required."
+    },
+    "PC-CARRIER-MOULD": {
+      "title": "moulded polymer battery carrier",
+      "radius_mm": 0.05,
+      "thickness_mm": 0.05,
+      "evidence_class": "PROVISIONAL_ASSUMPTION",
+      "rationale": "Same planning moulding class as the polymer midcase; carrier supplier capability required."
+    },
+    "PC-COVER-GRIND": {
+      "title": "cover lens edge grind (SR-COVER-LENS)",
+      "radius_mm": 0.05,
+      "evidence_class": "PROVISIONAL_ASSUMPTION",
+      "rationale": "Planning edge-grind class for a ground sapphire / glass disc; cover supplier must confirm."
+    },
+    "PC-PCB-ROUT": {
+      "title": "MAIN outline routing (K1 implementation)",
+      "radius_mm": 0.1,
+      "evidence_class": "PROVISIONAL_ASSUMPTION",
+      "rationale": "Planning PCB outline-routing class; fabricator must confirm."
+    },
+    "PC-WINDOW": {
+      "title": "optical window thickness",
+      "thickness_mm": 0.05,
+      "evidence_class": "PROJECT_DERIVED",
+      "rationale": "G1 tolerance policy g1_added_terms t_window (imported, not re-typed in the tool)."
+    }
+  },
+  "material_classes": {
+    "MAT-GF-POLY": {
+      "title": "glass-fibre-reinforced engineering polymer class",
+      "E_MPa": {
+        "min": 7000,
+        "nom": 10000,
+        "max": 14000
+      },
+      "nu": {
+        "min": 0.35,
+        "nom": 0.38,
+        "max": 0.4
+      },
+      "sigma_allow_MPa": {
+        "min": 35,
+        "nom": 50,
+        "max": 70
+      },
+      "t_wall_min_mm": {
+        "min": 0.8,
+        "nom": 0.9,
+        "max": 1.0
+      },
+      "groove_land_min_mm": 0.4,
+      "screw_edge_min_mm": 0.5,
+      "conductive": false,
+      "ferromagnetic": false,
+      "evidence_class": "PROVISIONAL_ASSUMPTION",
+      "rationale": "Handbook-class planning range for 30-50 % GF polyamide / PPA / PC; allowable includes creep, moisture and weld-line knock-down at the test pressure; wall minimum is a moulding planning limit. Not supplier data."
+    },
+    "MAT-NF-METAL": {
+      "title": "non-ferromagnetic structural metal class (titanium-alloy class)",
+      "E_MPa": {
+        "min": 105000,
+        "nom": 110000,
+        "max": 115000
+      },
+      "nu": {
+        "min": 0.32,
+        "nom": 0.33,
+        "max": 0.34
+      },
+      "sigma_allow_MPa": {
+        "min": 150,
+        "nom": 200,
+        "max": 250
+      },
+      "t_wall_min_mm": {
+        "min": 0.5,
+        "nom": 0.6,
+        "max": 0.7
+      },
+      "groove_land_min_mm": 0.3,
+      "screw_edge_min_mm": 0.3,
+      "conductive": true,
+      "ferromagnetic": false,
+      "evidence_class": "PROVISIONAL_ASSUMPTION",
+      "rationale": "Handbook-class planning range; allowable = yield class divided by a planning safety factor; non-ferromagnetic status must be verified (MG-MAG). Not supplier data."
+    },
+    "MAT-CERAMIC": {
+      "title": "technical ceramic class (zirconia class)",
+      "E_MPa": {
+        "min": 190000,
+        "nom": 205000,
+        "max": 215000
+      },
+      "nu": {
+        "min": 0.29,
+        "nom": 0.3,
+        "max": 0.31
+      },
+      "sigma_allow_MPa": {
+        "min": 150,
+        "nom": 200,
+        "max": 250
+      },
+      "t_wall_min_mm": {
+        "min": 0.6,
+        "nom": 0.7,
+        "max": 0.8
+      },
+      "groove_land_min_mm": 0.4,
+      "screw_edge_min_mm": null,
+      "conductive": false,
+      "ferromagnetic": false,
+      "evidence_class": "PROVISIONAL_ASSUMPTION",
+      "rationale": "Handbook-class planning range; allowable = flexural-strength class divided by a brittle-material planning factor; no threads in ceramic. Not supplier data."
+    }
+  },
+  "candidates": [
+    {
+      "id": "G4-A",
+      "title": "Polymer midcase, bonded cover on a bezel ledge, screw-retained polymer caseback with integral pod-window frame (P1)",
+      "midcase": {
+        "material": "MAT-GF-POLY",
+        "process": "PC-POLY-MOULD"
+      },
+      "caseback": {
+        "material": "MAT-GF-POLY",
+        "process": "PC-POLY-MOULD",
+        "split": false
+      },
+      "pod_concept": "P1",
+      "dielectric_sectors": false,
+      "screw_class": "SCR-M1.0-INSERT",
+      "conductive_midcase": false,
+      "rf_note": "Radiator volumes metal-free by construction of the midcase; screws, inserts, pushers, lugs and charger hardware are still checked (H17)."
+    },
+    {
+      "id": "G4-B",
+      "title": "Non-ferromagnetic metal midcase with dielectric sectors covering GNSS_RAD, BLE_RAD and WIFI_RAD; non-metal (ceramic-class) caseback with integral pod-window frame (P1)",
+      "midcase": {
+        "material": "MAT-NF-METAL",
+        "process": "PC-METAL-MACH"
+      },
+      "caseback": {
+        "material": "MAT-CERAMIC",
+        "process": "PC-CERAMIC-GRIND",
+        "split": false
+      },
+      "pod_concept": "P1",
+      "dielectric_sectors": true,
+      "dielectric_sector_material": "MAT-GF-POLY",
+      "dielectric_sector_process": "PC-POLY-MOULD",
+      "dielectric_sector_az_margin_deg": 2.0,
+      "screw_class": "SCR-M1.0-TAPPED",
+      "conductive_midcase": true,
+      "rf_note": "Dielectric sectors are keep-out envelopes only; no dielectric material or thickness is selected on RF grounds (OD-G4-ENTRY)."
+    },
+    {
+      "id": "G4-C",
+      "title": "Polymer midcase, split caseback: non-ferromagnetic metal centre plate confined below the minimum radiator inner radius minus clearance, polymer outer ring; pod frame on the REAR module sealed into a caseback aperture (P2)",
+      "midcase": {
+        "material": "MAT-GF-POLY",
+        "process": "PC-POLY-MOULD"
+      },
+      "caseback": {
+        "material": "MAT-GF-POLY",
+        "process": "PC-POLY-MOULD",
+        "split": true,
+        "centre_material": "MAT-NF-METAL",
+        "centre_process": "PC-METAL-MACH",
+        "centre_rf_clearance_mm": 1.0
+      },
+      "pod_concept": "P2",
+      "dielectric_sectors": false,
+      "screw_class": "SCR-M1.0-INSERT",
+      "conductive_midcase": false,
+      "rf_note": "Centre plate radius = minimum REAR/CASEBACK-level radiator inner radius minus the reported clearance; no RF claim."
+    }
+  ],
+  "sweep": {
+    "D_case_body_mm": {
+      "start": 47.0,
+      "stop": 51.0,
+      "step": 0.05
+    },
+    "D_report_extension_mm": {
+      "start": 51.05,
+      "stop": 54.0,
+      "step": 0.05,
+      "note": "reporting only, used solely when nothing is feasible at <= 51.00 (section 7)"
+    },
+    "t_wall_side_mm": [
+      0.8,
+      0.9,
+      1.0,
+      1.1,
+      1.2,
+      1.3,
+      1.4,
+      1.5,
+      1.6
+    ],
+    "t_carrier_wall_mm": [
+      0.3,
+      0.35,
+      0.4,
+      0.45,
+      0.5,
+      0.55,
+      0.6
+    ],
+    "R_carrier_inner_mm": {
+      "start": 22.75,
+      "stop": 23.6,
+      "step": 0.05
+    },
+    "a_cover_mm": {
+      "start": 22.15,
+      "stop": 23.0,
+      "step": 0.05
+    },
+    "t_land_mm": [
+      0.3,
+      0.4,
+      0.5,
+      0.6,
+      0.7,
+      0.8
+    ],
+    "w_land_mm": [
+      0.5,
+      0.75,
+      1.0,
+      1.25,
+      1.5
+    ],
+    "t_caseback_in_mm": [
+      0.4,
+      0.5,
+      0.6,
+      0.7,
+      0.8,
+      0.9,
+      1.0,
+      1.1,
+      1.2
+    ],
+    "t_caseback_out_mm": [
+      0.6,
+      0.8,
+      1.0,
+      1.2,
+      1.4,
+      1.6
+    ],
+    "oring_cs_mm": [
+      0.5,
+      0.6,
+      0.7,
+      0.8,
+      1.0
+    ],
+    "boss_extension_mm": [
+      0.0,
+      0.1,
+      0.2,
+      0.3,
+      0.4,
+      0.5,
+      0.6,
+      0.7,
+      0.8,
+      0.9,
+      1.0
+    ]
+  },
+  "parameters": {
+    "c_main_case_mm": {
+      "min": 0.1,
+      "nom": 0.15,
+      "max": 0.2,
+      "evidence_class": "PROVISIONAL_ASSUMPTION",
+      "role": "SUPPLIER_GATED",
+      "rationale": "Required running clearance MAIN outline to case bore (planning requirement; adverse = max)."
+    },
+    "c_insert_mm": {
+      "min": 0.05,
+      "nom": 0.1,
+      "max": 0.15,
+      "evidence_class": "PROVISIONAL_ASSUMPTION",
+      "role": "SUPPLIER_GATED",
+      "rationale": "Rear-insertion running clearance between the module maximum radius and the case bore (planning requirement; adverse = max)."
+    },
+    "c_display_ledge_mm": {
+      "min": 0.2,
+      "nom": 0.2,
+      "max": 0.3,
+      "evidence_class": "PROVISIONAL_ASSUMPTION",
+      "role": "SUPPLIER_GATED",
+      "rationale": "Display-to-cover-ledge assembly clearance (brief section 8.2: >= 0.2; adverse = max)."
+    },
+    "c_cover_recess_mm": {
+      "min": 0.03,
+      "nom": 0.05,
+      "max": 0.1,
+      "evidence_class": "PROVISIONAL_ASSUMPTION",
+      "role": "SUPPLIER_GATED",
+      "rationale": "Radial gap cover edge to bezel recess for bonding / alignment (adverse = max)."
+    },
+    "g_radial_mm": {
+      "min": 0.5,
+      "nom": 0.5,
+      "max": 1.0,
+      "evidence_class": "SUPPLIER_DATA_REQUIRED",
+      "role": "SUPPLIER_GATED",
+      "source_ref": "stack_parameters.radial.parameters.c_radial",
+      "rationale": "Radial pack growth / pack-to-carrier allowance (SR-BATT-GROWTH; G4_BRIEF 8.1: c_radial planning 0.5-1.0, 1.0 adverse; radial growth planning max 1.0). No growth credit."
+    },
+    "c_cb_rear_mm": {
+      "min": 0.05,
+      "nom": 0.1,
+      "max": 0.15,
+      "evidence_class": "PROVISIONAL_ASSUMPTION",
+      "role": "SUPPLIER_GATED",
+      "rationale": "Clearance REAR skin face to caseback inner face outside the pod (planning requirement; adverse = max for fit, min used for deflection limit)."
+    },
+    "w_hard_stop_mm": {
+      "min": 0.5,
+      "nom": 0.6,
+      "max": 0.8,
+      "evidence_class": "PROVISIONAL_ASSUMPTION",
+      "role": "DESIGN",
+      "rationale": "Radial width of the carrier hard-stop skirt ring that carries the caseback load to the carrier and case supports (X20, X22)."
+    },
+    "c_hard_stop_mm": {
+      "min": 0.15,
+      "nom": 0.2,
+      "max": 0.3,
+      "evidence_class": "PROVISIONAL_ASSUMPTION",
+      "role": "SUPPLIER_GATED",
+      "rationale": "Plan clearance hard-stop skirt to the S14 REAR outline (adverse = max)."
+    },
+    "c_chg_window_mm": {
+      "min": 0.1,
+      "nom": 0.15,
+      "max": 0.2,
+      "evidence_class": "PROVISIONAL_ASSUMPTION",
+      "role": "SUPPLIER_GATED",
+      "rationale": "Plan clearance from the charger aperture window to the caseback seal spigot / bore (adverse = max)."
+    },
+    "c_spigot_mm": {
+      "min": 0.02,
+      "nom": 0.03,
+      "max": 0.05,
+      "evidence_class": "PROVISIONAL_ASSUMPTION",
+      "role": "DESIGN",
+      "rationale": "Radial running clearance caseback spigot to midcase bore (extrusion gap; included in the radial gland depth)."
+    },
+    "w_pod_frame_mm": {
+      "min": 0.5,
+      "nom": 0.6,
+      "max": 0.8,
+      "evidence_class": "PROVISIONAL_ASSUMPTION",
+      "role": "DESIGN",
+      "rationale": "Pod-frame wall outside the S14 pod polygon (P1 frame / P2 frame flange)."
+    },
+    "c_rear_route_mm": {
+      "min": 0.6,
+      "nom": 0.6,
+      "max": 0.65,
+      "evidence_class": "PROJECT_DERIVED",
+      "role": "FROZEN",
+      "rationale": "REAR-level perimeter conductor channel height t_fpc + c_fpc + collar at the conservative corner (G2 service_pocket required_height 0.65); imported values recomputed in the tool."
+    },
+    "c_lra_top_mm": {
+      "min": 0.05,
+      "nom": 0.1,
+      "max": 0.15,
+      "evidence_class": "PROVISIONAL_ASSUMPTION",
+      "role": "SUPPLIER_GATED",
+      "rationale": "LRA top to lower-web underside running clearance (adverse = max)."
+    },
+    "c_lra_plan_mm": {
+      "min": 0.2,
+      "nom": 0.3,
+      "max": 0.4,
+      "evidence_class": "PROVISIONAL_ASSUMPTION",
+      "role": "SUPPLIER_GATED",
+      "rationale": "LRA plan clearance to every exclusion incl. positional tolerance (adverse = max)."
+    },
+    "lra_mount_mm": {
+      "min": 0.05,
+      "nom": 0.1,
+      "max": 0.15,
+      "evidence_class": "PROVISIONAL_ASSUMPTION",
+      "role": "SUPPLIER_GATED",
+      "rationale": "LRA mounting adhesive / foam layer under the actuator (adverse = max); no compression credit."
+    },
+    "lugs": {
+      "inner_width_mm": {
+        "min": 20.0,
+        "nom": 21.0,
+        "max": 22.0
+      },
+      "arm_width_mm": {
+        "min": 2.5,
+        "nom": 3.0,
+        "max": 3.5
+      },
+      "arm_length_mm": {
+        "min": 5.0,
+        "nom": 6.0,
+        "max": 7.0
+      },
+      "spring_bar_offset_mm": {
+        "min": 2.0,
+        "nom": 2.5,
+        "max": 3.0
+      },
+      "spring_bar_dia_mm": 1.5,
+      "z_levels": [
+        "MAIN",
+        "BATTERY",
+        "REAR",
+        "CASEBACK"
+      ],
+      "evidence_class": "PROVISIONAL_ASSUMPTION",
+      "rationale": "Envelope-only lug reservation at 12 and 6 o'clock (OD-G4-STRAP open); arms bound the strap width range; spring bar is conductive by default."
+    },
+    "screw_classes": {
+      "SCR-M1.0-TAPPED": {
+        "thread_major_mm": 1.0,
+        "hole_dia_mm": 0.75,
+        "head_dia_mm": 1.8,
+        "material": "MAT-NF-METAL",
+        "requires_material_class": [
+          "MAT-NF-METAL"
+        ],
+        "evidence_class": "PROVISIONAL_ASSUMPTION",
+        "rationale": "Planning M1.0 class tapped directly in metal; non-ferromagnetic screw required; supplier must confirm."
+      },
+      "SCR-M1.0-INSERT": {
+        "thread_major_mm": 1.0,
+        "hole_dia_mm": 1.5,
+        "head_dia_mm": 1.8,
+        "material": "MAT-NF-METAL",
+        "requires_material_class": [
+          "MAT-GF-POLY"
+        ],
+        "evidence_class": "PROVISIONAL_ASSUMPTION",
+        "rationale": "Planning M1.0 class in a moulded-in / heat-staked non-ferromagnetic threaded insert (insert OD planning 1.5); supplier must confirm."
+      }
+    },
+    "screw_count": {
+      "min": 3,
+      "nom": 4,
+      "max": 4,
+      "evidence_class": "PROVISIONAL_ASSUMPTION",
+      "rationale": "Brief 8.4: caseback to case at >= 3 screw supports; four at the lug roots for symmetric retention."
+    },
+    "oring": {
+      "cs_tolerance_mm": {
+        "min": -0.05,
+        "nom": 0.0,
+        "max": 0.05,
+        "evidence_class": "PROVISIONAL_ASSUMPTION",
+        "role": "SUPPLIER_GATED",
+        "rationale": "Planning micro O-ring cross-section tolerance class; supplier gasket data required. Never narrowed.",
+        "limit_class": "PROVISIONAL PLANNING LIMIT"
+      },
+      "windows": {
+        "static_radial": {
+          "compression_min": 0.15,
+          "compression_max": 0.3,
+          "fill_max": 0.85
+        },
+        "static_face": {
+          "compression_min": 0.15,
+          "compression_max": 0.3,
+          "fill_max": 0.85
+        },
+        "dynamic_radial": {
+          "compression_min": 0.1,
+          "compression_max": 0.2,
+          "fill_max": 0.85
+        }
+      },
+      "evidence_class": "PROVISIONAL_ASSUMPTION",
+      "rationale": "Handbook-class planning windows (static / reciprocating elastomer seals); PROVISIONAL PLANNING LIMITS pending supplier gasket data. Not requirements."
+    },
+    "bond_lands": {
+      "vent_membrane_land_mm": {
+        "min": 0.5,
+        "nom": 0.6,
+        "max": 0.8
+      },
+      "vent_port_dia_mm": {
+        "min": 1.0,
+        "nom": 1.5,
+        "max": 2.0
+      },
+      "charger_feedthrough_land_mm": {
+        "min": 0.5,
+        "nom": 0.8,
+        "max": 1.0
+      },
+      "evidence_class": "PROVISIONAL_ASSUMPTION",
+      "rationale": "Planning adhesive / membrane bond-land minima (adverse = max); supplier membrane and adhesive data required (ATM-Q3, ATM-Q4). Caseback adhesive ring uses the same planning class as the G1 cover bond land (w_cover_land 0.8-1.5).",
+      "caseback_bond_land_mm": {
+        "min": 0.8,
+        "nom": 1.0,
+        "max": 1.5
+      }
+    },
+    "charger_block_min": {
+      "radial_mm": 4.0,
+      "tangential_mm": 5.0,
+      "evidence_class": "PROVISIONAL_ASSUMPTION",
+      "rationale": "Minimum planning aperture for a four-contact GND/+5V/+5V/GND block in a 2 x 2 pattern (pitch ~2.0 + pad + walls). SR-CHG-MECH must fit inside the G4 window; no contact dimension is asserted."
+    },
+    "buttons": {
+      "L_bore_min_mm": {
+        "min": 1.5,
+        "nom": 2.0,
+        "max": 3.0,
+        "evidence_class": "PROVISIONAL_ASSUMPTION",
+        "role": "SUPPLIER_GATED",
+        "rationale": "Bore length needed for the pusher seal and guidance (SR-BUTTONS); adverse = max."
+      },
+      "bore_dia_mm": {
+        "min": 1.6,
+        "nom": 1.8,
+        "max": 2.0,
+        "evidence_class": "PROVISIONAL_ASSUMPTION",
+        "role": "SUPPLIER_GATED",
+        "rationale": "Pusher bore diameter (SR-BUTTONS); adverse = max."
+      },
+      "c_switch_mm": {
+        "min": 0.2,
+        "nom": 0.3,
+        "max": 0.4,
+        "evidence_class": "PROVISIONAL_ASSUMPTION",
+        "role": "SUPPLIER_GATED",
+        "rationale": "Switch actuator overhang + travel beyond the MAIN edge to the inner bore face (SR-BUTTONS); adverse = max."
+      },
+      "body_height_max_mm": {
+        "nominal": 2.03,
+        "conservative": 1.5,
+        "evidence_class": "PROJECT_DERIVED",
+        "rationale": "G2 discovered-interface acceptance (land ceiling h_max), imported."
+      },
+      "windows_deg": {
+        "SW1": [
+          292.5,
+          307.5
+        ],
+        "SW2": [
+          262.5,
+          277.5
+        ],
+        "SW3": [
+          232.5,
+          247.5
+        ],
+        "SW4": [
+          52.5,
+          67.5
+        ],
+        "SW5": [
+          112.5,
+          127.5
+        ]
+      },
+      "guide_land_each_mm": {
+        "min": 0.2,
+        "nom": 0.3,
+        "max": 0.4,
+        "evidence_class": "PROVISIONAL_ASSUMPTION",
+        "role": "SUPPLIER_GATED",
+        "rationale": "Unqualified guide/seal retaining shoulder length on each side; full range adverse retained."
+      },
+      "core_radius_min_mm": {
+        "min": 0.2,
+        "nom": 0.3,
+        "max": 0.4,
+        "evidence_class": "PROVISIONAL_ASSUMPTION",
+        "role": "SUPPLIER_GATED",
+        "rationale": "Minimum solid core below pusher groove for preliminary geometry screen; not strength qualification, supplier mechanical data required."
+      }
+    },
+    "supports": {
+      "pad_radial_mm": {
+        "min": 0.5,
+        "nom": 0.6,
+        "max": 0.8
+      },
+      "pad_tangential_mm": 1.5,
+      "post_tangential_mm": 1.5,
+      "fcu_clearance_mm": 0.1,
+      "w_nw_search_deg": [
+        255.0,
+        345.0
+      ],
+      "evidence_class": "PROVISIONAL_ASSUMPTION",
+      "rationale": "Case support = a BATTERY-level post (carrier / caseback load path) outside R_channel_inner (X18) and outside every G2 riser; a front-gap MAIN stop pad is added at the post azimuth where the MAIN F.Cu edge is free (radial engagement adverse = max). At least three pads must enclose the board centre to locate MAIN."
+    },
+    "vent": {
+      "search_deg": [
+        30.0,
+        60.0
+      ],
+      "evidence_class": "PROVISIONAL_ASSUMPTION",
+      "rationale": "Vent membrane port inside the VENT reservation (U4 barometer NE)."
+    },
+    "rf_clearance_report_mm": 1.0,
+    "support_load": {
+      "unequal_share_factor": 2.0,
+      "evidence_class": "PROVISIONAL_ASSUMPTION",
+      "rationale": "Discrete support screening bound at twice equal sharing; no verified contact/load distribution."
+    },
+    "cover_recess_depth_mm": {
+      "nom": 0.05,
+      "tolerance_process": "midcase thickness",
+      "evidence_class": "PROVISIONAL_ASSUMPTION",
+      "role": "DESIGN",
+      "rationale": "Bezel nominally recessed below cover by process allowance; H08 evaluates the adverse top surface."
+    },
+    "conditional_seals": {
+      "U6F3_cs_mm": 0.6,
+      "U6F3_stud_radius_mm": 0.5,
+      "P2_cs_mm": 0.6,
+      "evidence_class": "PROVISIONAL_ASSUMPTION",
+      "rationale": "Option screening only, no qualified stud or seal; apply full local process tolerances and island/outline containment.",
+      "U6F3_stud_process": "PC-METAL-MACH",
+      "U6F3_stud_material_constraint": "non-ferromagnetic metal; provisional geometry class only, no qualified component or thermal-contact material selected"
+    }
+  },
+  "lra_classes": [
+    {
+      "id": "LRA-COIN-D8",
+      "shape": "coin",
+      "diameter_mm": {
+        "min": 7.8,
+        "nom": 8.0,
+        "max": 8.2
+      },
+      "height_mm": {
+        "min": 2.5,
+        "nom": 2.7,
+        "max": 3.2
+      },
+      "evidence_class": "PROVISIONAL_ASSUMPTION",
+      "rationale": "Planning envelope of the common Z-axis coin LRA family around 8 mm diameter (thin and standard variants); no MPN; SR-LRA must supply the actual envelope."
+    },
+    {
+      "id": "LRA-COIN-D10",
+      "shape": "coin",
+      "diameter_mm": {
+        "min": 9.8,
+        "nom": 10.0,
+        "max": 10.2
+      },
+      "height_mm": {
+        "min": 2.5,
+        "nom": 3.0,
+        "max": 3.6
+      },
+      "evidence_class": "PROVISIONAL_ASSUMPTION",
+      "rationale": "Planning envelope of the common Z-axis coin LRA family around 10 mm diameter; no MPN; SR-LRA."
+    },
+    {
+      "id": "LRA-LIN-RECT",
+      "shape": "rect",
+      "length_mm": {
+        "min": 9.0,
+        "nom": 10.0,
+        "max": 12.5
+      },
+      "width_mm": {
+        "min": 3.5,
+        "nom": 4.0,
+        "max": 4.5
+      },
+      "height_mm": {
+        "min": 2.5,
+        "nom": 2.8,
+        "max": 3.2
+      },
+      "evidence_class": "PROVISIONAL_ASSUMPTION",
+      "rationale": "Planning envelope of rectangular X/Y-axis linear LRA families for wearables; no MPN; SR-LRA."
+    }
+  ],
+  "lra_search": {
+    "az_step_deg": 5,
+    "az_stop_deg": 355,
+    "r_step_mm": 0.25,
+    "orientations_deg": [
+      0,
+      90
+    ],
+    "rationale": "Brief 8.9 grid: azimuth 0-355 step 5, radius step 0.25, orientation 0 (tangential long axis) / 90 (radial long axis) for linear classes."
+  },
+  "window_variants": {
+    "W0": {
+      "title": "single transparent window over the whole pod opening",
+      "span_rule": "largest inscribed circle of the S14 pod polygon minus frame overlap"
+    },
+    "W1": {
+      "title": "single window supported by structural pod-frame ribs between cells",
+      "span_rule": "largest physical optical cell between ribs (circumscribed circle, conservative)"
+    },
+    "W2": {
+      "title": "separate per-cell windows in the pod frame",
+      "span_rule": "largest per-cell window (circumscribed circle, conservative)"
+    },
+    "frame_overlap_mm_source": "g1_scenarios plate_check.a_window_frame_mm (imported)",
+    "thicknesses_mm": [
+      0.3,
+      0.5,
+      0.8
+    ]
+  },
+  "seal_types": {
+    "S-COVER": {
+      "type": "adhesive ring",
+      "interface": [
+        "MIDCASE",
+        "COVER"
+      ]
+    },
+    "S-CB-MAIN": {
+      "type": "radial O-ring",
+      "interface": [
+        "MIDCASE",
+        "CASEBACK"
+      ],
+      "alternatives": [
+        "radial O-ring on a caseback spigot inside the midcase bore",
+        "face O-ring in the caseback flange against the midcase rear face",
+        "adhesive ring on the midcase rear face (non-serviceable)"
+      ]
+    },
+    "S-POD": {
+      "type": "adhesive ring",
+      "interface": [
+        "CASEBACK",
+        "WINDOW"
+      ]
+    },
+    "S-CHG": {
+      "type": "adhesive ring",
+      "interface": [
+        "CASEBACK",
+        "CHG_BLOCK"
+      ]
+    },
+    "S-SW": {
+      "type": "radial O-ring",
+      "interface": [
+        "MIDCASE",
+        "PUSHER"
+      ]
+    },
+    "S-VENT": {
+      "type": "membrane",
+      "interface": [
+        "MIDCASE",
+        "VENT_MEMBRANE"
+      ]
+    },
+    "S-U6F3": {
+      "type": "radial O-ring",
+      "interface": [
+        "WINDOW_OR_CASEBACK",
+        "U6_STUD"
+      ],
+      "conditional": "only if U6 skin-contact option F3 is used"
+    },
+    "S-CB-SPLIT": {
+      "type": "adhesive ring",
+      "interface": [
+        "CASEBACK",
+        "CB_CENTRE"
+      ],
+      "conditional": "split caseback only"
+    }
+  },
+  "assembly": {
+    "steps": [
+      {
+        "id": "A1",
+        "op": "Caseback sub-assembly: window(s) bonded into the caseback pod frame (P1) or pod frame on the REAR module (P2); pressure-testable sub-assembly",
+        "part": "CASEBACK",
+        "direction": "bench",
+        "battery_state": "absent"
+      },
+      {
+        "id": "A2",
+        "op": "Midcase sub-assembly: vent membrane bonded from inside",
+        "part": "VENT_MEMBRANE",
+        "direction": "interior (rear opening)",
+        "battery_state": "absent"
+      },
+      {
+        "id": "A3",
+        "op": "REAR + J1502 tail bonded and tested; thermode access before carrier",
+        "part": "REAR",
+        "direction": "bench",
+        "battery_state": "absent"
+      },
+      {
+        "id": "A4",
+        "op": "Module stack on fixture: MAIN + carrier + pack + REAR, J1501 / J201 / J202 / LRA leads mated or soldered visibly (G2 S1); pack isolation open",
+        "part": "MODULE",
+        "direction": "bench",
+        "battery_state": "isolated"
+      },
+      {
+        "id": "A5",
+        "op": "LRA bonded into its pocket",
+        "part": "LRA",
+        "direction": "per placement window",
+        "battery_state": "isolated"
+      },
+      {
+        "id": "A6",
+        "op": "Rear insertion of the module into the midcase",
+        "part": "MODULE",
+        "direction": "+Z from rear (wrist side) toward front",
+        "battery_state": "isolated"
+      },
+      {
+        "id": "A7",
+        "op": "Display mated at J1 through the open front aperture and seated on DISP_LAND (G2 S2, visible mating, counts one J1 cycle)",
+        "part": "DISPLAY",
+        "direction": "-Z from front",
+        "battery_state": "isolated"
+      },
+      {
+        "id": "A8",
+        "op": "Cover bonded to the bezel ledge (front pressure boundary closed)",
+        "part": "COVER",
+        "direction": "-Z from front",
+        "battery_state": "isolated"
+      },
+      {
+        "id": "A9",
+        "op": "Button pushers with O-rings inserted radially from outside and retained",
+        "part": "PUSHER",
+        "direction": "radial inward from outside",
+        "battery_state": "isolated"
+      },
+      {
+        "id": "A10",
+        "op": "Battery isolation closed; functional test through charger contacts",
+        "part": "ISOLATION",
+        "direction": "rear (caseback open)",
+        "battery_state": "connected"
+      },
+      {
+        "id": "A11",
+        "op": "Caseback closed from rear with candidate S-CB-MAIN seal; S-CHG is a bonded feedthrough cured and inspected before closure; screws at lug roots",
+        "part": "CASEBACK",
+        "direction": "+Z from rear",
+        "battery_state": "connected"
+      }
+    ],
+    "j1_cycles": {
+      "rated": 50,
+      "planned": 25
+    },
+    "rationale": "Proposed front-display-before-cover alternative only. Binding cover-first sequence is evaluated separately and requires contract clarification if obstructed."
+  },
+  "fea_load_cases": [
+    {
+      "id": "FEA-1",
+      "load": "uniform external pressure p_test nom 0.500 MPa on cover, caseback and window",
+      "support": "Physical perimeter rear-face bearing and lug-root retention; window/frame loads through caseback shell, no PCB/optics support. Include actual sector interfaces and missing/unequal contact; compare continuous-inner-bearing analytical surrogate separately.",
+      "materials": "candidate material classes at min / nom properties",
+      "pass": "stress <= allowable class min; deflection < clearance to REAR, charger block, display (air gap) and support stops"
+    },
+    {
+      "id": "FEA-2",
+      "load": "uniform external pressure p_test max 0.625 MPa (OD-G4-ATM-STD margin)",
+      "support": "as FEA-1, bond modelled as hinged (simply supported) and as bonded (clamped) separately",
+      "materials": "min E, min allowable",
+      "pass": "as FEA-1 at the simply-supported bound"
+    },
+    {
+      "id": "FEA-3",
+      "load": "Candidate seal preload (radial/face O-ring or bonded interface), contact tolerances and screw preload; no compressed charger seal is assumed",
+      "support": "midcase rear face, screws at lug roots",
+      "materials": "polymer creep class where applicable",
+      "pass": "no yield; gland deformation within the planning window"
+    },
+    {
+      "id": "FEA-4",
+      "load": "pusher actuation force (SR-BUTTONS) and boss bending",
+      "support": "midcase wall",
+      "materials": "midcase class",
+      "pass": "stress <= allowable; bore deformation keeps the dynamic compression window"
+    }
+  ],
+  "atm_q": [
+    {
+      "id": "ATM-Q1",
+      "text": "select the 5 ATM test standard and margin (owner / qualification plan)"
+    },
+    {
+      "id": "ATM-Q2",
+      "text": "button seal pressure / cycling test after SR-BUTTONS selection (window variant under 5 ATM - the G1.3 window plate calculation is analytical only and any clamped-only pass is conditional on verified bond restraint)"
+    },
+    {
+      "id": "ATM-Q3",
+      "text": "sealed charger contact feedthrough pressure test (SR-CHG-MECH)"
+    },
+    {
+      "id": "ATM-Q4",
+      "text": "vent membrane water-entry pressure >= test pressure and barometer response"
+    },
+    {
+      "id": "ATM-Q5",
+      "text": "caseback deflection analysis once the caseback material/thickness exist (G3), then a pressure test with the REAR module fitted"
+    },
+    {
+      "id": "ATM-Q6",
+      "text": "swim / dynamic exposure as stated by the selected standard"
+    }
+  ],
+  "budgets": {
+    "generated_json_max_bytes": 2000000,
+    "architecture_g4_max_bytes": 100000,
+    "architecture_md_g4_max_lines": 300,
+    "check_runtime_max_s": 60
+  }
+}

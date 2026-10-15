@@ -2,6 +2,8 @@
 
 **G3 status: G3 CONDITIONAL — SUPPLIER/MEASUREMENT GATES OPEN.** Recommended study topology: G3-B-S14; all nominal hard checks pass. Supplier/measurement gates remain open; G4 and KiCad implementation are not authorized.
 
+**G3 CLOSED — PASS WITH SUPPLIER/MEASUREMENT GATES** (OD-G4-RECORD, 2026-10-14). The generated G3 verdict above and every G3 supplier/manufacturer/measurement gate are unchanged. **G4 status: G4 OWNER DECISION REQUIRED** — see section G4 (no KiCad, G5 or K1 work authorized).
+
 **Status: PROVISIONAL, REVERSIBLE architecture study.** Scope contract: `PHASE_BRIEF.md`. This document does not authorise KiCad edits,
 routing, outline freeze, case CAD, connector/antenna selection, a battery change or an electrical partition change. Nothing here changes
 a frozen invariant (copied verbatim into `architecture.json` and re-checked against `inputs/input_register.json`); every proposal that
@@ -3080,3 +3082,87 @@ J1501 approved power/digital only; no REAR-local test pads; new test pad require
 
 Generator consistency and mutation self-tests are separate from engineering acceptance. Run all G3_BRIEF §10 commands. No supplier request has been issued. No measurement result has been invented.
 <!-- G3 GENERATED END -->
+
+<!-- G4 GENERATED BEGIN -->
+## G4 — Case / caseback / sealing-architecture closure study
+
+**G4 OWNER DECISION REQUIRED**
+
+G3 CLOSED — PASS WITH SUPPLIER/MEASUREMENT GATES (OD-G4-RECORD); the generated G3 verdict "G3 CONDITIONAL — SUPPLIER/MEASUREMENT GATES OPEN" is unchanged.
+
+Full report: [`generated/g4_case_sealing.md`](generated/g4_case_sealing.md). Generator: `tools/g4_case_sealing.py` (build / check / selftest). Mechanical parametric / closure study only: no KiCad edit, no RF claim, no FEA claim, no 5 ATM qualification claim.
+
+### Stops and owner decisions
+
+| id | finding |
+|---|---|
+| STOP-DIAMETER | No candidate is feasible at D_case_body <= 51.00 mm; minimum required diameter: none found <= 54.00 mm (diameter-independent hard-check failures). |
+| STOP-LRA | No feasible LRA pose exists for any envelope class inside the approved architecture at <= 51.0 mm; the LRA is not removed or shrunk. |
+| OD-G4-WINDOW | W0 is mechanically eliminated without a stack delta; owner must decide whether a frame/rib-supported window (W1; W2 fails the G3 seal-land geometry) is the Rev-A baseline. |
+
+Deferred (not chosen): OD-G4-ATM-STD, OD-G4-MATERIAL, OD-G4-STRAP, OD-G4-LRA-MAG, OD-G4-WINDOW, OD-G4-STACK.
+
+### Diameter (OD-G4-ENVELOPE)
+
+- Selected: none; minimum feasible found: none; margin to 51.0: n/a; minimum required (all hard checks): none <= 54.00; excluding H22: none <= 54.00.
+
+| candidate | outcome | evaluated D | partial group threshold (diagnostic only) | diameter-independent failures | failing hard checks |
+|---|---|---|---|---|---|
+| G4-A | REJECTED | 50.90 | 52.10 | H05, H11, H13, H14, H15, H17, H20, H21, H22, H23 | H05, H11, H13, H14, H15, H16, H17, H20, H21, H22, H23 |
+| G4-B | REJECTED | 50.90 | 50.15 | H05, H13, H15, H17, H20, H21, H22, H23 | H01, H05, H13, H15, H17, H20, H21, H22, H23 |
+| G4-C | REJECTED | 50.90 | 50.15 | H05, H10, H11, H13, H14, H15, H16, H17, H20, H21, H22, H23 | H05, H10, H11, H13, H14, H15, H16, H17, H20, H21, H22, H23 |
+
+### Legacy vs OD-G4-CORNER (linear worst at the evaluated diameter)
+
+| candidate | radial legacy -0.950 -> nominal / RSS / linear worst | X25 legacy -1.100 -> nominal / RSS / linear worst | U4 headroom linear worst | caseback seal comp-min linear worst |
+|---|---|---|---|---|
+| G4-A | 0.380 / 0.225 / 0.050 | 1.400 / 0.810 / 0.420 | 0.340 | -0.480 |
+| G4-B | 0.380 / 0.225 / 0.050 | 1.400 / 0.810 / 0.420 | 0.400 | -0.172 |
+| G4-C | 0.380 / 0.225 / 0.050 | 1.400 / 0.810 / 0.420 | 0.340 | -0.480 |
+
+### Z, window, LRA, seals
+
+- Z: G2-REVA 16.350 / 16.796 / 18.040 mm; G2-REVA-HI 16.380 / 16.825 / 18.040 mm; G4 delta 0.000.
+- Window: W0 MECHANICALLY ELIMINATED (span 8.359 mm); OD-G4-WINDOW triggered: yes; eligible: W1-t0p3-sapphire, W1-t0p5-sapphire, W1-t0p5-cs_glass.
+- LRA (G4-B): LRA-COIN-D8 Z margin -1.620 mm, max height for zero margin 1.580 mm, feasible poses 0; LRA-COIN-D10 Z margin -2.020 mm, max height for zero margin 1.580 mm, feasible poses 0; LRA-LIN-RECT Z margin -1.620 mm, max height for zero margin 1.580 mm, feasible poses 0.
+- Seal inventory (G4-B): 10 seals, path closed; caseback screws in the lug roots outside the seal line; ATM-Q1..ATM-Q6 carried; no 5 ATM claim.
+
+### Conflict g4_status
+
+| conflict | g4_status |
+|---|---|
+| C1-FRONT-GAP | REMAINS_OPEN |
+| C2-DISPLAY-SIDE-CONNECTORS | REMAINS_OPEN |
+| C3-EDGE-WRAP | SUPPLIER_DATA_GATED |
+| C4-CHARGER-PATH | REMAINS_OPEN |
+| C5-SOUTH-CROWDING | OWNER_DECISION_GATED |
+| C6-DISPLAY-FPC-FOLD | SUPPLIER_DATA_GATED |
+| C7-WIFI-BEYOND-BOARD | DEFERRED_G5 |
+| C8-GNSS-OCCUPIED | DEFERRED_G5 |
+| C9-THICK-CORNER | REMAINS_OPEN |
+| X10-OPTICS-HEIGHT-UNKNOWN | SUPPLIER_DATA_GATED |
+| X11-POD-FOOTPRINT | OWNER_DECISION_GATED |
+| X12-J1502-FACE | SUPPLIER_DATA_GATED |
+| X13-EDGE-CROSSINGS | SUPPLIER_DATA_GATED |
+| X14-SUPPORT-GAP | REMAINS_OPEN |
+| X15-NE-CROWDING | REMAINS_OPEN |
+| X16-MAGNETOMETER | MEASUREMENT_GATED |
+| X17-GNSS-ALL-HEIGHTS | DEFERRED_G5 |
+| X18-PACK-EDGE | SUPPLIER_DATA_GATED |
+| X19-BCU-0603 | REMAINS_OPEN |
+| X20-GROWTH-VS-OPTICS | REMAINS_OPEN |
+| X21-INGRESS-UNDEFINED | REMAINS_OPEN |
+| X22-UNMODELLED-Z | REMAINS_OPEN |
+| X23-WINDOW-CROSSTALK | OWNER_DECISION_GATED |
+| X24-DISPLAY-LAND | SUPPLIER_DATA_GATED |
+| X25-COVER-CASE-FIT | REMAINS_OPEN |
+| G2-CROSSING-HEIGHT | SUPPLIER_DATA_GATED |
+| G2-BOOK-FOLD | REMAINS_OPEN |
+| G2-PROBE-RELIEF | REMAINS_OPEN |
+| G2-BACK-STACK | REMAINS_OPEN |
+| G2-DISCOVERED-INTERFACES | SUPPLIER_DATA_GATED |
+
+Errata: E-G4-01 Stale G3 conflict-status evidence; E-G4-02 Historical LRA disposition invalid. Unsatisfied acceptance criteria: 5, 8, 9, 10, 11, 12, 13, 15.
+
+G4 authorizes no K1, G5 or Q1 work.
+<!-- G4 GENERATED END -->

@@ -1,0 +1,144 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="820" viewBox="0 0 1200 820" font-family="sans-serif">
+<title>G4 radial sections</title>
+<rect x="0" y="0" width="1200" height="820" fill="#ffffff"/>
+<text x="20.00" y="24.00" font-size="13" text-anchor="start" fill="#111" font-weight="bold">G4 radial sections at six stations (r horizontal 0-27 mm, Z down from the cover). Basis G4-B D 50.90 — diagnostic</text>
+<rect x="20" y="42" width="370" height="330" fill="none" stroke="#999"/>
+<text x="30.00" y="56.00" font-size="12" text-anchor="start" fill="#111" font-weight="bold">CENTER (az 0)</text>
+<rect x="30.0" y="60.0" width="298.3" height="22.5" fill="#d6eaf8" stroke="#888" stroke-width="0.4"/>
+<rect x="30.0" y="82.5" width="298.3" height="4.5" fill="#ffffff" stroke="#888" stroke-width="0.4"/>
+<rect x="30.0" y="87.0" width="285.3" height="36.9" fill="#d5f5e3" stroke="#888" stroke-width="0.4"/>
+<rect x="30.0" y="123.9" width="299.0" height="51.3" fill="#fdfefe" stroke="#888" stroke-width="0.4"/>
+<rect x="30.0" y="175.2" width="299.0" height="14.4" fill="#a9dfbf" stroke="#888" stroke-width="0.4"/>
+<rect x="30.0" y="189.6" width="289.2" height="14.4" fill="#fcf3cf" stroke="#888" stroke-width="0.4"/>
+<rect x="30.0" y="204.0" width="289.2" height="90.0" fill="#f9e79f" stroke="#888" stroke-width="0.4"/>
+<rect x="30.0" y="294.0" width="289.2" height="7.2" fill="#e5e7e9" stroke="#888" stroke-width="0.4"/>
+<rect x="30.0" y="301.2" width="213.2" height="14.4" fill="#e8daef" stroke="#888" stroke-width="0.4"/>
+<rect x="30.0" y="315.6" width="213.2" height="14.4" fill="#a9cce3" stroke="#888" stroke-width="0.4"/>
+<rect x="30.0" y="330.0" width="104.5" height="15.3" fill="#fad7a0" stroke="#888" stroke-width="0.4"/>
+<rect x="30.0" y="345.3" width="104.5" height="9.0" fill="#aed6f1" stroke="#888" stroke-width="0.4"/>
+<rect x="341.3" y="60.0" width="19.5" height="27.0" fill="#566573" fill-opacity="0.75"/>
+<rect x="319.9" y="87.0" width="40.9" height="36.9" fill="#566573" fill-opacity="0.75"/>
+<rect x="295.8" y="123.9" width="65.0" height="5.4" fill="#566573" fill-opacity="0.75"/>
+<rect x="346.6" y="129.3" width="14.3" height="45.9" fill="#566573" fill-opacity="0.75"/>
+<rect x="346.6" y="175.2" width="14.3" height="28.8" fill="#566573" fill-opacity="0.75"/>
+<rect x="346.6" y="204.0" width="14.3" height="97.2" fill="#566573" fill-opacity="0.75"/>
+<rect x="346.6" y="301.2" width="14.3" height="44.1" fill="#566573" fill-opacity="0.75"/>
+<rect x="336.0" y="345.3" width="24.8" height="9.0" fill="#566573" fill-opacity="0.75"/>
+<text x="30.00" y="372.00" font-size="9" text-anchor="start" fill="#111" font-weight="normal">scalar side wall; local feature/level envelopes only; no azimuth-resolved wall closure</text>
+<rect x="410" y="42" width="370" height="330" fill="none" stroke="#999"/>
+<text x="420.00" y="56.00" font-size="12" text-anchor="start" fill="#111" font-weight="bold">GNSS_N (az 0)</text>
+<rect x="420.0" y="60.0" width="298.3" height="22.5" fill="#d6eaf8" stroke="#888" stroke-width="0.4"/>
+<rect x="420.0" y="82.5" width="298.3" height="4.5" fill="#ffffff" stroke="#888" stroke-width="0.4"/>
+<rect x="420.0" y="87.0" width="285.3" height="36.9" fill="#d5f5e3" stroke="#888" stroke-width="0.4"/>
+<rect x="420.0" y="123.9" width="299.0" height="51.3" fill="#fdfefe" stroke="#888" stroke-width="0.4"/>
+<rect x="420.0" y="175.2" width="299.0" height="14.4" fill="#a9dfbf" stroke="#888" stroke-width="0.4"/>
+<rect x="420.0" y="189.6" width="289.2" height="14.4" fill="#fcf3cf" stroke="#888" stroke-width="0.4"/>
+<rect x="420.0" y="204.0" width="289.2" height="90.0" fill="#f9e79f" stroke="#888" stroke-width="0.4"/>
+<rect x="420.0" y="294.0" width="289.2" height="7.2" fill="#e5e7e9" stroke="#888" stroke-width="0.4"/>
+<rect x="420.0" y="301.2" width="213.2" height="14.4" fill="#e8daef" stroke="#888" stroke-width="0.4"/>
+<rect x="420.0" y="315.6" width="213.2" height="14.4" fill="#a9cce3" stroke="#888" stroke-width="0.4"/>
+<rect x="420.0" y="330.0" width="104.5" height="15.3" fill="#fad7a0" stroke="#888" stroke-width="0.4"/>
+<rect x="420.0" y="345.3" width="104.5" height="9.0" fill="#aed6f1" stroke="#888" stroke-width="0.4"/>
+<rect x="731.3" y="60.0" width="19.5" height="27.0" fill="#566573" fill-opacity="0.75"/>
+<rect x="709.9" y="87.0" width="40.9" height="36.9" fill="#566573" fill-opacity="0.75"/>
+<rect x="685.8" y="123.9" width="65.0" height="5.4" fill="#566573" fill-opacity="0.75"/>
+<rect x="736.5" y="129.3" width="14.3" height="45.9" fill="#566573" fill-opacity="0.75"/>
+<rect x="736.5" y="175.2" width="14.3" height="28.8" fill="#566573" fill-opacity="0.75"/>
+<rect x="736.5" y="204.0" width="14.3" height="97.2" fill="#566573" fill-opacity="0.75"/>
+<rect x="736.5" y="301.2" width="14.3" height="44.1" fill="#566573" fill-opacity="0.75"/>
+<rect x="726.0" y="345.3" width="24.8" height="9.0" fill="#566573" fill-opacity="0.75"/>
+<text x="420.00" y="372.00" font-size="9" text-anchor="start" fill="#111" font-weight="normal">scalar side wall; local feature/level envelopes only; no azimuth-resolved wall closure</text>
+<rect x="800" y="42" width="370" height="330" fill="none" stroke="#999"/>
+<text x="810.00" y="56.00" font-size="12" text-anchor="start" fill="#111" font-weight="bold">FPC_S (az 168)</text>
+<rect x="810.0" y="60.0" width="298.3" height="22.5" fill="#d6eaf8" stroke="#888" stroke-width="0.4"/>
+<rect x="810.0" y="82.5" width="298.3" height="4.5" fill="#ffffff" stroke="#888" stroke-width="0.4"/>
+<rect x="810.0" y="87.0" width="285.3" height="36.9" fill="#d5f5e3" stroke="#888" stroke-width="0.4"/>
+<rect x="810.0" y="123.9" width="299.0" height="51.3" fill="#fdfefe" stroke="#888" stroke-width="0.4"/>
+<rect x="810.0" y="175.2" width="299.0" height="14.4" fill="#a9dfbf" stroke="#888" stroke-width="0.4"/>
+<rect x="810.0" y="189.6" width="289.2" height="14.4" fill="#fcf3cf" stroke="#888" stroke-width="0.4"/>
+<rect x="810.0" y="204.0" width="289.2" height="90.0" fill="#f9e79f" stroke="#888" stroke-width="0.4"/>
+<rect x="810.0" y="294.0" width="289.2" height="7.2" fill="#e5e7e9" stroke="#888" stroke-width="0.4"/>
+<rect x="810.0" y="301.2" width="213.2" height="14.4" fill="#e8daef" stroke="#888" stroke-width="0.4"/>
+<rect x="810.0" y="315.6" width="213.2" height="14.4" fill="#a9cce3" stroke="#888" stroke-width="0.4"/>
+<rect x="810.0" y="330.0" width="104.5" height="15.3" fill="#fad7a0" stroke="#888" stroke-width="0.4"/>
+<rect x="810.0" y="345.3" width="104.5" height="9.0" fill="#aed6f1" stroke="#888" stroke-width="0.4"/>
+<rect x="1121.3" y="60.0" width="19.5" height="27.0" fill="#566573" fill-opacity="0.75"/>
+<rect x="1099.9" y="87.0" width="40.9" height="36.9" fill="#566573" fill-opacity="0.75"/>
+<rect x="1075.8" y="123.9" width="65.0" height="5.4" fill="#566573" fill-opacity="0.75"/>
+<rect x="1126.5" y="129.3" width="14.3" height="45.9" fill="#566573" fill-opacity="0.75"/>
+<rect x="1126.5" y="175.2" width="14.3" height="28.8" fill="#566573" fill-opacity="0.75"/>
+<rect x="1126.5" y="204.0" width="14.3" height="97.2" fill="#566573" fill-opacity="0.75"/>
+<rect x="1126.5" y="301.2" width="14.3" height="44.1" fill="#566573" fill-opacity="0.75"/>
+<rect x="1116.0" y="345.3" width="24.8" height="9.0" fill="#566573" fill-opacity="0.75"/>
+<text x="810.00" y="372.00" font-size="9" text-anchor="start" fill="#111" font-weight="normal">scalar side wall; local feature/level envelopes only; no azimuth-resolved wall closure</text>
+<rect x="20" y="422" width="370" height="330" fill="none" stroke="#999"/>
+<text x="30.00" y="436.00" font-size="12" text-anchor="start" fill="#111" font-weight="bold">CHG_E (az 90)</text>
+<rect x="30.0" y="440.0" width="298.3" height="22.5" fill="#d6eaf8" stroke="#888" stroke-width="0.4"/>
+<rect x="30.0" y="462.5" width="298.3" height="4.5" fill="#ffffff" stroke="#888" stroke-width="0.4"/>
+<rect x="30.0" y="467.0" width="285.3" height="36.9" fill="#d5f5e3" stroke="#888" stroke-width="0.4"/>
+<rect x="30.0" y="503.9" width="299.0" height="51.3" fill="#fdfefe" stroke="#888" stroke-width="0.4"/>
+<rect x="30.0" y="555.2" width="299.0" height="14.4" fill="#a9dfbf" stroke="#888" stroke-width="0.4"/>
+<rect x="30.0" y="569.6" width="289.2" height="14.4" fill="#fcf3cf" stroke="#888" stroke-width="0.4"/>
+<rect x="30.0" y="584.0" width="289.2" height="90.0" fill="#f9e79f" stroke="#888" stroke-width="0.4"/>
+<rect x="30.0" y="674.0" width="289.2" height="7.2" fill="#e5e7e9" stroke="#888" stroke-width="0.4"/>
+<rect x="30.0" y="681.2" width="213.2" height="14.4" fill="#e8daef" stroke="#888" stroke-width="0.4"/>
+<rect x="30.0" y="695.6" width="213.2" height="14.4" fill="#a9cce3" stroke="#888" stroke-width="0.4"/>
+<rect x="30.0" y="710.0" width="104.5" height="15.3" fill="#fad7a0" stroke="#888" stroke-width="0.4"/>
+<rect x="30.0" y="725.3" width="104.5" height="9.0" fill="#aed6f1" stroke="#888" stroke-width="0.4"/>
+<rect x="341.3" y="440.0" width="19.5" height="27.0" fill="#566573" fill-opacity="0.75"/>
+<rect x="319.9" y="467.0" width="40.9" height="36.9" fill="#566573" fill-opacity="0.75"/>
+<rect x="295.8" y="503.9" width="65.0" height="5.4" fill="#566573" fill-opacity="0.75"/>
+<rect x="346.6" y="509.3" width="14.3" height="45.9" fill="#566573" fill-opacity="0.75"/>
+<rect x="346.6" y="555.2" width="14.3" height="28.8" fill="#566573" fill-opacity="0.75"/>
+<rect x="346.6" y="584.0" width="14.3" height="97.2" fill="#566573" fill-opacity="0.75"/>
+<rect x="346.6" y="681.2" width="14.3" height="44.1" fill="#566573" fill-opacity="0.75"/>
+<rect x="336.0" y="725.3" width="24.8" height="9.0" fill="#566573" fill-opacity="0.75"/>
+<text x="30.00" y="752.00" font-size="9" text-anchor="start" fill="#111" font-weight="normal">scalar side wall; local feature/level envelopes only; no azimuth-resolved wall closure</text>
+<rect x="410" y="422" width="370" height="330" fill="none" stroke="#999"/>
+<text x="420.00" y="436.00" font-size="12" text-anchor="start" fill="#111" font-weight="bold">SW2_W (az 270)</text>
+<rect x="420.0" y="440.0" width="298.3" height="22.5" fill="#d6eaf8" stroke="#888" stroke-width="0.4"/>
+<rect x="420.0" y="462.5" width="298.3" height="4.5" fill="#ffffff" stroke="#888" stroke-width="0.4"/>
+<rect x="420.0" y="467.0" width="285.3" height="36.9" fill="#d5f5e3" stroke="#888" stroke-width="0.4"/>
+<rect x="420.0" y="503.9" width="299.0" height="51.3" fill="#fdfefe" stroke="#888" stroke-width="0.4"/>
+<rect x="420.0" y="555.2" width="299.0" height="14.4" fill="#a9dfbf" stroke="#888" stroke-width="0.4"/>
+<rect x="420.0" y="569.6" width="289.2" height="14.4" fill="#fcf3cf" stroke="#888" stroke-width="0.4"/>
+<rect x="420.0" y="584.0" width="289.2" height="90.0" fill="#f9e79f" stroke="#888" stroke-width="0.4"/>
+<rect x="420.0" y="674.0" width="289.2" height="7.2" fill="#e5e7e9" stroke="#888" stroke-width="0.4"/>
+<rect x="420.0" y="681.2" width="213.2" height="14.4" fill="#e8daef" stroke="#888" stroke-width="0.4"/>
+<rect x="420.0" y="695.6" width="213.2" height="14.4" fill="#a9cce3" stroke="#888" stroke-width="0.4"/>
+<rect x="420.0" y="710.0" width="104.5" height="15.3" fill="#fad7a0" stroke="#888" stroke-width="0.4"/>
+<rect x="420.0" y="725.3" width="104.5" height="9.0" fill="#aed6f1" stroke="#888" stroke-width="0.4"/>
+<rect x="731.3" y="440.0" width="19.5" height="27.0" fill="#566573" fill-opacity="0.75"/>
+<rect x="709.9" y="467.0" width="40.9" height="36.9" fill="#566573" fill-opacity="0.75"/>
+<rect x="685.8" y="503.9" width="65.0" height="5.4" fill="#566573" fill-opacity="0.75"/>
+<rect x="736.5" y="509.3" width="26.0" height="45.9" fill="#566573" fill-opacity="0.75"/>
+<rect x="736.5" y="555.2" width="14.3" height="28.8" fill="#566573" fill-opacity="0.75"/>
+<rect x="736.5" y="584.0" width="14.3" height="97.2" fill="#566573" fill-opacity="0.75"/>
+<rect x="736.5" y="681.2" width="14.3" height="44.1" fill="#566573" fill-opacity="0.75"/>
+<rect x="726.0" y="725.3" width="24.8" height="9.0" fill="#566573" fill-opacity="0.75"/>
+<text x="420.00" y="752.00" font-size="9" text-anchor="start" fill="#111" font-weight="normal">scalar side wall; local feature/level envelopes only; no azimuth-resolved wall closure</text>
+<rect x="800" y="422" width="370" height="330" fill="none" stroke="#999"/>
+<text x="810.00" y="436.00" font-size="12" text-anchor="start" fill="#111" font-weight="bold">POD (az 45)</text>
+<rect x="810.0" y="440.0" width="298.3" height="22.5" fill="#d6eaf8" stroke="#888" stroke-width="0.4"/>
+<rect x="810.0" y="462.5" width="298.3" height="4.5" fill="#ffffff" stroke="#888" stroke-width="0.4"/>
+<rect x="810.0" y="467.0" width="285.3" height="36.9" fill="#d5f5e3" stroke="#888" stroke-width="0.4"/>
+<rect x="810.0" y="503.9" width="299.0" height="51.3" fill="#fdfefe" stroke="#888" stroke-width="0.4"/>
+<rect x="810.0" y="555.2" width="299.0" height="14.4" fill="#a9dfbf" stroke="#888" stroke-width="0.4"/>
+<rect x="810.0" y="569.6" width="289.2" height="14.4" fill="#fcf3cf" stroke="#888" stroke-width="0.4"/>
+<rect x="810.0" y="584.0" width="289.2" height="90.0" fill="#f9e79f" stroke="#888" stroke-width="0.4"/>
+<rect x="810.0" y="674.0" width="289.2" height="7.2" fill="#e5e7e9" stroke="#888" stroke-width="0.4"/>
+<rect x="810.0" y="681.2" width="213.2" height="14.4" fill="#e8daef" stroke="#888" stroke-width="0.4"/>
+<rect x="810.0" y="695.6" width="213.2" height="14.4" fill="#a9cce3" stroke="#888" stroke-width="0.4"/>
+<rect x="810.0" y="710.0" width="104.5" height="15.3" fill="#fad7a0" stroke="#888" stroke-width="0.4"/>
+<rect x="810.0" y="725.3" width="104.5" height="9.0" fill="#aed6f1" stroke="#888" stroke-width="0.4"/>
+<rect x="1121.3" y="440.0" width="19.5" height="27.0" fill="#566573" fill-opacity="0.75"/>
+<rect x="1099.9" y="467.0" width="40.9" height="36.9" fill="#566573" fill-opacity="0.75"/>
+<rect x="1075.8" y="503.9" width="65.0" height="5.4" fill="#566573" fill-opacity="0.75"/>
+<rect x="1126.5" y="509.3" width="14.3" height="45.9" fill="#566573" fill-opacity="0.75"/>
+<rect x="1126.5" y="555.2" width="14.3" height="28.8" fill="#566573" fill-opacity="0.75"/>
+<rect x="1126.5" y="584.0" width="14.3" height="97.2" fill="#566573" fill-opacity="0.75"/>
+<rect x="1126.5" y="681.2" width="14.3" height="44.1" fill="#566573" fill-opacity="0.75"/>
+<rect x="1116.0" y="725.3" width="24.8" height="9.0" fill="#566573" fill-opacity="0.75"/>
+<text x="810.00" y="752.00" font-size="9" text-anchor="start" fill="#111" font-weight="normal">scalar side wall; local feature/level envelopes only; no azimuth-resolved wall closure</text>
+<text x="20.00" y="806.00" font-size="10" text-anchor="start" fill="#111" font-weight="normal">Nominal schematic sections; local REAR-edge margin -0.090 mm is separately checked. Global zero delta does not close it.</text>
+</svg>

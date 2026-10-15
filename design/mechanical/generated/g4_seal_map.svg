@@ -1,0 +1,60 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1180" height="720" viewBox="0 0 1180 720" font-family="sans-serif">
+<title>G4 seal map</title>
+<rect x="0" y="0" width="1180" height="720" fill="#ffffff"/>
+<text x="20.00" y="26.00" font-size="13" text-anchor="start" fill="#111" font-weight="bold">G4 seal inventory and seal-path graph (G4-B, window W1): path CLOSED</text>
+<line x1="517.8" y1="401.3" x2="500.1" y2="278.6" stroke="#2471a3" stroke-width="2"/>
+<text x="508.94" y="336.96" font-size="9" text-anchor="middle" fill="#2471a3" font-weight="normal">S-COVER</text>
+<line x1="517.8" y1="401.3" x2="300.0" y2="150.0" stroke="#2471a3" stroke-width="2"/>
+<text x="408.88" y="272.65" font-size="9" text-anchor="middle" fill="#2471a3" font-weight="normal">S-CB-MAIN</text>
+<line x1="517.8" y1="401.3" x2="466.3" y2="514.1" stroke="#2471a3" stroke-width="2"/>
+<text x="492.01" y="454.69" font-size="9" text-anchor="middle" fill="#2471a3" font-weight="normal">S-SW1</text>
+<line x1="517.8" y1="401.3" x2="362.0" y2="581.1" stroke="#2471a3" stroke-width="2"/>
+<text x="439.87" y="488.20" font-size="9" text-anchor="middle" fill="#2471a3" font-weight="normal">S-SW2</text>
+<line x1="517.8" y1="401.3" x2="238.0" y2="581.1" stroke="#2471a3" stroke-width="2"/>
+<text x="377.89" y="488.20" font-size="9" text-anchor="middle" fill="#2471a3" font-weight="normal">S-SW3</text>
+<line x1="517.8" y1="401.3" x2="133.7" y2="514.1" stroke="#2471a3" stroke-width="2"/>
+<text x="325.75" y="454.69" font-size="9" text-anchor="middle" fill="#2471a3" font-weight="normal">S-SW4</text>
+<line x1="517.8" y1="401.3" x2="82.2" y2="401.3" stroke="#2471a3" stroke-width="2"/>
+<text x="300.00" y="398.31" font-size="9" text-anchor="middle" fill="#2471a3" font-weight="normal">S-SW5</text>
+<line x1="517.8" y1="401.3" x2="99.9" y2="278.6" stroke="#2471a3" stroke-width="2"/>
+<text x="308.82" y="336.96" font-size="9" text-anchor="middle" fill="#2471a3" font-weight="normal">S-VENT</text>
+<line x1="300.0" y1="150.0" x2="181.1" y2="184.9" stroke="#2471a3" stroke-width="2"/>
+<text x="240.53" y="164.46" font-size="9" text-anchor="middle" fill="#2471a3" font-weight="normal">S-POD</text>
+<line x1="300.0" y1="150.0" x2="418.9" y2="184.9" stroke="#2471a3" stroke-width="2"/>
+<text x="359.47" y="164.46" font-size="9" text-anchor="middle" fill="#2471a3" font-weight="normal">S-CHG</text>
+<rect x="240.0" y="138.0" width="120" height="24" rx="5" fill="#fdebd0" stroke="#a04000"/>
+<text x="300.00" y="154.00" font-size="10" text-anchor="middle" fill="#111" font-weight="normal">CASEBACK</text>
+<rect x="358.9" y="172.9" width="120" height="24" rx="5" fill="#fdebd0" stroke="#a04000"/>
+<text x="418.94" y="188.92" font-size="10" text-anchor="middle" fill="#111" font-weight="normal">CHG_BLOCK</text>
+<rect x="440.1" y="266.6" width="120" height="24" rx="5" fill="#fdebd0" stroke="#a04000"/>
+<text x="500.12" y="282.61" font-size="10" text-anchor="middle" fill="#111" font-weight="normal">COVER</text>
+<rect x="457.8" y="389.3" width="120" height="24" rx="5" fill="#fdebd0" stroke="#a04000"/>
+<text x="517.76" y="405.31" font-size="10" text-anchor="middle" fill="#111" font-weight="normal">MIDCASE</text>
+<rect x="406.3" y="502.1" width="120" height="24" rx="5" fill="#fdebd0" stroke="#a04000"/>
+<text x="466.26" y="518.07" font-size="10" text-anchor="middle" fill="#111" font-weight="normal">PUSHER_SW1</text>
+<rect x="302.0" y="569.1" width="120" height="24" rx="5" fill="#fdebd0" stroke="#a04000"/>
+<text x="361.98" y="585.09" font-size="10" text-anchor="middle" fill="#111" font-weight="normal">PUSHER_SW2</text>
+<rect x="178.0" y="569.1" width="120" height="24" rx="5" fill="#fdebd0" stroke="#a04000"/>
+<text x="238.02" y="585.09" font-size="10" text-anchor="middle" fill="#111" font-weight="normal">PUSHER_SW3</text>
+<rect x="73.7" y="502.1" width="120" height="24" rx="5" fill="#fdebd0" stroke="#a04000"/>
+<text x="133.74" y="518.07" font-size="10" text-anchor="middle" fill="#111" font-weight="normal">PUSHER_SW4</text>
+<rect x="22.2" y="389.3" width="120" height="24" rx="5" fill="#fdebd0" stroke="#a04000"/>
+<text x="82.24" y="405.31" font-size="10" text-anchor="middle" fill="#111" font-weight="normal">PUSHER_SW5</text>
+<rect x="39.9" y="266.6" width="120" height="24" rx="5" fill="#fdebd0" stroke="#a04000"/>
+<text x="99.88" y="282.61" font-size="10" text-anchor="middle" fill="#111" font-weight="normal">VENT_MEMBRANE</text>
+<rect x="121.1" y="172.9" width="120" height="24" rx="5" fill="#fdebd0" stroke="#a04000"/>
+<text x="181.06" y="188.92" font-size="10" text-anchor="middle" fill="#111" font-weight="normal">WINDOW</text>
+<text x="640.00" y="50.00" font-size="11" text-anchor="start" fill="#111" font-weight="bold">seal | type | aperture</text>
+<text x="640.00" y="70.00" font-size="10" text-anchor="start" fill="#111" font-weight="normal">S-COVER | adhesive ring | FRONT_OPENING</text>
+<text x="640.00" y="86.00" font-size="10" text-anchor="start" fill="#111" font-weight="normal">S-CB-MAIN | radial O-ring | REAR_OPENING</text>
+<text x="640.00" y="102.00" font-size="10" text-anchor="start" fill="#111" font-weight="normal">S-SW1 | radial O-ring | BORE_SW1</text>
+<text x="640.00" y="118.00" font-size="10" text-anchor="start" fill="#111" font-weight="normal">S-SW2 | radial O-ring | BORE_SW2</text>
+<text x="640.00" y="134.00" font-size="10" text-anchor="start" fill="#111" font-weight="normal">S-SW3 | radial O-ring | BORE_SW3</text>
+<text x="640.00" y="150.00" font-size="10" text-anchor="start" fill="#111" font-weight="normal">S-SW4 | radial O-ring | BORE_SW4</text>
+<text x="640.00" y="166.00" font-size="10" text-anchor="start" fill="#111" font-weight="normal">S-SW5 | radial O-ring | BORE_SW5</text>
+<text x="640.00" y="182.00" font-size="10" text-anchor="start" fill="#111" font-weight="normal">S-VENT | membrane | VENT_PORT</text>
+<text x="640.00" y="198.00" font-size="10" text-anchor="start" fill="#111" font-weight="normal">S-POD | adhesive ring | POD_OPENING</text>
+<text x="640.00" y="214.00" font-size="10" text-anchor="start" fill="#111" font-weight="normal">S-CHG | adhesive ring | CHG_APERTURE</text>
+<text x="640.00" y="242.00" font-size="10" text-anchor="start" fill="#111" font-weight="normal">Caseback main seal: radial cs 0.50, h 0.390, g 0.90, gland tol 0.070 (PROVISIONAL window)</text>
+<text x="640.00" y="260.00" font-size="10" text-anchor="start" fill="#c0392b" font-weight="normal">Screws outside the seal line (lug roots). No 5 ATM qualification claim (ATM-Q1..Q6 open).</text>
+</svg>

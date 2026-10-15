@@ -1,6 +1,6 @@
 {
   "schema": "sportwatch-mech-architecture/1",
-  "status": "PROVISIONAL G2 implementation; G2 CONDITIONAL \u2014 ENGINEERING GATES OPEN; see g2.unsatisfied_acceptance. No KiCad edits or downstream authorization.",
+  "status": "PROVISIONAL G2 implementation; G2 CONDITIONAL — ENGINEERING GATES OPEN; see g2.unsatisfied_acceptance. No KiCad edits or downstream authorization.",
   "phase": "MULTI-BOARD MECHANICAL STACK + REAR SENSOR MODULE ARCHITECTURE (Rev-A)",
   "base_commit": "f02877c62524c3243def7980628d42663d905d71",
   "frozen_invariants": [
@@ -12,7 +12,7 @@
     "TPS631000 VLED converter (U401, L401, C401, C402, R406, R407) stays on MAIN.",
     "Charger contacts: separate assembly at rear east ~3 o'clock; GND/+5V/+5V/GND; no charger-positive conductor in the sensor FPC.",
     "Battery LPR454440 selected; not replaceable without owner authorization.",
-    "MAIN \u00d846 is a development envelope, not final Edge.Cuts.",
+    "MAIN Ø46 is a development envelope, not final Edge.Cuts.",
     "No watch-side permanent magnet without explicit authorization and magnetometer analysis."
   ],
   "coordinate_convention": "Front view (from display): north/12 = -Y, east/3 = +X, south/6 = +Y, west/9 = -X; MAIN origin (100,100). REAR documents must state their board-to-assembly transform explicitly; never derive pin order from a mirrored B-side view.",
@@ -20,7 +20,7 @@
   "magnet_in_watch": false,
   "battery": {
     "selected_cell": "LPR454440",
-    "nominal": "\u00d844 x 4.5 mm, 870 mAh, 3.7 V, 1C",
+    "nominal": "Ø44 x 4.5 mm, 870 mAh, 3.7 V, 1C",
     "class": "KNOWN",
     "source": "input_register.json BATT-CELL (supplier catalog table, nominal cell only)",
     "finished_pack": "SUPPLIER_DATA_REQUIRED - see supplier requests SR-BATT-PACK/PCM/GROWTH/NTC"
@@ -171,7 +171,7 @@
     "R_case_inner_nom_mm": 24.05,
     "R_case_inner_conservative_mm": 23.4,
     "class": "KNOWN",
-    "source": "MAIN envelope R 23.0 (input_register MAIN-OUTLINE); display outline 43.9 (DISPLAY-MOD, rule front_gap r<=21.95); POL 38.9 (DISPLAY-MOD); pack nominal \u00d844 (BATT-CELL); case values PARAMETRIC from stack_parameters.json radial (\u00d850-51, wall 1.0-1.6)"
+    "source": "MAIN envelope R 23.0 (input_register MAIN-OUTLINE); display outline 43.9 (DISPLAY-MOD, rule front_gap r<=21.95); POL 38.9 (DISPLAY-MOD); pack nominal Ø44 (BATT-CELL); case values PARAMETRIC from stack_parameters.json radial (Ø50-51, wall 1.0-1.6)"
   },
   "z_levels": [
     {
@@ -470,7 +470,7 @@
           21.95
         ]
       },
-      "note": "Treated as a rigid flat \u00d843.9 slab exactly as mech_model.py does; spec bounding box is 43.9 x 43.9.",
+      "note": "Treated as a rigid flat Ø43.9 slab exactly as mech_model.py does; spec bounding box is 43.9 x 43.9.",
       "az_deg": [
         0.0,
         360.0
@@ -488,11 +488,11 @@
     {
       "id": "PACK",
       "short_label": "PACK",
-      "label": "Battery pack, nominal \u00d844 projection",
+      "label": "Battery pack, nominal Ø44 projection",
       "kind": "body",
       "class": "KNOWN",
       "confidence": "HIGH",
-      "source": "input_register BATT-CELL (LPR454440 nominal \u00d844 x 4.5); tolerance/PCM lobe SUPPLIER_DATA_REQUIRED",
+      "source": "input_register BATT-CELL (LPR454440 nominal Ø44 x 4.5); tolerance/PCM lobe SUPPLIER_DATA_REQUIRED",
       "z_levels": [
         "BATTERY"
       ],
@@ -800,7 +800,7 @@
           123.5
         ]
       },
-      "note": "Case-supported opportunity; no boss geometry approved. Mostly outside the \u00d846 board.",
+      "note": "Case-supported opportunity; no boss geometry approved. Mostly outside the Ø46 board.",
       "az_deg": [
         200.3,
         213.3
@@ -1011,7 +1011,7 @@
           ]
         ]
       },
-      "note": "Bare \u00d81.0 pads on F.Cu; accessible only before display install.",
+      "note": "Bare Ø1.0 pads on F.Cu; accessible only before display install.",
       "az_deg": [
         18.2,
         49.9
@@ -2257,7 +2257,8 @@
       "g2_status": "REMAINS_OPEN",
       "g2_evidence": "U8 retained F.Cu north. G1 valid necessary bound 18.00 < 21.95; no relocation or GNSS change studied. RF list remains required.",
       "g3_evidence": "G3 preserves G2 status and gates; no closure inferred.",
-      "g3_status": "REMAINS_OPEN"
+      "g3_status": "REMAINS_OPEN",
+      "g4_status": "REMAINS_OPEN"
     },
     {
       "id": "C2-DISPLAY-SIDE-CONNECTORS",
@@ -2317,7 +2318,8 @@
       "g2_status": "REMAINS_OPEN",
       "g2_evidence": "G2 allocation is provisional; prior geometry/qualification dependency remains. See generated option checks and supplier requirements.",
       "g3_evidence": "G3 preserves G2 status and gates; no closure inferred.",
-      "g3_status": "REMAINS_OPEN"
+      "g3_status": "REMAINS_OPEN",
+      "g4_status": "REMAINS_OPEN"
     },
     {
       "id": "C3-EDGE-WRAP",
@@ -2372,7 +2374,8 @@
       "g2_status": "SUPPLIER_DATA_GATED",
       "g2_evidence": "Numeric supplier acceptance requirements in G2 supplier requests; conservative geometry/qualification is not closed.",
       "g3_evidence": "G3 preserves G2 status and gates; no closure inferred.",
-      "g3_status": "REMAINS_OPEN"
+      "g3_status": "REMAINS_OPEN",
+      "g4_status": "SUPPLIER_DATA_GATED"
     },
     {
       "id": "C4-CHARGER-PATH",
@@ -2444,7 +2447,8 @@
       "g2_status": "REMAINS_OPEN",
       "g2_evidence": "G2 allocation is provisional; prior geometry/qualification dependency remains. See generated option checks and supplier requirements.",
       "g3_evidence": "G3 preserves G2 status and gates; no closure inferred.",
-      "g3_status": "REMAINS_OPEN"
+      "g3_status": "REMAINS_OPEN",
+      "g4_status": "REMAINS_OPEN"
     },
     {
       "id": "C5-SOUTH-CROWDING",
@@ -2500,7 +2504,8 @@
       "g2_status": "DEFERRED_G3",
       "g2_evidence": "G3 REAR optical/guarded-analog integration, including inner-face attach and lower-web crossings, remains separately authorized work.",
       "g3_evidence": "Candidate geometry is in g3.candidates; no recommended topology until nominal hard checks pass. Tail alternatives do not change G2 allocation.",
-      "g3_status": "SUPPLIER_DATA_GATED"
+      "g3_status": "SUPPLIER_DATA_GATED",
+      "g4_status": "OWNER_DECISION_GATED"
     },
     {
       "id": "C6-DISPLAY-FPC-FOLD",
@@ -2546,7 +2551,8 @@
       "g2_status": "SUPPLIER_DATA_GATED",
       "g2_evidence": "Numeric supplier acceptance requirements in G2 supplier requests; conservative geometry/qualification is not closed.",
       "g3_evidence": "G3 preserves G2 status and gates; no closure inferred.",
-      "g3_status": "REMAINS_OPEN"
+      "g3_status": "REMAINS_OPEN",
+      "g4_status": "SUPPLIER_DATA_GATED"
     },
     {
       "id": "C7-WIFI-BEYOND-BOARD",
@@ -2554,7 +2560,7 @@
       "brief_candidate": 7,
       "verdict": "CONFIRMED",
       "severity": "MEDIUM",
-      "title": "Wi-Fi reservation extends beyond the \u00d846 board",
+      "title": "Wi-Fi reservation extends beyond the Ø46 board",
       "description": "Confirmed and tightened: the register states r up to about 24.5; the rectangle corner at (124,115.5) is at r 28.57, beyond the case outer radius (25.0-25.5). The rectangle is therefore not a valid volume: the usable radiator space is the arc sector az 107.7-128.8, r 20.6-25.25, a case/radome volume.",
       "evidence": [
         "phase1_placement.json reservations[2] [119,107.5,124,115.5]",
@@ -2584,11 +2590,12 @@
       ],
       "gate": "before antenna selection / case co-design",
       "g1_status": "DEFERRED",
-      "g1_evidence": "Deferred to G3 case co-design (Wi-Fi radiator volume extends beyond the \u00d846 development envelope).",
+      "g1_evidence": "Deferred to G3 case co-design (Wi-Fi radiator volume extends beyond the Ø46 development envelope).",
       "g2_status": "REMAINS_OPEN",
       "g2_evidence": "Deferred to G4 case + final MAIN outline (status REMAINS_OPEN; no DEFERRED_G4 enum in contract). Carry G1 cover fit -1.100 mm conservative and residual wall -0.150 mm nominal; land clearance -0.060 mm conservative where applicable.",
       "g3_evidence": "Numeric section/residual and unchanged radial/cover margins handed off; G4 not authorized.",
-      "g3_status": "DEFERRED_G4"
+      "g3_status": "DEFERRED_G4",
+      "g4_status": "DEFERRED_G5"
     },
     {
       "id": "C8-GNSS-OCCUPIED",
@@ -2625,7 +2632,8 @@
       "g2_status": "REMAINS_OPEN",
       "g2_evidence": "G2 allocation is provisional; prior geometry/qualification dependency remains. See generated option checks and supplier requirements.",
       "g3_evidence": "G3 preserves G2 status and gates; no closure inferred.",
-      "g3_status": "REMAINS_OPEN"
+      "g3_status": "REMAINS_OPEN",
+      "g4_status": "DEFERRED_G5"
     },
     {
       "id": "C9-THICK-CORNER",
@@ -2664,7 +2672,8 @@
       "g2_status": "RESOLVED_BY_G2",
       "g2_evidence": "OD-THICK-REVA applied; see generated G2-REVA nominal/RSS compliance. HI result separately reported; no gated lever credited.",
       "g3_evidence": "G3 preserves G2 status and gates; no closure inferred.",
-      "g3_status": "REMAINS_OPEN"
+      "g3_status": "REMAINS_OPEN",
+      "g4_status": "REMAINS_OPEN"
     },
     {
       "id": "X10-OPTICS-HEIGHT-UNKNOWN",
@@ -2700,7 +2709,8 @@
       "g2_status": "SUPPLIER_DATA_GATED",
       "g2_evidence": "Numeric supplier acceptance requirements in G2 supplier requests; conservative geometry/qualification is not closed.",
       "g3_evidence": "Manufacturer height gates remain open; stack-neutral skin maximum and OD-THICK limits are computed in g3.height_thresholds.",
-      "g3_status": "SUPPLIER_DATA_GATED"
+      "g3_status": "SUPPLIER_DATA_GATED",
+      "g4_status": "SUPPLIER_DATA_GATED"
     },
     {
       "id": "X11-POD-FOOTPRINT",
@@ -2743,7 +2753,8 @@
       "g2_status": "DEFERRED_G3",
       "g2_evidence": "G3 REAR optical/guarded-analog integration, including inner-face attach and lower-web crossings, remains separately authorized work.",
       "g3_evidence": "Candidate geometry is in g3.candidates; no recommended topology until nominal hard checks pass. Tail alternatives do not change G2 allocation.",
-      "g3_status": "SUPPLIER_DATA_GATED"
+      "g3_status": "SUPPLIER_DATA_GATED",
+      "g4_status": "OWNER_DECISION_GATED"
     },
     {
       "id": "X12-J1502-FACE",
@@ -2788,7 +2799,8 @@
       "g2_status": "DEFERRED_G3",
       "g2_evidence": "G3 REAR optical/guarded-analog integration, including inner-face attach and lower-web crossings, remains separately authorized work.",
       "g3_evidence": "Candidate geometry is in g3.candidates; no recommended topology until nominal hard checks pass. Tail alternatives do not change G2 allocation.",
-      "g3_status": "SUPPLIER_DATA_GATED"
+      "g3_status": "SUPPLIER_DATA_GATED",
+      "g4_status": "SUPPLIER_DATA_GATED"
     },
     {
       "id": "X13-EDGE-CROSSINGS",
@@ -2857,7 +2869,8 @@
       "g2_status": "REMAINS_OPEN",
       "g2_evidence": "G2 allocation is provisional; prior geometry/qualification dependency remains. See generated option checks and supplier requirements.",
       "g3_evidence": "G3 preserves G2 status and gates; no closure inferred.",
-      "g3_status": "REMAINS_OPEN"
+      "g3_status": "REMAINS_OPEN",
+      "g4_status": "SUPPLIER_DATA_GATED"
     },
     {
       "id": "X14-SUPPORT-GAP",
@@ -2900,7 +2913,8 @@
       "g2_status": "REMAINS_OPEN",
       "g2_evidence": "Deferred to G4 case + final MAIN outline (status REMAINS_OPEN; no DEFERRED_G4 enum in contract). Carry G1 cover fit -1.100 mm conservative and residual wall -0.150 mm nominal; land clearance -0.060 mm conservative where applicable.",
       "g3_evidence": "Numeric section/residual and unchanged radial/cover margins handed off; G4 not authorized.",
-      "g3_status": "DEFERRED_G4"
+      "g3_status": "DEFERRED_G4",
+      "g4_status": "REMAINS_OPEN"
     },
     {
       "id": "X15-NE-CROWDING",
@@ -2946,7 +2960,8 @@
       "g2_status": "REMAINS_OPEN",
       "g2_evidence": "Deferred to G4 case + final MAIN outline (status REMAINS_OPEN; no DEFERRED_G4 enum in contract). Carry G1 cover fit -1.100 mm conservative and residual wall -0.150 mm nominal; land clearance -0.060 mm conservative where applicable.",
       "g3_evidence": "Numeric section/residual and unchanged radial/cover margins handed off; G4 not authorized.",
-      "g3_status": "DEFERRED_G4"
+      "g3_status": "DEFERRED_G4",
+      "g4_status": "REMAINS_OPEN"
     },
     {
       "id": "X16-MAGNETOMETER",
@@ -2996,7 +3011,8 @@
       "g2_status": "REMAINS_OPEN",
       "g2_evidence": "G2 allocation is provisional; prior geometry/qualification dependency remains. See generated option checks and supplier requirements.",
       "g3_evidence": "Computed projected overlaps / window proxies disclosed; MG-MAG, MG-WINDOW-XTALK and thermal measurement cannot be closed by geometry.",
-      "g3_status": "MEASUREMENT_GATED"
+      "g3_status": "MEASUREMENT_GATED",
+      "g4_status": "MEASUREMENT_GATED"
     },
     {
       "id": "X17-GNSS-ALL-HEIGHTS",
@@ -3038,7 +3054,8 @@
       "g2_status": "REMAINS_OPEN",
       "g2_evidence": "G2 allocation is provisional; prior geometry/qualification dependency remains. See generated option checks and supplier requirements.",
       "g3_evidence": "G3 preserves G2 status and gates; no closure inferred.",
-      "g3_status": "REMAINS_OPEN"
+      "g3_status": "REMAINS_OPEN",
+      "g4_status": "DEFERRED_G5"
     },
     {
       "id": "X18-PACK-EDGE",
@@ -3047,7 +3064,7 @@
       "verdict": "NEW",
       "severity": "LOW",
       "title": "Support search windows and battery exit overlap the nominal pack disc",
-      "description": "SUP_SE, SUP_SW and SUP_NE (support search windows, Z levels MAIN + BATTERY) and BATT_EXIT enter the \u00d844 nominal projection (R 22.0) at the BATTERY level: SUP_SE by 2.32 mm (closest point R 19.68), BATT_EXIT by 2.27 mm (R 19.73), SUP_SW by 0.73 mm (R 21.27) and SUP_NE by 0.29 mm (R 21.71, corner (113.5, 83.0); intersection 0.09 mm2, a sliver). Against the tolerance-inclusive pack (R_pack_max 22.15 nominal / 22.25 conservative) the SUP_NE corner penetrates 0.44 / 0.54 mm. No support or boss geometry is approved: the three windows are search regions, so the overlap is a constraint on the later case design, not a built interference. A usable support land must start at R_channel_inner (R_pack_max + c_radial + carrier wall: 23.05 nominal / 23.85 conservative) or be recessed around the pack; of the in-case window areas 14.8 / 17.0 / 10.7 mm2 (SW / SE / NE) 10.8 / 6.1 / 8.9 mm2 remain at the nominal and 6.9 / 2.6 / 6.1 mm2 at the conservative R_channel_inner, and the NE remainder still competes with the NE sector (X15). BATT_EXIT is the pack's own wire-exit zone (entirely inside R_channel_inner) and is resolved by the finished-pack / PCM drawing (SR-BATT-PCM), not by clipping.",
+      "description": "SUP_SE, SUP_SW and SUP_NE (support search windows, Z levels MAIN + BATTERY) and BATT_EXIT enter the Ø44 nominal projection (R 22.0) at the BATTERY level: SUP_SE by 2.32 mm (closest point R 19.68), BATT_EXIT by 2.27 mm (R 19.73), SUP_SW by 0.73 mm (R 21.27) and SUP_NE by 0.29 mm (R 21.71, corner (113.5, 83.0); intersection 0.09 mm2, a sliver). Against the tolerance-inclusive pack (R_pack_max 22.15 nominal / 22.25 conservative) the SUP_NE corner penetrates 0.44 / 0.54 mm. No support or boss geometry is approved: the three windows are search regions, so the overlap is a constraint on the later case design, not a built interference. A usable support land must start at R_channel_inner (R_pack_max + c_radial + carrier wall: 23.05 nominal / 23.85 conservative) or be recessed around the pack; of the in-case window areas 14.8 / 17.0 / 10.7 mm2 (SW / SE / NE) 10.8 / 6.1 / 8.9 mm2 remain at the nominal and 6.9 / 2.6 / 6.1 mm2 at the conservative R_channel_inner, and the NE remainder still competes with the NE sector (X15). BATT_EXIT is the pack's own wire-exit zone (entirely inside R_channel_inner) and is resolved by the finished-pack / PCM drawing (SR-BATT-PCM), not by clipping.",
       "evidence": [
         "arch_diagrams.py overlap detector (no area threshold): PACK x BATT_EXIT 2.46, PACK x SUP_SW 0.69, PACK x SUP_SE 6.02, PACK x SUP_NE 0.09 mm2 (BATTERY level)",
         "architecture.json pack_edge.results: exact closest approach R 19.68 (SUP_SE), 19.73 (BATT_EXIT), 21.27 (SUP_SW), 21.71 (SUP_NE) against R 22.0",
@@ -3084,7 +3101,8 @@
       "g2_status": "SUPPLIER_DATA_GATED",
       "g2_evidence": "Numeric supplier acceptance requirements in G2 supplier requests; conservative geometry/qualification is not closed.",
       "g3_evidence": "G3 preserves G2 status and gates; no closure inferred.",
-      "g3_status": "REMAINS_OPEN"
+      "g3_status": "REMAINS_OPEN",
+      "g4_status": "SUPPLIER_DATA_GATED"
     },
     {
       "id": "X19-BCU-0603",
@@ -3122,7 +3140,8 @@
       "g2_status": "RESOLVED_BY_G2",
       "g2_evidence": "P-0402 adopted as a credible later task. DC-bias/effective capacitance evidence remains mandatory before electrical implementation.",
       "g3_evidence": "G3 preserves G2 status and gates; no closure inferred.",
-      "g3_status": "REMAINS_OPEN"
+      "g3_status": "REMAINS_OPEN",
+      "g4_status": "REMAINS_OPEN"
     },
     {
       "id": "X20-GROWTH-VS-OPTICS",
@@ -3156,7 +3175,8 @@
       "g2_status": "SUPPLIER_DATA_GATED",
       "g2_evidence": "Numeric supplier acceptance requirements in G2 supplier requests; conservative geometry/qualification is not closed.",
       "g3_evidence": "Support reservations and load path computed; carrier load and pack-growth qualification remain open.",
-      "g3_status": "SUPPLIER_DATA_GATED"
+      "g3_status": "SUPPLIER_DATA_GATED",
+      "g4_status": "REMAINS_OPEN"
     },
     {
       "id": "X21-INGRESS-UNDEFINED",
@@ -3189,7 +3209,8 @@
       "g2_status": "REMAINS_OPEN",
       "g2_evidence": "Deferred to G4 case + final MAIN outline (status REMAINS_OPEN; no DEFERRED_G4 enum in contract). Carry G1 cover fit -1.100 mm conservative and residual wall -0.150 mm nominal; land clearance -0.060 mm conservative where applicable.",
       "g3_evidence": "Numeric section/residual and unchanged radial/cover margins handed off; G4 not authorized.",
-      "g3_status": "DEFERRED_G4"
+      "g3_status": "DEFERRED_G4",
+      "g4_status": "REMAINS_OPEN"
     },
     {
       "id": "X22-UNMODELLED-Z",
@@ -3219,7 +3240,8 @@
       "g2_status": "REMAINS_OPEN",
       "g2_evidence": "Deferred to G4 case + final MAIN outline (status REMAINS_OPEN; no DEFERRED_G4 enum in contract). Carry G1 cover fit -1.100 mm conservative and residual wall -0.150 mm nominal; land clearance -0.060 mm conservative where applicable.",
       "g3_evidence": "Numeric section/residual and unchanged radial/cover margins handed off; G4 not authorized.",
-      "g3_status": "DEFERRED_G4"
+      "g3_status": "DEFERRED_G4",
+      "g4_status": "REMAINS_OPEN"
     },
     {
       "id": "X23-WINDOW-CROSSTALK",
@@ -3261,7 +3283,8 @@
       "g2_status": "SUPPLIER_DATA_GATED",
       "g2_evidence": "Numeric supplier acceptance requirements in G2 supplier requests; conservative geometry/qualification is not closed.",
       "g3_evidence": "Computed projected overlaps / window proxies disclosed; MG-MAG, MG-WINDOW-XTALK and thermal measurement cannot be closed by geometry.",
-      "g3_status": "MEASUREMENT_GATED"
+      "g3_status": "MEASUREMENT_GATED",
+      "g4_status": "OWNER_DECISION_GATED"
     },
     {
       "id": "X24-DISPLAY-LAND",
@@ -3334,7 +3357,8 @@
       "g2_status": "REMAINS_OPEN",
       "g2_evidence": "Deferred to G4 case + final MAIN outline (status REMAINS_OPEN; no DEFERRED_G4 enum in contract). Carry G1 cover fit -1.100 mm conservative and residual wall -0.150 mm nominal; land clearance -0.060 mm conservative where applicable.",
       "g3_evidence": "Numeric section/residual and unchanged radial/cover margins handed off; G4 not authorized.",
-      "g3_status": "DEFERRED_G4"
+      "g3_status": "DEFERRED_G4",
+      "g4_status": "SUPPLIER_DATA_GATED"
     },
     {
       "id": "X25-COVER-CASE-FIT",
@@ -3373,7 +3397,8 @@
       "g2_status": "REMAINS_OPEN",
       "g2_evidence": "Deferred to G4 case + final MAIN outline (status REMAINS_OPEN; no DEFERRED_G4 enum in contract). Carry G1 cover fit -1.100 mm conservative and residual wall -0.150 mm nominal; land clearance -0.060 mm conservative where applicable.",
       "g3_evidence": "Numeric section/residual and unchanged radial/cover margins handed off; G4 not authorized.",
-      "g3_status": "DEFERRED_G4"
+      "g3_status": "DEFERRED_G4",
+      "g4_status": "REMAINS_OPEN"
     },
     {
       "id": "G2-CROSSING-HEIGHT",
@@ -3400,7 +3425,8 @@
       "title": "Crossing Height",
       "gate": "G2 review / supplier data before implementation",
       "g3_evidence": "G3 preserves G2 status and gates; no closure inferred.",
-      "g3_status": "REMAINS_OPEN"
+      "g3_status": "REMAINS_OPEN",
+      "g4_status": "SUPPLIER_DATA_GATED"
     },
     {
       "id": "G2-BOOK-FOLD",
@@ -3427,7 +3453,8 @@
       "title": "Book Fold",
       "gate": "G2 review / supplier data before implementation",
       "g3_evidence": "G3 preserves G2 status and gates; no closure inferred.",
-      "g3_status": "REMAINS_OPEN"
+      "g3_status": "REMAINS_OPEN",
+      "g4_status": "REMAINS_OPEN"
     },
     {
       "id": "G2-PROBE-RELIEF",
@@ -3454,7 +3481,8 @@
       "title": "Probe Relief",
       "gate": "G2 review / supplier data before implementation",
       "g3_evidence": "G3 preserves G2 status and gates; no closure inferred.",
-      "g3_status": "REMAINS_OPEN"
+      "g3_status": "REMAINS_OPEN",
+      "g4_status": "REMAINS_OPEN"
     },
     {
       "id": "G2-BACK-STACK",
@@ -3481,7 +3509,8 @@
       "title": "Back Stack",
       "gate": "G2 review / supplier data before implementation",
       "g3_evidence": "G3 preserves G2 status and gates; no closure inferred.",
-      "g3_status": "REMAINS_OPEN"
+      "g3_status": "REMAINS_OPEN",
+      "g4_status": "REMAINS_OPEN"
     },
     {
       "id": "G2-DISCOVERED-INTERFACES",
@@ -3508,7 +3537,8 @@
       "title": "Discovered Interfaces",
       "gate": "G2 review / supplier data before implementation",
       "g3_evidence": "G3 preserves G2 status and gates; no closure inferred.",
-      "g3_status": "REMAINS_OPEN"
+      "g3_status": "REMAINS_OPEN",
+      "g4_status": "SUPPLIER_DATA_GATED"
     }
   ],
   "owner_decisions": [
@@ -3576,7 +3606,7 @@
         "t_display_fpc_fold"
       ],
       "footprints": [],
-      "g2_status": "DRAFTED / ISSUE-READY \u2014 OWNER ISSUES",
+      "g2_status": "DRAFTED / ISSUE-READY — OWNER ISSUES",
       "g2_numeric_acceptance": [
         {
           "option": "J1-RETAIN",
@@ -3627,7 +3657,7 @@
       "id": "SR-BATT-PACK",
       "register_id": "BATT-PACK",
       "who": "Battery supplier (LPR454440)",
-      "what": "Finished protected-pack drawing: max \u00d8 and thickness, tolerance, edge seal, tape/insulation",
+      "what": "Finished protected-pack drawing: max Ø and thickness, tolerance, edge seal, tape/insulation",
       "affects": "battery_zone, R_pack_max, annulus",
       "gate": "before final outline/case",
       "parametric_stand_in": "tol_pack_thick 0-0.3; tol_pack_dia 0.2-0.5",
@@ -3637,7 +3667,7 @@
         "tol_pack_dia"
       ],
       "footprints": [],
-      "g2_status": "DRAFTED / ISSUE-READY \u2014 OWNER ISSUES",
+      "g2_status": "DRAFTED / ISSUE-READY — OWNER ISSUES",
       "g2_numeric_acceptance": [
         {
           "finished_diameter_max_mm": 44.3,
@@ -3659,7 +3689,7 @@
       "reversible_until": "carrier design",
       "parameters": [],
       "footprints": [],
-      "g2_status": "DRAFTED / ISSUE-READY \u2014 OWNER ISSUES",
+      "g2_status": "DRAFTED / ISSUE-READY — OWNER ISSUES",
       "g2_numeric_acceptance": [
         {
           "option": "J201-F.Cu",
@@ -3819,7 +3849,7 @@
         "h_rear_inner"
       ],
       "footprints": [],
-      "g2_status": "DRAFTED / ISSUE-READY \u2014 OWNER ISSUES",
+      "g2_status": "DRAFTED / ISSUE-READY — OWNER ISSUES",
       "g2_numeric_acceptance": [
         {
           "option": "J1501-F.Cu",
@@ -3990,7 +4020,7 @@
       "reversible_until": "module selection",
       "parameters": [],
       "footprints": [],
-      "g2_status": "DRAFTED / ISSUE-READY \u2014 OWNER ISSUES",
+      "g2_status": "DRAFTED / ISSUE-READY — OWNER ISSUES",
       "g2_numeric_acceptance": [
         {
           "option": "J202-WEST-F.Cu",
@@ -4198,7 +4228,7 @@
       "parameters": [],
       "footprints": [],
       "g1_note": "kept gated pending supplier/component selection (G1_BRIEF.md section 6); no supplier invented in G1",
-      "g2_status": "DRAFTED / ISSUE-READY \u2014 OWNER ISSUES",
+      "g2_status": "DRAFTED / ISSUE-READY — OWNER ISSUES",
       "g2_numeric_acceptance": [
         {
           "option": "U7-F.Cu",
@@ -4325,7 +4355,7 @@
       "reversible_until": "perimeter freeze",
       "parameters": [],
       "footprints": [],
-      "g2_status": "DRAFTED / ISSUE-READY \u2014 OWNER ISSUES",
+      "g2_status": "DRAFTED / ISSUE-READY — OWNER ISSUES",
       "g2_numeric_acceptance": [
         {
           "sealing_target_ATM": 5,
@@ -4377,7 +4407,7 @@
       "parameters": [],
       "footprints": [],
       "g1_note": "kept gated pending supplier/component selection (G1_BRIEF.md section 6); no supplier invented in G1",
-      "g2_status": "DRAFTED / ISSUE-READY \u2014 OWNER ISSUES",
+      "g2_status": "DRAFTED / ISSUE-READY — OWNER ISSUES",
       "g2_numeric_acceptance": [
         {
           "interface": "AE1420",
@@ -4444,7 +4474,7 @@
       "reversible_until": "fixture design",
       "parameters": [],
       "footprints": [],
-      "g2_status": "DRAFTED / ISSUE-READY \u2014 OWNER ISSUES",
+      "g2_status": "DRAFTED / ISSUE-READY — OWNER ISSUES",
       "g2_numeric_acceptance": [
         {
           "option": "J1301-RETAIN",
@@ -6702,7 +6732,7 @@
       {
         "id": "C7-WIFI-BEYOND-BOARD",
         "g1_status": "DEFERRED",
-        "g1_evidence": "Deferred to G3 case co-design (Wi-Fi radiator volume extends beyond the \u00d846 development envelope)."
+        "g1_evidence": "Deferred to G3 case co-design (Wi-Fi radiator volume extends beyond the Ø46 development envelope)."
       },
       {
         "id": "C8-GNSS-OCCUPIED",
@@ -6814,7 +6844,7 @@
     "schema": "sportwatch-g2-result/1",
     "evidence_class": "PROJECT_DERIVED",
     "evidence_policy": "Every result object declares one evidence_class inherited by its scalar fields; nested objects override it. Planning envelopes are not supplier dimensions.",
-    "verdict": "G2 CONDITIONAL \u2014 ENGINEERING GATES OPEN",
+    "verdict": "G2 CONDITIONAL — ENGINEERING GATES OPEN",
     "acceptance_complete": false,
     "unsatisfied_acceptance": [
       "AE1420: supplier-controlled feed construction prevents a final length/bend/Z allocation (acceptance 2).",
@@ -15938,7 +15968,7 @@
       {
         "id": "SR-FPC-MECH",
         "evidence_class": "SUPPLIER_DATA_REQUIRED",
-        "status": "DRAFTED / ISSUE-READY \u2014 OWNER ISSUES",
+        "status": "DRAFTED / ISSUE-READY — OWNER ISSUES",
         "numeric_acceptance": [
           {
             "option": "J1501-F.Cu",
@@ -16100,7 +16130,7 @@
       {
         "id": "SR-BATT-PCM",
         "evidence_class": "SUPPLIER_DATA_REQUIRED",
-        "status": "DRAFTED / ISSUE-READY \u2014 OWNER ISSUES",
+        "status": "DRAFTED / ISSUE-READY — OWNER ISSUES",
         "numeric_acceptance": [
           {
             "option": "J201-F.Cu",
@@ -16222,7 +16252,7 @@
       {
         "id": "SR-BATT-PACK",
         "evidence_class": "SUPPLIER_DATA_REQUIRED",
-        "status": "DRAFTED / ISSUE-READY \u2014 OWNER ISSUES",
+        "status": "DRAFTED / ISSUE-READY — OWNER ISSUES",
         "numeric_acceptance": [
           {
             "finished_diameter_max_mm": 44.3,
@@ -16235,7 +16265,7 @@
       {
         "id": "SR-CHG-MECH",
         "evidence_class": "SUPPLIER_DATA_REQUIRED",
-        "status": "DRAFTED / ISSUE-READY \u2014 OWNER ISSUES",
+        "status": "DRAFTED / ISSUE-READY — OWNER ISSUES",
         "numeric_acceptance": [
           {
             "option": "J202-WEST-F.Cu",
@@ -16433,7 +16463,7 @@
       {
         "id": "SR-TAGCONNECT",
         "evidence_class": "SUPPLIER_DATA_REQUIRED",
-        "status": "DRAFTED / ISSUE-READY \u2014 OWNER ISSUES",
+        "status": "DRAFTED / ISSUE-READY — OWNER ISSUES",
         "numeric_acceptance": [
           {
             "option": "J1301-RETAIN",
@@ -16454,7 +16484,7 @@
       {
         "id": "SR-LRA",
         "evidence_class": "SUPPLIER_DATA_REQUIRED",
-        "status": "DRAFTED / ISSUE-READY \u2014 OWNER ISSUES",
+        "status": "DRAFTED / ISSUE-READY — OWNER ISSUES",
         "numeric_acceptance": [
           {
             "option": "U7-F.Cu",
@@ -16572,7 +16602,7 @@
       {
         "id": "SR-BUTTONS",
         "evidence_class": "SUPPLIER_DATA_REQUIRED",
-        "status": "DRAFTED / ISSUE-READY \u2014 OWNER ISSUES",
+        "status": "DRAFTED / ISSUE-READY — OWNER ISSUES",
         "numeric_acceptance": [
           {
             "sealing_target_ATM": 5,
@@ -16614,7 +16644,7 @@
       {
         "id": "SR-DISPLAY-FPC",
         "evidence_class": "SUPPLIER_DATA_REQUIRED",
-        "status": "DRAFTED / ISSUE-READY \u2014 OWNER ISSUES",
+        "status": "DRAFTED / ISSUE-READY — OWNER ISSUES",
         "numeric_acceptance": [
           {
             "option": "J1-RETAIN",
@@ -16636,7 +16666,7 @@
       {
         "id": "SR-ANTENNAS",
         "evidence_class": "SUPPLIER_DATA_REQUIRED",
-        "status": "DRAFTED / ISSUE-READY \u2014 OWNER ISSUES",
+        "status": "DRAFTED / ISSUE-READY — OWNER ISSUES",
         "numeric_acceptance": [
           {
             "interface": "AE1420",
@@ -17311,7 +17341,7 @@
         "satisfied": false
       },
       "11": {
-        "reason": "G2 CLOSED \u2014 PASS WITH SUPPLIER/ENGINEERING GATES recorded outside immutable G2 records",
+        "reason": "G2 CLOSED — PASS WITH SUPPLIER/ENGINEERING GATES recorded outside immutable G2 records",
         "satisfied": true
       },
       "2": {
@@ -17339,7 +17369,7 @@
         "satisfied": true
       },
       "8": {
-        "reason": "Tool enforces source pins, deterministic regeneration and authorized diff scope; run all \u00a710 external validation commands",
+        "reason": "Tool enforces source pins, deterministic regeneration and authorized diff scope; run all §10 external validation commands",
         "satisfied": true
       },
       "9": {
@@ -33813,7 +33843,7 @@
                 "coplanar_guard": "L1 PD_GND fully surrounds each PD_IN; extend L2 shield below PD courtyard",
                 "evidence_class": "MANUFACTURER_VERIFIED",
                 "ground_edge": "C3/C4/D3 short at WLP edge to one local GND via per AFE; individual capacitor ground vias",
-                "source": "MAX86140/MAX86141 Rev5 p49\u201352",
+                "source": "MAX86140/MAX86141 Rev5 p49–52",
                 "verification": "Reservation study only; copper continuity, via count and absence of signal crossings must be verified in separately authorized implementation"
               },
               "vled_entries": [
@@ -37682,7 +37712,7 @@
                 }
               ],
               "evidence_class": "PROJECT_DERIVED",
-              "load_path": "window \u2192 pod frame \u2192 hard stops \u2192 carrier; never through optical parts or pack",
+              "load_path": "window → pod frame → hard stops → carrier; never through optical parts or pack",
               "loads": "SUPPLIER_DATA_REQUIRED: compression/deflection proof at OD-WATER qualification; no load capacity invented",
               "minimum_count": 3,
               "pass_check": false,
@@ -51684,7 +51714,7 @@
                 "coplanar_guard": "L1 PD_GND fully surrounds each PD_IN; extend L2 shield below PD courtyard",
                 "evidence_class": "MANUFACTURER_VERIFIED",
                 "ground_edge": "C3/C4/D3 short at WLP edge to one local GND via per AFE; individual capacitor ground vias",
-                "source": "MAX86140/MAX86141 Rev5 p49\u201352",
+                "source": "MAX86140/MAX86141 Rev5 p49–52",
                 "verification": "Reservation study only; copper continuity, via count and absence of signal crossings must be verified in separately authorized implementation"
               },
               "vled_entries": [
@@ -59157,7 +59187,7 @@
                 }
               ],
               "evidence_class": "PROJECT_DERIVED",
-              "load_path": "window \u2192 pod frame \u2192 hard stops \u2192 carrier; never through optical parts or pack",
+              "load_path": "window → pod frame → hard stops → carrier; never through optical parts or pack",
               "loads": "SUPPLIER_DATA_REQUIRED: compression/deflection proof at OD-WATER qualification; no load capacity invented",
               "minimum_count": 3,
               "pass_check": true,
@@ -73316,7 +73346,7 @@
                 "coplanar_guard": "L1 PD_GND fully surrounds each PD_IN; extend L2 shield below PD courtyard",
                 "evidence_class": "MANUFACTURER_VERIFIED",
                 "ground_edge": "C3/C4/D3 short at WLP edge to one local GND via per AFE; individual capacitor ground vias",
-                "source": "MAX86140/MAX86141 Rev5 p49\u201352",
+                "source": "MAX86140/MAX86141 Rev5 p49–52",
                 "verification": "Reservation study only; copper continuity, via count and absence of signal crossings must be verified in separately authorized implementation"
               },
               "vled_entries": [
@@ -77169,7 +77199,7 @@
                 }
               ],
               "evidence_class": "PROJECT_DERIVED",
-              "load_path": "window \u2192 pod frame \u2192 hard stops \u2192 carrier; never through optical parts or pack",
+              "load_path": "window → pod frame → hard stops → carrier; never through optical parts or pack",
               "loads": "SUPPLIER_DATA_REQUIRED: compression/deflection proof at OD-WATER qualification; no load capacity invented",
               "minimum_count": 3,
               "pass_check": true,
@@ -100355,7 +100385,7 @@
                 "strain_relief_sector_fit": true
               }
             },
-            "disposition": "Local land reservation alternative permitted by \u00a76.4.2; no G2 input/corridor change. Two-row tail fanout and its continued under-run width require supplier drawing; not qualified.",
+            "disposition": "Local land reservation alternative permitted by §6.4.2; no G2 input/corridor change. Two-row tail fanout and its continued under-run width require supplier drawing; not qualified.",
             "evidence_class": "PROJECT_DERIVED",
             "id": "two_row-r12.55-a166.05",
             "nominal_fit": true,
@@ -122915,7 +122945,7 @@
                 "coplanar_guard": "L1 PD_GND fully surrounds each PD_IN; extend L2 shield below PD courtyard",
                 "evidence_class": "MANUFACTURER_VERIFIED",
                 "ground_edge": "C3/C4/D3 short at WLP edge to one local GND via per AFE; individual capacitor ground vias",
-                "source": "MAX86140/MAX86141 Rev5 p49\u201352",
+                "source": "MAX86140/MAX86141 Rev5 p49–52",
                 "verification": "Reservation study only; copper continuity, via count and absence of signal crossings must be verified in separately authorized implementation"
               },
               "vled_entries": [
@@ -126788,7 +126818,7 @@
                 }
               ],
               "evidence_class": "PROJECT_DERIVED",
-              "load_path": "window \u2192 pod frame \u2192 hard stops \u2192 carrier; never through optical parts or pack",
+              "load_path": "window → pod frame → hard stops → carrier; never through optical parts or pack",
               "loads": "SUPPLIER_DATA_REQUIRED: compression/deflection proof at OD-WATER qualification; no load capacity invented",
               "minimum_count": 3,
               "pass_check": false,
@@ -140890,7 +140920,7 @@
                 "coplanar_guard": "L1 PD_GND fully surrounds each PD_IN; extend L2 shield below PD courtyard",
                 "evidence_class": "MANUFACTURER_VERIFIED",
                 "ground_edge": "C3/C4/D3 short at WLP edge to one local GND via per AFE; individual capacitor ground vias",
-                "source": "MAX86140/MAX86141 Rev5 p49\u201352",
+                "source": "MAX86140/MAX86141 Rev5 p49–52",
                 "verification": "Reservation study only; copper continuity, via count and absence of signal crossings must be verified in separately authorized implementation"
               },
               "vled_entries": [
@@ -148360,7 +148390,7 @@
                 }
               ],
               "evidence_class": "PROJECT_DERIVED",
-              "load_path": "window \u2192 pod frame \u2192 hard stops \u2192 carrier; never through optical parts or pack",
+              "load_path": "window → pod frame → hard stops → carrier; never through optical parts or pack",
               "loads": "SUPPLIER_DATA_REQUIRED: compression/deflection proof at OD-WATER qualification; no load capacity invented",
               "minimum_count": 3,
               "pass_check": true,
@@ -162619,7 +162649,7 @@
                 "coplanar_guard": "L1 PD_GND fully surrounds each PD_IN; extend L2 shield below PD courtyard",
                 "evidence_class": "MANUFACTURER_VERIFIED",
                 "ground_edge": "C3/C4/D3 short at WLP edge to one local GND via per AFE; individual capacitor ground vias",
-                "source": "MAX86140/MAX86141 Rev5 p49\u201352",
+                "source": "MAX86140/MAX86141 Rev5 p49–52",
                 "verification": "Reservation study only; copper continuity, via count and absence of signal crossings must be verified in separately authorized implementation"
               },
               "vled_entries": [
@@ -166487,7 +166517,7 @@
                 }
               ],
               "evidence_class": "PROJECT_DERIVED",
-              "load_path": "window \u2192 pod frame \u2192 hard stops \u2192 carrier; never through optical parts or pack",
+              "load_path": "window → pod frame → hard stops → carrier; never through optical parts or pack",
               "loads": "SUPPLIER_DATA_REQUIRED: compression/deflection proof at OD-WATER qualification; no load capacity invented",
               "minimum_count": 3,
               "pass_check": true,
@@ -189468,7 +189498,7 @@
                 "strain_relief_sector_fit": true
               }
             },
-            "disposition": "Local land reservation alternative permitted by \u00a76.4.2; no G2 input/corridor change. Two-row tail fanout and its continued under-run width require supplier drawing; not qualified.",
+            "disposition": "Local land reservation alternative permitted by §6.4.2; no G2 input/corridor change. Two-row tail fanout and its continued under-run width require supplier drawing; not qualified.",
             "evidence_class": "PROJECT_DERIVED",
             "id": "radial-r11.3-a166.05",
             "nominal_fit": true,
@@ -210535,7 +210565,7 @@
                 "coplanar_guard": "L1 PD_GND fully surrounds each PD_IN; extend L2 shield below PD courtyard",
                 "evidence_class": "MANUFACTURER_VERIFIED",
                 "ground_edge": "C3/C4/D3 short at WLP edge to one local GND via per AFE; individual capacitor ground vias",
-                "source": "MAX86140/MAX86141 Rev5 p49\u201352",
+                "source": "MAX86140/MAX86141 Rev5 p49–52",
                 "verification": "Reservation study only; copper continuity, via count and absence of signal crossings must be verified in separately authorized implementation"
               },
               "vled_entries": [
@@ -214400,7 +214430,7 @@
                 }
               ],
               "evidence_class": "PROJECT_DERIVED",
-              "load_path": "window \u2192 pod frame \u2192 hard stops \u2192 carrier; never through optical parts or pack",
+              "load_path": "window → pod frame → hard stops → carrier; never through optical parts or pack",
               "loads": "SUPPLIER_DATA_REQUIRED: compression/deflection proof at OD-WATER qualification; no load capacity invented",
               "minimum_count": 3,
               "pass_check": true,
@@ -227166,7 +227196,7 @@
                 "coplanar_guard": "L1 PD_GND fully surrounds each PD_IN; extend L2 shield below PD courtyard",
                 "evidence_class": "MANUFACTURER_VERIFIED",
                 "ground_edge": "C3/C4/D3 short at WLP edge to one local GND via per AFE; individual capacitor ground vias",
-                "source": "MAX86140/MAX86141 Rev5 p49\u201352",
+                "source": "MAX86140/MAX86141 Rev5 p49–52",
                 "verification": "Reservation study only; copper continuity, via count and absence of signal crossings must be verified in separately authorized implementation"
               },
               "vled_entries": [
@@ -234637,7 +234667,7 @@
                 }
               ],
               "evidence_class": "PROJECT_DERIVED",
-              "load_path": "window \u2192 pod frame \u2192 hard stops \u2192 carrier; never through optical parts or pack",
+              "load_path": "window → pod frame → hard stops → carrier; never through optical parts or pack",
               "loads": "SUPPLIER_DATA_REQUIRED: compression/deflection proof at OD-WATER qualification; no load capacity invented",
               "minimum_count": 3,
               "pass_check": true,
@@ -247403,7 +247433,7 @@
                 "coplanar_guard": "L1 PD_GND fully surrounds each PD_IN; extend L2 shield below PD courtyard",
                 "evidence_class": "MANUFACTURER_VERIFIED",
                 "ground_edge": "C3/C4/D3 short at WLP edge to one local GND via per AFE; individual capacitor ground vias",
-                "source": "MAX86140/MAX86141 Rev5 p49\u201352",
+                "source": "MAX86140/MAX86141 Rev5 p49–52",
                 "verification": "Reservation study only; copper continuity, via count and absence of signal crossings must be verified in separately authorized implementation"
               },
               "vled_entries": [
@@ -251264,7 +251294,7 @@
                 }
               ],
               "evidence_class": "PROJECT_DERIVED",
-              "load_path": "window \u2192 pod frame \u2192 hard stops \u2192 carrier; never through optical parts or pack",
+              "load_path": "window → pod frame → hard stops → carrier; never through optical parts or pack",
               "loads": "SUPPLIER_DATA_REQUIRED: compression/deflection proof at OD-WATER qualification; no load capacity invented",
               "minimum_count": 3,
               "pass_check": true,
@@ -274212,7 +274242,7 @@
                 "strain_relief_sector_fit": true
               }
             },
-            "disposition": "Local land reservation alternative permitted by \u00a76.4.2; no G2 input/corridor change. Two-row tail fanout and its continued under-run width require supplier drawing; not qualified.",
+            "disposition": "Local land reservation alternative permitted by §6.4.2; no G2 input/corridor change. Two-row tail fanout and its continued under-run width require supplier drawing; not qualified.",
             "evidence_class": "PROJECT_DERIVED",
             "id": "radial-r10.6-a166.05",
             "nominal_fit": true,
@@ -296696,7 +296726,7 @@
                 "coplanar_guard": "L1 PD_GND fully surrounds each PD_IN; extend L2 shield below PD courtyard",
                 "evidence_class": "MANUFACTURER_VERIFIED",
                 "ground_edge": "C3/C4/D3 short at WLP edge to one local GND via per AFE; individual capacitor ground vias",
-                "source": "MAX86140/MAX86141 Rev5 p49\u201352",
+                "source": "MAX86140/MAX86141 Rev5 p49–52",
                 "verification": "Reservation study only; copper continuity, via count and absence of signal crossings must be verified in separately authorized implementation"
               },
               "vled_entries": [
@@ -300569,7 +300599,7 @@
                 }
               ],
               "evidence_class": "PROJECT_DERIVED",
-              "load_path": "window \u2192 pod frame \u2192 hard stops \u2192 carrier; never through optical parts or pack",
+              "load_path": "window → pod frame → hard stops → carrier; never through optical parts or pack",
               "loads": "SUPPLIER_DATA_REQUIRED: compression/deflection proof at OD-WATER qualification; no load capacity invented",
               "minimum_count": 3,
               "pass_check": false,
@@ -314566,7 +314596,7 @@
                 "coplanar_guard": "L1 PD_GND fully surrounds each PD_IN; extend L2 shield below PD courtyard",
                 "evidence_class": "MANUFACTURER_VERIFIED",
                 "ground_edge": "C3/C4/D3 short at WLP edge to one local GND via per AFE; individual capacitor ground vias",
-                "source": "MAX86140/MAX86141 Rev5 p49\u201352",
+                "source": "MAX86140/MAX86141 Rev5 p49–52",
                 "verification": "Reservation study only; copper continuity, via count and absence of signal crossings must be verified in separately authorized implementation"
               },
               "vled_entries": [
@@ -322034,7 +322064,7 @@
                 }
               ],
               "evidence_class": "PROJECT_DERIVED",
-              "load_path": "window \u2192 pod frame \u2192 hard stops \u2192 carrier; never through optical parts or pack",
+              "load_path": "window → pod frame → hard stops → carrier; never through optical parts or pack",
               "loads": "SUPPLIER_DATA_REQUIRED: compression/deflection proof at OD-WATER qualification; no load capacity invented",
               "minimum_count": 3,
               "pass_check": true,
@@ -336188,7 +336218,7 @@
                 "coplanar_guard": "L1 PD_GND fully surrounds each PD_IN; extend L2 shield below PD courtyard",
                 "evidence_class": "MANUFACTURER_VERIFIED",
                 "ground_edge": "C3/C4/D3 short at WLP edge to one local GND via per AFE; individual capacitor ground vias",
-                "source": "MAX86140/MAX86141 Rev5 p49\u201352",
+                "source": "MAX86140/MAX86141 Rev5 p49–52",
                 "verification": "Reservation study only; copper continuity, via count and absence of signal crossings must be verified in separately authorized implementation"
               },
               "vled_entries": [
@@ -340054,7 +340084,7 @@
                 }
               ],
               "evidence_class": "PROJECT_DERIVED",
-              "load_path": "window \u2192 pod frame \u2192 hard stops \u2192 carrier; never through optical parts or pack",
+              "load_path": "window → pod frame → hard stops → carrier; never through optical parts or pack",
               "loads": "SUPPLIER_DATA_REQUIRED: compression/deflection proof at OD-WATER qualification; no load capacity invented",
               "minimum_count": 3,
               "pass_check": true,
@@ -363033,7 +363063,7 @@
                 "strain_relief_sector_fit": true
               }
             },
-            "disposition": "Local land reservation alternative permitted by \u00a76.4.2; no G2 input/corridor change. Two-row tail fanout and its continued under-run width require supplier drawing; not qualified.",
+            "disposition": "Local land reservation alternative permitted by §6.4.2; no G2 input/corridor change. Two-row tail fanout and its continued under-run width require supplier drawing; not qualified.",
             "evidence_class": "PROJECT_DERIVED",
             "id": "radial-r11.3-a166.05",
             "nominal_fit": true,
@@ -385336,7 +385366,7 @@
                 "coplanar_guard": "L1 PD_GND fully surrounds each PD_IN; extend L2 shield below PD courtyard",
                 "evidence_class": "MANUFACTURER_VERIFIED",
                 "ground_edge": "C3/C4/D3 short at WLP edge to one local GND via per AFE; individual capacitor ground vias",
-                "source": "MAX86140/MAX86141 Rev5 p49\u201352",
+                "source": "MAX86140/MAX86141 Rev5 p49–52",
                 "verification": "Reservation study only; copper continuity, via count and absence of signal crossings must be verified in separately authorized implementation"
               },
               "vled_entries": [
@@ -389208,7 +389238,7 @@
                 }
               ],
               "evidence_class": "PROJECT_DERIVED",
-              "load_path": "window \u2192 pod frame \u2192 hard stops \u2192 carrier; never through optical parts or pack",
+              "load_path": "window → pod frame → hard stops → carrier; never through optical parts or pack",
               "loads": "SUPPLIER_DATA_REQUIRED: compression/deflection proof at OD-WATER qualification; no load capacity invented",
               "minimum_count": 3,
               "pass_check": false,
@@ -403053,7 +403083,7 @@
                 "coplanar_guard": "L1 PD_GND fully surrounds each PD_IN; extend L2 shield below PD courtyard",
                 "evidence_class": "MANUFACTURER_VERIFIED",
                 "ground_edge": "C3/C4/D3 short at WLP edge to one local GND via per AFE; individual capacitor ground vias",
-                "source": "MAX86140/MAX86141 Rev5 p49\u201352",
+                "source": "MAX86140/MAX86141 Rev5 p49–52",
                 "verification": "Reservation study only; copper continuity, via count and absence of signal crossings must be verified in separately authorized implementation"
               },
               "vled_entries": [
@@ -410521,7 +410551,7 @@
                 }
               ],
               "evidence_class": "PROJECT_DERIVED",
-              "load_path": "window \u2192 pod frame \u2192 hard stops \u2192 carrier; never through optical parts or pack",
+              "load_path": "window → pod frame → hard stops → carrier; never through optical parts or pack",
               "loads": "SUPPLIER_DATA_REQUIRED: compression/deflection proof at OD-WATER qualification; no load capacity invented",
               "minimum_count": 3,
               "pass_check": true,
@@ -424523,7 +424553,7 @@
                 "coplanar_guard": "L1 PD_GND fully surrounds each PD_IN; extend L2 shield below PD courtyard",
                 "evidence_class": "MANUFACTURER_VERIFIED",
                 "ground_edge": "C3/C4/D3 short at WLP edge to one local GND via per AFE; individual capacitor ground vias",
-                "source": "MAX86140/MAX86141 Rev5 p49\u201352",
+                "source": "MAX86140/MAX86141 Rev5 p49–52",
                 "verification": "Reservation study only; copper continuity, via count and absence of signal crossings must be verified in separately authorized implementation"
               },
               "vled_entries": [
@@ -428389,7 +428419,7 @@
                 }
               ],
               "evidence_class": "PROJECT_DERIVED",
-              "load_path": "window \u2192 pod frame \u2192 hard stops \u2192 carrier; never through optical parts or pack",
+              "load_path": "window → pod frame → hard stops → carrier; never through optical parts or pack",
               "loads": "SUPPLIER_DATA_REQUIRED: compression/deflection proof at OD-WATER qualification; no load capacity invented",
               "minimum_count": 3,
               "pass_check": true,
@@ -451368,7 +451398,7 @@
                 "strain_relief_sector_fit": true
               }
             },
-            "disposition": "Local land reservation alternative permitted by \u00a76.4.2; no G2 input/corridor change. Two-row tail fanout and its continued under-run width require supplier drawing; not qualified.",
+            "disposition": "Local land reservation alternative permitted by §6.4.2; no G2 input/corridor change. Two-row tail fanout and its continued under-run width require supplier drawing; not qualified.",
             "evidence_class": "PROJECT_DERIVED",
             "id": "radial-r11.3-a166.05",
             "nominal_fit": true,
@@ -473671,7 +473701,7 @@
                 "coplanar_guard": "L1 PD_GND fully surrounds each PD_IN; extend L2 shield below PD courtyard",
                 "evidence_class": "MANUFACTURER_VERIFIED",
                 "ground_edge": "C3/C4/D3 short at WLP edge to one local GND via per AFE; individual capacitor ground vias",
-                "source": "MAX86140/MAX86141 Rev5 p49\u201352",
+                "source": "MAX86140/MAX86141 Rev5 p49–52",
                 "verification": "Reservation study only; copper continuity, via count and absence of signal crossings must be verified in separately authorized implementation"
               },
               "vled_entries": [
@@ -477543,7 +477573,7 @@
                 }
               ],
               "evidence_class": "PROJECT_DERIVED",
-              "load_path": "window \u2192 pod frame \u2192 hard stops \u2192 carrier; never through optical parts or pack",
+              "load_path": "window → pod frame → hard stops → carrier; never through optical parts or pack",
               "loads": "SUPPLIER_DATA_REQUIRED: compression/deflection proof at OD-WATER qualification; no load capacity invented",
               "minimum_count": 3,
               "pass_check": false,
@@ -491388,7 +491418,7 @@
                 "coplanar_guard": "L1 PD_GND fully surrounds each PD_IN; extend L2 shield below PD courtyard",
                 "evidence_class": "MANUFACTURER_VERIFIED",
                 "ground_edge": "C3/C4/D3 short at WLP edge to one local GND via per AFE; individual capacitor ground vias",
-                "source": "MAX86140/MAX86141 Rev5 p49\u201352",
+                "source": "MAX86140/MAX86141 Rev5 p49–52",
                 "verification": "Reservation study only; copper continuity, via count and absence of signal crossings must be verified in separately authorized implementation"
               },
               "vled_entries": [
@@ -498856,7 +498886,7 @@
                 }
               ],
               "evidence_class": "PROJECT_DERIVED",
-              "load_path": "window \u2192 pod frame \u2192 hard stops \u2192 carrier; never through optical parts or pack",
+              "load_path": "window → pod frame → hard stops → carrier; never through optical parts or pack",
               "loads": "SUPPLIER_DATA_REQUIRED: compression/deflection proof at OD-WATER qualification; no load capacity invented",
               "minimum_count": 3,
               "pass_check": true,
@@ -512858,7 +512888,7 @@
                 "coplanar_guard": "L1 PD_GND fully surrounds each PD_IN; extend L2 shield below PD courtyard",
                 "evidence_class": "MANUFACTURER_VERIFIED",
                 "ground_edge": "C3/C4/D3 short at WLP edge to one local GND via per AFE; individual capacitor ground vias",
-                "source": "MAX86140/MAX86141 Rev5 p49\u201352",
+                "source": "MAX86140/MAX86141 Rev5 p49–52",
                 "verification": "Reservation study only; copper continuity, via count and absence of signal crossings must be verified in separately authorized implementation"
               },
               "vled_entries": [
@@ -516724,7 +516754,7 @@
                 }
               ],
               "evidence_class": "PROJECT_DERIVED",
-              "load_path": "window \u2192 pod frame \u2192 hard stops \u2192 carrier; never through optical parts or pack",
+              "load_path": "window → pod frame → hard stops → carrier; never through optical parts or pack",
               "loads": "SUPPLIER_DATA_REQUIRED: compression/deflection proof at OD-WATER qualification; no load capacity invented",
               "minimum_count": 3,
               "pass_check": true,
@@ -539703,7 +539733,7 @@
                 "strain_relief_sector_fit": true
               }
             },
-            "disposition": "Local land reservation alternative permitted by \u00a76.4.2; no G2 input/corridor change. Two-row tail fanout and its continued under-run width require supplier drawing; not qualified.",
+            "disposition": "Local land reservation alternative permitted by §6.4.2; no G2 input/corridor change. Two-row tail fanout and its continued under-run width require supplier drawing; not qualified.",
             "evidence_class": "PROJECT_DERIVED",
             "id": "radial-r11.3-a166.05",
             "nominal_fit": true,
@@ -548489,7 +548519,7 @@
       "U407": "rear_sensor/rear_sensor_revA.kicad_pcb#U407",
       "U6": "libraries/footprints/sportwatch_custom.pretty/21-100265_MXM.kicad_mod"
     },
-    "g2_record": "G2 CLOSED \u2014 PASS WITH SUPPLIER/ENGINEERING GATES",
+    "g2_record": "G2 CLOSED — PASS WITH SUPPLIER/ENGINEERING GATES",
     "g4_handoff": {
       "candidates": [
         {
@@ -550541,7 +550571,7 @@
               }
             },
             "evidence_class": "PROJECT_DERIVED",
-            "load_path": "Window \u2192 pod frame \u2192 three or more stops \u2192 carrier; no optical-part or battery compression load",
+            "load_path": "Window → pod frame → three or more stops → carrier; no optical-part or battery compression load",
             "window_delta_from_g2_nominal_mm": {
               "0.3": -0.2,
               "0.5": 0.0,
@@ -551351,7 +551381,7 @@
                 "strain_relief_sector_fit": true
               }
             },
-            "disposition": "Local land reservation alternative permitted by \u00a76.4.2; no G2 input/corridor change. Two-row tail fanout and its continued under-run width require supplier drawing; not qualified.",
+            "disposition": "Local land reservation alternative permitted by §6.4.2; no G2 input/corridor change. Two-row tail fanout and its continued under-run width require supplier drawing; not qualified.",
             "evidence_class": "PROJECT_DERIVED",
             "id": "two_row-r12.55-a166.05",
             "nominal_fit": true,
@@ -553883,7 +553913,7 @@
               }
             },
             "evidence_class": "PROJECT_DERIVED",
-            "load_path": "Window \u2192 pod frame \u2192 three or more stops \u2192 carrier; no optical-part or battery compression load",
+            "load_path": "Window → pod frame → three or more stops → carrier; no optical-part or battery compression load",
             "window_delta_from_g2_nominal_mm": {
               "0.3": -0.2,
               "0.5": 0.0,
@@ -554695,7 +554725,7 @@
                 "strain_relief_sector_fit": true
               }
             },
-            "disposition": "Local land reservation alternative permitted by \u00a76.4.2; no G2 input/corridor change. Two-row tail fanout and its continued under-run width require supplier drawing; not qualified.",
+            "disposition": "Local land reservation alternative permitted by §6.4.2; no G2 input/corridor change. Two-row tail fanout and its continued under-run width require supplier drawing; not qualified.",
             "evidence_class": "PROJECT_DERIVED",
             "id": "radial-r11.3-a166.05",
             "nominal_fit": true,
@@ -557219,7 +557249,7 @@
               }
             },
             "evidence_class": "PROJECT_DERIVED",
-            "load_path": "Window \u2192 pod frame \u2192 three or more stops \u2192 carrier; no optical-part or battery compression load",
+            "load_path": "Window → pod frame → three or more stops → carrier; no optical-part or battery compression load",
             "window_delta_from_g2_nominal_mm": {
               "0.3": -0.2,
               "0.5": 0.0,
@@ -558029,7 +558059,7 @@
                 "strain_relief_sector_fit": true
               }
             },
-            "disposition": "Local land reservation alternative permitted by \u00a76.4.2; no G2 input/corridor change. Two-row tail fanout and its continued under-run width require supplier drawing; not qualified.",
+            "disposition": "Local land reservation alternative permitted by §6.4.2; no G2 input/corridor change. Two-row tail fanout and its continued under-run width require supplier drawing; not qualified.",
             "evidence_class": "PROJECT_DERIVED",
             "id": "radial-r10.6-a166.05",
             "nominal_fit": true,
@@ -560561,7 +560591,7 @@
               }
             },
             "evidence_class": "PROJECT_DERIVED",
-            "load_path": "Window \u2192 pod frame \u2192 three or more stops \u2192 carrier; no optical-part or battery compression load",
+            "load_path": "Window → pod frame → three or more stops → carrier; no optical-part or battery compression load",
             "window_delta_from_g2_nominal_mm": {
               "0.3": -0.2,
               "0.5": 0.0,
@@ -561373,7 +561403,7 @@
                 "strain_relief_sector_fit": true
               }
             },
-            "disposition": "Local land reservation alternative permitted by \u00a76.4.2; no G2 input/corridor change. Two-row tail fanout and its continued under-run width require supplier drawing; not qualified.",
+            "disposition": "Local land reservation alternative permitted by §6.4.2; no G2 input/corridor change. Two-row tail fanout and its continued under-run width require supplier drawing; not qualified.",
             "evidence_class": "PROJECT_DERIVED",
             "id": "radial-r11.3-a166.05",
             "nominal_fit": true,
@@ -563905,7 +563935,7 @@
               }
             },
             "evidence_class": "PROJECT_DERIVED",
-            "load_path": "Window \u2192 pod frame \u2192 three or more stops \u2192 carrier; no optical-part or battery compression load",
+            "load_path": "Window → pod frame → three or more stops → carrier; no optical-part or battery compression load",
             "window_delta_from_g2_nominal_mm": {
               "0.3": -0.2,
               "0.5": 0.0,
@@ -564717,7 +564747,7 @@
                 "strain_relief_sector_fit": true
               }
             },
-            "disposition": "Local land reservation alternative permitted by \u00a76.4.2; no G2 input/corridor change. Two-row tail fanout and its continued under-run width require supplier drawing; not qualified.",
+            "disposition": "Local land reservation alternative permitted by §6.4.2; no G2 input/corridor change. Two-row tail fanout and its continued under-run width require supplier drawing; not qualified.",
             "evidence_class": "PROJECT_DERIVED",
             "id": "radial-r11.3-a166.05",
             "nominal_fit": true,
@@ -567249,7 +567279,7 @@
               }
             },
             "evidence_class": "PROJECT_DERIVED",
-            "load_path": "Window \u2192 pod frame \u2192 three or more stops \u2192 carrier; no optical-part or battery compression load",
+            "load_path": "Window → pod frame → three or more stops → carrier; no optical-part or battery compression load",
             "window_delta_from_g2_nominal_mm": {
               "0.3": -0.2,
               "0.5": 0.0,
@@ -568061,7 +568091,7 @@
                 "strain_relief_sector_fit": true
               }
             },
-            "disposition": "Local land reservation alternative permitted by \u00a76.4.2; no G2 input/corridor change. Two-row tail fanout and its continued under-run width require supplier drawing; not qualified.",
+            "disposition": "Local land reservation alternative permitted by §6.4.2; no G2 input/corridor change. Two-row tail fanout and its continued under-run width require supplier drawing; not qualified.",
             "evidence_class": "PROJECT_DERIVED",
             "id": "radial-r11.3-a166.05",
             "nominal_fit": true,
@@ -568533,7 +568563,7 @@
       "open_gates": [
         {
           "acceptance": {
-            "body_and_emitting_area": "Primary package/active-area drawing; rerun all D405\u2013D407 geometry against verified outline, pads and emission position",
+            "body_and_emitting_area": "Primary package/active-area drawing; rerun all D405–D407 geometry against verified outline, pads and emission position",
             "minimum_emitter_pd_cell_gap_mm": 0.7,
             "seated_max_mm": 0.75
           },
@@ -568801,7 +568831,7 @@
           "status": "OPEN"
         }
       ],
-      "status": "PROVISIONAL RESERVATION HANDOFF \u2014 G4 NOT AUTHORIZED",
+      "status": "PROVISIONAL RESERVATION HANDOFF — G4 NOT AUTHORIZED",
       "x25_conservative_cover_fit_mm": -1.1
     },
     "height_thresholds": {
@@ -568857,7 +568887,7 @@
           520
         ],
         "pitch_mm": 0.4,
-        "source": "../datasheets/ppg/max86140-max86141.pdf Rev5 pp1,11,49\u201352"
+        "source": "../datasheets/ppg/max86140-max86141.pdf Rev5 pp1,11,49–52"
       },
       "SFH2703H": {
         "body_mm": [
@@ -569193,27 +569223,27 @@
         "evidence_class": "OWNER_DECISION",
         "id": "OD-G3-ENTRY",
         "source": "owner decision, G3_BRIEF.md section 2",
-        "verbatim": "- **OD-G3-ENTRY \u2014 APPROVED.** The existing G3 entry items \"close SFH4053B/MAX86141 height and optical evidence\n  gaps\" and \"verify J1502 attach/current/rating/flex-channel geometry\" are reclassified from G3 ENTRY requirements\n  to G3 CLOSURE gates. G3 may begin as a bounded parametric engineering study before those supplier /\n  manufacturer values are closed. G3 may not claim final closure unless its brief-defined numeric closure\n  conditions are satisfied (section 11, criteria 5 and 10)."
+        "verbatim": "- **OD-G3-ENTRY — APPROVED.** The existing G3 entry items \"close SFH4053B/MAX86141 height and optical evidence\n  gaps\" and \"verify J1502 attach/current/rating/flex-channel geometry\" are reclassified from G3 ENTRY requirements\n  to G3 CLOSURE gates. G3 may begin as a bounded parametric engineering study before those supplier /\n  manufacturer values are closed. G3 may not claim final closure unless its brief-defined numeric closure\n  conditions are satisfied (section 11, criteria 5 and 10)."
       },
       {
         "date": "2026-10-13",
         "evidence_class": "OWNER_DECISION",
         "id": "OD-G3-SIDE",
         "source": "owner decision, G3_BRIEF.md section 2",
-        "verbatim": "- **OD-G3-SIDE \u2014 APPROVED.** G3 face-allocation baseline. Skin-facing REAR: emitters, photodiodes, both MAX86141\n  AFEs, MAX30208, and sensitive optical/analog components required by locality. Inner-facing REAR: other\n  suitable passives, J1502 tail/support structures, mechanically suitable non-sensitive support components.\n  VREF capacitors are skin-facing by default; an inner-face VREF capacitor is permitted only directly under its\n  AFE and with no more than one via, if the deterministic G3 study proves the topology. No inner-face AFE\n  alternative study is authorized."
+        "verbatim": "- **OD-G3-SIDE — APPROVED.** G3 face-allocation baseline. Skin-facing REAR: emitters, photodiodes, both MAX86141\n  AFEs, MAX30208, and sensitive optical/analog components required by locality. Inner-facing REAR: other\n  suitable passives, J1502 tail/support structures, mechanically suitable non-sensitive support components.\n  VREF capacitors are skin-facing by default; an inner-face VREF capacitor is permitted only directly under its\n  AFE and with no more than one via, if the deterministic G3 study proves the topology. No inner-face AFE\n  alternative study is authorized."
       },
       {
         "date": "2026-10-13",
         "evidence_class": "OWNER_DECISION",
         "id": "OD-G3-RECORD",
         "source": "owner decision, G3_BRIEF.md section 2",
-        "verbatim": "- **OD-G3-RECORD \u2014 APPROVED.** G3 may update engineering documentation to record \"G2 CLOSED \u2014 PASS WITH\n  SUPPLIER/ENGINEERING GATES\". This does not close any remaining G2 supplier gates and does not authorize G4."
+        "verbatim": "- **OD-G3-RECORD — APPROVED.** G3 may update engineering documentation to record \"G2 CLOSED — PASS WITH\n  SUPPLIER/ENGINEERING GATES\". This does not close any remaining G2 supplier gates and does not authorize G4."
       },
       {
         "evidence_class": "OWNER_DECISION",
         "id": "OD-G3-MAX86141-PKG",
         "source": "owner decision, G3_BRIEF.md section 2",
-        "verbatim": "**OD-G3-MAX86141-PKG \u2014 APPROVED**\n\nThe generic >=0.500 mm LED-current/aggressor spacing rule does not apply to\nmanufacturer-fixed same-package pin/pad adjacency inside the MAX86141 package\ncourtyard.\n\nFor MAX86141 only, package-fixed adjacency such as D3 PGND \u2194 D4 PD2_IN is\nexempt from the >=0.500 mm rule inside the package courtyard.\n\nThe exemption ends at the package courtyard boundary.\n\nOutside that boundary, the >=0.500 mm rule applies in full to:\n\n- LED-current-loop copper\n- VLED\n- LEDx_DRV\n- PGND / LED-return copper\n- digital aggressors\n- tail-land copper\n\nNo discretionary LED-current, VLED, LED_DRV or PGND copper may enter the\nPD_IN/PD_GND sensitive corridor outside the package-fixed escape.\n\nPD_IN / PD_GND requirements remain unchanged:\n\n- PD_IN guarded by PD_GND\n- adjacent PCB ground plane\n- PD_GND single-point tie through NT401/NT402\n- zero-via PD_IN project rule\n- any package-boundary guard interruption must be explicitly modeled\n\nPGND D3 should escape by via-in-pad or away from the PD_IN corridor where\nphysically possible, with minimum loop area.\n\nAggressor-to-shield spacing outside the courtyard must account for actual copper/pad extents rather than\ncentre-only distances. This decision does not weaken the >=0.500 mm rule globally."
+        "verbatim": "**OD-G3-MAX86141-PKG — APPROVED**\n\nThe generic >=0.500 mm LED-current/aggressor spacing rule does not apply to\nmanufacturer-fixed same-package pin/pad adjacency inside the MAX86141 package\ncourtyard.\n\nFor MAX86141 only, package-fixed adjacency such as D3 PGND ↔ D4 PD2_IN is\nexempt from the >=0.500 mm rule inside the package courtyard.\n\nThe exemption ends at the package courtyard boundary.\n\nOutside that boundary, the >=0.500 mm rule applies in full to:\n\n- LED-current-loop copper\n- VLED\n- LEDx_DRV\n- PGND / LED-return copper\n- digital aggressors\n- tail-land copper\n\nNo discretionary LED-current, VLED, LED_DRV or PGND copper may enter the\nPD_IN/PD_GND sensitive corridor outside the package-fixed escape.\n\nPD_IN / PD_GND requirements remain unchanged:\n\n- PD_IN guarded by PD_GND\n- adjacent PCB ground plane\n- PD_GND single-point tie through NT401/NT402\n- zero-via PD_IN project rule\n- any package-boundary guard interruption must be explicitly modeled\n\nPGND D3 should escape by via-in-pad or away from the PD_IN corridor where\nphysically possible, with minimum loop area.\n\nAggressor-to-shield spacing outside the courtyard must account for actual copper/pad extents rather than\ncentre-only distances. This decision does not weaken the >=0.500 mm rule globally."
       }
     ],
     "placement_search": {
@@ -569972,7 +570002,7 @@
             }
           }
         ],
-        "status": "DRAFTED / ISSUE-READY \u2014 OWNER ISSUES"
+        "status": "DRAFTED / ISSUE-READY — OWNER ISSUES"
       },
       "g2_shared_corridors": {
         "crossings": [
@@ -591995,7 +592025,7 @@
         }
       },
       "evidence_class": "PROJECT_DERIVED",
-      "load_path": "Window \u2192 pod frame \u2192 three or more stops \u2192 carrier; no optical-part or battery compression load",
+      "load_path": "Window → pod frame → three or more stops → carrier; no optical-part or battery compression load",
       "window_delta_from_g2_nominal_mm": {
         "0.3": -0.2,
         "0.5": 0.0,
@@ -592019,7 +592049,7 @@
         "pod/outline/clearance",
         "manufacturability"
       ],
-      "rule": "Filter every nominal hard check, then lexicographic \u00a77 ranking. ID only breaks exact ties.",
+      "rule": "Filter every nominal hard check, then lexicographic §7 ranking. ID only breaks exact ties.",
       "selected_candidate": "G3-B-S14"
     },
     "source_sha256": {
@@ -592059,7 +592089,7 @@
     "supplier_measurement_gates": [
       {
         "acceptance": {
-          "body_and_emitting_area": "Primary package/active-area drawing; rerun all D405\u2013D407 geometry against verified outline, pads and emission position",
+          "body_and_emitting_area": "Primary package/active-area drawing; rerun all D405–D407 geometry against verified outline, pads and emission position",
           "minimum_emitter_pd_cell_gap_mm": 0.7,
           "seated_max_mm": 0.75
         },
@@ -592330,6 +592360,1039 @@
     "unsatisfied_acceptance": [
       10
     ],
-    "verdict": "G3 CONDITIONAL \u2014 SUPPLIER/MEASUREMENT GATES OPEN"
+    "verdict": "G3 CONDITIONAL — SUPPLIER/MEASUREMENT GATES OPEN"
+  },
+  "g4": {
+    "candidates": [
+      {
+        "D_eval": 50.9,
+        "case_side_quadrant_force_bound_N": 584.4933132,
+        "failing_hard_checks": [
+          "H05",
+          "H11",
+          "H13",
+          "H14",
+          "H15",
+          "H16",
+          "H17",
+          "H20",
+          "H21",
+          "H22",
+          "H23"
+        ],
+        "h_pod": {
+          "linear_worst_max": -0.15,
+          "nominal": 0.05,
+          "note": "h_pod is an output: range [0, max] with the caseback plane designed from the REAR skin-face datum; closure is MEASUREMENT (wrist / strap trials)"
+        },
+        "id": "G4-A",
+        "key_checks": {
+          "H01-REAR-PERIPHERY-Z": {
+            "legacy": null,
+            "linear_worst": 0.55,
+            "nominal": 0.75,
+            "pass_": true,
+            "rss": 0.65
+          },
+          "H03-OD": {
+            "legacy": null,
+            "linear_worst": 0.04,
+            "nominal": 0.1,
+            "pass_": true,
+            "rss": 0.04
+          },
+          "H05-EDGE-XB-J201": {
+            "legacy": {
+              "flat_exit": {
+                "conservative": -2.1,
+                "nominal": -0.47,
+                "optimistic": 0.7
+              },
+              "land_ceiling": {
+                "conservative": -0.95,
+                "nominal": 0.68,
+                "optimistic": 1.3
+              }
+            },
+            "linear_worst": -0.1,
+            "nominal": 0.38,
+            "pass_": false,
+            "rss": 0.225403752
+          },
+          "H05-EDGE-XC-J202": {
+            "legacy": {
+              "flat_exit": {
+                "conservative": -2.1,
+                "nominal": -0.47,
+                "optimistic": 0.7
+              },
+              "land_ceiling": {
+                "conservative": -0.95,
+                "nominal": 0.68,
+                "optimistic": 1.3
+              }
+            },
+            "linear_worst": 0.05,
+            "nominal": 0.38,
+            "pass_": true,
+            "rss": 0.225403752
+          },
+          "H05-EDGE-XF-J1501": {
+            "legacy": {
+              "flat_exit": {
+                "conservative": -2.1,
+                "nominal": -0.47,
+                "optimistic": 0.7
+              },
+              "land_ceiling": {
+                "conservative": -0.95,
+                "nominal": 0.68,
+                "optimistic": 1.3
+              }
+            },
+            "linear_worst": -0.1,
+            "nominal": 0.38,
+            "pass_": false,
+            "rss": 0.225403752
+          },
+          "H05-STRAIGHT": {
+            "legacy": {
+              "conservative": -0.95,
+              "nominal": 0.68,
+              "optimistic": 1.4
+            },
+            "linear_worst": 0.05,
+            "nominal": 0.38,
+            "pass_": true,
+            "rss": 0.225403752
+          },
+          "H05-WALL-SIDE": {
+            "legacy": null,
+            "linear_worst": 0.02,
+            "nominal": 0.2,
+            "pass_": true,
+            "rss": 0.084241631
+          },
+          "H06-X25-BEZEL": {
+            "legacy": {
+              "bezel_wall_conservative": -2.1,
+              "bezel_wall_nominal": -0.15,
+              "fit_conservative": -1.1,
+              "fit_nominal": 0.55
+            },
+            "linear_worst": 0.42,
+            "nominal": 1.4,
+            "pass_": true,
+            "rss": 0.809745817
+          },
+          "H09-U4-HEADROOM": {
+            "legacy": {
+              "conservative": -0.06,
+              "nominal": 0.24,
+              "optimistic": 0.44
+            },
+            "linear_worst": 0.34,
+            "nominal": 0.44,
+            "pass_": true,
+            "rss": 0.369289322
+          },
+          "H10-PACK-RADIAL": {
+            "legacy": null,
+            "linear_worst": 0.0,
+            "nominal": 0.65,
+            "pass_": true,
+            "rss": 0.137652462
+          },
+          "H11-POD-RESIDUAL": {
+            "legacy": {
+              "conservative": 1.05,
+              "nominal": 0.55,
+              "optimistic": 0.25
+            },
+            "linear_worst": -0.15,
+            "nominal": 0.05,
+            "pass_": false,
+            "rss": -0.05
+          },
+          "H13-CASEBACK-DEFLECTION": {
+            "legacy": null,
+            "linear_worst": -0.299680093,
+            "nominal": -0.068128907,
+            "pass_": false,
+            "rss": -0.167803109
+          },
+          "H13-CASEBACK-STRESS": {
+            "legacy": null,
+            "linear_worst": -46.628656356,
+            "nominal": -9.54049477,
+            "pass_": false,
+            "rss": -31.31470661
+          },
+          "H14-SCREW-SEAT": {
+            "legacy": null,
+            "linear_worst": -0.55,
+            "nominal": 0.0,
+            "pass_": false,
+            "rss": -0.357071421
+          },
+          "H21-BORE-SW1": {
+            "legacy": null,
+            "linear_worst": -0.48,
+            "nominal": 0.9,
+            "pass_": false,
+            "rss": -0.114100587
+          },
+          "H22-LRA-Z-LRA-COIN-D10": {
+            "legacy": null,
+            "linear_worst": -2.65,
+            "nominal": -1.85,
+            "pass_": false,
+            "rss": -2.458276253
+          },
+          "H22-LRA-Z-LRA-COIN-D8": {
+            "legacy": null,
+            "linear_worst": -2.25,
+            "nominal": -1.55,
+            "pass_": false,
+            "rss": -2.059901951
+          },
+          "H22-LRA-Z-LRA-LIN-RECT": {
+            "legacy": null,
+            "linear_worst": -2.25,
+            "nominal": -1.65,
+            "pass_": false,
+            "rss": -2.062310563
+          }
+        },
+        "lra_max_height_for_zero_margin_mm": {
+          "LRA-COIN-D10": 0.95,
+          "LRA-COIN-D8": 0.95,
+          "LRA-LIN-RECT": 0.95
+        },
+        "outcome": "REJECTED"
+      },
+      {
+        "D_eval": 50.9,
+        "case_side_quadrant_force_bound_N": 584.4933132,
+        "failing_hard_checks": [
+          "H01",
+          "H05",
+          "H13",
+          "H15",
+          "H17",
+          "H20",
+          "H21",
+          "H22",
+          "H23"
+        ],
+        "h_pod": {
+          "linear_worst_max": -0.09,
+          "nominal": 0.35,
+          "note": "h_pod is an output: range [0, max] with the caseback plane designed from the REAR skin-face datum; closure is MEASUREMENT (wrist / strap trials)"
+        },
+        "id": "G4-B",
+        "key_checks": {
+          "H01-REAR-PERIPHERY-Z": {
+            "legacy": null,
+            "linear_worst": -0.09,
+            "nominal": 0.05,
+            "pass_": false,
+            "rss": -0.026157731
+          },
+          "H03-OD": {
+            "legacy": null,
+            "linear_worst": 0.04,
+            "nominal": 0.1,
+            "pass_": true,
+            "rss": 0.04
+          },
+          "H05-EDGE-XB-J201": {
+            "legacy": {
+              "flat_exit": {
+                "conservative": -2.1,
+                "nominal": -0.47,
+                "optimistic": 0.7
+              },
+              "land_ceiling": {
+                "conservative": -0.95,
+                "nominal": 0.68,
+                "optimistic": 1.3
+              }
+            },
+            "linear_worst": -0.1,
+            "nominal": 0.38,
+            "pass_": false,
+            "rss": 0.225403752
+          },
+          "H05-EDGE-XC-J202": {
+            "legacy": {
+              "flat_exit": {
+                "conservative": -2.1,
+                "nominal": -0.47,
+                "optimistic": 0.7
+              },
+              "land_ceiling": {
+                "conservative": -0.95,
+                "nominal": 0.68,
+                "optimistic": 1.3
+              }
+            },
+            "linear_worst": 0.05,
+            "nominal": 0.38,
+            "pass_": true,
+            "rss": 0.225403752
+          },
+          "H05-EDGE-XF-J1501": {
+            "legacy": {
+              "flat_exit": {
+                "conservative": -2.1,
+                "nominal": -0.47,
+                "optimistic": 0.7
+              },
+              "land_ceiling": {
+                "conservative": -0.95,
+                "nominal": 0.68,
+                "optimistic": 1.3
+              }
+            },
+            "linear_worst": -0.1,
+            "nominal": 0.38,
+            "pass_": false,
+            "rss": 0.225403752
+          },
+          "H05-STRAIGHT": {
+            "legacy": {
+              "conservative": -0.95,
+              "nominal": 0.68,
+              "optimistic": 1.4
+            },
+            "linear_worst": 0.05,
+            "nominal": 0.38,
+            "pass_": true,
+            "rss": 0.225403752
+          },
+          "H05-WALL-SIDE": {
+            "legacy": null,
+            "linear_worst": 0.36,
+            "nominal": 0.5,
+            "pass_": true,
+            "rss": 0.396076952
+          },
+          "H06-X25-BEZEL": {
+            "legacy": {
+              "bezel_wall_conservative": -2.1,
+              "bezel_wall_nominal": -0.15,
+              "fit_conservative": -1.1,
+              "fit_nominal": 0.55
+            },
+            "linear_worst": 0.42,
+            "nominal": 1.4,
+            "pass_": true,
+            "rss": 0.809745817
+          },
+          "H09-U4-HEADROOM": {
+            "legacy": {
+              "conservative": -0.06,
+              "nominal": 0.24,
+              "optimistic": 0.44
+            },
+            "linear_worst": 0.4,
+            "nominal": 0.44,
+            "pass_": true,
+            "rss": 0.411715729
+          },
+          "H10-PACK-RADIAL": {
+            "legacy": null,
+            "linear_worst": 0.0,
+            "nominal": 0.65,
+            "pass_": true,
+            "rss": 0.137652462
+          },
+          "H11-POD-RESIDUAL": {
+            "legacy": {
+              "conservative": 1.05,
+              "nominal": 0.55,
+              "optimistic": 0.25
+            },
+            "linear_worst": 0.21,
+            "nominal": 0.35,
+            "pass_": true,
+            "rss": 0.273842269
+          },
+          "H13-CASEBACK-DEFLECTION": {
+            "legacy": null,
+            "linear_worst": 0.014766974,
+            "nominal": 0.075934759,
+            "pass_": true,
+            "rss": 0.025511371
+          },
+          "H13-CASEBACK-STRESS": {
+            "legacy": null,
+            "linear_worst": 10.39463912,
+            "nominal": 93.945054635,
+            "pass_": true,
+            "rss": 37.137027559
+          },
+          "H14-SCREW-SEAT": {
+            "legacy": null,
+            "linear_worst": 0.055,
+            "nominal": 0.575,
+            "pass_": true,
+            "rss": 0.220881376
+          },
+          "H15-CB-MAIN-COMP-MAX": {
+            "legacy": null,
+            "linear_worst": -0.118181818,
+            "nominal": 0.08,
+            "pass_": false,
+            "rss": -0.076933423
+          },
+          "H15-CB-MAIN-COMP-MIN": {
+            "legacy": null,
+            "linear_worst": -0.172222222,
+            "nominal": 0.07,
+            "pass_": false,
+            "rss": -0.09465452
+          },
+          "H21-BORE-SW1": {
+            "legacy": null,
+            "linear_worst": -0.41,
+            "nominal": 0.9,
+            "pass_": false,
+            "rss": -0.111780609
+          },
+          "H22-LRA-Z-LRA-COIN-D10": {
+            "legacy": null,
+            "linear_worst": -2.02,
+            "nominal": -1.25,
+            "pass_": false,
+            "rss": -1.856547607
+          },
+          "H22-LRA-Z-LRA-COIN-D8": {
+            "legacy": null,
+            "linear_worst": -1.62,
+            "nominal": -0.95,
+            "pass_": false,
+            "rss": -1.457838557
+          },
+          "H22-LRA-Z-LRA-LIN-RECT": {
+            "legacy": null,
+            "linear_worst": -1.62,
+            "nominal": -1.05,
+            "pass_": false,
+            "rss": -1.459756025
+          }
+        },
+        "lra_max_height_for_zero_margin_mm": {
+          "LRA-COIN-D10": 1.58,
+          "LRA-COIN-D8": 1.58,
+          "LRA-LIN-RECT": 1.58
+        },
+        "outcome": "REJECTED"
+      },
+      {
+        "D_eval": 50.9,
+        "case_side_quadrant_force_bound_N": 584.4933132,
+        "failing_hard_checks": [
+          "H05",
+          "H10",
+          "H11",
+          "H13",
+          "H14",
+          "H15",
+          "H16",
+          "H17",
+          "H20",
+          "H21",
+          "H22",
+          "H23"
+        ],
+        "h_pod": {
+          "linear_worst_max": -0.15,
+          "nominal": 0.05,
+          "note": "h_pod is an output: range [0, max] with the caseback plane designed from the REAR skin-face datum; closure is MEASUREMENT (wrist / strap trials)"
+        },
+        "id": "G4-C",
+        "key_checks": {
+          "H01-REAR-PERIPHERY-Z": {
+            "legacy": null,
+            "linear_worst": 0.55,
+            "nominal": 0.75,
+            "pass_": true,
+            "rss": 0.65
+          },
+          "H03-OD": {
+            "legacy": null,
+            "linear_worst": 0.04,
+            "nominal": 0.1,
+            "pass_": true,
+            "rss": 0.04
+          },
+          "H05-EDGE-XB-J201": {
+            "legacy": {
+              "flat_exit": {
+                "conservative": -2.1,
+                "nominal": -0.47,
+                "optimistic": 0.7
+              },
+              "land_ceiling": {
+                "conservative": -0.95,
+                "nominal": 0.68,
+                "optimistic": 1.3
+              }
+            },
+            "linear_worst": -0.1,
+            "nominal": 0.38,
+            "pass_": false,
+            "rss": 0.225403752
+          },
+          "H05-EDGE-XC-J202": {
+            "legacy": {
+              "flat_exit": {
+                "conservative": -2.1,
+                "nominal": -0.47,
+                "optimistic": 0.7
+              },
+              "land_ceiling": {
+                "conservative": -0.95,
+                "nominal": 0.68,
+                "optimistic": 1.3
+              }
+            },
+            "linear_worst": 0.05,
+            "nominal": 0.38,
+            "pass_": true,
+            "rss": 0.225403752
+          },
+          "H05-EDGE-XF-J1501": {
+            "legacy": {
+              "flat_exit": {
+                "conservative": -2.1,
+                "nominal": -0.47,
+                "optimistic": 0.7
+              },
+              "land_ceiling": {
+                "conservative": -0.95,
+                "nominal": 0.68,
+                "optimistic": 1.3
+              }
+            },
+            "linear_worst": -0.1,
+            "nominal": 0.38,
+            "pass_": false,
+            "rss": 0.225403752
+          },
+          "H05-STRAIGHT": {
+            "legacy": {
+              "conservative": -0.95,
+              "nominal": 0.68,
+              "optimistic": 1.4
+            },
+            "linear_worst": 0.05,
+            "nominal": 0.38,
+            "pass_": true,
+            "rss": 0.225403752
+          },
+          "H05-WALL-SIDE": {
+            "legacy": null,
+            "linear_worst": 0.02,
+            "nominal": 0.2,
+            "pass_": true,
+            "rss": 0.084241631
+          },
+          "H06-X25-BEZEL": {
+            "legacy": {
+              "bezel_wall_conservative": -2.1,
+              "bezel_wall_nominal": -0.15,
+              "fit_conservative": -1.1,
+              "fit_nominal": 0.55
+            },
+            "linear_worst": 0.42,
+            "nominal": 1.4,
+            "pass_": true,
+            "rss": 0.809745817
+          },
+          "H09-U4-HEADROOM": {
+            "legacy": {
+              "conservative": -0.06,
+              "nominal": 0.24,
+              "optimistic": 0.44
+            },
+            "linear_worst": 0.34,
+            "nominal": 0.44,
+            "pass_": true,
+            "rss": 0.369289322
+          },
+          "H10-PACK-RADIAL": {
+            "legacy": null,
+            "linear_worst": 0.0,
+            "nominal": 0.65,
+            "pass_": true,
+            "rss": 0.137652462
+          },
+          "H11-POD-RESIDUAL": {
+            "legacy": {
+              "conservative": 1.05,
+              "nominal": 0.55,
+              "optimistic": 0.25
+            },
+            "linear_worst": -0.15,
+            "nominal": 0.05,
+            "pass_": false,
+            "rss": -0.05
+          },
+          "H13-CASEBACK-DEFLECTION": {
+            "legacy": null,
+            "linear_worst": -0.299680093,
+            "nominal": -0.068128907,
+            "pass_": false,
+            "rss": -0.167803109
+          },
+          "H13-CASEBACK-STRESS": {
+            "legacy": null,
+            "linear_worst": -46.628656356,
+            "nominal": -9.54049477,
+            "pass_": false,
+            "rss": -31.31470661
+          },
+          "H14-SCREW-SEAT": {
+            "legacy": null,
+            "linear_worst": -0.55,
+            "nominal": 0.0,
+            "pass_": false,
+            "rss": -0.357071421
+          },
+          "H21-BORE-SW1": {
+            "legacy": null,
+            "linear_worst": -0.48,
+            "nominal": 0.9,
+            "pass_": false,
+            "rss": -0.114100587
+          },
+          "H22-LRA-Z-LRA-COIN-D10": {
+            "legacy": null,
+            "linear_worst": -2.65,
+            "nominal": -1.85,
+            "pass_": false,
+            "rss": -2.458276253
+          },
+          "H22-LRA-Z-LRA-COIN-D8": {
+            "legacy": null,
+            "linear_worst": -2.25,
+            "nominal": -1.55,
+            "pass_": false,
+            "rss": -2.059901951
+          },
+          "H22-LRA-Z-LRA-LIN-RECT": {
+            "legacy": null,
+            "linear_worst": -2.25,
+            "nominal": -1.65,
+            "pass_": false,
+            "rss": -2.062310563
+          }
+        },
+        "lra_max_height_for_zero_margin_mm": {
+          "LRA-COIN-D10": 0.95,
+          "LRA-COIN-D8": 0.95,
+          "LRA-LIN-RECT": 0.95
+        },
+        "outcome": "REJECTED"
+      }
+    ],
+    "conflict_status": {
+      "C1-FRONT-GAP": "REMAINS_OPEN",
+      "C2-DISPLAY-SIDE-CONNECTORS": "REMAINS_OPEN",
+      "C3-EDGE-WRAP": "SUPPLIER_DATA_GATED",
+      "C4-CHARGER-PATH": "REMAINS_OPEN",
+      "C5-SOUTH-CROWDING": "OWNER_DECISION_GATED",
+      "C6-DISPLAY-FPC-FOLD": "SUPPLIER_DATA_GATED",
+      "C7-WIFI-BEYOND-BOARD": "DEFERRED_G5",
+      "C8-GNSS-OCCUPIED": "DEFERRED_G5",
+      "C9-THICK-CORNER": "REMAINS_OPEN",
+      "G2-BACK-STACK": "REMAINS_OPEN",
+      "G2-BOOK-FOLD": "REMAINS_OPEN",
+      "G2-CROSSING-HEIGHT": "SUPPLIER_DATA_GATED",
+      "G2-DISCOVERED-INTERFACES": "SUPPLIER_DATA_GATED",
+      "G2-PROBE-RELIEF": "REMAINS_OPEN",
+      "X10-OPTICS-HEIGHT-UNKNOWN": "SUPPLIER_DATA_GATED",
+      "X11-POD-FOOTPRINT": "OWNER_DECISION_GATED",
+      "X12-J1502-FACE": "SUPPLIER_DATA_GATED",
+      "X13-EDGE-CROSSINGS": "SUPPLIER_DATA_GATED",
+      "X14-SUPPORT-GAP": "REMAINS_OPEN",
+      "X15-NE-CROWDING": "REMAINS_OPEN",
+      "X16-MAGNETOMETER": "MEASUREMENT_GATED",
+      "X17-GNSS-ALL-HEIGHTS": "DEFERRED_G5",
+      "X18-PACK-EDGE": "SUPPLIER_DATA_GATED",
+      "X19-BCU-0603": "REMAINS_OPEN",
+      "X20-GROWTH-VS-OPTICS": "REMAINS_OPEN",
+      "X21-INGRESS-UNDEFINED": "REMAINS_OPEN",
+      "X22-UNMODELLED-Z": "REMAINS_OPEN",
+      "X23-WINDOW-CROSSTALK": "OWNER_DECISION_GATED",
+      "X24-DISPLAY-LAND": "SUPPLIER_DATA_GATED",
+      "X25-COVER-CASE-FIT": "REMAINS_OPEN"
+    },
+    "deferred_owner_decisions": [
+      "OD-G4-ATM-STD",
+      "OD-G4-MATERIAL",
+      "OD-G4-STRAP",
+      "OD-G4-LRA-MAG",
+      "OD-G4-WINDOW",
+      "OD-G4-STACK"
+    ],
+    "diameter": {
+      "d_dependent_closure_D": {
+        "G4-A": 52.1,
+        "G4-B": 50.15,
+        "G4-C": 50.15
+      },
+      "d_independent_failures": {
+        "G4-A": [
+          "H05",
+          "H11",
+          "H13",
+          "H14",
+          "H15",
+          "H17",
+          "H20",
+          "H21",
+          "H22",
+          "H23"
+        ],
+        "G4-B": [
+          "H05",
+          "H13",
+          "H15",
+          "H17",
+          "H20",
+          "H21",
+          "H22",
+          "H23"
+        ],
+        "G4-C": [
+          "H05",
+          "H10",
+          "H11",
+          "H13",
+          "H14",
+          "H15",
+          "H16",
+          "H17",
+          "H20",
+          "H21",
+          "H22",
+          "H23"
+        ]
+      },
+      "margin_to_ceiling_mm": null,
+      "minimum_feasible_D": null,
+      "minimum_required_D": null,
+      "minimum_required_D_excluding_H22": null,
+      "selected_D": null
+    },
+    "errata": [
+      {
+        "affects": [
+          "C5-SOUTH-CROWDING",
+          "X11-POD-FOOTPRINT",
+          "X12-J1502-FACE"
+        ],
+        "id": "E-G4-01",
+        "text": "The G3 conflict_status evidence for C5-SOUTH-CROWDING, X11-POD-FOOTPRINT and X12-J1502-FACE states 'no recommended topology until nominal hard checks pass'. It is superseded by the accepted G3-B-S14 selection (OD-G4-RECORD). Recorded prospectively; the G3 records stay byte-identical.",
+        "title": "Stale G3 conflict-status evidence"
+      },
+      {
+        "affects": [
+          "LRA"
+        ],
+        "id": "E-G4-02",
+        "text": "G3 dispositioned the S14 outline x LRA overlap (28.431 mm2) as 'C5/SR-FPC-MECH lower-web Z separation requires qualified cross-section'. That disposition does not resolve the conflict: an LRA cannot be hidden in the lower web (0.4 mm nominal, 0.3 mm minimum). The historical LRA reservation (az 165-195, r 12.65-22.00, REAR level) is not a valid frozen placement. G4 searches a valid LRA placement window (section 8.9) or stops. The LRA is never silently removed.",
+        "title": "Historical LRA disposition invalid"
+      }
+    ],
+    "g3_generated_verdict_unchanged": "G3 CONDITIONAL — SUPPLIER/MEASUREMENT GATES OPEN",
+    "g3_record": "G3 CLOSED — PASS WITH SUPPLIER/MEASUREMENT GATES",
+    "generated_sha256": {
+      "design/mechanical/generated/g4_assembly.svg": "399390a3e1bbec850337705aaae7f915a2faa92a957952829e68a74a0cd48250",
+      "design/mechanical/generated/g4_case_sealing.json": "2af9d2d149e4c95803d0dfbb56b20d8fde63d5c9a2b5118587632b4bb2acd9ad",
+      "design/mechanical/generated/g4_case_sealing.md": "eb3afc85d2fe93d6490303a22de77da61cd1f6a8f8451cf0adba408a450fc539",
+      "design/mechanical/generated/g4_plan.svg": "b635703cbcf836ee77a742bebf3c7541ea69c1571abda98a2c51dc38a6a43e49",
+      "design/mechanical/generated/g4_seal_map.svg": "c5917a3831ca537810dac2a900b822a11ee5dae72bdb1b41220ea2217d59f90e",
+      "design/mechanical/generated/g4_sections.svg": "33a9a6f27dc07ca8ef2aa6b8fa985746b63143a6805f59950a94b111b38d143b",
+      "design/mechanical/generated/g4_sweep.jsonl": "a889d341cac28e9b3f7358b058cf7efb4cb6fe313547e2f5004d6f938777b34a"
+    },
+    "handoff": {
+      "design_basis": "G4-B",
+      "status": "DIAGNOSTIC — NOT RELEASED (verdict G4 OWNER DECISION REQUIRED); G4 authorizes nothing downstream"
+    },
+    "independent_review": {
+      "source": "Owner-provided independent re-review record; not engineering acceptance",
+      "verdict": "PASS AS CORRECT BLOCKED STUDY"
+    },
+    "legacy": {
+      "conservative_radial_margin_mm": -0.95,
+      "reproduced": true,
+      "x25_conservative_cover_fit_mm": -1.1
+    },
+    "model_limitations": [
+      "One scalar side-wall thickness tw is used per design point at MAIN, BATTERY and REAR. The r_case(az,z) table adds local feature envelopes and level-specific recesses; it does not solve independent t_wall(az,z). No azimuth-resolved wall closure is established."
+    ],
+    "open_gates": {
+      "battery_carrier": [
+        {
+          "closure": "SR-BATT-PCM plus G4 clearance evaluation",
+          "evidence_class": "PROJECT_DERIVED",
+          "id": "BATT-PCM-CLEARANCE",
+          "known": {
+            "pcm_sweep_az_deg": [
+              220,
+              240
+            ]
+          },
+          "margin_mm": null,
+          "missing": "Supplier PCM lobe dimensions, radial/Z envelope and tolerances; full swept clearance against SW3 and case supports",
+          "requirement": "PCM-lobe clearance to SW3 and supports",
+          "status": "OPEN"
+        },
+        {
+          "closure": "SR-BATT-PACK / SR-BATT-PCM and carrier insulation drawing",
+          "evidence_class": "PROJECT_DERIVED",
+          "id": "BATT-INSULATION-ENVELOPE",
+          "known": {
+            "source": "Frozen stack_parameters t_insulator; already included in back_zone, not added again",
+            "t_insulator_mm": {
+              "max": 0.1,
+              "min": 0.03,
+              "nom": 0.05
+            }
+          },
+          "margin_mm": null,
+          "missing": "Finished insulation coverage, edge wrap, overlaps and their radial/axial tolerance envelope; allocation within finished-pack envelope unconfirmed",
+          "requirement": "Insulation envelope",
+          "status": "OPEN"
+        },
+        {
+          "closure": "Carrier design/manufacturer retention evidence",
+          "evidence_class": "PROJECT_DERIVED",
+          "id": "BATT-CARRIER-RETENTION",
+          "known": {},
+          "margin_mm": null,
+          "missing": "Retention feature geometry, engagement/tolerances, required loads and allowable retention capacity; support placement alone does not establish retention",
+          "requirement": "Carrier retention",
+          "status": "OPEN"
+        },
+        {
+          "closure": "SR-BATT-PCM / SR-FPC-MECH plus routed-tail clearance evaluation",
+          "evidence_class": "PROJECT_DERIVED",
+          "id": "BATT-EXIT-TAIL",
+          "known": {
+            "related_checks": [
+              "H05-EDGE-XB-J201",
+              "H05-EDGE-Z-XB-J201"
+            ],
+            "reservation": {
+              "area_mm2": 3.0,
+              "az_deg": [
+                230.0,
+                236.0
+              ],
+              "class": "KNOWN",
+              "clock": {
+                "from": "7:40",
+                "to": "7:52"
+              },
+              "confidence": "LOW",
+              "geometry": {
+                "rect": [
+                  81.5,
+                  112.2,
+                  84.5,
+                  113.2
+                ],
+                "type": "rect"
+              },
+              "id": "BATT_EXIT",
+              "kind": "reservation",
+              "label": "Battery wire exit / strain relief",
+              "note": "Coarse side-channel exit only; NOT a connector-body reservation.",
+              "radial_mm": [
+                19.93,
+                22.58
+              ],
+              "raw_r_max_mm": 22.73,
+              "short_label": "Bat.exit",
+              "source": "phase1_placement.json reservations[4]",
+              "z_levels": [
+                "MAIN",
+                "BATTERY"
+              ]
+            }
+          },
+          "margin_mm": null,
+          "missing": "Supplier exit/strain-relief envelope and complete tail route with bend/clearance against SW3, supports and insulation; generic XB crossing is partial evidence only",
+          "requirement": "BATT_EXIT / tail clearance",
+          "status": "OPEN"
+        }
+      ],
+      "closure": [
+        "CASE-SIDE-LOAD-PATH (bearing, shear, buckling, ceramic contact / FEA thresholds)",
+        "SERVICE-COVER-REBOND",
+        "FEA-1..FEA-4 (Q1)"
+      ],
+      "g3_carried": [
+        "SR-SFH4053B-DS",
+        "SR-MAX86141-LAND",
+        "SR-MAX86141-HEIGHT",
+        "SR-TS5A12301E-HEIGHT",
+        "SR-FPC-MECH",
+        "SR-C1501",
+        "SR-REAR-PCB",
+        "SR-WINDOW",
+        "SR-BARRIER",
+        "SR-ADHESIVE",
+        "SR-PD-CAPACITANCE",
+        "MG-SPACING",
+        "MG-WINDOW-XTALK",
+        "MG-GUARD",
+        "MG-THERMAL",
+        "MG-MAG"
+      ],
+      "g5": [
+        "AE1401 / AE1410 / AE1420 feed construction",
+        "radome / dielectric design",
+        "RF simulation and validation",
+        "case-material RF validation"
+      ],
+      "manufacturer": [
+        "SR-SFH4053B-DS",
+        "SR-MAX86141-LAND",
+        "SR-MAX86141-HEIGHT",
+        "SR-TS5A12301E-HEIGHT",
+        "SR-PD-CAPACITANCE"
+      ],
+      "measurement": [
+        "MG-SPACING",
+        "MG-WINDOW-XTALK",
+        "MG-GUARD",
+        "MG-THERMAL",
+        "MG-MAG",
+        "ATM-Q1",
+        "ATM-Q2",
+        "ATM-Q3",
+        "ATM-Q4",
+        "ATM-Q5",
+        "ATM-Q6",
+        "h_pod wrist / strap trials"
+      ],
+      "owner": [
+        "OD-G4-ATM-STD",
+        "OD-G4-MATERIAL",
+        "OD-G4-STRAP",
+        "OD-G4-LRA-MAG"
+      ],
+      "supplier": [
+        "SR-COVER-LENS",
+        "SR-DISPLAY-LAND",
+        "SR-DISPLAY-FPC",
+        "SR-BATT-PACK",
+        "SR-BATT-GROWTH",
+        "SR-BATT-PCM",
+        "SR-BUTTONS",
+        "SR-CHG-MECH",
+        "SR-LRA",
+        "SR-WINDOW",
+        "SR-ADHESIVE",
+        "SR-FPC-MECH",
+        "gasket / O-ring supplier data (cross-section tolerance, compression set; no supplier request exists or is issued by G4)",
+        "SR-TAGCONNECT",
+        "SR-J1-ALIGN"
+      ]
+    },
+    "owner_decisions": [
+      {
+        "date": "2026-10-14",
+        "id": "OD-G4-RECORD",
+        "source": "owner decision, G4_BRIEF.md section 2",
+        "verbatim": "Record:\n\nG3 CLOSED — PASS WITH SUPPLIER/MEASUREMENT GATES\n\nand freeze G3-B-S14 as the authoritative G4 carry-in.\n\nThis administrative closure does NOT:\n- close any G3 criterion-10 supplier/manufacturer/measurement gate;\n- change the generated historical G3 verdict;\n- authorize KiCad work;\n- authorize G5 or any later implementation phase."
+      },
+      {
+        "date": "2026-10-14",
+        "id": "OD-G4-ENTRY",
+        "source": "owner decision, G4_BRIEF.md section 2",
+        "verbatim": "Reclassify the existing \"SR-ANTENNAS before G4\" requirement from a G4 ENTRY blocker to a G5 / RF-closure requirement.\n\nG4 may begin with antenna/feed construction unresolved, provided it:\n\n- preserves the frozen radiator volumes;\n- permits no new metal/wiring intrusion into those volumes;\n- does not invent antenna feed dimensions;\n- does not freeze radome dielectric or final case material based on unsupported RF assumptions;\n- makes no RF-performance claims.\n\nAE1401 / AE1410 / AE1420 construction and final RF validation remain G5 gates.\n\nG5 is explicitly allowed to reopen G4 case/material/envelope decisions if real RF evidence proves the G4 assumptions\nincompatible."
+      },
+      {
+        "date": "2026-10-14",
+        "id": "OD-G4-ENVELOPE",
+        "source": "owner decision, G4_BRIEF.md section 2",
+        "verbatim": "Rev-A case-body outside diameter hard ceiling:\n\n<= 51.0 mm\n\nexcluding lugs.\n\nLocal functional bosses may extend at most +1.0 mm beyond the case-body envelope where the G4 brief explicitly permits\nand validates them.\n\n51.0 mm is a HARD MAXIMUM, not the design target.\n\nThe deterministic G4 study must minimize case diameter within all other hard requirements and report:\n\n- selected diameter;\n- minimum feasible diameter found;\n- margin to the 51.0 mm ceiling.\n\nIf no compliant design exists at <=51.0 mm, G4 must stop and report the minimum required diameter rather than silently\nexceeding the owner limit."
+      },
+      {
+        "date": "2026-10-14",
+        "id": "OD-G4-CORNER",
+        "source": "owner decision, G4_BRIEF.md section 2",
+        "verbatim": "For dimensions that G4 itself designs, use:\n\ndesign value + explicitly declared manufacturing tolerance\n\nrather than treating the entire planning range as manufacturing tolerance.\n\nFor supplier/manufacturer-gated quantities:\n- retain the applicable conservative/worst planning value until qualified;\n- do not convert missing supplier data into optimistic tolerances.\n\nPreserve and report the historical G1/G2 conservative calculations unchanged alongside the new G4 calculation.\n\nG4 must report separately:\n\n- legacy carry-in result;\n- nominal;\n- RSS;\n- linear worst;\n- governing owner/supplier/manufacturer terms.\n\nNo speculative compression, material, adhesive, battery-growth, seal or supplier credit may be used to close a margin."
+      }
+    ],
+    "ranking": {
+      "leader_is_selection": false,
+      "order": [
+        "G4-B",
+        "G4-A",
+        "G4-C"
+      ]
+    },
+    "report": "design/mechanical/generated/g4_case_sealing.md",
+    "schema": "sportwatch-g4-summary/1",
+    "selected_candidate": null,
+    "stops": [
+      {
+        "id": "STOP-DIAMETER",
+        "text": "No candidate is feasible at D_case_body <= 51.00 mm; minimum required diameter: none found <= 54.00 mm (diameter-independent hard-check failures)."
+      },
+      {
+        "id": "STOP-LRA",
+        "text": "No feasible LRA pose exists for any envelope class inside the approved architecture at <= 51.0 mm; the LRA is not removed or shrunk."
+      },
+      {
+        "id": "OD-G4-WINDOW",
+        "text": "W0 is mechanically eliminated without a stack delta; owner must decide whether a frame/rib-supported window (W1; W2 fails the G3 seal-land geometry) is the Rev-A baseline."
+      }
+    ],
+    "study_status": "BLOCKED / UNRELEASED STUDY",
+    "unsatisfied_acceptance": [
+      5,
+      8,
+      9,
+      10,
+      11,
+      12,
+      13,
+      15
+    ],
+    "verdict": "G4 OWNER DECISION REQUIRED",
+    "window": {
+      "eligible": [
+        "W1-t0p3-sapphire",
+        "W1-t0p5-sapphire",
+        "W1-t0p5-cs_glass"
+      ],
+      "od_g4_window_triggered": true,
+      "w0": "MECHANICALLY ELIMINATED",
+      "w0_span_mm": 8.358665301
+    },
+    "z": {
+      "G2-REVA": {
+        "g4_delta": 0.0,
+        "linear": 18.04,
+        "nominal": 16.35,
+        "rss": 16.796
+      },
+      "G2-REVA-HI": {
+        "g4_delta": 0.0,
+        "linear": 18.04,
+        "nominal": 16.38,
+        "rss": 16.825
+      }
+    }
   }
 }

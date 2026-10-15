@@ -1940,6 +1940,65 @@ def md_expected_rows(arch, d):
     return rows
 
 
+G4_STATUSES = ("RESOLVED_BY_G4", "REMAINS_OPEN", "SUPPLIER_DATA_GATED", "MEASUREMENT_GATED", "DEFERRED_G5", "DEFERRED_K1",
+               "OWNER_DECISION_GATED")
+G3_BASE = "afb19ac173ce67c7e9599313cc5a0942e026ade9"
+G4_RECORD_LINE = "G3 CLOSED — PASS WITH SUPPLIER/MEASUREMENT GATES"
+
+
+def _md_section(md, begin, end):
+    i = md.find(begin)
+    j = md.find(end, i + 1) if i >= 0 else -1
+    return md[i:j] if i >= 0 and j >= 0 else None
+
+
+def g4_checks(cov, arch):
+    """Return True when the g4 quotation, conflict statuses, status lines and immutable records are consistent."""
+    import subprocess
+    import g4_case_sealing
+    fails = []
+    gen = load_json(GEN / "g4_case_sealing.json")
+    files = {n: (GEN / n).read_text(encoding="utf-8") for n in g4_case_sealing.OUT}
+    want = g4_case_sealing.architecture_summary(gen, g4_case_sealing.file_hashes(files))
+    cov.cmp(("g4",), want, 0)
+    if arch["g4"] != want:
+        fails.append("g4 summary differs from generated output")
+    if set(arch["g4"].get("generated_sha256", {})) != {"design/mechanical/generated/" + n for n in g4_case_sealing.OUT}:
+        fails.append("g4 summary does not hash every G4 generated file")
+    statuses = {c["id"]: c for c in gen["conflict_status"]}
+    if set(statuses) != {c["id"] for c in arch["conflicts"]}:
+        fails.append("G4 conflict set differs")
+    for c in arch["conflicts"]:
+        if [k for k in c if k.startswith("g4_")] != ["g4_status"] or c.get("g4_status") not in G4_STATUSES:
+            fails.append("conflict %s needs exactly one valid g4_status (and no other g4 field)" % c["id"])
+        elif c.get("g4_status") != statuses[c["id"]]["g4_status"]:
+            fails.append("conflict %s g4_status differs from generated" % c["id"])
+    md = ARCH_MD.read_text(encoding="utf-8")
+    if g4_case_sealing.architecture_section(gen) not in md or md.count("<!-- G4 GENERATED BEGIN -->") != 1:
+        fails.append("architecture.md lacks the exact generated G4 section")
+    if G4_RECORD_LINE not in md.split("<!-- G3 GENERATED BEGIN -->")[0] or G4_RECORD_LINE not in README.read_text(encoding="utf-8"):
+        fails.append("OD-G4-RECORD status line missing")
+    base = json.loads(subprocess.run(["git", "show", G3_BASE + ":design/mechanical/architecture.json"], cwd=ROOT,
+                                     capture_output=True, check=True).stdout)
+    for k in ("g1", "g2", "g3"):
+        if arch.get(k) != base.get(k):
+            fails.append("architecture.json %s block changed" % k)
+    old_c = {c["id"]: c for c in base["conflicts"]}
+    for c in arch["conflicts"]:
+        if {k: v for k, v in c.items() if k != "g4_status"} != old_c.get(c["id"]):
+            fails.append("conflict %s changed beyond the added g4_status" % c["id"])
+    if {k: v for k, v in arch.items() if k not in ("g4", "conflicts")} != {k: v for k, v in base.items() if k != "conflicts"}:
+        fails.append("architecture.json changed outside g4 / conflict g4_status")
+    old_md = subprocess.run(["git", "show", G3_BASE + ":design/mechanical/architecture.md"], cwd=ROOT,
+                            capture_output=True, check=True).stdout.decode("utf-8")
+    for b, e in (("## G1.", "<!-- G2 GENERATED BEGIN -->"), ("<!-- G2 GENERATED BEGIN -->", "<!-- G2 GENERATED END -->"),
+                 ("<!-- G3 GENERATED BEGIN -->", "<!-- G3 GENERATED END -->")):
+        if _md_section(md, b, e) != _md_section(old_md, b, e) or _md_section(md, b, e) is None:
+            fails.append("architecture.md section starting %r changed" % b)
+    cov.fails.extend("G4: " + f for f in fails)
+    return not fails
+
+
 def validate_numbers(cov, arch, zs, hm, reg, d):
     """Every numeric value of architecture.json against its independent source (see COVERAGE_EXEMPT)."""
     fails = []
@@ -1981,6 +2040,14 @@ def validate_numbers(cov, arch, zs, hm, reg, d):
             need(False, "G3 package consistency: " + str(exc))
     elif "g3" in arch or g3_path.exists():
         need(False, "G3 package/generated output missing")
+    # G4 is a concise summary of an independent deterministic study: hash + key-wise equality with the
+    # generated result, exactly one g4_status per conflict, the OD-G4-RECORD status line, and the G1 / G2 / G3
+    # blocks and sections unchanged against the accepted G3 baseline.
+    g4_path = GEN / "g4_case_sealing.json"
+    if "g4" in arch and g4_path.exists():
+        need(g4_checks(cov, arch), "G4 package consistency")
+    elif "g4" in arch or g4_path.exists():
+        need(False, "G4 package/generated output missing")
     regn = register_numbers(reg)
     stack_in = load_json(MECH / "inputs" / "stack_parameters.json")
     quote_checks(cov, arch, zs, hm)
