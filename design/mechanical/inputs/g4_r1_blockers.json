@@ -1,0 +1,509 @@
+{
+  "schema": "sportwatch-g4-r1-input/2",
+  "status": "AUTHORED PROVISIONAL INPUTS for the G4-R1 case / seal / support blocker-resolution study (G4_R1_BRIEF.md). Design variables, search grids, R1-authored planning values with evidence class, contract caps, evidence pins, owner decisions, lead adjudications, the C-R1-03 adjudication field and supplied LRA classes only. No result, margin, verdict, selected candidate, selected diameter or minimum diameter is authored here; every result is computed by tools/g4_r1_blockers.py.",
+  "evidence_policy": "Every value carries one evidence class (G4_BRIEF section 6.1 and G4_R1_BRIEF section 9). PROVISIONAL_ASSUMPTION values are planning ranges with rationale and are never supplier, manufacturer, RF or material data. SUPPLIER_GATED terms enter linear-worst evaluations at their conservative planning limit and are never narrowed. MFG_TOL values are declared once per process class and are identical for every candidate using that class. Frozen G1/G2/G3/G4 values that the project exposes programmatically (reservations, process / material classes, O-ring windows and cross-section tolerance, bond lands, button windows, LRA classes, assembly steps) are referenced by id and read from the pinned sources at run time; they are never re-typed here.",
+  "source_sha256": {
+    "design/mechanical/G4_BRIEF.md": "16163137593ac9d4158c051016fd159c9adad51ab05a22518b9ce5cc19334c21",
+    "design/mechanical/G4_R1_BRIEF.md": "4d2658d855b227ccf8635a656478c1ad5bac442153b1026b7eb12dbc875bf312",
+    "design/mechanical/inputs/stack_parameters.json": "f6919f30cebf956d516c5cffdac1a21a7b245dd7ae47548734976fddb8228277",
+    "design/mechanical/inputs/package_heights.json": "47a3c2c4b6f53f6eda9b213e353f819c4c1a1a2c13b0e173d95064ed1e6e6f22",
+    "design/mechanical/inputs/input_register.json": "cf36cd3e70c41110b4a709c0b201800793f94ccc1e3335c3998dffbd0a69d7c7",
+    "design/mechanical/inputs/g1_scenarios.json": "cfcf445003bb4a49d73a61d8eb3d916344325d4efe93722eb3fff8d4ab218819",
+    "design/mechanical/generated/g1_scenarios.json": "557de32c15e3e3be32e8dc73a2b63b5f8f0971af1d8cfbe4d6a3646ba86ecc3c",
+    "design/mechanical/inputs/g2_interconnect.json": "bc01799e9f3f577e3704655241a9fec6b986e00c0a491a2d0b67b1953332c0d7",
+    "design/mechanical/generated/g2_interconnect.json": "3898959942812dddedb981a37ca5c2b74c44300d726b3ee30f4b47f62d0cceeb",
+    "design/mechanical/inputs/g3_rear_optical.json": "3181c4e775be8ce7fb424d0f54f517d97d965b8af816bccb1555aeeaa6036421",
+    "design/mechanical/generated/g3_rear_optical.json": "1649f6b2f2b199081fa78f2e93a942f917272a06459e936ad6e6e77450b82fc8",
+    "design/mechanical/generated/zstack.json": "7803be8c695b4ce06961c6aa1d8c44ea2117d6217af2b9f653470220b294dfdf",
+    "design/mechanical/generated/main_height_map.json": "60fbdd233a1112e688df3855b3ec2b7f81b0aa9db2236d3a3579e69d48d008b6",
+    "design/mechanical/inputs/g4_case_sealing.json": "85b183214a6250faa8224477967610581340d3dbe73c89a1053f6c809ccd9edb",
+    "design/mechanical/tools/g4_case_sealing.py": "090c944a639f3fa68d61d8145e098a7c1ea300bb9bf61a5d192cbf0ed952c06c",
+    "design/mechanical/generated/g4_case_sealing.json": "2af9d2d149e4c95803d0dfbb56b20d8fde63d5c9a2b5118587632b4bb2acd9ad"
+  },
+  "architecture_projection": {
+    "path": "design/mechanical/architecture.json",
+    "keys": [
+      "reservations",
+      "rear_module",
+      "g2.reservations",
+      "edge_crossings"
+    ],
+    "sha256": "cf7cd55ee28690656aece5eb45ddd3ca6067c1afae1f8fb50188070eaa51cb53",
+    "note": "Canonical hash (g2_interconnect.dumps) of the read-only projection; the g1/g2/g3/g4 quotations and conflict statuses are excluded to avoid a circular hash."
+  },
+  "baselines": {
+    "g1": "168badbab6de1201bb3209902a53fe1e4b874cc9",
+    "g2": "eea49e447895e574a3f48e0b9777f57880dcd632",
+    "g3": "afb19ac173ce67c7e9599313cc5a0942e026ade9",
+    "g4": "00e77cbe107a79ac05194f19b674f7ab8d5941c9",
+    "g4_brief_path": "design/mechanical/G4_BRIEF.md",
+    "g4_r1_brief_path": "design/mechanical/G4_R1_BRIEF.md",
+    "r1_contract_commit": "2d1d28077e7743b06e1b1802c7ba9e8f4317fedf"
+  },
+  "c_r1_03_adjudication": null,
+  "lra_supplied": [],
+  "lra_supplied_schema": {
+    "required": [
+      "id",
+      "shape",
+      "height_mm",
+      "lead_exit_envelope_mm",
+      "primary_document",
+      "provenance"
+    ],
+    "dimension_fields": {
+      "coin": [
+        "diameter_mm"
+      ],
+      "rect": [
+        "length_mm",
+        "width_mm"
+      ]
+    },
+    "range_keys": [
+      "min",
+      "nom",
+      "max"
+    ],
+    "provenance_keys": [
+      "page",
+      "table_or_figure"
+    ],
+    "lead_exit_fields": [
+      "length_mm",
+      "width_mm",
+      "height_mm"
+    ],
+    "lead_exit_directions": [
+      "radial_out",
+      "radial_in",
+      "cw",
+      "ccw"
+    ],
+    "lead_exit_rule": "R2-3: lead_exit_envelope_mm = {length_mm, width_mm, height_mm: min/nom/max, exit: radial_out / radial_in / cw / ccw}; the lead / exit rectangle is attached to the body edge in the exit direction of the pose frame and is part of the physical envelope in every plan (global G4 exclusions, local exclusions, outer limit) and Z test (envelope height = max(body, lead)).",
+    "rule": "C-R1-08: a supplied class counts only with a local primary document (repository path, existing file, not an R1 or generated file) and page plus table / figure provenance; a record missing any required field (lead / exit geometry included) is rejected and never suppresses the OD-G4-LRA-ARCH gate; a class defined by the threshold it must meet is rejected."
+  },
+  "owner_decisions": [
+    {
+      "id": "OD-G4R1-ENTRY",
+      "date": "2026-10-15",
+      "class": "OWNER_DECISION",
+      "source": "owner decision, G4_R1_BRIEF.md section 2",
+      "verbatim": "Authorize:\n\nG4-R1 — CASE / SEAL / SUPPORT BLOCKER-RESOLUTION STUDY\n\nwith lanes:\n\nL-WIN, L-BTN, L-SEAL, L-CHG, L-STR, L-RAD, L-ASM, L-LRA\n\nand the contract clarifications / stop conditions C-R1-01…C-R1-09 defined by the technical-lead draft (finalized in\nsections 4 and 12 of this brief).\n\nG4-R1 does NOT authorize:\n- G5;\n- K1 / KiCad;\n- G1 / G2 / G3 reopening;\n- qualification;\n- supplier claims;\n- body diameter > 51.0 mm;\n- nonzero stack growth without OD-G4-STACK;\n- movement of frozen G3-B-S14 placements.\n\nAny such requirement is a STOP."
+    },
+    {
+      "id": "OD-G4-WINDOW",
+      "date": "2026-10-15",
+      "class": "OWNER_DECISION",
+      "source": "owner decision, G4_R1_BRIEF.md section 2",
+      "verbatim": "Use:\n\nW1 — rib/frame-supported window\n\nas the Rev-A mechanical baseline.\n\nPlanning nominal thickness:\n\n0.50 mm\n\nThis must preserve zero G4 Z delta.\n\n0.30 mm sapphire remains an optimization / Rev-B lever only and is not credited to Rev-A closure.\n\nMaterial and supplier qualification remain open.\n\nNo structural, optical, adhesive or 5 ATM qualification is implied.\n\nW0 remains rejected under current Rev-A thickness constraints. W2 remains rejected under current seal-land geometry."
+    },
+    {
+      "id": "OD-G4-ASSEMBLY",
+      "date": "2026-10-15",
+      "class": "OWNER_DECISION",
+      "source": "owner decision, G4_R1_BRIEF.md section 2",
+      "verbatim": "Rev-A assembly clarification:\n\nThe display is mated and seated from the open front before the cover is bonded.\n\nThis supersedes the prior cover-first ordering only where the latter conflicts with the continuous display support\nland.\n\nNo allocation, stack, placement or architecture change is authorized.\n\nSERVICE-COVER-REBOND remains OPEN."
+    }
+  ],
+  "lead_adjudications": [
+    {
+      "id": "LA-STR-1",
+      "source": "G4-R1 correction adjudication 2026-10-15",
+      "verbatim": "I_T in G4_R1_BRIEF §6.5 means the composite T-section inertia about its own\nneutral axis MINUS the flange self-inertia contribution.\n\nThe structural formulation must satisfy:\n\nh_rib -> 0  =>  D_r -> D_plate\n\nNo zero-height-rib stiffness bonus is permitted."
+    },
+    {
+      "id": "LA-STR-2",
+      "source": "G4-R1 correction adjudication 2026-10-15",
+      "verbatim": "Screen A is the brief-literal per-region isotropic-equivalent-thickness screen:\n\nt_eq = (12*(1-nu^2)*D_r/E)^(1/3)\n\nevaluated through the accepted G4 annular-plate formulation.\n\nScreen A is REPORTED.\n\nA directional polar-orthotropic Screen B is also required and GOVERNS.\n\nR1-H09 physical PASS requires both applicable screens to pass."
+    },
+    {
+      "id": "LA-STR-3",
+      "source": "G4-R1 correction adjudication 2026-10-15",
+      "verbatim": "No invented inner caseback support is permitted.\n\nUse the accepted G4 bypass / loaded-boss boundary semantics."
+    },
+    {
+      "id": "LA-STR-4",
+      "source": "G4-R1 correction adjudication 2026-10-15",
+      "verbatim": "Circumferential ring stiffness receives NO structural credit in R1.\n\nA ring may be represented geometrically but cannot improve the analytical\nstiffness result."
+    },
+    {
+      "id": "LA-STR-5",
+      "source": "G4-R1 correction adjudication 2026-10-15",
+      "verbatim": "Interrupted ribs do not count as continuous ribs.\n\nOnly ribs continuous over the required structural radial interval receive rib\nstiffness credit.\n\nFor rib spacing use the largest angular gap at the relevant radius."
+    },
+    {
+      "id": "LA-Z-1",
+      "source": "G4-R1 correction adjudication 2026-10-15",
+      "verbatim": "`h_pod` keeps the accepted G4 meaning:\n\nh_pod = 0.0\n\nfor the caseback outer-face / pod-plane datum.\n\nThe G3 optical-pod depth is a separate variable named:\n\npod_depth\n\nDo not conflate them."
+    },
+    {
+      "id": "LA-Z-2",
+      "source": "G4-R1 correction adjudication 2026-10-15",
+      "verbatim": "The rear conductor/FPC band exists below the lower web over the entire\nperiphery unless a pinned plan footprint proves otherwise.\n\nRibs, LRA, charger and other internal features must respect that Z volume."
+    },
+    {
+      "id": "LA-BTN-1",
+      "source": "G4-R1 correction adjudication 2026-10-15",
+      "verbatim": "The C-R1-02 rim / groove / flexure term is physically located in the common\nbutton section and is NEVER omitted."
+    },
+    {
+      "id": "LA-BTN-2",
+      "source": "G4-R1 correction adjudication 2026-10-15",
+      "verbatim": "T3 is selectable only if a complete flexure model exists and passes.\n\nOtherwise:\n\nNOT_SELECTABLE\n\nwith the governing required threshold reported."
+    },
+    {
+      "id": "LA-LRA-1",
+      "source": "G4-R1 correction adjudication 2026-10-15",
+      "verbatim": "Residual caseback thickness below an LRA pocket must be at least the adverse\nG4 material-class wall minimum plus the relevant manufacturing tolerance.\n\nThe current R1 V22 values are defective where they permit less.\n\nAt minimum preserve these G4 adverse material-class floors:\n\nceramic: 0.8 mm\nmetal:   0.7 mm\npolymer: 1.0 mm\n\nplus applicable process thickness tolerance."
+    },
+    {
+      "id": "LA-ASM-1",
+      "source": "G4-R1 correction adjudication 2026-10-15",
+      "verbatim": "Use the accepted G4 A1..A11 operation identities, directions and battery-state\nsemantics.\n\nC-R1-06 does NOT authorize rewriting the whole assembly sequence.\n\nOnly the selected button topology may change A9's part content."
+    },
+    {
+      "id": "LA-HC-1",
+      "source": "G4-R1 correction adjudication 2026-10-15",
+      "verbatim": "Use the explicit hard-check state model in S6 below."
+    }
+  ],
+  "parameters": {
+    "V01_D_case_body": {
+      "start": 48.0,
+      "stop": 51.0,
+      "step": 0.05,
+      "report_stop": 52.5,
+      "ceiling_mm": 51.0,
+      "evidence_class": "OWNER_REQUIREMENT",
+      "source": "OD-G4-ENVELOPE"
+    },
+    "V02_tw_bulk": {
+      "start": 0.8,
+      "stop": 1.6,
+      "step": 0.1,
+      "evidence_class": "DESIGN",
+      "source": "G4 sweep t_wall_side_mm"
+    },
+    "V03_corridor_arcs": {
+      "reservations": [
+        "FPC_CORR",
+        "BATT_TAIL",
+        "CHG_RISER"
+      ],
+      "crossing_by_reservation": {
+        "FPC_CORR": "XF-J1501",
+        "BATT_TAIL": "XB-J201",
+        "CHG_RISER": "XC-J202"
+      },
+      "arc_extension_deg": 1.5,
+      "step_mm": 0.02,
+      "z_extent_options": [
+        "MAIN_BATTERY",
+        "THROUGH_REAR_FACE"
+      ],
+      "evidence_class": "DESIGN + MFG_TOL",
+      "rationale": "C-R1-04: local arcs over the frozen corridor reservations (azimuths read from architecture.json); each arc extends 1.5 deg beyond its corridor on both sides; floor = local material t_wall_min(max) + local bore radius tol + local OD tol."
+    },
+    "V04_boss_extension": {
+      "start": 0.0,
+      "stop": 0.95,
+      "step": 0.05,
+      "evidence_class": "DESIGN",
+      "source": "OD-G4-ENVELOPE (+1.0 incl. tolerance)"
+    },
+    "V05_button_topologies": {
+      "options": [
+        "T1",
+        "T2-R",
+        "T2-F",
+        "T3"
+      ],
+      "T1": "dynamic radial pusher O-ring (G4 pusher_gland); regression only, never selectable",
+      "T2-R": "rigid plunger in an unsealed guide bore; elastomer boot / bonded diaphragm recessed in a counterbore; boot outer surface inside the boss envelope",
+      "T2-F": "rigid plunger in an unsealed guide bore; elastomer boot rim bonded / face-sealed on the boss face; boot protrudes beyond the boss face",
+      "T3": "metal case-integral flexure web (non-ferromagnetic metal midcase only); selectable only with a complete flexure model and authored minimum-web evidence (LA-BTN-2)"
+    },
+    "V06_pusher_dp": {
+      "start": 2.0,
+      "stop": 3.6,
+      "step": 0.2,
+      "evidence_class": "DESIGN"
+    },
+    "V07_boot_rim_land": {
+      "options": [
+        0.5,
+        0.6,
+        0.8,
+        1.0
+      ],
+      "adverse_mm": 1.0,
+      "evidence_class": "PROVISIONAL_ASSUMPTION",
+      "rationale": "C-R1-02 rim / groove term and boot rim land; adverse authored value used for closure (never replaced by 0.8)."
+    },
+    "V08_boot": {
+      "strain_levels": [
+        0.15,
+        0.25,
+        0.35
+      ],
+      "strain_hard_max": 0.25,
+      "free_height_mm": 1.8,
+      "evidence_class": "PROVISIONAL_ASSUMPTION",
+      "gate": "SR-BUTTONS",
+      "rationale": "Authored boot free-height planning value (input, not a derived pass); strain screen h_boot >= stroke / strain_hard_max."
+    },
+    "V09_guide_stack": {
+      "guide_land_source": "g4 parameters.buttons.guide_land_each_mm (adverse max)",
+      "c_switch_source": "g4 parameters.buttons.c_switch_mm (adverse max)",
+      "c_main_case_source": "g4 parameters.c_main_case_mm (adverse max)",
+      "shoulder_mm": 0.4,
+      "stroke_rule": "stroke >= c_switch adverse",
+      "evidence_class": "SUPPLIER_GATED / PROVISIONAL_ASSUMPTION"
+    },
+    "T3_flexure": {
+      "min_web_mm": null,
+      "min_web_evidence": null,
+      "applies_to": "MAT-NF-METAL midcase, SW1-SW4 only",
+      "rationale": "No authored machining minimum web exists; T3 is NOT_SELECTABLE until evidence is supplied (LA-BTN-2)."
+    },
+    "V10_main_seal_topologies": [
+      "face",
+      "adhesive",
+      "radial"
+    ],
+    "V11_main_seal_cs": {
+      "start": 0.5,
+      "stop": 1.2,
+      "step": 0.1,
+      "diagnostic_stop": 2.0,
+      "rationale": "Windows and cross-section tolerance are read from g4 parameters.oring (never widened or narrowed); the diagnostic extension only locates zero-margin thresholds."
+    },
+    "V12_caseback_thickness": {
+      "t_in": {
+        "start": 0.4,
+        "stop": 1.2,
+        "step": 0.1
+      },
+      "t_out": {
+        "start": 0.6,
+        "stop": 1.6,
+        "step": 0.1
+      }
+    },
+    "V12b_flange_thickness": {
+      "start": 0.8,
+      "stop": 2.2,
+      "step": 0.1,
+      "evidence_class": "DESIGN",
+      "rationale": "Explicit caseback seal-flange thickness under the midcase rear-face annulus; groove residual and Z modeled."
+    },
+    "V13_rib_counts": {
+      "spoke_options": [
+        0,
+        8,
+        12,
+        16,
+        24
+      ],
+      "ring_options": [
+        0,
+        1,
+        2
+      ],
+      "phase_divisions": 8
+    },
+    "V14_rib_geometry": {
+      "width_options": [
+        0.6,
+        0.8,
+        1.0
+      ],
+      "height_options": [
+        0.4,
+        0.6,
+        0.8,
+        1.0,
+        1.2,
+        1.4
+      ],
+      "c_rib_top_min_mm": 0.1,
+      "K_t": 2.0,
+      "tolerance_rule": "rib height tol = caseback process thickness_mm; rib width tol = caseback process groove_width_mm",
+      "evidence_class": "DESIGN + MFG_TOL; K_t PROVISIONAL (lead planning value)"
+    },
+    "V15_ring_radii": {
+      "start": 17.5,
+      "stop": 23.5,
+      "step": 0.5,
+      "credit": "none (LA-STR-4)"
+    },
+    "V16_split_radii_C1": {
+      "start": 17.0,
+      "stop": 19.1,
+      "step": 0.5
+    },
+    "V17_caseback_materials": [
+      "MAT-GF-POLY",
+      "MAT-NF-METAL",
+      "MAT-CERAMIC"
+    ],
+    "V18_window": {
+      "baseline": "W1",
+      "t_nom_mm": 0.5,
+      "materials": [
+        "sapphire",
+        "cs_glass"
+      ],
+      "eliminated_materials": [
+        "polycarbonate"
+      ],
+      "rib_width_mm": 0.6,
+      "rib_width_tol_mm": 0.05,
+      "evidence_class": "PROVISIONAL_ASSUMPTION",
+      "rationale": "W1 inter-cell rib width and its tolerance (moved from the tool into inputs)."
+    },
+    "V19_charger_pose": {
+      "orientations": [
+        0,
+        90
+      ],
+      "r_centre": {
+        "start": 17.5,
+        "stop": 23.5,
+        "step": 0.05
+      },
+      "az_centre": {
+        "start": 85.0,
+        "stop": 95.0,
+        "step": 1.0
+      },
+      "block_size_mm": [
+        4.0,
+        5.0
+      ],
+      "block_size_source": "must equal g4 parameters.charger_block_min (radial, tangential); never reduced"
+    },
+    "V20_charger_land": {
+      "start": 0.5,
+      "stop": 1.0,
+      "step": 0.1,
+      "adverse_mm": 1.0,
+      "wedge_reservation": "CHG_CONTACT",
+      "overshoot_cap_mm": 0.75,
+      "azimuth_cap_deg": [
+        78.0,
+        102.0
+      ],
+      "rf_clearance_source": "g4 parameters.rf_clearance_report_mm",
+      "route_clearance": {
+        "routes": [
+          "CHG_ROUTE",
+          "CHG_LINK"
+        ],
+        "plan_and_z_kinds": [
+          "caseback screw",
+          "case-side support",
+          "support pad"
+        ],
+        "plan_mm": 0.0,
+        "z_mm": 0.0,
+        "evidence_class": "CONTRACT (C-R1-01 item 2 (v), literal)",
+        "subject": "the non-conductive bond/seal land (C-R1-01 item 2)",
+        "contract_text": "(v) clears screws, supports, CHG_ROUTE and CHG_LINK in plan and in Z, and",
+        "rule": "C-R1-01 2(v): the non-conductive bond/seal land (v) clears screws, supports, CHG_ROUTE and CHG_LINK in plan and in Z.",
+        "clearance_semantics": {
+          "evidence_class": "MODEL (R3-3 strict clearance rule; not contract text)",
+          "rule": "a plan or Z gap separates only when strictly positive (touching counts as a collision); a Z separation never waives a plan collision of the land; C-R1-01 2(vi) neighbours use the common strict 3-D clearance."
+        },
+        "block_and_z_screen": {
+          "evidence_class": "LEAD / MODEL CONSERVATISM (not contract text; never decides R1-H14)",
+          "rule": "optional diagnostic screen: the conductive contact block plan AND Z separated from the 2(v) items and strictly below the CHG_ROUTE / CHG_LINK conductor band. C-R1-01 item 1 states no plan-AND-Z rule for the block; the block is held to item 1 and the common strict 3-D clearance."
+        }
+      }
+    },
+    "V21_feedthrough_topologies": {
+      "options": [
+        "FT-A",
+        "FT-B",
+        "FT-C"
+      ],
+      "FT-A": "adhesive ring (reference)",
+      "FT-B": "insert-moulded block in a polymer caseback",
+      "FT-C": "bonded sealed body in a ceramic / metal caseback"
+    },
+    "V22_lra_pocket": {
+      "pocket_depths_mm": [
+        0.0,
+        0.1,
+        0.2,
+        0.3,
+        0.4,
+        0.5,
+        0.6
+      ],
+      "grid_source": "g4 lra_search (az 0-355 step 5, r step 0.25, orientations 0 / 90)",
+      "residual_floor_rule": "LA-LRA-1: residual >= caseback material t_wall_min(max) + caseback process thickness tolerance",
+      "la_lra_1_minimum_floors_mm": {
+        "MAT-CERAMIC": 0.8,
+        "MAT-NF-METAL": 0.7,
+        "MAT-GF-POLY": 1.0
+      },
+      "historical_residual_mm": 0.5,
+      "historical_residual_note": "Old 0.5 mm residual assumption of the brief section 6.8 estimate; reported as the optimistic historical bound only, never credited."
+    },
+    "V23_carrier": {
+      "t_carrier_wall": {
+        "start": 0.3,
+        "stop": 0.6,
+        "step": 0.05
+      },
+      "R_carrier_inner": {
+        "start": 22.75,
+        "stop": 23.6,
+        "step": 0.05
+      },
+      "source": "G4 sweep grids (pinned equality checked)"
+    },
+    "V24_screws": {
+      "nominal_count": 4,
+      "locations": "lug roots; outside the seal line (computed)"
+    },
+    "V25_cover": {
+      "source": "G4 cover / land search (a_cover, t_land, w_land) re-evaluated at the R1 point"
+    },
+    "screen_b": {
+      "subregions": 8,
+      "convergence_max_rel": 0.01,
+      "samples_per_region": 41,
+      "isotropic_limit_max_rel": 1e-06
+    }
+  },
+  "candidates": [
+    {
+      "id": "G4-A",
+      "source": "g4_case_sealing.json candidates G4-A",
+      "definition": "unchanged (C-R1-07); read from the pinned G4 input"
+    },
+    {
+      "id": "G4-B",
+      "source": "g4_case_sealing.json candidates G4-B",
+      "definition": "unchanged (C-R1-07); read from the pinned G4 input"
+    },
+    {
+      "id": "G4-C1",
+      "base": "G4-C",
+      "overrides": {
+        "pod_concept": "P1",
+        "title": "Polymer midcase, split caseback: non-ferromagnetic metal centre plate confined below the minimum radiator inner radius minus 1.0 mm, polymer outer ring retained mechanically and bonded; P1 pod frame integral with the metal centre plate"
+      },
+      "definition": "C-R1-07 fallback: G4-C with the P2 pod frame retired (P1 integral frame); S-POD-FRAME retired"
+    }
+  ],
+  "budgets": {
+    "generated_json_max_bytes": 2000000,
+    "generated_file_max_bytes": 2000000,
+    "check_runtime_max_s": 90,
+    "evaluations_budget": 2000000
+  }
+}

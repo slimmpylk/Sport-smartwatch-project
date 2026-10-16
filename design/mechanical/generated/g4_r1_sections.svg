@@ -1,0 +1,62 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1180" height="1000" viewBox="0 0 1180 1000" font-family="sans-serif">
+<title>G4-R1 sections</title>
+<rect x="0" y="0" width="1180" height="1000" fill="#ffffff"/>
+<text x="20.00" y="26.00" font-size="13" text-anchor="start" fill="#111" font-weight="bold">G4-R1 sections - G4-B - R1 OWNER DECISION REQUIRED</text>
+<text x="40.00" y="52.00" font-size="11" text-anchor="start" fill="#111" font-weight="bold">T2-R SW1 common section (I-SUM): available 2.640 mm, required 4.400 mm, bore margin -1.760 mm, protrusion 0.970 mm</text>
+<line x1="40" y1="64" x2="330.4" y2="64" stroke="#1a5276" stroke-width="2"/>
+<rect x="40.0" y="70" width="44.0" height="26" fill="#d5dbdb" stroke="#333"/>
+<text x="42.00" y="110.00" font-size="8" text-anchor="start" fill="#111" font-weight="normal">guide_land_inner 0.40</text>
+<rect x="84.0" y="70" width="44.0" height="26" fill="#fdebd0" stroke="#333"/>
+<text x="86.00" y="121.00" font-size="8" text-anchor="start" fill="#111" font-weight="normal">stop_shoulder 0.40</text>
+<rect x="128.0" y="70" width="44.0" height="26" fill="#fdebd0" stroke="#333"/>
+<text x="130.00" y="132.00" font-size="8" text-anchor="start" fill="#111" font-weight="normal">stroke 0.40</text>
+<rect x="172.0" y="70" width="44.0" height="26" fill="#d5dbdb" stroke="#333"/>
+<text x="174.00" y="110.00" font-size="8" text-anchor="start" fill="#111" font-weight="normal">guide_land_outer 0.40</text>
+<rect x="216.0" y="70" width="110.0" height="26" fill="#f5b7b1" stroke="#333"/>
+<text x="218.00" y="121.00" font-size="8" text-anchor="start" fill="#111" font-weight="normal">rim_groove 1.00</text>
+<rect x="326.0" y="70" width="198.0" height="26" fill="#f5b7b1" stroke="#333"/>
+<text x="328.00" y="132.00" font-size="8" text-anchor="start" fill="#111" font-weight="normal">boot_free_height_in_counterbore 1.80</text>
+<text x="536.00" y="88.00" font-size="9" text-anchor="start" fill="#1a5276" font-weight="normal">blue line = available bore length (inner bore face to boss face)</text>
+<text x="40.00" y="162.00" font-size="11" text-anchor="start" fill="#111" font-weight="bold">T2-F SW1 common section (I-SUM): available 1.740 mm, required 2.600 mm, bore margin -0.860 mm, protrusion 1.870 mm</text>
+<line x1="40" y1="174" x2="231.4" y2="174" stroke="#1a5276" stroke-width="2"/>
+<rect x="40.0" y="180" width="44.0" height="26" fill="#d5dbdb" stroke="#333"/>
+<text x="42.00" y="220.00" font-size="8" text-anchor="start" fill="#111" font-weight="normal">guide_land_inner 0.40</text>
+<rect x="84.0" y="180" width="44.0" height="26" fill="#fdebd0" stroke="#333"/>
+<text x="86.00" y="231.00" font-size="8" text-anchor="start" fill="#111" font-weight="normal">stop_shoulder 0.40</text>
+<rect x="128.0" y="180" width="44.0" height="26" fill="#fdebd0" stroke="#333"/>
+<text x="130.00" y="242.00" font-size="8" text-anchor="start" fill="#111" font-weight="normal">stroke 0.40</text>
+<rect x="172.0" y="180" width="44.0" height="26" fill="#d5dbdb" stroke="#333"/>
+<text x="174.00" y="220.00" font-size="8" text-anchor="start" fill="#111" font-weight="normal">guide_land_outer 0.40</text>
+<rect x="216.0" y="180" width="110.0" height="26" fill="#f5b7b1" stroke="#333"/>
+<text x="218.00" y="231.00" font-size="8" text-anchor="start" fill="#111" font-weight="normal">rim_groove 1.00</text>
+<text x="338.00" y="198.00" font-size="9" text-anchor="start" fill="#1a5276" font-weight="normal">blue line = available bore length (inner bore face to boss face)</text>
+<text x="40.00" y="290.00" font-size="11" text-anchor="start" fill="#111" font-weight="bold">T3 (case-integral flexure): NOT_SELECTABLE</text>
+<text x="40.00" y="306.00" font-size="10" text-anchor="start" fill="#111" font-weight="normal">a manufacturable web must be &lt;= 0.0098 mm thick to keep sigma &lt;= 150 MPa at the 0.40 mm stroke</text>
+<text x="40.00" y="340.00" font-size="12" text-anchor="start" fill="#111" font-weight="bold">Caseback periphery section, common Z datums</text>
+<text x="40.00" y="356.00" font-size="10" text-anchor="start" fill="#111" font-weight="normal">(Z = 0 caseback outer / pod plane, +Z to the front; LA-Z-2 conductor band shaded)</text>
+<line x1="40" y1="720.0" x2="470" y2="720.0" stroke="#555" stroke-dasharray="4 3"/>
+<text x="475.00" y="724.00" font-size="9" text-anchor="start" fill="#111" font-weight="normal">Z = 0 caseback / pod plane 0.000</text>
+<line x1="40" y1="528.0" x2="470" y2="528.0" stroke="#555" stroke-dasharray="4 3"/>
+<text x="475.00" y="532.00" font-size="9" text-anchor="start" fill="#111" font-weight="normal">t_out 1.600</text>
+<line x1="40" y1="450.0" x2="470" y2="450.0" stroke="#555" stroke-dasharray="4 3"/>
+<text x="475.00" y="454.00" font-size="9" text-anchor="start" fill="#111" font-weight="normal">conductor band bottom (adverse) 2.250</text>
+<line x1="40" y1="366.0" x2="470" y2="366.0" stroke="#555" stroke-dasharray="4 3"/>
+<text x="475.00" y="370.00" font-size="9" text-anchor="start" fill="#111" font-weight="normal">lower web underside (nominal) 2.950</text>
+<rect x="40" y="366.0" width="400" height="84.0" fill="#f9e79f" fill-opacity="0.6" stroke="#b7950b"/>
+<rect x="40" y="528.0" width="400" height="192.0" fill="#aed6f1" stroke="#333"/>
+<text x="40.00" y="740.00" font-size="10" text-anchor="start" fill="#111" font-weight="normal">Selected: t_in 1.10, t_out 1.60, spokes 0, w 0.00, h 0.00</text>
+<text x="40.00" y="756.00" font-size="10" text-anchor="start" fill="#111" font-weight="normal">Screen B +371.784 MPa / +0.120 mm (pass false); Screen A +371.784 MPa</text>
+<text x="40.00" y="772.00" font-size="10" text-anchor="start" fill="#111" font-weight="normal">Best ribbed: spokes 8, w 0.80, h 0.40: Screen B +371.994 MPa (no ring credit, LA-STR-4)</text>
+<text x="660.00" y="340.00" font-size="12" text-anchor="start" fill="#111" font-weight="bold">Main seal: caseback flange + face groove (smallest feasible face gland; display only)</text>
+<rect x="660" y="400.0" width="420" height="160.0" fill="#aed6f1" stroke="#333"/>
+<rect x="810.0" y="400.0" width="125.0" height="70.0" fill="#ffffff" stroke="#c0392b"/>
+<text x="660.00" y="578.00" font-size="10" text-anchor="start" fill="#111" font-weight="normal">flange t 1.600 mm; groove h 0.700 x g 1.250 mm (cs 0.90)</text>
+<text x="660.00" y="594.00" font-size="10" text-anchor="start" fill="#111" font-weight="normal">groove residual margin +0.060 mm; rear-face annulus margin -1.030 mm</text>
+<text x="660.00" y="610.00" font-size="10" text-anchor="start" fill="#111" font-weight="normal">coupled flange envelope (all face rows): thickness 1.300..1.800 mm, adverse top 1.820 mm</text>
+<text x="660.00" y="640.00" font-size="12" text-anchor="start" fill="#111" font-weight="bold">Charger feedthrough (FT-C)</text>
+<text x="660.00" y="656.00" font-size="10" text-anchor="start" fill="#111" font-weight="normal">block Z 0 .. 2.250 mm (SR-CHG-MECH allocation): zero Z gap to the conductor band, plan-separated from CHG_ROUTE / CHG_LINK (3-D clear: true); fails only the block-AND-Z screen (model conservatism)</text>
+<text x="660.00" y="672.00" font-size="10" text-anchor="start" fill="#111" font-weight="normal">land Z 0 .. 1.620 mm: C-R1-01 2(v) plan AND Z vs screws / supports unsatisfiable (shared Z = 0 datum; land Z gap -1.620 mm)</text>
+<rect x="640.0" y="804.0" width="360.0" height="96.0" fill="#f5cba7" stroke="#333"/>
+<rect x="700.0" y="765.0" width="240.0" height="135.0" fill="#d35400" stroke="#333"/>
+<text x="660.00" y="920.00" font-size="10" text-anchor="start" fill="#111" font-weight="normal">block 4.00 x 5.00 mm, land 1.00 mm, charger closed false (plan prerequisite: r_lim 24.625 mm required, 24.300 available)</text>
+</svg>
