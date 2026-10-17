@@ -1,0 +1,1120 @@
+{
+ "schema": "sportwatch-g4-r2-input/1",
+ "status": "AUTHORED PROVISIONAL INPUTS for the G4-R2 package-closure study (G4_R2_BRIEF.md): owner decisions and answers of 2026-10-17 (verbatim), the in-memory overlay records, labelled catalogue values, authored PROVISIONAL envelopes and grids, pins, and the empty supplier-evidence / lra_supplied / fallback_trigger slots only. No result, margin, verdict, selected design point or minimum diameter is authored here; every result is computed by tools/g4_r2_closure.py.",
+ "evidence_policy": "Every value carries one evidence class (G4_BRIEF section 6.1). Catalogue values are OWNER_DECISION with catalogue_value true and gate SR-BATT-PACK; they are never MANUFACTURER_VERIFIED. PROVISIONAL_ASSUMPTION values are planning ranges with a rationale and are never supplier, manufacturer, RF, material or MPN data. Frozen G1-R1 values that the project exposes programmatically are read from the pinned sources at run time and are never re-typed here.",
+ "r2_contract_commit": "8f8990450fd2a482ef35c4b0314743261840751e",
+ "baselines": {
+  "g1": "168badbab6de1201bb3209902a53fe1e4b874cc9",
+  "g2": "eea49e447895e574a3f48e0b9777f57880dcd632",
+  "g3": "afb19ac173ce67c7e9599313cc5a0942e026ade9",
+  "g4": "00e77cbe107a79ac05194f19b674f7ab8d5941c9",
+  "g4_contract": "935da5ca737ce4cd5b9a2e1245c7d48c8104a592",
+  "r1_contract": "2d1d28077e7743b06e1b1802c7ba9e8f4317fedf",
+  "r1_recorded": "27f7a3a0570bb79c27df530cd5d99c7ea7597f9f"
+ },
+ "source_sha256": {
+  "design/mechanical/G4_BRIEF.md": "16163137593ac9d4158c051016fd159c9adad51ab05a22518b9ce5cc19334c21",
+  "design/mechanical/G4_R1_BRIEF.md": "4d2658d855b227ccf8635a656478c1ad5bac442153b1026b7eb12dbc875bf312",
+  "design/mechanical/G4_R2_BRIEF.md": "99d2148c695b4153f684440dc4671f54c212d671f3be61887210cc3eeb30916a",
+  "design/mechanical/architecture.md": "6c58bf2b8d4c5b084d005297b1c989fca9adca82c3c576130e04815a9af21afa",
+  "design/mechanical/inputs/stack_parameters.json": "f6919f30cebf956d516c5cffdac1a21a7b245dd7ae47548734976fddb8228277",
+  "design/mechanical/inputs/package_heights.json": "47a3c2c4b6f53f6eda9b213e353f819c4c1a1a2c13b0e173d95064ed1e6e6f22",
+  "design/mechanical/inputs/input_register.json": "cf36cd3e70c41110b4a709c0b201800793f94ccc1e3335c3998dffbd0a69d7c7",
+  "design/mechanical/inputs/g1_scenarios.json": "cfcf445003bb4a49d73a61d8eb3d916344325d4efe93722eb3fff8d4ab218819",
+  "design/mechanical/inputs/g2_interconnect.json": "bc01799e9f3f577e3704655241a9fec6b986e00c0a491a2d0b67b1953332c0d7",
+  "design/mechanical/inputs/g3_rear_optical.json": "3181c4e775be8ce7fb424d0f54f517d97d965b8af816bccb1555aeeaa6036421",
+  "design/mechanical/inputs/g4_case_sealing.json": "85b183214a6250faa8224477967610581340d3dbe73c89a1053f6c809ccd9edb",
+  "design/mechanical/inputs/g4_r1_blockers.json": "715bfe210f3ec5705a19757fc51a418ac99b9b9cab91dc9e4231be92eb7749dc",
+  "design/mechanical/generated/g1_scenarios.json": "557de32c15e3e3be32e8dc73a2b63b5f8f0971af1d8cfbe4d6a3646ba86ecc3c",
+  "design/mechanical/generated/g2_interconnect.json": "3898959942812dddedb981a37ca5c2b74c44300d726b3ee30f4b47f62d0cceeb",
+  "design/mechanical/generated/g3_rear_optical.json": "1649f6b2f2b199081fa78f2e93a942f917272a06459e936ad6e6e77450b82fc8",
+  "design/mechanical/generated/zstack.json": "7803be8c695b4ce06961c6aa1d8c44ea2117d6217af2b9f653470220b294dfdf",
+  "design/mechanical/generated/main_height_map.json": "60fbdd233a1112e688df3855b3ec2b7f81b0aa9db2236d3a3579e69d48d008b6",
+  "design/mechanical/generated/g4_case_sealing.json": "2af9d2d149e4c95803d0dfbb56b20d8fde63d5c9a2b5118587632b4bb2acd9ad",
+  "design/mechanical/generated/g4_r1_blockers.json": "5b85802234113398daccbf9bcc8428f32820592d2a51c8c5517f8c694800e256",
+  "design/mechanical/tools/mech_model.py": "2d16fc906d05ad14196c07a84dae2f551a99b8661581ada6dd9d4d2d233a1025",
+  "design/mechanical/tools/g1_scenarios.py": "38ccba87c8ed68bb2ac42c09f62e8d5d792cf1584ea31a707a18d64ab2574a7f",
+  "design/mechanical/tools/g2_interconnect.py": "ddf86c019c63ccbd88de36d1bab686d7ee7d8392ff2247c98268f25f3ee3e4f5",
+  "design/mechanical/tools/g4_case_sealing.py": "090c944a639f3fa68d61d8145e098a7c1ea300bb9bf61a5d192cbf0ed952c06c",
+  "design/mechanical/tools/g4_r1_blockers.py": "e5539cda66818dfd2bd1f232a7cb67822f15615efdc6144426782e6d76bdef41",
+  "design/placement/phase1_placement.json": "0af00cd3e46dbc9e465b0d32a24ef065fc257295fd735ed39f5b5ea4ef0fa64b",
+  "design/interfaces/main_rear_interface.json": "b742439e499f1882d2b9ecd98e40e1b91f1f29aace3bdb12fca930516e6d9ea5"
+ },
+ "architecture_projection": {
+  "path": "design/mechanical/architecture.json",
+  "keys": [
+   "reservations",
+   "rear_module",
+   "g2.reservations",
+   "edge_crossings"
+  ],
+  "sha256": "cf7cd55ee28690656aece5eb45ddd3ca6067c1afae1f8fb50188070eaa51cb53",
+  "note": "Canonical hash (g2_interconnect.dumps) of the read-only projection, identical to the pinned R1 projection."
+ },
+ "owner_decisions": [
+  {
+   "id": "OD-BATTERY",
+   "date": "2026-10-17",
+   "class": "OWNER_DECISION",
+   "source": "owner decision, G4_R2_BRIEF.md section 3.2",
+   "verbatim": "- OD-BATTERY: Rev-A battery LPR454440 (870 mAh, Ø44 x 4.5) replaced by\n  LPR433736 (585 mAh, 3.7 V, 1C, Ø37 x 4.3 mm, 2.16 Wh), same J201\n  connector. Catalogue values pending supplier protected-pack drawing\n  (SR-BATT-PACK). If the drawing contradicts the assumed envelope: STOP.\n  Fallback LPR403736 (495 mAh, Ø37 x 4.0) only if the caseback\n  allowable cannot support LPR433736."
+  },
+  {
+   "id": "OD-G4-STACK",
+   "date": "2026-10-17",
+   "class": "OWNER_DECISION",
+   "source": "owner decision, G4_R2_BRIEF.md section 3.2",
+   "verbatim": "- OD-G4-STACK: zero total Z growth; battery Z saving reallocated to the\n  REAR band. OD-THICK-REVA (<= 16.5 mm nominal, <= 17.0 mm RSS)\n  unchanged."
+  },
+  {
+   "id": "Q-R1-BUTTON-ENVELOPE",
+   "date": "2026-10-17",
+   "class": "OWNER_DECISION",
+   "source": "owner decision, G4_R2_BRIEF.md section 3.2",
+   "verbatim": "- Q-R1-BUTTON-ENVELOPE: proven mechanical buttons: sealed metal pusher\n  through the case (stem O-ring or elastomer boot/seal, whichever\n  closes), pressing a right-angle side-actuated tactile switch at the\n  MAIN board edge; local case bosses <= +3.0 mm (incl. seal and\n  tolerance) at the five existing button windows only (10, 9, 8, 2,\n  4 o'clock). C-R1-03 ruling not needed. Inductive/force buttons\n  deferred to Rev-B. SG: SR-BUTTONS."
+  },
+  {
+   "id": "OD-CONN-SIDE",
+   "date": "2026-10-17",
+   "class": "OWNER_DECISION",
+   "source": "owner decision, G4_R2_BRIEF.md section 3.2",
+   "verbatim": "- OD-CONN-SIDE: J1501, J201, J202 on MAIN B.Cu; U7 (DRV2625) to B.Cu."
+  },
+  {
+   "id": "OD-J202 / Q-R1-CHARGER",
+   "date": "2026-10-17",
+   "class": "OWNER_DECISION",
+   "source": "owner decision, G4_R2_BRIEF.md section 3.2",
+   "verbatim": "- OD-J202 / Q-R1-CHARGER: J202 on B.Cu toward east; charger contacts on\n  the caseback at ~3 o'clock; retire the perimeter conductor band\n  except the local charger drop. C-R1-01 2(v) AMENDED to: clear in 3-D,\n  i.e. separated in plan OR in Z, with strict 3-D clearance. Record the\n  amendment in G4-R2 only; G4_R1_BRIEF.md stays unchanged."
+  },
+  {
+   "id": "OD-G4-LRA-ARCH",
+   "date": "2026-10-17",
+   "class": "OWNER_DECISION",
+   "source": "owner decision, G4_R2_BRIEF.md section 3.2",
+   "verbatim": "- OD-G4-LRA-ARCH: LRA on MAIN B.Cu in the battery annulus (battery\n  offset 0–1.5 mm allowed). Fallback: LRA <= 2.70 mm tall on MAIN F.Cu\n  (Z-neutral) if no B.Cu pose exists. Report BMM350 distance."
+  },
+  {
+   "id": "Q-R1-MAIN-SEAL",
+   "date": "2026-10-17",
+   "class": "OWNER_DECISION",
+   "source": "owner decision, G4_R2_BRIEF.md section 3.2",
+   "verbatim": "- Q-R1-MAIN-SEAL: raised, serviceable radial O-ring on a caseback cup.\n  Adhesive main seal rejected."
+  },
+  {
+   "id": "Q-R1-STRUCTURE / OD-G4-MATERIAL",
+   "date": "2026-10-17",
+   "class": "OWNER_DECISION",
+   "source": "owner decision, G4_R2_BRIEF.md section 3.2",
+   "verbatim": "- Q-R1-STRUCTURE / OD-G4-MATERIAL: ceramic (zirconia class) caseback\n  cup on the G4-B midcase (metal with dielectric sectors)."
+  },
+  {
+   "id": "OD-AOD",
+   "date": "2026-10-17",
+   "class": "OWNER_DECISION",
+   "source": "owner decision, G4_R2_BRIEF.md section 3.2",
+   "verbatim": "- OD-AOD: no always-on display in Rev-A."
+  },
+  {
+   "id": "K1-A",
+   "date": "2026-10-17",
+   "class": "OWNER_DECISION",
+   "source": "owner decision, G4_R2_BRIEF.md section 3.2",
+   "verbatim": "- K1-A: authorized in principle, in parallel with G4-R2, under its own\n  separate contract (REAR layout + MAIN power-schematic fixes after\n  independent verification). Not part of G4-R2."
+  },
+  {
+   "id": "OWNER POSITIONS",
+   "date": "2026-10-17",
+   "class": "OWNER_DECISION",
+   "source": "owner decision, G4_R2_BRIEF.md section 3.2",
+   "verbatim": "- OWNER POSITIONS: G5 (antennas) directly after G4-R2; nothing new in\n  the reserved GNSS (12), BLE (10–11), Wi-Fi (3:30–4:30) regions. MAIN\n  stays shield-ready (§20); shield material decided after Rev-A testing."
+  }
+ ],
+ "open_question_answers": [
+  {
+   "id": "Q-R2-SW5-PUSHER",
+   "round": 1,
+   "date": "2026-10-17",
+   "status": "DECIDED (first round); \"SW1-SW4 stay metal\" superseded for SW1 by Q-R2-SW1-BLE",
+   "class": "OWNER_DECISION",
+   "source": "owner decision, G4_R2_BRIEF.md section 17.1",
+   "verbatim": "- Q-R2-SW5-PUSHER: SW5 uses a non-metallic pusher (zirconia or PEEK\n  class); SW1–SW4 stay metal. SW5 position unchanged."
+  },
+  {
+   "id": "Q-R2-RESERVED-REGION",
+   "round": 1,
+   "date": "2026-10-17",
+   "status": "DECIDED (first round)",
+   "class": "OWNER_DECISION",
+   "source": "owner decision, G4_R2_BRIEF.md section 17.1",
+   "verbatim": "- Q-R2-RESERVED-REGION: in the reserved GNSS/BLE/Wi-Fi regions, new\n  metal, conductors and components are forbidden. Non-conductive\n  structure (ceramic cup ring, dielectric pusher, boss growth) is\n  allowed but must be recorded with material, permittivity class and\n  volume as a G5 input."
+  },
+  {
+   "id": "Q-R2-SHIELD-REF",
+   "round": 1,
+   "date": "2026-10-17",
+   "status": "DECIDED (first round)",
+   "class": "OWNER_DECISION",
+   "source": "owner decision, G4_R2_BRIEF.md section 17.1",
+   "verbatim": "- Q-R2-SHIELD-REF: \"§20\" means the master handoff's shield-ready policy,\n  not a repo file; your architecture.md section A reading is accepted."
+  },
+  {
+   "id": "Q-R2-K1A",
+   "round": 1,
+   "date": "2026-10-17",
+   "status": "SUPERSEDED by Q-R2-K1A correction; recorded for history, never applied",
+   "class": "OWNER_DECISION",
+   "source": "owner decision, G4_R2_BRIEF.md section 17.1",
+   "verbatim": "- Q-R2-K1A: confirmed. K1-A keeps G3-B-S14 REAR placement unchanged and\n  is MAIN schematic-only; it moves nothing G4-R2 relies on."
+  },
+  {
+   "id": "OD-G4-LRA-MAG",
+   "round": 1,
+   "date": "2026-10-17",
+   "status": "DECIDED (first round)",
+   "class": "OWNER_DECISION",
+   "source": "owner decision, G4_R2_BRIEF.md section 17.1",
+   "verbatim": "- OD-G4-LRA-MAG: authorized. Report LRA-to-BMM350 distance; magnetometer\n  calibration is a later firmware/test item."
+  },
+  {
+   "id": "E-1",
+   "round": 1,
+   "date": "2026-10-17",
+   "status": "DECIDED (first round)",
+   "class": "OWNER_DECISION",
+   "source": "owner decision, G4_R2_BRIEF.md section 17.1",
+   "verbatim": "- E-1: the rear_sensor .kicad_pro change was KiCad auto-save and has\n  been reverted by the owner; keep E-1 as a precondition check."
+  },
+  {
+   "id": "Q-R2-SW1-BLE (OQ-1)",
+   "round": 2,
+   "date": "2026-10-17",
+   "status": "DECIDED (second round)",
+   "class": "OWNER_DECISION",
+   "source": "owner decision, G4_R2_BRIEF.md section 17.1",
+   "verbatim": "- Q-R2-SW1-BLE (OQ-1): SW1 uses a non-metallic pusher (zirconia or PEEK\n  class), same rule as SW5. SW2, SW3, SW4 keep metal pushers. SW1 window\n  and position unchanged. The F-03 lead note is therefore replaced: SW1\n  is evaluated like SW5 and is not pre-ordained to R2-S12."
+  },
+  {
+   "id": "Q-R2-BOSS-MATERIAL (OQ-2)",
+   "round": 2,
+   "date": "2026-10-17",
+   "status": "DECIDED (second round)",
+   "class": "OWNER_DECISION",
+   "source": "owner decision, G4_R2_BRIEF.md section 17.1",
+   "verbatim": "- Q-R2-BOSS-MATERIAL (OQ-2): boss growth inside a reserved region must be\n  non-conductive (dielectric sector material or dielectric insert) and is\n  recorded as a G5 input. Conductive boss growth inside a reserved region\n  is new metal and fails R2-H15. Existing frozen midcase metal is not\n  \"new\"."
+  },
+  {
+   "id": "Q-R2-K1A correction (OQ-3)",
+   "round": 2,
+   "date": "2026-10-17",
+   "status": "DECIDED (second round)",
+   "class": "OWNER_DECISION",
+   "source": "owner decision, G4_R2_BRIEF.md section 17.1",
+   "verbatim": "- Q-R2-K1A correction (OQ-3): the earlier answer \"MAIN schematic-only\" was\n  wrong. Correct scope: K1-A = REAR layout/routing with all G3-B-S14 part\n  positions frozen, plus MAIN power-schematic fixes; no MAIN outline,\n  placement or routing. It moves nothing G4-R2 relies on."
+  }
+ ],
+ "overlay": [
+  {
+   "id": "OV-BATT-ID",
+   "pinned_source": {
+    "path": "design/mechanical/inputs/input_register.json",
+    "pointer": "/frozen_invariants/7"
+   },
+   "r2_value": "LPR433736 (primary, 585 mAh, 3.7 V, 1C, 2.16 Wh); LPR403736 (495 mAh) reported as the fallback column and never selected by the model",
+   "authority": "OD-BATTERY",
+   "scope": "G4-R2 only",
+   "pinned_expect": "Battery LPR454440 selected; not replaceable without owner authorization.",
+   "note": "The frozen invariant is superseded for G4-R2 only by the owner authorization of 2026-10-17; the register itself is not edited."
+  },
+  {
+   "id": "OV-BATT-DIA",
+   "pinned_source": {
+    "path": "design/mechanical/inputs/stack_parameters.json",
+    "pointer": "/radial/parameters/D_pack_nom/nom"
+   },
+   "r2_value": {
+    "ref": "catalogue/batteries/LPR433736/cell_diameter_mm/nom"
+   },
+   "authority": "OD-BATTERY",
+   "scope": "G4-R2 only",
+   "pinned_expect": 44.0,
+   "note": "Per battery column the catalogue value of that battery is used (both are 37.0)."
+  },
+  {
+   "id": "OV-BATT-THICK",
+   "pinned_source": {
+    "path": "design/mechanical/inputs/stack_parameters.json",
+    "pointer": "/parameters/t_pack_nom/nom"
+   },
+   "r2_value": {
+    "ref": "catalogue/batteries/LPR433736/cell_thickness_mm/nom"
+   },
+   "authority": "OD-BATTERY",
+   "scope": "G4-R2 only",
+   "pinned_expect": 4.5,
+   "note": "Per battery column the catalogue value of that battery is used (4.3 / 4.0)."
+  },
+  {
+   "id": "OV-Z-REAR-BAND",
+   "pinned_source": {
+    "path": "design/mechanical/inputs/stack_parameters.json",
+    "pointer": "/rules/battery_zone"
+   },
+   "r2_value": "battery_zone recomputed with the overlaid t_pack_nom through the imported G1 / G2 rule; Delta = t_pack_nom(pinned) - t_pack_nom(overlaid) inserted as ONE fixed REAR-band layer (no tolerance term) between rear_inner and lower_web",
+   "authority": "OD-G4-STACK",
+   "scope": "G4-R2 only",
+   "pinned_expect": "t_pack_nom + tol_pack_thick + g_axial + c_axial"
+  },
+  {
+   "id": "OV-CONN-J1501",
+   "pinned_source": {
+    "path": "design/mechanical/generated/g2_interconnect.json",
+    "pointer": "/allocation/J1501"
+   },
+   "r2_value": "J1501-B.Cu",
+   "authority": "OD-CONN-SIDE",
+   "scope": "G4-R2 only",
+   "pinned_expect": "J1501-F.Cu"
+  },
+  {
+   "id": "OV-CONN-J201",
+   "pinned_source": {
+    "path": "design/mechanical/generated/g2_interconnect.json",
+    "pointer": "/allocation/J201"
+   },
+   "r2_value": "J201-B.Cu",
+   "authority": "OD-CONN-SIDE",
+   "scope": "G4-R2 only",
+   "pinned_expect": "J201-F.Cu"
+  },
+  {
+   "id": "OV-CONN-J202",
+   "pinned_source": {
+    "path": "design/mechanical/generated/g2_interconnect.json",
+    "pointer": "/allocation/J202"
+   },
+   "r2_value": "J202-B.Cu (east sector; mate direction is a design variable)",
+   "authority": "OD-CONN-SIDE / OD-J202",
+   "scope": "G4-R2 only",
+   "pinned_expect": "J202-WEST-F.Cu"
+  },
+  {
+   "id": "OV-U7",
+   "pinned_source": {
+    "path": "design/mechanical/generated/g2_interconnect.json",
+    "pointer": "/allocation/U7~1LRA"
+   },
+   "r2_value": "U7-B.Cu",
+   "authority": "OD-CONN-SIDE",
+   "scope": "G4-R2 only",
+   "pinned_expect": "U7-B.Cu",
+   "note": "No-op confirmation: the owner text confirms the existing G2 U7-B.Cu allocation (r2_value = pinned value)."
+  },
+  {
+   "id": "OV-LRA",
+   "pinned_source": {
+    "path": "design/mechanical/inputs/g4_r1_blockers.json",
+    "pointer": "/parameters/V22_lra_pocket/pocket_depths_mm"
+   },
+   "r2_value": "MAIN B.Cu zone B (battery annulus) primary; MAIN F.Cu <= 2.70 mm Z-neutral fallback; the REAR-level LRA allocation and the caseback-pocket search are not carried",
+   "authority": "OD-G4-LRA-ARCH",
+   "scope": "G4-R2 only",
+   "pinned_expect": [
+    0.0,
+    0.1,
+    0.2,
+    0.3,
+    0.4,
+    0.5,
+    0.6
+   ]
+  },
+  {
+   "id": "OV-COND-BAND",
+   "pinned_source": {
+    "path": "design/mechanical/inputs/g4_case_sealing.json",
+    "pointer": "/parameters/c_rear_route_mm/max"
+   },
+   "r2_value": "REAR-level perimeter conductor band retired (CHG_ROUTE, CHG_LINK, CHG_RISER, CHG_APPROACH, LRA lead channel, LA-Z-2 band) except an explicitly pinned local charger-drop footprint",
+   "authority": "OD-J202 / Q-R1-CHARGER",
+   "scope": "G4-R2 only",
+   "pinned_expect": 0.65
+  },
+  {
+   "id": "OV-BOSS",
+   "pinned_source": {
+    "path": "design/mechanical/inputs/g4_case_sealing.json",
+    "pointer": "/contract_values/owner_limits/boss_extension_max_mm"
+   },
+   "r2_value": {
+    "ref": "overlay_values/boss_extension_max_mm"
+   },
+   "authority": "Q-R1-BUTTON-ENVELOPE",
+   "scope": "G4-R2 only",
+   "pinned_expect": 1.0
+  },
+  {
+   "id": "OV-BTN-TOPOLOGY",
+   "pinned_source": {
+    "path": "design/mechanical/inputs/g4_r1_blockers.json",
+    "pointer": "/parameters/V05_button_topologies/T1"
+   },
+   "r2_value": "T1 stem O-ring re-admitted for evaluation under the unchanged dynamic radial window and cross-section tolerance; T3 not carried (not a sealed pusher)",
+   "authority": "Q-R1-BUTTON-ENVELOPE",
+   "scope": "G4-R2 only",
+   "pinned_expect": "dynamic radial pusher O-ring (G4 pusher_gland); regression only, never selectable"
+  },
+  {
+   "id": "OV-C-R1-01-2V",
+   "pinned_source": {
+    "path": "design/mechanical/inputs/g4_r1_blockers.json",
+    "pointer": "/parameters/V20_charger_land/route_clearance/contract_text"
+   },
+   "r2_value": "(v) clears screws, supports, CHG_ROUTE and CHG_LINK in 3-D, i.e. separated in plan OR in Z, with strict 3-D clearance",
+   "authority": "OD-J202 / Q-R1-CHARGER (C-R2-01)",
+   "scope": "G4-R2 only",
+   "pinned_expect": "(v) clears screws, supports, CHG_ROUTE and CHG_LINK in plan and in Z, and"
+  },
+  {
+   "id": "OV-SEAL",
+   "pinned_source": {
+    "path": "design/mechanical/inputs/g4_r1_blockers.json",
+    "pointer": "/parameters/V10_main_seal_topologies"
+   },
+   "r2_value": [
+    "radial"
+   ],
+   "authority": "Q-R1-MAIN-SEAL",
+   "scope": "G4-R2 only",
+   "pinned_expect": [
+    "face",
+    "adhesive",
+    "radial"
+   ],
+   "note": "Raised, serviceable radial O-ring on the ceramic cup; the face seal appears only as the R1 column; the adhesive main seal is not evaluated as an option."
+  },
+  {
+   "id": "OV-MATERIAL",
+   "pinned_source": {
+    "path": "design/mechanical/inputs/g4_r1_blockers.json",
+    "pointer": "/candidates"
+   },
+   "r2_value": "G4-B-ZC",
+   "authority": "Q-R1-STRUCTURE / OD-G4-MATERIAL",
+   "scope": "G4-R2 only",
+   "pinned_expect": [
+    {
+     "id": "G4-A",
+     "source": "g4_case_sealing.json candidates G4-A",
+     "definition": "unchanged (C-R1-07); read from the pinned G4 input"
+    },
+    {
+     "id": "G4-B",
+     "source": "g4_case_sealing.json candidates G4-B",
+     "definition": "unchanged (C-R1-07); read from the pinned G4 input"
+    },
+    {
+     "id": "G4-C1",
+     "base": "G4-C",
+     "overrides": {
+      "pod_concept": "P1",
+      "title": "Polymer midcase, split caseback: non-ferromagnetic metal centre plate confined below the minimum radiator inner radius minus 1.0 mm, polymer outer ring retained mechanically and bonded; P1 pod frame integral with the metal centre plate"
+     },
+     "definition": "C-R1-07 fallback: G4-C with the P2 pod frame retired (P1 integral frame); S-POD-FRAME retired"
+    }
+   ],
+   "note": "One architecture: the G4-B midcase (MAT-NF-METAL with MAT-GF-POLY dielectric sectors) plus a MAT-CERAMIC (zirconia class, PC-CERAMIC-GRIND) caseback CUP."
+  }
+ ],
+ "overlay_values": {
+  "boss_extension_max_mm": 3.0,
+  "evidence_class": "OWNER_DECISION",
+  "source": "Q-R1-BUTTON-ENVELOPE (boss + seal / boot + tolerance <= +3.0 mm)"
+ },
+ "catalogue": {
+  "evidence_class": "OWNER_DECISION",
+  "catalogue_value": true,
+  "gate": "SR-BATT-PACK",
+  "note": "Catalogue values recorded from the owner decision of 2026-10-17; pending a supplier protected-pack drawing. Never MANUFACTURER_VERIFIED.",
+  "batteries": {
+   "LPR433736": {
+    "role": "primary",
+    "cell_diameter_mm": {
+     "nom": 37.0
+    },
+    "cell_thickness_mm": {
+     "nom": 4.3
+    },
+    "capacity_mAh": 585,
+    "voltage_V": 3.7,
+    "c_rate": 1,
+    "energy_Wh": 2.16,
+    "catalogue_value": true,
+    "gate": "SR-BATT-PACK",
+    "evidence_class": "OWNER_DECISION"
+   },
+   "LPR403736": {
+    "role": "fallback (never selected by the model)",
+    "cell_diameter_mm": {
+     "nom": 37.0
+    },
+    "cell_thickness_mm": {
+     "nom": 4.0
+    },
+    "capacity_mAh": 495,
+    "voltage_V": null,
+    "c_rate": null,
+    "energy_Wh": null,
+    "catalogue_value": true,
+    "gate": "SR-BATT-PACK",
+    "evidence_class": "OWNER_DECISION",
+    "note": "Only diameter, thickness and capacity are given by the owner; nothing else is invented."
+   }
+  }
+ },
+ "envelope_assumptions": {
+  "finished_diameter_max_mm": 37.5,
+  "finished_thickness_add_max_mm": 0.3,
+  "growth_axial_max_mm": 0.5,
+  "growth_radial_max_mm": 1.0,
+  "lobe_inside_authored_envelope": true,
+  "exit_inside_swept_window": true,
+  "three_wire_exit_compatible_with_J201": true,
+  "evidence_class": "PROJECT_DERIVED",
+  "source": "G4_R2_BRIEF.md section 6.2 numeric definition of the \"assumed envelope\" (R2-S09 trigger)"
+ },
+ "supplier_evidence": {
+  "SR-BATT-PACK": [],
+  "SR-BATT-PCM": [],
+  "SR-BATT-GROWTH": [],
+  "SR-CASEBACK-CERAMIC": [],
+  "SR-CHG-MECH": [],
+  "SR-LRA": [],
+  "SR-FPC-MECH": [],
+  "SR-BUTTONS": [],
+  "SR-WINDOW": []
+ },
+ "supplier_evidence_schema": {
+  "required": [
+   "id",
+   "primary_document",
+   "page",
+   "table_or_figure",
+   "recorded_values"
+  ],
+  "rule": "A record counts only with a local primary document (repository path of an existing file that is not a generated or R1 / R2 file) and page plus table / figure provenance. SR-BATT-PACK records are checked against the assumed envelope (R2-S09)."
+ },
+ "fallback_trigger": {
+  "supplier_evidence": null,
+  "owner_decision": null
+ },
+ "lra_supplied": [],
+ "lra_supplied_schema": {
+  "required": [
+   "id",
+   "shape",
+   "height_mm",
+   "lead_exit_envelope_mm",
+   "primary_document",
+   "provenance"
+  ],
+  "dimension_fields": {
+   "coin": [
+    "diameter_mm"
+   ],
+   "rect": [
+    "length_mm",
+    "width_mm"
+   ]
+  },
+  "range_keys": [
+   "min",
+   "nom",
+   "max"
+  ],
+  "provenance_keys": [
+   "page",
+   "table_or_figure"
+  ],
+  "lead_exit_fields": [
+   "length_mm",
+   "width_mm",
+   "height_mm"
+  ],
+  "lead_exit_directions": [
+   "radial_out",
+   "radial_in",
+   "cw",
+   "ccw"
+  ],
+  "rule": "C-R1-08: a supplied class counts only with a local primary document (repository path, existing file, not an R1 / R2 or generated file) and page plus table / figure provenance; a class defined by the threshold it must meet is rejected."
+ },
+ "limits": {
+  "nominal_mm": 16.5,
+  "rss_mm": 17.0,
+  "D_case_body_max_mm": 51.0,
+  "boss_extension_max_mm": 3.0,
+  "deflection_max_mm": 0.05,
+  "static_clearance_min_mm": 0.05,
+  "planning_allowable_MPa": 150.0,
+  "evidence_class": "OWNER_DECISION / PROJECT_DERIVED"
+ },
+ "grids": {
+  "D_case_body_mm": {
+   "start": 48.0,
+   "stop": 51.0,
+   "step": 0.05,
+   "report_stop": 52.5,
+   "evidence_class": "OWNER_REQUIREMENT",
+   "source": "OD-G4-ENVELOPE"
+  },
+  "t_wall_bulk_mm": {
+   "start": 0.8,
+   "stop": 1.6,
+   "step": 0.1,
+   "evidence_class": "DESIGN + MFG_TOL",
+   "source": "R1 V02"
+  },
+  "offset_magnitude_mm": {
+   "start": 0.0,
+   "stop": 1.5,
+   "step": 0.25,
+   "evidence_class": "OWNER_DECISION",
+   "source": "OD-G4-LRA-ARCH range 0-1.5 mm"
+  },
+  "offset_direction_deg": {
+   "start": 0.0,
+   "stop": 345.0,
+   "step": 15.0,
+   "evidence_class": "DESIGN",
+   "source": "G4_R2_BRIEF.md R2-V05"
+  },
+  "carrier_radius_extra_mm": {
+   "start": 0.0,
+   "stop": 0.5,
+   "step": 0.05,
+   "evidence_class": "DESIGN + MFG_TOL",
+   "source": "G4_R2_BRIEF.md R2-V06 (from R_pack(lw) + g_radial(adverse) + tol_carrier_r)"
+  },
+  "t_carrier_wall_mm": {
+   "start": 0.3,
+   "stop": 0.6,
+   "step": 0.05,
+   "evidence_class": "DESIGN + MFG_TOL",
+   "source": "G4 sweep t_carrier_wall"
+  },
+  "pcm_az_design_deg": 230.0,
+  "pcm_az_range_deg": [
+   220.0,
+   230.0,
+   240.0
+  ],
+  "pcm_admissibility": {
+   "start": 0.0,
+   "stop": 355.0,
+   "step": 5.0,
+   "evidence_class": "PROVISIONAL_ASSUMPTION",
+   "source": "G2 pcm_az_deg 220 / 230 / 240 plus a full-azimuth report"
+  },
+  "connector_az": {
+   "start": 0.0,
+   "stop": 359.0,
+   "step": 1.0
+  },
+  "connector_r": {
+   "start": 17.0,
+   "stop": 25.0,
+   "step": 0.25
+  },
+  "connector_orientations": [
+   0,
+   90
+  ],
+  "lra_az": {
+   "start": 0.0,
+   "stop": 355.0,
+   "step": 5.0
+  },
+  "lra_r": {
+   "start": 12.0,
+   "stop": 26.0,
+   "step": 0.25
+  },
+  "lra_orientations": [
+   0,
+   90
+  ],
+  "evidence_class": "DESIGN"
+ },
+ "lobe": {
+  "radial_protrusion_mm": {
+   "min": 1.5,
+   "nom": 2.5,
+   "max": 3.0
+  },
+  "tangential_width_mm": {
+   "min": 5.0,
+   "nom": 6.5,
+   "max": 8.0
+  },
+  "z_within_pack_thickness": true,
+  "evidence_class": "PROVISIONAL_ASSUMPTION",
+  "gate": [
+   "SR-BATT-PACK",
+   "SR-BATT-PCM"
+  ],
+  "rationale": "Authored adverse envelope of the protection-circuit (PCM) lobe of a finished protected pack: radial protrusion beyond the cell edge (PCM board plus tab fold) and tangential width, both at their maximum at linear worst. Planning values of the same class as the G2 BATT_EXIT sweep; NOT supplier data; the finished-pack drawing (SR-BATT-PACK / SR-BATT-PCM) decides. The lobe Z extent is the pack Z extent."
+ },
+ "package_model": {
+  "post_min_engagement_mm": 0.5,
+  "offset_probe_count": 145,
+  "evidence_class": "PROVISIONAL_ASSUMPTION",
+  "rationale": "Minimum radial engagement of a case-side support post between the offset carrier outline (plus c_insert) and the case bore; a post shorter than this does not locate the module (G4 H24 / X18 support function).",
+  "riser_vertical_bend_count": 2
+ },
+ "buttons": {
+  "topologies": [
+   "T1",
+   "T2-F",
+   "T2-R"
+  ],
+  "interpretations": [
+   "I-SUM",
+   "I-MAX"
+  ],
+  "pusher_dp": {
+   "start": 2.0,
+   "step": 0.2,
+   "stop_rule": "largest value whose boss fits the frozen window at the evaluated D"
+  },
+  "boss_extension": {
+   "start": 0.0,
+   "stop": 3.0,
+   "step": 0.05
+  },
+  "t1_cs": {
+   "start": 0.5,
+   "stop": 3.0,
+   "step": 0.1,
+   "evidence_class": "PROVISIONAL_ASSUMPTION",
+   "note": "dynamic radial window and +/-0.05 mm cross-section tolerance unchanged"
+  },
+  "switch_materials": {
+   "SW1": {
+    "rule": "non-metallic (Q-R2-SW1-BLE)",
+    "options": [
+     "zirconia",
+     "PEEK"
+    ],
+    "boss": "dielectric (reserved region BLE; Q-R2-BOSS-MATERIAL)"
+   },
+   "SW2": {
+    "rule": "metal (Q-R1-BUTTON-ENVELOPE)",
+    "options": [
+     "metal"
+    ],
+    "boss": "midcase metal"
+   },
+   "SW3": {
+    "rule": "metal (Q-R1-BUTTON-ENVELOPE)",
+    "options": [
+     "metal"
+    ],
+    "boss": "midcase metal"
+   },
+   "SW4": {
+    "rule": "non-ferromagnetic metal (MAG_CLEAR)",
+    "options": [
+     "metal"
+    ],
+    "boss": "midcase metal"
+   },
+   "SW5": {
+    "rule": "non-metallic (Q-R2-SW5-PUSHER)",
+    "options": [
+     "zirconia",
+     "PEEK"
+    ],
+    "boss": "dielectric (reserved region Wi-Fi; Q-R2-BOSS-MATERIAL)"
+   }
+  },
+  "pusher_classes": {
+   "zirconia": {
+    "material_class": "MAT-CERAMIC",
+    "process_class": "PC-CERAMIC-GRIND",
+    "note": "zirconia class: MAT-CERAMIC with PC-CERAMIC-GRIND (17.2 item 22)"
+   },
+   "PEEK": {
+    "material_class": null,
+    "process_class": "PC-POLY-MOULD",
+    "note": "PEEK class: authored polymer process tolerance PC-POLY-MOULD; no PEEK property is invented; strength and stiffness are SUPPLIER_DATA_REQUIRED (SR-BUTTONS) and never credited"
+   },
+   "metal": {
+    "material_class": "MAT-NF-METAL",
+    "process_class": "PC-METAL-MACH",
+    "note": "non-ferromagnetic metal pusher"
+   }
+  },
+  "permittivity_class_labels": {
+   "MAT-CERAMIC": {
+    "label": "technical ceramic (zirconia class)",
+    "evidence_class": "PROVISIONAL_ASSUMPTION",
+    "numeric": null
+   },
+   "PEEK": {
+    "label": "PEEK class thermoplastic",
+    "evidence_class": "PROVISIONAL_ASSUMPTION",
+    "numeric": null
+   },
+   "MAT-GF-POLY": {
+    "label": "glass-filled engineering polymer",
+    "evidence_class": "PROVISIONAL_ASSUMPTION",
+    "numeric": null
+   },
+   "ELASTOMER": {
+    "label": "elastomer (boot / O-ring)",
+    "evidence_class": "PROVISIONAL_ASSUMPTION",
+    "numeric": null
+   },
+   "MAT-NF-METAL": {
+    "label": "conductive non-ferromagnetic metal",
+    "evidence_class": "PROVISIONAL_ASSUMPTION",
+    "numeric": null
+   }
+  },
+  "permittivity_policy": "A material-family label with its evidence class. No numeric permittivity is invented; a numeric value appears only from a local primary document, otherwise the entry is G5_RF_REQUIRED."
+ },
+ "cup": {
+  "main_seal_cs": {
+   "start": 0.5,
+   "stop": 2.0,
+   "step": 0.1,
+   "diagnostic_stop": 2.5,
+   "evidence_class": "PROVISIONAL_ASSUMPTION",
+   "rationale": "R2-V15: cs 0.5-2.0 mm authorized (a larger cs is a design-size choice; the static radial window and the +/-0.05 mm tolerance are unchanged), diagnostic to 2.5 mm"
+  },
+  "ring_extra_width_mm": {
+   "start": 0.0,
+   "stop": 1.0,
+   "step": 0.1,
+   "evidence_class": "DESIGN",
+   "rationale": "Inward widening of the raised cup wall beyond the gland-required radial thickness (groove depth + land); coupled to r_lim(cup), reported as a sensitivity"
+  },
+  "fillet_radius_mm": 0.2,
+  "fillet_credit": "none (K_t stays at the R1 planning value 2.0)",
+  "ring_credit_rule": "100 % only where the ring is continuous over 360 deg at r_ring; any feedthrough or screw interruption gives zero ring stiffness credit (LA-STR-5, continuous-only); no clamped edge is ever assumed",
+  "groove_position": "groove in the OUTER face of the raised wall; the gland land (material class groove_land_min) lies between the plate top and the groove; wall top = groove top (G4 spigot_height = g + land)",
+  "ring_section_z_origin": "ring section = wall radial width x [plate bottom, wall top] minus the groove; the plate attaches at the plate mid-plane of the outer region",
+  "pressure_on_wall": "p_max acts radially inward on the exposed outer face of the wall below the O-ring (plate bottom to the groove land) and adds to the ring hoop stress (reported as a separate component)",
+  "bearing": {
+   "planning_bearing_allowable_source": "material sigma_allow_min of MAT-CERAMIC (planning screen, SUPPLIER_GATED SR-CASEBACK-CERAMIC)"
+  },
+  "case_supports_z": "BATTERY level only (the G4 REAR-level extension of the case-side support is not carried: a continuous raised cup wall occupies the REAR-level periphery; BUILDER-INTERPRETATION B-03)"
+ },
+ "interconnect": {
+  "mate_stroke_mm": {
+   "min": 1.5,
+   "nom": 2.0,
+   "max": 3.0,
+   "evidence_class": "PROVISIONAL_ASSUMPTION",
+   "gate": [
+    "SR-FPC-MECH"
+   ],
+   "rationale": "Planning insertion / approach stroke of the plug along the mating axis (adverse = max); no connector MPN; SR-FPC-MECH decides"
+  },
+  "fpc_bend_rule": "both vertical-riser bends use the adverse planning minimum bend radius R_bend_min(max) (G2 radial parameter, never narrowed)",
+  "sensor_fpc_width_rule": "(positions - 1) x sensor_pitch(max) + 2 x sensor_edge_margin(max), positions from the frozen 24-position interface",
+  "positions": 24,
+  "nets": 13,
+  "j1501": {
+   "mate": "axial toward REAR (fixed lead design rule, G4_R2_BRIEF.md 6.5 / 17.2 item 19)",
+   "orientations": [
+    0,
+    90
+   ]
+  },
+  "j201": {
+   "mate_options": [
+    "axial",
+    "radial",
+    "tangential"
+   ],
+   "note": "mate direction is a design option; the axial option is evaluated first"
+  },
+  "j202": {
+   "mate_options": [
+    "axial",
+    "radial",
+    "tangential"
+   ],
+   "az_search_deg": [
+    60.0,
+    104.99
+   ],
+   "note": "east sector; window excludes WIFI_RAD, the Wi-Fi region, MAG_CLEAR, SW4 / SW5 bores and the charger wedge features"
+  },
+  "battery_tail": {
+   "wire_count": 3,
+   "width_source": "harness_width_mm(max) of the G2 parameters",
+   "exit_height_rule": "PCM exit at the pack mid-thickness"
+  },
+  "drop": {
+   "attachment": "FT-C inner face, vertical rise to the J202 plug",
+   "width_source": "harness_width_mm(max)",
+   "evidence_class": "DESIGN"
+  },
+  "service_slack": {
+   "planned_mm": 20.0,
+   "adverse_mm": 30.0,
+   "source": "G2 service_slack_mm (pinned planning range)"
+  },
+  "u7_lead": {
+   "note": "LRA leads terminate on MAIN B.Cu copper; the lead path is Manhattan on the board, reported only"
+  }
+ },
+ "lra": {
+  "classes_source": "inputs/g4_case_sealing.json lra_classes at their maxima (authored G4 classes) plus lra_supplied",
+  "fcu_height_cap_mm": 2.7,
+  "fcu_cap_source": "governing front-gap part height (U8 seated max, main_height_map H_F_under_display); Z-neutral binds",
+  "zone_b_az_step_deg": 5.0,
+  "plan_clearance_source": "g4 parameters c_lra_plan_mm (max)",
+  "mount_source": "g4 parameters lra_mount_mm (max)"
+ },
+ "paths": {
+  "tail_hop_note": "J1502 tail leaves the REAR level at the frozen exit and enters the lower-web groove (one bend); the foot of the riser is the second bend",
+  "slack_pocket": {
+   "loop": "planar U loop: two straight legs and one semicircle of the adverse bend radius",
+   "az_search_half_width_deg": 60.0,
+   "az_step_deg": 5.0,
+   "height_source": "G2 service_pocket required_height (t_fpc + c_fpc + collar clearance), conservative corner",
+   "evidence_class": "PROVISIONAL_ASSUMPTION",
+   "gate": [
+    "SR-FPC-MECH"
+   ]
+  },
+  "battery_tail": {
+   "exit_point": "centre of the outer PCM lobe edge at the pack mid-thickness",
+   "plan_run": "straight line to the J201 riser",
+   "evidence_class": "DESIGN"
+  },
+  "drop": {
+   "service_open_rule": "caseback service position (A10): installed length minus the straight vertical rise must cover the service slack (adverse planning value)",
+   "evidence_class": "DESIGN"
+  }
+ },
+ "lead_arithmetic": [
+  {
+   "id": "delta_433736_mm",
+   "value": 0.2,
+   "source": "G4_R2_BRIEF.md section 20 (Delta)"
+  },
+  {
+   "id": "delta_403736_mm",
+   "value": 0.5,
+   "source": "G4_R2_BRIEF.md section 20 (Delta)"
+  },
+  {
+   "id": "battery_zone_433736_mm",
+   "value": [
+    4.8,
+    5.3,
+    4.55
+   ],
+   "labels": [
+    "nominal",
+    "linear",
+    "thin"
+   ],
+   "source": "section 20"
+  },
+  {
+   "id": "battery_zone_403736_mm",
+   "value": [
+    4.5,
+    5.0,
+    4.25
+   ],
+   "labels": [
+    "nominal",
+    "linear",
+    "thin"
+   ],
+   "source": "section 20"
+  },
+  {
+   "id": "R_pack_mm",
+   "value": [
+    18.65,
+    18.75
+   ],
+   "labels": [
+    "nominal",
+    "linear worst"
+   ],
+   "source": "section 20"
+  },
+  {
+   "id": "R_case_inner_D50p9_tw1p1_mm",
+   "value": 24.35,
+   "source": "section 20"
+  },
+  {
+   "id": "carrier_outer_tcw0p40_mm",
+   "value": [
+    19.55,
+    20.2
+   ],
+   "labels": [
+    "nominal centred",
+    "linear worst centred"
+   ],
+   "source": "section 20"
+  },
+  {
+   "id": "free_band_to_dia46_mm",
+   "value": [
+    2.8,
+    4.3
+   ],
+   "labels": [
+    "centred",
+    "far side at 1.5 mm offset"
+   ],
+   "source": "section 20"
+  },
+  {
+   "id": "free_band_to_bore_mm",
+   "value": [
+    4.15,
+    5.65
+   ],
+   "labels": [
+    "centred",
+    "far side at 1.5 mm offset"
+   ],
+   "source": "section 20"
+  },
+  {
+   "id": "lra_lin_rect_adverse_need_mm",
+   "value": 6.4,
+   "source": "section 20 (12.5 x 4.5 + 2 x 0.4, tangential, sagitta about 1.1 at r 21)"
+  },
+  {
+   "id": "lra_coin_d8_adverse_need_mm",
+   "value": 9.0,
+   "source": "section 20"
+  },
+  {
+   "id": "spigot_shortfall_rear_only_433736_mm",
+   "value": -0.3,
+   "source": "section 20 (-1.150 + 0.200 + 0.65)"
+  },
+  {
+   "id": "spigot_shortfall_rear_only_403736_mm",
+   "value": 0.0,
+   "source": "section 20 (-1.150 + 0.500 + 0.65)"
+  },
+  {
+   "id": "charger_r_lim_required_mm",
+   "value": [
+    24.031,
+    24.625
+   ],
+   "labels": [
+    "radial prerequisite",
+    "plan prerequisite (R1, routes in plan)"
+   ],
+   "source": "section 20"
+  },
+  {
+   "id": "charger_r1_radial_row_r_lim_mm",
+   "value": [
+    23.0,
+    23.54
+   ],
+   "source": "section 20"
+  },
+  {
+   "id": "t1_cs_threshold_mm",
+   "value": [
+    1.69,
+    2.29,
+    2.89
+   ],
+   "labels": [
+    "stack 0.04",
+    "stack 0.07",
+    "stack 0.10"
+   ],
+   "source": "section 20"
+  },
+  {
+   "id": "t1_dp_at_cs1p7_mm",
+   "value": 3.8,
+   "source": "section 20"
+  },
+  {
+   "id": "structure_context_MPa",
+   "value": {
+    "LPR433736": [
+     159.0,
+     186.0
+    ],
+    "LPR403736": [
+     141.0,
+     162.0
+    ]
+   },
+   "source": "section 20 (context only)"
+  },
+  {
+   "id": "overlay_off_screen_B",
+   "value": [
+    371.784,
+    0.12
+   ],
+   "labels": [
+    "MPa",
+    "mm"
+   ],
+   "source": "section 20"
+  },
+  {
+   "id": "overlay_off_uniform_ceramic_mm",
+   "value": [
+    1.836,
+    1.1
+   ],
+   "labels": [
+    "required",
+    "t_in limit"
+   ],
+   "source": "section 20"
+  },
+  {
+   "id": "buttons_reserved_overlap_deg",
+   "value": {
+    "SW1": [
+     292.5,
+     307.5,
+     "BLE 300-330"
+    ],
+    "SW5": [
+     112.5,
+     127.5,
+     "Wi-Fi 105-135"
+    ]
+   },
+   "source": "section 20"
+  }
+ ],
+ "budgets": {
+  "generated_json_max_bytes": 2000000,
+  "evaluations_max": 3000000,
+  "check_runtime_max_s": 150,
+  "selftest_runtime_max_s": 1200,
+  "evidence_class": "PROJECT_DERIVED",
+  "source": "G4_R2_BRIEF.md section 8"
+ },
+ "catalogue_pin_sha256": "373312e4f67241b204342628ca3d321fc95608c76ec23de985bac4599d3979a6"
+}

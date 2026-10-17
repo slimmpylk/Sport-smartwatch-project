@@ -1,0 +1,175 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1180" height="900" viewBox="0 0 1180 900" font-family="sans-serif">
+<title>G4-R2 sections: J1501 south, charger / J202 east, LRA pose, worst button and SW5, cup and seal, pillar at an S14 land</title>
+<rect x="0" y="0" width="1180" height="900" fill="#ffffff"/>
+<text x="10.00" y="18.00" font-size="12" text-anchor="start" fill="#111" font-weight="bold">G4-R2 sections (radius r from the MAIN centre, Z from the pod plane; primary battery LPR433736 joint point; schematic, dimensions from the model)</text>
+<rect x="20.0" y="50.0" width="560.0" height="300.0" fill="#fbfcfc" stroke="#aab7b8"/>
+<text x="24.00" y="45.00" font-size="10" text-anchor="start" fill="#111" font-weight="bold">South (J1501): axial mate toward the REAR; riser at the carrier foot</text>
+<line x1="20.0" y1="50.0" x2="20.0" y2="350.0" stroke="#e5e8e8"/>
+<text x="20.00" y="361.00" font-size="8" text-anchor="middle" fill="#566573" font-weight="normal">r 0</text>
+<line x1="127.7" y1="50.0" x2="127.7" y2="350.0" stroke="#e5e8e8"/>
+<text x="127.69" y="361.00" font-size="8" text-anchor="middle" fill="#566573" font-weight="normal">r 5</text>
+<line x1="235.4" y1="50.0" x2="235.4" y2="350.0" stroke="#e5e8e8"/>
+<text x="235.38" y="361.00" font-size="8" text-anchor="middle" fill="#566573" font-weight="normal">r 10</text>
+<line x1="343.1" y1="50.0" x2="343.1" y2="350.0" stroke="#e5e8e8"/>
+<text x="343.08" y="361.00" font-size="8" text-anchor="middle" fill="#566573" font-weight="normal">r 15</text>
+<line x1="450.8" y1="50.0" x2="450.8" y2="350.0" stroke="#e5e8e8"/>
+<text x="450.77" y="361.00" font-size="8" text-anchor="middle" fill="#566573" font-weight="normal">r 20</text>
+<line x1="558.5" y1="50.0" x2="558.5" y2="350.0" stroke="#e5e8e8"/>
+<text x="558.46" y="361.00" font-size="8" text-anchor="middle" fill="#566573" font-weight="normal">r 25</text>
+<rect x="20.00" y="265.71" width="353.24" height="70.00" fill="#d5f5e3" fill-opacity="0.6" stroke="#17202a" stroke-width="0.5"/>
+<text x="196.62" y="303.71" font-size="7" text-anchor="middle" fill="#111" font-weight="normal">S14 REAR</text>
+<rect x="20.00" y="248.57" width="544.92" height="11.43" fill="#d7bde2" fill-opacity="0.6" stroke="#17202a" stroke-width="0.5"/>
+<text x="292.46" y="257.29" font-size="7" text-anchor="middle" fill="#111" font-weight="normal">lower web</text>
+<rect x="20.00" y="111.43" width="436.15" height="137.14" fill="#f9e79f" fill-opacity="0.6" stroke="#17202a" stroke-width="0.5"/>
+<text x="238.08" y="183.00" font-size="7" text-anchor="middle" fill="#111" font-weight="normal">pack + carrier</text>
+<rect x="20.00" y="65.71" width="495.38" height="22.86" fill="#abebc6" fill-opacity="0.6" stroke="#17202a" stroke-width="0.5"/>
+<text x="267.69" y="80.14" font-size="7" text-anchor="middle" fill="#111" font-weight="normal">MAIN</text>
+<rect x="541.23" y="65.71" width="23.69" height="284.29" fill="#cacfd2" fill-opacity="0.6" stroke="#17202a" stroke-width="0.5"/>
+<text x="553.08" y="210.86" font-size="7" text-anchor="middle" fill="#111" font-weight="normal">case wall</text>
+<rect x="20.00" y="318.57" width="357.55" height="31.43" fill="#d2b4de" fill-opacity="0.6" stroke="#17202a" stroke-width="0.5"/>
+<text x="198.78" y="337.29" font-size="7" text-anchor="middle" fill="#111" font-weight="normal">plate in</text>
+<rect x="377.55" y="315.71" width="129.65" height="34.29" fill="#d2b4de" fill-opacity="0.6" stroke="#17202a" stroke-width="0.5"/>
+<text x="442.38" y="335.86" font-size="7" text-anchor="middle" fill="#111" font-weight="normal">plate out</text>
+<rect x="507.20" y="222.57" width="34.03" height="127.43" fill="#bb8fce" fill-opacity="0.6" stroke="#17202a" stroke-width="0.5"/>
+<text x="524.22" y="289.29" font-size="7" text-anchor="middle" fill="#111" font-weight="normal">wall</text>
+<rect x="541.23" y="315.71" width="23.69" height="34.29" fill="#d2b4de" fill-opacity="0.6" stroke="#17202a" stroke-width="0.5"/>
+<text x="553.08" y="335.86" font-size="7" text-anchor="middle" fill="#111" font-weight="normal">rim</text>
+<rect x="456.15" y="88.57" width="64.62" height="40.00" fill="#2e86c1" fill-opacity="0.6" stroke="#17202a" stroke-width="0.5"/>
+<text x="488.46" y="111.57" font-size="7" text-anchor="middle" fill="#111" font-weight="normal">J201</text>
+<text x="24.00" y="374.00" font-size="8" text-anchor="start" fill="#566573" font-weight="normal">J1501: NO strict-clearance pose (R2-S08); required annulus 4.90 mm vs best 5.10 mm</text>
+<rect x="600.0" y="50.0" width="560.0" height="300.0" fill="#fbfcfc" stroke="#aab7b8"/>
+<text x="604.00" y="45.00" font-size="10" text-anchor="start" fill="#111" font-weight="bold">East: charger block / land vs the cup wall inner face</text>
+<line x1="600.0" y1="50.0" x2="600.0" y2="350.0" stroke="#e5e8e8"/>
+<text x="600.00" y="361.00" font-size="8" text-anchor="middle" fill="#566573" font-weight="normal">r 0</text>
+<line x1="707.7" y1="50.0" x2="707.7" y2="350.0" stroke="#e5e8e8"/>
+<text x="707.69" y="361.00" font-size="8" text-anchor="middle" fill="#566573" font-weight="normal">r 5</text>
+<line x1="815.4" y1="50.0" x2="815.4" y2="350.0" stroke="#e5e8e8"/>
+<text x="815.38" y="361.00" font-size="8" text-anchor="middle" fill="#566573" font-weight="normal">r 10</text>
+<line x1="923.1" y1="50.0" x2="923.1" y2="350.0" stroke="#e5e8e8"/>
+<text x="923.08" y="361.00" font-size="8" text-anchor="middle" fill="#566573" font-weight="normal">r 15</text>
+<line x1="1030.8" y1="50.0" x2="1030.8" y2="350.0" stroke="#e5e8e8"/>
+<text x="1030.77" y="361.00" font-size="8" text-anchor="middle" fill="#566573" font-weight="normal">r 20</text>
+<line x1="1138.5" y1="50.0" x2="1138.5" y2="350.0" stroke="#e5e8e8"/>
+<text x="1138.46" y="361.00" font-size="8" text-anchor="middle" fill="#566573" font-weight="normal">r 25</text>
+<rect x="600.00" y="265.71" width="353.24" height="70.00" fill="#d5f5e3" fill-opacity="0.6" stroke="#17202a" stroke-width="0.5"/>
+<text x="776.62" y="303.71" font-size="7" text-anchor="middle" fill="#111" font-weight="normal">S14 REAR</text>
+<rect x="600.00" y="248.57" width="544.92" height="11.43" fill="#d7bde2" fill-opacity="0.6" stroke="#17202a" stroke-width="0.5"/>
+<text x="872.46" y="257.29" font-size="7" text-anchor="middle" fill="#111" font-weight="normal">lower web</text>
+<rect x="600.00" y="111.43" width="436.15" height="137.14" fill="#f9e79f" fill-opacity="0.6" stroke="#17202a" stroke-width="0.5"/>
+<text x="818.08" y="183.00" font-size="7" text-anchor="middle" fill="#111" font-weight="normal">pack + carrier</text>
+<rect x="600.00" y="65.71" width="495.38" height="22.86" fill="#abebc6" fill-opacity="0.6" stroke="#17202a" stroke-width="0.5"/>
+<text x="847.69" y="80.14" font-size="7" text-anchor="middle" fill="#111" font-weight="normal">MAIN</text>
+<rect x="1121.23" y="65.71" width="23.69" height="284.29" fill="#cacfd2" fill-opacity="0.6" stroke="#17202a" stroke-width="0.5"/>
+<text x="1133.08" y="210.86" font-size="7" text-anchor="middle" fill="#111" font-weight="normal">case wall</text>
+<rect x="600.00" y="318.57" width="357.55" height="31.43" fill="#d2b4de" fill-opacity="0.6" stroke="#17202a" stroke-width="0.5"/>
+<text x="778.78" y="337.29" font-size="7" text-anchor="middle" fill="#111" font-weight="normal">plate in</text>
+<rect x="957.55" y="315.71" width="129.65" height="34.29" fill="#d2b4de" fill-opacity="0.6" stroke="#17202a" stroke-width="0.5"/>
+<text x="1022.38" y="335.86" font-size="7" text-anchor="middle" fill="#111" font-weight="normal">plate out</text>
+<rect x="1087.20" y="222.57" width="34.03" height="127.43" fill="#bb8fce" fill-opacity="0.6" stroke="#17202a" stroke-width="0.5"/>
+<text x="1104.22" y="289.29" font-size="7" text-anchor="middle" fill="#111" font-weight="normal">wall</text>
+<rect x="1121.23" y="315.71" width="23.69" height="34.29" fill="#d2b4de" fill-opacity="0.6" stroke="#17202a" stroke-width="0.5"/>
+<text x="1133.08" y="335.86" font-size="7" text-anchor="middle" fill="#111" font-weight="normal">rim</text>
+<rect x="1002.99" y="265.71" width="86.15" height="84.29" fill="#c0392b" fill-opacity="0.6" stroke="#17202a" stroke-width="0.5"/>
+<text x="1046.07" y="310.86" font-size="7" text-anchor="middle" fill="#111" font-weight="normal">FT-C block</text>
+<rect x="984.06" y="303.71" width="129.23" height="46.29" fill="#f5cba7" fill-opacity="0.6" stroke="#17202a" stroke-width="0.5"/>
+<text x="1048.68" y="329.86" font-size="7" text-anchor="middle" fill="#111" font-weight="normal">land</text>
+<text x="604.00" y="374.00" font-size="8" text-anchor="start" fill="#566573" font-weight="normal">r_lim(cup) 22.23 mm, land r_max 23.83, required r_lim 24.03 mm (deficit 1.80)</text>
+<rect x="20.0" y="400.0" width="560.0" height="300.0" fill="#fbfcfc" stroke="#aab7b8"/>
+<text x="24.00" y="395.00" font-size="10" text-anchor="start" fill="#111" font-weight="bold">LRA pose: MAIN B.Cu zone B vs MAIN F.Cu (Z-neutral cap 2.70 mm)</text>
+<line x1="20.0" y1="400.0" x2="20.0" y2="700.0" stroke="#e5e8e8"/>
+<text x="20.00" y="711.00" font-size="8" text-anchor="middle" fill="#566573" font-weight="normal">r 0</text>
+<line x1="127.7" y1="400.0" x2="127.7" y2="700.0" stroke="#e5e8e8"/>
+<text x="127.69" y="711.00" font-size="8" text-anchor="middle" fill="#566573" font-weight="normal">r 5</text>
+<line x1="235.4" y1="400.0" x2="235.4" y2="700.0" stroke="#e5e8e8"/>
+<text x="235.38" y="711.00" font-size="8" text-anchor="middle" fill="#566573" font-weight="normal">r 10</text>
+<line x1="343.1" y1="400.0" x2="343.1" y2="700.0" stroke="#e5e8e8"/>
+<text x="343.08" y="711.00" font-size="8" text-anchor="middle" fill="#566573" font-weight="normal">r 15</text>
+<line x1="450.8" y1="400.0" x2="450.8" y2="700.0" stroke="#e5e8e8"/>
+<text x="450.77" y="711.00" font-size="8" text-anchor="middle" fill="#566573" font-weight="normal">r 20</text>
+<line x1="558.5" y1="400.0" x2="558.5" y2="700.0" stroke="#e5e8e8"/>
+<text x="558.46" y="711.00" font-size="8" text-anchor="middle" fill="#566573" font-weight="normal">r 25</text>
+<rect x="20.00" y="615.71" width="353.24" height="70.00" fill="#d5f5e3" fill-opacity="0.6" stroke="#17202a" stroke-width="0.5"/>
+<text x="196.62" y="653.71" font-size="7" text-anchor="middle" fill="#111" font-weight="normal">S14 REAR</text>
+<rect x="20.00" y="598.57" width="544.92" height="11.43" fill="#d7bde2" fill-opacity="0.6" stroke="#17202a" stroke-width="0.5"/>
+<text x="292.46" y="607.29" font-size="7" text-anchor="middle" fill="#111" font-weight="normal">lower web</text>
+<rect x="20.00" y="461.43" width="436.15" height="137.14" fill="#f9e79f" fill-opacity="0.6" stroke="#17202a" stroke-width="0.5"/>
+<text x="238.08" y="533.00" font-size="7" text-anchor="middle" fill="#111" font-weight="normal">pack + carrier</text>
+<rect x="20.00" y="415.71" width="495.38" height="22.86" fill="#abebc6" fill-opacity="0.6" stroke="#17202a" stroke-width="0.5"/>
+<text x="267.69" y="430.14" font-size="7" text-anchor="middle" fill="#111" font-weight="normal">MAIN</text>
+<rect x="541.23" y="415.71" width="23.69" height="284.29" fill="#cacfd2" fill-opacity="0.6" stroke="#17202a" stroke-width="0.5"/>
+<text x="553.08" y="560.86" font-size="7" text-anchor="middle" fill="#111" font-weight="normal">case wall</text>
+<rect x="456.15" y="438.57" width="77.54" height="95.71" fill="#fadbd8" fill-opacity="0.6" stroke="#17202a" stroke-width="0.5"/>
+<text x="494.92" y="489.43" font-size="7" text-anchor="middle" fill="#111" font-weight="normal">zone B: 3.60 mm</text>
+<rect x="20.00" y="338.57" width="472.77" height="77.14" fill="#d6eaf8" fill-opacity="0.6" stroke="#17202a" stroke-width="0.5"/>
+<text x="256.38" y="380.14" font-size="7" text-anchor="middle" fill="#111" font-weight="normal">F.Cu cap 2.70</text>
+<text x="24.00" y="724.00" font-size="8" text-anchor="start" fill="#566573" font-weight="normal">no B.Cu pose: best annulus 5.10 mm &lt; need {&#x27;LRA-COIN-D8&#x27;: 9.0, &#x27;LRA-COIN-D10&#x27;: 11.0, &#x27;LRA-LIN-RECT&#x27;: 5.3}; F.Cu plan-feasible poses {&#x27;LRA-COIN-D8&#x27;: 0, &#x27;LRA-COIN-D10&#x27;: 0, &#x27;LRA-LIN-RECT&#x27;: 0}</text>
+<rect x="600.0" y="400.0" width="560.0" height="300.0" fill="#fbfcfc" stroke="#aab7b8"/>
+<text x="604.00" y="395.00" font-size="10" text-anchor="start" fill="#111" font-weight="bold">Worst button (SW1) and SW5: boss + boot / seal inside +3.0 mm</text>
+<line x1="600.0" y1="400.0" x2="600.0" y2="700.0" stroke="#e5e8e8"/>
+<text x="600.00" y="711.00" font-size="8" text-anchor="middle" fill="#566573" font-weight="normal">r 0</text>
+<line x1="693.3" y1="400.0" x2="693.3" y2="700.0" stroke="#e5e8e8"/>
+<text x="693.33" y="711.00" font-size="8" text-anchor="middle" fill="#566573" font-weight="normal">r 5</text>
+<line x1="786.7" y1="400.0" x2="786.7" y2="700.0" stroke="#e5e8e8"/>
+<text x="786.67" y="711.00" font-size="8" text-anchor="middle" fill="#566573" font-weight="normal">r 10</text>
+<line x1="880.0" y1="400.0" x2="880.0" y2="700.0" stroke="#e5e8e8"/>
+<text x="880.00" y="711.00" font-size="8" text-anchor="middle" fill="#566573" font-weight="normal">r 15</text>
+<line x1="973.3" y1="400.0" x2="973.3" y2="700.0" stroke="#e5e8e8"/>
+<text x="973.33" y="711.00" font-size="8" text-anchor="middle" fill="#566573" font-weight="normal">r 20</text>
+<line x1="1066.7" y1="400.0" x2="1066.7" y2="700.0" stroke="#e5e8e8"/>
+<text x="1066.67" y="711.00" font-size="8" text-anchor="middle" fill="#566573" font-weight="normal">r 25</text>
+<line x1="1160.0" y1="400.0" x2="1160.0" y2="700.0" stroke="#e5e8e8"/>
+<text x="1160.00" y="711.00" font-size="8" text-anchor="middle" fill="#566573" font-weight="normal">r 30</text>
+<rect x="1029.33" y="415.71" width="14.00" height="22.86" fill="#abebc6" fill-opacity="0.6" stroke="#17202a" stroke-width="0.5"/>
+<rect x="1043.33" y="415.71" width="48.91" height="22.86" fill="#85c1e9" fill-opacity="0.6" stroke="#17202a" stroke-width="0.5"/>
+<text x="1067.79" y="430.14" font-size="7" text-anchor="middle" fill="#111" font-weight="normal">bore</text>
+<rect x="1072.27" y="415.71" width="21.47" height="22.86" fill="#aed6f1" fill-opacity="0.6" stroke="#17202a" stroke-width="0.5"/>
+<text x="1083.00" y="430.14" font-size="7" text-anchor="middle" fill="#111" font-weight="normal">boss 1.15</text>
+<rect x="1051.73" y="415.71" width="20.53" height="182.86" fill="#cacfd2" fill-opacity="0.6" stroke="#17202a" stroke-width="0.5"/>
+<text x="1062.00" y="510.14" font-size="7" text-anchor="middle" fill="#111" font-weight="normal">wall</text>
+<text x="604.00" y="724.00" font-size="8" text-anchor="start" fill="#566573" font-weight="normal">boss limit 3.000 mm; margins in R2-H12 (I-SUM binding, I-MAX reported)</text>
+<rect x="20.0" y="750.0" width="560.0" height="120.0" fill="#fbfcfc" stroke="#aab7b8"/>
+<text x="24.00" y="745.00" font-size="10" text-anchor="start" fill="#111" font-weight="bold">Cup / seal generic: raised radial O-ring on the ceramic wall</text>
+<line x1="20.0" y1="750.0" x2="20.0" y2="870.0" stroke="#e5e8e8"/>
+<text x="20.00" y="881.00" font-size="8" text-anchor="middle" fill="#566573" font-weight="normal">r 0</text>
+<line x1="127.7" y1="750.0" x2="127.7" y2="870.0" stroke="#e5e8e8"/>
+<text x="127.69" y="881.00" font-size="8" text-anchor="middle" fill="#566573" font-weight="normal">r 5</text>
+<line x1="235.4" y1="750.0" x2="235.4" y2="870.0" stroke="#e5e8e8"/>
+<text x="235.38" y="881.00" font-size="8" text-anchor="middle" fill="#566573" font-weight="normal">r 10</text>
+<line x1="343.1" y1="750.0" x2="343.1" y2="870.0" stroke="#e5e8e8"/>
+<text x="343.08" y="881.00" font-size="8" text-anchor="middle" fill="#566573" font-weight="normal">r 15</text>
+<line x1="450.8" y1="750.0" x2="450.8" y2="870.0" stroke="#e5e8e8"/>
+<text x="450.77" y="881.00" font-size="8" text-anchor="middle" fill="#566573" font-weight="normal">r 20</text>
+<line x1="558.5" y1="750.0" x2="558.5" y2="870.0" stroke="#e5e8e8"/>
+<text x="558.46" y="881.00" font-size="8" text-anchor="middle" fill="#566573" font-weight="normal">r 25</text>
+<rect x="20.00" y="848.00" width="357.55" height="22.00" fill="#d2b4de" fill-opacity="0.6" stroke="#17202a" stroke-width="0.5"/>
+<text x="198.78" y="862.00" font-size="7" text-anchor="middle" fill="#111" font-weight="normal">plate in</text>
+<rect x="377.55" y="846.00" width="129.65" height="24.00" fill="#d2b4de" fill-opacity="0.6" stroke="#17202a" stroke-width="0.5"/>
+<text x="442.38" y="861.00" font-size="7" text-anchor="middle" fill="#111" font-weight="normal">plate out</text>
+<rect x="507.20" y="780.80" width="34.03" height="89.20" fill="#bb8fce" fill-opacity="0.6" stroke="#17202a" stroke-width="0.5"/>
+<text x="524.22" y="828.40" font-size="7" text-anchor="middle" fill="#111" font-weight="normal">wall</text>
+<rect x="541.23" y="846.00" width="23.69" height="24.00" fill="#d2b4de" fill-opacity="0.6" stroke="#17202a" stroke-width="0.5"/>
+<text x="553.08" y="861.00" font-size="7" text-anchor="middle" fill="#111" font-weight="normal">rim</text>
+<rect x="516.25" y="796.80" width="24.98" height="41.20" fill="#ffffff" fill-opacity="0.6" stroke="#17202a" stroke-width="0.5"/>
+<text x="528.74" y="820.40" font-size="7" text-anchor="middle" fill="#111" font-weight="normal">groove</text>
+<text x="24.00" y="894.00" font-size="8" text-anchor="start" fill="#566573" font-weight="normal">cs 1.5 mm row radial#10: wall top 4.46 mm, REAR band cap 3.10</text>
+<rect x="600.0" y="750.0" width="560.0" height="120.0" fill="#fbfcfc" stroke="#aab7b8"/>
+<text x="604.00" y="745.00" font-size="10" text-anchor="start" fill="#111" font-weight="bold">Pillar at an S14 land: +Delta only</text>
+<line x1="600.0" y1="750.0" x2="600.0" y2="870.0" stroke="#e5e8e8"/>
+<text x="600.00" y="881.00" font-size="8" text-anchor="middle" fill="#566573" font-weight="normal">r 0</text>
+<line x1="707.7" y1="750.0" x2="707.7" y2="870.0" stroke="#e5e8e8"/>
+<text x="707.69" y="881.00" font-size="8" text-anchor="middle" fill="#566573" font-weight="normal">r 5</text>
+<line x1="815.4" y1="750.0" x2="815.4" y2="870.0" stroke="#e5e8e8"/>
+<text x="815.38" y="881.00" font-size="8" text-anchor="middle" fill="#566573" font-weight="normal">r 10</text>
+<line x1="923.1" y1="750.0" x2="923.1" y2="870.0" stroke="#e5e8e8"/>
+<text x="923.08" y="881.00" font-size="8" text-anchor="middle" fill="#566573" font-weight="normal">r 15</text>
+<line x1="1030.8" y1="750.0" x2="1030.8" y2="870.0" stroke="#e5e8e8"/>
+<text x="1030.77" y="881.00" font-size="8" text-anchor="middle" fill="#566573" font-weight="normal">r 20</text>
+<line x1="1138.5" y1="750.0" x2="1138.5" y2="870.0" stroke="#e5e8e8"/>
+<text x="1138.46" y="881.00" font-size="8" text-anchor="middle" fill="#566573" font-weight="normal">r 25</text>
+<rect x="876.08" y="811.00" width="29.42" height="33.00" fill="#aab7b8" fill-opacity="0.6" stroke="#17202a" stroke-width="0.5"/>
+<text x="890.79" y="830.50" font-size="7" text-anchor="middle" fill="#111" font-weight="normal">S14 land</text>
+<rect x="876.08" y="807.00" width="29.42" height="4.00" fill="#85929e" fill-opacity="0.6" stroke="#17202a" stroke-width="0.5"/>
+<text x="890.79" y="812.00" font-size="7" text-anchor="middle" fill="#111" font-weight="normal">pillar +Delta 0.20</text>
+<rect x="600.00" y="799.00" width="353.24" height="8.00" fill="#d7bde2" fill-opacity="0.6" stroke="#17202a" stroke-width="0.5"/>
+<text x="776.62" y="806.00" font-size="7" text-anchor="middle" fill="#111" font-weight="normal">lower web</text>
+</svg>
